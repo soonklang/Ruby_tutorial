@@ -8,7 +8,9 @@ coverY: -269.2090773809524
 
 # Getting Information About String Objects
 
-ทุกสิ่งใน Ruby นั้นคือ Object หนึ่งในนั้นก็คือ String ดังนั้นแล้วจะมี Method มากมายที่เก็บข้อมูล (Information) เกี่ยวกับ String ที่เราสามารถเรียกออกมาใช้ได้
+## Objects Information
+
+> ทุกสิ่งใน Ruby นั้นคือ Object หนึ่งในนั้นก็คือ String ดังนั้นแล้วจะมี Method มากมายที่เก็บข้อมูล (Information) เกี่ยวกับ String ที่เราสามารถเรียกออกมาใช้ได้
 
 ***
 
