@@ -6,6 +6,8 @@
 
 * [Ruby](0-introduction/page-2.md)
 
+## 7 Ruby Ranges
+
 ## 01 Comments
 
 * [Comment](01-comments/comment.md)
@@ -52,7 +54,7 @@
 * [Ruby Sequence Ranges](07-ruby-ranges/ruby-sequence-ranges.md)
 * [Using Range Methods](07-ruby-ranges/using-range-methods.md)
 * [Ruby Ranges as Conditional Expressions](07-ruby-ranges/ruby-ranges-as-conditional-expressions.md)
-* [Ruby Range Intervals](07-ruby-ranges/ruby-range-intervals.md)
+* [Ruby Range Intervals](7-ruby-ranges/ruby-range-intervals.md)
 
 ## 08 Understanding Ruby Arrays
 
