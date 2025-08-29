@@ -126,3 +126,7 @@
 * [Ruby for Loop](16-looping-with-for-and-the-ruby-looping-methods/ruby-for-loop.md)
 * [Ruby times Method](16-looping-with-for-and-the-ruby-looping-methods/ruby-times-method.md)
 * [Ruby upto and downto Method](16-looping-with-for-and-the-ruby-looping-methods/ruby-upto-and-downto-method.md)
+
+## 18 RUBY STRINGS CREATION AND BASIC
+
+* [Getting Information About String Objects](18-ruby-strings-creation-and-basic/getting-information-about-string-objects.md)
