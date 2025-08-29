@@ -1,0 +1,2 @@
+# Freezing a Ruby String
+
