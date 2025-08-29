@@ -1,6 +1,9 @@
 ---
 description: นฤดม ศรีปัญญา 660710604
-icon: memo-circle-info
+icon: function
+cover: >-
+  https://images.unsplash.com/photo-1551122089-4e3e72477432?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxydWJ5fGVufDB8fHx8MTc1NjQ2OTQ3Nnww&ixlib=rb-4.1.0&q=85
+coverY: -269.2090773809524
 ---
 
 # Getting Information About String Objects
