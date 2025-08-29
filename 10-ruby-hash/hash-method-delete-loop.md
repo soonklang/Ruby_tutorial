@@ -1,0 +1,2 @@
+# Hash method, Delete, Loop
+

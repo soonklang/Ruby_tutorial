@@ -1,0 +1,2 @@
+# Ruby Ternary Operator
+
