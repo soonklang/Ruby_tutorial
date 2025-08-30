@@ -467,7 +467,8 @@ san_francisco.can_be_crowdy?
 
 > ผลลัพท์จะได้เป็น NoMethodError เพราะ wroclaw เป็น Object ของคลาสลูกอย่าง City แต่ภายในของเมธอด more_densely_populated? มีการใช้เมธอด population_density ที่เป็น private ในคลาส Region อยู่ด้วย แล้วเนื่องจากเมธอด private สามารถใช้ได้แค่ในคลาส Region เท่านั้น ทำให้คลาส City ไม่สามารถใช้ได้
 
-บรรทัดที่ 2 คลาสลูกใช้เมธอดที่เป็น public ที่ข้างในมีเมธอด protected <details>
+บรรทัดที่ 2 คลาสลูกใช้เมธอดที่เป็น public ที่ข้างในมีเมธอด protected 
+<details>
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
 <code>wroclaw.the_same_continent?(san_francisco)
@@ -478,6 +479,7 @@ san_francisco.can_be_crowdy?
 > สามารถรันได้ตามปกติเพราะ wroclaw เป็น Object ของคลาสลูกอย่าง City แล้วภายในเมธอด the_same_continent? มีการใช้ตัวแปร continent ที่เป็นแบบ protected ในคลาส Region ซึ่งเป็นคลาสแม่ แล้วคุณสมบัติของ protected สามารถใช้ได้ในคลาสลูกเช่นเดียวกับคลาสแม่
 
 บรรทัดที่ 3 คลาสลูกใช้เมธอดที่เป็น public ที่ข้างในมีเมธอด private
+<detaila>
 <summary><strong>แสดงผลลัพธ์</strong></summary>
 <pre>
 <code>san_francisco.can_be_crowdy?
