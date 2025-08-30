@@ -536,16 +536,21 @@ Explicit receiver คือการเรียกเมธอดที่ร�
 
 Geeksforgeeks (2025, July 25). Object Oriented Programming in Ruby | Set-2. [https://www.geeksforgeeks.org/ruby/object-oriented-programming-in-ruby-set-2/](https://www.geeksforgeeks.org/ruby/object-oriented-programming-in-ruby-set-2/)
 เนื้อหาที่นำมาใช้ : ใช้อธิบายตัวอย่างที่1 ถึงตัวอย่างที่4 เพื่ออธิบายพื้นฐานของ public private โดยเน้นไปดูวิธีการใช้งาน
+
 Naturaily (2019, March 18). Do You Really Know Public Private And Protected In Ruby
 [https://naturaily.com/blog/private-protected-public-ruby](https://naturaily.com/blog/private-protected-public-ruby)
 เนื้อหาที่นำมาใช้งาน : ใช้อธิบายในตัวอย่างที่9 โดยอธิบายเพื่อให้เข้าใจได้ง่ายมากขึ้น รวมถึงว่า modifier ตัวไหนสามารถใช้งานได้
+
 LanunchSchool (n.d).
 [https://launchschool.com/books/oo_ruby/read/inheritance#privateprotectedandpublic](https://launchschool.com/books/oo_ruby/read/inheritance#privateprotectedandpublic)
 เนื้อหาที่นำมาใช้ : ใช้อธิบายตัวอย่าง5 ถึงตัวอย่างที่8 โดยที่จะใช้โค้ดเดิมแล้วเพิ่มอธิบายพร้อมกฏต่างๆของ Access Control
+
 stackoverflow (2016, May 25). What are the differences between "private", "public", and "protected methods"?
 [https://stackoverflow.com/questions/9882754/what-are-the-differences-between-private-public-and-protected-methods/9882795#9882795](https://stackoverflow.com/questions/9882754/what-are-the-differences-between-private-public-and-protected-methods/9882795#9882795)
 เนื้อหาที่นำมาใช้ : ใช้บอกความต่างของ public protected private
+
 Geeksforgeeks (2018, Sep 4). Ruby | Access Control [https://www.geeksforgeeks.org/ruby/ruby-access-control/](https://www.geeksforgeeks.org/ruby/ruby-access-control/)
 เนื้อหาที่นำมาใช้ : นำมาอธิบายความหมายของ Access Control
+
 CloudBees (n.d) What's the Difference Between Implicit vs. Explicit Programming? (https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming)[https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming]
 เนื้อหาที่นำมาใช้ : อธิบายความแตกต่างระหว่าง Explicit และ Implicit
