@@ -48,6 +48,13 @@ object = Vehicle.new('Nissan', 'white')
 object.display
 ```
 
+<details>
+<summary><strong>Java</strong></summary>
+<pre>
+<code>Sparky</code>
+</pre>
+</details>
+
 จากตัวอย่าง มีการทำให้เมธอด display เป็น public และเมธอด greeting เป็น private
 
 ## วิธีการใช้
