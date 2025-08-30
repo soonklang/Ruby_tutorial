@@ -124,7 +124,7 @@ puts 'This is backslash \\'
   <pre><code>This is backslash \</code></pre>
 </details>
 
-# เปรียบเทียบภาษา
+# *เปรียบเทียบภาษา*
 ## Python
 ในภาษา Python เครื่องหมาย Single quote และ Double quote จะสามารถใช้ escape sequences ได้เหมือนกัน
 
