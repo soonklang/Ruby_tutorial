@@ -93,29 +93,45 @@ puts merged
 
 ```java
 import java.util.HashMap;
+import java.util.Map;
+
 public class Main {
-public static void main(String[] args) {
-HashMap<String, Object> person = new HashMap<>();
-person.put("name", "Alice");
-person.put("age", 25);
-// Add key
-person.put("city", "Bangkok");
-System.out.println(person);
-// {name=Alice, age=25, city=Bangkok}
-// Swap key กับ value
-HashMap<Object, String> swapped = new HashMap<>();
-for (Map.Entry<String, Object> entry : person.entrySet()) {
-swapped.put(entry.getValue(), entry.getKey());
+    public static void main(String[] args) {
+        // Create a HashMap
+        HashMap<String, Object> person = new HashMap<>();
+        person.put("name", "Alice");
+        person.put("age", 25);
+        // Add key
+        person.put("city", "Bangkok");
+
+        System.out.println(person);
+        // Output: {name=Alice, age=25, city=Bangkok}
+
+        // Swap key and value
+        HashMap<Object, String> swapped = new HashMap<>();
+        for (Map.Entry<String, Object> entry : person.entrySet()) {
+            swapped.put(entry.getValue(), entry.getKey());
+        }
+
+        System.out.println(swapped);
+        // Output: {Alice=name, 25=age, Bangkok=city}
+
+        // Merge hash
+        // Assuming 'extra' is defined somewhere. For example:
+        HashMap<String, Object> extra = new HashMap<>();
+        extra.put("age", 30); // overriding age
+        extra.put("Alice", "name");
+        extra.put("25", "age");
+        extra.put("Bangkok", "city");
+
+        HashMap<String, Object> merged = new HashMap<>(person);
+        merged.putAll(extra);
+
+        System.out.println(merged);
+        // Output: {name=Alice, age=30, city=Bangkok, Alice=name, 25=age, Bangkok=city}
+    }
 }
-System.out.println(swapped);
-// {Alice=name, 25=age, Bangkok=city}
-// Merge hash
-HashMap<String, Object> merged = new HashMap<>(person);
-merged.putAll(extra);
-System.out.println(merged);
-// {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"}
-}
-}
+
 ```
 
 #### C <a href="#c" id="c"></a>
