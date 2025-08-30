@@ -94,8 +94,8 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 | ตรวจสอบไฟล์มีอยู่จริง        | `File.exist?`                          | `Files.exists(path)`| `access(path, F_OK)`            | `os.path.exists(path)` / `pathlib.Path(path).exists()` |
 | ตรวจสอบไฟล์/โฟลเดอร์        | `File.file?` / `File.directory?`       | `Files.isRegularFile(path)` / `Files.isDirectory(path)` | `S_ISREG` / `S_ISDIR` | `os.path.isfile(path)` / `os.path.isdir(path)` |
 | ตรวจสอบสิทธิ์อ่าน/เขียน/รัน | `File.readable?` / `File.writable?` / `File.executable?` | `Files.isReadable(path)` / `Files.isWritable(path)` / `Files.isExecutable(path)` | `access(path, R_OK)` / `access(path, W_OK)` / `access(path, X_OK)` | `os.access(path, os.R_OK)` / `os.access(path, os.W_OK)` / `os.access(path, os.X_OK)` |
-| ขนาดไฟล์                    | `File.size`                           | `Files.size(path)`                               | `st_size`              | `os.path.getsize(path)` / `pathlib.Path(path).stat().st_size` |
-| เวลา (สร้าง/แก้ไข/เข้าถึง)    | `File.ctime` / `File.mtime` / `File.atime` | `Files.getLastModifiedTime(path)` / `Files.getAttribute(path, "creationTime")` *(ไม่มี access time โดยตรง)* | `stat() → st_ctime` / `st_mtime` / `st_atime` | `os.stat(path).st_ctime` / `os.stat(path).st_mtime` / `os.stat(path).st_atime` |
+| ขนาดไฟล์                    | `File.size`                           | `Files.size(path)`                               | `st_size`              | `os.path.getsize(path)` |
+| เวลา (สร้าง/แก้ไข/เข้าถึง)    | `File.ctime` / `File.mtime` / `File.atime` | `Files.getLastModifiedTime(path)` / `Files.getAttribute(path, "creationTime")` *(ไม่มี access time โดยตรง)* | `st_ctime` / `st_mtime` / `st_atime` | `os.stat(path).st_ctime` / `os.stat(path).st_mtime` / `os.stat(path).st_atime` |
 | Path Operations             | `File.basename` / `File.dirname` / `File.extname` | `Paths.get(path).getFileName()` / `Paths.get(path).getParent()` *(ไม่มี extension โดยตรง)* | `basename(path)` / `dirname(path)` *(ไม่มีใน POSIX standard)* | `os.path.basename(path)` / `os.path.dirname(path)` / `os.path.splitext(path)` |
 
 ---
