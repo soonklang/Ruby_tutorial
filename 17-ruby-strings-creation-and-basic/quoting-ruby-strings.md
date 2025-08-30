@@ -114,5 +114,7 @@ puts 'This is backslash \\'
   <pre><code>This is backslash \</code></pre>
 </details>
 
-## *Reference*
+# *Reference*
+- https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics#Quoting_Ruby_Strings
+- https://docs.ruby-lang.org/en/master/syntax/literals_rdoc.html#label-String+Literals
 - https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
