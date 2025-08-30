@@ -10,11 +10,12 @@
 
 **Syntax**
 ``` ruby
-while conditional expression[do]
+while conditional_expression[do]
  # code to be executed
 end
 ```
 
+>* while ต้องมี end ปิดเสมอ
 >* conditional expression(เงื่อนไข) : มีค่าเป็นจริง(true) หรือเท็จ(false)
 >* do จะเขียนหรือไม่เขียนก็ได้
 
