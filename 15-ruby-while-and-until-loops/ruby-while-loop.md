@@ -63,7 +63,17 @@ while i <= 5
   i += 1
 end 
 puts "Loop finished."
-``` 
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>The number is: 1
+The number is: 2
+The number is: 3
+The number is: 4
+The number is: 5
+Loop finished.</code></pre>
+</details>
+
 **Python**
 ``` Python
 i = 1
@@ -104,7 +114,7 @@ int main() {
         i++;
     }
     printf("Loop finished.\n");
-    return 0;
+    return 0; //คือการบอก Operating System ว่าโปรแกรมทำงานเสร็จสิ้นโดยไม่มีข้อผิดพลาด ซึ่งเป็นมาตรฐานของภาษา C
 }
 ```
 > สิ่งที่ต่างจากRubyคือ
