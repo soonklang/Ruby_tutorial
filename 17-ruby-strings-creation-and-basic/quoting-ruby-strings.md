@@ -70,6 +70,16 @@ puts "Ten minus five equal five : #{10-5}"
 > ยกเว้น \\' และ \\\ ที่สามารถใช้ได้
 
 ```ruby
+puts 'This line already taken\nAlright I\'ll go to the new line'
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>This line already taken\nAlright I'll go to the new line</code></pre>
+</details>
+
+
+```ruby
 name = "Yukihiro Matsumoto"
 puts 'The creator of Ruby language is #{name}.'
 ```
@@ -114,7 +124,80 @@ puts 'This is backslash \\'
   <pre><code>This is backslash \</code></pre>
 </details>
 
+# เปรียบเทียบภาษา
+## Python
+ในภาษา Python เครื่องหมาย Single quote และ Double quote จะสามารถใช้ escape sequences และแทรกค่าได้เหมือนกัน
+
+```python
+print("Hello\nHi")
+print('Hi\nHello')
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello
+Hi
+Hi
+Hello</code></pre>
+</details>
+
+>จากตัวอย่างด้านบนเราจะสังเกตเห็นว่าผลลัพธ์ที่ได้เหมือนกันต่างจากภาษา Ruby ที่ Single quote จะไม่สามารถใช้ \\n ได้
+
+```python
+name = "Matz"
+print(f" Hi {name}")
+print(f' Hello {name}')
+print(f" one plus one equal {1+1}")
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hi Matz
+Hello Matz
+one plus one equal 2</code></pre>
+</details>
+
+>ภาษา Python จะสามารถอ้างอิงค่าจากตัวแปรได้ทั้งเครื่องหมาย Single quote และเครื่องหมาย Double quote ต่างตรงที่ Python จะใช้เป็น print(f"...")
+
+## C
+ในภาษา C จะใช้แค่เครื่องหมาย Double quote ในการครอบสตริง
+
+```c
+printf("Hello My Name is\nMatz")
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello My Name is
+Matz</code></pre>
+</details>
+
+ในกรณีที่ต้องการแทรกค่าจากตัวแปรในภาษา C จะเขียนตัวแปรแยกออกมาจากสตริง
+```c
+int x = 20;
+printf("I\'m %d years old.",x);
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>I'm 20 years old.</code></pre>
+</details>
+
+# Summary
+การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ <br>
+1. Single quote จะไม่สามารถใช้ escape sequnces แบบ double quote ได้ (ยกเว้น \\' และ \\\) <br>
+2. Single quote ไม่สามารถแทรกค่าได้แบบ double quote ได้  
+
 # *Reference*
+#### Ruby
 - https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics#Quoting_Ruby_Strings
 - https://docs.ruby-lang.org/en/master/syntax/literals_rdoc.html#label-String+Literals
 - https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
+#### Python
+- https://www.geeksforgeeks.org/python/python-escape-characters/
+- https://www.geeksforgeeks.org/python/single-and-double-quotes-python/
+- https://www.w3schools.com/python/python_strings_escape.asp
+#### C
+- https://www.geeksforgeeks.org/c/escape-sequence-in-c/
+- https://www.geeksforgeeks.org/c/g-fact/
+#### Java
