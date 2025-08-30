@@ -71,7 +71,10 @@ while i <= 5:
     print(f"The number is: {i}")
     i += 1
 print("Loop finished.")
-``` 
+```
+> สิ่งที่ต่างจากRubyคือ
+>* การใช้เครื่องหมาย : ต่อท้ายเงื่อนไขของ while
+
 **Java**
 ``` Java
 public class WhileLoopExample {
@@ -84,7 +87,13 @@ public class WhileLoopExample {
         System.out.println("Loop finished.");
     }
 }
-``` 
+```
+> สิ่งที่ต่างจากRubyคือ
+>* ต้องประกาศชนิดข้อมูลของตัวแปร (Static Typing) เช่น int i;
+>* เงื่อนไขของต้องอยู่ในวงเล็บ ()
+>* ใช้ {} เพื่อกำหนดขอบเขตของ loop
+>* ทุกคำสั่งต้องลงท้ายด้วย ;
+
 **C**
 ``` C
 #include <stdio.h>
@@ -98,6 +107,13 @@ int main() {
     return 0;
 }
 ```
+> สิ่งที่ต่างจากRubyคือ
+>* ต้องประกาศชนิดข้อมูลของตัวแปร (Static Typing) เช่น int i;
+>* เงื่อนไขของต้องอยู่ในวงเล็บ ()
+>* ใช้ {} เพื่อกำหนดขอบเขตของ loop
+>* ทุกคำสั่งต้องลงท้ายด้วย ;
+>  
+> ***เนื่องจากJavaได้รับอิทธิพลจากCทำให้syntaxมีความคล้ายคลึงกันมาก ดังนั้นสิ่งที่ต่างจากRubyจึงเหมือนกับJava***
 
 ### References
 
