@@ -1,4 +1,4 @@
-# Quoting Ruby Strings
+# *Quoting Ruby Strings*
 สตริง (String) ในภาษา Ruby สามารถกำหนดขอบเขตได้ด้วยเครื่องหมาย ' (Single quote) หรือเครื่องหมาย " (Double quote) 
 
 ```ruby
@@ -208,7 +208,7 @@ System.out.println("I have " + x + " Baht in my bank account.");
 
 >หรืออีกวิธีคือการใช้ String.format()
 
-# Summary
+# *Summary*
 การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ <br>
 1. Single quote จะไม่สามารถใช้ escape sequnces แบบ double quote ได้ (ยกเว้น \\' และ \\\) <br>
 2. Single quote ไม่สามารถแทรกค่าได้แบบ double quote ได้  
