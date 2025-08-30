@@ -55,13 +55,11 @@ fruits: apple banana
 int[] nums = {1,2,3};
 String[] fruits = {"apple","banana"};
 for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i]+" ");
-        }
-        System.out.println();
-        // แสดงผลผลไม้ใน fruits ทีละตัว
-        for (int i = 0; i < fruits.length; i++) {
-            System.out.print(fruits[i]+" " );
-        }
+    System.out.print(nums[i]+" ");
+}
+System.out.println();
+for (int i = 0; i < fruits.length; i++) {
+    System.out.print(fruits[i]+" " );
 }
 
 ```
@@ -119,9 +117,9 @@ print(arr)
 </details>
 
 **ภาษา C**
+ไม่มีอาเรย์ว่างเปล่าโดยตรงต้องสร้างแบบกำหนดเอา
 
 ```C
-ไม่มีอาเรย์ว่างเปล่าโดยตรงต้องสร้างแบบกำหนดเอา
 int c[3]={0, 0, 0};
 for (int i = 0; i < 3; i++) {
     printf("%d ", c[i]);
