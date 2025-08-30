@@ -26,7 +26,7 @@ puts people
 people[:leaon] = 42
 ```
 
-ผลลัพธ์
+<mark style="color:$info;">ผลลัพธ์</mark>
 
 ```ruby
 puts people
@@ -40,121 +40,176 @@ puts people
 
 ต่อมาเป็น คำสั่งสำหรับ สลับ key กับ value ด้วยคำสั่ง .invert โดยเราจะยกตัวอย่างในการเก็บค่าไว้ใน people\_2
 
-**people\_2 = people.invert**
-
-```
-people = {jordan:32,tiffany:27,tromas:10,micheal:29}
+```ruby
+people_2 = people.invert
 ```
 
-ผลลัพธ์
+<mark style="color:$info;">ผลลัพธ์</mark>
 
 {32 => :jordan, 27 => :tiffany, 10 => :tromas, 29 => :micheal, 42 => :leaon}
 
 ***
 
-## **Merge**
+## <mark style="color:$success;">**Merge**</mark>
 
 คำสั่งสุดท้ายเป็น คำสั่งสำหรับ รวม hash 2 ก้อนเข้าด้วยกัน ด้วยคำสั่ง .merge โดยเราจะยกตัวอย่างในการเก็บค่าไว้ใน people\_3
 
 ```
-people = {jordan:32,tiffany:27,tromas:10,micheal:29}
+people_3 = people.merge(people_2)
 ```
-
-**people\_3 = people.merge(people\_2)**
 
 ผลลัพธ์
 
 {jordan: 32, tiffany: 27, tromas: 10, micheal: 29, leaon: 42, 32 => :jordan, 27 => :tiffany, 10 => :tromas, 29 => :micheal, 42 => :leaon}
 
-## **เทียบกับภาษาอื่น**
+***
+
+## <mark style="color:$primary;">**เทียบกับภาษาอื่น**</mark>
 
 การใช้คำสั่งต่างๆใน Ruby เทียบกับ Java
 
-**person = { "name" => "Alice", "age" => 25 }**
+#### Ruby
 
-**person\["city"] = "Bangkok"**
+```ruby
+person = { "name" => "Alice", "age" => 25 }
+person["city"] = "Bangkok"
 
-**# Add key**
+# Add key
+puts person
+# {"name"=>"Alice", "age"=>25, "city"=>"Bangkok"}
 
-**puts person**
+# Swap key กับ value
+swapped = person.invert
+puts swapped
+# {"Alice"=>"name", 25=>"age", "Bangkok"=>"city"}
 
-**# {"name"=>"Alice", "age"=>25, "city"=>"Bangkok"}**
+# merge hash
+merged = person.merge(swapped)
+puts merged
+# {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"}
+```
 
-**# Swap key กับ value**
+#### **JAVA**
 
-**swapped = person.invert**
+```java
+import java.util.HashMap;
+public class Main {
+public static void main(String[] args) {
+HashMap<String, Object> person = new HashMap<>();
+person.put("name", "Alice");
+person.put("age", 25);
+// Add key
+person.put("city", "Bangkok");
+System.out.println(person);
+// {name=Alice, age=25, city=Bangkok}
+// Swap key กับ value
+HashMap<Object, String> swapped = new HashMap<>();
+for (Map.Entry<String, Object> entry : person.entrySet()) {
+swapped.put(entry.getValue(), entry.getKey());
+}
+System.out.println(swapped);
+// {Alice=name, 25=age, Bangkok=city}
+// Merge hash
+HashMap<String, Object> merged = new HashMap<>(person);
+merged.putAll(extra);
+System.out.println(merged);
+// {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"}
+}
+}
+```
 
-**puts swapped**
+#### C <a href="#c" id="c"></a>
 
-**# {"Alice"=>"name", 25=>"age", "Bangkok"=>"city"}**
+```c
+#include <stdio.h>
+#include <string.h>
 
-**# merge hash**
+#define MAX 10
+#define KEY_SIZE 50
+#define VALUE_SIZE 50
 
-**merged = person.merge(swapped)**
+typedef struct {
+    char key[KEY_SIZE];
+    char value[VALUE_SIZE];
+} Pair;
 
-**puts merged**
+typedef struct {
+    Pair data[MAX];
+    int size;
+} Hash;
 
-**# {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"}**
+// Print hash
+void printHash(Hash *h) {
+    printf("{ ");
+    for (int i = 0; i < h->size; i++) {
+        printf("\"%s\" => \"%s\"", h->data[i].key, h->data[i].value);
+        if (i < h->size - 1) printf(", ");
+    }
+    printf(" }\n");
+}
 
-**import java.util.HashMap;**
+// Add key and value
+void add(Hash *h, const char *key, const char *value) {
+    if (h->size < MAX) {
+        strcpy(h->data[h->size].key, key);
+        strcpy(h->data[h->size].value, value);
+        h->size++;
+    }
+}
 
-**public class Main {**
+// Swap key and value
+Hash invert(Hash *h) {
+    Hash swapped;
+    swapped.size = 0;
+    for (int i = 0; i < h->size; i++) {
+        add(&swapped, h->data[i].value, h->data[i].key);
+    }
+    return swapped;
+}
 
-**public static void main(String\[] args) {**
+// Merge two hashes
+Hash merge(Hash *h1, Hash *h2) {
+    Hash merged;
+    merged.size = 0;
 
-**HashMap\<String, Object> person = new HashMap<>();**
+    // Copy h1
+    for (int i = 0; i < h1->size; i++) {
+        add(&merged, h1->data[i].key, h1->data[i].value);
+    }
 
-**person.put("name", "Alice");**
+    // Copy h2
+    for (int i = 0; i < h2->size; i++) {
+        add(&merged, h2->data[i].key, h2->data[i].value);
+    }
 
-**person.put("age", 25);**
+    return merged;
+}
 
-**// Add key**
+int main() {
+    Hash person;
+    person.size = 0;
 
-**person.put("city", "Bangkok");**
+    add(&person, "name", "Alice");
+    add(&person, "age", "25");
+    add(&person, "city", "Bangkok");
 
-**System.out.println(person);**
+    printf("Original: ");
+    printHash(&person);
 
-**// {name=Alice, age=25, city=Bangkok}**
+    Hash swapped = invert(&person);
+    printf("Swapped: ");
+    printHash(&swapped);
 
-**// Swap key กับ value**
+    Hash merged = merge(&person, &swapped);
+    printf("Merged: ");
+    printHash(&merged);
 
-**HashMap\<Object, String> swapped = new HashMap<>();**
+    return 0;
+}
 
-**for (Map.Entry\<String, Object> entry : person.entrySet()) {**
+```
 
-**swapped.put(entry.getValue(), entry.getKey());**
-
-**}**
-
-**System.out.println(swapped);**
-
-**// {Alice=name, 25=age, Bangkok=city}**
-
-**// Merge hash**
-
-**HashMap\<String, Object> merged = new HashMap<>(person);**
-
-**merged.putAll(extra);**
-
-**System.out.println(merged);**
-
-**// {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"}**
-
-**}**
-
-**}**
-
-
-
-### JAVA <a href="#java" id="java"></a>
-
-import java.util.HashMap;public class Main {public static void main(String\[] args) {HashMap\<String, Object> person = new HashMap<>();person.put("name", "Alice");person.put("age", 25);​// Add key and valueperson.put("city", "Bangkok");System.out.println(person);// {name=Alice, age=25, city=Bangkok}​// Swap key and valueHashMap\<Object, String> swapped = new HashMap<>();for (Map.Entry\<String, Object> entry : person.entrySet()) {swapped.put(entry.getValue(), entry.getKey());}System.out.println(swapped);// {Alice=name, 25=age, Bangkok=city}​// Merge hashHashMap\<String, Object> merged = new HashMap<>(person);merged.putAll(extra);System.out.println(merged);// {"name"=>"Alice", "age"=>30, "city"=>"Bangkok","Alice"=>"name", 25=>"age", "Bangkok"=>"city"\}}}
-
-### C <a href="#c" id="c"></a>
-
-\#include \<stdio.h>#include \<string.h>​#define MAX 10#define KEY\_SIZE 50#define VALUE\_SIZE 50​typedef struct {char key\[KEY\_SIZE];char value\[VALUE\_SIZE];} Pair;​typedef struct {Pair data\[MAX];int size;} Hash;​void printHash(Hash \*h) {printf("{ ");for (int i = 0; i < h->size; i++) {printf("\\"%s\\"=>\\"%s\\"", h->data\[i].key, h->data\[i].value);if (i < h->size - 1) printf(", ");}printf(" }\n");}​// Add key and valuevoid add(Hash \*h, const char \*key, const char \*value) {if (h->size < MAX) {strcpy(h->data\[h->size].key, key);strcpy(h->data\[h->size].value, value);h->size++;\}}​// Swap key and valueHash invert(Hash \*h) {Hash swapped;swapped.size = 0;for (int i = 0; i < h->size; i++) {add(\&swapped, h->data\[i].value, h->data\[i].key);}return swapped;}// Merge hashHash merge(Hash \*h1, Hash \*h2) {Hash merged;merged.size = 0;// copy h1for (int i = 0; i < h1->size; i++) {add(\&merged, h1->data\[i].key, h1->data\[i].value);}// copy h2for (int i = 0; i < h2->size; i++) {add(\&merged, h2->data\[i].key, h2->data\[i].value);}return merged;}int main() {Hash person;person.size = 0;add(\&person, "name", "Alice");add(\&person, "age", "25");add(\&person, "city", "Bangkok");printf("Original: ");printHash(\&person);Hash swapped = invert(\&person);printf("Swapped: ");printHash(\&swapped);Hash merged = merge(\&person, \&swapped);printf("Merged: ");printHash(\&merged);return 0;}
-
-### Python <a href="#python" id="python"></a>
+#### Python <a href="#python" id="python"></a>
 
 ```python
 # Python มันไม่ได้เรียกว่า Hash จะเรียกว่า dictionary (dict)
@@ -177,10 +232,28 @@ print(merged)
 
 ***
 
-### Presentation <a href="#presentation" id="presentation"></a>
+## <mark style="color:$primary;">Presentation</mark> <a href="#presentation" id="presentation"></a>
 
-Link video:slice:
+Link video:
 
-### **Reference** <a href="#reference" id="reference"></a>
+slice:
 
-Ruby knowledge :​[https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive Ruby Programming.pdf](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf)​​[https://docs.ruby-lang.org/en/master/Hash.html#class-Hash-label-Common+Uses](https://docs.ruby-lang.org/en/master/Hash.html#class-Hash-label-Common+Uses)​C knowledge​[https://www.geeksforgeeks.org/dsa/implementation-of-hash-table-in-c-using-separate-chaining/](https://www.geeksforgeeks.org/dsa/implementation-of-hash-table-in-c-using-separate-chaining/)​Python knowledge​[https://www.w3schools.com/python/python\_dictionaries.asp](https://www.w3schools.com/python/python_dictionaries.asp)​Java knowledge​[https://www.w3schools.com/java/java\_hashmap.asp](https://www.w3schools.com/java/java_hashmap.asp)
+## <mark style="color:$primary;">**Reference**</mark> <a href="#reference" id="reference"></a>
+
+Ruby knowledge :
+
+[https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive Ruby Programming.pdf](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf)
+
+[https://docs.ruby-lang.org/en/master/Hash.html#class-Hash-label-Common+Uses](https://docs.ruby-lang.org/en/master/Hash.html#class-Hash-label-Common+Uses)
+
+C knowledge
+
+[https://www.geeksforgeeks.org/dsa/implementation-of-hash-table-in-c-using-separate-chaining/](https://www.geeksforgeeks.org/dsa/implementation-of-hash-table-in-c-using-separate-chaining/)
+
+Python knowledge
+
+[https://www.w3schools.com/python/python\_dictionaries.asp](https://www.w3schools.com/python/python_dictionaries.asp)
+
+Java knowledge
+
+[https://www.w3schools.com/java/java\_hashmap.asp](https://www.w3schools.com/java/java_hashmap.asp)
