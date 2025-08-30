@@ -126,7 +126,7 @@ puts 'This is backslash \\'
 
 # เปรียบเทียบภาษา
 ## Python
-ในภาษา Python เครื่องหมาย Single quote และ Double quote จะสามารถใช้ escape sequences และแทรกค่าได้เหมือนกัน
+ในภาษา Python เครื่องหมาย Single quote และ Double quote จะสามารถใช้ escape sequences ได้เหมือนกัน
 
 ```python
 print("Hello\nHi")
@@ -143,6 +143,8 @@ Hello</code></pre>
 
 >จากตัวอย่างด้านบนเราจะสังเกตเห็นว่าผลลัพธ์ที่ได้เหมือนกันต่างจากภาษา Ruby ที่ Single quote จะไม่สามารถใช้ \\n ได้
 
+ภาษา Python สามารถแทรกค่าหรือค่าจากตัวแปลได้เช่นเดียวกันกับภาษา Ruby
+
 ```python
 name = "Matz"
 print(f" Hi {name}")
@@ -157,7 +159,7 @@ Hello Matz
 one plus one equal 2</code></pre>
 </details>
 
->ภาษา Python จะสามารถอ้างอิงค่าจากตัวแปรได้ทั้งเครื่องหมาย Single quote และเครื่องหมาย Double quote ต่างตรงที่ Python จะใช้เป็น print(f"...")
+>Python ตอนแทรกค่า/ค่าจากตัวแปรจะใช้เป็น print(f"...") ส่วนใน Ruby จะใช้เป็น #{...}
 
 ## C
 ในภาษา C จะใช้แค่เครื่องหมาย Double quote ในการครอบสตริง
@@ -172,19 +174,39 @@ printf("Hello My Name is\nMatz")
 Matz</code></pre>
 </details>
 
-ในกรณีที่ต้องการแทรกค่าจากตัวแปรในภาษา C จะเขียนตัวแปรแยกออกมาจากสตริง
-```c
-int x = 20;
-printf("I\'m %d years old.",x);
+## Java
+ใน Java เครื่องหมาย Single quote จะใช้สำหรับ char ส่วนเครื่องหมาย Double quote จะใช้สำหรับครอบสตริงแบบเดียวกันกับภาษา Ruby
+
+```java
+char word = 'a';
+String str = "Bangkok";
+```
+
+>ถ้าใช้เครื่องหมาย single quote ครอบตัวอักษรที่มากกว่าหนึ่งตัวโปรแกรมจะเกิด error 
+
+```java
+System.out.println("Hi\nWassup");
 ```
 
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>I'm 20 years old.</code></pre>
+  <pre><code>Hi
+Wassup</code></pre>
 </details>
 
-## Java
+ใน Java เราสามารถแทรกค่า/ค่าจากตัวแปรได้เช่นเดียวกันกับ Ruby
 
+```java
+int x = 10
+System.out.println("I have " + x + " Baht in my bank account.");
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>I have 10 Baht in my bank account.</code></pre>
+</details>
+
+>หรืออีกวิธีคือการใช้ String.format()
 
 # Summary
 การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ <br>
@@ -204,3 +226,6 @@ printf("I\'m %d years old.",x);
 - https://www.geeksforgeeks.org/c/escape-sequence-in-c/
 - https://www.geeksforgeeks.org/c/g-fact/
 #### Java
+- https://stackoverflow.com/questions/439485/is-there-a-difference-between-single-and-double-quotes-in-java
+- https://www.geeksforgeeks.org/java/escape-sequences-in-java/
+- https://www.geeksforgeeks.org/java/java-program-to-illustrate-string-interpolation/
