@@ -241,7 +241,7 @@ arr = [1, 2, 3, 4, 5]
 print(len(arr))  # 5
 
 ```
-# การหาว่า Array ว่างมั้้ยใน Ruby
+# การหาว่า Array ว่างมั้ยใน Ruby
 >Ruby
 ```ruby
 arr = []
@@ -252,7 +252,7 @@ else
 end
 # Output: Array ว่าง
 ```
-# การหาว่า Array ว่างมั้้ยใน Java/C/Python
+# การหาว่า Array ว่างมั้ยใน Java/C/Python
 >Java
 ```java
 int[] arr = {};
