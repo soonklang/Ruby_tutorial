@@ -3,16 +3,15 @@
 บทความนี้ทำขึ้นเพื่อให้ความรู้ ในการเปลี่ยนชื่อและลบไฟล์ด้วยโปรแกรมภาษา Ruby โดยใช้เมธอด rename() และ delete() ซึ่งการดำเนินการเหล่านี้มีความสำคัญอย่างมากเมื่อต้องจัดการไฟล์ภายในระบบแฟ้มข้อมูล (file system) 
 
 ---
-
-### การลบไฟล์โดยใช้ delete()
-
-```ruby
-puts File.delete("sample1.txt")
-```
 ### การเปลี่ยนชื่อไฟล์โดยใช้ rename() 
 
 ```ruby
-puts File.rename("sample1.txt” ,"newSample.txt“)
+puts File.rename("sample1.txt” ,"newSample.txt“) # เปลี่ยนชื่อไฟล์จาก sample1.txt เป็น newSample.txt
+```
+### การลบไฟล์โดยใช้ delete()
+
+```ruby
+puts File.delete("sample1.txt") # ลบไฟล์ sample1.txt
 ```
 
 ---
