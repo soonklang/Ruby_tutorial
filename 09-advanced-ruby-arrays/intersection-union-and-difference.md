@@ -65,3 +65,7 @@ puts (a - b)
 - stackoverflow : https://stackoverflow.com/questions/5678108/how-can-i-get-the-intersection-union-and-subset-of-arrays-in-ruby
 - Ruby-lang : https://www.ruby-lang.org/en/ 
 - geeksforgeeks : https://www.geeksforgeeks.org/ruby/ruby-set-operations/
+- Github (lifeparticle) : https://github.com/lifeparticle/Ruby-Cheatsheet?tab=readme-ov-file
+- Github (ga-wdi-boston) : https://github.com/ga-wdi-boston/ruby-array-methods
+- Programming Ruby (Book) : https://jmvidal.cse.sc.edu/library/thomas05a.pdf
+- Ruby Cookbook by Lucas Carlson & Leonard Richardson : https://books.google.lk/books?id=oRqkBwAAQBAJ&printsec=copyright#v=onepage&q&f=false
