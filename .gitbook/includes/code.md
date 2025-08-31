@@ -35,7 +35,7 @@ if (ptr != NULL) {
     int index = ptr - str;
     printf("%d", index);
 } else {
-    printf(-1);
+    printf("%d", -1);
 }
 //Output: 2
 ```
