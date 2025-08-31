@@ -124,6 +124,49 @@ puts 'This is backslash \\'
   <pre><code>This is backslash \</code></pre>
 </details>
 
+## Alternative Quotes
+นอกจากเครื่องหมาย Single quote (') กับเครื่องหมาย Double quote (") แล้วก็ยังมี <br>
+%q (Alternative single quote) ทำงานเหมือนกับเครื่อง Single quote (จะเกิดการ escape sequences เฉพาะ \ ตามด้วย delimiters ที่ใช้) <br>
+%Q (Alternative double quote) และ % ทำงานเหมือนกับเครื่องหมาย Double quote (สามารถแทรกค่าและใช้ escape sequences ได้)
+
+```ruby
+str = "Hello Ruby"
+puts %Q[#{str}]
+puts %[#{str}]
+puts %q[#{str}\nHi Ruby]
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hello Ruby
+Hello Ruby
+#{str}\nHi Ruby</code></pre>
+</details>
+
+```ruby
+puts %q!I'm from Thailand\.!
+puts %q!I'm from Thailand\!!
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>I'm from Thailand\.
+I'm from Thailand!</code></pre>
+</details>
+
+>จากตัวอย่างด้านบนจะเห็นได้ว่า \\. ไม่เกิด escape sequences เนื่องจากว่าตัว delimiter ที่ใช้คือเครื่องหมาย !
+
+```ruby
+puts %Q^Hi I\'m Zen\.^
+puts %^Hi I\'m Zen\.^
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Hi I'm Zen.
+Hi I'm Zen.</code></pre>
+</details>
+
 # *เปรียบเทียบภาษา*
 ## Python
 ในภาษา Python เครื่องหมาย Single quote และ Double quote จะสามารถใช้ escape sequences ได้เหมือนกัน
