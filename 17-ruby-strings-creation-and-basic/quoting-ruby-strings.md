@@ -1,5 +1,5 @@
 # *Quoting Ruby Strings*
-สตริง (String) ในภาษา Ruby สามารถกำหนดขอบเขตได้ด้วยเครื่องหมาย ' (Single quote) หรือเครื่องหมาย " (Double quote) 
+Quoting string คือการกำหนดขอบเขตของสตริง (String)
 
 ```ruby
 word_1 = 'a'
@@ -9,10 +9,10 @@ str_1 = 'This is Ruby Language'
 str_2 = "This is Ruby Language"
 ```
 
-โดยทั้งสองเครื่องหมายทำหน้าที่ในการครอบข้อความให้เป็นสตริงเหมือนกันแต่มีวัตถุประสงค์แตกต่างกัน
-
 ## Double Quote (")
-เครื่องหมาย double quote จะอนุญาตให้เราใช้ escape sequences ได้หรือก็คือตัวอักษรที่ตามหลัง \ (Backslash) จะถูก Ruby ตีความว่าเป็นตัวอักษรตัวนั้นเลย
+เครื่องหมาย double quote จะอนุญาตให้เราใช้ escape sequences ได้
+
+>ถ้าตัวอักษรที่ตามหลังเครื่องหมาย \\ (backslash) ไม่ใช่ escape sequences ภาษา Ruby จะแสดงผลออกมาเป็นตัวอักษรตัวนั้นเลย
 
 ```ruby
 puts "Hello in Ruby\."
@@ -22,7 +22,7 @@ puts "Hello in Ruby\."
   <pre><code>Hello in Ruby.</code></pre>
 </details>
 
->จากตัวอย่างด้านบนเราจะเห็นได้ว่า \\. จะแสดงผลเป็น . อย่างเดียว
+>จากตัวอย่างด้านบนเราจะเห็นได้ว่า \\. จะแสดงผลเป็น . อย่างเดียวเนื่องจาก \\. ไม่ใช่ escape sequences
 
 ```ruby
 puts "This line already taken\nAlright I'll go to the new line"
@@ -33,9 +33,9 @@ puts "This line already taken\nAlright I'll go to the new line"
 Alright I'll go to the new line</code></pre>
 </details>
 
->ขึ้นบรรทัดใหม่เนื่องจากภายในสตริงมี \\n อยู่
+>ขึ้นบรรทัดใหม่เนื่องจากภายในสตริงมี \\n อยู่ (\\n เป็น escape sequences)
 
-นอกจากนี้แล้วการใช้เครื่องหมาย double quote ยังสามารถทำให้เราแทรกค่าจากตัวแปรหรือค่าอื่นๆเข้ามาในสตริงได้ด้วย
+นอกจากนี้แล้วการใช้เครื่องหมาย double quote ยังสามารถทำให้เราแทรกค่าหรือค่าจากตัวแปร (interpolation of other values) เข้ามาในสตริงได้ด้วย
 
 ```ruby
 name = "Yukihiro Matsumoto"
@@ -89,7 +89,7 @@ puts 'The creator of Ruby language is #{name}.'
   <pre><code>The creator of Ruby language is #{name}.</code></pre>
 </details>
 
->จากตัวอย่างด้านบนจะเห็นว่า Ruby แสดงผลตรงส่วนของ #{name} ออกมาแบบนั้นเลยไม่ได้ไปดึงค่าจากตัวแปร name มา
+>จากตัวอย่างด้านบนจะเห็นว่า Ruby แสดงผลตรงส่วนของ #{name} ออกมาแบบนั้นเลยไม่ได้ไปดึงค่าจากตัวแปร name มาใส่ในสตริง
 
 ```ruby
 puts 'one plus one is equal #{1+1}.'
@@ -125,9 +125,9 @@ puts 'This is backslash \\'
 </details>
 
 ## Alternative Quotes
-นอกจากเครื่องหมาย Single quote (') กับเครื่องหมาย Double quote (") แล้วก็ยังมี <br>
-%q (Alternative single quote) ทำงานเหมือนกับเครื่อง Single quote (จะเกิดการ escape sequences เฉพาะ \ ตามด้วย delimiters ที่ใช้) <br>
-%Q (Alternative double quote) และ % ทำงานเหมือนกับเครื่องหมาย Double quote (สามารถแทรกค่าและใช้ escape sequences ได้)
+วิธีนี้จะคล้ายกับการใช้เครื่องหมาย single quote และ double quote โดยจะมีข้อแตกต่างกันเล็กน้อย<br>
+%q (Alternative single quote) ทำงานเหมือนกับเครื่อง Single quote แต่จะเกิดการ escape sequences เฉพาะ \ ตามด้วย delimiters ที่ใช้ <br>
+%Q หรือ % (Alternative double quote) และ % ทำงานเหมือนกับเครื่องหมาย Double quote สามารถแทรกค่าและใช้ escape sequences ได้
 
 ```ruby
 str = "Hello Ruby"
@@ -143,18 +143,23 @@ Hello Ruby
 #{str}\nHi Ruby</code></pre>
 </details>
 
+สิ่งที่แตกต่างจากเครื่องหมาย single quote และ double quote คือ alternative quote เราสามารถเปลี่ยนตัว delimiter ได้ทำให้อ่านได้ง่ายขึ้นเวลาที่ต้องการจะใช้ ' หรือ " ภายในสตริง
+
 ```ruby
+puts 'I\'m from Thailand.'
 puts %q!I'm from Thailand\.!
 puts %q!I'm from Thailand\!!
 ```
 
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>I'm from Thailand\.
+  <pre><code>I'm from Thailand.
+I'm from Thailand\.
 I'm from Thailand!</code></pre>
 </details>
 
->จากตัวอย่างด้านบนจะเห็นได้ว่า \\. ไม่เกิด escape sequences เนื่องจากว่าตัว delimiter ที่ใช้คือเครื่องหมาย !
+>จากตัวอย่างด้านบนจะเห็นได้ว่า \\. ไม่เกิด escape sequences เนื่องจากตัว delimiter ที่ใช้คือเครื่องหมาย ! <br>
+ต่างจาก single quote ที่จะเกิด escape sequences แค่เฉพาะกับ \\\ และ \\'
 
 ```ruby
 puts %Q^Hi I\'m Zen\.^
@@ -166,6 +171,8 @@ puts %^Hi I\'m Zen\.^
   <pre><code>Hi I'm Zen.
 Hi I'm Zen.</code></pre>
 </details>
+
+## Here Document
 
 # *เปรียบเทียบภาษา*
 ## Python
