@@ -63,7 +63,7 @@ printf("%zu",strlen("こんにちは"));
 
 | Ruby                                                                                                      | Java                                                      | Python                                                                  | C                                                                                                         |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| ใช้ method _<mark style="color:$danger;">.length</mark>_ หรือ _<mark style="color:$danger;">.size</mark>_ | ใช้ method _<mark style="color:purple;">.length()</mark>_ | ใช้ Built-in Function แทนคือ _<mark style="color:yellow;">len()</mark>_ | ใช้ function ชื่อ _<mark style="color:blue;">strlen()</mark>_ ที่ ถูก import จาก library ชื่อ \<string.h> |
+| ใช้ Method _<mark style="color:$danger;">.length</mark>_ หรือ _<mark style="color:$danger;">.size</mark>_ | ใช้ Method _<mark style="color:purple;">.length()</mark>_ | ใช้ Built-in Function แทนคือ _<mark style="color:yellow;">len()</mark>_ | ใช้ Function ชื่อ _<mark style="color:blue;">strlen()</mark>_ ที่ ถูก import จาก library ชื่อ \<string.h> |
 
 ### .empty?
 
@@ -107,9 +107,9 @@ printf("%d", strlen("こんにちは") == 0);
 
 #### เปรียบเทียบ <mark style="color:$danger;">Ruby</mark> กับภาษาโปรแกรมอื่นๆ
 
-| Ruby                                                      | Java                                                       | Python                                                                                                                                                                                                       | C                                                                                                |
-| --------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| ใช้ method  _<mark style="color:$danger;">.empty?</mark>_ | ใช้ method _<mark style="color:purple;">.isEmpty()</mark>_ | <mark style="color:yellow;">ไม่มีทั้ง</mark> Method ให้เรียกใช้โดยตรงและ Built-in Method เราสามารถประยุกต์ใช้ _<mark style="color:yellow;">len()</mark>_ <mark style="color:yellow;">== 0</mark> หรือไม่ ได้ | เหมือนกับ Python เราสามารถประยุกต์ใช้ <mark style="color:blue;">strlen() == 0</mark> หรือไม่ ได้ |
+| Ruby                                                      | Java                                                       | Python                                                                                                                                                                                                       | C                                                                                                  |
+| --------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| ใช้ Method  _<mark style="color:$danger;">.empty?</mark>_ | ใช้ Method _<mark style="color:purple;">.isEmpty()</mark>_ | <mark style="color:yellow;">ไม่มีทั้ง</mark> Method ให้เรียกใช้โดยตรงและ Built-in Method เราสามารถประยุกต์ใช้ _<mark style="color:yellow;">len()</mark>_ <mark style="color:yellow;">== 0</mark> หรือไม่ ได้ | เหมือนกับ Python เราสามารถประยุกต์ใช้ _<mark style="color:blue;">strlen() == 0</mark>_ หรือไม่ ได้ |
 
 ### .index(\<substring | regexp> \*, offset = 0)
 
@@ -127,9 +127,9 @@ pointer ที่ชี้ไปยังตำแหน่งแรกของ
 
 #### เปรียบเทียบ <mark style="color:$danger;">Ruby</mark> กับภาษาโปรแกรมอื่นๆ
 
-| Ruby                                             | Java                                               | Python                                         | C                                                                                                                               |
-| ------------------------------------------------ | -------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| ใช้ <mark style="color:$danger;">.index()</mark> | ใช้ <mark style="color:purple;">.indexOf()</mark>  | ใช้ <mark style="color:yellow;">.find()</mark> | <mark style="color:blue;">ไม่มี</mark> อาจต้อง #include \<string.h> แล้วเรียกใช้ strchr() หรือ strstr() ตาม argument ที่ใส่ลงไป |
+| Ruby                                                      | Java                                                        | Python                                                  | C                                                                                                                                      |
+| --------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| ใช้ Method _<mark style="color:$danger;">.index()</mark>_ | ใช้ Method _<mark style="color:purple;">.indexOf()</mark>_  | ใช้ Method _<mark style="color:yellow;">.find()</mark>_ | <mark style="color:blue;">ไม่มี</mark> เราอาจต้อง #include \<string.h> แล้วเรียกใช้ _strchr()_ หรือ _strstr()_ ตาม Argument ที่ใส่ลงไป |
 
 ***
 
@@ -143,7 +143,7 @@ pointer ที่ชี้ไปยังตำแหน่งแรกของ
 
 {% embed url="https://www.freecodecamp.org/news/ruby-string-methods-explained-length-empty-and-other-built-in-methods/" %}
 
-{% embed url="https://ruby-doc.org/3.4.1/String.html#method-i-length" %}
+{% embed url="https://ruby-doc.org/3.4.1/String.html#class-String-label-What-27s+Here" %}
 
 {% embed url="https://docs.python.org/3/library/functions.html#len" fullWidth="false" %}
 
