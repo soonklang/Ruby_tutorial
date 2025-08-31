@@ -1,21 +1,24 @@
 # Renaming and Deleting Files in Ruby
 
- ในบทความนี้ทำขึ้นเพื่อให้ความรู้ ในการเปลี่ยนชื่อและลบไฟล์ด้วยโปรแกรมภาษา Ruby โดยใช้เมธอด rename() และ delete() ซึ่งการดำเนินการเหล่านี้มีความสำคัญอย่างมากเมื่อต้องจัดการไฟล์ภายในระบบแฟ้มข้อมูล (file system) 
+บทความนี้ทำขึ้นเพื่อให้ความรู้ ในการเปลี่ยนชื่อและลบไฟล์ด้วยโปรแกรมภาษา Ruby โดยใช้เมธอด rename() และ delete() ซึ่งการดำเนินการเหล่านี้มีความสำคัญอย่างมากเมื่อต้องจัดการไฟล์ภายในระบบแฟ้มข้อมูล (file system) 
 
-## การลบไฟล์โดยใช้ delete()
+---
+
+### การลบไฟล์โดยใช้ delete()
 
 ```ruby
 puts File.delete("sample1.txt")
 ```
-## การเปลี่ยนชื่อไฟล์โดยใช้ rename() 
+### การเปลี่ยนชื่อไฟล์โดยใช้ rename() 
 
 ```ruby
 puts File.rename("sample1.txt” ,"newSample.txt“)
 ```
 
+---
 
 เมื่อทำการเปลี่ยนชื่อหรือลบไฟล์ สิ่งสำคัญคือต้องจัดการข้อยกเว้น (exceptions) เพื่อรองรับข้อผิดพลาดที่อาจเกิดขึ้น ตัวอย่างเช่น หากไฟล์ไม่มีอยู่จริง การพยายามเปลี่ยนชื่อหรือลบไฟล์นั้นจะทำให้เกิดข้อผิดพลาดได้ เพื่อจัดการกรณีเหล่านี้ สามารถใช้โครงสร้าง begin...rescue...end ได้
-## ตัวอย่าง:
+### ตัวอย่าง:
 ```ruby
 begin
 	File.delete(“not_found.txt”)
@@ -24,13 +27,15 @@ begin
 	puts “Error: #{e.message}”
 end
 ```
-## Output (หากไฟล์ไม่มีอยู่จริง) :
+### Output (หากไฟล์ไม่มีอยู่จริง) :
 
 ```ruby
 Error: No such file or directory @ unlink_internal - not_found.txt
 ```
 
-# ความแตกต่างของการเปลี่ยนชื่อไฟล์และลบไฟล์ในภาษา Ruby กับ ภาษา C, Java, Python
+---
+
+## ความแตกต่างของการเปลี่ยนชื่อไฟล์และลบไฟล์ในภาษา Ruby กับ ภาษา C, Java, Python
 
 * ภาษา C
 ```c
@@ -57,6 +62,8 @@ boolean b = f1.delete();
 ```
 
 * ภาษา Python
+
+  
 ในการเปลี่ยนชื่อและลบไฟล์ ใช้ฟังก์ชันที่มีอยู่แล้วในโมดูล os 
 ```python
 import os
@@ -71,10 +78,12 @@ import os
 file_name = "file_to_delete.txt"
 #การลบไฟล์
 os.remove(file_name) 
-print("File deleted successfully!")`
+print("File deleted successfully!")
 ```
-    
-# ตารางเปรียบเทียบภาษา Ruby VS C, Java, Python
+
+---
+
+## ตารางเปรียบเทียบภาษา Ruby VS C, Java, Python
 
 |          | Ruby          | C            | Java          | Python          |
 |------------------|---------------------------|-------------------------|-------------------------------|---------------------------|
@@ -86,13 +95,13 @@ print("File deleted successfully!")`
 
 จากการเปรียบเทียบจะเห็นว่า Ruby และ Python ใช้คำสั่งสำเร็จรูป ไม่ต้องจัดการไฟล์โดยตรง สามารถสั่งงานได้เลย 
 
-# คลิปนำเสนอ
+## คลิปนำเสนอ
 
 
-# สไลด์บรรยาย
+## สไลด์บรรยาย
 
 
-# แหล่งที่มา
+## แหล่งที่มา
 GeeksforGeeks. (2019, November 29). File handling in Ruby. GeeksforGeeks. https://www.geeksforgeeks.org/ruby/file-handling-in-ruby/
 
 Ruby - File I/O. (n.d.). https://www.tutorialspoint.com/ruby/ruby_input_output.htm
