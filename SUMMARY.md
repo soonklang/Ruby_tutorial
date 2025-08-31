@@ -6,8 +6,6 @@
 
 * [Ruby](0-introduction/page-2.md)
 
-## 7 Ruby Ranges
-
 ## 01 Comments
 
 * [Comment](01-comments/comment.md)
