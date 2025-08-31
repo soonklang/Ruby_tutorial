@@ -6,7 +6,7 @@
  
  > กำหนดให้ class A เป็นคลาสที่มีตัวแปร static num มีค่าเป็น 0  จากนั้นเราสร้าง object b และ c ดังนั่น  b และcใช้ตัวแปร num ร่วมกัน
 
-![Local Image](picture/diagram.jpg)
+![Local Image](picture660710115/diagram.jpg)
 >
 >
 static ในแต่ละภาษาก็จะมีความแตกต่างกัน เช่นในภาษา C กับjava จะมี keywordในการบอกว่าเป็นstatic โดยใช้ “static” นำหน้าชื่อเมธอดหรือชื่อตัวแปร 
