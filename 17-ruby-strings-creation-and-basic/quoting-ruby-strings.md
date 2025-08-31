@@ -162,7 +162,7 @@ one plus one equal 2</code></pre>
 >Python ตอนแทรกค่า/ค่าจากตัวแปรจะใช้เป็น print(f"...") ส่วนใน Ruby จะใช้เป็น #{...}
 
 ## C
-ในภาษา C จะใช้แค่เครื่องหมาย Double quote ในการครอบสตริง
+ในภาษา C จะใช้แค่เครื่องหมาย Double quote ในการครอบสตริงส่วนเครื่องหมาย Single quote จะใช้ในการครอบตัวอักษร (char)
 
 ```c
 printf("Hello My Name is\nMatz")
@@ -174,8 +174,10 @@ printf("Hello My Name is\nMatz")
 Matz</code></pre>
 </details>
 
+>ภาษา C ไม่สามารถทำการแทรกค่าลงสตริงได้ (String interpolation)
+
 ## Java
-ใน Java เครื่องหมาย Single quote จะใช้สำหรับ char ส่วนเครื่องหมาย Double quote จะใช้สำหรับครอบสตริงแบบเดียวกันกับภาษา Ruby
+ใน Java เครื่องหมาย Single quote จะใช้สำหรับครอบตัวอักษร (char) ส่วนเครื่องหมาย Double quote จะใช้สำหรับครอบสตริงแบบเดียวกันกับภาษา Ruby
 
 ```java
 char word = 'a';
@@ -206,7 +208,7 @@ System.out.println("I have " + x + " Baht in my bank account.");
   <pre><code>I have 10 Baht in my bank account.</code></pre>
 </details>
 
->หรืออีกวิธีคือการใช้ String.format()
+>หรืออีกวิธีคือการใช้ String.format() และอื่นๆ
 
 # *Summary*
 การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ <br>
@@ -215,20 +217,31 @@ System.out.println("I have " + x + " Baht in my bank account.");
 
 # *Reference*
 #### Ruby
-- https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics#Quoting_Ruby_Strings
-- https://docs.ruby-lang.org/en/master/syntax/literals_rdoc.html#label-String+Literals
-- https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
+- Smyth, N. (2016, October 27). Quoting Ruby Strings. Techotopia. Retrieved August 30,2025, From <br>
+  https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics#Quoting_Ruby_Strings
+- Ruby Core Team. (n.d.). Literals: String Literals. Ruby documentation. Retrieved August 30, 2025, From <br>
+  https://docs.ruby-lang.org/en/master/syntax/literals_rdoc.html#label-String+Literals
+- de Bruijn, T. (2016, December 21). Escaping characters in Ruby. Appsignal
+  https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
 #### Python
-- https://www.geeksforgeeks.org/python/python-escape-characters/
-- https://www.geeksforgeeks.org/python/single-and-double-quotes-python/
-- https://www.w3schools.com/python/python_strings_escape.asp
+- GeeksforGeeks. (2025, April 28). Python Escape Characters. GeeksforGeeks. Retrieved August 30,2025, From <br>
+  https://www.geeksforgeeks.org/python/python-escape-characters/
+- GeeksforGeeks. (2023, Mar 31). Single and Double Quotes | Python. GeeksforGeeks. Retrieved August 30,2025, From <br>
+  https://www.geeksforgeeks.org/python/single-and-double-quotes-python/
+- W3Schools. (n.d.). Python - Escape Characters. W3School. W3Schools. Retrieved August 30,2025, From <br>
+  https://www.w3schools.com/python/python_strings_escape.asp
 #### C
-- https://www.geeksforgeeks.org/c/escape-sequence-in-c/
-- https://www.geeksforgeeks.org/c/g-fact/
+- GeeksforGeeks. (2025, July 23). Escape Sequence in C. GeeksforGeeks. Retrieved August 30,2025, From <br>
+  https://www.geeksforgeeks.org/c/escape-sequence-in-c/
+- Wikipedia. (2025 August 28). String interpolation. Wikipedia. Retrieved August 30,2025, From <br>
+  https://en.wikipedia.org/wiki/String_interpolation
 #### Java
-- https://stackoverflow.com/questions/439485/is-there-a-difference-between-single-and-double-quotes-in-java
-- https://www.geeksforgeeks.org/java/escape-sequences-in-java/
-- https://www.geeksforgeeks.org/java/java-program-to-illustrate-string-interpolation/
+- Stack Overflow. (2009, January 13). Is there a difference between single and double quotes in Java? . Stack Overflow. Retrieved August 30,2025, From <br>
+  https://stackoverflow.com/questions/439485/is-there-a-difference-between-single-and-double-quotes-in-java
+- GeeksforGeeks. (2023, November 1). Escape Sequences in Java. GeeksforGeeks. Retrieved August 30,2025, From <br>
+  https://www.geeksforgeeks.org/java/escape-sequences-in-java/
+- GeeksforGeeks. (2025, July 23). String Interpolation in Java. GeeksforGeeks. Retrieved August 30,2025, From <br>
+  https://www.geeksforgeeks.org/java/java-program-to-illustrate-string-interpolation/
 
 # *Presentation*
 # *Video*
