@@ -8,31 +8,73 @@
 
 ![Image](https://github.com/user-attachments/assets/d1cd0950-c875-4667-bc9e-2a00c5aa98c1)
 
-**Syntax**
+**Basic Syntax**
 ``` ruby
-while conditional_expression[do]
- # code to be executed
+while condition[do]
+  # code block
 end
 ```
 
 >* while ต้องมี end ปิดเสมอ
->* conditional expression(เงื่อนไข) : มีค่าเป็นจริง(true) หรือเท็จ(false)
->
->   ตัวอย่างค่า conditional expression เช่น true, false , 1<2 , nil(ในการเช็คเงื่อนไขจะถูกพิจารณาเป็นfalse) เป็นต้น
+>* condition(เงื่อนไข) : มีค่าเป็นจริง(true) หรือเท็จ(false)
+>  
+>    ตัวอย่างค่า conditional expression เช่น true, false , 1<2 , !numbers.empty? && numbers.first < 4 , nil เป็นต้น
 >* do จะเขียนหรือไม่เขียนก็ได้
 
-nil คือค่าในหลายภาษาโปรแกรมที่ใช้แสดงว่า “ไม่มีค่า” หรือ “ไม่ได้กำหนดค่า” เช่นเดียวกับ null ใน java ,NULL ใน C,C++,nil ใน Go
-
-ใน Ruby nil เป็นอ็อบเจ็กต์หนึ่งของคลาส NilClass และใช้สื่อถึงความว่างเปล่าหรือไม่มีข้อมูลในตัวแปรนั้น
-
+ใน Ruby nil เป็นอ็อบเจ็กต์หนึ่งของคลาส NilClass และใช้สื่อถึงความว่างเปล่าหรือไม่มีข้อมูลในตัวแปรนั้น เช่นเดียวกับ null ใน java ,NULL ใน C,C++,nil ใน Go
 ```ruby
 puts nil == false     # false   (nil ไม่เท่ากับ false)
 ```
 >ดังนั้น nil ไม่ได้มีค่าเป็น false แค่ถูกพิจารณาให้เป็น false ตอนเช็คเงื่อนไข
 
-**ข้อดี:เหมาะกับงานทำซ้ำที่ไม่ทราบจำนวนรอบที่แน่นอน**
+**Modifier Form**
+```ruby
+statement while condition
+```
+```ruby
+i = 0
+puts i += 1 while i < 3
+# Output: 1, 2, 3
+```
+**begin...end while**
+```ruby
+begin
+  # code
+end while condition
+```
+>เนื่องจากRubyไม่มี do-while loop สามารถใช้ begin-while loop แทนได้(จะทำในบล็อกอย่างน้อย 1 รอบ)
+```ruby
+i = 0
+begin
+  puts "i = #{i}"
+  i += 1
+end while i < 3
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>i = 0
+i = 1
+i = 2
+</code></pre>
+</details>
 
-**ข้อควรระวัง:การเกิดลูปไม่รู้จบ(infinite loop)**
+**Return ค่า**
+>while loop จะreturnค่า nil เว้นแต่ใช้ break เพื่อส่งค่าออกมา
+```ruby
+i = 0
+result = while i < 5
+  i += 1
+  if i == 3
+    break "Found three!"
+  end
+end
+
+puts result # ผลลัพธ์คือ "Found three!"
+```
+
+**ข้อดี : เหมาะกับงานทำซ้ำที่ไม่ทราบจำนวนรอบที่แน่นอน**
+
+**ข้อควรระวัง : การเกิดลูปไม่รู้จบ(infinite loop)**
 
 **วิธีแก้**
 * เพิ่มตัวแปรนับรอบลูป
