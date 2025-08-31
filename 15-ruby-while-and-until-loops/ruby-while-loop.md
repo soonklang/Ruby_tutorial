@@ -14,18 +14,34 @@ while condition[do]
   # code block
 end
 ```
+``` ruby
+count = 1
+while count <= 5
+  puts count
+  count += 1
+end
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>1
+2
+3
+4
+5
+</code></pre>
+</details>
 
 >* while ต้องมี end ปิดเสมอ
 >* condition(เงื่อนไข) : มีค่าเป็นจริง(true) หรือเท็จ(false)
 >  
->    ตัวอย่างค่า conditional expression เช่น true, false , 1<2 , !numbers.empty? && numbers.first < 4 , nil เป็นต้น
+>    ตัวอย่างค่า condition เช่น true, false , 1<2 , !numbers.empty? && numbers.first < 4 , nil เป็นต้น
 >* do จะเขียนหรือไม่เขียนก็ได้
 
 ใน Ruby nil เป็นอ็อบเจ็กต์หนึ่งของคลาส NilClass และใช้สื่อถึงความว่างเปล่าหรือไม่มีข้อมูลในตัวแปรนั้น เช่นเดียวกับ null ใน java ,NULL ใน C,C++,nil ใน Go
 ```ruby
 puts nil == false     # false   (nil ไม่เท่ากับ false)
 ```
->ดังนั้น nil ไม่ได้มีค่าเป็น false แค่ถูกพิจารณาให้เป็น false ตอนเช็คเงื่อนไข
+>ดังนั้น nil ไม่ได้มีค่าเป็น false แต่แค่ถูกพิจารณาให้เป็น false ตอนเช็คเงื่อนไข
 
 **Modifier Form**
 ```ruby
@@ -34,8 +50,17 @@ statement while condition
 ```ruby
 i = 0
 puts i += 1 while i < 3
-# Output: 1, 2, 3
 ```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>1
+2
+3
+</code></pre>
+</details>
+
+>เป็นการเขียนย่อแบบbasic syntax โดยไม่ต้องเขียน end
+
 **begin...end while**
 ```ruby
 begin
@@ -58,19 +83,19 @@ i = 2
 </code></pre>
 </details>
 
-**Return ค่า**
->while loop จะreturnค่า nil เว้นแต่ใช้ break เพื่อส่งค่าออกมา
+**Return Value**
 ```ruby
-i = 0
-result = while i < 5
-  i += 1
-  if i == 3
-    break "Found three!"
-  end
+result = while true
+  break "hello"
 end
+puts result  # Output: "hello"
 
-puts result # ผลลัพธ์คือ "Found three!"
+result = while false
+  "never executed"
+end
+puts result  # Output: nil
 ```
+>while loop จะreturnค่า nil เว้นแต่จะใช้ break เพื่อส่งค่าออกมา
 
 **ข้อดี : เหมาะกับงานทำซ้ำที่ไม่ทราบจำนวนรอบที่แน่นอน**
 
@@ -95,7 +120,7 @@ end
 ``` 
 > gets ใช้รับ input จากคีย์บอร์ด , to_i ใช้แปลง string เป็น integer 
 
-### การเปรียบเทียบแต่ละภาษา(Ruby,Python,Java,C)
+### การเปรียบเทียบแต่ละภาษา(Python,Java,C)
 
 **Ruby**
 ``` Ruby
@@ -141,10 +166,8 @@ public class WhileLoopExample {
 }
 ```
 > สิ่งที่ต่างจากRubyคือ
->* ต้องประกาศชนิดข้อมูลของตัวแปร (Static Typing) เช่น int i;
 >* เงื่อนไขของต้องอยู่ในวงเล็บ ()
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
->* ทุกคำสั่งต้องลงท้ายด้วย ;
 
 **C**
 ``` C
@@ -160,10 +183,8 @@ int main() {
 }
 ```
 > สิ่งที่ต่างจากRubyคือ
->* ต้องประกาศชนิดข้อมูลของตัวแปร (Static Typing) เช่น int i;
 >* เงื่อนไขของต้องอยู่ในวงเล็บ ()
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
->* ทุกคำสั่งต้องลงท้ายด้วย ;
 >  
 > ***เนื่องจากJavaได้รับอิทธิพลจากCทำให้syntaxมีความคล้ายคลึงกันมาก ดังนั้นสิ่งที่ต่างจากRubyจึงเหมือนกับJava***
 
@@ -172,13 +193,13 @@ int main() {
 * Ruby Core Team. (n.d.). Control expressions: while loop. Ruby documentation. Retrieved August 30, 2025, from https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-while+Loop
 * Cooper, P. (2016). Beginning Ruby: From novice to professional (3rd ed.), Apress. from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
 * Tutorialspoint. (n.d.). Ruby - loops. Tutorialspoint. Retrieved August 30, 2025, from https://www.tutorialspoint.com/ruby/ruby_loops.htm
-* GeeksforGeeks. (n.d.). Ruby loops (for, while, do while, until). GeeksforGeeks. Retrieved August 30, 2025, from https://www.geeksforgeeks.org/ruby/ruby-loops-for-while-do-while-until/
+* GeeksforGeeks. (2025, 11 Jul). Ruby loops (for, while, do while, until). GeeksforGeeks. Retrieved August 30, 2025, from https://www.geeksforgeeks.org/ruby/ruby-loops-for-while-do-while-until/
 * Codecademy. (n.d.). The while loop. In Learn Ruby: Loops & iterators. Codecademy. Retrieved August 30, 2025, from https://www.codecademy.com/courses/learn-ruby/lessons/loops-iterators
 * Chongnguluam, W. (2020, January 6). Ruby nil object. Dev.to. https://dev.to/iporsut/ruby-nil-object-16fm
 * How.dev. (n.d.). What is the difference between nil and false in Ruby? How.dev. Retrieved August 30, 2025, from https://how.dev/answers/what-is-the-difference-between-nil-and-false-in-ruby
   
-การเปรียบเทียบ
-* Python Software Foundation. (n.d.). The while statement. In The Python Language Reference (Python 3). https://docs.python.org/3/reference/compound_stmts.html#while
+Referencesที่ใช้เปรียบเทียบกับภาษาอื่น
+* Python Software Foundation. (2025, Aug 31). The while statement. In The Python Language Reference (Python 3). https://docs.python.org/3/reference/compound_stmts.html#while
 * W3Schools. (n.d.). Python while loops. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/python/python_while_loops.asp
 * Oracle. (2023). The while statement. In Java Language Specification: Java SE 20 Edition (Section 14.12). Oracle Corporation. https://docs.oracle.com/javase/specs/jls/se20/html/jls-14.html#jls-14.12
 * W3Schools. (n.d.). Java while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/java/java_while_loop.asp
@@ -186,6 +207,7 @@ int main() {
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
+[RUBY WHILE LOOP.pdf](https://github.com/user-attachments/files/22068093/RUBY.WHILE.LOOP.pdf)
 
 ### Video
 
