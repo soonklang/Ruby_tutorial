@@ -264,26 +264,30 @@ System.out.println("I have " + x + " Baht in my bank account.");
   https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics#Quoting_Ruby_Strings
 - Ruby Core Team. (n.d.). Literals: String Literals. Ruby documentation. Retrieved August 30, 2025, From <br>
   https://docs.ruby-lang.org/en/master/syntax/literals_rdoc.html#label-String+Literals
-- de Bruijn, T. (2016, December 21). Escaping characters in Ruby. Appsignal
+- de Bruijn, T. (2016, December 21). Escaping characters in Ruby. Appsignal. Retrieved August 30, 2025, From <br>
   https://blog.appsignal.com/2016/12/21/ruby-magic-escaping-in-ruby.html
+- Wikibooks. (2022, August 22). Ruby Programming/Alternate quotes. Retrieved August 31, 2025, From <br>
+  https://en.wikibooks.org/wiki/Ruby_Programming/Alternate_quotes
+- Codecademy. (2013). Single and Double Quotation Marks in Ruby and Escaping. Retrieved August 31, 2025, From <br>
+  https://www.codecademy.com/forum_questions/51d1f89d8c1cccd6ab0004f4
 #### Python
-- GeeksforGeeks. (2025, April 28). Python Escape Characters. GeeksforGeeks. Retrieved August 30,2025, From <br>
+- GeeksforGeeks. (2025, April 28). Python Escape Characters. GeeksforGeeks. Retrieved August 30, 2025, From <br>
   https://www.geeksforgeeks.org/python/python-escape-characters/
-- GeeksforGeeks. (2023, Mar 31). Single and Double Quotes | Python. GeeksforGeeks. Retrieved August 30,2025, From <br>
+- GeeksforGeeks. (2023, Mar 31). Single and Double Quotes | Python. GeeksforGeeks. Retrieved August 30, 2025, From <br>
   https://www.geeksforgeeks.org/python/single-and-double-quotes-python/
-- W3Schools. (n.d.). Python - Escape Characters. W3School. W3Schools. Retrieved August 30,2025, From <br>
+- W3Schools. (n.d.). Python - Escape Characters. W3School. W3Schools. Retrieved August 30, 2025, From <br>
   https://www.w3schools.com/python/python_strings_escape.asp
 #### C
-- GeeksforGeeks. (2025, July 23). Escape Sequence in C. GeeksforGeeks. Retrieved August 30,2025, From <br>
+- GeeksforGeeks. (2025, July 23). Escape Sequence in C. GeeksforGeeks. Retrieved August 30, 2025, From <br>
   https://www.geeksforgeeks.org/c/escape-sequence-in-c/
-- Wikipedia. (2025 August 28). String interpolation. Wikipedia. Retrieved August 30,2025, From <br>
+- Wikipedia. (2025 August 28). String interpolation. Wikipedia. Retrieved August 30, 2025, From <br>
   https://en.wikipedia.org/wiki/String_interpolation
 #### Java
-- Stack Overflow. (2009, January 13). Is there a difference between single and double quotes in Java? . Stack Overflow. Retrieved August 30,2025, From <br>
+- Stack Overflow. (2009, January 13). Is there a difference between single and double quotes in Java? . Stack Overflow. Retrieved August 30, 2025, From <br>
   https://stackoverflow.com/questions/439485/is-there-a-difference-between-single-and-double-quotes-in-java
-- GeeksforGeeks. (2023, November 1). Escape Sequences in Java. GeeksforGeeks. Retrieved August 30,2025, From <br>
+- GeeksforGeeks. (2023, November 1). Escape Sequences in Java. GeeksforGeeks. Retrieved August 30, 2025, From <br>
   https://www.geeksforgeeks.org/java/escape-sequences-in-java/
-- GeeksforGeeks. (2025, July 23). String Interpolation in Java. GeeksforGeeks. Retrieved August 30,2025, From <br>
+- GeeksforGeeks. (2025, July 23). String Interpolation in Java. GeeksforGeeks. Retrieved August 30, 2025, From <br>
   https://www.geeksforgeeks.org/java/java-program-to-illustrate-string-interpolation/
 
 # *Presentation*
