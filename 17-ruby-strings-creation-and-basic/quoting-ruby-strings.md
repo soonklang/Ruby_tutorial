@@ -1,14 +1,6 @@
 # *Quoting Ruby Strings*
 Quoting string คือการกำหนดขอบเขตของสตริง (String)
 
-```ruby
-word_1 = 'a'
-word_2 = "a"
-
-str_1 = 'This is Ruby Language'
-str_2 = "This is Ruby Language"
-```
-
 ## Double Quote (")
 เครื่องหมาย double quote จะอนุญาตให้เราใช้ escape sequences ได้
 
