@@ -54,6 +54,11 @@ puts (a - b)
    1,2 
 </details>
 
+
+## ตัวอย่างในภาษา C, Java, Python
+
+
+
 ---
 
 # Reference
