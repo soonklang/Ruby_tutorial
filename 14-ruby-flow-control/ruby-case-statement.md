@@ -124,3 +124,12 @@ end
   You order Ristretto!
 </code></pre>
 </details>
+
+
+
+
+
+
+
+### Reference
+* [https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops](https://www.geeksforgeeks.org/ruby/ruby-case-statement/)
