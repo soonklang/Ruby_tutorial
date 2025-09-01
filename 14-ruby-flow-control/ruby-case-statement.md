@@ -29,6 +29,8 @@ end
 
 **ตัวอย่าง**
 
+โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when เมื่อเจอเงื่อนไขที่ตรงกันก็ได้ output ตามเงื่อนไขเเต่หากตรวจครบทุก when เเล้ว ก็เจ้าสู่เงื่อยไข else เเละ wfh output เป็น Default!
+
 ``` ruby
 # concept of case statement
 
