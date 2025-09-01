@@ -126,6 +126,52 @@ int main() {
   1 2 3 4 5 
 </details>
 
+
+
+
+
+## Difference ( - ) | C
+<pre>
+  #include <stdio.h>
+
+int main() {
+    int a[] = {1, 2, 3};
+    int b[] = {3, 4, 5};
+    int sizeA = sizeof(a) / sizeof(a[0]);
+    int sizeB = sizeof(b) / sizeof(b[0]);
+
+    int diff[10];
+    int sizeDiff = 0;
+
+    for (int i = 0; i < sizeA; i++) {
+        int found = 0;
+        for (int j = 0; j < sizeB; j++) {
+            if (a[i] == b[j]) {
+                found = 1;
+                break;
+            }
+        }
+        if (!found) {
+            diff[sizeDiff++] = a[i];
+        }
+    }
+
+    printf("a - b: ");
+    for (int i = 0; i < sizeDiff; i++) {
+        printf("%d ", diff[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  1 2 
+</details>
+
 ---
 
 # Reference
