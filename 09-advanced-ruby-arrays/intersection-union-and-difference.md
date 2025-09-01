@@ -31,12 +31,12 @@ puts (a & b)
 
 
 ### 2.) Union ( | ) | Ruby
-<pre>
+```ruby
 a = [1, 2, 3]
 b = [3, 4, 5]
 
 puts (a | b)
-</pre>
+```
 
 เรามาต่อกันที่ตัวต่อไปกันเลยครับแถมยังเป็นตัวที่ง่ายที่สุดในทุกบรรดาผองเพื่อนของมันเลยด้วยนั่นคือ Union ซึ่งก็กลับมานึกตามทริคการจำของผมอีกเช่นเคยคือ Union = เอาหมด แสดงว่าจากโค๊ดที่ผมให้มานั้นผลลัพธ์ที่ได้นั่นคือ ตัวเลขทั้งหมดทุกตัวในอาเรย์ของ a และ b ครับผมซึ่งมันคือ
 <details> 
@@ -45,12 +45,12 @@ puts (a | b)
 </details>
 
 ### 3.) Difference ( - ) | Ruby
-<pre>
+```ruby
 a = [1, 2, 3]
 b = [3, 4, 5]
 
 puts (a - b)
-</pre>
+```
 
 และที่ขาดไปไม่ได้อย่างอันสุดท้ายคือ Difference นั่นเองและอย่างที่ผมบอกเช่นเคยนั่นคือ Difference = เอาตัวหลักและไม่เอาตัวซ้ำ แสดงว่าผลลัพธ์ที่ได้จากโค๊ดตัวอย่างนั่นคือ 
 <details> 
@@ -63,7 +63,7 @@ puts (a - b)
 ## ตัวอย่างในภาษา C
 ผมจะพยายามอธิบายให้เข้าใจง่ายที่สุดของแต่ละตัวอย่างนะครับ งั้นไปเริ่มกันเลย!
 ### Intersection ( & ) | C
-<pre>
+```c
 #include <stdio.h>
 
 int main() {
@@ -79,7 +79,7 @@ int main() {
         }
     }
 }
-</pre>
+```
 <details> 
   <summary>Output</summary>
   3
@@ -96,7 +96,7 @@ int main() {
 
 
 ### Union ( | ) | C
-<pre>
+```c
   
 #include <stdio.h>
 
@@ -134,7 +134,7 @@ int main() {
     return 0;
 }
 
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1 2 3 4 5 
@@ -151,7 +151,7 @@ int main() {
 
 
 ### Difference ( - ) | C
-<pre>
+```c
   #include <stdio.h>
 
 int main() {
@@ -185,8 +185,7 @@ int main() {
     return 0;
 }
 
-
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1 2 
@@ -210,7 +209,7 @@ int main() {
 3. เลยสร้าง ArrayList ใหม่ที่รับค่าจาก a หรือว่าง ๆ แล้วค่อยเพิ่มข้อมูลเข้าไป
 
 ### Intersection ( & ) | JAVA
-<pre>
+```java
 import java.util.*;
 
 public class Main {
@@ -229,7 +228,7 @@ public class Main {
     }
 }
 
-</pre>
+```
 <details> 
   <summary>Output</summary>
   3
@@ -246,7 +245,7 @@ public class Main {
 2. ทำให้เราสามารถเพิ่มข้อมูลตอนรันโปรแกรมได้อย่างอิสระ
 
 ### Union ( | ) | JAVA
-<pre>
+```java
 import java.util.*;
 
 public class Main {
@@ -264,7 +263,7 @@ public class Main {
         
     }
 }
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1,2,3,4,5
@@ -282,7 +281,7 @@ public class Main {
 
 
 ### Differnce ( - ) | JAVA
-<pre>
+```java
 import java.util.*;
 
 public class Main {
@@ -299,8 +298,7 @@ public class Main {
         }
     }
 }
-
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1,2
@@ -326,13 +324,13 @@ public class Main {
 3. โค้ดสั้น อ่านง่าย ไม่ต้องเขียนลูปตรวจสอบเองทีละตัว
 
 ### Intersection ( & ) | Python
-<pre>
+```python
 a = [1, 2, 3]
 b = [3, 4, 5]
 
 intersection = list(set(a) & set(b))
 
-</pre>
+```
 <details> 
   <summary>Output</summary>
   3
@@ -344,13 +342,13 @@ intersection = list(set(a) & set(b))
 3. สุดท้ายแปลงกลับเป็นลิสต์ด้วย list() เพื่อใช้งานตามปกติ
 
 ### Union ( | ) | Python
-<pre>
+```python
 a = [1, 2, 3]
 b = [3, 4, 5]
 
 union = list(set(a) | set(b))
 
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1,2,3,4,5
@@ -363,13 +361,12 @@ union = list(set(a) | set(b))
 
 
 ### Differnce ( - ) | Python
-<pre>
+```python
 a = [1, 2, 3]
 b = [3, 4, 5]
 
 difference = list(set(a) - set(b))
-
-</pre>
+```
 <details> 
   <summary>Output</summary>
   1,2
