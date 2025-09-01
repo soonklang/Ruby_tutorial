@@ -26,7 +26,7 @@ myString_1 = 'This is also my string'
 >เมื่อกำหนด Ruby จะจัดการส่วนที่เหลือให้เอง ซึ่งที่กำหนดที่ใช้ทั้ง " " และ ' ' นั้นทำงานได้เหมือนกัน 
 # *Reference *
 #### Ruby
--W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
+- W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
 https://www.w3schools.io/ruby-strings/
 - Ruby-doc.org. (n.d.). *Class: String (Ruby 2.6.9)*. Ruby-doc.org. Retrieved September 1, 2025, from<br>
 https://ruby-doc.org/core-2.6.9/String.html
