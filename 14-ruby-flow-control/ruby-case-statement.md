@@ -293,6 +293,11 @@ match animal:
 
 ข้อเเตกต่างกับ Ruby :
 
+                    1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
+
+
+                    2. การเเสดงผลใช้ print เเทน puts
+
 ### Reference
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
