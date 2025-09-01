@@ -92,3 +92,35 @@ end
   You got A grade!
 </code></pre>
 </details>
+
+หรือตัวอย่างอีกเเบบ
+
+``` ruby
+choice = "5"
+
+# using 'case' statement
+case choice
+    
+    # the two values
+    when "1","2"
+        puts "You order Espresso!"
+    
+    when "3","4"
+        puts "You order Short Macchiato!"
+    
+    when "5","6"
+        puts "You order Ristretto!"
+    
+    when "7","8"
+        puts "You order Cappuccino!"
+    
+else
+    "No Order!"
+end
+``` 
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  You order Ristretto!
+</code></pre>
+</details>
