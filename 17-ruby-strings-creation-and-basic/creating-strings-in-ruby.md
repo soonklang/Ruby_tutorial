@@ -24,4 +24,18 @@ myString = "This is also my string"
 myString_1 = 'This is also my string'
 ```
 >เมื่อกำหนด Ruby จะจัดการส่วนที่เหลือให้เอง ซึ่งที่กำหนดที่ใช้ทั้ง " " และ ' ' นั้นทำงานได้เหมือนกัน 
-
+# *Reference *
+#### Ruby
+- https://www.w3schools.io/ruby-strings/
+- https://ruby-doc.org/core-2.6.9/String.html
+- https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby
+- https://docs.ruby-lang.org/en/master/String.html
+- https://www.tutorialspoint.com/ruby/ruby_strings.htm
+- https://www.geeksforgeeks.org/ruby/ruby-string-basics/
+- https://www.codecademy.com/courses/learn-ruby/lessons/introduction-to-ruby/exercises/data-types-numbers-strings-booleans
+- https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
+#### Python
+#### C
+#### Java
+# *Presentation*
+# *Video*
