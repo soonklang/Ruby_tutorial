@@ -17,7 +17,7 @@ end
 
 student = Student.new(1,"Prayat")
 ```
-จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ และ student จะทำการสร้างวัตถุจาก student เพื่อเก็บค่า id และ name เอาไว้ และไม่สามารถเข้าถึงจากภายนอกคลาสได้โดยตรง
+จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ ที่เป็นตัวแปรของวัตถุที่สร้างจากคลาส Student
 
 # ตัวอย่างของการกำหนด Accessor Methods
 ```ruby
@@ -51,7 +51,7 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
-จากโค้ด เมื่อมี methods getter และ setter จะสามารถอ่านและเขียน instance Variables นอกคลาส
+จากโค้ด เมื่อมี methods getter และ setter จะสามารถเข้าถึง instance Variables นอกคลาสได้ผ่านการเรียก method ของ student
 
 # เมื่อเทียบกับ Java
 ```java
@@ -87,6 +87,12 @@ public class Student{
 ```
 
 
+
+
+# เมื่อเทียบกับ Python
+```python
+
+```
 
 
 
