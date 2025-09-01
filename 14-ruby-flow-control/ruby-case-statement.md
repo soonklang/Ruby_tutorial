@@ -167,3 +167,4 @@ end
 ### Reference
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
+* [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
