@@ -29,7 +29,7 @@ n.times do |i|
 end
 ```
 
-- **แบบ Single line block **
+- **แบบ Single line block**
 ```ruby
 5.times { |i| puts "รอบที่ #{i}" }
 ```
