@@ -4,7 +4,7 @@
 
 **Flow Chart**
 
-![Local Image]('picture-660710587/ruby-case diagram.jpg')
+![Local Image]("picture-660710587/ruby-case diagram.jpg")
 
 **Basic Syntax**
 ``` ruby
