@@ -67,6 +67,27 @@ print(age)
  </pre>
 </details>
 
+## Java
+>มีอยู่２วิธีหลักในการสร้าง String คือใช้ String literal และ new String (constructor)
+### ตัวอย่างการใช้ String literal
+```java
+String greeting = "Hello"
+System.out.println(greeting);
+```
+<details close>
+   <summary><b>output</b></summary>
+ <pre>
+  Hello
+ </pre>
+</details>
+
+>การสร้าง String แบบ literal ของ Java จะใช้ได้เพียง " "
+### ตัวอย่างการใช้ new String (constructor)
+```java
+String str = new String("abc");
+```
+>จะสร้าง object  ใหม่เสมอ ช้ากว่า literal ส่วนมากไม่ใช้ หากไม่จำเป็น
+
 # *Reference *
 #### Ruby
 - W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
@@ -81,8 +102,6 @@ https://docs.ruby-lang.org/en/master/String.html
 https://www.tutorialspoint.com/ruby/ruby_strings.htm
 - GeeksforGeeks. (2024, May 20). *Ruby | String Basics*. GeeksforGeeks. Retrieved September 1, 2025, from<br>
 https://www.geeksforgeeks.org/ruby/ruby-string-basics/
-- Codecademy. (n.d.). *Data Types: Numbers, Strings, and Booleans*. Codecademy. Retrieved September 1, 2025, from<br>
-https://www.codecademy.com/courses/learn-ruby/lessons/introduction-to-ruby/exercises/data-types-numbers-strings-booleans
 - Smyth, N. (2016, November 2). *Ruby Strings - Creation and Basics*. Techotopia. Retrieved September 1, 2025, from<br>
 https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
 
@@ -96,9 +115,17 @@ https://docs.python.org/3/library/string.html
 - Google for Education. (n.d.). Python Strings. Google Developers. Retrieved September 1, 2025, from<br>
 https://developers.google.com/edu/python/strings?hl=th
 
-#### C
-
 #### Java
+- W3Schools. (n.d.). Java Strings. W3Schools. Retrieved September 1, 2025, from<br>
+https://www.w3schools.com/java/java_strings.asp
+- Oracle. (n.d.). Strings (The Java™ Tutorials – Learning the Java Language). Retrieved September 1, 2025, from<br>
+https://docs.oracle.com/javase/tutorial/java/data/strings.html
+- Stack Overflow. (2010, July 21). Difference between String object and String literal [online forum]. Retrieved September 1, 2025, from<br>
+https://stackoverflow.com/questions/3297867/difference-between-string-object-and-string-litera
+- Baeldung. (n.d.). Guide to Java String Pool. Baeldung. Retrieved September 1, 2025, from<br>
+https://www.baeldung.com/java-string-pool
+
+#### C
 
 # *Presentation*
 # *Video*
