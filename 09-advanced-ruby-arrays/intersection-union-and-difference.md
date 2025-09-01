@@ -172,6 +172,28 @@ int main() {
   1 2 
 </details>
 
+
+
+
+## Intersection ( & ) | JAVA
+<pre>
+  import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(3, 4, 5);
+
+        List<Integer> intersection = new ArrayList<>(a);
+        intersection.retainAll(b);
+    }
+}
+</pre>
+<details> 
+  <summary>Output</summary>
+  3
+</details>
+
 ---
 
 # Reference
