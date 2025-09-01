@@ -254,6 +254,51 @@ public class Main {
   1,2
 </details>
 
+
+
+
+## Intersection ( & ) | Python
+<pre>
+a = [1, 2, 3]
+b = [3, 4, 5]
+
+intersection = list(set(a) & set(b))
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  3
+</details>
+
+
+## Union ( | ) | Python
+<pre>
+a = [1, 2, 3]
+b = [3, 4, 5]
+
+union = list(set(a) | set(b))
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  1,2,3,4,5
+</details>
+
+## Differnce ( - ) | Python
+<pre>
+a = [1, 2, 3]
+b = [3, 4, 5]
+
+difference = list(set(a) - set(b))
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  1,2
+</details>
+
+
+
 ---
 
 # Reference
