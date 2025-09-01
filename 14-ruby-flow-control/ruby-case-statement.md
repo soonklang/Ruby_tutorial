@@ -234,9 +234,14 @@ switch (day) {
 </code></pre>
 </details>
 
-ข้อเเตกต่างกับ Ruby : 1. ตัวเงื่อนไขใช้ case เเทน when
+ข้อเเตกต่างกับ Ruby : 
+
+                   1. ตัวเงื่อนไขใช้ case เเทน when
+                   
                    2. ต้องใช้ break ช่วยในการจบการทำงานวึ่ง Ruby ไม่ต้องใช้
+                   
                    3. การเเสดงผลใช้ System.out.println เเทน puts
+                   
 
 **ภาษา Python**
 
