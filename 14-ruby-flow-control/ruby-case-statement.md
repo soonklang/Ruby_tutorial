@@ -250,7 +250,7 @@ else:
 </code></pre>
 </details>
 
-หรือถ้าหากเป็น Python 3.10 หรือเวอชันหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
+หรือถ้าหากเป็น Python 3.10 หรือเวอร์ชั่นหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
 ```python
 animal = "Eagle"
 match animal:
