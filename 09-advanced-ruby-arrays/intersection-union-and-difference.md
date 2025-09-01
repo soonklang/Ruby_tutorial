@@ -75,7 +75,10 @@ int main() {
     }
 }
 </pre>
-
+<details> 
+  <summary>Output</summary>
+  3
+</details>
 
 ---
 
