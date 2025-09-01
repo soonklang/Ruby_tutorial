@@ -59,8 +59,7 @@ end
 
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>1
-  
+  <pre><code>
+  Input from one, two, three, four: Input is 2
 </code></pre>
 </details>
-Input from one, two, three, four: Input is 2
