@@ -12,12 +12,23 @@
 ---
 
 ## 1. Access / Retrieval (การเข้าถึงข้อมูล)
+- []
+- .at()
+- .dig()
+- .first()
+- .last()
+- .value_at()
+- .take()
+- .drop()
+- .fetch()
+- .dig()
 
 **ยกตัวอย่างการสร้าง array**
 ```ruby
 arr1 = [1,2,3,4,5,6,7,8,9]
 arr2 = [[1,2,3],[4,5,6],[7,8,9]]
 ```
+
 การเข้าถึง array สามารถทำได้ 2 วิธี คือ
 1. การเข้าถึงเเบบปกติ
 
@@ -460,3 +471,9 @@ if (Index >= 0 && Index < row) {
 ```
 
 ## 2. Query / Information (ตรวจสอบ / หาข้อมูล)​
+- .length() / .size()
+- .empty?
+- .include?
+- .index() / .rindex()
+- .count()
+- .any? / .all? / .none?
