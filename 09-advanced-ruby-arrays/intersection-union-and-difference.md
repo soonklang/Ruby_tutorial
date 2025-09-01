@@ -57,8 +57,8 @@ puts (a - b)
 
 ## ตัวอย่างในภาษา C, Java, Python
 
+## Intersection ( & ) | C
 <pre>
-  // Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
