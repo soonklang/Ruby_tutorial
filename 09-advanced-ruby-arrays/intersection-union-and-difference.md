@@ -177,17 +177,24 @@ int main() {
 
 ## Intersection ( & ) | JAVA
 <pre>
-  import java.util.*;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
         List<Integer> a = Arrays.asList(1, 2, 3);
         List<Integer> b = Arrays.asList(3, 4, 5);
 
-        List<Integer> intersection = new ArrayList<>(a);
-        intersection.retainAll(b);
+        List<Integer> intersection = new ArrayList<>();
+
+        for (int i : a) {
+            if (b.contains(i)) {
+                intersection.add(i);
+            }
+        }
+
     }
 }
+
 </pre>
 <details> 
   <summary>Output</summary>
@@ -215,6 +222,32 @@ public class Main {
         
     }
 }
+</pre>
+<details> 
+  <summary>Output</summary>
+  1,2,3,4,5
+</details>
+
+
+## Differnce ( - ) | JAVA
+<pre>
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(3, 4, 5);
+
+        List<Integer> difference = new ArrayList<>();
+
+        for (int i : a) {
+            if (!b.contains(i)) {
+                difference.add(i);
+            }
+        }
+    }
+}
+
 </pre>
 <details> 
   <summary>Output</summary>
