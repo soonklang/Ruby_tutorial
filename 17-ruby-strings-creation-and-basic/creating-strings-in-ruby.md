@@ -26,14 +26,22 @@ myString_1 = 'This is also my string'
 >เมื่อกำหนด Ruby จะจัดการส่วนที่เหลือให้เอง ซึ่งที่กำหนดที่ใช้ทั้ง " " และ ' ' นั้นทำงานได้เหมือนกัน 
 # *Reference *
 #### Ruby
-- https://www.w3schools.io/ruby-strings/
-- https://ruby-doc.org/core-2.6.9/String.html
-- https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby
-- https://docs.ruby-lang.org/en/master/String.html
-- https://www.tutorialspoint.com/ruby/ruby_strings.htm
-- https://www.geeksforgeeks.org/ruby/ruby-string-basics/
-- https://www.codecademy.com/courses/learn-ruby/lessons/introduction-to-ruby/exercises/data-types-numbers-strings-booleans
-- https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
+-W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
+https://www.w3schools.io/ruby-strings/
+- Ruby-doc.org. (n.d.). *Class: String (Ruby 2.6.9)*. Ruby-doc.org. Retrieved September 1, 2025, from<br>
+https://ruby-doc.org/core-2.6.9/String.html
+-  DigitalOcean. (2022, August 3). *How To Work With Strings in Ruby*. DigitalOcean. Retrieved September 1, 2025, from<br>
+https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby
+- Ruby-lang.org. (n.d.). *String — Ruby master*. Ruby-lang.org. Retrieved September 1, 2025, from<br>
+https://docs.ruby-lang.org/en/master/String.html
+- TutorialsPoint. (n.d.). *Ruby – Strings*. TutorialsPoint. Retrieved September 1, 2025, from<br>
+https://www.tutorialspoint.com/ruby/ruby_strings.htm
+- GeeksforGeeks. (2024, May 20). *Ruby | String Basics*. GeeksforGeeks. Retrieved September 1, 2025, from<br>
+https://www.geeksforgeeks.org/ruby/ruby-string-basics/
+- Codecademy. (n.d.). *Data Types: Numbers, Strings, and Booleans*. Codecademy. Retrieved September 1, 2025, from<br>
+https://www.codecademy.com/courses/learn-ruby/lessons/introduction-to-ruby/exercises/data-types-numbers-strings-booleans
+- Smyth, N. (2016, November 2). *Ruby Strings - Creation and Basics*. Techotopia. Retrieved September 1, 2025, from<br>
+https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
 #### Python
 #### C
 #### Java
