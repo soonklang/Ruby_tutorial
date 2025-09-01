@@ -17,7 +17,7 @@ end
 
 student = Student.new(1,"Prayat")
 ```
-จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ และ student จะทำการสร้างวัตถุจาก student เพื่อเก็บค่า id และ name เอาไว้
+จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ และ student จะทำการสร้างวัตถุจาก student เพื่อเก็บค่า id และ name เอาไว้ และไม่สามารถเข้าถึงจากภายนอก class ได้โดยตรง
 
 # ตัวอย่างของการกำหนด Accessor Methods
 ```ruby
