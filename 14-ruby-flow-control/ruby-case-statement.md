@@ -129,7 +129,7 @@ end
 
 ### การเปรียบกับภาษาอื่น (C,Java,Python)
 
-**Ruby**
+**ภาษา Ruby**
 
 ``` ruby
 grade = 85
@@ -152,7 +152,7 @@ end
 </code></pre>
 </details>
 
-**C**
+**ภาษา C**
 
 
 ``` c
@@ -189,9 +189,9 @@ switch (day) {
 </code></pre>
 </details>
 
-**Java**
+**ภาษา Java**
 
-**Python**
+**ภาษา Python**
 
 
 
@@ -203,3 +203,4 @@ switch (day) {
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
+* [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
