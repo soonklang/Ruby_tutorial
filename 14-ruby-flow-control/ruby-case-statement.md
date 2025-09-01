@@ -125,7 +125,7 @@ end
 </code></pre>
 </details>
 
-### การเปรียบกับภาษอื่น (C,Java,Python)
+### การเปรียบกับภาษาอื่น (C,Java,Python)
 
 **Ruby**
 
@@ -143,3 +143,4 @@ end
 
 ### Reference
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
+* [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
