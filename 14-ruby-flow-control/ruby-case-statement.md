@@ -189,6 +189,8 @@ switch (day) {
 </code></pre>
 </details>
 
+ข้อเเตกต่างระหว่าง c กับ ruby :
+
 **ภาษา Java**
 
 ``` java
@@ -223,6 +225,8 @@ switch (day) {
   Thursday
 </code></pre>
 </details>
+
+ข้อเเตกต่างระหว่าง java กับ ruby :
 
 **ภาษา Python**
 
@@ -272,7 +276,7 @@ match animal:
 </code></pre>
 </details>
 
-
+ข้อเเตกต่างระหว่าง python กับ ruby :
 
 ### Reference
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
