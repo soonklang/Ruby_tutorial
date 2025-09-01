@@ -8,7 +8,7 @@
 ❀ ก่อนที่จะมีการกำหนดค่า Instance Variables จะต้องมีค่าเป็น nill  
 ❀ Object แต่ละตัวจะมี Instance Variables ที่แตกต่างกันแม้ว่าจะอยู่ใน classเดียวกัน
 # Reference 
-https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568 
+https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568  
 https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html  นำเนื้อหาเรื่องInstance Variablesเรื่องกฎการตั้งชื่อมาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568
 
 
