@@ -1,4 +1,5 @@
-# Intersection, Union and Difference | by Songporworn Mahapiyanont 660710080
+# Intersection, Union and Difference 
+### by Songporworn Mahapiyanont 660710080
 
 เรื่องนี้จะเป็นสิ่งที่ทุกคนคุ้นเคยกันเป็นอย่างดีตั้งแต่โรงเรียนแน่นอน เพราะไม่ว่าจะไปที่ไหนต้องมีหลักการความคิดแบบนี้เป็นทั่วไป นั่นคือเรื่อง Intersection, Union และ Differenceนั่นเอง! ซึ่งเราจะมาดูกันว่าหลักการมันทำงานยังไงในภาษาโปรแกรมอย่าง Ruby นะครับผมซึ่งไม่ต้องห่วงเลย! ผมจะยกตัวอย่างเปรียบเทียบกับภาษาอื่นอย่างแน่นอน เช่น C, Python, Java 
 
