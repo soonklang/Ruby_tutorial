@@ -226,7 +226,7 @@ switch (day) {
 
 **ภาษา Python**
 
-Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif) หรือถ้าหากเป็น Python 3.10 หรือเวอชันหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch
+Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif) 
 
 ```python
 bike = 'Yamaha'
@@ -250,6 +250,27 @@ else:
 </code></pre>
 </details>
 
+หรือถ้าหากเป็น Python 3.10 หรือเวอชันหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
+```python
+day = "Monday"
+
+# Match the day to predefined patterns
+match day:
+    case "Saturday" | "Sunday":
+        print(f"{day} is a weekend.")  # Match weekends
+    case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
+        print(f"{day} is a weekday.")  # Match weekdays
+    case _:
+        print("That's not a valid day of the week.")  # Default case
+
+# Monday is a weekday.
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  Monday is a weekday.
+</code></pre>
+</details>
 
 
 
@@ -259,4 +280,5 @@ else:
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
 * [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
 * [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java
-* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python
+* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif
+* [https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match
