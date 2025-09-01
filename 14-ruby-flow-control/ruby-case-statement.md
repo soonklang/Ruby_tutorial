@@ -189,7 +189,9 @@ switch (day) {
 </code></pre>
 </details>
 
-ข้อเเตกต่างระหว่าง c กับ ruby :
+ข้อเเตกต่างกับ Ruby : 1. ตัวเงื่อนไขใช้ case เเทน when
+                   2. ต้องใช้ break ช่วยในการจบการทำงานวึ่ง Ruby ไม่ต้องใช้
+                   3. การเเสดงผลใช้ printf เเทน puts
 
 **ภาษา Java**
 
@@ -226,7 +228,9 @@ switch (day) {
 </code></pre>
 </details>
 
-ข้อเเตกต่างระหว่าง java กับ ruby :
+ข้อเเตกต่างกับ Ruby : 1. ตัวเงื่อนไขใช้ case เเทน when
+                   2. ต้องใช้ break ช่วยในการจบการทำงานวึ่ง Ruby ไม่ต้องใช้
+                   3. การเเสดงผลใช้ System.out.println เเทน puts
 
 **ภาษา Python**
 
@@ -276,7 +280,7 @@ match animal:
 </code></pre>
 </details>
 
-ข้อเเตกต่างระหว่าง python กับ ruby :
+ข้อเเตกต่างกับ Ruby :
 
 ### Reference
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
