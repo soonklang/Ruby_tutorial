@@ -53,7 +53,7 @@ end
 ## Output
 จะไม่มีอะไรถูกพิมออกมา​ แต่ค่าที่return จะเป็น -2 ถ้าอยากให้ค่า -2 ขึ้นต้องใส่ pนำหน้า ดังนี้
 <details open>
-  <summary><strong>Output</strong></summary>
+  <summary><strong>ex.</strong></summary>
   <pre><code>p(-2.times do |i|
   puts "รอบที่ #{i}"
 end)
