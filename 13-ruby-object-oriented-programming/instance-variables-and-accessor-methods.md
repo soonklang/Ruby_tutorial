@@ -51,6 +51,43 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
- 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Reference (Temporary)
+
+#Ruby
+https://www.techotopia.com/index.php/Ruby_Object_Oriented_Programming
+https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
+https://www.geeksforgeeks.org/ruby/object-oriented-programming-in-ruby-set-1/
+https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
+
+#Java
+https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
+https://www.w3schools.com/java/java_encapsulation.asp
+https://www.tutorialspoint.com/java/java_object_classes.htm
+
+#Python
+https://www.geeksforgeeks.org/python/python-oops-concepts/
+https://www.geeksforgeeks.org/python/python-classes-and-objects/
+https://docs.python.org/3/tutorial/classes.html#class-and-instance-variables
+https://www.geeksforgeeks.org/python/accessing-attributes-methods-python/
+https://www.squash.io/how-to-use-class-and-instance-variables-in-python/
+
+#C
+https://www.w3schools.com/c/c_structs.php
+https://www.w3schools.com/c/c_structs_pointers.php
+https://www.tutorialspoint.com/cprogramming/c_structures.htm
 
