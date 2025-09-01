@@ -59,7 +59,7 @@ end
 
 <details>
   <summary>Output</summary>
-
-  > Input from one, two, three, four: Input is 2
-
+``` ruby
+  Input from one, two, three, four: Input is 2
+``` 
 </details>
