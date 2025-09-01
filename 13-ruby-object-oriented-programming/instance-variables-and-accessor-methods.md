@@ -53,7 +53,7 @@ puts student.getName() #output Tony
 
 จากโค้ด เมื่อมี methods getter และ setter จะสามารถอ่านและเขียน instance Variables ได้แล้ว
 
-#เมื่อเทียบกับ Java
+# เมื่อเทียบกับ Java
 ```java
 public class Student{
 	// Instance variables (non-static)
