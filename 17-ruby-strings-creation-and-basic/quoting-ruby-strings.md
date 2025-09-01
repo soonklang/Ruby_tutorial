@@ -117,7 +117,7 @@ puts 'This is backslash \\'
 </details>
 
 ## Alternative Quotes
-วิธีนี้จะคล้ายกับการใช้เครื่องหมาย single quote และ double quote โดยจะมีข้อแตกต่างกันเล็กน้อย<br>
+อีกหนึ่งวิธีในการครอบสตริงคือ alternative quotes โดยวิธีนี้จะคล้ายกับการใช้เครื่องหมาย ' และ " แต่จะมีข้อแตกต่างกันเล็กน้อย <br>
 %q (Alternative single quote) ทำงานเหมือนกับเครื่อง Single quote แต่จะเกิดการ escape sequences เฉพาะ \ ตามด้วย delimiters ที่ใช้ <br>
 %Q หรือ % (Alternative double quote) และ % ทำงานเหมือนกับเครื่องหมาย Double quote สามารถแทรกค่าและใช้ escape sequences ได้
 
@@ -163,8 +163,6 @@ puts %^Hi I\'m Zen\.^
   <pre><code>Hi I'm Zen.
 Hi I'm Zen.</code></pre>
 </details>
-
-## Here Document
 
 # *เปรียบเทียบภาษา*
 ## Python
