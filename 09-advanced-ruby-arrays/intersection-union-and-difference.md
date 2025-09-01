@@ -55,7 +55,7 @@ puts (a - b)
 </details>
 
 
-## ตัวอย่างในภาษา C, Java, Python
+## ตัวอย่างในภาษา C
 
 ## Intersection ( & ) | C
 <pre>
@@ -173,6 +173,7 @@ int main() {
 </details>
 
 
+## ตัวอย่างในภาษา Java
 
 
 ## Intersection ( & ) | JAVA
@@ -255,7 +256,7 @@ public class Main {
 </details>
 
 
-
+## ตัวอย่างในภาษา Python
 
 ## Intersection ( & ) | Python
 <pre>
