@@ -8,9 +8,11 @@
 # ตัวอย่างของการกำหนด Instance Variables ภายใน Method
 ```ruby
 class Student
-
+  def initialize(id,name)
+    @id = id
+    @name = name
+  end
 end
-
 ```
 
 
