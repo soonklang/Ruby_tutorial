@@ -125,6 +125,9 @@ end
 </code></pre>
 </details>
 
+### การเปรียบกับภาษอื่น (C,Java,Python)
+
+
 
 
 
