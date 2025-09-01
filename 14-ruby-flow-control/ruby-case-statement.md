@@ -56,3 +56,11 @@ else
 
 end  
 ```
+
+<details>
+  <summary>Output</summary>
+
+  > c value: 1  
+  > b value: 1  
+
+</details>
