@@ -9,7 +9,7 @@
 ### ในเมื่อเราได้ทบทวนคร่าวๆไปบ้างแล้วงั้นผมขอเข้าสู่เนื้อหาเลยแล้วกันนะ
 
 
-## 1.) Intersection ( & )
+### 1.) Intersection ( & )
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
@@ -26,7 +26,7 @@ puts (a & b)
 
 
 
-## 2.) Union ( | )
+### 2.) Union ( | )
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
@@ -40,7 +40,7 @@ puts (a | b)
    1,2,3,4,5 
 </details>
 
-## 3.) Difference ( - )
+### 3.) Difference ( - )
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
@@ -57,7 +57,7 @@ puts (a - b)
 
 ## ตัวอย่างในภาษา C
 
-## Intersection ( & ) | C
+### Intersection ( & ) | C
 <pre>
 #include <stdio.h>
 
@@ -81,7 +81,7 @@ int main() {
 </details>
 
 
-## Union ( | ) | C
+### Union ( | ) | C
 <pre>
   
 #include <stdio.h>
@@ -130,7 +130,7 @@ int main() {
 
 
 
-## Difference ( - ) | C
+### Difference ( - ) | C
 <pre>
   #include <stdio.h>
 
@@ -176,7 +176,7 @@ int main() {
 ## ตัวอย่างในภาษา Java
 
 
-## Intersection ( & ) | JAVA
+### Intersection ( & ) | JAVA
 <pre>
 import java.util.*;
 
@@ -204,7 +204,7 @@ public class Main {
 
 
 
-## Union ( | ) | JAVA
+### Union ( | ) | JAVA
 <pre>
 import java.util.*;
 
@@ -230,7 +230,7 @@ public class Main {
 </details>
 
 
-## Differnce ( - ) | JAVA
+### Differnce ( - ) | JAVA
 <pre>
 import java.util.*;
 
@@ -258,7 +258,7 @@ public class Main {
 
 ## ตัวอย่างในภาษา Python
 
-## Intersection ( & ) | Python
+### Intersection ( & ) | Python
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
@@ -272,7 +272,7 @@ intersection = list(set(a) & set(b))
 </details>
 
 
-## Union ( | ) | Python
+### Union ( | ) | Python
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
@@ -285,7 +285,7 @@ union = list(set(a) | set(b))
   1,2,3,4,5
 </details>
 
-## Differnce ( - ) | Python
+### Differnce ( - ) | Python
 <pre>
 a = [1, 2, 3]
 b = [3, 4, 5]
