@@ -252,23 +252,23 @@ else:
 
 หรือถ้าหากเป็น Python 3.10 หรือเวอชันหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
 ```python
-day = "Monday"
-
-# Match the day to predefined patterns
-match day:
-    case "Saturday" | "Sunday":
-        print(f"{day} is a weekend.")  # Match weekends
-    case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
-        print(f"{day} is a weekday.")  # Match weekdays
+animal = "Eagle"
+match animal:
+    case "Eagle" | "Parrot":
+        print("Bird")
+    case "Lion" | "Tiger":
+        print("Mammal")
+    case "Python" | "Crocodile":
+        print("Reptile")
     case _:
-        print("That's not a valid day of the week.")  # Default case
+        print("Unknown Class")
 
-# Monday is a weekday.
+# Bird
 ```
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
-  Monday is a weekday.
+  Bird
 </code></pre>
 </details>
 
