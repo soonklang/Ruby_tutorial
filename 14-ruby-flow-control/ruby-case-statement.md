@@ -131,6 +131,27 @@ end
 
 **Ruby**
 
+``` ruby
+grade = 85
+
+case grade
+when 90..100
+  puts "A"
+when 80..89
+  puts "B"
+when 70..79
+  puts "C"
+else
+  puts "F"
+end
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  B
+</code></pre>
+</details>
+
 **C**
 
 **Java**
