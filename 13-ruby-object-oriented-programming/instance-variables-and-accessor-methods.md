@@ -6,42 +6,11 @@
   Accessor Methods คือ Method ใน class ที่สามารถอ่านหรือเขียน Instance variables ภานในคลาสได้ เพราะใน ruby Instance Variables ไม่สามารถเข้าถึงตัวแปรได้จากภายนอก class ได้โดยตรง จึงต้องใช้ accessor methods เพื่อให้สามารถเข้าถึงได้
 
 # ตัวอย่างของการกำหนด Instance Variables ภายใน Method
-class Student
-  def initialize(id,name)
-    #กำหนด instance variables
-    @id = id
-    @name = name
-  end
- end 
+
+
 
 # ตัวอย่างของการกำหนด Accessor Methods
-class Student
-  def initialize(id,name)
-    #กำหนด instance variables
-    @id = id
-    @name = name
-  end
 
-  def setId(id)
-    @id = id
-  end
-
-  def setName(name)
-    @name = name
-  end
-  
-  def getId()
-    @id
-  end
-
-  def getName()
-    @name
-  end
- end 
-
-student = Student.new(1,"Prayat")
-puts student.getId() # output 1
-puts student.getName() # output Prayat
 
  
 
