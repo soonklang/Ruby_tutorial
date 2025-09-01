@@ -4,7 +4,7 @@
 
 **Flow Chart**
 
-![Local Image](14-ruby-flow-control/picture-660710587/ruby-case diagram.jpg)
+![Local Image](picture-660710587/ruby-case diagram.jpg)
 
 **Basic Syntax**
 ``` ruby
