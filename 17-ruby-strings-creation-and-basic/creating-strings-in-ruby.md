@@ -66,6 +66,7 @@ print(age)
 40
  </pre>
 </details>
+
 # *Reference *
 #### Ruby
 - W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
@@ -84,6 +85,7 @@ https://www.geeksforgeeks.org/ruby/ruby-string-basics/
 https://www.codecademy.com/courses/learn-ruby/lessons/introduction-to-ruby/exercises/data-types-numbers-strings-booleans
 - Smyth, N. (2016, November 2). *Ruby Strings - Creation and Basics*. Techotopia. Retrieved September 1, 2025, from<br>
 https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
+
 #### Python
 - Programiz. (n.d.). _Python String (Strings in Python with Examples)_. Programiz. Retrieved September 1, 2025, from <br>
 https://www.programiz.com/python-programming/string
@@ -93,7 +95,10 @@ https://www.programiz.com/python-programming/methods/built-in/str
 https://docs.python.org/3/library/string.html
 - Google for Education. (n.d.). Python Strings. Google Developers. Retrieved September 1, 2025, from<br>
 https://developers.google.com/edu/python/strings?hl=th
+
 #### C
+
 #### Java
+
 # *Presentation*
 # *Video*
