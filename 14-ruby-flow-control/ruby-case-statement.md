@@ -191,6 +191,39 @@ switch (day) {
 
 **ภาษา Java**
 
+``` java
+int day = 4;
+switch (day) {
+  case 1:
+    System.out.println("Monday");
+    break;
+  case 2:
+    System.out.println("Tuesday");
+    break;
+  case 3:
+    System.out.println("Wednesday");
+    break;
+  case 4:
+    System.out.println("Thursday");
+    break;
+  case 5:
+    System.out.println("Friday");
+    break;
+  case 6:
+    System.out.println("Saturday");
+    break;
+  case 7:
+    System.out.println("Sunday");
+    break;
+}
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  Thursday
+</code></pre>
+</details>
+
 **ภาษา Python**
 
 
@@ -204,3 +237,4 @@ switch (day) {
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
 * [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
+* [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java
