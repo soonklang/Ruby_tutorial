@@ -28,19 +28,19 @@ class Student
     @name = name
   end
 
-  def getId()
+  def getId()  #Accessor Methods (getter) ของ @id
     @id
   end
 
-  def getName()
+  def getName() #Accessor Methods (getter) ของ @name
     @name
   end
 
-  def setId(id)
+  def setId(id) #Accessor Methods (setter) ของ @id
     @id = id
   end
 
-  def setName(name)
+  def setName(name) #Accessor Methods (setter) ของ @name
     @name = name
   end
 end
@@ -51,11 +51,40 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
+จากโค้ด เมื่อมี methods getter และ setter จะสามารถอ่านและเขียน instance Variables ได้แล้ว
 
+#เมื่อเทียบกับ Java
+```java
+public class Student{
+	// Instance variables (non-static)
+    private int id;
+    private String name;
+	
+     // Constructor
+    public Student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    
+     // getters method
+    public String getName() { 
+    	return name; 
+    }
+    
+    public float getId() { 
+    	return id;
+    }
 
-
-
-
+    // setters method
+    public void setName(String name) { 
+    	this.name = name; 
+    }
+    
+    public void setId(int id) { 
+    	this.id = id;
+    }
+}
+```
 
 
 
