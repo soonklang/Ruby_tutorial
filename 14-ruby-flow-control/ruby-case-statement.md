@@ -127,6 +127,13 @@ end
 
 ### การเปรียบกับภาษอื่น (C,Java,Python)
 
+**Ruby**
+
+**C**
+
+**Java**
+
+**Python**
 
 
 
@@ -135,4 +142,4 @@ end
 
 
 ### Reference
-* [https://www.geeksforgeeks.org/ruby/ruby-case-statement/]
+* [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
