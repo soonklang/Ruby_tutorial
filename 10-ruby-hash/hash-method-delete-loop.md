@@ -96,6 +96,112 @@ bool "name" = dict.Remove(key);
 ```
 >Remove ไม่คืนค่า value ของ key ต่างจาก Ruby delete หรือ Python pop จะคืนค่า true หากลบสำเร็จ และคืนค่า false หากลบไม่สำเร็จหรือไม่เจอ key
 
+# Loop การวนลูปกับ Hash
+Hash คือโครงสร้างที่เก็บ คู่ key-value เราสามารถวนลูปเพื่อเข้าถึงหรือแก้ไขค่าได้หลายวิธี ช่วยให้เราทำงานกับข้อมูลใน Hash เช่น<br>
+- แสดงผลทุก key-value
+- กรอง key หรือ value ตามเงื่อนไข
+- แปลงค่าใน Hash
+
+## ทุก Method ที่ใช้ในการวนลูป
+### ตัวอย่าง Hash
+```ruby
+balances = {Jo: 1000, Gon: 2000, Mark: 3000 }
+```
+
+### ตัวอย่าง each ใช้สำหรับการวนทุกคู่
+```ruby
+balances.each { |name, amount| puts "#{name} has #{amount}" }
+```
+### Output
+```ruby
+Jo has 1000
+Gon has 2000
+Mark has 3000
+```
+
+### ตัวอย่าง each_key ใช้สำหรับการวนเฉพาะ key
+```ruby
+balances.each_key { |name| puts name }
+```
+### Output
+```ruby
+Jo
+Gon
+Mark
+```
+ยังมี each_value ใช้สำหรับการวนเฉพาะ value และ each_with_index ใช้วน key-value พร้อม index
+
+### ตัวอย่าง map / collect ใช้สำหรับการแปลงค่าใน Hash
+```ruby
+new_balances = balances.map { |name, amount| [name, amount + 1000] }.to_h
+puts new_balances
+```
+### Output
+```ruby
+{:Jo=>2000, :Gon=>3000, :Mark=>4000}
+```
+
+### ตัวอย่าง select ใช้เลือก key-value ที่ตรงกับเงื่อนไข
+```ruby
+rich_customers = balances.select { |name, amount| amount >= 2000 }
+puts rich_customers
+```
+### Output
+```ruby
+{:Gon=>2000, :Mark=>3000}
+```
+และมี reject ใช้ตัด key-value ที่ตรงเงื่อนไข ทั้งสองแบบนี้ใช้สำหรับการกรองข้อมูล
+
+## การวนลูปในภาษาอื่นๆ
+### ภาษา Python
+คล้ายกับ Ruby ใช้ method และการเขียนที่สั้นและอ่านง่าย
+```python
+for k, v in balances.items(): print(k,v)
+```
+>Loop แบบวนทุก key-value
+```python
+{k:int(v+1000) for k,v in balances.items()}
+```
+>ตัวอย่างบวกเพิ่ม 1000 ให้ทุก value
+```python
+{k:v for k,v in balances.items() if v>2000}
+```
+>ตัวอย่างเลือก value > 2000
+
+### ภาษา Java
+ต้องเขียนโค้ดเยอะกว่า Ruby/Python เพราะ Java ไม่มี syntax ที่ใช้สะดวกเหมือน Ruby
+```java
+for (Map.Entry<String,Integer> e : balances.entrySet()) { System.out.println(e.getKey()+":"+e.getValue()); }
+```
+>Loop แบบวนทุก key-value
+```java
+balances.replaceAll((k,v) -> (int)(v+1000));
+```
+>ตัวอย่างบวกเพิ่ม 1000 ให้ทุก value
+```java
+balances.entrySet().stream().filter(e -> e.getValue()>2000).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+```
+>ตัวอย่างเลือก value > 2000
+
+### ภาษา C#
+C# มี syntax คล้าย Java ต้องประกาศชนิดตัวแปร แต่สามารถใช้ LINQ ทำให้แปลง Dictionary ได้ง่ายขึ้นเหมือน Ruby และ Python
+```c#
+foreach(var kv in balances) { Console.WriteLine($"{kv.Key}:{kv.Value}"); }
+```
+>Loop แบบวนทุก key-value
+```c#
+var newBalances = balances.ToDictionary(kv => kv.Key, kv => (int)(kv.Value+1000));
+```
+>ตัวอย่างบวกเพิ่ม 1000 ให้ทุก value
+```c#
+balances.Where(kv => kv.Value>2000).ToDictionary(kv => kv.Key, kv => kv.Value)
+```
+>ตัวอย่างเลือก value > 2000
+
+# Summary
+- Hash Method เมธอดที่ Ruby เตรียมไว้ให้ใช้งานกับ Object Hash ใช้เพื่อ เข้าถึง/เพิ่ม/แก้ไข/ลบ/รวม/วนลูป/แปลง ข้อมูลใน Hash <br>
+- Delete ลบค่า key และ value ออกจาก Hash คืนค่าเป็น value ที่ถูกลบ หรือ nil, block หากไม่เจอ key<br>
+- Loop ใช้วนค่าใน Hash เพื่อ อ่าน/สร้าง/กรอง ข้อมูล
 
 # *Reference*
 ### Ruby
@@ -107,3 +213,29 @@ bool "name" = dict.Remove(key);
   https://rubyapi.org/3.4/o/hash
 - rubyonrails.org <br>
   https://api.rubyonrails.org/classes/Hash.html
+- LaunchSchool <br>
+  https://launchschool.com/books/ruby/read/hashes
+- The Odin Project <br>
+  https://www.theodinproject.com/lessons/javascript-hashmap
+  
+### Python
+- Python Official Documentation <br>
+https://docs.python.org/3/library/stdtypes.html#dict
+- Python Tutorial – Dictionaries <br>
+https://realpython.com/python-dicts/
+
+### Java
+- Java Official Documentation <br>
+https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/HashMap.html
+- Java Tutorials – HashMap <br>
+https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html
+
+### C#
+- Microsoft Docs – Dictionary<TKey,TValue> <br>
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2
+
+### C++
+- C++ Reference – unordered_map <br>
+https://en.cppreference.com/w/cpp/container/unordered_map
+- C++ STL Documentation <br>
+https://www.cplusplus.com/reference/unordered_map/unordered_map/
