@@ -194,6 +194,30 @@ public class Main {
   3
 </details>
 
+
+
+## Union ( | ) | JAVA
+<pre>
+  import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> a = Arrays.asList(1, 2, 3);
+        List<Integer> b = Arrays.asList(3, 4, 5);
+          
+        List<Integer> union = new ArrayList<>(a);
+        for (int i : b) if (!union.contains(i)) union.add(i);
+          System.out.println("Union: " + union);
+
+    }
+}
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  1,2
+</details>
+
 ---
 
 # Reference
