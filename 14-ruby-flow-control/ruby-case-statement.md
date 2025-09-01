@@ -57,9 +57,10 @@ else
 end  
 ```
 
-<details>
-  <summary>Output</summary>
-``` ruby
-  Input from one, two, three, four: Input is 2
-``` 
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>1
+  
+</code></pre>
 </details>
+Input from one, two, three, four: Input is 2
