@@ -28,3 +28,31 @@ end
  >3. else คือ เป็นเงื่อนไขสุดท้าย ที่หากค่า case ถูกตรวจเข้าทุกเงื่อนไขเเล้ว เเต่ไม่ตรงตามเงื่อนไขที่มีเลย ก็ยังจะทำให้ค่า case นั้นยังสามารถเกิด output ได้
 
 **ตัวอย่าง**
+
+``` ruby
+# concept of case statement
+
+print "Input from one, two, three, four: "  
+
+# str = gets.chomp
+
+str = "two"
+
+case str 
+when "one"  
+  puts 'Input is 1'
+
+when "two"  
+  puts 'Input is 2'
+
+when "three"  
+  puts 'Input is 3'
+
+ when "four"  
+  puts 'Input is 4'
+
+else  
+  puts "Default!"
+
+end  
+```
