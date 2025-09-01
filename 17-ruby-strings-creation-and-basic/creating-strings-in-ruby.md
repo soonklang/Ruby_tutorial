@@ -88,6 +88,20 @@ String str = new String("abc");
 ```
 >จะสร้าง object  ใหม่เสมอ ช้ากว่า literal ส่วนมากไม่ใช้ หากไม่จำเป็น
 
+## C
+>มีความแตกต่างตรงที่ภาษา C ไม่มีชนิดข้อมูล String แต่จะถูกนำไปใช้เป็น arrays ของ char
+>arrays ของ char จะลงท้ายด้วยอักขระพิเศษ '\0' (อักขระ null) ใช้เป็นจุดสิ้นสุดของ String
+### อาร์เรย์ของ `char` แบบ string literal
+```c
+char c[] = "c string";
+```
+>C ใช้ char array เพื่อเก็บ string แบบ null-terminated โดย C จะใส่  '\0'  ให้เองที่ท้ายเสมอ
+
+### ตัวอย่างสร้างจากลิสต์ของตัวอักษร + null
+```c
+char greeting[] = {'H','e','l','l','o','\0'};
+```
+
 # *Reference *
 #### Ruby
 - W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
@@ -126,6 +140,10 @@ https://stackoverflow.com/questions/3297867/difference-between-string-object-and
 https://www.baeldung.com/java-string-pool
 
 #### C
+- W3Schools. (n.d.). _C Strings_. W3Schools. Retrieved September 1, 2025, from <br>[https://www.w3schools.com/c/c_strings.php](https://www.w3schools.com/c/c_strings.php?utm_source=chatgpt.com)
+- TutorialsPoint. (n.d.). _Strings in C_. TutorialsPoint. Retrieved September 1, 2025, from <br>[https://www.tutorialspoint.com/cprogramming/c_strings.htm](https://www.tutorialspoint.com/cprogramming/c_strings.htm?utm_source=chatgpt.com)
+- Programiz. (n.d.). _C Programming Strings_. Programiz. Retrieved September 1, 2025, from <br>[https://www.programiz.com/c-programming/c-strings](https://www.programiz.com/c-programming/c-strings?utm_source=chatgpt.com)
+- GeeksforGeeks. (2025, July 25). _Strings in C_. GeeksforGeeks. Retrieved September 1, 2025, from<br> [https://www.geeksforgeeks.org/c/strings-in-c/](https://www.geeksforgeeks.org/c/strings-in-c/?utm_source=chatgpt.com)
 
 # *Presentation*
 # *Video*
