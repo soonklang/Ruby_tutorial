@@ -185,8 +185,6 @@ int main() {
 > สิ่งที่ต่างจากRubyคือ
 >* เงื่อนไขของต้องอยู่ในวงเล็บ ()
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
->  
-> ***เนื่องจากJavaได้รับอิทธิพลจากCทำให้syntaxมีความคล้ายคลึงกันมาก ดังนั้นสิ่งที่ต่างจากRubyจึงเหมือนกับJava***
 
 ### References
 * Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved August 30, 2025, from https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
