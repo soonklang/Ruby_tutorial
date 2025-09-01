@@ -6,7 +6,12 @@
   Accessor Methods คือ Method ใน class ที่สามารถอ่านหรือเขียน Instance variables ภานในคลาสได้ เพราะใน ruby Instance Variables ไม่สามารถเข้าถึงตัวแปรได้จากภายนอก class ได้โดยตรง จึงต้องใช้ accessor methods เพื่อให้สามารถเข้าถึงได้
 
 # ตัวอย่างของการกำหนด Instance Variables ภายใน Method
+```ruby
+class Student
 
+end
+
+```
 
 
 # ตัวอย่างของการกำหนด Accessor Methods
