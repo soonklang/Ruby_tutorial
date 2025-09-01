@@ -27,19 +27,17 @@ end
  >2. when คือ ตัวเงื่อนไขที่จะนำค่า case มาพิจารณาตามเงื่อนไข หากค่า case ตรงตามเงื่อนไขก็จะได้ output ตามที่ตั้งไว้ในเงื่อนไขนั้น 
  >3. else คือ เป็นเงื่อนไขสุดท้าย ที่หากค่า case ถูกตรวจเข้าทุกเงื่อนไขเเล้ว เเต่ไม่ตรงตามเงื่อนไขที่มีเลย ก็ยังจะทำให้ค่า case นั้นยังสามารถเกิด output ได้
 
-**ตัวอย่างที่เป็น String **
+**ตัวอย่างที่เป็น String**
 
 โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when เมื่อเจอเงื่อนไขที่ตรงกันก็จะได้ output ตามเงื่อนไข เเล้วจบการทำงาน เเต่หากตรวจครบทุก when เเล้ว ก็จะเข้าสู่เงื่อนไข else เเละได้ output เป็น Default! เเล้วค่อยจบการทำงาน
 
 ``` ruby
-# concept of case statement
-
 print "Input from one, two, three, four: "  
 
 # str = gets.chomp
 
 str = "two"
-
+# using case statement
 case str 
 when "one"  
   puts 'Input is 1'
@@ -63,5 +61,36 @@ end
   <summary><strong>Output</strong></summary>
   <pre><code>
   Input from one, two, three, four: Input is 2
+</code></pre>
+</details>
+
+**ตัวอย่างที่เป็นตัวเลข**
+
+โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่ง
+
+``` ruby
+marks = 70
+
+case marks
+# using range operators ..
+when 0..32
+  puts "You fail!"
+
+when 33..40
+  puts "You got C grade!"
+
+when 41..60
+  puts "You got B grade!"
+
+else
+ puts  "You got A grade!"
+ 
+end
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  You got A grade!
 </code></pre>
 </details>
