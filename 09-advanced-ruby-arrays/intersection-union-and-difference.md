@@ -80,6 +80,51 @@ int main() {
   3
 </details>
 
+
+## Union ( | ) | C
+<pre>
+#include <stdio.h>
+
+int main() {
+    
+    int a[] = {1, 2, 3}; 
+    int b[] = {3, 4, 5};
+    int sizeA = sizeof(a) / sizeof(a[0]);
+    int sizeB = sizeof(b) / sizeof(b[0]);
+    
+    int c[10]; 
+    int sizeC = 0;
+    
+    for (int i = 0; i < sizeA; i++) {
+        c[sizeC++] = a[i];
+    }
+
+
+    for (int i = 0; i < sizeB; i++) {
+        int found = 0;
+        for (int j = 0; j < sizeC; j++) {
+            if (b[i] == c[j]) {
+                found = 1;  
+                break;
+            }
+        }
+        if (!found) {
+            c[sizeC++] = b[i];
+        }
+    }
+    for (int i = 0; i < sizeC; i++) {
+        printf("%d ", c[i]);
+    }
+
+    return 0;
+}
+
+</pre>
+<details> 
+  <summary>Output</summary>
+  1 2 3 4 5 
+</details>
+
 ---
 
 # Reference
