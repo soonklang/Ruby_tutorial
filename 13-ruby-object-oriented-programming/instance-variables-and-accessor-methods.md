@@ -1,9 +1,9 @@
 # Instance Variables and Accessor Methods
 # Instance Variables คืออะไร?
-  Instance variables คือ ตัวแปรที่กำหนดไว้ใน class จะใช้งานได้เพียงแค่แต่ละวัตถุของ class นั้นที่ถูกสร้างขึ้นมาเท่านั้น โดยภาษา Ruby จะใช้สัญลักษณ์ @ นำหน้า variables ที่กำหนดไว้เพื่อเข้าถึงตัวแปรภายใน class แต่การที่จะเข้าถึงจากนอก class จะต้องใช้ public method ที่เรียกว่า Accessor Methods (setter และ getter)
+  Instance variables คือ ตัวแปรที่กำหนดไว้ในคลาสจะใช้งานได้เพียงแค่แต่ละวัตถุของคลาสนั้นที่ถูกสร้างขึ้นมาเท่านั้น โดยภาษา Ruby จะใช้สัญลักษณ์ @ นำหน้า variables ที่กำหนดไว้เพื่อเข้าถึงตัวแปรภายในคลาสแต่การที่จะเข้าถึงจากนอกคลาสจะต้องใช้ public method ที่เรียกว่า Accessor Methods (setter และ getter)
 
 # Accessor Methods คืออะไร?
-  Accessor Methods คือ Method ใน class ที่สามารถอ่านหรือเขียน Instance variables จากภายนอกคลาสได้ เพราะ Instance variables ไม่สามารถเข้าถึงจากนอก class ได้โดยตรง
+  Accessor Methods คือ Method ในคลาสที่สามารถอ่านหรือเขียน Instance variables จากภายนอกคลาสได้ เพราะ Instance variables ไม่สามารถเข้าถึงจากนอกคลาสได้โดยตรง
 
 # ตัวอย่างของการกำหนด Instance Variables
 ```ruby
@@ -17,7 +17,7 @@ end
 
 student = Student.new(1,"Prayat")
 ```
-จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ และ student จะทำการสร้างวัตถุจาก student เพื่อเก็บค่า id และ name เอาไว้ และไม่สามารถเข้าถึงจากภายนอก class ได้โดยตรง
+จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ และ student จะทำการสร้างวัตถุจาก student เพื่อเก็บค่า id และ name เอาไว้ และไม่สามารถเข้าถึงจากภายนอกคลาสได้โดยตรง
 
 # ตัวอย่างของการกำหนด Accessor Methods
 ```ruby
@@ -51,7 +51,7 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
-จากโค้ด เมื่อมี methods getter และ setter จะสามารถอ่านและเขียน instance Variables ได้แล้ว
+จากโค้ด เมื่อมี methods getter และ setter จะสามารถอ่านและเขียน instance Variables นอกคลาส
 
 # เมื่อเทียบกับ Java
 ```java
