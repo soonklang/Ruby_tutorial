@@ -226,8 +226,29 @@ switch (day) {
 
 **ภาษา Python**
 
+Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif) หรือถ้าหากเป็น Python 3.10 หรือเวอชันหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch
 
+```python
+bike = 'Yamaha'
 
+if bike == 'Hero':
+    print("bike is Hero")
+
+elif bike == "Suzuki":
+    print("bike is Suzuki")
+
+elif bike == "Yamaha":
+    print("bike is Yamaha")
+
+else:
+    print("Please choose correct answer")
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  bike is Yamaha
+</code></pre>
+</details>
 
 
 
@@ -238,3 +259,4 @@ switch (day) {
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
 * [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
 * [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java
+* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python
