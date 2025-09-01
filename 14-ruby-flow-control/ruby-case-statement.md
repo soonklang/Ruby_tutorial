@@ -60,7 +60,6 @@ end
 <details>
   <summary>Output</summary>
 
-  > c value: 1  
-  > b value: 1  
+  > Input from one, two, three, four: Input is 2
 
 </details>
