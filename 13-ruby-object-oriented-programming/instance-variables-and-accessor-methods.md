@@ -261,13 +261,13 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 
 ## Reference
 
-- https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
+- GeeksforGeeks. (17 ธันวาคม 2019). Instance Variables in Ruby. เข้าค้นเมื่อ 31 สิงหาคม 2025 จาก https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
 
-- https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
+- GeeksforGeeks. (11 ตุลาคม 2019).  Ruby getters and setters Method. เข้าค้นเมื่อ 31 สิงหาคม 2025 จาก https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
 
-- https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
+- tutorailspoint. (ม.ป.ป). Ruby - Object Oriented. เข้าค้นเมื่อ 31 สิงหาคม 2025 จาก https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
-- https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
+- Bunlong. (ม.ป.ป). The Ruby Programming Language. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
 
 
 
