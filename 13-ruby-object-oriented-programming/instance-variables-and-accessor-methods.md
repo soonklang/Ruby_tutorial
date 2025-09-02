@@ -76,33 +76,49 @@ struct Students {
 #### Ruby
 ```ruby
 class Student
-  def initialize(id,name)
+  def initialize(id,firstName,lastName,age)
     #กำหนด instance variables
     @id = id
-    @name = name
+    @firstName = firstName
+	@lastName = lastName
+	@age = age
   end
 
   def getId()  #Accessor Methods (getter) ของ @id
     @id
   end
 
-  def getName() #Accessor Methods (getter) ของ @name
-    @name
+  def getFirstName() #Accessor Methods (getter) ของ @firstName
+    @firstName
+  end
+
+  def getLastName()  #Accessor Methods (getter) ของ @lastName
+    @lastName
+  end
+
+  def getAge() #Accessor Methods (getter) ของ @age
+    @age
   end
 
   def setId(id) #Accessor Methods (setter) ของ @id
     @id = id
   end
 
-  def setName(name) #Accessor Methods (setter) ของ @name
-    @name = name
+  def setFirstName(name) #Accessor Methods (setter) ของ @firstName
+    @firstName = firstName
+  end
+
+  def setLastName(id) #Accessor Methods (setter) ของ @lastName
+    @lastName = lastName
+  end
+
+  def setAge(name) #Accessor Methods (setter) ของ @age
+    @age = age
   end
 end
 
-student = Student.new(1,"Prayat")
-puts student.getName() #output Prayat
-student.setName("Tony")
-puts student.getName() #output Tony
+student = Student.new(1,"Prayat","Jutha",15)
+puts "id #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}" #output id 1 Prayat Jutha age 15
 ```
 
 จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ Accessor Methods ทีนี้เราลองเปรียบเทียบกับภาษาอื่นกัน
@@ -208,66 +224,14 @@ student1 = Student("Prayat", "Jutha", 15, 1)
 student1.__firstName = "Adison"
 print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
 ```
-จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ดังนั้นจึงใช้วิธีแก้ปัญหาโดยใช้ "_" 2 ตัว นำหน้าชื่อตัวแปรเพื่อไม่ให้ภายนอกคลาสเข้าถึงตัวแปรได้ จากผลลัพธ์จะเห็นว่าถึงแม้ student1 จะอ้างอิง __firstName ภายในคลาส แต่ถึงอย่างนั้นผลลัพธ์ก็ไม่เปลี่ยน
+จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ดังนั้นจึงใช้วิธีแก้ปัญหาโดยใช้ "_" 2 ตัว นำหน้าชื่อตัวแปรเพื่อไม่ให้ภายนอกคลาสเข้าถึงตัวแปรได้ และมีการใช้ @property แทน getter และ @ชื่อตัวแปร.setter แทน setter จากผลลัพธ์จะเห็นว่าถึงแม้ student1 จะมีการพยายามปรับค่า __firstName ภายในคลาส แต่ถึงอย่างนั้นผลลัพธ์ก็ไม่เปลี่ยน
 
 #### C
 ```c
-struct Students {   
-	int id;
-	char firstName;
-	char lastName;
-	int age;       
-};
+
 ```
 
-```ruby
-class Student
-  def initialize(id,firstName,lastName,age)
-    #กำหนด instance variables
-    @id = id
-    @firstName = firstName
-	@lastName = lastName
-	@age = age
-  end
-
-  def getId()  #Accessor Methods (getter) ของ @id
-    @id
-  end
-
-  def getFirstName() #Accessor Methods (getter) ของ @firstName
-    @firstName
-  end
-
-  def getLastName()  #Accessor Methods (getter) ของ @lastName
-    @lastName
-  end
-
-  def getAge() #Accessor Methods (getter) ของ @age
-    @age
-  end
-
-  def setId(id) #Accessor Methods (setter) ของ @id
-    @id = id
-  end
-
-  def setFirstName(name) #Accessor Methods (setter) ของ @firstName
-    @firstName = firstName
-  end
-
-  def setLastName(id) #Accessor Methods (setter) ของ @lastName
-    @lastName = lastName
-  end
-
-  def setAge(name) #Accessor Methods (setter) ของ @age
-    @age = age
-  end
-end
-
-student = Student.new(1,"Prayat","Jutha",15)
-puts puts "id #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}"
-#output id 1 Prayat Jutha age 15
-```
-จากโค้ดจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
+จากโค้ดที่เราเปรียบเทียบในหลายๆภาษาจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
 - attr_reader ทำหน้าที่เป็น methods getter โดยอัตโนมัติ
 - attr_writer ทำหน้าที่เป็น methods setter โดยอัตโนมัติ
 - attr_accessor ทำหน้าที่เป็นทั้ง methods setter และ getter โดยอัตโนมัติ
