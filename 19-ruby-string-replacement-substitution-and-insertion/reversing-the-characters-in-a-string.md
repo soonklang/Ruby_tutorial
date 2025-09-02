@@ -130,3 +130,6 @@ sequence[start:stop:step]
 - https://www.geeksforgeeks.org/c/reverse-string-in-c/
 - [Comprehesive Ruby Programming](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf)
 - [The Ruby Programming Language](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf)
+# Presentation
+- Slide
+- Video
