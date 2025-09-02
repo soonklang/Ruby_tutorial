@@ -7,6 +7,21 @@
 ![Local Image](picture-660710587/ruby-case-diagram.jpg)
 
 **Basic Syntax**
+
+``` ruby
+result = case value
+   when match1 then result1
+   when match2 then result2
+   when match3 then result3
+   when match4 then result4
+   when match5 then result5
+   when match6 then result6
+   else result7
+end
+``` 
+
+หรือเเบบนี้ก็ได้เช่นกัน
+
 ``` ruby
 case expression
 
