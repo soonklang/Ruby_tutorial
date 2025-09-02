@@ -221,7 +221,7 @@ print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee
 | **Ruby**   | `sort`, `sort_by` (คืน Array ใหม่)                                      | `sort!`, `sort_by!` (แก้ไข Array ตรงๆ)                  | `sort_by` / `sort_by!` ใช้ block เพื่อกำหนดเงื่อนไขการเรียง             | แยกชัดเจนระหว่างเมธอดที่เปลี่ยนค่าและไม่เปลี่ยนค่า                            |
 | **C**      | คัดลอก Array อันเดิม `qsort` กับคัดลอกข้อมูล (ตัวอย่างใช้ `memcpy` + `qsort`) | ใช้ `qsort` บน array เดิม (in‑place)                    | ต้องเขียนฟังก์ชันเปรียบเทียบ (เช่น `compareStrings`, `compareByLength`) | ภาษา low‑level ต้องจัดการหน่วยความจำเอง (malloc/free) และสร้าง comparator เอง |
 | **Java**   | `stream().sorted()` สร้าง List ใหม่ (non‑mutating)                      | `Arrays.sort(Array)` เรียงภายใน Array โดยตรง (in‑place) | `Comparator` (เช่น `Comparator.comparingInt(String::length)`)           | มี API ทั้งแบบ stream และแบบ in‑place ผ่าน Arrays                             |
-| **Python** | `sorted()` คืน list ใหม่ (non‑mutating)                                 | `list.sort()` เรียงใน list เดิม (in‑place)              | `key=` (เช่น `key=lambda x: x['age']`)                                  | เหมือนแนวคิดของ Ruby แต่ใช้ `key` แทน block ที่คืนค่าจัดลำดับ                 |
+| **Python** | `sorted()` คืน list ใหม่ (non‑mutating)                                 | `list.sort()` เรียงใน list เดิม (in‑place)              | `key=` (เช่น `key=lambda x: x['age']`)                                  | เหมือนแนวคิดของ Ruby แต่ใช้ `key` แทน block ที่คืนค่าหลังจัดลำดับ                 |
 
 ---
 
