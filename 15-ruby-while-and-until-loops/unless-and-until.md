@@ -6,6 +6,7 @@
 until condition do
     statements
 end
+```
 ``` ruby
 
 ### References
