@@ -1,35 +1,35 @@
 # Sorting Arrays (การเรียงข้อมูลใน Array)
 
-Sorting Arrays คือการเรียงข้อมูลใน array โดยสามารถเรียงข้อมูลให้เป็นไปตามที่เรากำหนดได้ว่าอยากให้เรียงข้อมูล array ให้เรียงในรูปแบบที่ต้องการ
+Sorting Arrays คือการเรียงข้อมูลใน Array โดยสามารถเรียงข้อมูลให้เป็นไปตามที่เรากำหนดได้ว่าอยากให้เรียงข้อมูล array ให้เรียงในรูปแบบที่ต้องการ
 
-โดย Ruby จะมีการ sorting ทั้งหมด 4 รูปแบบแบบชัดเจนได้ดังนี้ :
+โดย Ruby จะมีการ Sorting ทั้งหมด 4 รูปแบบแบบชัดเจนได้ดังนี้ :
 
-1. sort (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน array)
-2. sort! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน array)
-3. sort\_by (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน array โดยจะใช้  block ในการเปลี่ยนแปลงค่า)
-4. sort\_by! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน array โดยจะใช้  block ในการเปลี่ยนแปลงค่า)
+1. sort (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน Array)
+2. sort! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน Array)
+3. sort\_by (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน Array โดยจะใช้  Block ในการเปลี่ยนแปลงค่า)
+4. sort\_by! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน Array โดยจะใช้  Block ในการเปลี่ยนแปลงค่า)
 
-ก่อนจะเริ่มการเปรียบเทียบเนื่องจากภาษา c ไม่มีฟังก์ชันที่สนับสนุนกับการใช้ sorting array มากเท่าที่ควร เนื่องจากภาษา c เป็นภาษาระดับต่ำเป็นสาเหตุที่ทำให้ต้องเน้นในเรื่องของประสิทธิภาพและการควบคุมหน่วยความจำที่ต้องจัดการเอง โดยทำให้มีแค่ฟังก์ชันแค่ qsort ทำให้ต้องมีการสร้าง ฟังก์ชั่นเปรียบเทียบเพื่อให้สามารถนำภาษา c มาเปรียบเทียบกับภาษา ruby ได้โดยตัวของ code สำหรับการใช้งานจะมีดังนี้
+ก่อนจะเริ่มการเปรียบเทียบกับภาษาอื่นเนื่องจากภาษา C ไม่มีฟังก์ชันที่สนับสนุนกับการใช้ Sorting Array มากเท่าที่ควร เนื่องจากภาษา C เป็นภาษาระดับต่ำ (Low-Level)เป็นสาเหตุที่ทำให้ต้องเน้นในเรื่องของประสิทธิภาพและการควบคุมหน่วยความจำที่ต้องจัดการด้านการเขียนภาษาเอง โดยทำให้มีแค่ฟังก์ชันแค่ qsort ทำให้ต้องมีการสร้าง ฟังก์ชันเปรียบเทียบเพื่อให้สามารถนำภาษา C มาเปรียบเทียบกับภาษา Ruby ได้โดยตัวของ Code สำหรับการใช้งานสำหรับมาเปรียบเทียบจะมีรายละเอียดดังนี้
 
 **ฟังก์ชั่นการเปรียบเทียบที่ไว้ใช้สำหรับภาษา C**
 ```c
-#include <stdio.h>    /* สำหรับ I/O เช่น printf */
-#include <stdlib.h>   /* สำหรับ qsort, malloc, free */
-#include <string.h>   /* สำหรับ strcmp, strlen, memcpy */
+#include <stdio.h>    /* ใช้สำหรับ I/O เช่น printf */
+#include <stdlib.h>   /* ใช้สำหรับ qsort, malloc, free */
+#include <string.h>   /* ใช้สำหรับ strcmp, strlen, memcpy */
 
 int compareStrings(const void *a, const void *b) {
-    const char **str_a = (const char **)a;
-    const char **str_b = (const char **)b;
+    const char **str_a = (const char **)a; /*แปลง (cast) พอยน์เตอร์ void *a ให้กลายเป็นพอยน์เตอร์ไปยัง char */
+    const char **str_b = (const char **)b; /*แปลง (cast) พอยน์เตอร์ void *b ให้กลายเป็นพอยน์เตอร์ไปยัง char */
     return strcmp(*str_a, *str_b);
-} /* ฟังก์ชันเปรียบเทียบ String ตามลำดับตัวอักษร ซึ่งหลักการทำงานจะคล้ายกับตัว sort ของ ruby */
+} /* ฟังก์ชันเปรียบเทียบ String ตามลำดับตัวอักษร ซึ่งหลักการทำงานจะคล้ายกับตัว Sort ของ Ruby */
 
 int compareByLength(const void *a, const void *b) {
     const char **str_a = (const char **)a;
     const char **str_b = (const char **)b;
-    int len_a = strlen(*str_a);
-    int len_b = strlen(*str_b);
+    int len_a = strlen(*str_a);/* เปลี่ยน pointer ให้เป็น string โดย str_a จะชี้ไปยัง string ตัวที่ 1*/
+    int len_b = strlen(*str_b);/* เปลี่ยน pointer ให้เป็น string โดย str_b จะชี้ไปยัง string ตัวที่ 2*/
     return (len_a > len_b) - (len_a < len_b); /* เทคนิคการคืนค่า -1, 0, หรือ 1 */
-} /* ฟังก์ชันเปรียบเทียบ String ตามความยาวตัวอักษร ซึ่งหลักการทำงานจะคล้ายกับตัว sort_by ของ ruby */
+} /* ฟังก์ชันเปรียบเทียบ String ตามความยาวตัวอักษร ซึ่งหลักการทำงานจะคล้ายกับตัว sort_by ของ Ruby */
 
 void printArray(const char *arr[], int size) {
     for (int i = 0; i < size; i++) {
@@ -41,27 +41,27 @@ void printArray(const char *arr[], int size) {
 
 ---
 
-## 1. sort (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน array)
+## 1. sort (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน Array)
 
-โดยการทำแบบนี้จะเป็นการเรียงค่าใน array โดยจะต้องมี array อีกตัวหนึ่งในการเก็บค่า array ที่ได้ทำการเรียงข้อมูลผ่านการ sort ไว้แล้ว
-โดยวิธีการใช้งานสามารถใช้งานได้ดังนี้ :
+โดยการทำแบบนี้จะเป็นการเรียงลำดับค่าใน Array โดยจะต้องมี Array อีกตัวหนึ่งในการเก็บค่า Array อีกตัวที่ได้ทำการเรียงข้อมูลผ่านการ sort ไว้แล้ว
+โดยวิธีการใช้งานสามารถทำได้ดังนี้ :
 
 **Ruby**
 ```ruby
 numbers = [3, 1, 5, 2, 4]
-sorted_numbers = numbers.sort
+sorted_numbers = numbers.sort #จะทำการเรียงข้อมูลจะน้อยไปหามาก
 puts sorted_numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 ```
 
 **C**
 ```c
 const char *original1[] = {"kiwi", "apple", "fig", "banana"};
-int n = sizeof(original1) / sizeof(original1[0]);
-const char **sorted_copy = malloc(n * sizeof(const char *)); /* จะเป็นการสร้าง array เพื่อมาเตรียมพร้อมสำหรับการใส่ค่าที่เรียงไว้ */
-memcpy(sorted_copy, original1, n * sizeof(const char *)); /* ทำการคัดลอกข้อมูลจาก original1 มาใส่ยังตัว  sorted_copy */
-qsort(sorted_copy, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน  Array ใหม่ แล้วทำมาใส่ตัวของ sorted_copy โดยใช้คำสั่ง qsort */
+int n = sizeof(original1) / sizeof(original1[0]); /*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
+const char **sorted_copy = malloc(n * sizeof(const char *)); /* จะเป็นการสร้าง Array เพื่อมาเตรียมพร้อมสำหรับการใส่ค่าที่เรียงไว้ */
+memcpy(sorted_copy, original1, n * sizeof(const char *)); /* ทำการคัดลอกข้อมูลจาก original1 มาใส่ยังตัว sorted_copy */
+qsort(sorted_copy, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน Array ใหม่ แล้วทำมาใส่ตัวของ sorted_copy โดยใช้คำสั่ง qsort */
 printArray(sorted_copy,n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
-free(sorted_copy); /* เพื่อคืนหน่วยความจำจากการสร้างมา */
+free(sorted_copy); /* เพื่อคืนหน่วยความจำจากการสร้างมาเพื่อลดการทำงานที่มากเกินไป */
 ```
 
 **Java**
@@ -78,16 +78,16 @@ System.out.println(sortedWords); // ผลลัพธ์ที่ได้ => [
 **Python**
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
-new_words = sorted(words) # สร้างตัวเก็บ array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน array ของตัว words โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน array ของ new_words
+new_words = sorted(words) # สร้างตัวเก็บ Array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน Array ของตัว words โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน Array ของ new_words
 print(f"New sorted list: {new_words}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
 
-## 2. sort! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน array)
+## 2. sort! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน Array)
 
-โดยการทำแบบนี้จะเป็นการเรียงค่าใน array โดยสามารถเรียงค่าผ่านทาง array ได้โดยตรง ผ่านการใช้ sort! ได้เลย ซึ่งจะแตกต่างจาก sort ตรงที่จะต้องมีตัว array อีกตัวที่คอยมารับค่า
-โดยวิธีการใช้งานสามารถใช้งานได้ดังนี้ :
+โดยการทำแบบนี้จะเป็นการเรียงค่าใน Array โดยสามารถเรียงค่าผ่านทาง Array ได้โดยตรง ผ่านการใช้ sort! ได้เลย ซึ่งจะแตกต่างจาก sort ตรงที่จะต้องมีตัว Array อีกตัวที่คอยมารับค่า
+โดยวิธีการใช้งานสามารถทำได้ดังนี้ :
 
 **Ruby**
 ```ruby
@@ -99,7 +99,7 @@ puts numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 **C**
 ```c
 const char *words1[] = {"kiwi", "apple", "fig", "banana"};
-int n = sizeof(words1) / sizeof(words1[0]);
+int n = sizeof(words1) / sizeof(words1[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
 qsort(words1, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน Array ใหม่ แล้วทำมาใส่ตัวของ word1 เข้าไปตรงๆ โดยใช้คำสั่ง qsort */
 printArray("Sorted (in-place)", words1, n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
 ```
@@ -109,23 +109,23 @@ printArray("Sorted (in-place)", words1, n); /* ผลลัพธ์ที่ไ
 import java.util.Arrays;
 
 String[] words = {"kiwi", "apple", "fig", "banana"};
-Arrays.sort(words); // ส่วนที่เหมือนกับ sort! โดยมีการเรียงลำดับภายใน array ของ  words โดยตรง
+Arrays.sort(words); // ส่วนที่เหมือนกับ sort! โดยมีการเรียงลำดับภายใน Array ของ  words โดยตรง
 System.out.println(Arrays.toString(words)); // ผลลัพธ์ที่ได้ => [apple, banana, fig, kiwi]
 ```
 
 **Python**
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
-words.sort() # ทำการเรียงค่าใน array ของ words โดยตรง
+words.sort() # ทำการเรียงค่าใน Array ของ words โดยตรง
 print(f"After sort():  {words_to_modify}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
 
-## 3. sort\_by (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน array โดยจะใช้  block ในการเปลี่ยนแปลงค่า)
+## 3. sort\_by (ที่จะไม่ทำการเปลี่ยนแปลงค่าเดิมใน Array โดยจะใช้  Block ในการเปลี่ยนแปลงค่า)
 
-โดยการทำแบบนี้จะเป็นการเรียงค่าใน array โดยใช้  block หรือเรียกอีกอย่างว่าเงื่อนไข ในการเรียงค่า โดยจะต้องมี array อีกตัวที่คอยรับค่าที่ผ่านการเรียงข้อมูลด้วย sort\_by ไว้แล้ว
-โดยวิธีการใช้งานสามารถใช้งานได้ดังนี้ :
+โดยการทำแบบนี้จะเป็นการเรียงค่าใน Array โดยใช้ Block หรือเรียกอีกอย่างว่าเงื่อนไข ในการเรียงค่า โดยจะต้องมี Array อีกตัวที่คอยรับค่าที่ผ่านการเรียงข้อมูลด้วย sort\_by ไว้แล้ว
+โดยวิธีการใช้งานสามารถทำได้ดังนี้ :
 
 **Ruby**
 ```ruby
@@ -137,7 +137,7 @@ puts sorted_words #ผลลัพธ์ที่ได้ => ["is", "ruby", "aw
 **C**
 ```c
 const char *original4[] = {"kiwi", "apple", "fig", "banana"};
-int n = sizeof(original4) / sizeof(original4[0]);
+int n = sizeof(original4) / sizeof(original4[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
 const char **sorted_by_copy = malloc(n * sizeof(const char *));
 memcpy(sorted_by_copy, original4, n * sizeof(const char *));
 qsort(sorted_by_copy, n, sizeof(const char *), compareByLength); /* เรียงลำดับ Array ใหม่โดยใช้เงื่อนไข compareByLength ที่เรียงผ่านการใช้ความยาวเป็นเกณฑ์ โดยจะเก็บเข้าไปใน sorted_by_copy */
@@ -153,7 +153,7 @@ import java.util.Comparator;
 import java.util.stream.Collectors;
 
 List<String> words = Arrays.asList("kiwi", "apple", "fig", "banana");
-List<String>sortedWords=words.stream().sorted(Comparator.comparingInt(String::length)).collect(Collectors.toList());         // ส่วนที่เหมือนกับ sort_by โดยมีการเรียงลำดับและจะมีการจดเก็บไว้ในตัวของ sortedWords โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
+List<String>sortedWords=words.stream().sorted(Comparator.comparingInt(String::length)).collect(Collectors.toList()); //ส่วนที่เหมือนกับ sort_by โดยมีการเรียงลำดับและจะมีการจัดเก็บไว้ในตัวของ sortedWords โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
 ```
 
 **Python**
@@ -163,16 +163,16 @@ people = [
     {'name': 'malee', 'age': 28},
     {'name': 'piti', 'age': 42}
 ]
-new_people_sorted_by_age = sorted(people, key=lambda person: person['age'])  # สร้างตัวเก็บ array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน array ของตัว people โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน array ของ new_people_sorted_by_age โดยทำการเรียงโดยใช้ age เป็นเกณฑ์
+new_people_sorted_by_age = sorted(people, key=lambda person: person['age']) # สร้างตัวเก็บ Array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน Array ของตัว people โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน Array ของ new_people_sorted_by_age โดยทำการเรียงโดยใช้ age เป็นเกณฑ์
 print("{new_people_sorted_by_age}") # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
 ```
 
 ---
 
-## 4. sort\_by! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน array โดยจะใช้  block ในการเปลี่ยนแปลงค่า)
+## 4. sort\_by! (ที่จะทำการเปลี่ยนแปลงค่าเดิมใน Array โดยจะใช้  Block ในการเปลี่ยนแปลงค่า)
 
-โดยการทำแบบนี้จะเป็นการเรียงค่าใน array โดยใช้  block หรือเรียกอีกอย่างว่าเงื่อนไข โดยสามารถเรียงค่าผ่านทาง array ได้โดยตรงผ่านการใช้ sort\_by!  ได้เลย ซึ่งจะแตกต่างจาก sort\_by ตรงที่จะต้องมีตัว array อีกตัวที่คอยมารับค่า
-โดยวิธีการใช้งานสามารถใช้งานได้ดังนี้ :
+โดยการทำแบบนี้จะเป็นการเรียงค่าใน Array โดยใช้ block หรือเรียกอีกอย่างว่าเงื่อนไข โดยสามารถเรียงค่าผ่านทาง Array ได้โดยตรงผ่านการใช้ sort\_by!  ได้เลย ซึ่งจะแตกต่างจาก sort\_by ตรงที่จะต้องมีตัว Array อีกตัวที่คอยมารับค่า
+โดยวิธีการใช้งานสามารถทำได้ดังนี้ :
 
 **Ruby**
 ```ruby
@@ -181,12 +181,13 @@ words.sort_by! { |word| word.length }
 puts words #ผลลัพธ์ที่ได้ => ["is", "ruby", "awesome"]
 ```
 
+**C**
 ```c
 const char *words1[] = {"kiwi", "apple", "fig", "banana"};
-int n = sizeof(words1) / sizeof(words1[0]);
+int n = sizeof(words1) / sizeof(words1[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
 qsort(words1, n, sizeof(const char *), compareByLength); /* เรียงลำดับ Array ใหม่โดยใช้เงื่อนไข compareByLength ที่เรียงผ่านการใช้ความยาวเป็นเกณฑ์ และเก็บเข้าไปยัง word1 โดยตรง */
 
-printArray("Sorted by length", words1, n);
+printArray(words1, n);
 printf("\n");
 ```
 
@@ -196,7 +197,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 String[] words = {"kiwi", "apple", "fig", "banana"};
-Arrays.sort(words, Comparator.comparingInt(String::length)); // ส่วนที่เหมือนกับ sort_by! โดยมีการเรียงลำดับภายใน array ของ  words โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
+Arrays.sort(words, Comparator.comparingInt(String::length)); // ส่วนที่เหมือนกับ sort_by! โดยมีการเรียงลำดับภายใน Array ของ words โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
 System.out.println(Arrays.toString(words)); // ผลลัพธ์ที่ได้ => [fig, kiwi, apple, banana]
 ```
 
@@ -207,7 +208,7 @@ people = [
     {'name': 'malee', 'age': 28},
     {'name': 'piti', 'age': 42}
 ]
-people.sort(key=lambda person: person['age']) # ทำการเรียงค่าใน array ของ people โดยตรงร่วมกับการใช้เงื่อนไขการเรียง array โดยใช้ age เรียงค่าข้อมูล
+people.sort(key=lambda person: person['age']) # ทำการเรียงค่าใน Array ของ people โดยตรงร่วมกับการใช้เงื่อนไขการเรียง Array โดยใช้ age เรียงค่าข้อมูล
 print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
 ```
 
@@ -217,9 +218,9 @@ print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee
 
 | ภาษา       | วิธีที่ไม่เปลี่ยนแปลงค่า (non‑mutating)                                 | วิธีที่เปลี่ยนแปลงค่า (in‑place)                        | การใช้เงื่อนไข/คอมพาเรเตอร์                                             | หมายเหตุ (จากเนื้อหา)                                                         |
 | ---------- | ----------------------------------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| **Ruby**   | `sort`, `sort_by` (คืน array ใหม่)                                      | `sort!`, `sort_by!` (แก้ไข array ตรงๆ)                  | `sort_by` / `sort_by!` ใช้ block เพื่อกำหนดเงื่อนไขการเรียง             | แยกชัดเจนระหว่างเมธอดที่เปลี่ยนค่าและไม่เปลี่ยนค่า                            |
-| **C**      | คัดลอก array อันเดิม `qsort` กับคัดลอกข้อมูล (ตัวอย่างใช้ `memcpy` + `qsort`) | ใช้ `qsort` บน array เดิม (in‑place)                    | ต้องเขียนฟังก์ชันเปรียบเทียบ (เช่น `compareStrings`, `compareByLength`) | ภาษา low‑level ต้องจัดการหน่วยความจำเอง (malloc/free) และสร้าง comparator เอง |
-| **Java**   | `stream().sorted()` สร้าง List ใหม่ (non‑mutating)                      | `Arrays.sort(array)` เรียงภายใน array โดยตรง (in‑place) | `Comparator` (เช่น `Comparator.comparingInt(String::length)`)           | มี API ทั้งแบบ stream และแบบ in‑place ผ่าน Arrays                             |
+| **Ruby**   | `sort`, `sort_by` (คืน Array ใหม่)                                      | `sort!`, `sort_by!` (แก้ไข Array ตรงๆ)                  | `sort_by` / `sort_by!` ใช้ block เพื่อกำหนดเงื่อนไขการเรียง             | แยกชัดเจนระหว่างเมธอดที่เปลี่ยนค่าและไม่เปลี่ยนค่า                            |
+| **C**      | คัดลอก Array อันเดิม `qsort` กับคัดลอกข้อมูล (ตัวอย่างใช้ `memcpy` + `qsort`) | ใช้ `qsort` บน array เดิม (in‑place)                    | ต้องเขียนฟังก์ชันเปรียบเทียบ (เช่น `compareStrings`, `compareByLength`) | ภาษา low‑level ต้องจัดการหน่วยความจำเอง (malloc/free) และสร้าง comparator เอง |
+| **Java**   | `stream().sorted()` สร้าง List ใหม่ (non‑mutating)                      | `Arrays.sort(Array)` เรียงภายใน Array โดยตรง (in‑place) | `Comparator` (เช่น `Comparator.comparingInt(String::length)`)           | มี API ทั้งแบบ stream และแบบ in‑place ผ่าน Arrays                             |
 | **Python** | `sorted()` คืน list ใหม่ (non‑mutating)                                 | `list.sort()` เรียงใน list เดิม (in‑place)              | `key=` (เช่น `key=lambda x: x['age']`)                                  | เหมือนแนวคิดของ Ruby แต่ใช้ `key` แทน block ที่คืนค่าจัดลำดับ                 |
 
 ---
