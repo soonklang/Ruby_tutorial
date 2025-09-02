@@ -85,7 +85,7 @@ puts "The " + car  + " is made by "  + manufacturer
 
 **หรือจะเขียนโดยการใช้ put เเทน then ก็ได้**
 
-โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when เมื่อเจอเงื่อนไขที่ตรงกันก็จะได้ output ตามเงื่อนไข เเล้วจบการทำงาน เเต่หากตรวจครบทุกเงื่อนไข when เเล้ว ก็จะเข้าสู่เงื่อนไข else เเละได้ output เป็น Default! เเล้วค่อยจบการทำงาน
+โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when
 
 ``` ruby
 print "Input from one, two, three, four: "  
@@ -111,10 +111,21 @@ else
 end  
 ```
 
+เมื่อเจอเงื่อนไขที่ตรงกันก็จะได้ output ตามเงื่อนไข เเล้วจบการทำงาน
+
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
   Input from one, two, three, four: Input is 2
+</code></pre>
+</details>
+
+เเต่หากตรวจครบทุกเงื่อนไข when เเล้ว ก็จะเข้าสู่เงื่อนไข else เเละได้ output เป็น Default! เเล้วค่อยจบการทำงาน
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  Input from one, two, three, four: Default!
 </code></pre>
 </details>
 
