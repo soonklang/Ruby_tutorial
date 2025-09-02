@@ -10,7 +10,7 @@
 ⚙︎ ในการตรวจสอบ/แก้ไข สามารถทำได้ด้วย instance_variables ,instance_variable_get ,instance_variable_set ,remove_instance_variable  
 ## 🍅 ตัวอย่างโค้ด  
 ### 🌼 การกำหนดและใช้งาน  
-📌 โค้ด  
+โค้ด  
 
       class Person
             def initialize(name, age)
@@ -29,14 +29,14 @@
       puts a.info
       puts b.info  
 
-📌 ผลลัพธ์  
+ผลลัพธ์  
 
       ชื่อ: นิว, อายุ: 25  
       ชื่อ: ใหม่, อายุ: 30
 
 ☞  อันนี้แสดงให้เห็นได้ว่าแต่ละออบเจ็กต์จะมี instance variable เป็นของตัวเอง[4]  
 ### 🌼 ค่าเริ่มต้นเป็น nil  
-📌 โค้ด  
+โค้ด  
 
       class Box  
             def show  
@@ -46,13 +46,13 @@
       b = Box.new  
       p b.show  
 
-📌 ผลลัพธ์    
+ผลลัพธ์    
 
       nil
 ☞  หาก instance variable ยังไม่ได้กำหนดค่า จะต้องทำการคืนค่าเป็น nil[1]  
 
 ### 🌼 attr_accessor (getter+setter)  
-📌 โค้ด  
+โค้ด  
 
       class User
             attr_accessor :name, :age
@@ -65,23 +65,50 @@
       puts u.name
       puts u.age
       
-📌 ผลลัพธ์  
+ผลลัพธ์  
 
       นิว  
       20
 ☞  attr_accessor สามารถสร้างได้ทั้ง getter และ setter โดยจะสร้างให้อัตโนมัติ[2] 
 
-### 🌼 attr_reader (get)  
-📌 โค้ด  
-📌 ผลลัพธ์  
+### 🌼 attr_reader (getter)  
+โค้ด  
+
+      class User
+        attr_reader :name
+
+        def initialize(name)
+          @name = name
+        end
+      end
+
+      u = User.new("บีต")
+      puts u.name     # อ่านค่าได้
+      u.name = "ใหม่" # error
+
+ผลลัพธ์  
 ☞  attr_reader จะใช้เมื่อต้องการที่จะอ่าน "อ่านได้อย่างเดียว"[2]  
 
-### 🌼 attr_writer (set)  
-📌 โค้ด  
-📌 ผลลัพธ์  
+### 🌼 attr_writer (setter)  
+โค้ด  
+
+      class User
+        attr_writer :name
+
+        def initialize(name)
+          @name = name
+        end
+      end
+
+      u = User.new("บีต")
+      u.name = "ใหม่"   # กำหนดค่าได้
+      puts u.name       # error
+
+ผลลัพธ์  
 ☞  attr_writer จะใช้เมื่อต้องการที่จะแก้ไข "แก้ไขอย่างเดียว"[2]  
+
 ### 🌼 ตรวจสอบ instance variable  
-📌 โค้ด  
+โค้ด  
 
       class Car
             def initialize(brand, year)  
@@ -94,14 +121,14 @@
       c = Car.new("Toyota", 2025)
       p c.instance_variables
 
-📌 ผลลัพธ์  
+ผลลัพธ์  
 
       [:@brand, :@year, :@running]
 
 ☞  instance_variables จะทำการคืน array ของ instance variable กลับมาทั้งหมด [3]  
 
 ### 🌼 Reflection (set/get/remove)  
-📌 โค้ด  
+โค้ด  
 
       class Bag; end
 
@@ -112,7 +139,7 @@
       bag.remove_instance_variable(:@items)
       p bag.instance_variables  
       
-📌 ผลลัพธ์  
+ผลลัพธ์  
 
       ["pen", "book"]
       []
@@ -125,8 +152,7 @@
 |ไม่ต้องประกาศล่วงหน้า|ต้องประกาศ type และ access modifer|  
 |สร้างแบบ dynamic ได้|ต้องทำการประกศใน class definition|  
 |ใช้ attr_accessor ในการสร้าง getter/setter|ต้องเขียน getter/setter methods ขึ้นเอง|  
-
-📌 โค้ด  
+ 
 Ruby  
 
       class Person
@@ -239,7 +265,36 @@ https://ruby-doc.org/3.4.1/Object.html?utm_source=chatgpt.com Ruby Core API – 
 
 [2] Ruby Core API – Module#attr_reader, Module#attr_writer, Module#attr_accessor. https://ruby-doc.org/core/Module.html
 
-[1]https://docs.ruby-lang.org/en/master/syntax/assignment_rdoc.html#label-Instance+Variables  Ruby Official Documentation – Syntax: Assignment / Instance Variables.
+[1]https://docs.ruby-lang.org/en/master/syntax/assignment_rdoc.html#label-Instance+Variables  Ruby Official Documentation – Syntax: Assignment / Instance Variables.  
+Ruby User's Guide - Instance Variables: https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html
+
+นำคำนิยาม scope การประกาศแบบ dynamic และคุณสมบัติพื้นฐานทั้ง 4 ข้อมาใช้
+ใช้ตัวอย่าง InstTest class เป็นแนวทางในการสร้างตัวอย่าง
+
+
+Ruby Official Documentation - Assignment Syntax: https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html
+
+นำกฎการตั้งชื่อ "An instance variable must start with a @" มาใช้
+
+
+Ruby Object Class Documentation: https://docs.ruby-lang.org/en/3.3/Object.html
+
+นำข้อมูลเรื่อง instance_variable_get, instance_variable_set methods มาใช้ในตัวอย่าง Dynamic Class
+
+
+Techotopia Ruby Essentials: https://www.techotopia.com/index.php/Ruby_Essentials
+
+เป็นแหล่งอ้างอิงหลักที่ได้รับมอบหมาย ใช้เป็นพื้นฐานในการศึกษา
+
+
+TutorialsPoint Ruby Tutorial: https://www.tutorialspoint.com/ruby/index.htm
+
+นำแนวคิดการใช้ attr_accessor และตัวอย่างการเปรียบเทียบกับภาษาอื่นมาประยุกต์
+
+
+GeeksforGeeks Ruby Tutorial: https://www.geeksforgeeks.org/ruby/ruby-tutorial/
+
+นำเนื้อหาเรื่อง best practices และตัวอย่างการใช้งานขั้นสูงมาอ้างอิง
 
 
 
