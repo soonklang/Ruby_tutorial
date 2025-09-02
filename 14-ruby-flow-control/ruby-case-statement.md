@@ -377,9 +377,9 @@ match animal:
                     2. การเเสดงผลใช้ print เเทน puts
 
 ### Reference
-* [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby 
-* [https://www.tutorialspoint.com/ruby/ruby_if_else.htm] ตัวอย่างของ Ruby ของ Range
-* [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
+* [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby เเละศึกษา syntax
+* [https://www.tutorialspoint.com/ruby/ruby_if_else.htm] ตัวอย่างของ Ruby ของ Range 
+* [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby เเละศึกษา syntax
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
 * [https://www.tutorialspoint.com/ruby/ruby_ranges.htm] สำหรับศึกษา number range
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
