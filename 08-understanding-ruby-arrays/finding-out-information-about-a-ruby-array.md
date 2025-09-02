@@ -477,3 +477,347 @@ if (Index >= 0 && Index < row) {
 - .index() / .rindex()
 - .count()
 - .any? / .all? / .none?
+
+**ยกตัวอย่างการสร้าง array**
+```ruby
+arr1 = [1,2,3,4,5,6,7,8,9]
+arr2 = [[1,2,3],[4,5,6],[7,8,9]]
+arr3 = []
+arr4 = [1,1,1,2,2,2,3,3,3]
+```
+
+ในภาษา Ruby มีหลายคำสั่งที่ใช้สำหรับการตรวจสอบ array สิ่งที่ใช้บ่อยมากสิ่งหนึ่งก็คือ .length() เเละ .size()
+
+.length() / .size() ทำหน้าที่บอกขนาดของ array นั้นๆ โดยขนาดเล็กที่สุดคือ 1
+```ruby
+arr1.length()
+arr2.size()
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+puts arr1.length()
+# จะมีค่าเท่ากับ 9
+puts arr1.size()
+# จะมีค่าเท่ากับ 9
+
+puts arr2.length()
+# จะมีค่าเท่ากับ 3
+puts arr2.size()
+# จะมีค่าเท่ากับ 3
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+>Python
+```python
+print(len(arr1))
+# จะมีค่าเท่ากับ 9
+print(len(arr2))
+# จะมีค่าเท่ากับ 3
+```
+
+>Java
+```java
+System.out.println(arr1.length);
+// จะมีค่าเท่ากับ 9
+System.out.println(arr2.length);
+// จะมีค่าเท่ากับ 3
+```
+
+ในภาษา C ไม่มีคำสั่งสำเร็จรูปเเบบ 2 ภาษาข้างต้น เเต่สามารถใช้อัลกอริทึมอื่นๆช่วยเพื่อให้ได้ผลลัพท์ที่คล้ายกันได้ ดังนี้
+
+>C
+```c
+printf("%d\n",sizeof(arr1) / sizeof(arr1[0]));
+// จะมีค่าเท่ากับ 9
+printf("%d",sizeof(arr2[0]) / sizeof(arr2[0][0]));
+// จะมีค่าเท่ากับ 3
+```
+
+หากใน array นั้นไม่มีข้อมูลใดๆเลย จะนำค่า 0 ออกมา เเต่ใน Ruby มีวิธีที่ง่ายกว่านั้น นั่นคือคำสั่ง .empty?
+
+.empty? ใช้เพื่อเช็คว่า array นั้นมีค่าอยู่ภายในนั้นหรือไม่ โดยค่าผลลัพท์ที่ออกมาจะเป็น boolean เท่านั้น เป็น true เมื่อ มีข้อมูลอยู่ภายใน array อย่างน้อย 1 ค่า เเละเป็น false เมื่อไม่มีค่าใดๆเลย
+```ruby
+arr1.empty?
+arr2.empty?
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+puts arr1.empty?
+# จะมีค่าเท่ากับ false
+puts arr3.empty?
+# จะมีค่าเท่ากับ true
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+ในภาษาอื่นๆเช่น Python, Java ไม่มีคำสั่งที่ทำหน้าที่คล้ายหรือเหมือนกับ .empty? ได้โดยตรง เเต่สามารถพลิกเเพลงใช้วิธีอื่นๆในการทำให้ได้ผลลับเดียวกันออกมาได้ เช่น​
+
+>Python
+```python
+print(not arr1)
+# จะมีค่าเท่ากับ False
+print(not arr3)
+# จะมีค่าเท่ากับ True
+```
+
+>Java
+```java
+System.out.println(arr1.length == 0);
+// จะมีค่าเท่ากับ False
+System.out.println(arr3.length == 0);
+// จะมีค่าเท่ากับ True
+```
+array ในภาษา C ไม่ใช่ array เเบบ dynamic array จึงไม่สามารถ/จำเป็น ต้องเช็คว่า array นี้ว่างหรือไม่ เพราะยังไงเราก็ต้องกำหนดค่าเริ่มต้นให้อยู่เเล้ว จึงไม่มีทางที่ array จะว่างได้
+
+ใน Ruby หากเราต้องการ search ว่าค่านั้นๆมีอยู่ใน array ของเราหรือไม่ ใน Ruby สามารถทำได้โดยใช้คำสั่ง .include?() โดย Ruby จะค้นหาค่าที่อยู่ใน () ว่ามีอยู่ใน array ของเราหรือไม่ เเล้วจะคืนค่าออกมาเป็น boolean
+```ruby
+arr1.include?(5)
+arr2.include?([4,5,6])
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+puts arr1.include?(5)
+# จะมีค่าเท่ากับ true
+puts arr2.include?([4,5,6])
+# จะมีค่าเท่ากับ true
+puts arr2[1].include?(5)
+# จะมีค่าเท่ากับ true
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+ในภาษาอื่นๆเช่น Python, Java ไม่มีคำสั่งที่ทำหน้าที่คล้ายหรือเหมือนกับ .include? ได้โดยตรง เเต่สามารถพลิกเเพลงใช้วิธีอื่นๆในการทำให้ได้ผลลับเดียวกันออกมาได้ เช่น​
+
+>Python
+```python
+print(5 in arr1)
+# จะมีค่าเท่ากับ True
+print([4,5,6] in arr2)
+# จะมีค่าเท่ากับ True
+print(5 in arr2[1])
+# จะมีค่าเท่ากับ True
+```
+
+>Java
+```java
+import java.util.Arrays;
+import java.util.List;
+
+List<Integer> list1 = Arrays.asList(arr1);
+List<List<Integer>> arr2 = Arrays.asList(
+    Arrays.asList(1,2,3),
+    Arrays.asList(4,5,6),
+    Arrays.asList(7,8,9)
+);
+
+System.out.println(list1.contains(5));
+// จะมีค่าเท่ากับ true
+System.out.println(arr2.contains(Arrays.asList(4,5,6)));
+// จะมีค่าเท่ากับ true
+System.out.println(arr2.get(1).contains(5));
+// จะมีค่าเท่ากับ true
+```
+
+ใน C ไม่มี ฟังก์ชั่นสำเร็จรูปเลย จึงจำเป็นต้องเขียนเอง
+
+เเต่ถ้าเราอยากได้ตำเเหน่งในค่าที่เจอด้วยต้องใช้คำสั่ง .index() หรือ .rindex() โดยสองตัวนี้เเตกต่างกันที่ .index() จะออกผลลัพเป็นตำเเหน่งเเรกที่พบเจอ เเต่ .rindex() จะเป็นตำเเหน่งสุดท้ายที่เจอ
+```ruby
+arr1.index(5)
+arr2.index([4,5,6])
+arr4.rindex(2)
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+puts arr1.index(5)
+# จะมีค่าเท่ากับ 4
+puts arr2.index([4,5,6])
+# จะมีค่าเท่ากับ 1
+puts arr4.rindex(2)
+# จะมีค่าเท่ากับ 5
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+ในภาษาอื่นๆเช่น Python ไม่มีคำสั่งที่ทำหน้าที่คล้ายหรือเหมือนกับ .include? ได้โดยตรง เเต่สามารถพลิกเเพลงใช้วิธีอื่นๆในการทำให้ได้ผลลับเดียวกันออกมาได้ เช่น​
+
+>Python
+```python
+print(arr1.index(5))
+# จะมีค่าเท่ากับ 4
+print(arr2.index([4,5,6]))
+# จะมีค่าเท่ากับ 1
+print(len(arr4) - 1 - arr4[::-1].index(2))
+# จะมีค่าเท่ากับ 5
+```
+ในภาษา java เเละ c ไม่มีคำสั่งสำเร็จรูปที่ทำหน้าที่คล้ายกันเลย จึงต้องเขียนอัลกอริทึมขึ้นมาใหม่
+
+ในภาษา Ruby หากต้องการนับจำนวนค่าที่เราต้องการสามารถใช้คำสั่ง .count() ได้ โดยใส่ค่าที่ต้องการลงไปใน ()
+```ruby
+arr4.count(2)
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+puts arr4.count(2)
+# จะมีค่าเท่ากับ 3
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+>Python
+```python
+print(arr4.count(2))
+# จะมีค่าเท่ากับ 3
+```
+
+ถ้าเป็น array เเบบปกติ จะต้องเขียน loop เพื่อนับเอง เเต่มีคำสั่งสำเร็จเมื่อใช้ List
+>Java
+```java
+import java.util.List;
+List<Integer> arr4 = Arrays.asList(1,1,1,2,2,2,3,3,3);
+System.out.println(Collections.frequency(arr4, 2));
+// จะมีค่าเท่ากับ 3
+```
+
+ในภาษา C จะต้องเขียน loop เพื่อนับเอง 
+>C
+```c
+int count(int arr[], int size, int value) {
+    int c = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == value) c++;
+    }
+    return c;
+}
+
+printf("%d", count(arr4, sizeof(arr4) / sizeof(arr4[0]), 2));
+```
+
+ในภาษา Ruby มีการตรวจสอบเงื่อนไขใน array เเบบสั้นๆได้ด้วย 3 คำสั่งนี้
+- **any?** หมายถึง ตรวจสอบว่า มี element ใดบ้าง ที่เป็นจริงตามเงื่อนไขหรือไม่
+    - ถ้าเจอ อย่างน้อย 1 ตัว -> คืนค่า true
+    - ถ้าไม่เจอเลย -> คืนค่า false
+```ruby
+arr1.any? { |x| x > 3 }
+arr1.any? { |x| x > 10 }
+```
+- **all?** หมายถึง ตรวจสอบว่า ทุก element เป็นจริงตามเงื่อนไขหรือไม่
+    - ถ้าทุกตัวผ่าน -> คืนค่า true
+    - ถ้ามีแม้แต่ 1 ตัวไม่ผ่าน -> คืนค่า false
+```ruby
+arr1.all? { |x| x.even? }
+arr1.all? { |x| x > 3 }
+```
+- **none?** หมายถึง ตรวจสอบว่า ไม่มี element ใดเลย ที่ตรงตามเงื่อนไข
+    - ถ้าไม่เจอสักตัว -> คืนค่า true
+    - ถ้าเจอแม้แต่ 1 ตัว -> คืนค่า false
+```ruby
+arr1.none? { |x| x.even? }
+arr1.none? { |x| x > 4 }
+```
+
+**วิธีการใช้งาน**
+
+>Ruby
+```ruby
+# any?
+puts arr1.any? { |x| x > 3 }
+# จะมีค่าเท่ากับ true
+puts arr1.any? { |x| x > 10 }
+# จะมีค่าเท่ากับ false
+
+# all?
+puts arr1.all? { |x| x.even? }
+# จะมีค่าเท่ากับ false
+puts arr1.all? { |x| x > 3 }
+# จะมีค่าเท่ากับ false
+
+#none?
+puts arr1.none? { |x| x.even? }
+# จะมีค่าเท่ากับ false
+puts arr1.none? { |x| x > 4 }
+# จะมีค่าเท่ากับ false
+```
+
+**ตัวอย่างในภาษาอื่น**
+
+>Python
+```python
+# any?
+print(any(x > 3 for x in arr1))
+# จะมีค่าเท่ากับ true
+print(any(x > 10 for x in arr1))
+# จะมีค่าเท่ากับ false
+
+# all?
+print(all(x % 2 == 0 for x in arr1))
+# จะมีค่าเท่ากับ false
+print(all(x > 3 for x in arr1))
+# จะมีค่าเท่ากับ false
+
+# none?
+print(not any(x % 2 == 0 for x in arr1))
+# จะมีค่าเท่ากับ false
+print(not any(x > 4 for x in arr1))
+# จะมีค่าเท่ากับ false
+```
+
+ในภาษา java ต้องimport libeary เพิ่มเติมด้วย
+
+>Java
+```java
+import java.util.*;
+import java.util.stream.*;
+
+List<Integer> arr1 = Arrays.asList(1,2,3,4,5,6,7,8,9);
+
+// any?
+System.out.println(arr1.stream().anyMatch(x -> x > 3));
+// จะมีค่าเท่ากับ true
+System.out.println(arr1.stream().anyMatch(x -> x > 10));
+// จะมีค่าเท่ากับ false
+
+// all?
+System.out.println(arr1.stream().allMatch(x -> x % 2 == 0));
+// จะมีค่าเท่ากับ false
+System.out.println(arr1.stream().allMatch(x -> x > 3));
+// จะมีค่าเท่ากับ false
+
+// none?
+System.out.println(arr1.stream().noneMatch(x -> x % 2 == 0));// จะมีค่าเท่ากับ false
+System.out.println(arr1.stream().noneMatch(x -> x > 4));// จะมีค่าเท่ากับ false
+```
+
+ในภาษา C ต้องเขียน loop เช็คเองทั้งหมด
+
+## 3. Modification / Mutation (แก้ไขค่าใน Array) 
+- .push() / <<
+- .pop()
+- .shift()
+- .unshift()
+- .insert()
+- .selete() / .delete_at()
+- .compact! / .uniq! / .reverse! / .sort!
+
+**ยกตัวอย่างการสร้าง array**
+```ruby
+arr1 = [1,2,3,4,5,6,7,8,9]
+arr2 = [[1,2,3],[4,5,6],[7,8,9]]
+arr3 = []
+arr4 = [1,1,1,2,2,2,3,3,3]
+```
