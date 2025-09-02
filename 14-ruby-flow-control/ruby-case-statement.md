@@ -44,6 +44,8 @@ end
 
 **ตัวอย่างที่เป็น String**
 
+โดยที่ case รับค่าเป็น "Patriot" เเล้วนำค่าไปเช็คในเงื่อนไข when
+
 ``` ruby
 car = "Patriot"
 
@@ -62,11 +64,23 @@ manufacturer = case car
 end
 
 puts "The " + car  + " is made by "  + manufacturer
+
+เมื่อ case เจอกับเงื่อนไขที่ตรงกันก็จะได้ output ออกมาเเล้วจบการทำงาน
+
 ```
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
   The Patriot is made by Jeep
+</code></pre>
+</details>
+
+เเต่หาก case ไม่ตรงกับเงื่อนไขไหนเลย จะได้ output ของเงื่อนไข else เเทน
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  The Prius is made by Unknown
 </code></pre>
 </details>
 
