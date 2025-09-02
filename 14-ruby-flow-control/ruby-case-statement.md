@@ -44,7 +44,7 @@ end
 
 **ตัวอย่างที่เป็น String**
 
-โดยที่ case รับค่าเป็น "Patriot" เเล้วนำค่าไปเช็คในเงื่อนไข when
+โดยที่ case รับค่าเป็น "Patriot" เเล้วนำค่าไปเช็คในเงื่อนไข when 
 
 ``` ruby
 car = "Patriot"
@@ -74,7 +74,7 @@ puts "The " + car  + " is made by "  + manufacturer
 </code></pre>
 </details>
 
-เเต่หาก case ไม่ตรงกับเงื่อนไขไหนเลย จะได้ output ของเงื่อนไข else เเทน
+เเต่หาก case ไม่ตรงกับเงื่อนไขไหนเลย จะได้ output ของเงื่อนไข else เเทนเเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
