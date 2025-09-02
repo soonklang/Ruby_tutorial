@@ -83,7 +83,7 @@ puts "The " + car  + " is made by "  + manufacturer
 </code></pre>
 </details>
 
-**หรือจะเขียนโดยการใช้ put เเทน then ก็ได้**
+**หรือจะเขียนโดยการใช้ put(หรือจะใช้ print ก็ได้เพราเหมือนกัน) เเทน then ก็ได้**
 
 โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when
 
@@ -166,7 +166,7 @@ case เป็นค่า 5 เมื่อตรวจสอบกับทุ
 </code></pre>
 </details>
 
-**ตัวอย่างอีกเเบบที่ใช้ put เเทน then** 
+**ตัวอย่างอีกเเบบที่ใช้ put(หรือจะใช้ print ก็ได้เพราเหมือนกัน) เเทน then** 
 
 ``` ruby
 marks = 70
@@ -274,7 +274,7 @@ switch (day) {
 
                    2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
                    
-                   3. การเเสดงผลใช้ printf เเทน puts
+                   3. การเเสดงผลใช้ printf เเทน puts,print
                    
 
 **ภาษา Java**
@@ -318,7 +318,7 @@ switch (day) {
                    
                    2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
                    
-                   3. การเเสดงผลใช้ System.out.println เเทน puts
+                   3. การเเสดงผลใช้ System.out.println เเทน puts,print
                    
 
 **ภาษา Python**
@@ -371,10 +371,10 @@ match animal:
 
 ข้อเเตกต่างกับ Ruby :
 
-                    1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
+                    ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
 
 
-                    2. การเเสดงผลใช้ print เเทน puts
+                  
 
 ### Reference
 * [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby เเละศึกษา syntax
