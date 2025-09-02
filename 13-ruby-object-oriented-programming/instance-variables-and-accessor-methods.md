@@ -22,8 +22,6 @@ class Student
     @name = name
   end
 end
-
-student = Student.new(1,"Prayat")
 ```
 จากโค้ดด้านบน Instance Variables ในคลาส Student คือ id และ name ที่ประกาศไว้ใน methods initialize ที่รับค่าจากภายนอกคลาสแล้วนำมาเก็บไว้ ทีนี้เรามาลองเทียบกับภาษาอื่นบ้าง
 
@@ -45,6 +43,8 @@ public class Student{
     }
 }
 ```
+จากโค้ดด้านบน Instance Variables ของ Java จำเป็นต้องประกาศนอก Constructor ด้วยและตัว Instance Variables ไม่จำเป็นต้องมีสัญลักษณ์ @ เหมือนภาษา Ruby แต่จะมีการกำหนด Datatypes ของตัวแปรและมีการกำหนด access specifier ว่าจะเป็นแบบไหน เช่น ถ้าไม่กำหนด java จะกำหนดให้เป็น default โดยอัตโนมัติและทำให้ภายนอกคลาสจะเข้าถึงตัวแปรนั้นได้ แต่ถ้าไม่ต้องการก็ต้องกำหนดให้เป็น private ส่วนภายใน Constructor Instance Variables จะต้องใช้ this. เพื่อบ่งบอกถึงตัวแปรภายในคลาสไม่ใช่ parameter ที่รับเข้ามา
+
 
 #### Python
 ```python
