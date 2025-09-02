@@ -57,7 +57,7 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
-จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ method แต่เนื่องจากถ้าในอนาคตมีการเพิ่ม Instance Variables มากขึ้นจะเกิดอะไรขึ้น
+จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ method แต่เนื่องจากถ้าในอนาคตมีการเพิ่ม Instance Variables มากขึ้นจะเกิดอะไรขึ้นลองดูตัวอย่างถัดไป
 
 ### ตัวอย่างที่ 3
 ```ruby
@@ -104,7 +104,33 @@ class Student
 end
 
 student = Student.new(1,"Prayat","Jutha",15)
-puts student.getName() #output Prayat
+puts puts "id #{student.getId} #{student.getFirstName} #{student.getLastName} age #{student.getAge}"
+#output id 1 Prayat Jutha age 15
+```
+จากโค้ดจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
+- attr_reader ทำหน้าที่เป็น getter โดยอัตโนมัติ
+- attr_writer ทำหน้าที่เป็น setter โดยอัตโนมัติ
+- attr_accessor ทำหน้าที่เป็นทั้ง setter และ getter โดยอัตโนมัติ
+
+### ตัวอย่างที่ 4
+```ruby
+class Student
+	attr_accessor :id #Accessor Methods (setter และ getter) ของ @id
+	attr_accessor :firstName #Accessor Methods (setter และ getter) ของ @firstName
+	attr_accessor :lastName #Accessor Methods (setter และ getter) ของ @lastName
+	attr_accessor :age #Accessor Methods (setter และ getter) ของ @age
+	def initialize(id,firstName,lastName,age)
+    	#กำหนด instance variables
+    	@id = id
+    	@firstName = firstName
+		@lastName = lastName
+		@age = age
+	end
+end
+
+student = Student.new(1,"Prayat","Jutha",15)
+puts puts "id #{student.getId} #{student.getFirstName} #{student.getLastName} age #{student.getAge}"
+#output id 1 Prayat Jutha age 15
 ```
 
 ### เมื่อเทียบกับ Java
