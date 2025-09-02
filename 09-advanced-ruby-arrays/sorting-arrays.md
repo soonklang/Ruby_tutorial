@@ -66,9 +66,9 @@ free(sorted_copy); /* เพื่อคืนหน่วยความจำ�
 
 **Java**
 ```java
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Arrays; //ใช้สำหรับ Array
+import java.util.List; //ใช้สำหรับ สร้างตัวแปร List
+import java.util.stream.Collectors; //ใช้สำหรับทำงานกับ Stream API
 
 List<String> words = Arrays.asList("kiwi", "apple", "fig", "banana");
 List<String> sortedWords = words.stream().sorted().collect(Collectors.toList()); // ส่วนที่เหมือนกับ sort โดย สร้าง List ใหม่ชื่อ sortedWords จากการเรียงลำดับ
@@ -106,7 +106,7 @@ printArray("Sorted (in-place)", words1, n); /* ผลลัพธ์ที่ไ
 
 **Java**
 ```java
-import java.util.Arrays;
+import java.util.Arrays; //ใช้สำหรับ Array
 
 String[] words = {"kiwi", "apple", "fig", "banana"};
 Arrays.sort(words); // ส่วนที่เหมือนกับ sort! โดยมีการเรียงลำดับภายใน Array ของ  words โดยตรง
@@ -130,7 +130,7 @@ print(f"After sort():  {words_to_modify}") # ผลลัพธ์ที่ไ�
 **Ruby**
 ```ruby
 words = ["ruby", "is", "awesome"]
-sorted_words = words.sort_by { |word| word.length }
+sorted_words = words.sort_by { |words| word.length }#ทำการเรียงค่าภายใน Array แล้วบันทึกค่าลงไปใน Array ของ sorted_words โดยเรียงด้วยการใช้ข้อมูลจาก words ในการเรียงข้อมูลที่มาจาก words
 puts sorted_words #ผลลัพธ์ที่ได้ => ["is", "ruby", "awesome"]
 ```
 
@@ -138,8 +138,8 @@ puts sorted_words #ผลลัพธ์ที่ได้ => ["is", "ruby", "aw
 ```c
 const char *original4[] = {"kiwi", "apple", "fig", "banana"};
 int n = sizeof(original4) / sizeof(original4[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
-const char **sorted_by_copy = malloc(n * sizeof(const char *));
-memcpy(sorted_by_copy, original4, n * sizeof(const char *));
+const char **sorted_by_copy = malloc(n * sizeof(const char *)); /* สร้าง array เพื่อเก็บ string จำนวน n ตัว */
+memcpy(sorted_by_copy, original4, n * sizeof(const char *));/* คัดลอกข้อมูลจาก array ของ original4 ไปยัง array ของ sorted_by_copy */
 qsort(sorted_by_copy, n, sizeof(const char *), compareByLength); /* เรียงลำดับ Array ใหม่โดยใช้เงื่อนไข compareByLength ที่เรียงผ่านการใช้ความยาวเป็นเกณฑ์ โดยจะเก็บเข้าไปใน sorted_by_copy */
 printArray(sorted_by_copy, n); /* ผลลัพธ์ที่ได้ => fig kiwi apple banana */
 free(sorted_by_copy); /* เพื่อคืนหน่วยความจำจากการสร้างมา */
@@ -147,10 +147,10 @@ free(sorted_by_copy); /* เพื่อคืนหน่วยความจ�
 
 **Java**
 ```java
-import java.util.Arrays;
-import java.util.List;
-import java.util.Comparator;
-import java.util.stream.Collectors;
+import java.util.Arrays; //ใช้สำหรับ Array
+import java.util.List; //ใช้สำหรับ สร้างตัวแปร List
+import java.util.Comparator; //ใช้สำหรับ Comparator เพื่อการเปรียบเทียบ
+import java.util.stream.Collectors; //ใช้สำหรับทำงานกับ Stream API
 
 List<String> words = Arrays.asList("kiwi", "apple", "fig", "banana");
 List<String>sortedWords=words.stream().sorted(Comparator.comparingInt(String::length)).collect(Collectors.toList()); //ส่วนที่เหมือนกับ sort_by โดยมีการเรียงลำดับและจะมีการจัดเก็บไว้ในตัวของ sortedWords โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
@@ -177,7 +177,7 @@ print("{new_people_sorted_by_age}") # ผลลัพธ์ที่ได้ =>
 **Ruby**
 ```ruby
 words = ["ruby", "is", "awesome"]
-words.sort_by! { |word| word.length }
+words.sort_by! { |words| words.length } #ทำการเรียงค่าภายใน Array แล้วบันทึกค่าลงไปใน Array ได้เลยโดยตรง โดยเรียงด้วยการใช้ข้อมูลจาก words ในการเรียงข้อมูล
 puts words #ผลลัพธ์ที่ได้ => ["is", "ruby", "awesome"]
 ```
 
@@ -193,12 +193,12 @@ printf("\n");
 
 **Java**
 ```java
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.Arrays; //ใช้สำหรับ Array
+import java.util.Comparator; //ใช้สำหรับ Comparator เพื่อการเปรียบเทียบ
 
 String[] words = {"kiwi", "apple", "fig", "banana"};
 Arrays.sort(words, Comparator.comparingInt(String::length)); // ส่วนที่เหมือนกับ sort_by! โดยมีการเรียงลำดับภายใน Array ของ words โดยตรงร่วมกับการใช้เงื่อนไขความยาวของ String
-System.out.println(Arrays.toString(words)); // ผลลัพธ์ที่ได้ => [fig, kiwi, apple, banana]
+System.out.println(Arrays.toString(words)); //ผลลัพธ์ที่ได้ => [fig, kiwi, apple, banana]
 ```
 
 **Python**
