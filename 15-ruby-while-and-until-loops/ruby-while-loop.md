@@ -15,19 +15,22 @@ while condition[do]
 end
 ```
 ``` ruby
-count = 1
-while count <= 5
-  puts count
-  count += 1
+i = 10
+until i == 4 do
+    put i
+    i = i - 1
 end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>1
-2
-3
-4
-5
+    10
+    9
+    8
+    7
+    6
+    5
+    4
 </code></pre>
 </details>
 
