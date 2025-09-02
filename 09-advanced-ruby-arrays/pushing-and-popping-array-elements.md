@@ -1,6 +1,6 @@
 # Pushing and Popping Array Elements
 
-array ใน Ruby สามารถเป็น Stack แบบ Last in First Out (LIFO) ซึ่งสามารถ pop และ push ได้
+Array ใน Ruby สามารถเป็น Stack แบบ Last in First Out (LIFO) ซึ่งสามารถ pop และ push ได้
 
 ## Syntax 
 ### 1.) การ push
