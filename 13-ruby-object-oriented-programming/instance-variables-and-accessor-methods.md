@@ -269,6 +269,9 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 
 - Bunlong. (ม.ป.ป). The Ruby Programming Language. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
 
+- Ruby Programming Language. (ม.ป.ป). Classes and modules. เข้าค้นเมื่อ 2 กันยายน 2025 จาก https://www.ruby-lang.org/en/documentation/faq/8/
+
+
   
 #### ภาษาอื่นๆนอกเหนือ Ruby
 
