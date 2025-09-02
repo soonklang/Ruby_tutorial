@@ -904,6 +904,10 @@ p arr2
 # จะมีค่าเท่ากับ [[1, 2, 3], [4, 5, 6]]
 ```
 
+## 4. Enumeration / Iteration (วน loop / map / filter)  
+
+## 5. Advanced / Combinatorics / Utilities (การใช้งานขั้นสูง / การคำนวณ / สถิติ)
+
 
 
 
