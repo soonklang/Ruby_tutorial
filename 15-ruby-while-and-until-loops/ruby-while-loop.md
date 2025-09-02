@@ -85,15 +85,15 @@ i = 2
 
 **Return Value**
 ```ruby
-result = while true
-  break "hello"
-end
-puts result  # Output: "hello"
-
 result = while false
   "never executed"
 end
 puts result  # Output: nil
+
+result = while true
+  break "hello"
+end
+puts result  # Output: "hello"
 ```
 >while loop จะreturnค่า nil เว้นแต่จะใช้ break เพื่อส่งค่าออกมา
 
@@ -151,6 +151,8 @@ print("Loop finished.")
 ```
 > สิ่งที่ต่างจากRubyคือ
 >* การใช้เครื่องหมาย : ต่อท้ายเงื่อนไขของ while
+>* ใช้ indentation ในการบอกขอบเขต
+
 
 **Java**
 ``` Java
@@ -205,7 +207,7 @@ Referencesที่ใช้เปรียบเทียบกับภาษ�
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
-[RUBY WHILE LOOP.pdf](https://github.com/user-attachments/files/22068093/RUBY.WHILE.LOOP.pdf)
+[RUBY WHILE LOOP.pdf](https://github.com/user-attachments/files/22091940/RUBY.WHILE.LOOP.pdf)
 
 ### Video
 
