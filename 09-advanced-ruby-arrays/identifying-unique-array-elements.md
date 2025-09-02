@@ -226,3 +226,37 @@ Method Unique หรือ .uniq คือ Method ในภาษา Ruby ที
 
     Output : 1 2 3 4 5
 วิธีนี้เป็นวิธีที่ง่ายอีกเหมือนกันใช้ dict.fromkeys() แปลงจาก list เป็น dict โดยใช้ ตำแหน่งของ list เป็น key ทำให้วิธีนี้รักษาตำแหน่งของข้อมูลด้วย
+
+# อ้างอิง
+> Ruby
+
+https://www.techotopia.com/index.php/Advanced_Ruby_Arrays
+
+https://www.geeksforgeeks.org/ruby/how-to-remove-duplicate-elements-from-array-in-ruby/
+
+> C
+
+https://www.tutorialspoint.com/c-program-to-delete-the-duplicate-elements-in-an-array?utm_source=chatgpt.com
+
+https://www.geeksforgeeks.org/c/c-program-to-remove-duplicates-from-sorted-array/?utm_source=chatgpt.com
+
+> Java
+
+https://medium.com/%40alxkm/removing-duplicates-from-a-list-in-java-multiple-approaches-b06201eece8a
+
+https://www.baeldung.com/java-remove-duplicates-from-list?utm_source=chatgpt.com
+
+https://www.digitalocean.com/community/tutorials/java-stream-distinct-function?utm_source=chatgpt.com
+
+
+> Python
+
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop_duplicates.html?utm_source=chatgpt.com
+
+https://stackoverflow.com/questions/480214/how-do-i-remove-duplicates-from-a-list-while-preserving-order?utm_source=chatgpt.com
+
+https://numpy.org/doc/stable/reference/generated/numpy.unique.html?utm_source=chatgpt.com
+
+https://docs.python.org/3/library/stdtypes.html?utm_source=chatgpt.com#set-types-set-frozenset
+
+https://www.geeksforgeeks.org/java/how-to-remove-duplicates-from-arraylist-in-java/
