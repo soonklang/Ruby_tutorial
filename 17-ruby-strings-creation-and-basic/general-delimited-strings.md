@@ -13,7 +13,7 @@
  </pre>
 </details>
 
-  ซึ่ง Ruby อนุญาตให้เราใช้เครื่องหมาย % ตามด้วยตัวคั่นอะไรก็ได้ที่คุณเลือกได้ เช่น ( ), [ ], { }, ! ! , | | , etc. (Techotopia, n.d.).
+  >ซึ่ง Ruby อนุญาตให้เราใช้เครื่องหมาย % ตามด้วยตัวคั่นอะไรก็ได้ที่คุณเลือกได้ เช่น ( ), [ ], { }, ! ! , | | , etc. (Techotopia, n.d.).
 
   ### Example 2 :
       myString = %{"This is a string"}
@@ -25,7 +25,7 @@
  </pre>
 </details> 
 
-และ Ruby ยังมี ตัวคั่นพิเศษบางประเภทที่ใช้คั่นด้วยความหมายที่แตกต่างกันด้วย เช่น
+>และ Ruby ยังมี ตัวคั่นพิเศษบางประเภทที่ใช้คั่นด้วยความหมายที่แตกต่างกันด้วย เช่น
 ### Example 3 %Q:
       myString = %Q{"This is a string #{1+2}"}
       puts myString
@@ -45,7 +45,8 @@
    This is a string #{1+2}
  </pre>
 </details> 
-แต่ ถ้าเราไม่ต้องการใช้วิธีการ General delimited String ก็ สามารถใช้ Backslash คู่กับตัว " หรือ ' ด้วย ซึ่งเราจะใช้ Backslash เพื่อ "escape" ก็ต่อเมื่อ เครื่องหมายคำพูดข้างใน เป็นชนิดเดียวกับเครื่องหมายที่ใช้ล้อมกรอบ
+   
+>แต่ ถ้าเราไม่ต้องการใช้วิธีการ General delimited String ก็ สามารถใช้ Backslash คู่กับตัว " หรือ ' ด้วย ซึ่งเราจะใช้ Backslash เพื่อ "escape" ก็ต่อเมื่อ เครื่องหมายคำพูดข้างใน เป็นชนิดเดียวกับเครื่องหมายที่ใช้ล้อมกรอบ
 
 ### Example 5 \" \":
       myString = "This is \"my\" String"
@@ -67,7 +68,7 @@
  </pre>
 </details> 
 
-แต่ถ้าเครื่องหมายที่ใช้ล้อมกรอบคนละชนิดกับเครื่องหมายภายใน เราก็สามารถใช้มันได้โดยที่ไม่ต้อง escape
+>แต่ถ้าเครื่องหมายที่ใช้ล้อมกรอบคนละชนิดกับเครื่องหมายภายใน เราก็สามารถใช้มันได้โดยที่ไม่ต้อง escape
 
 ### Example 7 ' ':
       myString = "This is 'my' String"
@@ -88,7 +89,7 @@
    This is "my" String
  </pre>
 </details> 
-ซึ่งตัวคั่นนั้นก็สามารถใช้กับข้อมูลประเภทอื่นๆได้เช่นกัน เช่น %w[apple banana cherry] ทำให้ สร้าง Array ของ String โดยไม่ต้องพิมพ์ " หรือ , และยังมีตัวคั่นอื่นๆอีก ซึ่งสามารถ ศึกษาต่อที่หัวข้อ General Delimited Input (Thomas et al., 2013).
+>ซึ่งตัวคั่นนั้นก็สามารถใช้กับข้อมูลประเภทอื่นๆได้เช่นกัน เช่น %w[apple banana cherry] ทำให้ สร้าง Array ของ String โดยไม่ต้องพิมพ์ " หรือ , และยังมีตัวคั่นอื่นๆอีก ซึ่งสามารถ ศึกษาต่อที่หัวข้อ General Delimited Input (Thomas et al., 2013).
 
 # เปรียบเทียบกับภาษาอื่นๆ
 ## C Language      
@@ -123,7 +124,7 @@
        </pre>
    </details>
    
-   แต่ถ้าตัว string มีการต่อกันมากๆเพื่อให้การเชียนง่ายขึ้นเราจะใช้ """ """ดังตัวอย่างต่อไปนี้
+   >แต่ถ้าตัว string มีการต่อกันมากๆเพื่อให้การเชียนง่ายขึ้นเราจะใช้ """ """ดังตัวอย่างต่อไปนี้
    ### Example Java language (กรณีใช้ Text Blocks) :
          public class test {
              public static void main(String[] args) {
@@ -195,7 +196,7 @@
                   Of cabbages -- and kings --'
                 </pre>
    </details>
-   หมายเหตุ ในภาษา Python เรายังสามารถใช้ """ สิ่งที่ต้องการcomment """  เพื่อเป็นการ comment หลายบรรทัด แต่ถ้าจะ comment บรรทัดเดียวใช้ # ตามด้วยสิ่งที่อยากcomment
+   >หมายเหตุ ในภาษา Python เรายังสามารถใช้ """ สิ่งที่ต้องการcomment """  เพื่อเป็นการ comment หลายบรรทัด แต่ถ้าจะ comment บรรทัดเดียวใช้ # ตามด้วยสิ่งที่อยากcomment
    
    ### Example 2.การสลับใช้เครื่องหมายคำพูด (ใช้ ' ' หรือ " " )
       # ถ้าในสตริงมี ' เช่นตรงจุด It's  ต้อง \' เพื่อ escape ' 
@@ -228,5 +229,9 @@
    Techotopia. (n.d.). Ruby strings - Creation and basics. Retrieved October 26, 2023, from https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
 
    Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers' guide (4th ed.). The Pragmatic Programmers.
+
+   # Presentation
+
+   # Video
 
 
