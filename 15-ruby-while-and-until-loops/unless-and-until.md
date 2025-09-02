@@ -1,6 +1,7 @@
 # Ruby Unless and Until
 
 **Untill**
+
 **Basic Syntax**
 ``` ruby
 until condition do
@@ -8,6 +9,21 @@ until condition do
 end
 ```
 ``` ruby
+i = 10
+until i == 5 do
+    puts i
+    i = i - 1
+end
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>1
+2
+3
+4
+5
+</code></pre>
+</details>
 
 ### References
 * Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved August 30, 2025, from https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
