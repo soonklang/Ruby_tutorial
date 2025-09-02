@@ -52,7 +52,7 @@ end until conditional
 
 ```
 
-### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Until
+### เปรียบเทียบภาษา Ruby กับภาษา Java , C , Python
 
 **Ruby Example Code**
 ``` ruby
@@ -159,7 +159,7 @@ code unless conditional
 
 ```
 
-### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Unless
+### เปรียบเทียบภาษา Ruby กับภาษา Java , C , Python
 
 
 **Ruby Example Code**
