@@ -17,11 +17,12 @@ end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>1
-2
-3
-4
-5
+  <pre><code>
+10
+9
+8
+7
+6
 </code></pre>
 </details>
 
@@ -45,7 +46,7 @@ end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>1
+  <pre><code>
 x is not equal to y
 </code></pre>
 </details>
