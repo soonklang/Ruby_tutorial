@@ -1,11 +1,11 @@
 # Instance Variables and Accessor Methods
-# Instance Variables คืออะไร?
+## Instance Variables คืออะไร?
   Instance variables คือ ตัวแปรที่กำหนดไว้ในคลาสจะใช้งานได้เพียงแค่แต่ละวัตถุของคลาสนั้นที่ถูกสร้างขึ้นมาเท่านั้น โดยภาษา Ruby จะใช้สัญลักษณ์ @ นำหน้า variables ที่กำหนดไว้เพื่อเข้าถึงตัวแปรภายในคลาสแต่การที่จะเข้าถึงจากนอกคลาสจะต้องใช้ public method ที่เรียกว่า Accessor Methods (setter และ getter)
 
-# Accessor Methods คืออะไร?
+## Accessor Methods คืออะไร?
   Accessor Methods คือ Method ในคลาสที่สามารถอ่านหรือเขียน Instance variables จากภายนอกคลาสได้ เพราะ Instance variables ไม่สามารถเข้าถึงจากนอกคลาสได้โดยตรง
 
-# ตัวอย่างของการกำหนด Instance Variables
+### ตัวอย่างของการกำหนด Instance Variables
 ```ruby
 class Student
   def initialize(id,name)
@@ -19,7 +19,7 @@ student = Student.new(1,"Prayat")
 ```
 จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ ที่เป็นตัวแปรของวัตถุที่สร้างจากคลาส Student
 
-# ตัวอย่างของการกำหนด Accessor Methods
+### ตัวอย่างของการกำหนด Accessor Methods
 ```ruby
 class Student
   def initialize(id,name)
@@ -53,7 +53,7 @@ puts student.getName() #output Tony
 
 จากโค้ด เมื่อมี methods getter และ setter จะสามารถเข้าถึง instance Variables นอกคลาสได้ผ่านการเรียก method ของ student
 
-# เมื่อเทียบกับ Java
+### เมื่อเทียบกับ Java
 ```java
 public class Student{
 	// Instance variables (non-static)
@@ -89,7 +89,7 @@ public class Student{
 
 
 
-# เมื่อเทียบกับ Python
+### เมื่อเทียบกับ Python
 ```python
 
 ```
@@ -97,9 +97,9 @@ public class Student{
 
 
 
-# Reference (Temporary)
+## Reference (Temporary)
 
-# Ruby
+### Ruby
 https://www.techotopia.com/index.php/Ruby_Object_Oriented_Programming
 
 https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
@@ -108,14 +108,14 @@ https://www.geeksforgeeks.org/ruby/object-oriented-programming-in-ruby-set-1/
 
 https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
-# Java
+### Java
 https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
 
 https://www.w3schools.com/java/java_encapsulation.asp
 
 https://www.tutorialspoint.com/java/java_object_classes.htm
 
-# Python
+### Python
 https://www.geeksforgeeks.org/python/python-oops-concepts/
 
 https://www.geeksforgeeks.org/python/python-classes-and-objects/
@@ -126,7 +126,7 @@ https://www.geeksforgeeks.org/python/accessing-attributes-methods-python/
 
 https://www.squash.io/how-to-use-class-and-instance-variables-in-python/
 
-# C
+### C
 https://www.w3schools.com/c/c_structs.php
 
 https://www.w3schools.com/c/c_structs_pointers.php
