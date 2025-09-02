@@ -1,6 +1,6 @@
 # Ruby Unless and Until
 
-**Until**
+### Until
 
 > จะทำงานจนกว่าเงื่อนไขเป็นจริง กล่าวคือมันจะทำงานในขณะที่เงื่อนไขเป็นเท็จนั่นเอง ซึ่งตรงกับข้ามกับคำสั่ง while loop ซึ่งทำงานในขณะที่เงื่อนไขเป็นจริง นี่เป็นรูปแบบการใช้งาน
 
@@ -32,6 +32,20 @@ end
 >ตัวอย่างนี้ เป็นโปรแกรมนับถอยหลังโดยเริ่มจาก 10 ในแต่ละรอบของการทำงานโปรแกรมจะตรวจสอบเงื่อนไข i == 0 และทำงานในลูปถ้าหากเงื่อนไขเป็นเท็จ ในแต่ละรอบของการทำงานใน loop เราได้แสดงค่าในตัวแปรออกมา และลดค่าในตัวแปรลงหนึ่งค่าด้วยคำสั่ง
 
 **Modifier Form**
+``` ruby
+code until conditional
+```
+
+**or**
+
+``` ruby
+begin
+   code
+end until conditional
+```
+``` ruby
+
+```
 
 ### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Until
 
@@ -63,8 +77,11 @@ end
 **Python**
 ``` Python
 
-``` 
-**Unless**
+```
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Unless
 
 > เงื่อนไขให้โปรแกรมทำงานในบล็อคของคำสั่งยกเว้นแต่ว่าเงื่อนไขจะเป็นจริง หรือกล่าวอีกนัยหนึ่งโปรแกรมจะทำงานเมื่อเงื่อนไขเป็นเท็จนั่นเอง ซึ่งมันเป็นคำสั่งที่ตรงข้ามกับคำสั่ง if ที่จะทำงานเมื่อเงื่อนไขเป็นจริง มาดูตัวอย่างการใช้งาน
 
@@ -98,6 +115,14 @@ end
 
 **Modifier Form**
 
+``` ruby
+code unless conditional
+```
+
+``` ruby
+
+```
+
 ### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Unless
 
 **Ruby**
@@ -127,7 +152,7 @@ end
 ``` Python
 
 ``` 
-### References
+## References
 
 * Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved September 2, 2025, from
   https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
@@ -153,4 +178,4 @@ end
 * GeeksforGeeks. (2018, 26 Oct). Ruby unless Statement and unless Modifier. GeeksforGeeks. Retrieved September 2, 2025, from
   https://www.geeksforgeeks.org/ruby/ruby-unless-statement-and-unless-modifier/
 
-### 
+##
