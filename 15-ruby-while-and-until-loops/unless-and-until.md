@@ -12,6 +12,9 @@ until condition [do]
     code
 end
 ```
+
+**Example Code**
+
 ``` ruby
 i = 10
 until i == 5 do
@@ -43,13 +46,15 @@ begin
    code
 end until conditional
 ```
+**Example Code**
+
 ``` ruby
 
 ```
 
 ### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Until
 
-**Ruby**
+**Ruby Example Code**
 ``` ruby
 var = 7
 until var == 11 do
@@ -66,18 +71,44 @@ end
 </code></pre>
 </details>
 
-**Java**
+**Java Example Code**
 ``` Java
 
 ```
-**C**
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>70
+80
+90
+100
+</code></pre>
+</details>
+
+**C Example Code**
 ``` C
 
 ```
-**Python**
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>70
+80
+90
+100
+</code></pre>
+</details>
+
+**Python Example Code**
 ``` Python
 
 ```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>70
+80
+90
+100
+</code></pre>
+</details>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -94,6 +125,9 @@ unless conditional [then]
    code ]
 end
 ```
+
+**Example Code**
+
 ``` ruby
 x = 1
 y = 3
@@ -109,9 +143,9 @@ end
 </code></pre>
 </details>
 
-> ในตัวอย่างนี้ประกาศสองตัวแปรคือ x และ y และกำหนดค่าที่ไม่เท่ากันให้กับตัวแปร ซึ่งในโปรแกรมนั้นมีหมายความว่าให้แสดงผล ยกเว้นแต่ว่า x มีค่าเท่ากับ y และเนื่องจาก x == y นั้นไม่เป็นจริง ดังนั้นโปรแกรมทำงานในบล็อคของคำสั่ง unless
+ในตัวอย่างนี้ประกาศสองตัวแปรคือ x และ y และกำหนดค่าที่ไม่เท่ากันให้กับตัวแปร ซึ่งในโปรแกรมนั้นมีหมายความว่าให้แสดงผล ยกเว้นแต่ว่า x มีค่าเท่ากับ y และเนื่องจาก x == y นั้นไม่เป็นจริง ดังนั้นโปรแกรมทำงานในบล็อคของคำสั่ง unless
 
-> เราสามารถใช้งานคำสั่ง else ร่วมกับคำสั่ง unless ได้ ซึ่งโปรแกรมจะทำงานในบล็อคคำสั่ง else ถ้าหากเงื่อนไขเป็นจริง แต่โปรดจำไว้ว่าคุณไม่สามารถใช้งานคำสั่ง elsif ร่วมกับคำสั่ง unless ได้
+เราสามารถใช้งานคำสั่ง else ร่วมกับคำสั่ง unless ได้ ซึ่งโปรแกรมจะทำงานในบล็อคคำสั่ง else ถ้าหากเงื่อนไขเป็นจริง แต่โปรดจำไว้ว่าคุณไม่สามารถใช้งานคำสั่ง elsif ร่วมกับคำสั่ง unless ได้
 
 **Modifier Form**
 
@@ -119,13 +153,16 @@ end
 code unless conditional
 ```
 
+**Example Code**
+
 ``` ruby
 
 ```
 
 ### เปรียบเทียบกับภาษา Python , Java , C ของคำสั่ง Unless
 
-**Ruby**
+
+**Ruby Example Code**
 ``` ruby
 x = 1 
 unless x>=2
@@ -140,18 +177,36 @@ end
 </code></pre>
 </details>
 
-**Java**
+**Java Example Code**
 ``` Java
 
 ```
-**C**
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>x is less than 2
+</code></pre>
+</details>
+
+**C Example Code**
 ``` C
 
 ```
-**Python**
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>x is less than 2
+</code></pre>
+</details>
+
+**Python Example Code**
 ``` Python
 
-``` 
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>x is less than 2
+</code></pre>
+</details>
+
 ## References
 
 * Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved September 2, 2025, from
@@ -178,4 +233,6 @@ end
 * GeeksforGeeks. (2018, 26 Oct). Ruby unless Statement and unless Modifier. GeeksforGeeks. Retrieved September 2, 2025, from
   https://www.geeksforgeeks.org/ruby/ruby-unless-statement-and-unless-modifier/
 
-##
+*
+*
+*
