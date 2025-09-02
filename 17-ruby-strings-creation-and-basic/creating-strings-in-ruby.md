@@ -25,7 +25,7 @@ myString_1 = 'This is also my string'
 ```
 >เมื่อกำหนด Ruby จะจัดการส่วนที่เหลือให้เอง ซึ่งที่กำหนดที่ใช้ทั้ง " " และ ' ' นั้นทำงานได้เหมือนกัน
 #  เปรียบเทียบกับภาษาอื่น
-## Python 
+## Python❗
 >Python ไม่มี new String()  แต่ว่า String นั้นจะถูกสร้างขึ้นโดย literal โดยตรง หรือโดยฟังชันก์ str()
 ### ตัวอย่างการใช้ literal โดยตรง
 ```python
@@ -67,7 +67,7 @@ print(age)
  </pre>
 </details>
 
-## Java
+## Java❗
 >มีอยู่２วิธีหลักในการสร้าง String คือใช้ String literal และ new String (constructor)
 ### ตัวอย่างการใช้ String literal
 ```java
@@ -88,7 +88,7 @@ String str = new String("abc");
 ```
 >จะสร้าง object  ใหม่เสมอ ช้ากว่า literal ส่วนมากไม่ใช้ หากไม่จำเป็น
 
-## C
+## C❗
 >มีความแตกต่างตรงที่ภาษา C ไม่มีชนิดข้อมูล String แต่จะถูกนำไปใช้เป็น arrays ของ char
 >arrays ของ char จะลงท้ายด้วยอักขระพิเศษ '\0' (อักขระ null) ใช้เป็นจุดสิ้นสุดของ String
 ### อาร์เรย์ของ `char` แบบ string literal
@@ -102,7 +102,7 @@ char c[] = "c string";
 char greeting[] = {'H','e','l','l','o','\0'};
 ```
 
-# *Reference *
+# *Reference*
 #### Ruby
 - W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
 https://www.w3schools.io/ruby-strings/
