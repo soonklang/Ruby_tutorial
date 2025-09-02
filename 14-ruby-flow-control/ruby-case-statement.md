@@ -134,33 +134,35 @@ end
 โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่ 
 
 ``` ruby
-score = 70
-
-result = case score
-   when 0..40 then "Fail"
-   when 41..60 then "Pass"
-   when 61..70 then "Pass with Merit"
-   when 71..100 then "Pass with Distinction"
-   else "Invalid Score"
+$age =  5
+case $age
+when 0 .. 2
+   puts "baby"
+when 3 .. 6
+   puts "little child"
+when 7 .. 12
+   puts "child"
+when 13 .. 18
+   puts "youth"
+else
+   puts "adult"
 end
-
-puts result
 ```
-case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 4 คือ 61..70(เลขตั้งเเต่ 61-70 รวมเลขท้ายด้วย) จึงได้ output เป็น Pass with Merit เเล้วจบการทำงาน
+case เป็นค่า 5 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 2 คือ 3 .. 6(เลขตั้งเเต่ 3-6 รวมเลขท้ายด้วย) จึงได้ output เป็น little child เเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
-  Pass with Merit
+  little child
 </code></pre>
 </details>
 
-หากเลข case เป็นค่าที่ไม่ตรงกับเงื่อนไขใดเลย ก็จะได้ output ออกมาเป็น Invalid Score เเล้วจบการทำงาน
+หากเลข case เป็นค่าที่ไม่ตรงกับเงื่อนไขใดเลย ก็จะได้ output ออกมาเป็น adult เเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
-  Invalid Score
+  adult
 </code></pre>
 </details>
 
@@ -375,7 +377,8 @@ match animal:
                     2. การเเสดงผลใช้ print เเทน puts
 
 ### Reference
-* [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby
+* [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby 
+* [https://www.tutorialspoint.com/ruby/ruby_if_else.htm] ตัวอย่างของ Ruby ของ Range
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
 * [https://www.tutorialspoint.com/ruby/ruby_ranges.htm] สำหรับศึกษา number range
