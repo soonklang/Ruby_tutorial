@@ -104,7 +104,7 @@ class Student
 end
 
 student = Student.new(1,"Prayat","Jutha",15)
-puts puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
+puts puts "id #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}"
 #output id 1 Prayat Jutha age 15
 ```
 จากโค้ดจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
@@ -136,69 +136,99 @@ student.firstName = "Taksan"
 puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
 #output id 1 Taksan Jutha age 15
 ```
-จากโค้ดจะเห็นได้ชัดว่า โค้ดมีขนาดที่ลดลงแต่ก็มีการทำงานไม่ต่างจากเดิม
+จากโค้ดจะเห็นได้ชัดว่า โค้ดมีขนาดที่ลดลงแต่ก็มีการทำงานไม่ต่างจากเดิม หลังจากนี้มาลองเทียบกับภาษาอื่น
 
 ### เมื่อเทียบกับ Java
 ```java
 public class Student{
-	// Instance variables (non-static)
+	//กำหนด Instance variables 
     private int id;
-    private String name;
+    private String firstName;
+    private String lastName;
+    private int age;
 	
      // Constructor
-    public Student(int id, String name) {
+    public Student(int id, String firstName, String lastName, int age) {
         this.id = id;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
     }
     
-     // getters method
-    public String getName() { 
-    	return name; 
+     // getters 
+    public String getFirstName() { 
+    	return firstName; 
     }
     
-    public float getId() { 
+    public int getId() { 
     	return id;
     }
 
-    // setters method
-    public void setName(String name) { 
-    	this.name = name; 
+    public String getLastName() { 
+    	return lastName; 
+    }
+    
+    public int getAge() { 
+    	return age;
+    }
+
+    // setters
+    public void setFirstname(String firstName) { 
+    	this.firstName = firstName; 
     }
     
     public void setId(int id) { 
     	this.id = id;
     }
-}
-```
 
+    public void setLastName(String lastName) { 
+    	this.lastName = lastName; 
+    }
+    
+    public void setAge(int Age) { 
+    	this.age = age;
+    }
+
+    public static void main(String[] args) {
+        Student student = new Student(1, "Prayat", "Jutha",15);
+        System.out.println("Id " + student.getId() + " " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
+		//output id 1 Prayat Jutha age 15
+    }
+```
+สรุปการเปรียบเทียบ จะเห็นได้ว่า
+- Java ต้องมีการกำหนด datatypes ก่อนการประกาศชื่อตัวแปรและไม่มีสัญลักษณ์ @ หรืออย่างอื่นนำหน้า
+- Java จะกำหนดหรือไม่กำหนด access specifiers สำหรับ Instance Variables ก็ได้ ถ้าไม่กำหนดจะเป็น default แทน แต่ถ้าไม่ต้องจากให้ภายนอกคลาสเข้าถึงได้ก็ต้องกำหนดเป็น private
+- Java ไม่มีตัวช่วยในการเขียน method setter และ getter เหมือนกับภาษา Ruby จึงจำเป็นต้องสร้างขึ้นมาเอง
+- Java จำเป็นต้องมี this. หน้าชื่อตัวแปรที่จะกำหนดค่า เพราะเพื่อบ่งบอกว่าเป็น Instance Variables ในคลาสไม่ใช่พารามิเตอร์ที่รับเข้ามา
+- การเรียกใช้ method ของ Java นั้นมี syntax ที่เหมือนกับภาษา Ruby
 
 
 
 ### เมื่อเทียบกับ Python
+
 ```python
 
 ```
 
+### เมื่อเทียบกับ C
 
+```c
+
+```
 
 
 ## Reference (Temporary)
 
 ### Ruby
 
+https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
+https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
 
-
-
-
-
+https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
 
 ### Java
-https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
 
-https://www.w3schools.com/java/java_encapsulation.asp
-
-https://www.tutorialspoint.com/java/java_object_classes.htm
 
 ### Python
 https://www.geeksforgeeks.org/python/python-oops-concepts/
