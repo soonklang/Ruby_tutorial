@@ -146,7 +146,7 @@ end
 
 puts result
 ```
-case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 4 จึงได้ output เป็น Pass with Merit เเล้วจบการทำงาน
+case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 4 คือ 61..70(เลขตั้งเเต่ 61-70 รวมเลขท้ายด้วย) จึงได้ output เป็น Pass with Merit เเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
