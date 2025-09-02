@@ -56,9 +56,20 @@ class Student:
         self.lastName = lastName
         self.age = age
         self.id = id
-
 ```
+จากโค้ดด้านบน Instance Variables ของ Python จะประกาศข้างใน Constructor เหมือน Ruby แต่จะใช้ self. แทน @ หน้าชื่อตัวแปร
 
+#### C
+เนื่องจากภาษา C ไม่มีหลักการ OOP หรือการสร้างวัตถุจาก Class แต่มีแนวคิดที่คล้ายกันคือ struct
+```c
+struct Students {   
+	int id;
+	char firstName;
+	char lastName;
+	int age;       
+};
+```
+จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct
 
 ### ตัวอย่างที่ 2
 ```ruby
