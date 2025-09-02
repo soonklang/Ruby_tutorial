@@ -64,11 +64,9 @@ manufacturer = case car
 end
 
 puts "The " + car  + " is made by "  + manufacturer
-
-
+```
 เมื่อ case เจอกับเงื่อนไขที่ตรงกันก็จะได้ output ออกมาเเล้วจบการทำงาน
 
-```
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
