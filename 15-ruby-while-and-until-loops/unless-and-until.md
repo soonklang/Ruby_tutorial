@@ -1,7 +1,7 @@
 # Ruby Unless and Until
 
 **Untill**
->
+> จะทำงานจนกว่าเงื่อนไขเป็นจริง กล่าวคือมันจะทำงานในขณะที่เงื่อนไขเป็นเท็จนั่นเอง ซึ่งตรงกับข้ามกับคำสั่ง while loop ซึ่งทำงานในขณะที่เงื่อนไขเป็นจริง นี่เป็นรูปแบบการใช้งาน
 **Basic Syntax**
 ``` ruby
 until condition do
@@ -17,8 +17,7 @@ end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>
-10
+  <pre><code>10
 9
 8
 7
@@ -27,7 +26,7 @@ end
 </details>
 
 **Unless**
->
+>เงื่อนไขให้โปรแกรมทำงานในบล็อคของคำสั่งยกเว้นแต่ว่าเงื่อนไขจะเป็นจริง หรือกล่าวอีกนัยหนึ่งโปรแกรมจะทำงานเมื่อเงื่อนไขเป็นเท็จนั่นเอง ซึ่งมันเป็นคำสั่งที่ตรงข้ามกับคำสั่ง if ที่จะทำงานเมื่อเงื่อนไขเป็นจริง มาดูตัวอย่างการใช้งาน
 ``` ruby
 unless conditional [then]
    code
@@ -46,8 +45,7 @@ end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>
-x is not equal to y
+  <pre><code>x is not equal to y
 </code></pre>
 </details>
 ### References
