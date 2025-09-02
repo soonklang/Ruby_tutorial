@@ -30,9 +30,9 @@ end
 
 ## เปรียบเทียบกับภาษา Java, C และ Python
 
-### <mark style="color:yellow;">Java</mark>
+### Java
 
-ในภาษา Java นั้นไม่มี feature built-in แบบเดียวกับ Ruby แต่ใน Java สามารถทำในสิ่งที่คล้ายๆกันได้ ซึ่งมีหลากหลายวิธี เช่น การเขียนเงื่อนไข ( if-else ), การใช้ char สำหรับตัวอักษร หรือ การใช้ IntStream ซึ่งอาจจะคล้ายกับ Ruby Range Intervals ในการทำงานกับตัวเลข โดยการใช้ method range() หรือ rangeClosed()
+ในภาษา Java นั้นไม่มี feature built-in แบบเดียวกับ Ruby แต่ใน Java สามารถทำในสิ่งที่คล้ายๆกันได้ ซึ่งมีหลากหลายวิธี เช่น การเขียนเงื่อนไข ( if-else ) หรือ การใช้ IntStream ซึ่งอาจจะคล้ายกับ Ruby Range Intervals ในการทำงานกับตัวเลข โดยการใช้ method range() หรือ rangeClosed()
 
 [https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java](https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java)\
 [https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-)
@@ -61,10 +61,59 @@ public class Demo {
    public static void main(String[] args) {
       boolean isInRane = IntStream.rangeClosed(1, 10).anyMatch(n -> n == 5);
       if(isInRange){
-         System.out.println("5 lies in (1..10)");
+         System.out.println("5 5 lies in (1..10)");
       }
    }
 }
 ```
 
-### <mark style="color:yellow;">C</mark>
+### C
+
+ในภาษา C นั้นไม่มี feature built-in แบบเดียวกับ Ruby แต่ใน C สามารถทำในสิ่งที่คล้ายๆกันได้ ซึ่งมีหลากหลายวิธี เช่น การใช้ for-loop หรือ เขียน function ขึ้นมาเอง เป็นต้น
+
+ตัวอย่างที่ 1 ในภาษา C : &#x20;
+
+```c
+#include <stdio.h>
+
+int main() {
+    int x = 5;
+    for (int i = 1; i <= 10; i++) {
+        if(i == x){
+            printf("%d lies in (1..10)\n", x);
+        }
+    }
+    return 0;
+}
+```
+
+### Python
+
+ในภาษา Python นั้นไม่มี feature built-in แบบเดียวกับ Ruby แต่ใน Python สามารถทำในสิ่งที่คล้ายๆกันได้ ซึ่งมีหลากหลายวิธี เช่น การใช้ range() หรือใช้ เงื่อนไข ( if-else ) เป็นต้น
+
+ตัวอย่างที่ 1 ในภาษา Python :&#x20;
+
+```python
+for i in range(5):
+    print(i, end=" ")
+print()
+```
+
+หากนำมาประยุกต์ใช้จะได้ดังนี้
+
+ตัวอย่างที่ 2 ในภาษา Python :&#x20;
+
+```python
+x = 5
+if x in range(1, 11):
+    print(f"{x} lies in (1..10)")
+```
+
+[https://www.geeksforgeeks.org/python/python-range-function/](https://www.geeksforgeeks.org/python/python-range-function/)
+
+***
+
+## อ้างอิง
+
+
+
