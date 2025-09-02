@@ -1,2 +1,9 @@
-# The Anatomy of a Ruby Operation and Performing Ruby Arithmetic
-
+# The Anatomy of a Ruby Operation
+	คือ องค์ประกอบโครงสร้างของตัวดำเนินการด้วยภาษา Ruby
+		เช่น  +, -, *, % เป็นต้น 
+		Ex. a = 2 + 3
+			=> 2 และ 3 เป็นตัวถูกดำเนินกการ
+			=> "+" คือตัวดำเนินการ
+			=> "=" การกำหนดค่า(Asssignment) เอาผลบวก2+3ไปเก็บไว้ใน a
+		output : 5
+	
