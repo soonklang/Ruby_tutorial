@@ -9,7 +9,11 @@ Converting variable values  คือ การแปลงค่าของต
 
 ## References
 [1] K. Newton, "Ruby type conversion," KDD Newton, Sep. 9, 2021. [Online]. Available: https://kddnewton.com/2021/09/09/ruby-type-conversion.html. [Accessed: Sep. 3, 2025].
+
 [2] K. Newton, "Variables: declaration and usage in Ruby," MarcusCode, Sep. 25, 2019. [Online]. Available: https://marcuscode.com/lang/ruby/variables-basic. [Accessed: Sep. 3, 2025].
+
 [3] K. Newton, "Understanding Ruby variables," Techotopia. [Online]. Available: https://www.techotopia.com/index.php/Understanding_Ruby_Variables. [Accessed: Sep. 3, 2025].
+
 [4] GeeksforGeeks, "How To Convert Data Types in Ruby?," GeeksforGeeks, Mar. 26, 2024. [Online]. Available: https://www.geeksforgeeks.org/ruby/how-to-convert-data-types-in-ruby/. [Accessed: Sep. 3, 2025].
+
 [5] "String#to_i," Ruby-doc.org, 2025. [Online]. Available: https://ruby-doc.org/3.4.1/String.html#method-i-to_i. [Accessed: Sep. 3, 2025].
