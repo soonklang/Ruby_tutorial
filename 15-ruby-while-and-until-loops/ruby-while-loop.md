@@ -207,8 +207,9 @@ Referencesที่ใช้เปรียบเทียบกับภาษ�
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
-[RUBY WHILE LOOP.pdf](https://github.com/user-attachments/files/22091940/RUBY.WHILE.LOOP.pdf)
+[RUBY.WHILE.LOOP.pdf](https://github.com/user-attachments/files/22097719/RUBY.WHILE.LOOP.pdf)
 
 ### Video
+https://youtu.be/Av6HNJVW-Qw
 
 ### Quiz
