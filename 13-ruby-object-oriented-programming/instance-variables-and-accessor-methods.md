@@ -104,7 +104,7 @@ class Student
 end
 
 student = Student.new(1,"Prayat","Jutha",15)
-puts puts "id #{student.getId} #{student.getFirstName} #{student.getLastName} age #{student.getAge}"
+puts puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
 #output id 1 Prayat Jutha age 15
 ```
 จากโค้ดจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
@@ -129,9 +129,14 @@ class Student
 end
 
 student = Student.new(1,"Prayat","Jutha",15)
-puts puts "id #{student.getId} #{student.getFirstName} #{student.getLastName} age #{student.getAge}"
+puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
 #output id 1 Prayat Jutha age 15
+
+student.firstName = "Taksan"
+puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
+#output id 1 Taksan Jutha age 15
 ```
+จากโค้ดจะเห็นได้ชัดว่า โค้ดมีขนาดที่ลดลงแต่ก็มีการทำงานไม่ต่างจากเดิม
 
 ### เมื่อเทียบกับ Java
 ```java
