@@ -1,1 +1,2 @@
 # Declaring a Variable
+การประกาศตัวแปร
