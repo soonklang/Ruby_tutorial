@@ -23,9 +23,6 @@ if (('a'..'j') === 'z') # หากอยู่ในช่วงจะทำต
 end
 ```
 
-[https://www.techotopia.com/index.php/Ruby\_Ranges](https://www.techotopia.com/index.php/Ruby_Ranges)\
-[https://www.tutorialspoint.com/ruby/ruby\_ranges.htm](https://www.tutorialspoint.com/ruby/ruby_ranges.htm)
-
 ***
 
 ## เปรียบเทียบกับภาษา Java, C และ Python
@@ -33,9 +30,6 @@ end
 ### Java
 
 ในภาษา Java นั้นไม่มี feature built-in แบบเดียวกับ Ruby แต่ใน Java สามารถทำในสิ่งที่คล้ายๆกันได้ ซึ่งมีหลากหลายวิธี เช่น การเขียนเงื่อนไข ( if-else ) หรือ การใช้ IntStream ซึ่งอาจจะคล้ายกับ Ruby Range Intervals ในการทำงานกับตัวเลข โดยการใช้ method range() หรือ rangeClosed()
-
-[https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java](https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java)\
-[https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-)
 
 ตัวอย่างที่ 1 ในภาษา Java :&#x20;
 
@@ -109,11 +103,21 @@ if x in range(1, 11):
     print(f"{x} lies in (1..10)")
 ```
 
-[https://www.geeksforgeeks.org/python/python-range-function/](https://www.geeksforgeeks.org/python/python-range-function/)
-
 ***
 
 ## อ้างอิง
 
+**Techotopia**. _Ruby Ranges_. Techotopia, n.d.,\
+[https://www.techotopia.com/index.php/Ruby\_Ranges](https://www.techotopia.com/index.php/Ruby_Ranges)
 
+**Tutorialspoint**. _Ruby – Ranges_. Tutorialspoint, n.d.,\
+[ps://www.tutorialspoint.com/ruby/ruby\_ranges.htm](https://www.tutorialspoint.com/ruby/ruby_ranges.htm)
 
+**Tutorialspoint**. _IntStream rangeClosed() method in Java_. Tutorialspoint, 30 July 2019,\
+[https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java](https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java)
+
+**Oracle**. _IntStream_. _Java Platform, Standard Edition 8 API Specification_, Oracle, 2014,\
+[https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html#range-int-int-)
+
+**GeeksforGeeks**. _Python range() function_. GeeksforGeeks, 11 July 2025, \
+[https://www.geeksforgeeks.org/python/python-range-function/](https://www.geeksforgeeks.org/python/python-range-function/)
