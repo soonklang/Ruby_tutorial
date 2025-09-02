@@ -69,7 +69,7 @@ struct Students {
 	int age;       
 };
 ```
-จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct ที่อาจจะจำลองเป็น instance variable ได้
+จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct อาจจะจำลองเป็น instance variable ได้
 
 ### ตัวอย่างที่ 2
 เนื่องจากตัวอย่างที่ 1 เรายังไม่สามารถเข้าถึง Instance Variables ใน Ruby ได้ ดังนั้นเราต้องเพิ่ม Accessor Methods (getter , setter) เข้าไปในคลาสให้สามารถเข้าถึงได้เพื่อที่จะสามารถอ่านและแก้ไขได้จากนอกคลาส
@@ -268,6 +268,19 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 - tutorailspoint. (ม.ป.ป). Ruby - Object Oriented. เข้าค้นเมื่อ 31 สิงหาคม 2025 จาก https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
 - Bunlong. (ม.ป.ป). The Ruby Programming Language. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
+
+  
+#### ภาษาอื่นๆนอกเหนือ Ruby
+
+- Rohollah Afzali. (24 มิถุนายน 2025). Python Accessor (Getter) Methods: Mastering @property for Safer Attribute Access. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://medium.com/@rohollah2afzali/python-accessor-getter-methods-mastering-property-for-safer-attribute-access-9244380cf3c0
+
+- GeeksforGeeks. (14 สิงหาคม 2025). Python Classes and Objects. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/python/python-classes-and-objects/
+
+- GeeksforGeeks. (29 กรกฎาคม 2025). C Structures. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/c/structures-c/
+
+- tutorialpoint. (ม.ป.ป). Structures and Functions in C. เข้าค้นเมื่อ 2 กันยายน 2025 จาก https://www.tutorialspoint.com/cprogramming/c_structures_and_functions.htm
+
+
 
 
 
