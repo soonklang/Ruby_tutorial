@@ -118,3 +118,12 @@
 	โดยของ ภาษา C จะใช้ #include <math.h> ส่วนภาษา
 	Java จะใช้ java public static double pow(double base, double exponent)
 
+---
+### Reference
+[Ruby - Operators](https://www.tutorialspoint.com/ruby/ruby_operators.htm) (ตัวอย่าง Ruby  ศึกษา Syntax และลองทำแบบฝึกหัดเพื่อศึกษา)
+[Ruby Operators - Techotopia](https://www.techotopia.com/index.php/Ruby_Operators) (ตัวอย่าง Ruby และ ศึกษา Syntax)
+[Online C Compiler - Programiz](https://www.programiz.com/c-programming/online-compiler/) (ศึกษาและทดลอง Syntax  ภาษา C  และ เปรียบเทียบความแตกต่าง)
+[Online Java Compiler - Programiz](https://www.programiz.com/java-programming/online-compiler/)(ศึกษาและทดลองSyntax  ภาษา Java และ เปรียบเทียบความแตกต่าง)
+[Online Python Compiler (Interpreter) - Programiz](https://www.programiz.com/python-programming/online-compiler/)(ศึกษาและทดลอง Syntax  ภาษา Python  และ เปรียบเทียบความแตกต่าง) 
+### Presentation
+### Video
