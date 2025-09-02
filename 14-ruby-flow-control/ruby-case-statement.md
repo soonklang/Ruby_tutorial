@@ -382,11 +382,11 @@ match animal:
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby เเละศึกษา syntax
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
 * [https://www.tutorialspoint.com/ruby/ruby_ranges.htm] สำหรับศึกษา number range
-* [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
-* [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
-* [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java
-* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif
-* [https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match
+* [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
+* [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
+* [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
+* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
+* [https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
 
 ### Presentation
