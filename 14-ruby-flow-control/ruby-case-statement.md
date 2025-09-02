@@ -371,9 +371,9 @@ match animal:
 
 ข้อเเตกต่างกับ Ruby :
 
-                    ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
+                    1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
 
-
+                    2. การเเสดงผลใช้ print ในขณะที่ Ruby ใช้ได้ทั้ง puts,print
                   
 
 ### Reference
