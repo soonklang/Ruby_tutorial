@@ -110,6 +110,9 @@ for i in range(n):
 - **Smyth, N. (2016, October 27). Looping with for and the Ruby Looping Methods. Techotopia. Retrieved August 30, 2025, from
 https://www.techotopia.com/index.php/Looping_with_for_and_the_Ruby_Looping_Methods**
 - **GeeksforGeeks. (2025, July 12). Ruby Integer times function with example. GeeksforGeeks. Retrieved August 30, 2025, from https://www.geeksforgeeks.org/ruby/ruby-integer-times-function-with-example/**
+- **GeeksforGeeks. (2025, July 23). C – Loops. GeeksforGeeks. Retrieved September 2, 2025, from https://www.geeksforgeeks.org/c/c-loops/**
+- **GeeksforGeeks. (2025, August 10). Loops in Java. GeeksforGeeks. Retrieved September 2, 2025, from https://www.geeksforgeeks.org/java/loops-in-java/**
+- **W3Schools. (n.d.). Python For Loops. W3Schools. Retrieved September 2, 2025, from https://www.w3schools.com/python/python_for_loops.asp**
 - **Ruby Monstas. (n.d.). Alternative block syntaxes. In Ruby for Beginners. Retrieved September 1, 2025, from https://ruby-for-beginners.rubymonstas.org/blocks/syntax.html**
 - **Ruby Core Team. (n.d.). Integer#times. In Ruby 3.2 Documentation. Retrieved September 1, 2025, from https://docs.ruby-lang.org/en/3.2/Integer.html**
 - **Flanagan, D., & Matsumoto, Y. (2008). The Ruby Programming Language. O’Reilly Media. Retrieved September 1, 2025, from https://theswissbay.ch/pdf/Gentoomen%20Library/Programming/Ruby/The%20Ruby%20Programming%20Language%20-%20Oreilly.pdf**
