@@ -3,9 +3,10 @@
 **Until**
 > จะทำงานจนกว่าเงื่อนไขเป็นจริง กล่าวคือมันจะทำงานในขณะที่เงื่อนไขเป็นเท็จนั่นเอง ซึ่งตรงกับข้ามกับคำสั่ง while loop ซึ่งทำงานในขณะที่เงื่อนไขเป็นจริง นี่เป็นรูปแบบการใช้งาน
 
+
 **Basic Syntax**
 ``` ruby
-until condition do
+until condition [do]
     code
 end
 ```
@@ -31,7 +32,11 @@ end
 
 **Ruby**
 ``` ruby
-
+var = 7
+until var == 11 do
+  puts var * 10
+  var = var + 1
+end
 ```
 **Java**
 ``` Java
@@ -49,6 +54,7 @@ end
 >เงื่อนไขให้โปรแกรมทำงานในบล็อคของคำสั่งยกเว้นแต่ว่าเงื่อนไขจะเป็นจริง หรือกล่าวอีกนัยหนึ่งโปรแกรมจะทำงานเมื่อเงื่อนไขเป็นเท็จนั่นเอง ซึ่งมันเป็นคำสั่งที่ตรงข้ามกับคำสั่ง if ที่จะทำงานเมื่อเงื่อนไขเป็นจริง มาดูตัวอย่างการใช้งาน
 
 **Basic Syntax**
+
 ``` ruby
 unless conditional [then]
    code
@@ -77,7 +83,12 @@ end
 
 **Ruby**
 ``` ruby
-
+x = 1 
+unless x>=2
+   puts "x is less than 2"
+ else
+   puts "x is greater than 2"
+end
 ```
 **Java**
 ``` Java
@@ -92,13 +103,29 @@ end
 
 ``` 
 ### References
-* Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved August 30, 2025, from https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
-* Ruby Core Team. (n.d.). Control expressions: while loop. Ruby documentation. Retrieved August 30, 2025, from
-https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-while+Loop
+
+* Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved September 2, 2025, from
+  https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
+
+* Ruby Core Team. (n.d.). Control expressions: unless expression. Ruby documentation. Retrieved September 2, 2025, from
+  https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-unless+Expression
+
+* Ruby Core Team. (n.d.). Control expressions: until loop. Ruby documentation. Retrieved September 2, 2025, from
+  https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-until+Loop
+
 * Cooper, P. (2016). Beginning Ruby: From novice to professional (3rd ed.), Apress. from
-https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
-* Tutorialspoint. (n.d.). Ruby - loops. Tutorialspoint. Retrieved August 30, 2025, from
-https://www.tutorialspoint.com/ruby/ruby_loops.htm
-* GeeksforGeeks. (2025, 11 Jul). Ruby loops (for, while, do while, until). GeeksforGeeks. Retrieved August 30, 2025, from
-https://www.geeksforgeeks.org/ruby/ruby-loops-for-while-do-while-until/
+  https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
+
+* Tutorialspoint. (n.d.). Ruby - loops. Tutorialspoint. Retrieved September 2, 2025, from
+  https://www.tutorialspoint.com/ruby/ruby_loops.htm
+
+* Tutorialspoint. (n.d.). Ruby - if...else,case,unless. Tutorialspoint. Retrieved September 2, 2025, from
+  https://www.tutorialspoint.com/ruby/ruby_if_else.htm
+
+* GeeksforGeeks. (2025, 11 Jul). Ruby loops (for, while, do while, until). GeeksforGeeks. Retrieved September 2, 2025, from
+  https://www.geeksforgeeks.org/ruby/ruby-loops-for-while-do-while-until/
+
+* GeeksforGeeks. (2018, 26 Oct). Ruby unless Statement and unless Modifier. GeeksforGeeks. Retrieved September 2, 2025, from
+  https://www.geeksforgeeks.org/ruby/ruby-unless-statement-and-unless-modifier/
+
 ### 
