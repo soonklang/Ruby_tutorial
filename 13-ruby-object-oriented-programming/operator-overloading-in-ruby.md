@@ -42,6 +42,8 @@ puts bad3.text
 ```
 
 Output:
+GoodGoodGoodGoodGoodGoodGoodGoodGoodGood
+BadBadBad
 Very Very Very Very Very Very Very Very Very Very Good
 Very Very Very Bad
 
