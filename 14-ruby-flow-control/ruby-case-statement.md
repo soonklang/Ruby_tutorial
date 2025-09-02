@@ -44,6 +44,32 @@ end
 
 **ตัวอย่างที่เป็น String**
 
+``` ruby
+car = "Patriot"
+
+manufacturer = case car
+   when "Focus" then "Ford"
+   when "Navigator" then "Lincoln"
+   when "Camry" then "Toyota"
+   when "Civic" then "Honda"
+   when "Patriot" then "Jeep"
+   when "Jetta" then "VW"
+   when "Ceyene" then "Porsche"
+   when "Outback" then "Subaru"
+   when "520i" then "BMW"
+   when "Tundra" then "Nissan"
+   else "Unknown"
+end
+
+puts "The " + car  + " is made by "  + manufacturer
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>
+  The Patriot is made by Jeep
+</code></pre>
+</details>
+
 โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when เมื่อเจอเงื่อนไขที่ตรงกันก็จะได้ output ตามเงื่อนไข เเล้วจบการทำงาน เเต่หากตรวจครบทุกเงื่อนไข when เเล้ว ก็จะเข้าสู่เงื่อนไข else เเละได้ output เป็น Default! เเล้วค่อยจบการทำงาน
 
 ``` ruby
