@@ -209,7 +209,7 @@ return 0;
 </details>
 
 
-## JAVA (for loop)
+## Java (for loop)
 ``` java
 class Main {
     public static void main(String[] args) {
