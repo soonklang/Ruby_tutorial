@@ -2,7 +2,7 @@
 ## Instance Variables คืออะไร?
   ในภาษา Ruby Instance Variables คือ ชื่อตัวแปรที่มีสัญลักษณ์ @ นำหน้า และค่าที่อยู่ด้านในจะจำกัดเฉพาะของแต่ละวัตถุที่ถูกสร้างขึ้นเท่านั้น ถึงวัตถุที่สร้างมาจากคลาสเดียวกันแต่ก็สามารถมีค่าของตัวแปรที่แตกต่างกันได้
   โดยลักษณะเฉพาะของ Instance Variables ในภาษา Ruby ได้แก่
-  - Instance Variables จะเป็นค่า "nil" ก่อนที่ถูกกำหนด
+  - Instance Variables จะเป็นค่า "nil" ก่อนที่ถูกกำหนดที่ method initialize
   - Instance Variables จะเป็น private โดยอัตโนมัติ
   - การที่จะเข้าถึง Instance Variables จากภายนอกคลาสได้ ต้องใช้ method ภายในวัตถุนั้นเท่านั้น (getter และ setter)
   - ในภาษา Ruby Instance Variables ไม่จำเป็นต้องประกาศไว้ล่วงหน้า ทำให้มีความยืดหยุ่น เพราะจะถูกเพิ่มเข้าไปในวัตถุแบบไดนามิกเมื่อมันถูกอ้างอิงเป็นครั้งแรก
@@ -23,7 +23,7 @@ end
 
 student = Student.new(1,"Prayat")
 ```
-จากโค้ดด้านบน Instance Variables ในคลาส Student คือ id และ name แต่เนื่องจากตอนนี้ยังไม่สามารถเข้าถึง Instance Variables ได้จึงต้องดูตัวอย่างต่อไป
+จากโค้ดด้านบน Instance Variables ในคลาส Student คือ id และ name ที่ประกาศไว้ใน methods initialize ที่รับค่าจากภายนอกคลาสแล้วนำมาเก็บไว้ แต่เนื่องจากตอนนี้ยังไม่สามารถเข้าถึง Instance Variables ได้จึงต้องดูตัวอย่างต่อไป
 
 ### ตัวอย่างที่ 2
 ```ruby
@@ -57,7 +57,7 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
-จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ method แต่เนื่องจากถ้าในอนาคตมีการเพิ่ม Instance Variables มากขึ้นจะเกิดอะไรขึ้นลองดูตัวอย่างถัดไป
+จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ Accessor Methods แต่เนื่องจากถ้าในอนาคตมีการเพิ่ม Instance Variables มากขึ้นจะเกิดอะไรขึ้นลองดูตัวอย่างถัดไป
 
 ### ตัวอย่างที่ 3
 ```ruby
@@ -108,9 +108,9 @@ puts puts "id #{student.getId()} #{student.getFirstName()} #{student.getLastName
 #output id 1 Prayat Jutha age 15
 ```
 จากโค้ดจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
-- attr_reader ทำหน้าที่เป็น getter โดยอัตโนมัติ
-- attr_writer ทำหน้าที่เป็น setter โดยอัตโนมัติ
-- attr_accessor ทำหน้าที่เป็นทั้ง setter และ getter โดยอัตโนมัติ
+- attr_reader ทำหน้าที่เป็น methods getter โดยอัตโนมัติ
+- attr_writer ทำหน้าที่เป็น methods setter โดยอัตโนมัติ
+- attr_accessor ทำหน้าที่เป็นทั้ง methods setter และ getter โดยอัตโนมัติ
 
 ### ตัวอย่างที่ 4
 ```ruby
@@ -142,7 +142,7 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 ```java
 public class Student{
 	//กำหนด Instance variables 
-    private int id;
+    int id; //ภายนอกคลาส สามารถเข้าถึงได้
     private String firstName;
     private String lastName;
     private int age;
@@ -159,10 +159,6 @@ public class Student{
     public String getFirstName() { 
     	return firstName; 
     }
-    
-    public int getId() { 
-    	return id;
-    }
 
     public String getLastName() { 
     	return lastName; 
@@ -177,10 +173,6 @@ public class Student{
     	this.firstName = firstName; 
     }
     
-    public void setId(int id) { 
-    	this.id = id;
-    }
-
     public void setLastName(String lastName) { 
     	this.lastName = lastName; 
     }
@@ -191,17 +183,19 @@ public class Student{
 
     public static void main(String[] args) {
         Student student = new Student(1, "Prayat", "Jutha",15);
-        System.out.println("Id " + student.getId() + " " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
+        System.out.println("Id " + student.id); //สามารถเข้าถึง id ได้ เพราะไม่ได้กำหนดให้เป็น private
+		System.out.println(student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
 		//output id 1 Prayat Jutha age 15
     }
+}
 ```
 สรุปการเปรียบเทียบ จะเห็นได้ว่า
 - Java ต้องมีการกำหนด datatypes ก่อนการประกาศชื่อตัวแปรและไม่มีสัญลักษณ์ @ หรืออย่างอื่นนำหน้า
-- Java จะกำหนดหรือไม่กำหนด access specifiers สำหรับ Instance Variables ก็ได้ ถ้าไม่กำหนดจะเป็น default แทน แต่ถ้าไม่ต้องจากให้ภายนอกคลาสเข้าถึงได้ก็ต้องกำหนดเป็น private
-- Java ไม่มีตัวช่วยในการเขียน method setter และ getter เหมือนกับภาษา Ruby จึงจำเป็นต้องสร้างขึ้นมาเอง
-- Java จำเป็นต้องมี this. หน้าชื่อตัวแปรที่จะกำหนดค่า เพราะเพื่อบ่งบอกว่าเป็น Instance Variables ในคลาสไม่ใช่พารามิเตอร์ที่รับเข้ามา
+- Java จะกำหนดหรือไม่กำหนด access specifiers สำหรับ Instance Variables ก็ได้ ถ้าไม่กำหนดจะเป็น default จึงทำให้ภายนอกคลาสสามารถเข้าถึงตัวแปรภายในคลาสได้ แต่ถ้าไม่ต้องจากให้ภายนอกคลาสเข้าถึงได้ก็ต้องกำหนดเป็น private
+- Java ไม่มีตัวช่วยในการเขียน methods setter และ getter ให้กระชับเหมือนกับภาษา Ruby จึงจำเป็นต้องสร้างขึ้นมาเอง ทำให้ตัวโค้ดมีขนาดที่ใหญ่กว่า
+- ในคลาส Instance Variables จำเป็นต้องกำหนด this. หน้าชื่อตัวแปรที่จะกำหนดค่า เพราะเพื่อบ่งบอกว่าเป็น Instance Variables ในคลาสไม่ใช่พารามิเตอร์ที่รับเข้ามาจากภายนอกคลาส
 - การเรียกใช้ method ของ Java นั้นมี syntax ที่เหมือนกับภาษา Ruby
-
+-
 
 
 ### เมื่อเทียบกับ Python
@@ -221,30 +215,13 @@ public class Student{
 
 ### Ruby
 
-https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
-
-https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
-
-https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
 
 ### Java
 
 
 ### Python
-https://www.geeksforgeeks.org/python/python-oops-concepts/
 
-https://www.geeksforgeeks.org/python/python-classes-and-objects/
-
-https://docs.python.org/3/tutorial/classes.html#class-and-instance-variables
-
-https://www.geeksforgeeks.org/python/accessing-attributes-methods-python/
-
-https://www.squash.io/how-to-use-class-and-instance-variables-in-python/
 
 ### C
-https://www.w3schools.com/c/c_structs.php
 
-https://www.w3schools.com/c/c_structs_pointers.php
-
-https://www.tutorialspoint.com/cprogramming/c_structures.htm
 
