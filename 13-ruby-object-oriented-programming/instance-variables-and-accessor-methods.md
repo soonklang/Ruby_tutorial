@@ -69,7 +69,7 @@ struct Students {
 	int age;       
 };
 ```
-จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct
+จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct ที่อาจจะจำลองเป็น instance variable ได้
 
 ### ตัวอย่างที่ 2
 เนื่องจากตัวอย่างที่ 1 เรายังไม่สามารถเข้าถึง Instance Variables ใน Ruby ได้ ดังนั้นเราต้องเพิ่ม Accessor Methods (getter , setter) เข้าไปในคลาสให้สามารถเข้าถึงได้เพื่อที่จะสามารถอ่านและแก้ไขได้จากนอกคลาส
@@ -226,11 +226,6 @@ print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.a
 ```
 จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ดังนั้นจึงใช้วิธีแก้ปัญหาโดยใช้ "_" 2 ตัว นำหน้าชื่อตัวแปรเพื่อไม่ให้ภายนอกคลาสเข้าถึงตัวแปรได้ และมีการใช้ @property แทน getter และ @ชื่อตัวแปร.setter แทน setter จากผลลัพธ์จะเห็นว่าถึงแม้ student1 จะมีการพยายามปรับค่า __firstName ภายในคลาส แต่ถึงอย่างนั้นผลลัพธ์ก็ไม่เปลี่ยน
 
-#### C
-```c
-
-```
-
 จากโค้ดที่เราเปรียบเทียบในหลายๆภาษาจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
 - attr_reader ทำหน้าที่เป็น methods getter โดยอัตโนมัติ
 - attr_writer ทำหน้าที่เป็น methods setter โดยอัตโนมัติ
@@ -264,17 +259,34 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 
 
 
-## Reference (Temporary)
+## Reference
 
 ### Ruby
+- https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
 
+- https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
+
+- https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
 ### Java
+- https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
 
+- https://www.geeksforgeeks.org/java/variables-in-java/
+
+- https://www.tutorialspoint.com/java/java_object_classes.htm
 
 ### Python
+- https://www.geeksforgeeks.org/python/python-classes-and-objects/
 
+- https://docs.python.org/3/tutorial/classes.html#class-and-instance-variables
+
+- https://medium.com/@rohollah2afzali/python-accessor-getter-methods-mastering-property-for-safer-attribute-access-9244380cf3c0
 
 ### C
+- https://www.w3schools.com/c/c_structs.php
+
+- https://www.w3schools.com/c/c_structs_pointers.php
+
+- https://www.tutorialspoint.com/cprogramming/c_structures_and_functions.htm
 
 
