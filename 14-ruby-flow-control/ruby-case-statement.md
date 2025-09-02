@@ -378,6 +378,7 @@ match animal:
 * [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby
 * [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby
 * [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
+* [https://www.tutorialspoint.com/ruby/ruby_ranges.htm] สำหรับศึกษา number range
 * [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby
 * [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C
 * [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java
