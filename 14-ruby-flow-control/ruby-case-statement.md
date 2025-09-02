@@ -134,45 +134,37 @@ end
 โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่ 
 
 ``` ruby
-marks = 70
+score = 70
 
-case marks
-# using range operators ..
-when 0..32
-  puts "You fail!"
-
-when 33..40
-  puts "You got C grade!"
-
-when 41..60
-  puts "You got B grade!"
-
-else
- puts  "You got A grade!"
- 
+result = case score
+   when 0..40 then "Fail"
+   when 41..60 then "Pass"
+   when 61..70 then "Pass with Merit"
+   when 71..100 then "Pass with Distinction"
+   else "Invalid Score"
 end
+
+puts result
 ```
-case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าไม่เข้าเงื่อนไขใดเลย จึงเข้าสู่เงื่อนไขสุดท้าย หรือ else ได้ output เป็น You got A grade! เเล้วจบการทำงาน
+case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 4 จึงได้ output เป็น Pass with Merit เเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
-  You got A grade!
+  Pass with Merit
 </code></pre>
 </details>
 
-หากเลข case เป็นค่า 30 เมื่อตรวจสอบกับเงื่อนไข when ที่มี number range เป็น 0..32 ( 0 ถึง 32 โดยรวมค่าสุดท้ายด้วย) ก็จะได้ output ออกมาเป็น You fail! เเล้วจบการทำงาน
+หากเลข case เป็นค่าที่ไม่ตรงกับเงื่อนไขใดเลย ก็จะได้ output ออกมาเป็น Invalid Score เเล้วจบการทำงาน
 
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>
-  You fail!
+  Invalid Score
 </code></pre>
 </details>
 
 **ตัวอย่างอีกเเบบที่ใช้ put เเทน then** 
-
-โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่ 
 
 ``` ruby
 marks = 70
