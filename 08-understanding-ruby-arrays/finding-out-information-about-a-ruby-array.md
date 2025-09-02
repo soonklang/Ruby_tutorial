@@ -903,3 +903,23 @@ p arr1
 p arr2
 # จะมีค่าเท่ากับ [[1, 2, 3], [4, 5, 6]]
 ```
+
+
+
+
+
+
+
+
+
+
+# Reference
+- Ruby Programming Language - class Array. ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://docs.ruby-lang.org/en/master/Array.html​
+- RubyDoc.info (ไม่กำหนด) class Array. ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.ruby-doc.org/core/Array.html​
+- IncludeHelp. (ไม่กำหนด).Ruby Array Methods. ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.includehelp.com/ruby/ruby-array-methods.aspx#google_vignette​
+- FreeCodeCamp (27 มกราคม 2020) Most common Ruby array methods you should know. เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.freecodecamp.org/news/common-array-methods-in-ruby​
+- George, J (1 พฤจิกายน 2015) Ruby array methods. ​เข้าถึงเมื่อ 31 สิงหาคม 2025​ จาก https://webdevjeffus.github.io/projects/cheat-sheet.html​
+- Python documentation (31 สิงหาคม 2025) Efficient arrays of numeric values.​ เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://docs.python.org/3/library/array.html​
+- Oracle Help Center (ไม่กำหนด) Arrays (Java Platform SE 8)  ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html​
+- W3School (ไม่กำหนด) C Arrays​ เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.w3schools.com/c/c_arrays.php​
+- GeeksforGeeks (26 กรกฏาคม 2025) C Arrays​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.geeksforgeeks.org/c/c-arrays​
