@@ -261,32 +261,13 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 
 ## Reference
 
-### Ruby
 - https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
 
 - https://www.geeksforgeeks.org/ruby/ruby-getters-and-setters-method/
 
 - https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
 
-### Java
-- https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
+- https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
 
-- https://www.geeksforgeeks.org/java/variables-in-java/
-
-- https://www.tutorialspoint.com/java/java_object_classes.htm
-
-### Python
-- https://www.geeksforgeeks.org/python/python-classes-and-objects/
-
-- https://docs.python.org/3/tutorial/classes.html#class-and-instance-variables
-
-- https://medium.com/@rohollah2afzali/python-accessor-getter-methods-mastering-property-for-safer-attribute-access-9244380cf3c0
-
-### C
-- https://www.w3schools.com/c/c_structs.php
-
-- https://www.w3schools.com/c/c_structs_pointers.php
-
-- https://www.tutorialspoint.com/cprogramming/c_structures_and_functions.htm
 
 
