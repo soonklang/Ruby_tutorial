@@ -28,11 +28,11 @@ end
 #### Java
 ```java
 public class Student{
-	// กำหนด Instance variables 
-    int id; //ภายนอกคลาส สามารถเข้าถึงได้
-    private String firstName;
-    private String lastName;
-    private int age;
+	# กำหนด instance variables
+    int id;
+    String firstName;
+    String lastName;
+    int age;
 	
      // Constructor
     public Student(int id, String firstName, String lastName, int age) {
@@ -72,6 +72,8 @@ struct Students {
 จากโค้ดด้านบน เนื่องจาก C ไม่มี class แต่ก็มี struct ที่มีหลักการคล้ายกัน โดยหลักการคือจะจัดกลุ่มตัวแปรที่เกี่ยวข้องไว้ในที่เดียวกัน แต่ละตัวแปรจะถูกเรียกว่า member ของ struct
 
 ### ตัวอย่างที่ 2
+เนื่องจากตัวอย่างที่ 1 เรายังไม่สามารถเข้าถึง Instance Variables ใน Ruby ได้ ดังนั้นเราต้องเพิ่ม Accessor Methods (getter , setter) เข้าไปในคลาสให้สามารถเข้าถึงได้เพื่อที่จะสามารถอ่านและแก้ไขได้จากนอกคลาส
+#### Ruby
 ```ruby
 class Student
   def initialize(id,name)
@@ -103,7 +105,120 @@ student.setName("Tony")
 puts student.getName() #output Tony
 ```
 
-จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ Accessor Methods แต่เนื่องจากถ้าในอนาคตมีการเพิ่ม Instance Variables มากขึ้นจะเกิดอะไรขึ้นลองดูตัวอย่างถัดไป
+จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ Accessor Methods ทีนี้เราลองเปรียบเทียบกับภาษาอื่นกัน
+
+#### Java
+```java
+public class Student{
+	//กำหนด Instance variables 
+    int id; //ภายนอกคลาส สามารถเข้าถึงได้
+    private String firstName;
+    private String lastName;
+    private int age;
+	
+     // Constructor
+    public Student(int id, String firstName, String lastName, int age) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    
+     // getters 
+    public String getFirstName() { 
+    	return firstName; 
+    }
+
+    public String getLastName() { 
+    	return lastName; 
+    }
+    
+    public int getAge() { 
+    	return age;
+    }
+
+    // setters
+    public void setFirstname(String firstName) { 
+    	this.firstName = firstName; 
+    }
+    
+    public void setLastName(String lastName) { 
+    	this.lastName = lastName; 
+    }
+    
+    public void setAge(int Age) { 
+    	this.age = age;
+    }
+
+    public static void main(String[] args) {
+        Student student = new Student(1, "Prayat", "Jutha",15);
+        System.out.println("Id " + student.id);
+		System.out.println(student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
+		//output id 1 Prayat Jutha age 15
+    }
+}
+```
+จากโค้ดด้านบน เมื่อตัวแปรกำหนด access specifier เป็น private จึงทำให้ไม่สามารถเข้าถึงค่าของตัวแปรได้โดยตรงดังนั้นจึงใช้ methods getter และ setter เหมือนภาษา Ruby ซึ่ง methods ก็มี access specifier เหมือนกันแล้วถูกกำหนดให้เป็น public เพื่อที่ภายนอกคลาสสามารถใช้ได้ ซึ่ง methods setter มี syntax ที่คล้ายกับ Ruby ส่วน getter นั้นต้องมีคำว่า return ตามด้วยชื่อตัวแปร
+
+#### Python
+```python
+class Student:
+    def __init__(self, firstName, lastName, age, id):
+        # กำหนด Instance variables
+        self.__firstName = firstName
+        self.__lastName = lastName
+        self.__age = age
+        self.__id = id
+
+    # getter
+    @property
+    def firstname(self):
+        return self.__firstName
+
+    @property
+    def lastname(self):
+        return self.__lastName
+
+    @property
+    def age(self):
+        return self.__age
+
+    @property
+    def id(self):
+        return self.__id
+
+    # setter
+    @firstname.setter
+    def firstname(self, value):
+        self.__firstName = value
+
+    @lastname.setter
+    def lastname(self, value):
+        self.__lastName = value
+
+    @age.setter
+    def age(self, value):
+        self.__age = value
+
+    @id.setter
+    def id(self, value):
+        self.__id = value
+
+student1 = Student("Prayat", "Jutha", 15, 1)
+student1.__firstName = "Adison"
+print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
+```
+จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ดังนั้นจึงใช้วิธีแก้ปัญหาโดยใช้ "_" 2 ตัว นำหน้าชื่อตัวแปรเพื่อไม่ให้ภายนอกคลาสเข้าถึงตัวแปรได้ จากผลลัพธ์จะเห็นว่าถึงแม้ student1 จะอ้างอิง __firstName ภายในคลาส แต่ถึงอย่างนั้นผลลัพธ์ก็ไม่เปลี่ยน
+
+#### C
+```c
+struct Students {   
+	int id;
+	char firstName;
+	char lastName;
+	int age;       
+};
+```
 
 ```ruby
 class Student
