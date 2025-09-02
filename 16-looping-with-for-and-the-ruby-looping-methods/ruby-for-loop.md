@@ -227,7 +227,7 @@ class Main {
 </details>
 
 
-## JAVA (for each loop)
+## Java (for each loop)
 ``` java
 class Main {
     public static void main(String[] args) {
@@ -247,7 +247,7 @@ class Main {
 </pre>
 </details>
 
-## PYTHON
+## Python
 ``` python
 for i in range(1, 5):   
    print(i)
@@ -263,15 +263,15 @@ for i in range(1, 5):
 
 # สรุปความแตกต่าง
 
-## C  และ java for loop กับ for loop ของ Ruby
+## C  และ Java for loop กับ for loop ของ Ruby
 #### โดยจากการที่ได้นำโค้ดด้านบนนำมาเปรียบเทียบแล้วเราสามารถสรุปได้ว่า ภาษา C และ java จะมีความคล้ายหรือใกล้เคียงกันซึ่งภาษาทั้งสองนี้จะไม่มี คำสั่ง end อยู่บรรทัดสุดท้ายเพื่อเป็นการบอกว่าจบ loop เหมือนกับ Ruby แต่จะเป็นการใช้ {} (Braces)  แทนเพื่อเป็นจำกัดขอบเขตของ Block และยังมีส่วนที่ต่างอีกอย่างคือตรงภาษา C และ java จะมี  ; (semi colon)  คั่นตรงกลางระหว่าง expression รวมถึง ในภาษา C และ java จะมีการกำหนดตัวแปรเพื่อเป็นการนับเพือให้ครบจำนวนรอบและยังมีอีกข้อ คือทั้งสองภาษานี้จะมี ; (semi colon) ตามหลังเสมอ ส่วนตรงอื่นๆจะมีความคล้ายกันอยู่
 
 
-## python for loop กับ for loop ของ Ruby
+## Python for loop กับ for loop ของ Ruby
 #### ส่วนภาษา python นั้นจะมีความแตกต่างจากภาษา Ruby คือมีการใช้ : (colon) มาอยู่หลัง  for และยังมีการ Tab ด้านหน้าเพื่อเป็นการกำหนดว่าอยู๋ใน loop และยังไม่มี end ต่อท้ายเหมือนกับ Ruby ส่วนอื่นๆนั้นจะมีความคล้ายคลึงกันกับ ภาษา Ruby เลย
   
 
- ## java for each กับ .each ของ  Ruby
+ ## Java for each กับ .each ของ  Ruby
  #### ทั้งสองภาษามีความคล้ายกันตรงที่ไม่ต้องมีตัวแปร index หรือตัวนับ loop โดยจะ  เน้นที่การวนผ่านค่าที่อยู่ใน collection โดยตรง ทำให้โค้ดอ่านง่ายและกระชับกว่า for loop แบบปกติ
 <br>
 
