@@ -1,11 +1,17 @@
 # Instance Variables and Accessor Methods
 ## Instance Variables คืออะไร?
-  Instance variables คือ ตัวแปรที่กำหนดไว้ในคลาสจะใช้งานได้เพียงแค่แต่ละวัตถุของคลาสนั้นที่ถูกสร้างขึ้นมาเท่านั้น โดยภาษา Ruby จะใช้สัญลักษณ์ @ นำหน้า variables ที่กำหนดไว้เพื่อเข้าถึงตัวแปรภายในคลาสแต่การที่จะเข้าถึงจากนอกคลาสจะต้องใช้ public method ที่เรียกว่า Accessor Methods (setter และ getter)
+  ในภาษา Ruby Instance variables คือ ชื่อตัวแปรที่มีสัญลักษณ์ @ นำหน้า และค่าที่อยู่ด้านในจะจำกัดเฉพาะของแต่ละวัตถุที่ถูกสร้างขึ้นเท่านั้น ถึงวัตถุที่สร้างมาจากคลาสเดียวกันแต่ก็สามารถมีค่าของตัวแปรที่แตกต่างกันได้
+  โดยลักษณะเฉพาะของ Instance variables ในภาษา Ruby ได้แก่
+  -instance variable จะเป็นค่า "nil" ก่อนที่ถูกกำหนด
+  -instance variable จะเป็น private โดยอัตโนมัติ
+  -การที่จะเข้าถึง instance variable จากภายนอกคลาสได้ ต้องใช้ method ภายในวัตถุนั้นเท่านั้น
+  -ในภาษา Ruby instance variable ไม่จำเป็นต้องประกาศไว้ล่วงหน้า ทำให้มีความยืดหยุ่น เพราะจะถูกเพิ่มเข้าไปในวัตถุแบบไดนามิกเมื่อมันถูกอ้างอิงเป็นครั้งแรก
+  -instance variable เป็นของวัตถุนั้นๆ เพราะแต่ละวัตถุจะมี instance variable เป็นของตัวเองในคลาสนั้นๆ
 
 ## Accessor Methods คืออะไร?
   Accessor Methods คือ Method ในคลาสที่สามารถอ่านหรือเขียน Instance variables จากภายนอกคลาสได้ เพราะ Instance variables ไม่สามารถเข้าถึงจากนอกคลาสได้โดยตรง
 
-### ตัวอย่างของการกำหนด Instance Variables
+### ตัวอย่างที่ 1
 ```ruby
 class Student
   def initialize(id,name)
@@ -17,7 +23,9 @@ end
 
 student = Student.new(1,"Prayat")
 ```
-จากโค้ด การกำหนด instance Variables จะมีสัญลักษณ์ @ ข้างหน้าตัวแปรที่กำหนดไว้ ที่เป็นตัวแปรของวัตถุที่สร้างจากคลาส Student
+
+
+
 
 ### ตัวอย่างของการกำหนด Accessor Methods
 ```ruby
@@ -100,13 +108,13 @@ public class Student{
 ## Reference (Temporary)
 
 ### Ruby
-https://www.techotopia.com/index.php/Ruby_Object_Oriented_Programming
 
-https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf
 
-https://www.geeksforgeeks.org/ruby/object-oriented-programming-in-ruby-set-1/
 
-https://www.tutorialspoint.com/ruby/ruby_object_oriented.htm
+
+
+
+
 
 ### Java
 https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
