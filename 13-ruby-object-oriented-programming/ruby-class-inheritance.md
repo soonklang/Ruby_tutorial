@@ -22,3 +22,4 @@ Inheritance(การสืบทอด) คือ การที่เรา�
 ```ruby
 class subclass_name < superclass_name 
 ```
+---
