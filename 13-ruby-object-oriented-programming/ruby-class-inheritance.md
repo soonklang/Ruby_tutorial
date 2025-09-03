@@ -164,7 +164,12 @@ obj.display "ONE", "TWO"
 - **super** จะส่ง parameter ที่ได้มาจาก obj.display ก็คือ "ONE" และ "TWO" ไปใน display ของ Super Class **โดยอัตโนมัติ**
 - **super a** จะส่งไปแค่ parameter "ONE" ทำให้ค่า parameter ของ b=0 ตามที่ display ของ Super Class กำหนดไว้
 - **super a, b** จะส่ง parameter ที่ได้มาจาก obj.display ก็คือ "ONE" และ "TWO" ไปใน display ของ Super Class
-- **super()** จะไม่ส่งอะไรไปเลย แค่เรียกใช้ method display ของ Super Class ทำให้ค่า parameter ของ a = 0 และ b=0 ตามที่ display ของ Super Class กำหนดไว้ 
+- **super()** จะไม่ส่งอะไรไปเลย แค่เรียกใช้ method display ของ Super Class ทำให้ค่า parameter ของ a = 0 และ b=0 ตามที่ display ของ Super Class กำหนดไว้
+
+### การใช้งาน Super method ในภาษาอื่นๆ
+- ### Java
+- ### Python
+- ### C
 
 ---
 
