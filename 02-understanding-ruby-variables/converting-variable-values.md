@@ -13,32 +13,72 @@ Converting variable values  คือ การแปลงค่าของต
 
 1.Implicit Conversion 
 เป็นการแปลงค่าที่เกิดขึ้นอัตโนมัติโดยตัวแปลภาษา Compiler เพื่อให้โปรแกรมสามารถทำงานต่อไปได้โดยไม่เกิดข้อผิดพลาด มักจะเกิดขึ้นเมื่อมีการดำเนินการระหว่างข้อมูลคนละชนิด และการแปลงนั้นปลอดภัยไม่ทำให้ข้อมูลสูญหาย
-```ruby   
-num_int = 10
-num_float = 2.5
-puts num_int + num_float
-```
-ผลลัพธ์:
-```
-12.5
-```
 
 2.Explicit Conversion
 เป็นการแปลงค่าที่ผู้ใช้แปลงค่าเอง ซึ่งบ่อยครั้งเป็นการแปลงที่อาจไม่ปลอดภัย หรือทำให้ข้อมูลสูญหายได้
+
+
+# ตัวอย่าง
+### แปลงค่าตัวแปร String → Integer หรือ Float
 ```ruby   
-a = "123"
-b = str.to_i
-puts b
-puts b.class
+num_str = "123"
+int_str = str.to_i
+float_str = str.to_f
+
+puts num_str
+put num_str.class
+puts int_str
+put int_str.class
+puts float_str
+put float_str.class
 ```
 ผลลัพธ์:
 ```
+"123"
+String
 123
 Integer
+123.0
+Float
 ```
+คำอธิบาย:
+เป็นการกำหนดค่าของตัวอักษรแล้วแปลงค่าของตัวอักษรให้เป็นตัวเลขจำนวนเต็ม และทศนิยม โดยใช้เมธอด .to_i และ .to_f
 
-# ตัวอย่าง
-### 
+### แปลงค่าตัวแปร Integer หรือ Float → String
+```ruby   
+num_int = 123
+num_float = 3.14
+str_int = num_int.to_s
+str_float = num_float.to_s
+
+puts str_int
+put str_int.class
+puts str_float
+put str_float.class
+```
+ผลลัพธ์:
+```
+"123"
+String
+"3.14"
+String
+```
+คำอธิบาย:
+เป็นการกำหนดค่าของเลขจำนวนเต็ม และเลขทศนิยม แล้วแปลงค่าให้เป็นตัวตัวอักษร โดยใช้เมธอด .to_s
+
+### แปลงค่าตัวแปร Array → String
+```ruby   
+arr = [1, 2, 3, 4, 5]
+str = arr.join(", ")
+
+puts str
+```
+ผลลัพธ์:
+```
+"1, 2, 3, 4, 5"
+```
+คำอธิบาย:
+เป็นการกำหนดค่าของอาเรย์ แล้วแปลงค่าให้เป็นตัวตัวอักษร โดยใช้เมธอด .join()
 
 
 # References
