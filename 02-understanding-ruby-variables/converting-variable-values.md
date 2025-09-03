@@ -17,7 +17,7 @@ num_int = num_str.to_i
 puts num_int + 5
 ```
 ผลลัพธ์:
-```ruby   
+```
 15
 ```
 
