@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Ruby Tutorial](README.md)
+* [Combining Ruby Array](README.md)
+* [Ruby Tutorial](<README (1).md>)
 
 ## 0 Introduction
 
