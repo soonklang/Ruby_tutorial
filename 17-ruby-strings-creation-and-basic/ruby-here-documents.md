@@ -242,7 +242,7 @@ Supports interpolation with f-string.
 
 ---
 
-## แหล่งข้อมูลอ้างอิง
+## References
 
 1. - Ruby Core Team. (n.d.). *Here Documents.* In Ruby 2.7.0 Documentation. Ruby-Doc.org. Retrieved September 4, 2025, from
 [https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents](https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents)
@@ -257,5 +257,5 @@ Supports interpolation with f-string.
 
 # Presentation
 
-# Slide
+# Video
 
