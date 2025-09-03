@@ -116,7 +116,12 @@ Hello from Alice's account!
 - ใช้ constructor ชื่อเดียวกับคลาส เช่น Java  
 - ต้องจัดการ main เป็นจุดเริ่มต้นโปรแกรม  
 - ใช้ cout สำหรับพิมพ์ข้อความแทน puts  
-- ต้องกำหนด access modifier (public) เพื่อให้เมธอดและตัวแปรเข้าถึงได้  
+- ต้องกำหนด access modifier (public) เพื่อให้เมธอดและตัวแปรเข้าถึงได้
+## Video
+
+## Slides
+
+  
 ## References
 - Thomas, D., Fowler, C., & Hunt, A. (2004). Programming Ruby: The Pragmatic Programmers' Guide (1st ed.). Pragmatic Bookshelf. Retrieved September 3, 2025, from https://ruby-doc.org
 - Flanagan, D., & Matsumoto, Y. (2008). The Ruby Programming Language. O'Reilly Media. Retrieved September 3, 2025, from https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/
