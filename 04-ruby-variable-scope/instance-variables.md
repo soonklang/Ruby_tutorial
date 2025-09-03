@@ -310,7 +310,33 @@ C
 
 # Video
  
-# Reference 
+# Reference  
+### Ruby  
+- [Instance variables – Ruby User’s Guide (ruby-doc.org)](https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html) — นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Assignment → Instance Variables – Documentation for Ruby 3.3 (docs.ruby-lang.org)](https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html) — อ้างอิงกฎการตั้งชื่อและข้อเท็จจริงว่าเริ่มต้นเป็น `nil`<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Accessors – Ruby User’s Guide (ruby-doc.org)](https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/accessors.html) — ทางลัด `attr_reader` / `attr_writer` / `attr_accessor`<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Class: Module – Ruby Core API (ruby-doc.org/core)](https://ruby-doc.org/core/Module.html) — นิยามเมธอด `attr_accessor`, `attr_reader`, `attr_writer`<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Class: Object – Documentation for Ruby 3.3 (docs.ruby-lang.org)](https://docs.ruby-lang.org/en/3.3/Object.html) — เมธอดสะท้อนข้อมูล: `instance_variables`, `instance_variable_get`, `instance_variable_set`, `remove_instance_variable`<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Ruby – Variables, Constants and Literals (TutorialsPoint)](https://www.tutorialspoint.com/ruby/ruby_variables.htm) — ใช้ประกอบตัวอย่าง “การกำหนดและใช้งานตัวแปร”<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
+
+- [Method: Module#attr_accessor – rubydoc.info](https://www.rubydoc.info/stdlib/core/Module%3Aattr_accessor) — ใช้ประกอบ “โค้ดเปรียบเทียบ Ruby” สำหรับสร้าง getter/setter อัตโนมัติ<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 2 กันยายน 2568</sub>
+### Java  
+- [Adding Setter and Getter Methods – The Java EE 6 Tutorial (docs.oracle.com)](https://docs.oracle.com/javaee/6/tutorial/doc/gjbbp.html) — ใช้อธิบายแนวคิด getter/setter ฝั่ง Java เพื่อเทียบกับ `attr_*` ของ Ruby<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 2 กันยายน 2568</sub>
+
+### Python  
+- [Built-in Functions – Python 3.x Documentation (docs.python.org)](https://docs.python.org/3/library/functions.html) — ใช้อธิบายแนวคิด `property()`/built-ins ที่เกี่ยวข้อง และแนวปฏิบัติการเข้าถึงแอตทริบิวต์<br><sub>แสดง “Last updated on Sep 03, 2025” บนหน้าเว็บ; สืบค้นเมื่อวันที่ 2 กันยายน 2568</sub>
+
+### C  
+- [ISO/IEC 9899:2024 — Programming languages — C (iso.org)](https://www.iso.org/standard/82075.html) — มาตรฐานฉบับปัจจุบันของภาษา C ใช้อ้างอิงนิยามภาษา/การใช้งาน (คอมไพล์, semantics ฯลฯ)<br><sub>เผยแพร่ 31 ตุลาคม 2024 (Edition 5); สืบค้นเมื่อวันที่ 3 กันยายน 2568</sub>
+  
+- [ISO/IEC 9899:201x Committee Draft N1570 — April 12, 2011 (cs.dal.ca)](https://web.cs.dal.ca/~vlado/pl/C_Standard_2011-n1570.pdf) — เอกสารฉบับร่าง C11 สำหรับรายละเอียดไวยากรณ์/ไลบรารีมาตรฐาน<br><sub>เผยแพร่ 12 เมษายน 2011; สืบค้นเมื่อวันที่ 3 กันยายน 2568</sub>
+
+  
 https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568 
 
 https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html  นำเนื้อหาเรื่องInstance Variablesเรื่องกฎการตั้งชื่อมาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568  
