@@ -174,7 +174,7 @@ public class Student{
     }
 }
 ```
-จากโค้ดด้านบน เมื่อตัวแปรกำหนด access specifier เป็น private จึงทำให้ไม่สามารถเข้าถึงค่าของตัวแปรได้โดยตรงดังนั้นจึงใช้ methods getter และ setter เหมือนภาษา Ruby ซึ่ง methods ก็มี access specifier เหมือนกันแล้วถูกกำหนดให้เป็น public เพื่อที่ภายนอกคลาสสามารถใช้ได้ ซึ่ง methods setter มี syntax ที่คล้ายกับ Ruby ส่วน getter นั้นต้องมีคำว่า return ตามด้วยชื่อตัวแปร
+จากโค้ดด้านบน เมื่อตัวแปรกำหนด access specifier เป็น private จึงทำให้ไม่สามารถเข้าถึงค่าของตัวแปรได้โดยตรงดังนั้นจึงใช้ methods getter และ setter เหมือนภาษา Ruby แต่ตัว methods จะมี access specifier แล้วถูกกำหนดให้เป็น public เพื่อที่ภายนอกคลาสสามารถใช้ได้ และต้องกำหนด return types เพื่อกำหนดว่า methods นี้จะต้อง return ค่าอะไรออกมาแต่ปกติจะถูกตั้งให้เป็น void ส่วนตัว methods setter จะต้องกำหนด dataypes ของค่าที่รับเข้ามา ส่วนการกำหนดและคืนค่ามี syntax ที่คล้ายกับ Ruby ยกเว้นแต่ตัว getter ที่ต้องมี return นำหน้า instance variables
 
 #### Python
 ```python
@@ -226,7 +226,7 @@ print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.a
 ```
 จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เป็นตัวแปรแบบ private เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ เมื่อลองเปรียบเทียบกับ Ruby จะเห็นว่า
 - ตัว getter จะมี @property decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self เข้ามา และต้องมี return นำหน้า instance variables ถึงจะสามารถส่งค่าออกไปได้ ไม่เหมือนภาษา Ruby ที่สามารถจะ return ค่าออกไปได้เลยเพียงแค่ประกาศ instance variables
-- ตัว setter จะมี @ชื่อตัวแปร.setter decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self และ value แต่ของ Ruby สามารถรับแค่ value อย่างเดียวได้ ส่วนการกำหนดค่าใหม่นั้นมีการเขียน syntax ที่เหมือนกัน
+- ตัว setter จะมี @ชื่อตัวแปร.setter decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self และ value แต่ของ Ruby สามารถรับแค่ value อย่างเดียวได้ ส่วนการกำหนดค่าใหม่นั้นมีการเขียน syntax ที่คล้ายกัน
 
 จากโค้ดที่เราเปรียบเทียบในหลายๆภาษาจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
 - attr_reader ทำหน้าที่เป็น methods getter โดยอัตโนมัติ
@@ -281,9 +281,10 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 
 - GeeksforGeeks. (14 สิงหาคม 2025). Python Classes and Objects. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/python/python-classes-and-objects/
 
+- tutorailspoint (13 เมษายน 2023). Accessor and Mutator Methods in Python เข้าค้นเมื่อ 2 กันยายน 2023 จาก https://www.tutorialspoint.com/accessor-and-mutator-methods-in-python
+- 
 - GeeksforGeeks. (29 กรกฎาคม 2025). C Structures. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/c/structures-c/
 
-- tutorialpoint. (ม.ป.ป). Structures and Functions in C. เข้าค้นเมื่อ 2 กันยายน 2025 จาก https://www.tutorialspoint.com/cprogramming/c_structures_and_functions.htm
 
 
 
