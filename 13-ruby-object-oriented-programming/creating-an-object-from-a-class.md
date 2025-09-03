@@ -21,7 +21,9 @@ class BankAccount:
 
 account = BankAccount("Alice", 1000.0)
 account.greet()
-
+```
+```ruby
+Hello from Alice's account!
 ```
 ## คำอธิบาย
 Ruby มีลักษณะไดนามิกและเป็นภาษาแบบ interpreted เช่น Python ใช้ initialize เป็น constructor และใช้ @ นำหน้าตัวแปร instance variable โค้ดดูง่ายและกระชับกว่า Java และ C++
@@ -48,6 +50,9 @@ public class Main {
     }
 }
 ```
+```Java
+Hello from Alice's account!
+```
 ## ความแตกต่าง Java และ Ruby
 - ต้องประกาศประเภทข้อมูล (String, double) ต่างจาก Ruby ที่ไม่ต้องระบุ  
 - ใช้ constructor ชื่อเดียวกับคลาส แทน initialize  
@@ -66,6 +71,9 @@ class BankAccount:
 
 account = BankAccount("Alice", 1000.0)
 account.greet()
+```
+```Python
+Hello from Alice's account!
 ```
 ## ความแตกต่าง Python และ Ruby
 - ใช้ __init__ แทน initialize เป็น constructor  
@@ -98,6 +106,9 @@ int main() {
     account.greet();
     return 0;
 }
+```
+```C++
+Hello from Alice's account!  
 ```
 ## ความแตกต่าง C++ และ Ruby
 - เป็นภาษาคอมไพล์ ต้องประกาศ #include และ namespace  
