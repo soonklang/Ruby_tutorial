@@ -1,5 +1,7 @@
 # Deleting Array Elements
+
 ---
+
 คือการลบขนาดของ _array ตามค่า(value) หรือ ดัชนี (index)_
 
 <details>
@@ -8,34 +10,38 @@
 </details>
 
 ---
+
 ## **การเทียบ <mark style ="background-color:#E7DDFF;color:#000;border-radius:5px">array - Ruby deleting Array Element</mark> แต่ละภาษา**
 
-><mark style ="background-color:#FFECA1;color:#000;border-radius:5px">ruby</mark> - เป็น array ประเภท <span style="border-bottom: 2px solid #FE9900;">Dynamic Array </span> เราสามารถใช้ method เฉพาะคือ `.delete(value)` สำหรับลบค่าสมาชิกในอาร์เรย์ (value) , `.delete_at(index)` ในการลบดัชนีของอาร์เรย์ (index)
+> <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">ruby</mark> - เป็น array ประเภท <span style="border-bottom: 2px solid #FE9900;">Dynamic Array </span> เราสามารถใช้ method เฉพาะคือ `.delete(value)` สำหรับลบค่าสมาชิกในอาร์เรย์ (value) , `.delete_at(index)` ในการลบดัชนีของอาร์เรย์ (index)
 
-><mark style ="background-color:#FFECA1;color:#000;border-radius:5px">c</mark> - ในภาษา C เนื่องจาก Array เป็น <span style="border-bottom: 2px solid #FE9900;">Static Array</span> ซึ่งทำให้ไม่สามารถให้ method ที่จะช่วยการขยายทางสมาชิกอาร์เรย์ เราเลยแก้ปัญหาโดยการสร้าง fn ถึงมาทำงานแทน
->โดยเราจะอ้างอิงหลักการของ Dynamic Array โดยถ้าค่าในช่องอาร์เรย์เกิดเ๖้มจะมีการคูณ 2 เพื่อพื้นอาร์เรย์ไว้แล้วมีการ copy ค่าลงใน array และมพร้อมใส่ค่าที่เพิ่มเข้ามาใหม่แทน โดยจะมีการเฉพาะจำเพราะที่ต่างโดยเราอ้างอิงจาก Array - Ruby ทำให้การลบหลักๆเรามี 2 รูปแบบ คือการลบตามค่าของสมาชิกใน array (value) และลบตามดัชนีของ Array (index) โดยมี method ทางภาษา C ในการทำงานเฉฉพาะมีดังนี้
+> <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">c</mark> - ในภาษา C เนื่องจาก Array เป็น <span style="border-bottom: 2px solid #FE9900;">Static Array</span> ซึ่งทำให้ไม่สามารถให้ method ที่จะช่วยการขยายทางสมาชิกอาร์เรย์ เราเลยแก้ปัญหาโดยการสร้าง fn ถึงมาทำงานแทน
+> โดยเราจะอ้างอิงหลักการของ Dynamic Array โดยถ้าค่าในช่องอาร์เรย์เกิดเต็มจะมีการคูณ 2 เพื่อพื้นอาร์เรย์ไว้แล้วมีการ copy ค่าลงใน array และพร้อมใส่ค่าที่เพิ่มเข้ามาใหม่แทน โดยจะวิธีมีการเฉพาะที่ต่างโดยเราอ้างอิงจาก Array - Ruby ทำให้การลบหลักๆเรามี 2 รูปแบบ คือการลบตามค่าของสมาชิกใน array (value) และลบตามดัชนีของ Array (index) โดยมี method ทางภาษา C ในการทำงาน(Dynamic Array)เฉพาะมีดังนี้
 
 | ฟังก์ชัน               | การทำงานหลัก                                                                                                        | ค่าเริ่มต้น                                                                                                                                                                         | ใช้เมื่อไหร่                                                                                                                                                                                                          |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **malloc**             | จองหน่วยความจำตาม byte                                                                                              | ค่าไม่กำหนด (garbage)                                                                                                                                                               | เมื่อไม่สนใจค่าเริ่มต้น                                                                                                                                                                                               |
-| **calloc**             | จองหน่วยความจำ + เคลียร์ค่าเป็นศูนย์                                                                                | 0                                                                                                                                                                                   | เมื่ออยากได้ array ที่เริ่มต้นเป็นศูนย์                                                                                                                                                                               |
-| **realloc**            | ปรับขนาดพื้นที่ที่จองมาแล้ว                                                                                         | ข้อมูลเดิมคงอยู่, ส่วนที่เพิ่มเป็น garbage                                                                                                                                          | เมื่ออยากขยาย/ย่อ array ที่ใช้อยู่                                                                                                                                                                                    |
-| **free()**             | **คืน** บล็อกหน่วยความจำที่ถูกจองไว้กลับคืนสู่ระบบ<br>pointerที่เคยชี้ไปยังบล็อกนั้นจะกลายเป็น **dangling pointer** | **ไม่กำหนด** (เป็นค่าขยะ)<br>แต่ไม่สามารถเข้าถึงได้แล้ว                                                                                                                             | ใช้เมื่อไม่ต้องการใช้ข้อมูลใน Dynamic Array แล้ว เพื่อป้องกัน **Memory Leak**                                                                                                                                         |
-| **fprintf**            | ใช้สำหรับเขียนข้อมูลที่ถูกจัดรูปแบบ (formatted data) ลงใน **สตรีม (stream)** ที่ระบุ                                | -                                                                                                                                                                                   | - เมื่อต้องการพิมพ์ข้อความไปยังปลายทางที่แตกต่างจากหน้าจอปกติ เช่น การพิมพ์ข้อความแสดงข้อผิดพลาดไปยัง `stderr` เพื่อให้แยกออกจากเอาต์พุตปกติ <br>- เมื่อคุณต้องการเขียนข้อมูลที่จัดรูปแบบลงในไฟล์                     |
-| **exit(EXIT_FAILURE)** | ใช้สำหรับ **ยุติการทำงานของโปรแกรมอย่างไม่ปกติ** และส่งค่าสถานะความล้มเหลว (failure status) กลับไปยังระบบปฏิบัติการ | **`EXIT_FAILURE`** เป็นค่าคงที่ที่ถูกกำหนดไว้ล่วงหน้าในไลบรารี `<stdlib.h>` โดยมีค่าเป็น 1 หรือค่าอื่นที่ไม่ใช่ 0 ซึ่งเป็นมาตรฐานที่บอกให้ระบบปฏิบัติการรู้ว่าโปรแกรมทำงานไม่สำเร็จ | - เมื่อโปรแกรมพบข้อผิดพลาดร้ายแรงที่ไม่สามารถกู้คืนได้ เช่น **จองหน่วยความจำล้มเหลว** (ซึ่งเป็นสถานการณ์ที่คุณเคยเจอในตัวอย่างก่อนหน้า) <br>- เมื่อพารามิเตอร์ที่ผู้ใช้ป้อนมาไม่ถูกต้องและโปรแกรมไม่สามารถทำงานต่อได้ |
+| __malloc__             | จองหน่วยความจำตาม byte                                                                                              | ค่าไม่กำหนด (garbage)                                                                                                                                                               | เมื่อไม่สนใจค่าเริ่มต้น                                                                                                                                                                                               |
+| __calloc__             | จองหน่วยความจำ + เคลียร์ค่าเป็นศูนย์                                                                                | 0                                                                                                                                                                                   | เมื่ออยากได้ array ที่เริ่มต้นเป็นศูนย์                                                                                                                                                                               |
+| __realloc__            | ปรับขนาดพื้นที่ที่จองมาแล้ว                                                                                         | ข้อมูลเดิมคงอยู่, ส่วนที่เพิ่มเป็น garbage                                                                                                                                          | เมื่ออยากขยาย/ย่อ array ที่ใช้อยู่                                                                                                                                                                                    |
+| __free()__             | __คืน__ บล็อกหน่วยความจำที่ถูกจองไว้กลับคืนสู่ระบบ<br>pointerที่เคยชี้ไปยังบล็อกนั้นจะกลายเป็น __dangling pointer__ | __ไม่กำหนด__ (เป็นค่าขยะ)<br>แต่ไม่สามารถเข้าถึงได้แล้ว                                                                                                                             | ใช้เมื่อไม่ต้องการใช้ข้อมูลใน Dynamic Array แล้ว เพื่อป้องกัน __Memory Leak__                                                                                                                                         |
+| __fprintf__            | ใช้สำหรับเขียนข้อมูลที่ถูกจัดรูปแบบ (formatted data) ลงใน __สตรีม (stream)__ ที่ระบุ                                | -                                                                                                                                                                                   | - เมื่อต้องการพิมพ์ข้อความไปยังปลายทางที่แตกต่างจากหน้าจอปกติ เช่น การพิมพ์ข้อความแสดงข้อผิดพลาดไปยัง `stderr` เพื่อให้แยกออกจากเอาต์พุตปกติ <br>- เมื่อคุณต้องการเขียนข้อมูลที่จัดรูปแบบลงในไฟล์                     |
+| __exit(EXIT_FAILURE)__ | ใช้สำหรับ __ยุติการทำงานของโปรแกรมอย่างไม่ปกติ__ และส่งค่าสถานะความล้มเหลว (failure status) กลับไปยังระบบปฏิบัติการ | __`EXIT_FAILURE`__ เป็นค่าคงที่ที่ถูกกำหนดไว้ล่วงหน้าในไลบรารี `<stdlib.h>` โดยมีค่าเป็น 1 หรือค่าอื่นที่ไม่ใช่ 0 ซึ่งเป็นมาตรฐานที่บอกให้ระบบปฏิบัติการรู้ว่าโปรแกรมทำงานไม่สำเร็จ | - เมื่อโปรแกรมพบข้อผิดพลาดร้ายแรงที่ไม่สามารถกู้คืนได้ เช่น __จองหน่วยความจำล้มเหลว__ (ซึ่งเป็นสถานการณ์ที่คุณเคยเจอในตัวอย่างก่อนหน้า) <br>- เมื่อพารามิเตอร์ที่ผู้ใช้ป้อนมาไม่ถูกต้องและโปรแกรมไม่สามารถทำงานต่อได้ |
 
-><mark style ="background-color:#FFECA1;color:#000;border-radius:5px">java</mark> - มี Array ที่สอดคล้องกับของ Ruby คือ <span style="border-bottom: 2px solid #FE9900;"> ArrayList </span> เพราะ List ลักษณะ Array ที่เหมือน Ruby มากที่สุด
+> <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">java</mark> - มี Array ที่สอดคล้องกับของ Ruby คือ <span style="border-bottom: 2px solid #FE9900;"> ArrayList </span> เพราะ List ลักษณะ Array ที่เหมือน Ruby มากที่สุด
 
-><mark style ="background-color:#FFECA1;color:#000;border-radius:5px">Python</mark> - มี Array ที่เป็นประเภทเดียวกับ Ruby <span style="border-bottom: 2px solid #FE9900;">"list"</span> เพราะว่าทาง list ไพธอนมีขนาดที่ยืดหดได้ แถมสามารถเก็บหลาย type อยู่ใน Array เดียวกันได้ โดยเราจะใช้ method ที่คล้ายกัน เช่น การลบขนาดค่า(value)ของอาร์เรย์ `.remove(value)` และมีการลบตามดัชนี `.pop(index)`   
+> <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">Python</mark> - มี Array ที่เป็นประเภทเดียวกับ Ruby <span style="border-bottom: 2px solid #FE9900;">"list"</span> เพราะว่าทาง list ไพธอนมีขนาดที่ยืดหดได้ แถมสามารถเก็บหลาย type อยู่ใน Array เดียวกันได้ โดยเราจะใช้ method ที่คล้ายกัน เช่น การลบขนาดค่า(value)ของอาร์เรย์ `.remove(value)` และมีการลบตามดัชนี `.pop(index)`
 
 ---
+
 ## ตัวอย่าง Deleting Array Elements 🪻
-### 🪼 ลบตามค่า (value) 
-### 🌼 ruby (●'◡'●) - `.delete(value)` 
 
->ในภาษา Ruby การลบสมาชิกตามค่าใน array สามารถใช้ method `.delete(value)` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
+## 🪼 ลบตามค่า (value)
 
-``` ruby
+### 🌼 ruby (●'◡'●) - `.delete(value)`
+
+> ในภาษา Ruby การลบสมาชิกตามค่าใน array สามารถใช้ method `.delete(value)` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
+
+```ruby
 arr = ["red", 10 , 20 , "blue"]
 arr.delete(10)#ลบค่า 10
 puts arr
@@ -48,15 +54,15 @@ puts arr
 	blue</p>
 </details>
 
-### 🌼 C (❁´◡`❁) 
+### 🌼 C (❁´◡`❁)
 
-> ในภาษา C ไม่เป็น Dynamic Array จึงสร้าง Custom Dynamic Array 
-> 
-> มีการสร้าง Dynamic Array 
+> ในภาษา C ไม่เป็น Dynamic Array จึงสร้าง Custom Dynamic Array
+>
+> มีการสร้าง Dynamic Array
 > โดยมีการกำหนดขนาด array เบื้องต้นก่อนโดยใช้ fn : createDynamicArray(กำหนดความจุ)
 > มีการเพิ่มขนาดตัว capacity ตามหลัการ fn:resizeDynamicArray(DynamicArry)
 > มีการเพิ่มสมาชิก array โดย fn:addElement(DynamicArry , value)
-> มีการลบข้อมูลตาม index โดย fn:removeElementAtValue(DynamicArry , index)
+> มีการลบข้อมูลตาม value โดย fn:removeElementAtValue(DynamicArry , value)
 > มีการปริ้นข้อมูล Array โดย fn:printDynamicArray(DynamicArry)
 
 ```C
@@ -172,7 +178,7 @@ int main() {
     printf("--- Before removing duplicate 20s ---\n");
     printDynamicArray(myArray);
 
-    // ลบข้อมูลที่ value 20 (ซึ่งมีอยู่ 2 ตัว)
+    // ลบข้อมูลที่ value = 20 
     removeElementAtValue(myArray, 20);
     
     printf("--- After removing duplicate 20s ---\n");
@@ -196,10 +202,9 @@ Array elements (size: 4, capacity: 5): 10 20 30 40<br>
 
 ### 🌼 Python ^3^ - `.remove(value)`
 
->ในภาษา Python การลบสมาชิกตามค่าใน array สามารถใช้ method `.remove(value)` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
+> ในภาษา Python การลบสมาชิกตามค่าใน array สามารถใช้ method `.remove(value)` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
 
-
-``` python
+```python
 arr = [10,20,30,'c' , 51]
 arr.remove('c')#ลบค่า c
 print(arr)
@@ -212,7 +217,7 @@ print(arr)
 
 ### 🌼 Java <3 -`remove(Object.valueOf(value))`
 
->ในภาษา Java การลบสมาชิกตามค่าใน array สามารถใช้ method `remove(Object.valueOf(value))` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
+> ในภาษา Java การลบสมาชิกตามค่าใน array สามารถใช้ method `remove(Object.valueOf(value))` โดย value คือค่าที่เป็นสมาชิกในอาร์เรย์
 
 ```java
 import java.util.ArrayList;
@@ -241,11 +246,11 @@ public class Main {
     <p>[30, grape, light green]</p>
 </details>
 
-## 🪼 ลบตามดัชนี (index) 
+## 🪼 ลบตามดัชนี (index)
+
 ### 🌼 Ruby (●'◡'●) -`.delete_at(index)`
 
->ในภาษา Ruby การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.delete_at(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
-
+> ในภาษา Ruby การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.delete_at(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
 
 ```ruby
 arr = ["red", 10 , 20 , "blue"]
@@ -260,18 +265,18 @@ puts arr
 	blue</p>
 </details>
 
-### 🌼 C (❁´◡`❁) 
+### 🌼 C (❁´◡`❁)
 
-> ในภาษา C ไม่เป็น Dynamic Array จึงสร้าง Custom Dynamic Array 
-> 
-> มีการสร้าง Dynamic Array 
+> ในภาษา C ไม่เป็น Dynamic Array จึงสร้าง Custom Dynamic Array
+>
+> มีการสร้าง Dynamic Array
 > โดยมีการกำหนดขนาด array เบื้องต้นก่อนโดยใช้ fn : createDynamicArray(กำหนดความจุ)
 > มีการเพิ่มขนาดตัว capacity ตามหลัการ fn:resizeDynamicArray(DynamicArry)
 > มีการเพิ่มสมาชิก array โดย fn:addElement(DynamicArry , value)
 > มีการลบข้อมูลตาม index โดย fn:removeElementAtValue(DynamicArry , index)
 > มีการปริ้นข้อมูล Array โดย fn:printDynamicArray(DynamicArry)
 
-``` c
+```c
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -390,7 +395,7 @@ Array elements (size: 4, capacity: 5): 10 20 40 50
 
 ### 🌼 Python ^3^ - `.pop(index)`
 
->ในภาษา Python การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.pop(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
+> ในภาษา Python การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.pop(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
 
 ```python
 arr = [10,20,30,40,50,60]
@@ -403,10 +408,9 @@ print(arr)
     <p>[10, 20, 40, 50, 60]</p>
 </details>
 
-
 ### 🌼 Java <3 - `remove(index)
 
->ในภาษา Python การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.remove(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
+> ในภาษา Python การลบสมาชิกตามดัชนีใน array สามารถใช้ method `.remove(index)` โดย index คือค่าที่เป็นดัชนีในอาร์เรย์
 
 ```java
 import java.util.ArrayList;
@@ -431,24 +435,33 @@ public class Main {
 </details>
 
 ---
+
 # แหล่งอ้างอิง
 
 #### Dynamic Array
 
 - [Dynamic array | Data Structures and Algorithms Manual - ใช้หลักการ Dynamic Array ใน C -**https://calebkoy.github.io/** [ไม่พบวันที่เขียนในหน้าเว็บไซต์]สืบค้นวันที่ 1/9/2025 ](https://calebkoy.github.io/data-structures-and-algorithms-manual/data-structures/dynamic-array.html)
+
 ##### Ruby
- - [[ Deleting Array Elements (ถูกอ้างอิงเป็นหัวข้อหลักในการหา method)] - **techotopia.com ถูกในวันที่เขียน**วันพฤหัสบดีที่ 27 ตุลาคม 2559** ทำการสืบค้นในวันที่ 30 /08/ 2025 ](https://www.techotopia.com/index.php/Advanced_Ruby_Arrays)
-- [[Removing Items from an [Array] method delete(value), delete_at(index) ถูกใช้เป็นตัวอย่างหลักการเขียนเพื่อเชื่อมมั่นได้ + หลักการของ method - **Class: Array (Ruby 3.0.1)** เขียน ณ วันที่ 22 มีมาคม 2021 สอบค้นในวันที่ 30/8/2025](https://ruby-doc.org/core-3.0.1/Array.html)
+
+- [[ Deleting Array Elements (ถูกอ้างอิงเป็นหัวข้อหลักในการหา method)] - __techotopia.com ถูกในวันที่เขียน__วันพฤหัสบดีที่ 27 ตุลาคม 2559** ทำการสืบค้นในวันที่ 30 /08/ 2025 ](https://www.techotopia.com/index.php/Advanced_Ruby_Arrays)
+- [[Removing Items from an [Array] method delete(value), delete_at(index) ถูกใช้เป็นตัวอย่างหลักการเขียนเพื่อเชื่อมมั่นได้ + หลักการของ method - __Class: Array (Ruby 3.0.1)__ เขียน ณ วันที่ 22 มีมาคม 2021 สอบค้นในวันที่ 30/8/2025](https://ruby-doc.org/core-3.0.1/Array.html)
+
 ##### C
+
 - [Dynamic memory management [method ที่ใช้ใน Dynamic โดยมีการอธิบายความหมาย method ที่ชัดเจน ] - **cppreference.com ** ถูกแก้ไขล่าสุดเมื่อ วันที่ 18 กันยายน 2022 เวลา 10:41 สอบค้นในวันที่ 30/8/2025](https://en.cppreference.com/w/c/memory.html)
 - [[malloc - c ( Dynamic memory management ถูกใช้ในหลักการเขียนเพื่อประยุกต์ในรูปแบบ <span style="border-bottom: 2px solid #FE9900;">Dynamic Array </span> ยังไง ) ]- **cppreference.com **(ถูกแก้ไขล่าสุดเมื่อ วันที่ 18 กันยายน 2022 เวลา 10:41) สอบค้นวันที่ 30/8/2025 ](https://en.cppreference.com/w/c/memory/malloc?utm_source=chatgpt.com)
 - [[calloc - c ( Dynamic memory management) ถูกใช้ในหลักการเขียนเพื่อประยุกต์ในรูปแบบ <span style="border-bottom: 2px solid #FE9900;">Dynamic Array </span> ยังไง]- **cppreference.com **(ถูกแก้ไขล่าสุดเมื่อ **วันที่ 18 กันยายน 2022 เวลา 10:41) สอบค้นวันที่ 30/8/2025 ](https://en.cppreference.com/w/c/memory/calloc.html)
 - [[realloc - c ( Dynamic memory management) ถูกใช้ในหลักการเขียนเพื่อประยุกต์ในรูปแบบ <span style="border-bottom: 2px solid #FE9900;">Dynamic Array </span> ยังไง] - **cppreference.com ** (ถูกแก้ไขล่าสุดเมื่อ วันที่ 18 กันยายน 2022 เวลา 10:41) สอบค้นวันที่ 30/8/2025 ](https://en.cppreference.com/w/c/memory/realloc.html)
 - [c_lib/c/Kernighan, Ritchie - The C Programming Language อธิบายหลักการ method + library -> ไม่วันที่แน่ชัด วันที่สืบค้น 31/8/2025](https://github.com/media-lib/c_lib/blob/master/c/Kernighan%2C%20Ritchie%20-%20The%20C%20Programming%20Language%2C%202nd%20edition.pdf)
+
 ##### python
+
 - [Python Remove Array Item ถูกใช้เป็นตัวหลักการคิดในการใช้ - GeeksforGeeks ไม่ถูกพบเวลาเขียนในหน้าเว็บ](https://www.geeksforgeeks.org/python/python-remove-array-item/)
 - [python library method array (หา method ที่ใช้ในการลบอาร์เรย์ แถมมีการอธิบายว่าแต่ละ method แถมอธิบาย method ว่ามีหน้าที่อะไร )- **docs.python.org**(วันที่มีการแก้ไขล่าสุด 29 สิงหาคม 2025 ) วันที่สืบค้น 30/8/2025 ](https://docs.python.org/3/library/array.html)
+
 ##### java
+
 - [ArrayList-methond + หลักการของ remove ของ java (Java Platform SE 8 ) - **docs.oracle.com** ไม่พบข้อมูลที่เขียนหรืออัปเดตล่าสุดและถูกสืบค้นในวันที่30/8/2025](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
-- [ตัวอย่างการใช้  method ->Java ArrayList remove() Method - **w3schools.com** ไม่พบวันเวลาที่ถูกเขียน + เวลาที่อัปเดตเว้บไซต์ล่าสุด และมีการถูกสืบค้นในวันที่ 30/8/2025 ](https://www.w3schools.com/java/ref_arraylist_remove.asp)
+- [ตัวอย่างการใช้  method ->Java ArrayList remove() Method - __w3schools.com__ ไม่พบวันเวลาที่ถูกเขียน + เวลาที่อัปเดตเว้บไซต์ล่าสุด และมีการถูกสืบค้นในวันที่ 30/8/2025 ](https://www.w3schools.com/java/ref_arraylist_remove.asp)
 
