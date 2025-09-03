@@ -306,7 +306,9 @@ C
 
 ❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
 
-# presentation
+# presentation  
+
+# Video
  
 # Reference 
 https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568 
