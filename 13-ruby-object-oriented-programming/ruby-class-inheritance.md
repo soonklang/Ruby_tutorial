@@ -71,9 +71,9 @@ test_obj.super_method
 </details>
 จากตัวอย่าง Code การใช้งาน Class Inheritance จะเห็นว่า ThisIsSubClass สืบทอดมาจาก ThisIsSuperClass ทำให้ test_obj ที่สร้างมาจาก ThisIsSubClass สามารถใช้ method initialize และ super_method ได้แม้ใน ThisIsSubClass ไม่ได้เขียนขึ้นมาใหม่
 
----
 
-## การใช้งาน Class Inheritance ในภาษาอื่นๆ
+
+### การใช้งาน Class Inheritance ในภาษาอื่นๆ
 - ### Java
 - ### Python
 - ### C
@@ -81,3 +81,39 @@ test_obj.super_method
 ---
 
 ## Method Overriding
+ Method Overriding คือ การที่เราสามารถเขียนทับ method ใน subclass ที่สืบทอดมาจาก superclass ได้โดยชื่อ method ยังคงเดิมแต่การดำเนินการใน method นั้นเปลี่ยนไปจาก superclass 
+ ### ตัวอย่าง Code การใช้งาน Method Overriding ในภาษา Ruby
+```ruby
+class Lion
+  
+  def roar
+    print "ROAR!"
+  end
+end
+
+class Cat < Lion
+  
+  def roar
+    print "meow!"
+  end
+end
+
+c = Cat.new
+c.roar
+```
+<details>
+
+<summary>Output</summary>
+
+> meow!
+
+
+</details>
+จากตัวอย่าง Code การใช้งาน Method Overriding จะเห็นว่า แม้ว่า object c สร้างมาจาก class Cat ที่สืบทอดมาจาก class Lion มี method roar เหมือนกันแต่ class Cat ได้ Overriding method roar ไปแล้วทำให้ผลลัพธ์จากที่ควรจะเป็น ROAR! กลายเป็น meow! แทน
+
+### การใช้งาน Method Overriding ในภาษาอื่นๆ
+- ### Java
+- ### Python
+- ### C
+
+---
