@@ -148,3 +148,20 @@ end
 obj = Super_Copy.new
 obj.display "ONE", "TWO"
 ```
+<details>
+
+<summary>Output</summary>
+
+>Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+>Parent class, 1st Parameter: ONE, 2nd Parameter: 0\
+>Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+>Parent class, 1st Parameter: 0, 2nd Parameter: 0\
+>This is subclass method
+
+</details>
+จากตัวอย่าง Code การใช้งาน Super method obj ได้ส่ง parameter "ONE" และ "TWO" ไปใน display ของ Super_Copy เพราะ obj สร้างมาจาก class Super_Copy จะเห็นได้ว่า ผลลัพธ์ของแต่ละ super จะออกมาไม่เหมือนกัน โดยมีลักษณะดังนี้
+
+- **super** จะส่ง parameter ที่ได้มาจาก obj.display ก็คือ "ONE" และ "TWO" ไปใน display ของ Super Class **โดยอัตโนมัติ**
+- **super a** จะส่งไปแค่ parameter "ONE" ทำให้ค่า parameter ของ b=0 ตามที่ display ของ Super Class กำหนดไว้
+- **super a, b** จะส่ง parameter ที่ได้มาจาก obj.display ก็คือ "ONE" และ "TWO" ไปใน display ของ Super Class
+- **super()** จะไม่ส่งอะไรไปเลย แค่เรียกใช้ method display ของ Super Class ทำให้ค่า parameter ของ a = 0 และ b=0 ตามที่ display ของ Super Class กำหนดไว้ 
