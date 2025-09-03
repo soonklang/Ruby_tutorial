@@ -249,9 +249,8 @@ Supports interpolation with f-string.
 2. - Mehta, R. (2020, April 8). *Heredocs and how to use them in Ruby and Rails*. Saeloun Blog. Retrieved September 4, 2025, from [https://blog.saeloun.com/2020/04/08/heredoc-in-ruby-and-rails/](https://blog.saeloun.com/2020/04/08/heredoc-in-ruby-and-rails/)
 3. - Laskey, J., & Marks, S. (2020, September 15). *Programmer's Guide to Text Blocks.* Oracle. Retrieved September 4, 2025, from [https://docs.oracle.com/en/java/javase/15/text-blocks/index.html](https://docs.oracle.com/en/java/javase/15/text-blocks/index.html)
 4. - Python Software Foundation. (n.d.). *String and Bytes literals.* In Python Language Reference — Lexical analysis. Retrieved September 4, 2025, from [https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals)
-5. [C String Literals - C Reference](https://en.cppreference.com/w/c/language/string_literal)
-6. [Ruby Heredoc Guide - TutorialsPoint](https://www.tutorialspoint.com/ruby/ruby_strings.htm)
-7. - GeeksforGeeks. (2025, April 28). *Text Blocks in Java 15*. GeeksforGeeks. Retrieved September 4, 2025, from [https://www.geeksforgeeks.org/java/text-blocks-in-java-15/](https://www.geeksforgeeks.org/java/text-blocks-in-java-15/)
+5. - cppreference.com. (n.d.). *String literal (C language).* In cppreference.com. Retrieved September 4, 2025, from [https://en.cppreference.com/w/c/language/string_literal.html](https://en.cppreference.com/w/c/language/string_literal.html)
+6. - GeeksforGeeks. (2025, April 28). *Text Blocks in Java 15*. GeeksforGeeks. Retrieved September 4, 2025, from [https://www.geeksforgeeks.org/java/text-blocks-in-java-15/](https://www.geeksforgeeks.org/java/text-blocks-in-java-15/)
 
 
 ---
