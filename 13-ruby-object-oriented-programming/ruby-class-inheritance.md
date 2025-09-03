@@ -93,7 +93,7 @@ end
 
 class Cat < Lion
   
-  def roar
+  def roar #Overriding
     print "meow!"
   end
 end
@@ -117,3 +117,34 @@ c.roar
 - ### C
 
 ---
+
+## Super method
+Super method ใช้ใน Sub Class เพื่อเรียก method ของ Super Class มาใช้ โดยมีการส่ง parameter ที่ใช้สำหรับ Super method นั้นๆในลักษณะที่แตกต่างกันไป สามารถดูตัวอย่างข้างล่างเพื่อง่ายต่อความเข้าใจได้
+### ตัวอย่าง Code การใช้งาน Super method ในภาษา Ruby
+```ruby
+class Super_Original
+  
+    def display a = 0, b = 0
+        puts "Parent class, 1st Parameter: #{a}, 2nd Parameter: #{b}"
+    end
+end
+
+class Super_Copy < Super_Original
+  
+    def display a, b
+        
+        super
+        
+        super a
+        
+        super a, b
+        
+        super()
+        
+        puts "This is subclass method"
+    end
+end
+
+obj = Super_Copy.new
+obj.display "ONE", "TWO"
+```
