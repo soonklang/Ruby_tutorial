@@ -129,13 +129,15 @@ fruits = ["apple", "banana", "cherry"]
 x, y, z = fruits
 ```
 ## ตารางเปรียบเทียบ
-|     เงื่อนไข                                   | Ruby | C    | Java | Python|
+|     เงื่อนไข/รูปแบบ                             | Ruby | C    | Java | Python|
 |-----------------------------------------------|------|------|------|--------|
-| lvalue 1 ตัว rvalueหลายตัว                     |  ✓  |      |      |        |
-| lvalueมากกว่า 1 แต่มีarrayแค่อันเดียว              |  ✓  |      |      |        |
-| lvalueตัวสุดท้ายมี "*" ค่าrvalueหลังจากนั้นเป็นarray  |  ✓  |      |      |        |
-| rvalueตัวสุดท้ายคือarray ใส่ * ได้                 |  ✓  |      |      |        |
-| lvalue 1 ตัว rvalueหลายตัว                     |  ✓  |      |      |        |
+| lvalue 1 ตัว rvalueหลายตัว                     | ✓ |  |   | |
+| lvalueมากกว่า 1 แต่มีarrayแค่อันเดียว              | ✓ |  |   |✓|
+| lvalueตัวสุดท้ายมี "*" ค่าrvalueหลังจากนั้นเป็นarray  | ✓ |  |  |  |
+| rvalueตัวสุดท้ายคือarray ใส่ * ได้                 | ✓ |  |  |  |
+| lvalueมากกว่าrvalue setlvalueที่เกินเป็น "Nil"     | ✓ |  |  |  |
+| int x = 5, y = 6, z = 50;                     |   |✓ |✓|  |
+| x = y = z = 50;                               |   | ✓|✓|✓|
 ## VIDEO
 
 ## SLIDE
