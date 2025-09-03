@@ -2,7 +2,7 @@
 ---
 ## Class Inheritance คืออะไร?
 
-Inheritance(การสืบทอด) คือ การที่เราสามารถสร้าง class ใหม่ขึ้นมาโดยใช้ class ที่มีอยู่แล้วเป็นต้นแบบ(superclass) โดยยังมี variable และ method ของของ class นั้นๆอยู่ เพื่อนำมาสร้าง class ที่มีความคล้ายกันแต่สามารถเพิ่ม variable และ method ใหม่ๆได้(subclass)
+Inheritance(การสืบทอด) คือ การที่เราสามารถสร้าง class ใหม่ขึ้นมาโดยใช้ class ที่มีอยู่แล้วเป็นต้นแบบ โดยยังมี variable และ method ของของ class นั้นๆอยู่ เพื่อนำมาสร้าง class ที่มีความคล้ายกันแต่สามารถเพิ่ม variable และ method ใหม่ๆได้
 
 ### ประเภทของ Inheritance
 - **Single inheritance(การสืบทอดเดี่ยว)** คือ class หนึ่งสืบทอดมาจาก class เพียง class เดียว
@@ -13,13 +13,75 @@ Inheritance(การสืบทอด) คือ การที่เรา�
  
 โดยภาษา Ruby นั้นไม่รองรับ **Multiple inheritance** แต่ว่าสามารถใช้ **Mixins** (via Modules) แทนได้
 
+### Keywords
+- **Super Class** คือ
+- **Sub Class** คือ
+
 ---
 
-## การใช้งาน Class Inheritance ใน Ruby
+## การใช้งาน Class Inheritance ในภาษา Ruby
 
 - การสืบทอดใน Ruby สามารถทำได้โดยใช้เครื่องหมาย `<`
 ### Syntax ตัวอย่าง
 ```ruby
 class subclass_name < superclass_name 
 ```
+
+### ตัวอย่าง Code การใช้งาน Class Inheritance ในภาษา Ruby
+```ruby
+# Superclass 
+class ThisIsSuperClass 
+
+    # constructor of superclass
+    def initialize 
+        
+        puts "This is Superclass"
+    end
+    
+    # method of the Superclass
+    def super_method
+        
+        puts "Method of superclass"
+    end
+end
+
+# Subclass
+class ThisIsSubClass < ThisIsSuperClass 
+
+    # constructor of subclass
+    def initialize 
+
+       puts "This is Subclass"
+    end
+end
+
+# creating object from superclass
+ThisIsSuperClass.new
+
+# creating object from subclass
+test_obj = ThisIsSubClass.new
+
+# calling the method of superclass from subclass
+test_obj.super_method
+```
+
+<details>
+
+<summary>Output</summary>
+
+> This is Superclass\
+> This is Subclass\
+> Method of Superclass
+
+</details>
+
 ---
+
+## การใช้งาน Class Inheritance ในภาษาอื่นๆ
+- ### Java
+- ### Python
+- ### C
+
+---
+
+## Method Overriding
