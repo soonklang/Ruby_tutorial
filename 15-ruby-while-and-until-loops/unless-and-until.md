@@ -49,8 +49,23 @@ end until conditional
 **Example Code**
 
 ``` ruby
-
+i = 10
+begin
+  puts i
+    i = i - 1
+end until i == 5
 ```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>10
+9
+8
+7
+6
+</code></pre>
+</details>
+
+> สรุป###
 
 ### เปรียบเทียบภาษา Ruby กับภาษา Java , C , Python
 
@@ -62,45 +77,42 @@ until var == 11 do
   var = var + 1
 end
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>70
-80
-90
-100
-</code></pre>
-</details>
 
 **Java Example Code**
 ``` Java
-
+public class UntilExample {
+    public static void main(String[] args) {
+        int var = 7;
+        while (!(var == 11)) {
+            System.out.println(var * 10);
+            var = var + 1;
+        }
+    }
+}
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>70
-80
-90
-100
-</code></pre>
-</details>
 
 **C Example Code**
 ``` C
+#include <stdio.h>
 
+int main() {
+    int var = 7;
+    while (var != 11) {
+        printf("%d\n", var * 10);
+        var = var + 1;
+    }
+    return 0;
+}
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>70
-80
-90
-100
-</code></pre>
-</details>
 
 **Python Example Code**
 ``` Python
-
+var = 7
+while var != 11:
+    print(var * 10)
+    var = var + 1
 ```
+
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>70
@@ -109,6 +121,8 @@ end
 100
 </code></pre>
 </details>
+
+> สรุป###
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -133,6 +147,14 @@ x = 1
 y = 3
 unless x == y
     puts "x is not equal to y"
+end
+```
+
+``` ruby
+x = 1
+y = 3
+unless x == y
+    puts "x is not equal to y"
 else
     puts "x equal to y"
 end
@@ -142,7 +164,6 @@ end
   <pre><code>x is not equal to y
 </code></pre>
 </details>
-
 ในตัวอย่างนี้ประกาศสองตัวแปรคือ x และ y และกำหนดค่าที่ไม่เท่ากันให้กับตัวแปร ซึ่งในโปรแกรมนั้นมีหมายความว่าให้แสดงผล ยกเว้นแต่ว่า x มีค่าเท่ากับ y และเนื่องจาก x == y นั้นไม่เป็นจริง ดังนั้นโปรแกรมทำงานในบล็อคของคำสั่ง unless
 
 เราสามารถใช้งานคำสั่ง else ร่วมกับคำสั่ง unless ได้ ซึ่งโปรแกรมจะทำงานในบล็อคคำสั่ง else ถ้าหากเงื่อนไขเป็นจริง แต่โปรดจำไว้ว่าคุณไม่สามารถใช้งานคำสั่ง elsif ร่วมกับคำสั่ง unless ได้
@@ -156,8 +177,17 @@ code unless conditional
 **Example Code**
 
 ``` ruby
-
+x = 1
+y = 3
+puts "x is not equal to y" unless x == y
 ```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>x is not equal to y
+</code></pre>
+</details>
+
+> สรุป###
 
 ### เปรียบเทียบภาษา Ruby กับภาษา Java , C , Python
 
@@ -171,41 +201,56 @@ unless x>=2
    puts "x is greater than 2"
 end
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>x is less than 2
-</code></pre>
-</details>
+
 
 **Java Example Code**
 ``` Java
-
+public class UnlessExample {
+    public static void main(String[] args) {
+        int x = 1;
+        if (!(x >= 2)) {
+            System.out.println("x is less than 2");
+        } else {
+            System.out.println("x is greater than 2");
+        }
+    }
+}
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>x is less than 2
-</code></pre>
-</details>
+
 
 **C Example Code**
 ``` C
+#include <stdio.h>
 
+int main() {
+    int x = 1;
+    if (!(x >= 2)) {
+        printf("x is less than 2\n");
+    } else {
+        printf("x is greater than 2\n");
+    }
+    return 0;
+}
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>x is less than 2
-</code></pre>
-</details>
+
 
 **Python Example Code**
 ``` Python
+x = 1
+if not (x >= 2):
+    print("x is less than 2")
+else:
+    print("x is greater than 2")
 
 ```
+
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>x is less than 2
 </code></pre>
 </details>
+
+> สรุป###
 
 ## References
 
@@ -233,6 +278,20 @@ end
 * GeeksforGeeks. (2018, 26 Oct). Ruby unless Statement and unless Modifier. GeeksforGeeks. Retrieved September 2, 2025, from
   https://www.geeksforgeeks.org/ruby/ruby-unless-statement-and-unless-modifier/
 
-*
-*
-*
+* Python Software Foundation. (n.d.). The while statement. In Python documentation (version 3). Retrieved September 3, 2025, from
+https://docs.python.org/3/reference/compound_stmts.html#the-while-statement
+
+* Oracle. (n.d.). The while statement. In The Java™ Tutorials. Retrieved September 3, 2025, from
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
+
+* cppreference.com. (n.d.). while statement (C). Retrieved September 3, 2025, from
+https://en.cppreference.com/w/c/language/while.html
+
+* Oracle. (n.d.). The if-then-else Statement. Oracle Java Tutorials.Retrieved September 3, 2025, from
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
+
+* ISO C / cppreference. if statement (C). Retrieved September 3, 2025, from
+https://en.cppreference.com/w/c/language/if.html
+
+* Python Software Foundation. (n.d.). The if statement. Python Docs. Retrieved September 3, 2025, from
+https://docs.python.org/3/reference/compound_stmts.html#if
