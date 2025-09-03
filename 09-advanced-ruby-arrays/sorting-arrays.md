@@ -49,7 +49,6 @@ void printArray(const char *arr[], int size) {
 โดยวิธีการใช้งานสามารถทำได้ดังนี้ :
 
 **Ruby**
-
 ```ruby
 numbers = [3, 1, 5, 2, 4]
 sorted_numbers = numbers.sort #จะทำการเรียงข้อมูลจะน้อยไปหามาก
@@ -57,7 +56,6 @@ puts sorted_numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 ```
 
 **C**
-
 ```c
 const char *original1[] = {"kiwi", "apple", "fig", "banana"};
 int n = sizeof(original1) / sizeof(original1[0]); /*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
