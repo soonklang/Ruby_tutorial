@@ -11,19 +11,17 @@ account = BankAccount.new()
 ```
 ## ตัวอย่าง Ruby
 ```ruby
-class BankAccount
-  def initialize(name, balance)
-    @name = name
-    @balance = balance
-  end
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
 
-  def test_method
-    puts "Hello from #{@name}'s account!"
-  end
-end
+    def greet(self):
+        print(f"Hello from {self.name}'s account!")
 
-account = BankAccount.new("Alice", 1000)
-account.test_method
+account = BankAccount("Alice", 1000.0)
+account.greet()
+
 ```
 ## คำอธิบาย
 Ruby มีลักษณะไดนามิกและเป็นภาษาแบบ interpreted เช่น Python ใช้ initialize เป็น constructor และใช้ @ นำหน้าตัวแปร instance variable โค้ดดูง่ายและกระชับกว่า Java และ C++
@@ -38,7 +36,7 @@ class BankAccount {
         this.balance = balance;
     }
 
-    void testMethod() {
+    void greet() {
         System.out.println("Hello from " + name + "'s account!");
     }
 }
@@ -46,10 +44,16 @@ class BankAccount {
 public class Main {
     public static void main(String[] args) {
         BankAccount account = new BankAccount("Alice", 1000.0);
-        account.testMethod();
+        account.greet();
     }
 }
 ```
+## ความแตกต่าง Java และ Ruby
+- ต้องประกาศประเภทข้อมูล (String, double) ต่างจาก Ruby ที่ไม่ต้องระบุ  
+- ใช้ constructor ชื่อเดียวกับคลาส แทน initialize  
+- ต้องเรียกเมธอดผ่านอ็อบเจกต์โดยใช้ . และต้องใส่วงเล็บ  
+- ต้องมีเมธอด main เพื่อเริ่มโปรแกรม  
+- การพิมพ์ข้อความใช้ System.out.println แทน puts  
 ## ตัวอย่าง Python
 ```Python
 class BankAccount:
@@ -57,12 +61,17 @@ class BankAccount:
         self.name = name
         self.balance = balance
 
-    def test_method(self):
+    def greet(self):
         print(f"Hello from {self.name}'s account!")
 
 account = BankAccount("Alice", 1000.0)
-account.test_method()
+account.greet()
 ```
+## ความแตกต่าง Python และ Ruby
+- ใช้ __init__ แทน initialize เป็น constructor  
+- ใช้ self. เพื่อเข้าถึงตัวแปรอินสแตนซ์ แทน @ ใน Ruby  
+- เรียกเมธอดต้องใส่วงเล็บ เช่น account.greet()  
+- ใช้ f-string (f"") แทนการแทรกตัวแปรในสตริงแบบ Ruby (#{})  
 ## ตัวอย่าง C++
 ```C++
 #include <iostream>
@@ -90,7 +99,7 @@ int main() {
     return 0;
 }
 ```
-## คำอธิบาย
+## ความแตกต่าง C++ และ Ruby
 - เป็นภาษาคอมไพล์ ต้องประกาศ #include และ namespace  
 - ต้องระบุประเภทข้อมูล (เช่น string, double) ต่างจาก Ruby  
 - ใช้ constructor ชื่อเดียวกับคลาส เช่น Java  
