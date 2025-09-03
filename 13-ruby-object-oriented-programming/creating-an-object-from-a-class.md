@@ -1,6 +1,6 @@
 # Creating an Object from a Class
 ## Creating an Object from a Class คืออะไร
-ในภาษา Ruby Creating an Object from a Class คือ การสร้างอ็อบเจกต์ (Object) จากคลาส (Class) เรียกว่าการสร้างอินสแตนซ์(Instantiation) ซึ่งทำได้โดยใช้เมธอด new ที่เป็นเมธอดของคลาส ที่กำหนดโครงสร้างข้อมูล (instance variables) และพฤติกรรม (methods) ของอ็อบเจกต์นั้น ๆ  
+ในภาษา Ruby Creating an Object from a Class คือ การสร้างอ็อบเจกต์ (Object) จากคลาส (Class) เรียกว่าการสร้างอินสแตนซ์ (Instantiation) ซึ่งทำได้โดยใช้เมธอด new ที่เป็นเมธอดของคลาส ที่กำหนดโครงสร้างข้อมูล (instance variables) และพฤติกรรม (methods) ของอ็อบเจกต์นั้น ๆ  
 ในภาษา Ruby การใช้ .new คือการสร้างอินสแตนซ์ใหม่จากคลาสหนึ่ง ๆ โดย initialize จะทำงานอัตโนมัติเมื่อมีการสร้างอ็อบเจกต์เพื่อกำหนดค่าตั้งต้นต่าง ๆ ให้กับอ็อบเจกต์นั้น
 เมื่อเรียก ClassName.new(...), Ruby จะ:  
 1.สร้างอ็อบเจกต์เปล่า  
