@@ -138,6 +138,4 @@ Name: Alice, Age: 25
 - Educative.io. (n.d.). Passing parameters to methods - The handbook for Ruby developers. Educative.
 สืบค้นเมื่อ 3 กันยายน 2025, จาก https://www.educative.io/courses/handbook-ruby-developers/passing-parameters-to-methods  
 - Stack Overflow. (n.d.). Does ruby call initialize method automatically? สืบค้นเมื่อ 3 กันยายน 2025, จาก Stack Overflow: https://stackoverflow.com/questions/16245315/does-ruby-call-initialize-method-automatically?utm_source=chatgpt.com
-Stack Overflow
 - Stack Overflow. (n.d.). In Ruby, what's the relationship between 'new' and 'initialize'? How to return nil while initializing? สืบค้นเมื่อ 3 กันยายน 2025, จาก Stack Overflow: https://stackoverflow.com/questions/10383535/in-ruby-whats-the-relationship-between-new-and-initialize-how-to-return-n?utm_source=chatgpt.com
-Stack Overflow
