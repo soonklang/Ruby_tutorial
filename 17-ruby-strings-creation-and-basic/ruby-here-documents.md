@@ -244,7 +244,8 @@ Supports interpolation with f-string.
 
 ## แหล่งข้อมูลอ้างอิง
 
-1. - Ruby Core Team. (n.d.). *Here Documents.* In Ruby 2.7.0 Documentation. Ruby-Doc.org. Retrieved September 4, 2025, from [https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents](https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents)
+1. - Ruby Core Team. (n.d.). *Here Documents.* In Ruby 2.7.0 Documentation. Ruby-Doc.org. Retrieved September 4, 2025, from
+     [https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents](https://ruby-doc.org/core-2.7.0/doc/syntax/literals_rdoc.html#label-Here+Documents)
 2. [Java Text Blocks - Oracle Documentation](https://docs.oracle.com/en/java/javase/17/language/text-blocks.html) *(น่าเชื่อถือ)*
 3. [Python String Literals - Python Docs](https://docs.python.org/3/reference/lexical_analysis.html#string-and-bytes-literals) *(น่าเชื่อถือ)*
 4. [C String Literals - C Reference](https://en.cppreference.com/w/c/language/string_literal)
