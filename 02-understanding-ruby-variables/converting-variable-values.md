@@ -26,16 +26,11 @@ puts num_int + num_float
 ```ruby   
 a = "123"
 b = str.to_i
-c = str.to_f
-puts a
 puts b
-puts c
 ```
 ผลลัพธ์:
 ```
-123  #string
 123  #int
-123.0  #float
 ```
 
 ## References
