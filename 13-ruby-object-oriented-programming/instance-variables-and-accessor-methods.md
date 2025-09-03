@@ -224,7 +224,9 @@ student1 = Student("Prayat", "Jutha", 15, 1)
 student1.__firstName = "Adison"
 print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
 ```
-จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ ส่วน methods getter นั้น ต้องเพิ่ม @property decorator เพื่อสามารถ return ตัวแปร private จากในคลาสได้
+จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เป็นตัวแปรแบบ private เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ เมื่อลองเปรียบเทียบกับ Ruby จะเห็นว่า
+- ตัว getter จะมี @property decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self เข้ามา และต้องมี return นำหน้า instance variables ถึงจะสามารถส่งค่าออกไปได้ ไม่เหมือนภาษา Ruby ที่สามารถจะ return ค่าออกไปได้เลยเพียงแค่ประกาศ instance variables
+- ตัว setter จะมี @ชื่อตัวแปร.setter decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self และ value แต่ของ Ruby สามารถรับแค่ value อย่างเดียวได้ ส่วนการกำหนดค่าใหม่นั้นมีการเขียน syntax ที่เหมือนกัน
 
 จากโค้ดที่เราเปรียบเทียบในหลายๆภาษาจะเห็นได้ชัดว่าถ้ามี Instance Variables เพิ่มก็ต้องมี Accessor Methods เพิ่มขึ้นด้วย ทำให้โค้ดมีขนาดที่ใหญ่มากขึ้น แต่ถึงอย่างนั้นในภาษา Ruby ยังมีวิธีการเขียน method เหล่านี้ (getter และ setter) ให้มีความรวดเร็วมากขึ้นซึ่งมีการทำงานที่คล้ายกันนั้นก็คือ
 - attr_reader ทำหน้าที่เป็น methods getter โดยอัตโนมัติ
