@@ -88,10 +88,16 @@
       end
 
       u = User.new("บีต")
-      puts u.name     # อ่านค่าได้
-      u.name = "ใหม่" # error
+      puts u.name     
+      u.name = "ใหม่" 
 
 ผลลัพธ์  
+
+      บีต
+      Traceback (most recent call last):
+        ...
+      NoMethodError: undefined method `name=' for #<User ...>
+
 ☞  attr_reader จะใช้เมื่อต้องการที่จะอ่าน "อ่านได้อย่างเดียว"ไมาสามารถแก้ค่าจากภายนอกได้
 
 ### 🌼 attr_writer (setter)  
@@ -106,10 +112,15 @@
       end
 
       u = User.new("บีต")
-      u.name = "ใหม่"   # กำหนดค่าได้
-      puts u.name       # error
+      u.name = "ใหม่"   
+      puts u.name       
 
 ผลลัพธ์  
+
+      Traceback (most recent call last):
+        ...
+      NoMethodError: undefined method `name' for #<User ...>
+
 ☞  attr_writer จะใช้เมื่อต้องการที่จะแก้ไข "แก้ไขอย่างเดียว"ไม่สามารถอ่านค่าตรงๆได้
 
 ### 🌼 ตรวจสอบ instance variable  
@@ -148,18 +159,20 @@
 
       ["pen", "book"]
       []
-☞  methonเหล่านี้สามารถที่จะกำหนดค่า อ่านค่า และ ลบค่าได้แบบdynamic เช่น getค่าออกมา, set ค่าใหม่, remove ทิ้ง  
+☞  methodเหล่านี้สามารถที่จะกำหนดค่า อ่านค่า และ ลบค่าได้แบบdynamic เช่น getค่าออกมา, set ค่าใหม่, remove ทิ้ง  
 
 ## 🍅 เปรียบเทียบกับภาษา Java/C/Python  
 ### 🌸 เปรียบเทียบกับ Java  
-|Ruby|Java|  
-|-----|----|  
-|@name|private String name;|
-|ไม่ต้องประกาศล่วงหน้า|ต้องประกาศ type และ access modifer|  
-|สร้างแบบ dynamic ได้|ต้องทำการประกศใน class definition|  
-|ใช้ attr_accessor ในการสร้าง getter/setter|ต้องเขียน getter/setter methods ขึ้นเอง|  
+|Aspect|Ruby|Java|  
+|-------|-----|----|  
+|Declaration|@name|private String name;|  
+|Type Safety|สร้างแบบ dynamic ได้|Static typing required|
+|Access Control|Private|ต้องประกาศ type และ access modifer|  
+|Getter/Setter|attr_accessor ในการสร้าง getter/setter|ต้องเขียนขึ้นมาเอง|
+|Performance|Interpreted|Compiled|  
+|Reflection|Built-in support|ใช้ Reflection API|
  
-Ruby  
+Ruby 
 
       class Person
             attr_accessor :name
@@ -167,57 +180,86 @@ Ruby
                 @name = name
               end
             end  
-Java  
+      Person.new.instance_variables  
 
+Java  
+       
       public class Person {
             private String name;
-            public Person(String name) {
-                  this.name = name;
+            private String salutation;
+
+            public void createSalutation() {
+                  this.salutation = greeting.greet(name);
             }
-            public String getName() {
-                  return name;
+      
+            public String getSalutation() {
+                  return salutation;
             }
+
             public void setName(String name) {
                   this.name = name;
             }
+
+            public String getName() {
+                  return name;
+            }
       }
+☞  ในภาษา Java คือ "private + public getter/setter”เปิดแบบสาธารณะแต่ต่างจากใน Ruby ที่ต้องทำการสร้าง method เพื่อเข้าถึงด้วย attr_*
 
 ### 🌸 เปรียบเทียบกับ Python  
-|Ruby|Python|  
-|-----|----|  
-|@name|self.name|
-|สามารถเข้าถึงได้เฉพาะผ่าน methods|เข้าถึงได้โดยตรงจากภายนอก|  
-|ใช้ @ prefix|ใช้ self. prefix|  
-|มี attr_accessor helpers|ใช้ property decorators|  
+|Aspect|Ruby|Python|  
+|-------|-----|----|  
+|Syntax|@name|self.name|  
+|Privacy|Private|Convention-based (_name, __name)|
+|Access|สามารถเข้าถึงได้เฉพาะผ่าน methods|เข้าถึงได้โดยตรงจากภายนอก|    
+|Properties|มี attr_accessor helpers|ใช้ property decorators|  
+|Inheritance|Single inheritance + mixins|Multiple inheritance|
 
 Ruby  
 
-      class Person
-        def initialize(name)
-          @name = name  # private โดยธรรมชาติ
-        end
-        def name
-          @name
-        end
-      end  
+      class Thermo
+        def initialize(c = 0.0) = @c = c
+        attr_accessor :c                
+        def f        = (@c * 9.0/5.0) + 32
+        def f=(v)    = @c = (v - 32) * 5.0/9.0
+      end
+
+      t = Thermo.new(25)
+      p [t.c, t.f]     # => [25.0, 77.0]
+
 Python  
 
-      class Person:
-          def __init__(self, name):
-              self.name = name  # สามารถเข้าถึงจากภายนอกได้
-              self._name = name  # convention สำหรับ private
+      class Thermo:
+          def __init__(self, c=0.0): self._c = c
     
-      @property
-      def name(self):
-            return self._name
+          def c(self): return self._c
+    
+          def c(self, v): self._c = v
+    
+          def f(self): return (self._c * 9.0/5.0) + 32
+   
+          def f(self, v): self._c = (v - 32) * 5.0/9.0
 
-### 🌸 เปรียบเทียบกับ C  
-|Ruby|C|  
-|-----|----|  
-|@member|private: int member;|
-|สามารถจัดการหน่วยความจำได้อัตโนมัติ|ต้องจัดการหน่วยความจำเอง|  
-|Dynamic typing|Static typing|  
-|ไม่ต้องประกาศ type|ต้องระบุชนิดข้อมูล|  
+      t = Thermo(25)
+      print(t.c, t.f)   
+      print(t._c)       
+
+
+      class Safe:
+          def __init__(self, s): self.__secret = s
+      s = Safe("top_secret")
+
+      print(s._Safe__secret)  
+
+### 🌸 เปรียบเทียบกับ C 
+|Aspect|Ruby|C|  
+|-------|-----|----|  
+|Declaration|@member|ใช้ struct เพื่อเก็บข้อมูลสมาชิกและเขียนฟังชันได้แบบอิสระ ไม่มี class|
+|Memory Management|สามารถจัดการหน่วยความจำได้อัตโนมัติ Automatic GC|ต้องจัดการหน่วยความจำเอง Manual/Smart pointers|  
+|Type System|Dynamic typing|Static typing|  
+|Access Control|ควบคุมผ่านเมธอด attr_reader|writer|  
+|Compilation|รันบน VM|Compiled ล่วงหน้าเป็นไบนารี่|  
+|Performance|ช้ากว่า|เร็วกว่ามาก|
 
 Ruby  
 
@@ -232,31 +274,39 @@ Ruby
       end  
 C  
 
-      class Rectangle {
-      private:
+      #include <stdio.h>
+
+      typedef struct {
           double width;
           double height;
-    
-      public:
-          Rectangle(double w, double h) : width(w), height(h) {}
-    
-          double getArea() {
-              return width * height;
-          }
-    
-          double getWidth() { return width; }
-          void setWidth(double w) { width = w; }
-      };
+      } Rectangle;
+
+      double rect_area(const Rectangle *r) {
+          return r->width * r->height;
+      }
+
+      int main(void) {
+          Rectangle r = {3.0, 4.0};
+          printf("%.2f\n", rect_area(&r)); /* 12.00 */
+          return 0;
+      }
+
 
 ## 🍅 ข้อดีและข้อเสียของภาษาRuby(Instance Variables)  
 ### ข้อดี  
 ❖ มีการใช้งานที่งานไม่ต้องประกาศล่วงหน้าและสามารถสร้างแบบไดนามิกได้  
+
 ❖ มีความปลอดภัยเพราะเป็นแบบ private  
+
 ❖ ในภาษาRubyมีการจัดการหน่วยความจำได้อัตโนมัติ
 ### ข้อเสีย  
 ❖ ไม่สามารถตรวจสอบชนิดข้อมูลก่อนกำหนดค่าเพราะไม่มี Type Safety  
+
 ❖ อาจจะทำงานช้ากว่าภาษาที่คอมไพล์ เนื่องจากเป็น interpreted language  
-❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า
+
+❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
+
+# presentation
  
 # Reference 
 https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568 
@@ -269,51 +319,11 @@ https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html  นำเนื�
 นำโค้ด (จาก Ruby Core API – Module)มาใช้ในส่วนattr_accessor, attr_reader, attr_writer https://ruby-doc.org/core/Module.html  สืบค้นเมื่อวันที่ 1 กันยายน 2568    
 
 นำโค้ด (จาก Ruby Official Documentation – Object)มาใช้ในส่วนinstance_variables, instance_variable_set/get/remove https://docs.ruby-lang.org/en/3.3/Object.html  สืบค้นเมื่อวันที่ 1 กันยายน 2568  
-  
 
+Java >>  https://docs.oracle.com/javaee/6/tutorial/doc/gjbbp.html  สืบค้นเมื่อวันที่ 2 กันยายน 2568  
 
+โค้ดเปรียบเทียบRuby https://www.rubydoc.info/stdlib/core/Module%3Aattr_accessor?utm_source=chatgpt.com สืบค้นเมื่อวันที่ 2 กันยายน 2568  
 
+Python >> https://docs.python.org/3/library/functions.html?utm_source=chatgpt.com  สืบค้นเมื่อวันที่ 2 กันยายน 2568  
 
-
-      
-https://ruby-doc.org/core/Module.html?utm_source=chatgpt.com Ruby Core API – Module#attr_reader, Module#attr_writer, Module#attr_accessor.  
-
-https://ruby-doc.org/3.4.1/Object.html?utm_source=chatgpt.com Ruby Core API – Object#instance_variables, #instance_variable_get, #instance_variable_set, #remove_instance_variable.  
-
-[4]https://www.tutorialspoint.com/ruby/ruby_variables.htm?utm_source=chatgpt.com  TutorialsPoint – Ruby Variables.  
-
-[2] Ruby Core API – Module#attr_reader, Module#attr_writer, Module#attr_accessor. https://ruby-doc.org/core/Module.html
-
-[1]https://docs.ruby-lang.org/en/master/syntax/assignment_rdoc.html#label-Instance+Variables  Ruby Official Documentation – Syntax: Assignment / Instance Variables.  
-Ruby User's Guide - Instance Variables: https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html
-
-นำคำนิยาม scope การประกาศแบบ dynamic และคุณสมบัติพื้นฐานทั้ง 4 ข้อมาใช้
-ใช้ตัวอย่าง InstTest class เป็นแนวทางในการสร้างตัวอย่าง
-
-
-Ruby Official Documentation - Assignment Syntax: https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html
-
-นำกฎการตั้งชื่อ "An instance variable must start with a @" มาใช้
-
-
-Ruby Object Class Documentation: https://docs.ruby-lang.org/en/3.3/Object.html
-
-นำข้อมูลเรื่อง instance_variable_get, instance_variable_set methods มาใช้ในตัวอย่าง Dynamic Class
-
-
-Techotopia Ruby Essentials: https://www.techotopia.com/index.php/Ruby_Essentials
-
-เป็นแหล่งอ้างอิงหลักที่ได้รับมอบหมาย ใช้เป็นพื้นฐานในการศึกษา
-
-
-TutorialsPoint Ruby Tutorial: https://www.tutorialspoint.com/ruby/index.htm
-
-นำแนวคิดการใช้ attr_accessor และตัวอย่างการเปรียบเทียบกับภาษาอื่นมาประยุกต์
-
-
-GeeksforGeeks Ruby Tutorial: https://www.geeksforgeeks.org/ruby/ruby-tutorial/
-
-นำเนื้อหาเรื่อง best practices และตัวอย่างการใช้งานขั้นสูงมาอ้างอิง
-
-
-
+C >> https://www.iso.org/standard/82075.html?utm_source=chatgpt.com    https://web.cs.dal.ca/~vlado/pl/C_Standard_2011-n1570.pdf?utm_source=chatgpt.com  สืบค้นเมื่อวันที่ 3 กันยายน 2568
