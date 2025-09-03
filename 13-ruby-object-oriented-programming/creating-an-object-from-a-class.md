@@ -130,8 +130,8 @@ Hello from Alice's account!
 - Thomas, D., Fowler, C., และ Hunt, A. (2004). Programming Ruby: The Pragmatic Programmers' Guide (ฉบับที่ 1). Pragmatic Bookshelf. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://ruby-doc.org  
 - Flanagan, D., และ Matsumoto, Y. (2008). The Ruby Programming Language. O'Reilly Media. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/  
 - RubyMonstas. (n.d.). Ruby for Beginners. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://ruby-for-beginners.rubymonstas.org  
-- Riptutorial. (ไม่ทราบปีที่พิมพ์). Ruby new, allocate and initialize. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://riptutorial.com/ruby/example/13315/new--allocate--and-initialize  
-- Oracle. (ไม่ทราบปีที่พิมพ์). Classes and Objects. Oracle Java Tutorials. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html  
-- Python Software Foundation. (ไม่ทราบปีที่พิมพ์). 9. Classes. เอกสารประกอบภาษา Python. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://docs.python.org/3/tutorial/classes.html  
-- cplusplus.com. (ไม่ทราบปีที่พิมพ์). C++ Classes and Objects. สืบค้นเมื่อ 3 กันยายน 2025, จาก http://www.cplusplus.com/doc/tutorial/classes/  
-- Deivinson. (ไม่ทราบปีที่พิมพ์). How do I create an object from a Ruby class? CloudDevs. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://clouddevs.com/ruby/create-object-from-class/  
+- Riptutorial. (n.d.). Ruby new, allocate and initialize. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://riptutorial.com/ruby/example/13315/new--allocate--and-initialize  
+- Oracle. (n.d.). Classes and Objects. Oracle Java Tutorials. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html  
+- Python Software Foundation. (n.d.). 9. Classes. เอกสารประกอบภาษา Python. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://docs.python.org/3/tutorial/classes.html  
+- cplusplus.com. (n.d.). C++ Classes and Objects. สืบค้นเมื่อ 3 กันยายน 2025, จาก http://www.cplusplus.com/doc/tutorial/classes/  
+- Deivinson. (n.d.). How do I create an object from a Ruby class? CloudDevs. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://clouddevs.com/ruby/create-object-from-class/  
