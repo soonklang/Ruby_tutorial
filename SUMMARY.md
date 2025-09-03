@@ -52,7 +52,7 @@
 * [Ruby Sequence Ranges](07-ruby-ranges/ruby-sequence-ranges.md)
 * [Using Range Methods](07-ruby-ranges/using-range-methods.md)
 * [Ruby Ranges as Conditional Expressions](07-ruby-ranges/ruby-ranges-as-conditional-expressions.md)
-* [Ruby Range Intervals](7-ruby-ranges/ruby-range-intervals.md)
+* [Ruby Range Intervals](07-ruby-ranges/ruby-range-intervals.md)
 
 ## 08 Understanding Ruby Arrays
 
@@ -64,6 +64,7 @@
 ## 09 Advanced Ruby Arrays
 
 * [Combining Ruby Arrays](09-advanced-ruby-arrays/combining-ruby-arrays.md)
+* [Combining Ruby Arrays](09-advanced-ruby-arrays/combining-ruby-arrays-1.md)
 * [Intersection, Union and Difference](09-advanced-ruby-arrays/intersection-union-and-difference.md)
 * [Identifying Unique Array Elements](09-advanced-ruby-arrays/identifying-unique-array-elements.md)
 * [Pushing and Popping Array Elements](09-advanced-ruby-arrays/pushing-and-popping-array-elements.md)

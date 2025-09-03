@@ -1,36 +1,60 @@
-# 📌 What is Ruby Array
-Array เป็นโครงสร้างข้อมูลชนิดหนึ่ง สามารถใช้เก็บหลายตัวแปรได้ ซึ่งข้อมูลข้างในจะเป็นประเภทเดียวกันหรือหลากหลายประเภทก็ได้ 
-### Example
+# Ruby Array and How to Create
+
+## 📌 What is Ruby Array
+
+Array เป็นโครงสร้างข้อมูลชนิดหนึ่ง สามารถใช้เก็บหลายตัวแปรได้ ซึ่งข้อมูลข้างในจะเป็นประเภทเดียวกันหรือหลากหลายประเภทก็ได้
+
+#### Example
+
 ```ruby
 a = [1,2,"A",true]
 print a
 ```
-<details> <summary>Output</summary>
-[1, 2, "A", true]
+
+<details>
+
+<summary>Output</summary>
+
+\[1, 2, "A", true]
+
 </details>
 
-# 📌 How to Creat a Ruby Array
-## วิธีสร้าง Array แบบธรรมดา Ruby
+## 📌 How to Creat a Ruby Array
+
+### วิธีสร้าง Array แบบธรรมดา Ruby
+
 ```ruby
 a = [1,2,3,"Cat"]
 print a
 ```
-<details> <summary>Output</summary>
-[1, 2, 3, "Cat"]
+
+<details>
+
+<summary>Output</summary>
+
+\[1, 2, 3, "Cat"]
+
 </details>
 
-### Example ภาษาอื่นๆ
+#### Example ภาษาอื่นๆ
+
 **ภาษา python**
+
 ```python
 ar_ray = [1,"hello",3.14,True]
 ```
-<details> <summary>Output</summary>
-[1,"hello",3.14,True]
+
+<details>
+
+<summary>Output</summary>
+
+\[1,"hello",3.14,True]
+
 </details>
 
 **ภาษา C**
 
-```C
+```c
 int myNum[] = {25,50,75,100};
 char fruits[2][10] = {"apple","banana"};
 printf("myNum: ");
@@ -44,14 +68,18 @@ printf("myNum: ");
     }
 ```
 
-<details> <summary>Output</summary>
-myNum: 25 50 75 100<br>
+<details>
+
+<summary>Output</summary>
+
+myNum: 25 50 75 100\
 fruits: apple banana
+
 </details>
 
 **ภาษา Java**
 
-```Java
+```java
 int[] nums = {1,2,3};
 String[] fruits = {"apple","banana"};
 for (int i = 0; i < nums.length; i++) {
@@ -63,20 +91,29 @@ for (int i = 0; i < fruits.length; i++) {
 }
 
 ```
-<details> <summary>Output</summary>
-1 2 3<br>
+
+<details>
+
+<summary>Output</summary>
+
+1 2 3\
 apple banana
-    
+
 </details>
 
-## วิธีสร้าง Array แบบว่างเปล่า Ruby
+### วิธีสร้าง Array แบบว่างเปล่า Ruby
+
 ```ruby
 my_lovely1 = []
 print my_lovely1
 ```
 
-<details> <summary>Output</summary>
-[]
+<details>
+
+<summary>Output</summary>
+
+\[]
+
 </details>
 
 ```ruby
@@ -84,8 +121,12 @@ my_lovely2 = Array.new
 print my_lovely2
 ```
 
-<details> <summary>Output</summary>
-[]
+<details>
+
+<summary>Output</summary>
+
+\[]
+
 </details>
 
 ```ruby
@@ -93,46 +134,65 @@ arr1 = Array.new(3)
 print arr1
 ```
 
-<details> <summary>Output</summary>
-[nil,nil,nil]
+<details>
+
+<summary>Output</summary>
+
+\[nil,nil,nil]
+
 </details>
 
 ```ruby
 arr2 = Array.new(3,0)
 print arr2
 ```
-<details> <summary>Output</summary>
-[0,0,0]
+
+<details>
+
+<summary>Output</summary>
+
+\[0,0,0]
+
 </details>
 
-### Example ภาษาอื่นๆ
+#### Example ภาษาอื่นๆ
+
 **ภาษา python**
+
 ```python
 arr = []
 print(arr)
 ```
 
-<details> <summary>Output</summary>
-[]
+<details>
+
+<summary>Output</summary>
+
+\[]
+
 </details>
 
-**ภาษา C**<br>
+**ภาษา C**\
 ไม่มีอาเรย์ว่างเปล่าโดยตรงต้องสร้างแบบกำหนดเอา
 
-```C
+```c
 int c[3]={0, 0, 0};
 for (int i = 0; i < 3; i++) {
     printf("%d ", c[i]);
 }
 ```
 
-<details> <summary>Output</summary>
+<details>
+
+<summary>Output</summary>
+
 0,0,0
+
 </details>
 
 **ภาษา Java**
 
-```Java
+```java
 import java.util.Arrays;
 class Main {
     public static void main(String[] args) {
@@ -141,16 +201,26 @@ class Main {
     }
 }
 ```
-<details> <summary>Output</summary>
-[]
+
+<details>
+
+<summary>Output</summary>
+
+\[]
+
 </details>
 
-# Video
----
-# Slide
-https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch_k3_su_ac_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?rtime=dqtbArDm3Ug
-# Reference
-Codecademy – Ruby Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.codecademy.com/learn/learn-ruby/modules/learn-ruby-arrays-and-hashes-u/cheatsheet <br>
-Programiz – Ruby Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.programiz.com/ruby/array <br>
-W3Schools – C Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.w3schools.com/c/c_arrays.php <br>
-W3Schools – Java Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.w3schools.com/java/java_arrays.asp <br>
+## Video
+
+***
+
+## Slide
+
+https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch\_k3\_su\_ac\_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?rtime=dqtbArDm3Ug
+
+## Reference
+
+Codecademy – Ruby Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.codecademy.com/learn/learn-ruby/modules/learn-ruby-arrays-and-hashes-u/cheatsheet\
+Programiz – Ruby Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.programiz.com/ruby/array\
+W3Schools – C Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.w3schools.com/c/c\_arrays.php\
+W3Schools – Java Arrays. เข้าถึงเมื่อ 30 สิงหาคม 2025 จาก https://www.w3schools.com/java/java\_arrays.asp\

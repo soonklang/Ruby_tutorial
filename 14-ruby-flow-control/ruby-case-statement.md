@@ -1,14 +1,18 @@
 # Ruby case Statement
-# Ruby case Statement คืออะไร?
+
+## Ruby case Statement
+
+## Ruby case Statement คืออะไร?
+
 คือการที่เราต้องการตรวจสอบค่าหรือตัวแปรที่กำหนด ว่าตรงตามเงื่อนไขไหน โดยมีหลายเงื่อนไขเเละหลายผลลัพธ์ตามที่กำหนดในเงื่อนไข โดยไม่มีความซับซ้อน ทำให้เกิดผลลัพธ์ได้หลากหลายเเบบ ซึ่งทำหน้าที่เหมือนกับ switch ในภาษา C,Java
 
 **Flow Chart**
 
-![Local Image](picture-660710587/ruby-case-diagram.jpg)
+![Local Image](../.gitbook/assets/ruby-case-diagram.jpg)
 
 **Basic Syntax**
 
-``` ruby
+```ruby
 result = case value
    when match1 then result1
    when match2 then result2
@@ -18,11 +22,11 @@ result = case value
    when match6 then result6
    else result7
 end
-``` 
+```
 
 หรือเเบบนี้ก็ได้เช่นกัน
 
-``` ruby
+```ruby
 case expression
 
 when expression 1
@@ -37,16 +41,18 @@ else
   # your code
 end
 ```
->โดยจะมีส่วนที่สำคัญอยู่ 3 ส่วนคือ 
- >1. case คือ ค่าที่เรากำหนดเพื่อนำเข้าไปในเงื่อนไขเพื่อหาผลลัพธ์ตามค่า โดยอาจเกิด output(ผลลัพธ์) หรือไม่เกิดก็ได้
- >2. when คือ ตัวเงื่อนไขที่จะนำค่า case มาพิจารณาตามเงื่อนไข หากค่า case ตรงตามเงื่อนไขก็จะได้ output ตามที่ตั้งไว้ในเงื่อนไขนั้น 
- >3. else คือ เป็นเงื่อนไขสุดท้าย ที่หากค่า case ถูกตรวจเข้าทุกเงื่อนไขเเล้ว เเต่ไม่ตรงตามเงื่อนไขที่มีเลย ก็ยังจะทำให้ค่า case นั้นยังสามารถเกิด output ได้
+
+> โดยจะมีส่วนที่สำคัญอยู่ 3 ส่วนคือ
+>
+> 1. case คือ ค่าที่เรากำหนดเพื่อนำเข้าไปในเงื่อนไขเพื่อหาผลลัพธ์ตามค่า โดยอาจเกิด output(ผลลัพธ์) หรือไม่เกิดก็ได้
+> 2. when คือ ตัวเงื่อนไขที่จะนำค่า case มาพิจารณาตามเงื่อนไข หากค่า case ตรงตามเงื่อนไขก็จะได้ output ตามที่ตั้งไว้ในเงื่อนไขนั้น
+> 3. else คือ เป็นเงื่อนไขสุดท้าย ที่หากค่า case ถูกตรวจเข้าทุกเงื่อนไขเเล้ว เเต่ไม่ตรงตามเงื่อนไขที่มีเลย ก็ยังจะทำให้ค่า case นั้นยังสามารถเกิด output ได้
 
 **ตัวอย่างที่เป็น String**
 
-โดยที่ case รับค่าเป็น "Patriot" เเล้วนำค่าไปเช็คในเงื่อนไข when 
+โดยที่ case รับค่าเป็น "Patriot" เเล้วนำค่าไปเช็คในเงื่อนไข when
 
-``` ruby
+```ruby
 car = "Patriot"
 
 manufacturer = case car
@@ -65,29 +71,38 @@ end
 
 puts "The " + car  + " is made by "  + manufacturer
 ```
+
 เมื่อ case เจอกับเงื่อนไขที่ตรงกันก็จะได้ output ออกมาเเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   The Patriot is made by Jeep
-</code></pre>
+```
+
 </details>
 
 เเต่หาก case ไม่ตรงกับเงื่อนไขไหนเลย จะได้ output ของเงื่อนไข else เเทนเเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   The Prius is made by Unknown
-</code></pre>
+```
+
 </details>
 
 **หรือจะเขียนโดยการใช้ put(หรือจะใช้ print ก็ได้เพราะเหมือนกัน) เเทน then ก็ได้**
 
 โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when
 
-``` ruby
+```ruby
 print "Input from one, two, three, four: "  
 
 str = "two"
@@ -113,27 +128,35 @@ end
 
 เมื่อเจอเงื่อนไขที่ตรงกันก็จะได้ output ตามเงื่อนไข เเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   Input from one, two, three, four: Input is 2
-</code></pre>
+```
+
 </details>
 
 เเต่หากตรวจครบทุกเงื่อนไข when เเล้ว ก็จะเข้าสู่เงื่อนไข else เเละได้ output เป็น Default! เเล้วค่อยจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   Input from one, two, three, four: Default!
-</code></pre>
+```
+
 </details>
 
 **ตัวอย่างที่เป็น Number range**
 
-โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่ 
+โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่
 
-``` ruby
+```ruby
 $age =  5
 case $age
 when 0 .. 2
@@ -148,27 +171,36 @@ else
    puts "adult"
 end
 ```
+
 case เป็นค่า 5 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 2 คือ 3 .. 6(เลขตั้งเเต่ 3-6 รวมเลขท้ายด้วย) จึงได้ output เป็น little child เเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   little child
-</code></pre>
+```
+
 </details>
 
 หากเลข case เป็นค่าที่ไม่ตรงกับเงื่อนไขใดเลย ก็จะได้ output ออกมาเป็น adult เเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   adult
-</code></pre>
+```
+
 </details>
 
-**ตัวอย่างอีกเเบบที่ใช้ put(หรือจะใช้ print ก็ได้เพราะเหมือนกัน) เเทน then** 
+**ตัวอย่างอีกเเบบที่ใช้ put(หรือจะใช้ print ก็ได้เพราะเหมือนกัน) เเทน then**
 
-``` ruby
+```ruby
 marks = 70
 
 case marks
@@ -187,29 +219,38 @@ else
  
 end
 ```
+
 case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าไม่เข้าเงื่อนไขใดเลย จึงเข้าสู่เงื่อนไขสุดท้าย หรือ else ได้ output เป็น You got A grade! เเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   You got A grade!
-</code></pre>
+```
+
 </details>
 
 หากเลข case เป็นค่า 30 เมื่อตรวจสอบกับเงื่อนไข when ที่มี number range เป็น 0..32 ( 0 ถึง 32 โดยรวมค่าสุดท้ายด้วย) ก็จะได้ output ออกมาเป็น You fail! เเล้วจบการทำงาน
 
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   You fail!
-</code></pre>
+```
+
 </details>
 
-### การเปรียบกับภาษาอื่น (C,Java,Python)
+#### การเปรียบกับภาษาอื่น (C,Java,Python)
 
 **ภาษา Ruby**
 
-``` ruby
+```ruby
 grade = 85
 
 case grade
@@ -223,17 +264,21 @@ else
   puts "F"
 end
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   B
-</code></pre>
+```
+
 </details>
 
 **ภาษา C**
 
-
-``` c
+```c
 #include <stdio.h>
 
 int main() {
@@ -266,28 +311,34 @@ int main() {
   return 0;
 }
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   Thursday
-</code></pre>
+```
+
 </details>
 
+ข้อเเตกต่างกับ Ruby :
 
-ข้อเเตกต่างกับ Ruby : 
+```
+               1. ตัวเงื่อนไขใช้ case เเทน when
 
-                   1. ตัวเงื่อนไขใช้ case เเทน when
+               2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
+               
+               3. การเเสดงผลใช้ printf เเทน puts,print
 
-                   2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
-                   
-                   3. การเเสดงผลใช้ printf เเทน puts,print
-
-                   4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
-                   
+               4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+               
+```
 
 **ภาษา Java**
 
-``` java
+```java
 public class Main {
   public static void main(String[] args) {
     int day = 4;
@@ -318,27 +369,34 @@ public class Main {
 }
 
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   Thursday
-</code></pre>
+```
+
 </details>
 
-ข้อเเตกต่างกับ Ruby : 
+ข้อเเตกต่างกับ Ruby :
 
-                   1. ตัวเงื่อนไขใช้ case เเทน when
-                   
-                   2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
-                   
-                   3. การเเสดงผลใช้ System.out.println เเทน puts,print
+```
+               1. ตัวเงื่อนไขใช้ case เเทน when
+               
+               2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
+               
+               3. การเเสดงผลใช้ System.out.println เเทน puts,print
 
-                   4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
-                   
+               4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+               
+```
 
 **ภาษา Python**
 
-Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif) 
+Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif)
 
 ```python
 bike = 'Yamaha'
@@ -355,14 +413,20 @@ elif bike == "Yamaha":
 else:
     print("Please choose correct answer")
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   bike is Yamaha
-</code></pre>
+```
+
 </details>
 
 หรือถ้าหากเป็น Python 3.10 หรือเวอร์ชั่นหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
+
 ```python
 animal = "Eagle"
 match animal:
@@ -377,36 +441,42 @@ match animal:
 
 # Bird
 ```
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>
+
+<details>
+
+<summary><strong>Output</strong></summary>
+
+```
+
   Bird
-</code></pre>
+```
+
 </details>
 
 ข้อเเตกต่างกับ Ruby :
 
-                    1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
+```
+                1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
 
-                    2. การเเสดงผลใช้ print ในขณะที่ Ruby ใช้ได้ทั้ง puts,print
+                2. การเเสดงผลใช้ print ในขณะที่ Ruby ใช้ได้ทั้ง puts,print
 
-                    3. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
-                  
+                3. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+              
+```
 
-### Reference
-* [https://www.techotopia.com/index.php/The_Ruby_case_Statement] ตัวอย่างของ Ruby เเละศึกษา syntax
-* [https://www.tutorialspoint.com/ruby/ruby_if_else.htm] ตัวอย่างของ Ruby ของ Range 
-* [https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby เเละศึกษา syntax
-* [https://www.techotopia.com/index.php/Ruby_Ranges] สำหรับศึกษา number range
-* [https://www.tutorialspoint.com/ruby/ruby_ranges.htm] สำหรับศึกษา number range
-* [https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
-* [https://www.w3schools.com/c/c_switch.php] สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
-* [https://www.w3schools.com/java/java_switch.asp] สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
-* [https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
-* [https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
+#### Reference
 
+* \[https://www.techotopia.com/index.php/The\_Ruby\_case\_Statement] ตัวอย่างของ Ruby เเละศึกษา syntax
+* \[https://www.tutorialspoint.com/ruby/ruby\_if\_else.htm] ตัวอย่างของ Ruby ของ Range
+* \[https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby เเละศึกษา syntax
+* \[https://www.techotopia.com/index.php/Ruby\_Ranges] สำหรับศึกษา number range
+* \[https://www.tutorialspoint.com/ruby/ruby\_ranges.htm] สำหรับศึกษา number range
+* \[https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
+* \[https://www.w3schools.com/c/c\_switch.php] สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
+* \[https://www.w3schools.com/java/java\_switch.asp] สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
+* \[https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
+* \[https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
-### Presentation
+#### Presentation
 
-
-### Video
+#### Video
