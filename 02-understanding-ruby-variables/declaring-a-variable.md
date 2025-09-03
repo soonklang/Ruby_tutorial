@@ -112,7 +112,7 @@
 
 https://www.theodinproject.com/lessons/ruby-variables
 
-https://marcuscode.com/lang/ruby/variables-basic.
+https://marcuscode.com/lang/ruby/variables-basic
 
 https://www.geeksforgeeks.org/java/variables-in-java/
 
