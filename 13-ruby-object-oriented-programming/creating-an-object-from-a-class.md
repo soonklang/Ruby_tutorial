@@ -22,6 +22,7 @@ class BankAccount:
 account = BankAccount("Alice", 1000.0)
 account.greet()
 ```
+## Output
 ```ruby
 Hello from Alice's account!
 ```
@@ -50,6 +51,7 @@ public class Main {
     }
 }
 ```
+## Output
 ```Java
 Hello from Alice's account!
 ```
@@ -72,6 +74,7 @@ class BankAccount:
 account = BankAccount("Alice", 1000.0)
 account.greet()
 ```
+## Output
 ```Python
 Hello from Alice's account!
 ```
@@ -107,6 +110,7 @@ int main() {
     return 0;
 }
 ```
+## Output
 ```C++
 Hello from Alice's account!  
 ```
