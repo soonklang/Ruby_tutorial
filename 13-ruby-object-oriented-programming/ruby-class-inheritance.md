@@ -35,24 +35,19 @@ class ThisIsSuperClass
     # constructor of superclass
     def initialize 
         
-        puts "This is Superclass"
+        puts "Creating class"
     end
     
     # method of the Superclass
     def super_method
         
-        puts "Method of superclass"
+        puts "Method of Superclass"
     end
 end
 
 # Subclass
 class ThisIsSubClass < ThisIsSuperClass 
 
-    # constructor of subclass
-    def initialize 
-
-       puts "This is Subclass"
-    end
 end
 
 # creating object from superclass
@@ -69,8 +64,8 @@ test_obj.super_method
 
 <summary>Output</summary>
 
-> This is Superclass\
-> This is Subclass\
+> Creating class\
+> Creating class\
 > Method of Superclass
 
 </details>
