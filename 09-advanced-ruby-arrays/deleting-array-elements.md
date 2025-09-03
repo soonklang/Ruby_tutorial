@@ -1,4 +1,4 @@
-# Deleting Array Elements
+[# Deleting Array Elements
 ---
 คือการลบขนาดของ _array ตามค่า(value) หรือ ดัชนี (index)_
 
@@ -452,3 +452,4 @@ public class Main {
 - [ArrayList-methond + หลักการของ remove ของ java (Java Platform SE 8 ) - **docs.oracle.com** ไม่พบข้อมูลที่เขียนหรืออัปเดตล่าสุดและถูกสืบค้นในวันที่30/8/2025](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
 - [ตัวอย่างการใช้  method ->Java ArrayList remove() Method - **w3schools.com** ไม่พบวันเวลาที่ถูกเขียน + เวลาที่อัปเดตเว้บไซต์ล่าสุด และมีการถูกสืบค้นในวันที่ 30/8/2025 ](https://www.w3schools.com/java/ref_arraylist_remove.asp)
 
+](https://www.canva.com/presentation/control?id2=ae945013-3c3c-4976-ad81-3a9a5a88980d&extension=znLxJwV869WLkjj-dw3VRQ)
