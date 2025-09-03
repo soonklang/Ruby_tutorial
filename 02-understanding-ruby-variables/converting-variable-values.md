@@ -11,13 +11,15 @@ Converting variable values  คือ การแปลงค่าของต
 
 1.Implicit Conversion 
 เป็นการแปลงค่าที่เกิดขึ้นอัตโนมัติโดยตัวแปลภาษา Compiler เพื่อให้โปรแกรมสามารถทำงานต่อไปได้โดยไม่เกิดข้อผิดพลาด มักจะเกิดขึ้นเมื่อมีการดำเนินการระหว่างข้อมูลคนละชนิด และการแปลงนั้นปลอดภัยไม่ทำให้ข้อมูลสูญหาย เช่น การนำตัวเลขจำนวนเต็ม int ไปบวกกับเลขทศนิยม float ซึ่งตัวภาษาจะแปลงค่า int ให้เป็น float เอง แล้วจึงนำไปบวกกัน ผลลัพธ์ที่ได้ก็จะเป็น float
-
-  num_str = "10"
-  num_int = num_str.to_i
-  puts num_int + 5
-  
+```ruby   
+num_str = "10"
+num_int = num_str.to_i
+puts num_int + 5
+```
 ผลลัพธ์:
-  15
+```ruby   
+15
+```
 
 ## References
 [1] K. Newton, "Ruby type conversion," KDD Newton, Sep. 9, 2021. [Online]. Available: https://kddnewton.com/2021/09/09/ruby-type-conversion.html. [Accessed: Sep. 3, 2025].
