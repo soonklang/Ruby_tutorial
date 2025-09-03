@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Combining Ruby Array](README.md)
-* [Ruby Tutorial](<README (1).md>)
+* [Ruby Tutorial](README.md)
 
 ## 0 Introduction
 
@@ -65,6 +64,7 @@
 ## 09 Advanced Ruby Arrays
 
 * [Combining Ruby Arrays](09-advanced-ruby-arrays/combining-ruby-arrays.md)
+* [Combining Ruby Arrays](09-advanced-ruby-arrays/combining-ruby-arrays-1.md)
 * [Intersection, Union and Difference](09-advanced-ruby-arrays/intersection-union-and-difference.md)
 * [Identifying Unique Array Elements](09-advanced-ruby-arrays/identifying-unique-array-elements.md)
 * [Pushing and Popping Array Elements](09-advanced-ruby-arrays/pushing-and-popping-array-elements.md)
