@@ -3,5 +3,9 @@
 ตัวอย่างการเปลี่ยนชนิดตัวแปรในภาษาRuby
 
 ## 1.การเปลี่ยนชนิดตัวแปรจาก Integer → String
+```ruby
+x = 10        // x เป็น Integer
+puts x.class  // => Integer
 
-
+x = "hello"   // เปลี่ยนค่าใหม่เป็น String
+puts x.class  // => String
