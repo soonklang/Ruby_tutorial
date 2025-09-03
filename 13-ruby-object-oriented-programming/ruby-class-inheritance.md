@@ -165,3 +165,35 @@ obj.display "ONE", "TWO"
 - **super a** จะส่งไปแค่ parameter "ONE" ทำให้ค่า parameter ของ b=0 ตามที่ display ของ Super Class กำหนดไว้
 - **super a, b** จะส่ง parameter ที่ได้มาจาก obj.display ก็คือ "ONE" และ "TWO" ไปใน display ของ Super Class
 - **super()** จะไม่ส่งอะไรไปเลย แค่เรียกใช้ method display ของ Super Class ทำให้ค่า parameter ของ a = 0 และ b=0 ตามที่ display ของ Super Class กำหนดไว้ 
+
+---
+
+## Extra
+ในตัวอย่าง code ต่างๆที่ได้แสดงให้ดูไปเป็นการสืบทอดที่สามารถทำได้หากเราประกาศ class ไว้ไฟล์เดียวกัน แต่เราก็สามารถที่จะสืบทอด class จาก class ที่ประกาศไว้ในไฟล์อื่นๆได้เหมือนกัน โดย
+
+- **require_relative** ใช้เมื่อไฟล์ของ class ที่อยากจะสืบทอด(Super Class)อยู่ใน Folder เดียวกันกับ Sub Class
+- **require** ใช้เมื่อไฟล์ของ class ที่อยากจะสืบทอด(Super Class)อยู่ใน Folder คนละ Folder กับ Sub Class
+
+### ตัวอย่าง
+ต้องการที่จะ สร้าง class Cat ในไฟล์ cat.rb โดยสืบทอดมาจาก class Lion ในไฟล์ lion.rb ที่อยู่ใน Drive D ใน folder ชื่อ ruby
+
+- อยู่ใน Folder เดียวกัน
+ 
+  ```ruby
+  # in cat.rb
+  require_relative 'lion' 
+
+  class Cat < Lion
+  
+  end
+  ```
+- อยู่คนละ Folder กัน
+ 
+  ```ruby
+  # in cat.rb
+  require 'D:/folder/ruby/lion'
+
+  class Cat < Lion
+  
+  end
+  ```
