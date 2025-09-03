@@ -282,7 +282,7 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 - GeeksforGeeks. (14 สิงหาคม 2025). Python Classes and Objects. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/python/python-classes-and-objects/
 
 - tutorailspoint (13 เมษายน 2023). Accessor and Mutator Methods in Python เข้าค้นเมื่อ 2 กันยายน 2023 จาก https://www.tutorialspoint.com/accessor-and-mutator-methods-in-python
-- 
+
 - GeeksforGeeks. (29 กรกฎาคม 2025). C Structures. เข้าค้นเมื่อ 1 กันยายน 2025 จาก https://www.geeksforgeeks.org/c/structures-c/
 
 
