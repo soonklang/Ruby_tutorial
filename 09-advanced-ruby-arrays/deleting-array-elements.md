@@ -1,4 +1,4 @@
-[# Deleting Array Elements
+# Deleting Array Elements
 ---
 คือการลบขนาดของ _array ตามค่า(value) หรือ ดัชนี (index)_
 
