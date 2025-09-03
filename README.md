@@ -1,19 +1,2 @@
-# Ruby Tutorial
+# Page
 
-## Ruby Tutorial
-
-### ถ้านักศึกษาหาหัวข้อตัวเองไม่เจอ ให้ดูในไฟล์ [summary.md](https://github.com/soonklang/Ruby_tutorial/blob/660710078/SUMMARY.md) นะคะ มีการย้ายบางหัวข้อ และจัดกลุ่มใหม่เล็กน้อยค่ะ
-
-### สามารถใส่เนื้อหาในไฟล์ที่สร้างไว้ให้ในแต่ละหัวข้อได้เลยค่ะ ในส่วนของคนที่มี 2 หัวข้อย่อยขึ้นไป ให้สร้างรวมกันไว้ในไฟล์เดียวได้เลยค่ะ
-
-เอกสารประกอบการเรียนรู้ภาษา Ruby เบื้องต้น
-
-* เว็บหลักที่มาของหัวข้อ: [https://www.techotopia.com/index.php/Ruby\_Essentials](https://www.techotopia.com/index.php/Ruby_Essentials)
-* เว็บทางการของภาษา: [https://docs.ruby-lang.org/en/master/](https://docs.ruby-lang.org/en/master/)
-
-## Author
-
-Project นี้เป็นส่วนหนึ่งของรายวิชา 517 321 หลักการภาษาโปรแกรม (Principles of Programming Languages) ภาคการศึกษาต้น ปีการศึกษา 2568
-
-จัดทำโดยนักศึกษาสาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร\
-และอาจารย์ทัศนวรรณ ศูนย์กลาง ผู้สอนรายวิชา
