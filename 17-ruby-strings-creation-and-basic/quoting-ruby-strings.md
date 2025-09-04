@@ -354,12 +354,14 @@ I have 10 Baht in my bank account.
 
 ## _Summary_
 
-การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ\
+การครอบข้อความให้เป็นสตริงสามารถใช้ได้ทั้งเครื่องหมาย Single Quote และ Double Quote แต่มีข้อแตกต่างคือ
 
 
 1. Single quote จะไม่สามารถใช้ escape sequnces แบบ double quote ได้ (ยกเว้น \\' และ \\)\
 
-2. Single quote ไม่สามารถแทรกค่าได้แบบ double quote ได้
+2. Double quote สามารถแทรกค่าได้และใช้ escape sequences ได้
+
+Aternative quote ทำงานเหมือนเครื่องหมาย single quote และ double quote ต่างตรงที่ alternative quote สามารถเปลี่ยนตัว delimiters ได้
 
 ## _Reference_
 
