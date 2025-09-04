@@ -4,6 +4,7 @@ Ternary operator คือ ตัวดำเนินการที่ใช�
 <img width="377" height="213" alt="image" src="https://github.com/user-attachments/assets/d28dc935-1951-49f8-832e-7082f3b7f7bb" />
 
 
+
 # ตัวอย่าง Ternary Oparator ใน Ruby
 <img width="447" height="101" alt="image" src="https://github.com/user-attachments/assets/81125430-b010-44b1-928c-3a6555e5e1b9" />
 
@@ -25,7 +26,20 @@ Ternary operator คือ ตัวดำเนินการที่ใช�
 รูปแบบ ternary operator 
 
 
-<img width="1026" height="92" alt="image" src="https://github.com/user-attachments/assets/f895dfd3-09cf-4a95-9ef8-53b2f300f82d" />
+<img width="935" height="127" alt="image" src="https://github.com/user-attachments/assets/00f92b05-0559-4774-abf3-db1949d1a565" />
+
 
 
 เป็นการเอาเงื่อนไข เอาเข้าไปใส่ในเงื่อนไขอีกที แต่ไม่แนะนำ เพราะจะยิ่งทำให้โค้ดอ่านยาก 
+
+
+# การเขียน ternary operator กับภาษาอื่นๆ เพื่อเปรียบเทียบ 
+<img width="523" height="242" alt="image" src="https://github.com/user-attachments/assets/bc002c36-e20e-4a7a-9d94-6448a263c396" />
+
+
+
+<img width="1015" height="56" alt="image" src="https://github.com/user-attachments/assets/822286ce-dfb8-4899-8121-ad099a8e4537" />
+
+
+
+ในภาษา Python syntax จะค่อนข้างแตกต่างกับ Ruby
