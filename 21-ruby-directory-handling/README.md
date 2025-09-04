@@ -28,11 +28,9 @@ Dir.chdir("/home/ruby/test")
 
 ## เปรียบเทียบกับภาษาอื่นๆ
 
-ยกตัวอย่างวิธีการเช็คและเปลี่ยน Directory ในภาษา C Java และ Python เพื่อให้เห็นว่าแต่ละภาษามีความแตกต่างกันอย่างไร
+### ภาษา C
 
-ภาษา C
-
-จะมีการเรียก unistd.h เพื่อสามารถใช้ฟังค์ชั่นในการเปลี่ยน directory&#x20;
+#### จะมีการเรียก unistd.h เพื่อสามารถใช้ฟังค์ชั่นในการเปลี่ยน directory&#x20;
 
 ```
 #include<stdio.h> 
@@ -47,9 +45,9 @@ int main()
 } 
 ```
 
-ภาษา Java&#x20;
+### ภาษา Java&#x20;
 
-จะมีการเรียกใช้คำสั่ง System.getProperty("user.dir") เพื่อดูว่า directory ปัจจุบันอยู่ที่ไหน
+#### จะมีการเรียกใช้คำสั่ง System.getProperty("user.dir") เพื่อดูว่า directory ปัจจุบันอยู่ที่ไหน
 
 ```java
 public class JavaApplication {
@@ -59,9 +57,9 @@ public class JavaApplication {
 }
 ```
 
-ภาษา Python&#x20;
+### ภาษา Python&#x20;
 
-Python จะทำการ import os โดยใช้คำสั่ง os.getcwd() เพื่อเช็ค Directory ปัจจุบัน และใช้คำสั่ง os.chdir( path ) เพื่อเปลี่ยน Directory
+#### Python จะทำการ import os โดยใช้คำสั่ง os.getcwd() เพื่อเช็ค Directory ปัจจุบัน และใช้คำสั่ง os.chdir( path ) เพื่อเปลี่ยน Directory
 
 ```python
 import os
@@ -71,13 +69,13 @@ os.chdir(path)
 
 ## ข้อมูลอ้างอิง
 
-docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)
-
 Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.
 
-Geeksforgeeks. (2021,11,18). Ruby | Dir Class and its methods. geeksforgeeks. https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/
+GeeksforGeeks. (2021,11,18). Ruby | Dir Class and its methods. GeeksforGeeks. [https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/](https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/)
 
-Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. https://www.techotopia.com/index.php/Ruby\_Directory\_Handling
+docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)
+
+Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. [https://www.techotopia.com/index.php/Ruby\_Directory\_Handling](https://www.techotopia.com/index.php/Ruby_Directory_Handling)
 
 Stackoverflow. (2011,2,28). Find the current directory and file's directory \[duplicate]. Stackoverflow. [Find the current directory and file's directory \[duplicate\]](https://stackoverflow.com/questions/5137497/find-the-current-directory-and-files-directory)
 
