@@ -1,7 +1,8 @@
 # Private Classes in Ruby
 โดยปกติแล้วในภาษา Ruby เมื่อเราสร้าง class ขึ้นมา class นั้นจะสามารถถูกเรียกใช้จากที่ไหนก็ได้ภายในโปรแกรมของเรา แต่บางครั้งเราเมื่อเราต้องการสร้างคลาสย่อยที่เราต้องการให้เรียกใช้ได้ภายในคลาสหลักเท่านั้น เราก็ต้องสร้าง class ที่เป็น private ขึ้นมา โดยในภาษา Ruby เราจะสร้าง private class โดยการใช้ private_constant: "class_name"   
 **ตัวอย่าง public class ธรรมดา :**  
-```# by default public
+```ruby
+# by default public
 class Marvel
 
   # by default public
