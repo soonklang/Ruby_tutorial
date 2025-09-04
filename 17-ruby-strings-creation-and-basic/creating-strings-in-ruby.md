@@ -106,14 +106,8 @@ char greeting[] = {'H','e','l','l','o','\0'};
 #### Ruby
 - W3schools.io. (n.d.). *Ruby Strings*. W3schools.io. Retrieved September 1, 2025, from<br>
 https://www.w3schools.io/ruby-strings/
-- Ruby-doc.org. (n.d.). *Class: String (Ruby 2.6.9)*. Ruby-doc.org. Retrieved September 1, 2025, from<br>
-https://ruby-doc.org/core-2.6.9/String.html
--  DigitalOcean. (2022, August 3). *How To Work With Strings in Ruby*. DigitalOcean. Retrieved September 1, 2025, from<br>
-https://www.digitalocean.com/community/tutorials/how-to-work-with-strings-in-ruby
 - Ruby-lang.org. (n.d.). *String — Ruby master*. Ruby-lang.org. Retrieved September 1, 2025, from<br>
 https://docs.ruby-lang.org/en/master/String.html
-- TutorialsPoint. (n.d.). *Ruby – Strings*. TutorialsPoint. Retrieved September 1, 2025, from<br>
-https://www.tutorialspoint.com/ruby/ruby_strings.htm
 - GeeksforGeeks. (2024, May 20). *Ruby | String Basics*. GeeksforGeeks. Retrieved September 1, 2025, from<br>
 https://www.geeksforgeeks.org/ruby/ruby-string-basics/
 - Smyth, N. (2016, November 2). *Ruby Strings - Creation and Basics*. Techotopia. Retrieved September 1, 2025, from<br>
