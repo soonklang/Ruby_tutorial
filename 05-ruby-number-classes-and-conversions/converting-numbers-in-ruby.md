@@ -41,21 +41,25 @@ String
 
 ```
 #ruby
+"123".to_i
+ จะได้ค่าเป็น 123 // เป็นการใช้ Method
+
 Integer("123")
  จะได้ค่าเป็น 123
 
 #Java
 String str = "123";
-int num = Integer.parseInt(str);
-System.out.println(num); // Output: 123 เป็นการคื่นค่าเป็น Primitive Type
+int num = Integer.parseInt(str); // เป็นการเรียกใช้ Method
+ จะได้ค่าเป็น 123 เป็นการคื่นค่าเป็น Primitive Type
 
 String str = "123";
-Integer num = Integer.valueOf(str);
-System.out.println(num); // Output: 123 เป็นการคืนค่าเป็น Object
+Integer num = Integer.valueOf(str); // เป็นการเรียกใช้ Method
+ จะได้ค่าเป็น 123 เป็นการคืนค่าเป็น Object
 
 #C
-(int)11.111
- จะได้ค่าเป็น 11
+char* str1 = "141";
+int num1 = atoi(str1);
+printf("The sum of %d and %d is: %d", num1
 
 #Python
 int(10.898)
@@ -72,3 +76,4 @@ C - Type Casting - https://www.geeksforgeeks.org/c/c-typecasting/
 Python - Built-in Functions - https://docs.python.org/3/library/functions.html
 
 Ruby - Module Kernel - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
+     - Integer Class - https://www.geeksforgeeks.org/ruby/ruby-integer-class/
