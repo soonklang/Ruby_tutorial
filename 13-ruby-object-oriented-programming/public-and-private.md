@@ -49,7 +49,7 @@ object.display
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 1 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -86,7 +86,7 @@ public class Ruby1 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 1 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -113,7 +113,7 @@ object.display()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 1 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -173,7 +173,7 @@ end
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 2 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -189,7 +189,7 @@ public void display(){
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 2 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -204,7 +204,7 @@ def display(self) :
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 2 ในรูปแบบภาษา C</strong></summary>
 <pre>\
     
 ```c
@@ -228,7 +228,7 @@ end
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -241,7 +241,7 @@ private void greeting(){
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -253,7 +253,7 @@ def __greeting(self):
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 3 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -283,7 +283,7 @@ end
 ```
 > note : เราจะเห็นว่าเราเขียน private ที่เมธอด greeting1 อันเดียวแต่ greeting2 และ greeting3 ก็เป็น private ด้วยเช่นกัน
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -304,7 +304,7 @@ private void greeting3(){
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -322,7 +322,7 @@ private void greeting3(){
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 4 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -378,7 +378,7 @@ sparky.dog_name
 > จากผลลัพท์เราสังเกตได้ว่าเราสามารถเข้าถึงเมธอดนี้ได้ทุกที่
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -408,7 +408,7 @@ class Ruby3 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -427,7 +427,7 @@ sparky.dog_name()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 5 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -502,7 +502,7 @@ sparky.human_years
 > จากผลลัพท์เราจะสังเกตว่าเราไม่สามารถเข้าถึงเมธอดที่เป็น private ได้ ดังนั้นจะเกิดข้อผิดพลาด
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 6 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -536,7 +536,7 @@ class Ruby4 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 6 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -560,7 +560,7 @@ sparky.__human_years() # This will raise an AttributeError
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 6 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -646,7 +646,7 @@ sparky.get_human_years
 > จากผลลัพท์เราจะเห็นว่าเราจะได้ผลลัพท์ของเมธอดที่เป็น private ออกมาได้
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 7 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -685,7 +685,7 @@ class Ruby5 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 7 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -712,7 +712,7 @@ sparky.get_human_years() # This will raise an AttributeError
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 7 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -781,7 +781,7 @@ puts sparky.get_human_years
 > จากผลลัพท์เราจะเห็นว่าเมธอดจะเป็น public เองอัตโนมัติโดยที่เราไม่ต้องกำหนดเอง
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 8 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -811,7 +811,7 @@ class Ruby3 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 8 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -830,7 +830,7 @@ sparky.dog_name()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 8 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -894,7 +894,7 @@ end
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -931,7 +931,7 @@ public class Ruby1 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -958,7 +958,7 @@ object.display()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1109,7 +1109,7 @@ end
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ตัวอย่างที่ 9 ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1229,7 +1229,7 @@ public class Ruby6 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ตัวอย่างที่ 9 ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1315,7 +1315,7 @@ san_francisco.can_be_crowdy()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ตัวอย่างที่ 9 ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1469,7 +1469,7 @@ poland = Country.new('Poland', 38_000_000, 312_000, 'Europe')
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1486,7 +1486,7 @@ public class Ruby6 {
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1499,7 +1499,7 @@ poland = Country('Poland', 38000000, 312000, 'Europe')
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1526,7 +1526,7 @@ poland.greeting
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1538,7 +1538,7 @@ poland.greeting();
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1550,7 +1550,7 @@ poland.greeting()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1580,7 +1580,7 @@ wroclaw.name_info
 wroclaw.population_info
 ```
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1592,7 +1592,7 @@ poland.population_info();
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1604,7 +1604,7 @@ poland.population_info()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1635,7 +1635,7 @@ poland.own_greeting
 ```
 
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1647,7 +1647,7 @@ poland.own_greeting();
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1659,7 +1659,7 @@ poland.own_greeting()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
@@ -1696,7 +1696,7 @@ wroclaw.the_same_continent?(san_francisco)
 san_francisco.can_be_crowdy?
 ```
 <details>
-<summary><strong>Java</strong></summary>
+<summary><strong>ในรูปแบบภาษา Java</strong></summary>
 <pre>
 
 ```java
@@ -1709,7 +1709,7 @@ san_francisco.can_be_crowdy();
 </details>
 
 <details>
-<summary><strong>Python</strong></summary>
+<summary><strong>ในรูปแบบภาษา Python</strong></summary>
 <pre>
 
 ```python
@@ -1722,7 +1722,7 @@ san_francisco.can_be_crowdy()
 </details>
 
 <details>
-<summary><strong>C</strong></summary>
+<summary><strong>ในรูปแบบภาษา C</strong></summary>
 <pre>
 
 ```c
