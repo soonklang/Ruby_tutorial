@@ -1,2 +1,186 @@
 # Case Insensitive String Comparisons
+**Case Insensitive String Comparisons** คือการเปรียบเทียบข้อความ (String) โดยไม่สนใจตัวอักษรพิมพ์เล็กหรือพิมพ์ใหญ่ ในภาษา Ruby สามารถทำได้ดังนี้ 
+> ใช้ casecmp()
 
+casecmp() เป็นเมธอดที่ใช้เปรียบเทียบข้อความเหมือนกับ <=> โดยการเช็คอักขระของข้อความทางด้านซ้ายและข้อความทางด้านขวาว่าเหมือนกันทุกตัวหรือไม่ ใช้ได้กับอักขระ A-Z/a-z เท่านั้น จะคืนค่าเป็น 
+- -1 ถ้าข้อความทางซ้าย น้อยกว่า ข้อความทางขวา 
+- 0 ถ้าข้อความทางซ้าย เท่ากับ ข้อความทางขวา 
+- 1 ถ้าข้อความทางซ้าย มากกว่า ข้อความทางขวา 
+- nil ถ้าไม่สามารถเปรียบเทียบกันได้ เนื่องจากมีข้อความใดข้อความหนึ่งหรือทั้งสองข้อความไม่ใช่ String
+  
+Example
+```
+str1 = “Silpakorn”
+str2 = “SilPaKorn”
+puts str1.casecmp(str2)
+```
+output => 0 casecmp() จะเช็คอักขระทีละตัวโดยไม่คำนึงถึงตัวพิมพ์เล็ก-พิมพ์ใหญ่
+```
+str1 = “Silpakorn”
+str2 = “Silpakorn University”
+puts str1.casecmp(str2)
+```
+output => -1 เพราะว่า str1 น้อยกว่า str2
+```
+str1 = “Jar”
+str2 = “Car”
+puts str1.casecmp(str2) 
+```
+output => 1 เพราะ ใน Unicode ‘J’ มีค่ามากกว่า ‘C’ 
+
+> ใช้ casecmp?()
+
+casecmp?() เป็นการเปรียบเทียบว่าข้อความเหมือนกันหรือไม่ โดยไม่สนว่าเป็นตัวพิมพ์เล็กหรือพิมพ์ใหญ่ จะคืนค่าเป็น 
+
+- true ถ้าข้อความที่เปรียบเทียบเหมือนกันทุกตัวอักษร 
+
+- false ถ้าข้อความที่เปรียบเทียบไม่เหมือนกัน หรือมีจุดที่ต่างกัน 
+
+- nil ถ้าข้อความไม่สามารถเปรียบเทียบกันได้ หรือมีข้อความข้อใดข้อความหนึ่ง หรือทั้งสองข้อความไม่ใช่ String
+  
+Example
+```
+str1 = “SILPAKORN”
+str2 = “silpakorn”
+puts str1.casecmp?(str2) 
+```
+output => true เพราะ str1 และ str2 เหมือนกันทุกตัวอักษร 
+```
+str1 = “comment”
+str2 = “comments”
+puts str1.casecmp?(str2) 
+```
+output => false เพราะ str1 และ str2 มีจุดที่ต่างกัน 
+```
+str1 = “comment”
+str2 = 123
+puts str1.casecmp?(str2) 
+```
+output => nil เพราะ str2 ไม่เป็น String 
+
+## Case Insensitive String Comparisions ใน ภาษา Python, Java และ C 
+
+### Python
+
+ในภาษา Python จะไม่มีเมธอดสำเร็จรูปที่ใช้เปรียบเทียบโดยตรง แต่จะนิยมใช้ lower() หรือ upper() กับข้อความก่อนแล้วจึงใช้ == เปรียบเทียบข้อความ 
+และ casefold() มีประโยชน์สำหรับการเปรียบเทียบสตริงที่มีอักขระพิเศษหรือ Unicode 
+
+>ใช้ lower()/upper() 
+
+Example
+```
+str1 = “PYTHON”
+str2 = “Python”
+if str1.lower() == str2.lower():
+  print(“equal”)
+else:
+  print(“not equal”) 
+```
+output => equal 
+
+>ใช้ casefold() 
+
+Example
+```
+str1 = "straße"
+str2 = "STRASSE"
+if str1.casefold() == str2.casefold():
+  print(“equal”)
+else:
+  print(“not equal”) 
+```
+output => equal เนื่องจาก ẞ ในภาษาเยอรมันมีความหมายเดียวกันกับ ss ในภาษาอังกฤษ 
+
+### Java 
+
+ในภาษา Java จะใช้ equalsIgnoreCase( ) หากข้อความมีความยาวเท่ากันและมีอักขระที่เหมือนกันในข้อความทั้งสองโดยไม่คำนึงถึงตัวพิมพ์เล็กและพิมพ์ใหญ่
+
+Example
+```
+String str1 = “Silpakorn”;
+String str2 = “silpakorn”;
+String str3 = “Silpakorn University”;
+System.out.print(str1.equalIsIgnoreCase(str2)+" ");
+System.out.println(str2.equalIsIgnoreCase(str3)); 
+```
+output => true false 
+
+### C 
+
+> ใช้ strcasecmp() (Linux/Unix)
+
+โดยจะต้อง include **<strings.h>** จะคืนค่า 
+- 0 ถ้าข้อความเท่ากัน
+- มากกว่า 0 หรือ น้อยกว่า 0  ถ้าข้อความไม่เท่ากัน
+
+Example
+```
+#include <stdio.h>
+#include <strings.h>
+int main() {
+  char *a = "Silpakorn";
+  char *b = "SilPakorn";
+  if (strcasecmp(a, b) == 0) {
+      printf("equal");
+  } else {
+      printf("not equal");
+  }
+      return 0;
+}
+```
+output => equal 
+
+> ใช้ _stricmp (Windows/Visual Studio)
+
+โดยจะต้อง include **<string.h>** จะคืนค่า 
+- 0 ถ้าข้อความเท่ากัน
+- มากกว่า 0 หรือ น้อยกว่า 0 ถ้าข้อความไม่เท่ากัน
+
+Example
+```
+#include <stdio.h>
+#include <string.h>
+int main() {
+  char *a = "Silpakorn";
+  char *b = "SilPakorn";
+  if (_stricmp(a, b) == 0) {
+      printf("equal");
+  } else {
+      printf("not equal");
+  }
+      return 0;
+}
+```
+output => equal
+
+### Reference 
+
+>Ruby
+  
+APIdock. (ม.ป.ป). casecmp. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://apidock.com/ruby/v2_6_3/String/casecmp 
+
+Ruby Language Documentation. (ม.ป.ป). Symbol#casecmp. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://docs.ruby-lang.org/en/master/Symbol.html#method-i-casecmp 
+
+Ruby Language Documentation. (ม.ป.ป). Symbol#casecmp?. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://docs.ruby-lang.org/en/master/Symbol.html#method-i-casecmp-3F 
+
+Techotopia. (2559). Ruby string concatenation and comparison. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://www.techotopia.com/index.php/Ruby_String_Concatenation_and_Comparison
+
+>Python
+   
+Geeksforkeeks. (15 กรกฎาคม 2568). Case-insensitive string comparison in Python. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://www.geeksforgeeks.org/python/case-insensitive-string-comparison-in-python/ 
+
+Ioflood. (12 สิงหาคม 2567). Case-Insensitive String Comparisons. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://ioflood.com/blog/using-python-to-compare-strings-methods-and-tips 
+
+>Java
+  
+Oracle. (ม.ป.ป). equalsIgnoreCase. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#equalsIgnoreCase-java.lang.String- 
+
+W3schools. (ม.ป.ป). Java String equalsIgnoreCase() Method. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://www.w3schools.com/java/ref_string_equalsignorecase.asp 
+
+>C
+  
+IBM. (12 เมษายน 2564)). strcasecmp() Case-insensitive string comparison. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://www.ibm.com/docs/en/zos/2.4.0?topic=functions-strcasecmp-case-insensitive-string-comparison 
+
+Microsoft. (12 กุมภาพันธ์ 2565). _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l?view=msvc-170 
+
+Studyplan. (ม.ป.ป). Case-Insensitive C-String Comparison. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://www.studyplan.dev/pro-cpp/c-strings/q/case-insensitive-c-string-comparison 
