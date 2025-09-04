@@ -143,10 +143,13 @@ x, y, z = fruits
 ## SLIDE
 
 ## REFERENCE
-GeeksforGeeks. 27 Jul 2020. "Parallel Assignment in Ruby". สืบค้นจาก https://www.geeksforgeeks.org/ruby/parallel-assignment-in-ruby/ (สืบค้นวันที่ 2 กันยายน 2568)
-w3schools. "C Declare Multiple Variables". สืบค้นจาก https://www.w3schools.com/c/c_variables_multiple.php. 
+1.GeeksforGeeks. 27 Jul 2020. "Parallel Assignment in Ruby". สืบค้นจาก https://www.geeksforgeeks.org/ruby/parallel-assignment-in-ruby/ (สืบค้นวันที่ 2 กันยายน 2568)
+
+2.w3schools. "C Declare Multiple Variables". สืบค้นจาก https://www.w3schools.com/c/c_variables_multiple.php. 
 (สืบค้นวันที่ 3 กันยายน 2568)
-w3schools. "Declare Many Variables". สืบค้นจาก https://www.w3schools.com/java/java_variables_multiple.asp. 
+
+3.w3schools. "Declare Many Variables". สืบค้นจาก https://www.w3schools.com/java/java_variables_multiple.asp. 
 (สืบค้นวันที่ 3 กันยายน 2568)
-w3schools. "Python Variables - Assign Multiple Values". 
+
+4.w3schools. "Python Variables - Assign Multiple Values". 
 สืบค้นจาก https://www.w3schools.com/python/python_variables_multiple.asp. (สืบค้นวันที่ 3 กันยายน 2568)
