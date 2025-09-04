@@ -1,7 +1,14 @@
 # Converting a Ruby String to an Array
 ## การแปลง String ในภาษา Ruby ให้เป็น Array
 
-สำหรับตัวของ split นั้นถือว่าเป็น method ที่มีประโยชน์มากของ String ที่มีวัตถุประสงค์ในการเอามาแยกประโยคต่าง ๆ ให้เป็น Array ที่ประกอบด้วย **'คำ'** หรือ **'ตัวอักษร'** ที่ถูกแยกออกมา โดยมีรูปแบบการใช้ดังต่อไปนี้
+
+### Contents
+> 1. [Split() ในภาษา Ruby](#Split()-ในภาษา-Ruby)
+> 2. [การเปรียบเทียบ Split กับภาษาอื่น ๆ](#การเปรียบเทียบ-Split-กับภาษาอื่น-ๆ)
+
+
+### Split() ในภาษา Ruby
+สำหรับตัวของ split นั้นถือว่าเป็น method ที่มีประโยชน์อย่างมากของ String ที่มีวัตถุประสงค์ในการเอามาแยกประโยคต่าง ๆ ให้เป็น Array ที่ประกอบด้วย **'คำ'** หรือ **'ตัวอักษร'** ที่ถูกแยกออกมา โดยมีรูปแบบการใช้ดังต่อไปนี้
 > [!IMPORTANT]
 > **split(pattern=nil, [limit])**<br>
 > - pattern=nil เป็นตัวที่เราใช้เพื่อบอกว่าจะ 'ตัด' ตามรูปแบบไหนหรือตัวไหน <br>
@@ -52,7 +59,6 @@
 > - ค่า limit < 0  ภาษา Ruby จะเก็บ Trailing empty fields ไว้
 
 ***
-<br>
 
 > [!TIP]
 ➕ split สามารถเอามาปรับใช้กับความเรียงต่าง ๆ ได้ด้วยเช่นกัน เนื่องจากคำที่ถูกแยกออกมาจะมีการจัดเก็บเป็น Array แล้วหลังจากนั้นก็ใช้ `array.size()` เพื่อทำให้สามารถนับจำนวนคำได้ที่อยู่ใน Array ได้<br>
@@ -121,18 +127,95 @@ cherry</pre>
 
 <br>
 
-### JAVA
-ภาษา JAVA นั้นมีเมธอดที่ชื่อว่า split ของ String ที่สามารถแยกข้อความออกมาเป็น Array ตามตัวคั่นเช่นเดียวกับ Ruby เลย
-
-> [!WARNING]
-> - ตัวคั่นของภาษา JAVA จะต้องเป็นรูปแบบ regex เท่านั้น
-> - หากว่าตัวคั่นนั้นมีความหมายพิเศษในตัวของมัน เช่น `. | ^ () $ ? *` เป็นต้น จำเป็นต้องใช้ `\\` เพื่อ escape และสื่อสารกับโปรแกรมว่า **หมายถึงตัวอักษรเหล่านี้จริง ๆ ไม่ใช่ความหมายพิเศษ**
+### Java
+ภาษา Java นั้นมีเมธอดที่ชื่อว่า split ของ String ที่สามารถแยกข้อความออกมาเป็น Array ตามตัวคั่นเช่นเดียวกับ Ruby เลย
 
 > [!IMPORTANT]
 > **public String[] split(String regex, int limit)** <br>
-> limit จะกำหนดหรือไม่ก็ได้ (สำหรับข้อควรระวังของ limit ในภาษา JAVA เป็นแบบเดียวกับของ [Ruby](#ข้อควรระวัง))
+> - limit จะกำหนดหรือไม่ก็ได้ (สำหรับข้อควรระวังของ limit ในภาษา Java เป็นแบบเดียวกับของ [Ruby](#ข้อควรระวัง))
+
+> [!WARNING]
+> - ตัวคั่นของภาษา Java จะต้องเป็นรูปแบบ regex เท่านั้น
+> - หากว่าตัวคั่นนั้นมีความหมายพิเศษในตัวของมัน เช่น `. | ^ () $ ? *` เป็นต้น จำเป็นต้องใช้ `\\` เพื่อ escape และสื่อสารกับโปรแกรมว่า **หมายถึงตัวอักษรเหล่านี้จริง ๆ ไม่ใช่ความหมายพิเศษ**
 
 
+
+ตัวอย่าง
+```Java
+String text = "apple,banana,cherry";
+String[] result = text.split(",");
+System.out.println(Arrays.toString(result));
+```
+<details>
+<summary>Output: </summary>
+
+<pre>[apple, banana, cherry]</pre>
+</details>
+
+```Java
+String text2 = "a.b.c";
+String[] result2 = text2.split("\\.");
+System.out.println(Arrays.toString(result2));
+```
+<details>
+<summary>Output: </summary>
+
+<pre>[a, b, c]</pre>
+</details>
+
+<br>
+
+### Python
+สำหรับภาษา Python เองก็มีเมธอดที่ชื่อ split ของ str เพื่อนำมาใช้แยกข้อความหรือคำตามตัวคั่นเช่นกันกับภาษา Ruby และ Java หากแต่มีข้อแตกต่างบางส่วน
+
+> [!IMPORTANT]
+> **str.split(sep=None, maxsplit=-1)** <br>
+> - sep ในที่นี้มีค่าเท่ากับคำว่า pattern ของภาษา Ruby นั่นคือการกำหนดค่าตัวคั่นว่าอยากให้คั่นด้วยตัวอะไร แต่หากไม่กำหนดจะถือว่าคั่นด้วย white space
+> - maxsplit ในที่นี้มีค่าเท่ากับคำว่า limit ของภาษา Ruby นั่นคือการกำหนด 'จำนวนครั้งสูงสุดที่จะแยก' โดยมีข้อควรระวังดังนี้
+>    - maxsplit = 0 จะหมายความว่า 'ไม่แยกคำเลย' (โปรแกรมจะคืนค่า str ทั้งหมดเป็นตัวเดียวกัน)
+>    - maxsplit > 0 แยกตามจำนวนที่กำหนดสูงสุด
+>    - ไม่กำหนด maxsplit (ค่า maxsplit เป็น default = -1) จะหมายถึงแบ่งค่าได้แบบไม่จำกัด
+
+ตัวอย่าง
+```Python
+s = "This is an example"
+parts = s.split()
+print(parts)
+```
+<details>
+<summary>Output: </summary>
+
+<pre>['This', 'is', 'an', 'example']</pre>
+</details>
+
+```Python
+s = "a,b,c,d"
+parts = s.split(",", 2)
+print(parts)
+```
+<details>
+<summary>Output: </summary>
+
+<pre>['a', 'b', 'c,d']</pre>
+</details>
+
+```Python
+s = "v1.v2.v3"
+print(s.split("."))
+```
+<details>
+<summary>Output: </summary>
+
+<pre>['v1', 'v2', 'v3']</pre>
+</details>
+
+> [!NOTE]
+> - Python สามารถตัดช่องว่างที่ซ้อนกันได้เองโดยใช้เพียง `.split()`
+> - Python สามารถใช้ delimiter ตามตัวอักษรได้เลยโดยไม่ต้องใช้ escape เหมือนภาษา Java
+> - split ของ Python ไม่รองรับ regex โดยตรง หากอยากใช้ สามารถใช้ `re.splite()` แทน
+> - Python มีอีกหนึ่งเมธอดที่ใช้สำหรับการแบ่ง หากแต่ใช้เพื่อแบ่งบรรทัดใหม่เท่านั้น! นั่นคือ `splitlines()` โดยไม่สามารถกำหนดตัวคั่นได้เลย รวมไปถึงไม่สามารถใช้ร่วมกัน maxsplit ได้
+
+สามารถศึกษาเมธอดที่อ้างอิงมาโดยละเอียดได้ที่ https://docs.python.org/3/contents.html
 
 ***
 ### Video Presentation
@@ -141,15 +224,22 @@ cherry</pre>
 Carmatec. (n.d.). Ruby’s string split: A complete guide with examples. https://www.carmatec.com/blog/rubys-string-split-a-complete-guide-with-examples/<br>
 cppreference.com. (n.d.). strtok. https://en.cppreference.com/w/c/string/byte/strtok<br>
 Flanagan, D., & Matsumoto, Y. (2008). The Ruby Programming Language (p. 305). O’Reilly Media.<br>
+GeeksforGeeks. (n.d.). Java String split() method with examples. https://www.geeksforgeeks.org/java/split-string-java-examples/<br>
 GeeksforGeeks. (n.d.). Ruby | String split() method with examples. https://www.geeksforgeeks.org/ruby/ruby-string-split-method-with-examples/<br>
 Ghosh, S. S. (2017). Comprehensive Ruby Programming (pp. 48–51). Packt Publishing.<br>
 Loosemore, S., Stallman, R. M., McGrath, R., Oram, A., & Drepper, U. (2019). The GNU C library reference manual (pp. 129–131). Free Software Foundation. https://www.gnu.org/software/libc/manual/pdf/libc.pdf<br>
+Oracle. (n.d.). Pattern (Java Platform SE 8). In Java SE Documentation. https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html<br>
+Oracle. (n.d.). String: split (Java Platform SE 8). In Java SE Documentation. https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 1.9.1). https://ruby-doc.org/core-1.9.1/String.html<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 2.4.5). https://ruby-doc.org/core-2.4.5/String.html<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 3.0.7). https://ruby-doc.org/3.0.7/String.html<br>
 Techotopia. (n.d.). Ruby string conversions. Techotopia. https://www.techotopia.com/index.php/Ruby_String_Conversions<br>
 The Open Group. (n.d.). strtok - split string into tokens. In The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017. https://pubs.opengroup.org/onlinepubs/9699919799/functions/strtok.html<br>
 Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The Pragmatic Programmers’ Guide (Fourth Edition, p. 685). Pragmatic Bookshelf.<br>
+
+
+
+
 
 
 
