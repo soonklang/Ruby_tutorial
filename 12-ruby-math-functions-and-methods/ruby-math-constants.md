@@ -8,7 +8,7 @@
 ```ruby
 Math.constants # PI E
 ```
-
+![Local Image](../gitbook/.assets/image (3).png)
 
 สังเกตได้ว่าจะมี <mark style="color:blue;">PI E</mark> และ <mark style="color:blue;">DomainError</mark>&#x20;
 
