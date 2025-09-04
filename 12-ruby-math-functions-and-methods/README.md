@@ -1,9 +1,5 @@
----
-description: การใช้งานฟังก์ชันและเมธอดต่าง ๆ ทางคณิตศาสตร์ของภาษาเขียนโปรแกรม Ruby
-icon: gem
----
-
 # Ruby Math Functions and Methods
+การใช้งานฟังก์ชันและเมธอดต่าง ๆ ทางคณิตศาสตร์ของภาษาเขียนโปรแกรม Ruby
 
 ในภาษาเขียนโปรแกรม Ruby มี module ที่ชื่อว่า Math ช่วยให้สามารถใช้งานค่าคงที่และฟังก์ชันทางคณิตศาสตร์ในภาษา Ruby ได้
 
@@ -11,10 +7,6 @@ icon: gem
 
 * ค่าคงที่ทางคณิตศาสตร์
 * [ruby-math-constants.md](ruby-math-functions-and-methods/ruby-math-constants.md "mention")
-  * [#ค่าคงที่ทางคณิตศาสตร์มีอะไรบ้าง](ruby-math-functions-and-methods/ruby-math-constants.md#undefined "mention")
-  * [#undefined-1](ruby-math-functions-and-methods/ruby-math-constants.md#undefined-1 "mention")
-    * [#module](ruby-math-functions-and-methods/ruby-math-constants.md#module "mention")
-    * [#undefined-3](ruby-math-functions-and-methods/ruby-math-constants.md#undefined-3 "mention")
 * ฟังก์ชันทางคณิตศาสตร์
 * [ruby-math-methods.md](ruby-math-functions-and-methods/ruby-math-methods.md "mention")
   * [p01.trigonometric-functions.md](ruby-math-functions-and-methods/ruby-math-methods-1/p01.trigonometric-functions.md "mention")
