@@ -43,3 +43,22 @@ Ternary operator คือ ตัวดำเนินการที่ใช�
 
 
 ในภาษา Python syntax จะค่อนข้างแตกต่างกับ Ruby
+
+
+<img width="508" height="303" alt="image" src="https://github.com/user-attachments/assets/9ad2fafb-3802-4703-ac01-48b76b715583" />
+
+
+
+<img width="997" height="72" alt="image" src="https://github.com/user-attachments/assets/d6f8c5af-4c6f-4c91-aabd-934c7f5f7921" />
+
+ในภาษา javascript syntax จะเหมือน ruby เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+
+
+<img width="565" height="307" alt="image" src="https://github.com/user-attachments/assets/f4243fd1-8a30-4ea9-b580-b716dd414cdf" />
+
+
+
+<img width="1058" height="57" alt="image" src="https://github.com/user-attachments/assets/3db34aea-7b19-493b-9022-0796902ea4ec" />
+
+
+ในภาษา java syntax จะเหมือน ruby และ javascript เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
