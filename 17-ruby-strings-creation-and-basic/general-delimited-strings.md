@@ -3,9 +3,12 @@
 ## ความหมาย :  
    เป็นการอนุญาตให้คุณสามารถเลือกตัวคั่น ของข้อความนั้นๆ ได้ เพื่อที่จะหลีกเลี่ยงการซ้อนทับของอักขระพิเศษภายในข้อความกับตัวคั่นตามปกติของ ภาษา Ruby
 ตามปกติในภาษา Ruby เวลาที่เราจะสร้าง String จะมี pattern ดังนี้ 
-### Example 1 :  
+### Example 1 :
+   ```ruby
       myString = "This is a string"
       puts myString
+   ```
+
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -16,8 +19,10 @@
   >ซึ่ง Ruby อนุญาตให้เราใช้เครื่องหมาย % ตามด้วยตัวคั่นอะไรก็ได้ที่คุณเลือกได้ เช่น ( ), [ ], { }, ! ! , | | , etc. (Techotopia, n.d.).
 
   ### Example 2 :
+  ```ruby
       myString = %{"This is a string"}
       puts myString
+   ```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -27,8 +32,10 @@
 
 >และ Ruby ยังมี ตัวคั่นพิเศษบางประเภทที่ใช้คั่นด้วยความหมายที่แตกต่างกันด้วย เช่น
 ### Example 3 %Q:
+```ruby
       myString = %Q{"This is a string #{1+2}"}
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -37,8 +44,10 @@
 </details> 
 
 ### Example 4 %q:
+```ruby
       myString = %q{"This is a string #{1+2}"}
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -49,8 +58,10 @@
 >แต่ ถ้าเราไม่ต้องการใช้วิธีการ General delimited String ก็ สามารถใช้ Backslash คู่กับตัว " หรือ ' ด้วย ซึ่งเราจะใช้ Backslash เพื่อ "escape" ก็ต่อเมื่อ เครื่องหมายคำพูดข้างใน เป็นชนิดเดียวกับเครื่องหมายที่ใช้ล้อมกรอบ
 
 ### Example 5 \" \":
+```ruby
       myString = "This is \"my\" String"
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -59,8 +70,10 @@
 </details> 
 
 ### Example 6 \' \':
+```ruby
       myString = 'This is \'my\' String'
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -71,8 +84,10 @@
 >แต่ถ้าเครื่องหมายที่ใช้ล้อมกรอบคนละชนิดกับเครื่องหมายภายใน เราก็สามารถใช้มันได้โดยที่ไม่ต้อง escape
 
 ### Example 7 ' ':
+```ruby
       myString = "This is 'my' String"
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -81,8 +96,10 @@
 </details> 
 
 ### Example 8 " ":
+```ruby
       myString = 'This is "my" String'
       puts myString
+```
 <details close>
    <summary><b>output</b></summary>
  <pre>
@@ -96,11 +113,13 @@
 ## C Language      
 ในภาษา C นั้น ไม่มี ตัวแทนการทำ General Delimited String เหมือนในภาษา Ruby (%) แต่มีการใช้เทคนิค อย่างอื่นแทน นั่นก็คือ escape sequence เพื่อให้อักขระพิเศษบางอย่างสามารถปรากฎบน String ได้ เช่น \n ที่ถ้าใช้เปล่าๆ จะหมายถึงการขึ้นบรรทัดใหม่
    ### Example C language :
+   ```c
          #include <stdio.h>
             int main() {
                 printf("He said, \"It's a 'tricky' string!\"");
              return 0;
             }
+   ```
 <details close>
     <summary><b>output</b></summary>
    <pre>
@@ -111,6 +130,7 @@
    ## Java Language
    ในทำนองเดียวกัน ภาษา Java ก็ใช้การescape sequence เช่นเดียวกับ ภาษา C แต่ในกรณีที่ตัวข้อความมีขนาดยาว เราจะใช้เทคนิคที่เรียกว่า Text Blocks (java 15 ขึ้นไปเท่านั้นที่สามารถใช้ได้) เพื่อทำให้การเขียน string นั้นสะดวกมากยิ่งขึ้น (Oracle, n.d.).
    ### Example Java language (กรณีใช้ Escape Sequence) :
+   ```java
          public class Main {
              public static void main(String[] args) {
                  // เช่นเดียวกับ C, Java ต้องใช้ \ เพื่อ escape "
@@ -118,6 +138,7 @@
                  System.out.println(trickyString);
              }
          }
+   ```
    <details close>
    <summary><b>output</b></summary>
        <pre>
@@ -127,6 +148,7 @@
    
    >แต่ถ้าตัว string มีการต่อกันมากๆเพื่อให้การเชียนง่ายขึ้นเราจะใช้ """ """ดังตัวอย่างต่อไปนี้
    ### Example Java language (กรณีใช้ Text Blocks) :
+   ```java
          public class test {
              public static void main(String[] args) {
                  // ORIGINAL
@@ -139,6 +161,7 @@
                  System.out.println(message);
              }
          }
+   ```
    <details close>
          <summary><b>output</b></summary>
                <pre>
@@ -151,7 +174,8 @@
                </pre>
    </details>
          
-   ### Example Java language (กรณีใช้ Text Blocks) :      
+   ### Example Java language (กรณีใช้ Text Blocks) :   
+   ```java
          public class test {
           public static void main(String[] args) {
               // TextBlocks version
@@ -166,6 +190,7 @@
               System.out.println(messageTextBlocks);
           }
       }
+   ```
    <details close>
             <summary><b>output</b></summary>
                 <pre>
@@ -181,6 +206,7 @@
    ## Python Language
    และเช่นกัน! python ก็ไม่มี General Delimited String เหมือนกับ C และ Java โดยPythonจะมีวิธีการอยู่ 2 แบบ (Python Software Foundation, n.d.-a).
    ### Example 1. Triple-Quoted Strings  (ใช้ ''' ''' หรือ """ """ ประกบข้อความ) :
+   ```python
       message = """
       'The time has come,' the Walrus said,
       'To talk of many things:
@@ -188,6 +214,7 @@
       Of cabbages -- and kings --'
       """
       print(message)
+   ```
    <details close>
             <summary><b>output</b></summary>
                 <pre>
@@ -201,12 +228,14 @@
    >หมายเหตุ ในภาษา Python เรายังสามารถใช้ """ สิ่งที่ต้องการcomment """  เพื่อเป็นการ comment หลายบรรทัด แต่ถ้าจะ comment บรรทัดเดียวใช้ # ตามด้วยสิ่งที่อยากcomment
    
    ### Example 2.การสลับใช้เครื่องหมายคำพูด (ใช้ ' ' หรือ " " ) :
+   ```python
       # ถ้าในสตริงมี ' เช่นตรงจุด It's  ต้อง \' เพื่อ escape ' 
       message1 = ' He said, "It\'s a beautiful day!" ' 
       print(message1)
       # ถ้าในสตริงมี " ตรงข้อความ "It's a beautiful day!" ต้อง \" เพื่อ escape "
       message2 = " He said, \"It's a beautiful day!\" " 
       print(message2)
+   ```
    <details close>
             <summary><b>output</b></summary>
                 <pre>
