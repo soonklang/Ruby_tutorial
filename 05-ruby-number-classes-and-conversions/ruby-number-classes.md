@@ -876,10 +876,11 @@ end
 
 
 ## Referenes
-[1] “Ruby Number Classes and Conversions,” *Techotopia*, Techotopia.com. [Online]. Available: https://www.techotopia.com/index.php/Ruby_Number_Classes_and_Conversions. [Accessed: 4-Sep-2025].
+[1] “Ruby Number Classes and Conversions,” *Techotopia*, Techotopia.com. [Online]. Available: https://www.techotopia.com/index.php/Ruby_Number_Classes_and_Conversions. [Accessed: 1-Sep-2025].
 
 [2] “Ruby | Integer Class,” *GeeksforGeeks*, Last updated 11 Jul. 2025. [Online]. Available:
-https://www.geeksforgeeks.org/ruby/ruby-integer-class/. [Accessed: 4-Sep-2025].
+https://www.geeksforgeeks.org/ruby/ruby-integer-class/. [Accessed: 1-Sep-2025].
 
-[3] *Programming Ruby – The Pragmatic Programmer’s Guide*, “class Fixnum < Integer,” Phrogz.net. [Online]. Available: https://phrogz.net/programmingruby/ref_c_fixnum.html. [Accessed: 4-Sep-2025].
+[3] *Programming Ruby – The Pragmatic Programmer’s Guide*, “class Fixnum < Integer,” Phrogz.net. [Online]. Available: https://phrogz.net/programmingruby/ref_c_fixnum.html. [Accessed: 2-Sep-2025].
 
+[4] Matz, "Class: Bignum," *Ruby 2.0.0 Documentation*, 2013. [Online]. Available: https://docs.ruby-lang.org/en/2.0.0/Bignum.html. [Accessed: 2-Sep-2025].
