@@ -1,2 +1,2 @@
-# Ruby String Substitutio
+# Ruby String Substitution
 
