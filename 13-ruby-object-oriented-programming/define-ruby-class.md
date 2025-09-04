@@ -24,12 +24,12 @@ class Dog
   end
 end
 
-my_dog = Dog.new("white", 3) # create object
+my_dog = Dog.new("white", 1) # create object
 my_dog.bark
 ```
 ## ผลลัพธ์
 ```
-The-3-year-old white dog: Bao! Bao!
+The-1-year-old white dog: Bao! Bao!
 ```
 ## ตัวอย่างการสร้าง Object ในภาษา Ruby แบบใช้ BasicObject
 ```ruby
@@ -45,7 +45,7 @@ attr_accessor :color, :age
   end
 end
 
-my_dog = Dog.new("white", 3) # create object
+my_dog = Dog.new("white", 1) # create object
 my_dog.bark 
 ````
 ## ผลลัพธ์
@@ -71,7 +71,7 @@ void bark(Dog* dog) {// method Dog* dog encap
 int main() {
     Dog my_dog; // create object
     strcpy(my_dog.color, "white");  
-    my_dog.age = 3;                 
+    my_dog.age = 2;                 
 
     // เรียก method
     bark(&my_dog);
@@ -82,14 +82,14 @@ int main() {
 ```
 ## ผลลัพธ์
 ```
-The-3-year-old white dog: Bao! Bao!
+The-2-year-old white dog: Bao! Bao!
 ```
 ## Object ในภาษา Python
 หลักการ Object ในภาษา python มีความคล้ายกันกับของภาษา Ruby เป็นอย่างมากตรงที่ข้อมูลทุกอย่างในโปรแกรมภาษา python ถูกมองเป็น object และโดยแต่ละ object จะมีองค์ประกอบ 3 ส่วน ได้แก่
   1. Identity เปรียบเสมือนเป็น address ของ object เพราะเมื่อใดที่มันถูกสร้างค่าของมันจะไม่มีทางเปลี่ยน
   2. Type คือชนิดของ object บอกว่า object รองรับ operation แบบไหน
   3. Value คือข้อมูลที่ถูกเก็บอยู่ใน object มี 2 แบบ คือ แบบเปลี่ยนค่าได้ และ เปลี่ยนค่าไม่ได้<br>
-สิ่งที่ python ไม่เหมือน ruby จะเป็นตรง attribute ที่จะใช้ self แทน @ 
+สิ่งที่ Python ไม่เหมือน Ruby จะเป็นตรง attribute ที่จะใช้ self แทน @ การใช้ self เป็นเหมือนการบ่งบอกว่าชี้ไปที่ตัวแปรปัจจุบัน แต่ไม่จำเป็นต้องใช้ชื่อ self ก็ได้เพราะไม่ใช่คำสงวนแต่เป็นคำที่คนทั่วไปให้การยอมรับ
 ## ตัวอย่างการสร้าง Object ในภาษา Python
 ```python
 class Dog:
@@ -100,8 +100,12 @@ class Dog:
     def bark(self):        # method
         print(f"The-{self.age}-year-old {self.color} dog: Bao! Bao!")
 
-my_dog = Dog("white", 3)
+my_dog = Dog("white", 3) # create object
 my_dog.bark()
+```
+## ผลลัพธ์
+```
+The-3-year-old white dog: Bao! Bao!
 ```
 ## Class คืออะไร
 object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class
