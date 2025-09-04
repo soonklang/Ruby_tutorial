@@ -1,11 +1,5 @@
----
-description: >-
-  ใน module Math ของภาษาเขียนโปรแกรม Ruby มีค่าคงที่ทางคณิตศาสตร์ที่ใช้กันทั่วไป
-  2 ค่า
-icon: pi
----
-
 # Ruby Math Constants
+ใน module Math ของภาษาเขียนโปรแกรม Ruby มีค่าคงที่ทางคณิตศาสตร์ที่ใช้กันทั่วไป 2 ค่า
 
 ## <mark style="color:$danger;">ค่าคงที่ทางคณิตศาสตร์มีอะไรบ้าง</mark>
 
@@ -14,7 +8,7 @@ icon: pi
 <pre class="language-ruby"><code class="lang-ruby"><strong>Math.constants # PI E
 </strong></code></pre>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 สังเกตได้ว่าจะมี <mark style="color:blue;">PI E</mark> และ <mark style="color:blue;">DomainError</mark>&#x20;
 
@@ -22,32 +16,28 @@ icon: pi
 
 ส่วน <mark style="color:blue;">DomainError</mark> เป็นเพียง Exception สำหรับ error เมื่อค่าตัวเลขที่ใส่ลงไปในฟังก์ชันคณิตศาสตร์ ไม่สามารถเป็นโดเมนได้
 
-{% include "../.gitbook/includes/line.md" %}
+***
 
 ## <mark style="color:$danger;">การเรียกใช้งานค่าคงที่ทางคณิตศาสตร์</mark>
 
 สามารถเรียกใช้งานผ่าน module Math โดยเรียกผ่านเครื่องหมาย ::                                                                      หรือ include module <mark style="color:$primary;">Math</mark> แล้วจะสามารถเรียกได้โดยตรง
 
-{% tabs %}
-{% tab title="เรียกผ่าน module" %}
+เรียกผ่าน module
 ```ruby
 Math::PI   # => 3.141592653589793
 Math::E   # => 2.718281828459045
 ```
-{% endtab %}
 
-{% tab title="เรียกโดยตรง" %}
+เรียกโดยตรง
 ```ruby
 include Math
 PI   # => 3.141592653589793
 E   # => 2.718281828459045
 ```
-{% endtab %}
-{% endtabs %}
 
-<div data-full-width="false"><figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
 
-{% include "../.gitbook/includes/line.md" %}
+***
 
 ### <mark style="color:$danger;">C</mark>
 
@@ -67,7 +57,7 @@ M_PI // 3.14159265358979323846
 M_E // 2.71828182845904523536
 ```
 
-{% include "../.gitbook/includes/line.md" %}
+***
 
 ### <mark style="color:$danger;">Java</mark>
 
@@ -78,7 +68,7 @@ Math.PI // 3.141592653589793
 Math.E // 2.718281828459045
 ```
 
-{% include "../.gitbook/includes/line.md" %}
+***
 
 ### <mark style="color:$danger;">Python</mark>
 
@@ -94,5 +84,3 @@ import math
 math.pi # 3.141592653589793
 math.e # 2.718281828459045
 ```
-
-{% include "../.gitbook/includes/line.md" %}
