@@ -29,6 +29,10 @@ int(10.898)
 
 #Reference
 
-Built-in Function - https://docs.python.org/3/library/functions.html
+Java - Type Casting - https://marcuscode.com/lang/java/type-conversions
 
-Kernel Method - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
+C - Cast Operator - https://en.cppreference.com/w/c/language/cast.html
+
+Python - Built-in Function - https://docs.python.org/3/library/functions.html
+
+Ruby - Kernel Method - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
