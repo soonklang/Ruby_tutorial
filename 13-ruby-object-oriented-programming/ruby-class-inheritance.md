@@ -166,7 +166,62 @@ test_obj.super_method
   </details>
   
 - ### C
+  ในภาษา C นั้นไม่มี class ทำให้ไม่มี concept การสืบทอด แต่ก็มีสิ่งคล้ายกับ class อยู่คือ struct โดยเราสามารถจำลองการสืบทอดโดยใช้ การเรียก struct ใน struct อีกทีได้
 
+  **ตัวอย่าง**
+  ```C
+
+  #include <stdio.h>
+  #include <string.h>
+
+  // จำลองเป็น Superclass
+  typedef struct {
+    char name[50];
+  } Animal;
+
+  // จำลองเป็น Subclass
+  typedef struct {
+    Animal base;  // จำลอง inheritance
+  } Dog;
+
+  // method of Animal
+  void speak(Animal* a) {
+    printf("%s barks.\n", a->name);
+  }
+
+  // initializer of Animal
+  void initAnimal(Animal* a, const char* name) {
+    strncpy(a->name, name, sizeof(a->name));
+    a->name[sizeof(a->name) - 1] = '\0';
+  }
+
+  //initializer of Dog
+  void initDog(Dog* d, const char* name) {
+    initAnimal(&d->base, name); // เรียก initializer ของ Animal
+  }
+
+  int main() {
+    Dog dog;
+    initDog(&dog, "Dum");
+
+    // เรียก speak ของ Animal โดยการ cast 
+    speak((Animal*)&dog);
+
+    return 0;
+  }
+
+  
+  ```
+
+
+  <details>
+
+  <summary>Output</summary>
+
+  > Dum barks.
+
+  </details>
+  
 ---
 
 ## Method Overriding
@@ -262,7 +317,7 @@ obj.display "ONE", "TWO"
 
 ---
 
-## Class Inheritance across different files
+## Class Inheritance across different files ในภาษา Ruby
 ในตัวอย่าง code ต่างๆที่ได้แสดงให้ดูไปเป็นการสืบทอดที่สามารถทำได้หากเราประกาศ class ไว้ไฟล์เดียวกัน แต่เราก็สามารถที่จะสืบทอด class จาก class ที่ประกาศไว้ในไฟล์อื่นๆได้เหมือนกัน โดย
 
 - **require_relative** ใช้เมื่อไฟล์ของ class ที่อยากจะสืบทอด(Super Class)อยู่ใน Folder เดียวกันกับ Sub Class
