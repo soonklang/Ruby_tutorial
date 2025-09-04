@@ -201,4 +201,14 @@ n = Name.new # new is method
 ```
 Creating a new Name
 ```
+
 ## References
+GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
+GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
+TechTarget. What is an object in programming?, from https://www.techtarget.com/searchapparchitecture/definition/object
+GeeksforGeeks. Ruby | Class & Object, from https://www.geeksforgeeks.org/ruby/ruby-class-object/
+RubyDocumentation. Object, from https://ruby-doc.org/core-3.1.1/Object.html
+StackOverFlow. Why C language isn't Object Oriented language even though it has (Structures) struct keyword which is same as Class keyword of C++?, from https://stackoverflow.com/questions/67712333/why-c-language-isnt-object-oriented-language-even-though-it-has-structures-st
+PythonDocumentation. Data model, from https://docs.python.org/3/reference/datamodel.html#objects-values-and-types
+OpenJDK. The Java® Language Specification, from https://cr.openjdk.org/~mr/jigsaw/spec/java-se-9-jls-diffs.pdf
+RubyDocumentation. Class, from https://ruby-doc.org/core-2.5.4/Class.html
