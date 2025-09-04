@@ -601,9 +601,16 @@ obj.display "ONE", "TWO"
 ---
 
 ## References
-- 1
-- 2
-- 3
-- 4
+
+- Ruby User’s Guide. (n.d.). Inheritance. In *Ruby User’s Guide*. Retrieved September 4, 2025, from https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/inheritance.html
+- Lieblang, M. (n.d.). How to implement inheritance and polymorphism in C. In *Modern C Programming*. Retrieved September 4, 2025, from https://moderncprogramming.com/how-to-implement-inheritance-and-polymorphism-in-c/
+- GeeksforGeeks. (2021, August 5). Ruby | Inheritance. Retrieved September 4, 2025, from https://www.geeksforgeeks.org/ruby/ruby-inheritance/
+- Codecademy Team. (2023, November 7). *What is Inheritance in Object‑Oriented Programming?* Retrieved September 4, 2025, from https://www.codecademy.com/resources/blog/what-is-inheritance
+- 
+
+
+
+
+
 
 ---
