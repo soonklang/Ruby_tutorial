@@ -11,7 +11,7 @@ icon: gem
 
 * ค่าคงที่ทางคณิตศาสตร์
 * [ruby-math-constants.md](ruby-math-functions-and-methods/ruby-math-constants.md "mention")
-  * [#undefined](ruby-math-functions-and-methods/ruby-math-constants.md#undefined "mention")
+  * [#ค่าคงที่ทางคณิตศาสตร์มีอะไรบ้าง](ruby-math-functions-and-methods/ruby-math-constants.md#undefined "mention")
   * [#undefined-1](ruby-math-functions-and-methods/ruby-math-constants.md#undefined-1 "mention")
     * [#module](ruby-math-functions-and-methods/ruby-math-constants.md#module "mention")
     * [#undefined-3](ruby-math-functions-and-methods/ruby-math-constants.md#undefined-3 "mention")
