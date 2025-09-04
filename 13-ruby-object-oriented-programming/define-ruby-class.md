@@ -84,6 +84,25 @@ int main() {
 ```
 The-3-year-old white dog: Bao! Bao!
 ```
+## Object ในภาษา Python
+หลักการ Object ในภาษา python มีความคล้ายกันกับของภาษา Ruby เป็นอย่างมากตรงที่ข้อมูลทุกอย่างในโปรแกรมภาษา python ถูกมองเป็น object และโดยแต่ละ object จะมีองค์ประกอบ 3 ส่วน ได้แก่
+  1. Identity เปรียบเสมือนเป็น address ของ object เพราะเมื่อใดที่มันถูกสร้างค่าของมันจะไม่มีทางเปลี่ยน
+  2. Type คือชนิดของ object บอกว่า object รองรับ operation แบบไหน
+  3. Value คือข้อมูลที่ถูกเก็บอยู่ใน object มี 2 แบบ คือ แบบเปลี่ยนค่าได้ และ เปลี่ยนค่าไม่ได้<br>
+สิ่งที่ python ไม่เหมือน ruby จะเป็นตรง attribute ที่จะใช้ self แทน @ 
+## ตัวอย่างการสร้าง Object ในภาษา Python
+```python
+class Dog:
+    def __init__(self, color, age):
+        self.color = color  # attribute
+        self.age = age      # attribute
+
+    def bark(self):        # method
+        print(f"The-{self.age}-year-old {self.color} dog: Bao! Bao!")
+
+my_dog = Dog("white", 3)
+my_dog.bark()
+```
 ## Class คืออะไร
 object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class
 หน่วยความจำสำหรับ object จะถูกจัดสรรก็ต่อเมื่อ object ถูกสร้างขึ้น (instantiation)<br> 
