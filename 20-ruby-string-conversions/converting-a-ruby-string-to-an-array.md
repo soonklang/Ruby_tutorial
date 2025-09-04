@@ -130,7 +130,7 @@ cherry</pre>
 
 > [!IMPORTANT]
 > **public String[] split(String regex, int limit)** <br>
-> limit จะกำหนดหรือไม่ก็ได้ (สำหรับข้อควรระวังของ limit ในภาษา JAVA เป็นแบบเดียวกับของ Ruby)
+> limit จะกำหนดหรือไม่ก็ได้ (สำหรับข้อควรระวังของ limit ในภาษา JAVA เป็นแบบเดียวกับของ [Ruby](#ข้อควรระวัง))
 
 
 
