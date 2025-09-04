@@ -1,12 +1,24 @@
 # Ruby Ternary Operator
 Ternary operator คือ ตัวดำเนินการที่ใช้เขียนเงื่อนไขแบบย่อ ในบรรทัดเดียว แทนการใช้ if  else แบบเต็ม
 # ตัวอย่างการเขียน if else ใน Ruby
-<img width="377" height="213" alt="image" src="https://github.com/user-attachments/assets/d28dc935-1951-49f8-832e-7082f3b7f7bb" />
+```ruby
+wight = 75
+if wight >= 75
+    body = "fat"
+else 
+    body = "thin"
+end
+puts body
 
+```
 
 
 # ตัวอย่าง Ternary Oparator ใน Ruby
-<img width="447" height="101" alt="image" src="https://github.com/user-attachments/assets/81125430-b010-44b1-928c-3a6555e5e1b9" />
+```ruby
+wight = 75
+body = wight >= 75 ? "fat" : "thin"
+puts body
+```
 
 
 จะเห็นได้ว่า การเขียนแบบ Ternary Operator ทำให้โค้ด if else มีความกระชับ ลดบรรทัดในการเขียน
