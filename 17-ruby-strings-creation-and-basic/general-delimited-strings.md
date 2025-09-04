@@ -89,6 +89,7 @@
    This is "my" String
  </pre>
 </details> 
+
 >ซึ่งตัวคั่นนั้นก็สามารถใช้กับข้อมูลประเภทอื่นๆได้เช่นกัน เช่น %w[apple banana cherry] ทำให้ สร้าง Array ของ String โดยไม่ต้องพิมพ์ " หรือ , และยังมีตัวคั่นอื่นๆอีก ซึ่งสามารถ ศึกษาต่อที่หัวข้อ General Delimited Input (Thomas et al., 2013).
 
 # เปรียบเทียบกับภาษาอื่นๆ
@@ -141,7 +142,7 @@
    <details close>
          <summary><b>output</b></summary>
                <pre>
-                  'The time has come,' the Walrus said,
+                        'The time has come,' the Walrus said,
                         'To talk of many things:
                         Of shoes -- and ships -- and sealing-wax --
                         Of cabbages -- and kings --
@@ -168,7 +169,7 @@
    <details close>
             <summary><b>output</b></summary>
                 <pre>
-                  'The time has come,' the Walrus said,
+                        'The time has come,' the Walrus said,
                         'To talk of many things:
                         Of shoes -- and ships -- and sealing-wax --
                         Of cabbages -- and kings --
@@ -179,7 +180,7 @@
    
    ## Python Language
    และเช่นกัน! python ก็ไม่มี General Delimited String เหมือนกับ C และ Java โดยPythonจะมีวิธีการอยู่ 2 แบบ (Python Software Foundation, n.d.-a).
-   ### Example 1. Triple-Quoted Strings  (ใช้ ''' ''' หรือ """ """ ประกบข้อความ)    
+   ### Example 1. Triple-Quoted Strings  (ใช้ ''' ''' หรือ """ """ ประกบข้อความ) :
       message = """
       'The time has come,' the Walrus said,
       'To talk of many things:
@@ -196,9 +197,10 @@
                   Of cabbages -- and kings --'
                 </pre>
    </details>
+   
    >หมายเหตุ ในภาษา Python เรายังสามารถใช้ """ สิ่งที่ต้องการcomment """  เพื่อเป็นการ comment หลายบรรทัด แต่ถ้าจะ comment บรรทัดเดียวใช้ # ตามด้วยสิ่งที่อยากcomment
    
-   ### Example 2.การสลับใช้เครื่องหมายคำพูด (ใช้ ' ' หรือ " " )
+   ### Example 2.การสลับใช้เครื่องหมายคำพูด (ใช้ ' ' หรือ " " ) :
       # ถ้าในสตริงมี ' เช่นตรงจุด It's  ต้อง \' เพื่อ escape ' 
       message1 = ' He said, "It\'s a beautiful day!" ' 
       print(message1)
@@ -212,23 +214,23 @@
                 </pre>
    </details>
       
-   ##  เอกสารอ้างอิง (References) :
-   
-   cppreference.com. (n.d.). Escape sequences. Retrieved October 26, 2023, from https://en.cppreference.com/w/c/language/escape.html
+   ### **เอกสารอ้างอิง (References)**
 
-   GeeksforGeeks. (2023, September 26). Escape sequences in Java. https://www.geeksforgeeks.org/java/escape-sequences-in-java/
+#### **ภาษา C**
+*   cppreference.com. (n.d.). Escape sequences. Retrieved October 26, 2023, from https://en.cppreference.com/w/c/language/escape.html
+*   GeeksforGeeks. (2023, October 23). How to split a string by a delimiter in C? https://www.geeksforgeeks.org/c/how-to-split-a-string-by-a-delimiter-in-c/
 
-   GeeksforGeeks. (2023, October 23). How to split a string by a delimiter in C? https://www.geeksforgeeks.org/c/how-to-split-a-string-by-a-delimiter-in-c/
+#### **ภาษา Java**
+*   GeeksforGeeks. (2023, September 26). Escape sequences in Java. https://www.geeksforgeeks.org/java/escape-sequences-in-java/
+*   Oracle. (n.d.). Text blocks. Oracle Help Center. Retrieved October 26, 2023, from https://docs.oracle.com/en/java/javase/15/text-blocks/index.html
 
-   Oracle. (n.d.). Text blocks. Oracle Help Center. Retrieved October 26, 2023, from https://docs.oracle.com/en/java/javase/15/text-blocks/index.html
+#### **ภาษา Python**
+*   Python Software Foundation. (n.d.-a). An informal introduction to Python. Python 3.12.0 documentation. Retrieved October 26, 2023, from https://docs.python.org/3/tutorial/introduction.html#text
+*   Python Software Foundation. (n.d.-b). Text sequence type — str. Python 3.12.0 documentation. Retrieved October 26, 2023, from https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
 
-   Python Software Foundation. (n.d.-a). An informal introduction to Python. Python 3.12.0 documentation. Retrieved October 26, 2023, from https://docs.python.org/3/tutorial/introduction.html#text
-
-   Python Software Foundation. (n.d.-b). Text sequence type — str. Python 3.12.0 documentation. Retrieved October 26, 2023, from https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
-
-   Techotopia. (n.d.). Ruby strings - Creation and basics. Retrieved October 26, 2023, from https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
-
-   Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers' guide (4th ed.). The Pragmatic Programmers.
+#### **ภาษา Ruby**
+*   Techotopia. (n.d.). Ruby strings - Creation and basics. Retrieved October 26, 2023, from https://www.techotopia.com/index.php/Ruby_Strings_-_Creation_and_Basics
+*   Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers' guide (4th ed.). The Pragmatic Programmers.
 
    # Presentation
 
