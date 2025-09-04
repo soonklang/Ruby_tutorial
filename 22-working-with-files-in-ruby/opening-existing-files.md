@@ -9,16 +9,18 @@ Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 
 ตัวอย่างที่ 1 :
-	```File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
-	```
+```
+File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
+```
 output
 	> Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 
 ตัวอย่างที่ 2 :
-	```File.open("text.txt").each(',') { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด โดยจะตัดประโยคด้วย ","
-	```
+```
+ File.open("text.txt").each(',') { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด โดยจะตัดประโยคด้วย ","
+```
 output
 	> Fred Bloggs,
 Manager,
@@ -34,10 +36,11 @@ Female,
 38
 
 ตัวอย่างที่ 3 :
-	```File.open("text.txt") do |f| 
+```
+ File.open("text.txt") do |f| 
   2.times { puts f.gets } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด จำนวน 2 ประโยค
 end 
-	```
+```
 output
 	> Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
