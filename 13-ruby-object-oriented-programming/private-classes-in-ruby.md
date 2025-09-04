@@ -26,7 +26,8 @@ Marvel::Avengers.new.Tony
 Marvel::Guardians.new.Quill
 ```
 **ผลลัพธ์ :**
-```I am Iron-man
+```
+I am Iron-man
 Legendary Outlaw
 ```
 ในตัวอย่างจะเห็นได้ว่าเราสามารถเรียกใช้งาน method Tony และ Quill ซึ่งเป็น method ของคลาสย่อย(inner class) ภายนอกคลาสหลักได้ เนื่องจาก Guardians และ Avengers ประกาศเป็น public class ตาม default ของ Ruby
