@@ -158,7 +158,7 @@ The-4-year-old white dog: Bao! Bao!
 ```
 ## Class คืออะไร
 Class คือ พิมพ์เขียวหรือต้นแบบสำหรับ object โดยกำหนด attribute และ behavior ไว้ก่อน ก็จะทำให้สามารถสร้าง object มาได้หลาย object ที่มี attribute และ behavior เหมือนกัน
-object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class
+object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class ตอนที่เราเขียน class ขึ้นมา หน่วยความจำจะยังไม่ถูกใช้ แต่จะถูกใช้ก็ต่อเมื่อ object ถูกสร้างขึ้น (instantiation)<br> 
 ## ตัวอย่าง Class ของภาษา Ruby
 ```Ruby
 class Dog
@@ -173,5 +173,4 @@ class Dog
   end
 end
 ```
-หน่วยความจำสำหรับ object จะถูกจัดสรรก็ต่อเมื่อ object ถูกสร้างขึ้น (instantiation)<br> 
 ## Define Ruby Class
