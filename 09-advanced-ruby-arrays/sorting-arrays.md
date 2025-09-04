@@ -273,13 +273,11 @@ print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee
 
 # แหล่งอ้างอิง
 
-# References
-
 ## Ruby
 - Ruby Documentation. (n.d.). *Array*. Retrieved August 31, 2025, from https://docs.ruby-lang.org/en/master/Array.html  
 - Ruby Documentation. (n.d.). *Array#sort*. Retrieved August 31, 2025, from https://docs.ruby-lang.org/en/master/Array.html#method-i-sort  
 - Thomas, D., Fowler, C., & Hunt, A. (2013). *Programming Ruby 1.9 & 2.0 – The Pragmatic Programmers' Guide (4th ed.)* (p. 437). Pragmatic Bookshelf. Retrieved from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Programming%20Ruby%201.9%20%26%202.0%20-%20The%20Pragmatic%20Programmers'%20Guide%20-%20Fourth%20Edition.pdf  
-- Flanagan, D., & Matsumoto, Y. (1993). *The Ruby Programming Language* (p. 338). O’Reilly Media. Retrieved from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf  
+- Flanagan, D., & Matsumoto, Y. (2008). *The Ruby Programming Language* (p. 338). O’Reilly Media. Retrieved from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf  
 - Tate, B. (2016). *Ruby Recipes – A Problem-Solution Approach* (p. 84). Apress. Retrieved from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Ruby%20Recipes%20-%20A%20Problem-Solution%20Approach.pdf  
 
 ---
