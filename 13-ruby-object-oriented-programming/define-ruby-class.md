@@ -173,4 +173,6 @@ class Dog
   end
 end
 ```
-## Define Ruby Class
+## นิยาม Ruby Class
+
+## References
