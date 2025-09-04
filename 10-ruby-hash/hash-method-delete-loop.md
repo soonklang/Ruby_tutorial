@@ -291,7 +291,7 @@ balances.Where(kv => kv.Value>2000).ToDictionary(kv => kv.Key, kv => kv.Value)
 
 #### Ruby
 
-* ruby-lang.org
+* ruby-lang.org\
   https://docs.ruby-lang.org/en/master/Hash.html
 * ruby-doc.org
   https://ruby-doc.org/3.4.1/Hash.html
