@@ -1,2 +1,4 @@
 # Converting Numbers in Ruby
 
+เกือบทุกอย่างในภาษาของ Ruby จะเป็น Object แม่แต่ number ของ Ruby ก็ถือว่าเป็น Object แต่ในภาษาอื่นในส่วนของ number จะเป็น primitive
+และใน Ruby ตัวเลขแต่ละตัวจะเชื่อมโยงกับ Class ของตัวเลขนั้นๆ ทำให้สามารถถูกเปลี่ยนแปลงโดย Method ของ Class นั้นๆได้
