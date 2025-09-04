@@ -5,8 +5,9 @@
 
 สามารถใช้เมธอด <mark style="color:yellow;">constants</mark> ของ module <mark style="color:$primary;">Math</mark> เพื่อดูค่าคงที่ภายใน module <mark style="color:$primary;">Math</mark>
 
-<pre class="language-ruby"><code class="lang-ruby"><strong>Math.constants # PI E
-</strong></code></pre>
+```ruby
+Math.constants # PI E
+```
 
 <figure><img src=".assets/image(3).png" alt=""><figcaption></figcaption></figure>
 
