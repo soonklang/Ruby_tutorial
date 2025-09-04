@@ -57,7 +57,7 @@ Hellowormyld
 
 ## ภาษา C
 
-ภาษา C ไม่มี method insert โดยตรงจึงต้องสร้าง method ในการแทรกข้อความขึ้นเอง
+ภาษา C ไม่มี method insert() โดยตรงจึงต้องสร้าง method ในการแทรกข้อความขึ้นเอง
 
 **Example :**
 
