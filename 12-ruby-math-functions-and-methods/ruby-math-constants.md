@@ -9,7 +9,6 @@
 Math.constants # PI E
 ```
 
-<figure><img src="../assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 สังเกตได้ว่าจะมี <mark style="color:blue;">PI E</mark> และ <mark style="color:blue;">DomainError</mark>&#x20;
 
