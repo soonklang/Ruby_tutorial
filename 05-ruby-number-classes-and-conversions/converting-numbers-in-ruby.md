@@ -3,7 +3,9 @@
 การแปลงชนิดของข้อมูลของภาษา Ruby จากชนิดหนึ่งไปอีกชนิดได้ จะต้องวใช้ Method และ รับค่าที่จะแปลงเข้าไป
 ตัวอย่างต่อไปนี้เราจะมีการเปรียบเทียบกับ Java C Python
 
-โดยการแปลงค่าของแต่ละภาษามีความแตกต่างกันอยู่นิดหน่อย คือ ภาษา C กับ Java จะ
+โดยการแปลงค่าของแต่ละภาษามีความแตกต่างกันอยู่นิดหน่อย คือ 
+ภาษา C กับ Java จะเรียกว่า Type Casting
+ภาษา Ruby จะเป็น 
 
 # Convert Floating Point -> Integer
 ในภาษาของ Ruby
@@ -26,4 +28,6 @@ int(10.898)
 ```
 
 #Reference
-https://docs.python.org/3/library/
+
+Built-in Functions https://docs.python.org/3/library/functions.html
+Kernel Method https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
