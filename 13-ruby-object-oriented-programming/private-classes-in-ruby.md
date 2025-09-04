@@ -73,8 +73,8 @@ constant Marvel::Guardians
 referenced (NameError)
 ```
 จากในตัวอย่างนี้เราจะเห็นได้ว่าเราสามารถเรียกใช้ method Tony ภายนอกคลาสหลักได้ปกติ แต่ไม่สามารถเรียก method Quill ได้เนื่องจากเราได้สร้างคลาส Guardians เป็นแบบ private class ไว้ทำให้ไม่สามารถเรียกใช้ method ของคลาสนี้ภายนอก outer-class ได้  
-##ต่อมาเราจะมาเปรียบเทียบกับ private class ของภาษาอื่นๆกัน  
-###Java  
+## ต่อมาเราจะมาเปรียบเทียบกับ private class ของภาษาอื่นๆกัน  
+### Java  
 ในภาษา Java เราจะสร้าง private class โดยการใช้:   
 `private class class_name`  
 **ตัวอย่าง :**  
@@ -102,7 +102,7 @@ Main.java:13: error: OuterClass.InnerClass has private access in OuterClass
               ^
 ```
 จะเห็นได้ว่าการสร้าง private class ในภาษา java นั้นเป็นการสร้างแบบตรงไปตรงมาโดยการใส่ private ไว้ด้านหน้าเลย ต่างจาก ruby ที่ต้องใช้ private_constant:class เนื้องจากไม่มี private class syntax โดยตรง  
-###Python  
+### Python  
 ในภาษา python ไม่มี private class โดยตรงแต่จะมีสิ่งที่เรียกว่า Private name mangling ซึ่งใกล้เคียงกับ private class มากที่สุด หลักการทำงานคือใส่ __ ด้านหน้าชื่อของ inner-class จากนั้น python จะทำการแปลงชื่อของ inner-class โดยอัตโนมัติ  
 **หลักการทำงาน :**  
 สมมุติเราสร้างคลาส __Engine(inner-class) ในคลาส car(outer-class) มันจะถูกแปลงชื่อเป็น _Car__Engine โดยอัตโนมัติ ทำให้การเรียก Car.__Engine จากภายนอกคลาส Car เกิด Error ขึ้น   
