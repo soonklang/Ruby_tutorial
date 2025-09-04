@@ -69,7 +69,7 @@ void insertString(char *str, const char *insert, int index)
 
 <kbd>insert</kbd> คือ ข้อความที่ต้องการแทรก
 
-<kbd>index</kbd> ตำแหน่งใน <kbd>str</kbd> ที่ต้องการแทรก <kbd>insert</kbd> เข้าไป
+<kbd>index</kbd> คือ ตำแหน่งใน <kbd>str</kbd> ที่ต้องการแทรก <kbd>insert</kbd> เข้าไป
 
 **Example :**
 
