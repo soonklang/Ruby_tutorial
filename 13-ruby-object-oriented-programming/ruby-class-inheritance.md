@@ -75,6 +75,54 @@ test_obj.super_method
 
 ### การใช้งาน Class Inheritance ในภาษาอื่นๆ
 - ### Java
+  การสืบทอดใน Java สามารถทำได้โดยใช้ keyword `extend`
+  
+  **ตัวอย่าง**
+  ```Java
+  // Superclass
+  public class ThisIsSuperClass {
+    // Constructor (เหมือน initialize ใน Ruby)
+    public ThisIsSuperClass() {
+        System.out.println("Creating class");
+    }
+
+    public void superMethod() {
+        System.out.println("Method of Superclass");
+    }
+  }
+
+  // Subclass
+  public class ThisIsSubClass extends ThisIsSuperClass {
+    
+  }
+  
+  public class Main {
+    public static void main(String[] args) {
+        // creating object from superclass
+        new ThisIsSuperClass();
+
+        // creating object from subclass
+        ThisIsSubClass testObj = new ThisIsSubClass();
+
+        // calling the method of superclass from subclass
+        testObj.superMethod();
+    }
+  }
+
+  
+  ```
+
+  <details>
+
+  <summary>Output</summary>
+
+  > Creating class\
+  > Creating class\
+  > Method of Superclass
+
+  </details>
+  
+  
 - ### Python
 - ### C
 
