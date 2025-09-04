@@ -8,8 +8,7 @@
 ```ruby
 Math.constants # PI E
 ```
-![Local Image](.assets/image (3).png)
-
+<div data-full-width="false"><figure><img src="./assets/image (3).png" alt=""><figcaption></figcaption></figure></div>
 สังเกตได้ว่าจะมี <mark style="color:blue;">PI E</mark> และ <mark style="color:blue;">DomainError</mark>&#x20;
 
 ค่าคงที่มีเพียงค่าพาย <mark style="color:blue;">PI</mark> (π) และค่าออยเลอร์ <mark style="color:blue;">E</mark> (e) มีชนิดข้อมูลเป็น float
@@ -35,7 +34,7 @@ PI   # => 3.141592653589793
 E   # => 2.718281828459045
 ```
 
-<div data-full-width="false"><figure><img src="../assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="./assets/image.png" alt=""><figcaption></figcaption></figure></div>
 
 ***
 
