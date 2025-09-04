@@ -11,7 +11,9 @@ end
 puts body
 
 ```
-
+```
+fat
+```
 
 # ตัวอย่าง Ternary Oparator ใน Ruby
 ```ruby
@@ -21,56 +23,175 @@ puts body
 ```
 
 
-จะเห็นได้ว่า การเขียนแบบ Ternary Operator ทำให้โค้ด if else มีความกระชับ ลดบรรทัดในการเขียน
+จะเห็นได้ว่า การเขียนแบบ Ternary Operator ทำให้โค้ด if else มีความกระชับ ลดบรรทัดในการเขียน 
+<br><br>
 แต่มีข้อควรระวังคือ เหมาะกับ if else ที่มีเงื่อนไขไม่ซับซ้อน หากมีเงือนไขที่ซับซ้อมเกินไป ควรใช้ if else ปกติ
-
-
+# รูปแบบการเขียน Ruby ternary operator
+condition ? value if true : value if false
 # ส่วนประกอบของ Ruby ternary operator
-ประกอบด้วย 3 ส่วน คือ เงื่อนไข ? ค่าที่ได้เมื่อเงื่อนไขเป็นจริง : ค่าที่ได้เมื่อเงื่อนไขเป็นเท็จ
+ประกอบด้วย 3 ส่วน คือ <br><br>
+เงื่อนไข ? condition เงื่อนไขที่จะทำให้ผลลัพธ์เป็นจริง
+<br><br>
+ค่าที่ได้เมื่อเงื่อนไขเป็นจริง : value if true ค่าที่จะได้รับถ้าเงื่อนไขเป็นจริง
+<br><br>
+ค่าที่ได้เมื่อเงื่อนไขเป็นเท็จ value if false ค่าที่จะได้รับถ้าเงื่อนไขเป็นเท็จ
 
 # ปกติ ternary operator ถูกออกแบบมาให้ใช้กับแค่ 2 เงื่อนไข แต่ถ้าต้องการเขียนแบบ 3 เงื่อนไขก็สามารถเขียนได้
 รูปแบบ if else ปกติ 
+```ruby
+wight = 75
+if wight >= 75
+    body = "fat"
+elsif wight < 60
+    body = "proportionate"
+else 
+    body = "thin"
+end
+puts body
 
-
-<img width="477" height="272" alt="image" src="https://github.com/user-attachments/assets/76a62418-f523-48cd-9aa8-bcd06be7791a" />
-
-
+```
+เพิ่มเงื่อนไขขึ้นมาอีก 1 เงื่อนไข คือ weight < 75 
+<br><br>
 รูปแบบ ternary operator 
+```ruby
+wight = 75
+body = wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin")
+puts body
 
-
-<img width="935" height="127" alt="image" src="https://github.com/user-attachments/assets/00f92b05-0559-4774-abf3-db1949d1a565" />
-
-
-
-เป็นการเอาเงื่อนไข เอาเข้าไปใส่ในเงื่อนไขอีกที แต่ไม่แนะนำ เพราะจะยิ่งทำให้โค้ดอ่านยาก 
-
-
+```
+ในส่วนของ ternary operator เราจะทำการเพิ่มเงื่อนไข เข้าไปในเงื่อนไขอีกที
+<br><br>
+การทำงานก็คือ ถ้า wiegh >= 75 = fat (if)
+<br><br>
+ถ้าไม่ใช่ ให้เข้าไปดูเงื่อนไขที่ 2 ที่เป็นเท็จ ซึ่ง เป็นการถามเงื่อนไขอีกครั้ง
+<br><br>
+การทำงานก็คือ ถ้า wiegh < 60 = proportionate (elsif)
+<br><br>
+เงื่อนไขสุดท้ายคือ else = thin (else)
 # การเขียน ternary operator กับภาษาอื่นๆ เพื่อเปรียบเทียบ 
-<img width="523" height="242" alt="image" src="https://github.com/user-attachments/assets/bc002c36-e20e-4a7a-9d94-6448a263c396" />
-
-
-
-<img width="1015" height="56" alt="image" src="https://github.com/user-attachments/assets/822286ce-dfb8-4899-8121-ad099a8e4537" />
-
-
-
+# python ternary operator
+```python
+wight = 75
+if wight >= 75:
+    body = "fat"
+else:
+    body = "thin"
+print(body)
+```
+```python
+body = "fat" if wight >= 75 else "thin"
+print(body)
+```
+value if true if condition 1 else (value if true if condition 2 else value if false)
+<br><br>
 ในภาษา Python syntax จะค่อนข้างแตกต่างกับ Ruby
+# javascript ternary operator
+```javascript
+let wight = 75;
+let body;
+if (wight >= 75) {
+    body = "fat";
+} else {
+    body = "thin";
+}
+console.log(body);
+```
+```javascript
+body = wight >= 75 ? "fat" : "thin";
+console.log(body);
+```
+ในภาษา javascript syntax จะใกล้เคียง ruby เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+# java ternary operator
+```java
+int wight = 75;
+String body;
+if (wight >= 75) {
+    body = "fat";
+} else {
+    body = "thin";
+}
+    System.out.println(body);
+```
+```java
+body = (wight >= 75) ? "fat" : "thin");
+System.out.println(body);
+```
+ในภาษา java syntax จะใกล้เคียง ruby และ javascript เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+# สิ่งที่พิเศษ สำหรับ ternary operator คือ สามารถใช้คู่กับการแสดงผลบน terminal เช่น print console log และอื่นๆ
+```ruby
+puts wight >= 75 ? "fat" : "thin"
+```
+```python
+print("fat" if wight >= 75 else "thin")
+```
+```javascript
+console.log((wight >= 75) ? "fat" : "thin");
+```
+```java
+System.out.println((wight >= 75) ? "fat" :  "thin");
+```
+เป็นการเขียนเพื่อลดบรรทัด แต่ต้องระวัง เพราะว่าการทำแบบนี้ จะเป็นการทำงานครั้งเดียว ไม่มีการเก็บค่าใดๆ
 
+# และอีก 1 อย่างที่ใช้กับ ternary operator ได้ คือ การ return จาก method
+```ruby
+def body_type(wight)
+  wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin")
+end
 
-<img width="508" height="303" alt="image" src="https://github.com/user-attachments/assets/9ad2fafb-3802-4703-ac01-48b76b715583" />
+puts body_type(50)
+```
+```
+thin
+```
+```python
+def body_type(wight):
+    return "fat" if wight >= 75 else ("proportionate" if wight < 60 else "thin")
 
+print(body_type(75))
+```
+```
+fat
+```
+```javascript
+function bodyType(wight) {
+    return wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin");
+}
+console.log(bodyType(50));
+```
+```
+proportionate
+```
+```java
+static String bodyType(int wight) {
+        return (wight >= 75) ? "fat" : (wight < 60 ? "proportionate" : "thin");
+    }
 
-
-<img width="997" height="72" alt="image" src="https://github.com/user-attachments/assets/d6f8c5af-4c6f-4c91-aabd-934c7f5f7921" />
-
-ในภาษา javascript syntax จะเหมือน ruby เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
-
-
-<img width="565" height="307" alt="image" src="https://github.com/user-attachments/assets/f4243fd1-8a30-4ea9-b580-b716dd414cdf" />
-
-
-
-<img width="1058" height="57" alt="image" src="https://github.com/user-attachments/assets/3db34aea-7b19-493b-9022-0796902ea4ec" />
-
-
-ในภาษา java syntax จะเหมือน ruby และ javascript เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+    public static void main(String[] args) {
+        System.out.println(bodyType(75));
+}
+```
+```
+fat
+```
+จะเห็นว่า ทุกภาษาใช้ ternary return ได้เลย เพราะ ternary เป็น expression ไม่ใช่ statement
+# สรุป
+1.ternary operator นั้น เป็นการลดตัวโค้ดให้มีความกระชับแต่ไม่เหมาะกับเงื่อนไขที่มีความซับซ้อน เช่น if elsif else 
+<br><br>
+2.ternary operator สามารถ assignment ค่าให้ตัวแปรได้ตรงๆ
+<br><br>
+3.ternary operator สามารถ return ออกมาจาก method ได้
+<br><br>
+4.ternary operator สามารถ print ออกมาได้เลยตรงๆ ไม่ต้องเก็บค่าไว้ที่ไหน
+# อ้างอิง
+-Javascript ternary <br><br>
+https://www.geeksforgeeks.org/javascript/javascript-ternary-operator/<br><br>
+https://dev.to/nicm42/ternary-operators-in-javascript-go5<br><br>
+-pyton ternary <br><br>
+https://www.geeksforgeeks.org/python/ternary-operator-in-python/<br><br>
+https://www.datacamp.com/tutorial/pythons-ternary-operators-guide<br><br>
+-java ternary<br><br>
+https://www.w3schools.com/java/java_conditions_shorthand.asp<br><br>
+-ruby ternary<br><br>
+https://www.techotopia.com/index.php/Ruby_Flow_Control<br><br>
+https://expert-programming-tutor.com/tutorial/article/KE001533_5_code_shortened_with_Ternary_Operator.php<br><br>
+https://codeeak.wordpress.com/2015/12/08/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89-ternary-operator/<br><br>
