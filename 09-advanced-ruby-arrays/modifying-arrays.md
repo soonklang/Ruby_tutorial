@@ -318,4 +318,4 @@ Array after fill:
 ## Java
 - www.w3schools.com/java/java_arrays.asp
 - www.geeksforgeeks.org/java/how-to-insert-an-element-at-a-specific-position-in-an-array-in-java/
-- docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
+- https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
