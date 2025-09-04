@@ -122,7 +122,7 @@ while var != 11:
 </code></pre>
 </details>
 
-> สรุป###
+> ในภาษา java , c , python นั้นไม่มีคำสั่ง until ถ้าต้องการใช้งานให้ได้ผลลัพธ์แบบเดียวกันต้องใช้ผ่านคำสั่ง while ที่ตั้งเงื่อนตรงกันข้ามกับคำสั่ง while ปกติ ซึ่งก็คือการตั้งเงื่อนไขเริ่มต้นที่จะทำให้โปรเเกรมทำงานนั้นเป็นเท็จนั้นเอง
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -249,7 +249,7 @@ else:
 </code></pre>
 </details>
 
-> สรุป###
+> เช่นเดียวกับคำสั่ง until ในภาษา java , c , python นั้นก็ไม่มีคำสั่ง unless เช่นกัน ดังนั้นถ้าต้องการใช้งานให้ได้ผลลัพธ์แบบเดียวกันต้องใช้คำสั่ง if ที่จะทำเมื่อเงื่อนไขเป็นเท็จแทน java , c จะใช้ ! ในเงื่อนไข ในขณะที่ python จะใช้ คำสั่ง if not
 
 ## References
 
@@ -276,6 +276,8 @@ else:
 
 * GeeksforGeeks. (2018, 26 Oct). Ruby unless Statement and unless Modifier. GeeksforGeeks. Retrieved September 2, 2025, from
   https://www.geeksforgeeks.org/ruby/ruby-unless-statement-and-unless-modifier/
+
+### JAVA , C , PYTHON
 
 * Python Software Foundation. (n.d.). The while statement. In Python documentation (version 3). Retrieved September 3, 2025, from
 https://docs.python.org/3/reference/compound_stmts.html#the-while-statement
