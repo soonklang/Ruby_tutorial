@@ -9,7 +9,7 @@
 Math.constants # PI E
 ```
 
-<figure><img src=".assets/image(3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 สังเกตได้ว่าจะมี <mark style="color:blue;">PI E</mark> และ <mark style="color:blue;">DomainError</mark>&#x20;
 
@@ -36,7 +36,7 @@ PI   # => 3.141592653589793
 E   # => 2.718281828459045
 ```
 
-<div data-full-width="false"><figure><img src=".assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../assets/image.png" alt=""><figcaption></figcaption></figure></div>
 
 ***
 
