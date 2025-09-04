@@ -293,41 +293,41 @@ balances.Where(kv => kv.Value>2000).ToDictionary(kv => kv.Key, kv => kv.Value)
 
 * ruby-lang.org\
   https://docs.ruby-lang.org/en/master/Hash.html
-* ruby-doc.org
+* ruby-doc.org\
   https://ruby-doc.org/3.4.1/Hash.html
-* rubyapi.org
+* rubyapi.org\
   https://rubyapi.org/3.4/o/hash
-* rubyonrails.org
+* rubyonrails.org\
   https://api.rubyonrails.org/classes/Hash.html
-* LaunchSchool
+* LaunchSchool\
   https://launchschool.com/books/ruby/read/hashes
-* The Odin Project
+* The Odin Project\
   https://www.theodinproject.com/lessons/javascript-hashmap
 
 #### Python
 
-* Python Official Documentation
+* Python Official Documentation\
   https://docs.python.org/3/library/stdtypes.html#dict
-* Python Tutorial – Dictionaries
+* Python Tutorial – Dictionaries\
   https://realpython.com/python-dicts/
 
 #### Java
 
-* Java Official Documentation
+* Java Official Documentation\
   https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/HashMap.html
-* Java Tutorials – HashMap
+* Java Tutorials – HashMap\
   https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html
 
 #### C\#
 
-* Microsoft Docs – Dictionary\<TKey,TValue>
+* Microsoft Docs – Dictionary\<TKey,TValue>\
   https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2
 
 #### C++
 
-* C++ Reference – unordered\_map
+* C++ Reference – unordered\_map\
   https://en.cppreference.com/w/cpp/container/unordered\_map
-* C++ STL Documentation
+* C++ STL Documentation\
   https://www.cplusplus.com/reference/unordered\_map/unordered\_map/
 
 ## _Presentation_
