@@ -52,6 +52,15 @@ python จะมีโหมด "x" อยู่ด้วยหมายถึ�
 | **Python** | `open("example.txt", "x")`                 | `FileExistsError`         | `"x"` (write)   |
 | **C**      | `fopen("example.txt", "w")`       | จะถูกเขียนทับ            | `"w"` (write) |
 
+---
+
+### คลิปนำเสนอ
+-
+------
+### Presentation (slides)
+-
+---
+
 ## แหล่งที่มา
 https://www.techotopia.com/index.php/Working_with_Files_in_Ruby#Creating_a_New_File_with_Ruby
 https://www.w3schools.com/java/java_files.asp
