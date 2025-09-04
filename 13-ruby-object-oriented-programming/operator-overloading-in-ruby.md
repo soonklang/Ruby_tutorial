@@ -1,24 +1,29 @@
 # Operator Overloading in Ruby
 
-### Operator Overloading คืออะไร
+**Operator Overloading** คือ การกำหนดลักษณะการทำงานของ operator เช่น + , - , * , / , == เพื่อให้เหมาะสมกับการทำงานของแต่ละ object ที่ใช้งาน
 
-Operator Overloading คือ การกำหนดลักษณะการทำงานของ operator เช่น + , - , * , / , == เพื่อให้เหมาะสมกับการทำงานของแต่ละ object ที่ใช้งาน
+# Operator Overloading ในภาษาต่างๆ
+  * Ruby -> support การใช้ operator overloading
+  * Python -> ไม่ support การใช้ operator overloading
+  * C++ -> support การใช้ operator overloading
+  * C -> ไม่ support การใช้ operator overloading
+  * Java -> ไม่ support การใช้ **user defined** operator overloading
 
 # Ruby
 ใน Ruby Operator Overloading สามารถกำหนดโดยสร้าง def ในแต่ละ class เพื่อใช้งานกับ operator ต่างๆได้
 
 ```ruby
 
-class OverloadingTest
+class OverloadingTest                 # สร้าง class ใหม่
   attr_accessor :text
 
   def initialize(text)
     @text = text
   end
 
-  def *(t)
+  def *(t)                            # Operator Overloading
     a = ""
-    t.times{
+    t.times{                          # เติม String "Very " ตามจำนวน input
       a = a + "Very "
     }
     OverloadingTest.new(a + @text)
@@ -29,9 +34,9 @@ end
 good = OverloadingTest.new("Good")
 bad = OverloadingTest.new("Bad")
 
-good10_fake = "Good" * 10
+good10_fake = "Good" * 10            # ทดลองใช้ operator แบบ default
 bad3_fake = "Bad" * 3
-good10 = good * 10
+good10 = good * 10                   # ทดลองใช้ operator ที่ overload แล้ว
 bad3 = bad * 3
 
 puts good10_fake
@@ -41,35 +46,41 @@ puts bad3.text
 
 ```
 
-Output:
-GoodGoodGoodGoodGoodGoodGoodGoodGoodGood
-BadBadBad
-Very Very Very Very Very Very Very Very Very Very Good
-Very Very Very Bad
+Output:<br>
+> GoodGoodGoodGoodGoodGoodGoodGoodGoodGood<br>
+> BadBadBad<br>
+> Very Very Very Very Very Very Very Very Very Very Good<br>
+> Very Very Very Bad<br>
 
-จะสังเกตได้ว่า เมื่อมีการ Overloading operator "*" จะเพิ่มจำนวนรอบของคำว่า "Very " ไปตามจำนวนของ Integer
-ที่ * กับ object ที่กำหนดขึ้นเอง
+จะสังเกตได้ว่า เมื่อมีการทำ operator overloading ตัว operator `*` จะเพิ่มจำนวนรอบของคำว่า `"Very "` ไปตามจำนวนของ Integer
+ที่ `*` กับ object ของ `class OverloadingTest` 
 
 # Python
+ใน Python operator overloading สามารถกำหนดโดยสร้าง `def` ในแต่ละ class โดย operator แต่ละตัวจะ define ต่างกัน เช่น
+  * `__add__`    *(a + b)*
+  * `__sub__`    *(a - b)*
+  * `__mul__`    *(a * b)*
+  * `__truediv__`*(a / b)*
+  * `__mod__`    *(a % b)*
 
 ```python
 
-class OverloadingTest:
+class OverloadingTest:                       # สร้าง class ใหม่
   def __init__(self, text):
     self.text = text
     
-  def __mul__(self, t):
+  def __mul__(self, t):                      # Operator Overloading
     a = ""
-    for k in range(t):
+    for k in range(t):                       # เติม String "Very " ตามจำนวน input
       a = a + "Very "
     return OverloadingTest(a + self.text)
 
 good = OverloadingTest("Good")
 bad = OverloadingTest("Bad")
 
-good10_fake = "Good" * 10
+good10_fake = "Good" * 10                    # ทดลองใช้ operator แบบ default
 bad3_fake = "Bad" * 3
-good10 = good * 10
+good10 = good * 10                           # ทดลองใช้ operator ที่ overload แล้ว
 bad3 = bad * 3
 
 print(good10_fake)
@@ -79,11 +90,96 @@ print(getattr(bad3, 'text'))
 
 ```
 
-Output:
-GoodGoodGoodGoodGoodGoodGoodGoodGoodGood
-BadBadBad
-Very Very Very Very Very Very Very Very Very Very Good
-Very Very Very Bad
+Output:<br>
+> GoodGoodGoodGoodGoodGoodGoodGoodGoodGood<br>
+> BadBadBad<br>
+> Very Very Very Very Very Very Very Very Very Very Good<br>
+> Very Very Very Bad<br>
+
+จะสังเกตได้ว่า เมื่อมีการทำ operator overloading ตัว operator `*` จะเพิ่มจำนวนรอบของคำว่า `"Very "` ไปตามจำนวนของ Integer
+ที่ `*` กับ object ของ `class OverloadingTest`
+
+# C++
+ในภาษา C++ สามารถ operator overloading โดยสร้าง `class` ใหม่คล้ายกับ Ruby และ Python
+
+```c++
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class OverloadingTest{                          // สร้าง class ใหม่
+  private:
+    string text = "";
+  
+  public:
+    OverloadingTest(string text){
+      this->text = text;
+    }
+    
+    OverloadingTest operator*(int t){            // Operator Overloading
+        string a = "";
+        for(int i=0 ; i<t ; i++){                // เติม String "Very " ตามจำนวน input
+          a = a + "Very ";
+        }
+        return OverloadingTest(a + text);
+    }
+    
+    string getText(){
+      return this->text;
+    }
+    
+};
+
+int main() 
+{
+    OverloadingTest good = OverloadingTest("Good");
+    OverloadingTest bad = OverloadingTest("Bad");
+    
+    // OverloadingTest good10_fake = "Good"*10;  // ทดลองใช้ operator แบบ default แล้วเกิด error
+    // OverloadingTest bad3_fake = "Bad"*10;
+    OverloadingTest good10 = good*10;            // ทดลองใช้ operator ที่ overload แล้ว
+    OverloadingTest bad3 = bad*3;
+    
+    // cout << good10_fake;
+    // cout << bad3_fake;
+    cout << good10.getText();
+    cout << "\n";
+    cout << bad3.getText();
+    
+    return 0;
+}
+
+```
+
+Output:<br>
+> Very Very Very Very Very Very Very Very Very Very Good<br>
+> Very Very Very Bad<br>
+
+สาเหตุที่เกิด error เพราะว่าภาษา C++ ไม่มี default ของการ `*` `string` ด้วย `int`
+
+# Java
+ภาษา Java ไม่ support การใช้ **user defined** operator overloading แต่ยังมีการใช้ operator overloading แบบ built in อยู่ เช่น
+
+```java
+public class Main {
+    public static void main(String[] args) {
+      int a = 5;
+      int b = 5;
+      String c = "5";
+      
+      System.out.println(a + b);
+      
+      System.out.println(a + c);
+      System.out.println((a + c).getClass().getName());
+  }
+}
+```
+
+Output:<br>
+> 10<br>
+> 55<br>
+> java.lang.String<br>
 
 # Ref (WIP)
 
@@ -92,11 +188,18 @@ https://www.geeksforgeeks.org/ruby/operator-overloading-in-ruby/
 https://clouddevs.com/ruby/operator-overloading/
 
 ## Python
+https://docs.python.org/3/library/operator.html
 https://www.programiz.com/python-programming/operator-overloading
 
 ## Compiler
 https://onecompiler.com/
 
+## C
+https://stackoverflow.com/questions/3417413/operator-overloading-in-c
+
 ## C++
 https://en.cppreference.com/w/cpp/language/operators.html
 https://www.geeksforgeeks.org/cpp/operator-overloading-cpp/
+
+## Java
+https://stackoverflow.com/questions/1686699/operator-overloading-in-java
