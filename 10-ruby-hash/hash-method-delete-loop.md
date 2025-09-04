@@ -6,9 +6,9 @@ Hash ในภาษา Ruby คือโครงสร้างข้อมู
 
 ### ลักษณะสำคัญของ Hash
 
-* แต่ละ Key ต้องไม้ซ้ำกัน\
+* แต่ละ Key ต้องไม้ซ้ำกัน
 
-* Value สามารถซ้ำกันได้\
+* Value สามารถซ้ำกันได้
 
 * Hash จะเก็บลำดับตามที่ใส่เข้าไป
 
@@ -128,7 +128,7 @@ Object "name" = map.remove(key);
 
 > สามารถเป็น Object ใดก็ได้ จะคืนค่า value ที่ถูกลบ หากไม่เจอ key จะคืนค่า null
 
-#### ภาษา C\#
+#### ภาษา C#
 
 ```c#
 bool "name" = dict.Remove(key);
@@ -138,7 +138,7 @@ bool "name" = dict.Remove(key);
 
 ## Loop การวนลูปกับ Hash
 
-Hash คือโครงสร้างที่เก็บ คู่ key-value เราสามารถวนลูปเพื่อเข้าถึงหรือแก้ไขค่าได้หลายวิธี ช่วยให้เราทำงานกับข้อมูลใน Hash เช่น\
+Hash คือโครงสร้างที่เก็บ คู่ key-value เราสามารถวนลูปเพื่อเข้าถึงหรือแก้ไขค่าได้หลายวิธี ช่วยให้เราทำงานกับข้อมูลใน Hash เช่น
 
 
 * แสดงผลทุก key-value
@@ -167,7 +167,7 @@ Gon has 2000
 Mark has 3000
 ```
 
-#### ตัวอย่าง each\_key ใช้สำหรับการวนเฉพาะ key
+#### ตัวอย่าง each_key ใช้สำหรับการวนเฉพาะ key
 
 ```ruby
 balances.each_key { |name| puts name }
@@ -181,7 +181,7 @@ Gon
 Mark
 ```
 
-ยังมี each\_value ใช้สำหรับการวนเฉพาะ value และ each\_with\_index ใช้วน key-value พร้อม index
+ยังมี each_value ใช้สำหรับการวนเฉพาะ value และ each_with_index ใช้วน key-value พร้อม index
 
 #### ตัวอย่าง map / collect ใช้สำหรับการแปลงค่าใน Hash
 
@@ -257,7 +257,7 @@ balances.entrySet().stream().filter(e -> e.getValue()>2000).collect(Collectors.t
 
 > ตัวอย่างเลือก value > 2000
 
-#### ภาษา C\#
+#### ภาษา C#
 
 C# มี syntax คล้าย Java ต้องประกาศชนิดตัวแปร แต่สามารถใช้ LINQ ทำให้แปลง Dictionary ได้ง่ายขึ้นเหมือน Ruby และ Python
 
@@ -281,9 +281,9 @@ balances.Where(kv => kv.Value>2000).ToDictionary(kv => kv.Key, kv => kv.Value)
 
 ## Summary
 
-* Hash Method เมธอดที่ Ruby เตรียมไว้ให้ใช้งานกับ Object Hash ใช้เพื่อ เข้าถึง/เพิ่ม/แก้ไข/ลบ/รวม/วนลูป/แปลง ข้อมูลใน Hash\
+* Hash Method เมธอดที่ Ruby เตรียมไว้ให้ใช้งานกับ Object Hash ใช้เพื่อ เข้าถึง/เพิ่ม/แก้ไข/ลบ/รวม/วนลูป/แปลง ข้อมูลใน Hash
 
-* Delete ลบค่า key และ value ออกจาก Hash คืนค่าเป็น value ที่ถูกลบ หรือ nil, block หากไม่เจอ key\
+* Delete ลบค่า key และ value ออกจาก Hash คืนค่าเป็น value ที่ถูกลบ หรือ nil, block หากไม่เจอ key
 
 * Loop ใช้วนค่าใน Hash เพื่อ อ่าน/สร้าง/กรอง ข้อมูล
 
@@ -291,43 +291,43 @@ balances.Where(kv => kv.Value>2000).ToDictionary(kv => kv.Key, kv => kv.Value)
 
 #### Ruby
 
-* ruby-lang.org\
+* ruby-lang.org
   https://docs.ruby-lang.org/en/master/Hash.html
-* ruby-doc.org\
+* ruby-doc.org
   https://ruby-doc.org/3.4.1/Hash.html
-* rubyapi.org\
+* rubyapi.org
   https://rubyapi.org/3.4/o/hash
-* rubyonrails.org\
+* rubyonrails.org
   https://api.rubyonrails.org/classes/Hash.html
-* LaunchSchool\
+* LaunchSchool
   https://launchschool.com/books/ruby/read/hashes
-* The Odin Project\
+* The Odin Project
   https://www.theodinproject.com/lessons/javascript-hashmap
 
 #### Python
 
-* Python Official Documentation\
+* Python Official Documentation
   https://docs.python.org/3/library/stdtypes.html#dict
-* Python Tutorial – Dictionaries\
+* Python Tutorial – Dictionaries
   https://realpython.com/python-dicts/
 
 #### Java
 
-* Java Official Documentation\
+* Java Official Documentation
   https://docs.oracle.com/en/java/javase/20/docs/api/java.base/java/util/HashMap.html
-* Java Tutorials – HashMap\
+* Java Tutorials – HashMap
   https://docs.oracle.com/javase/tutorial/collections/interfaces/map.html
 
 #### C\#
 
-* Microsoft Docs – Dictionary\<TKey,TValue>\
+* Microsoft Docs – Dictionary\<TKey,TValue>
   https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2
 
 #### C++
 
-* C++ Reference – unordered\_map\
+* C++ Reference – unordered\_map
   https://en.cppreference.com/w/cpp/container/unordered\_map
-* C++ STL Documentation\
+* C++ STL Documentation
   https://www.cplusplus.com/reference/unordered\_map/unordered\_map/
 
 ## _Presentation_
