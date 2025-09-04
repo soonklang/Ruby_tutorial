@@ -12,7 +12,7 @@ Debbie Watts,Professor,Female,38
 ```
 
 ตัวอย่างที่ 1 :
-```
+```ruby
 File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
 ```
 
