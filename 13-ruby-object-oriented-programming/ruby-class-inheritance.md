@@ -124,6 +124,47 @@ test_obj.super_method
   
   
 - ### Python
+  การสืบทอดใน Python สามารถทำได้โดยใช้ `class SubClass(SuperClass)`
+  
+  **ตัวอย่าง**
+  ```Python
+  # Superclass
+  class ThisIsSuperClass:
+    def __init__(self):
+        print("Creating class")
+
+    def super_method(self):
+        print("Method of Superclass")
+
+  # Subclass
+  class ThisIsSubClass(ThisIsSuperClass):
+    pass  
+
+  # Execution
+  if __name__ == "__main__":
+    # Create object from superclass
+    ThisIsSuperClass()
+
+    # Create object from subclass
+    test_obj = ThisIsSubClass()
+
+    # calling the method of superclass from subclass
+    test_obj.super_method()
+
+
+  
+  ```
+
+  <details>
+
+  <summary>Output</summary>
+
+  > Creating class\
+  > Creating class\
+  > Method of Superclass
+
+  </details>
+  
 - ### C
 
 ---
