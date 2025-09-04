@@ -10,14 +10,15 @@ Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 ```
+
 ตัวอย่างที่ 1 :
 ```
 File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
 ```
+
 output 
- >
 ```
-Fred Bloggs,Manager,Male,45
+ > Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 ```
@@ -25,7 +26,9 @@ Debbie Watts,Professor,Female,38
 ```
  File.open("text.txt").each(',') { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด โดยจะตัดประโยคด้วย ","
 ```
+
 output
+```
 	> Fred Bloggs,
 Manager,
 Male,
@@ -38,6 +41,7 @@ Debbie Watts,
 Professor,
 Female,
 38
+```
 
 ตัวอย่างที่ 3 :
 ```
@@ -45,9 +49,12 @@ Female,
   2.times { puts f.gets } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด จำนวน 2 ประโยค
 end 
 ```
+
 output
-	> Fred Bloggs,Manager,Male,45
+```
+> Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
+```
 
 เราสามารถกำหนด  mode การเข้าถึงไฟล์ได้ด้วยการระบุพารามิเตอร์ที่ 2  ซึ่งหากไม่ได้มีการกำหนด 
 > "r" จะเป็น mode default ตั้งต้น 
@@ -60,10 +67,11 @@ file = File.open("text.txt", "r")
 file.close
 ```
 output
+```
 	> Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
-
+```
 เรายังสามารถตรวจสอบสถานะของไฟล์ได้ด้วยว่า ไฟล์นั้นเปิดอยู่หรือไม่ด้วยการใช้เมธอด .closed? ซึ่งจะคืนค่าเป็น Boolean 
 
 ตัวอย่างที่ 5 :
