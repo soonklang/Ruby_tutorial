@@ -432,7 +432,84 @@ obj.display "ONE", "TWO"
 
 ### การใช้งาน Super method ในภาษาอื่นๆ
 - ### Java
+  **ตัวอย่างการใช้งาน Super method  ในภาษา Java**
+
+  ```Java
+
+  class SuperOriginal {
+    void display(String a, String b) { //ใน java ไม่สามารถกำหนดค่า Default ของพารามิเตอร์ใน method ได้
+        System.out.println("Parent class, 1st Parameter: " + a + ", 2nd Parameter: " + b);
+    }
+  }
+
+  class SuperCopy extends SuperOriginal {
+    void display(String a, String b) { 
+        super.display(a, b);     //ต้องกำหนดตัวแปรเอง ไม่สามารถ super.display() แล้ว auto ได้เหมือน ruby
+        super.display(a, null);  // ต้องกำหนดตัวแปรให้ครบ ไม่สามารถ super.display(a)
+        super.display(a, b);     
+        super.display(null, null); // ต้องกำหนดตัวแปรเอง ไม่สามารถ super.display() แล้ว auto ได้เหมือน ruby
+        System.out.println("This is subclass method");
+    }
+  }
+
+  public class Main {
+    public static void main(String[] args) {
+        SuperCopy obj = new SuperCopy();
+        obj.display("ONE", "TWO");
+    }
+  }
+
+  
+  ```
+  <details>
+
+  <summary>Output</summary>
+
+  > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+  > Parent class, 1st Parameter: ONE, 2nd Parameter: null\
+  > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+  > Parent class, 1st Parameter: null, 2nd Parameter: null\
+  > This is subclass method
+
+
+  </details>
+  
 - ### Python
+  **ตัวอย่างการใช้งาน Super method  ในภาษา Python**
+
+  ```Python
+  class SuperOriginal:
+    def display(self, a=0, b=0):
+        print(f"Parent class, 1st Parameter: {a}, 2nd Parameter: {b}")
+
+  class SuperCopy(SuperOriginal):
+    def display(self, a, b):
+        super().display(a, b)     # ทำ auto ไม่ได้แบบ ruby
+        super().display(a)     
+        super().display(a, b)
+        super().display()         # super().display() ก็ตรงตัวดีโดยไม่ส่งอะไรไปก็ไปใช้ ค่า Default ใน method display ของ super
+        print("This is subclass method")
+
+  if __name__ == "__main__":
+    obj = SuperCopy()
+    obj.display("ONE", "TWO")
+
+  
+  ```
+  <details>
+
+  <summary>Output</summary>
+
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: 0\
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+   > Parent class, 1st Parameter: 0, 2nd Parameter: 0\
+   > This is subclass method
+
+
+
+  </details>
+  
 - ### C
 
 ---
