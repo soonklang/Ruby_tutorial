@@ -29,5 +29,6 @@ int(10.898)
 
 #Reference
 
-Built-in Functions https://docs.python.org/3/library/functions.html
-Kernel Method https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
+Built-in Function - https://docs.python.org/3/library/functions.html
+
+Kernel Method - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
