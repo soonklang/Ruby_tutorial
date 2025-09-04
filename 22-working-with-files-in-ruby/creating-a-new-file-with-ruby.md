@@ -33,7 +33,7 @@ File.new("temp.txt", "w")
 			fptr = fopen("filename.txt", "w");
 
  - ภาษา python
-python จะโหมด "x" อยู่ด้วยหมายถึงโหมด exclusive โดยที่ถ้ายังไม่มีไฟล์นี้อยู่จะไม่ถูกเขียนทับ แต่จะจะเกิด **`FileExistsError`** เพื่อป้องกันการถูกเขียนทับ
+python จะมีโหมด "x" อยู่ด้วยหมายถึงโหมด exclusive โดยที่ถ้ายังไม่มีไฟล์นี้อยู่จะไม่ถูกเขียนทับ แต่จะจะเกิด **`FileExistsError`** เพื่อป้องกันการถูกเขียนทับ
 				
 			new_file = open("myfile.txt", "w")
 
