@@ -159,8 +159,6 @@ int main() {
 
 ใช้ฟังก์ชัน open() ซึ่งจะรับพารามิเตอร์ 2 ตัว ได้แก่ ชื่อของไฟล์และโหมดการเข้าถึง แล้วจะ return วัตถุไฟล์ 
 
-Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised. See Reading and Writing Files for more examples of how to use this function.
-
 ตัวอย่างที่ 1
 ```python
 file = open("geeks.txt", "r")
