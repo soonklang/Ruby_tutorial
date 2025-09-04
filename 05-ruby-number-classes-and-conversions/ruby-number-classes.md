@@ -340,7 +340,7 @@ puts 123.to_s    # "123"
 ------
 
 
-#Referenes
+## Referenes
 [1] “Ruby Number Classes and Conversions,” *Techotopia*, Techotopia.com. [Online]. Available: https://www.techotopia.com/index.php/Ruby_Number_Classes_and_Conversions. [Accessed: 4-Sep-2025].
 
 [2] “Ruby | Integer Class,” *GeeksforGeeks*, Last updated 11 Jul. 2025. [Online]. Available:
