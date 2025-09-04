@@ -5,7 +5,8 @@
 
 โดยการแปลงค่าของแต่ละภาษามีความแตกต่างกันอยู่นิดหน่อย คือ 
 ภาษา C กับ Java จะเรียกว่า Type Casting
-ภาษา Ruby จะเป็น 
+ภาษา Ruby จะเป็น Kernel Method
+ภาษา Python จะเป็น Built-in Function
 
 # Convert Floating Point -> Integer
 ในภาษาของ Ruby
