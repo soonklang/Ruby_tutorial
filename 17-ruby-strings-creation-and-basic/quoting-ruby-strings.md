@@ -1,5 +1,7 @@
 # Quoting Ruby Strings
 
+จัดทำโดย 660710599 ตุลธร ศรจังหวัด
+
 ## _Quoting Ruby Strings_
 
 Quoting string คือการกำหนดขอบเขตของสตริง (String)
