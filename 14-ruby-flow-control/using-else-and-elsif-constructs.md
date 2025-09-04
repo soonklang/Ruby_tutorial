@@ -356,19 +356,24 @@ Between 10 and 20
 > 4. ไม่มี end เป็นตัวสั่งจบการทำงาน
 > 5. ต้องมี parentheses(วงเล็บ) ในการสั่งแสดงผล
 
+## Reference
 
+**Flowchart, Syntax และ โครงสร้างของ Elsif**
+* Techotopia. (n.d.). *Ruby flow control*. In *Ruby Essentials*. ค้นเมื่อ 4 กันยายน 2568. จาก https://www.techotopia.com/index.php/Ruby_Flow_Control
+* GeeksforGeeks. (2023, February 15). *Ruby | Decision making (if, if-else, if-else-if, ternary) | Set - 1*. https://www.geeksforgeeks.org/ruby/ruby-decision-making-if-if-else-if-else-if-ternary-set-1/
+* Hudgens,J. (2017). *Comprehensive Ruby Programming*. (1st Edition.). https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf
+* Cooper, P. (2016). *Beginning Ruby*. (3rd Edition.). https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
 
-https://www.techotopia.com/index.php/Ruby_Flow_Control
-https://www.geeksforgeeks.org/ruby/ruby-decision-making-if-if-else-if-else-if-ternary-set-1/
-https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf
-https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
+**การเปรียบเทียบ String ของ Ruby**
+* Rosetta Code. (n.d.). *String comparison*. In *Rosetta Code*. ค้นเมื่อ 4 กันยายน 2568. จาก https://rosettacode.org/wiki/String_comparison
+* Techotopia. (n.d.). *Ruby string concatenation and comparison*. In *Techotopia*. ค้นเมื่อ 4 กันยายน 2568. จาก https://www.techotopia.com/index.php/Ruby_String_Concatenation_and_Comparison
 
-https://rosettacode.org/wiki/String_comparison
-https://www.techotopia.com/index.php/Ruby_String_Concatenation_and_Comparison
+**ตัวอย่างของ C**
+* W3Schools. (n.d.). *C — The else if Statement*./W3Schools. ค้นเมื่อ 4 กันยายน 2568. จาก https://www.w3schools.com/c/c_conditions_elseif.php
 
-https://www.w3schools.com/c/c_conditions_elseif.php
+**ตัวอย่างของ Java**
+* Oracle. (n.d.). *The if-then and if-then-else statements*. Oracle Java Documentation. https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
+* Programiz. (n.d.). *Java if‑else statement*. Programiz. ค้นเมื่อ 4 กันยายน 2568. จาก https://www.programiz.com/java-programming/if-else-statement
 
-https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
-https://www.programiz.com/java-programming/if-else-statement
-
-https://realpython.com/ref/keywords/elif/
+**ตัวอย่างของ Python**
+* Pozo Ramos, L. (2025, January 6). *elif*. In Real Python (reviewed by D. Bader). ค้นเมื่อ 4 กันยายน 2568 จาก https://realpython.com/ref/keywords/elif/
