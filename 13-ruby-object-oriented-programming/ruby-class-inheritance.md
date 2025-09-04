@@ -276,7 +276,7 @@ c.roar
       }
   }
   
-  // Main class to run
+  // Main
   public class Main {
       public static void main(String[] args) {
           Cat c = new Cat();
@@ -322,7 +322,64 @@ c.roar
   </details>
 - ### C
   **ตัวอย่างการใช้งาน Method Overriding ในภาษา C**
+  
+  ภาษา C ไม่มี class และ inheritance แต่เราสามารถจำลอง method overriding ได้ด้วย function poiters
+  ```C
 
+  #include <stdio.h>
+  
+  // function pointer type for roar
+  typedef void (*RoarFunc)(void);
+  
+  // Superclass(struct)
+  typedef struct {
+      RoarFunc roar;
+  } Lion;
+  
+  // Superclass roar method
+  void lion_roar(void) {
+      printf("ROAR!");
+  }
+  
+  // Subclass(struct)
+  typedef struct {
+      Lion base;  // Inheritance
+  } Cat;
+  
+  // Subclass roar method
+  void cat_roar(void) {
+      printf("meow!");
+  }
+  
+  // initializer for Lion
+  void initLion(Lion* l) {
+      l->roar = lion_roar;
+  }
+  
+  // initializer for Cat
+  void initCat(Cat* c) {
+      initLion(&c->base);
+      c->base.roar = cat_roar;  // Override
+  }
+  
+  int main(void) {
+      Cat c;
+      initCat(&c);
+      c.base.roar();
+      return 0;
+  }
+
+  
+  ```
+
+  <details>
+
+  <summary>Output</summary>
+
+  > meow!
+
+  </details>
+  
 ---
 
 ## Super method
