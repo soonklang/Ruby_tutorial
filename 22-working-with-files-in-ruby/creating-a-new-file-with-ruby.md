@@ -52,4 +52,9 @@ python จะโหมด "x" อยู่ด้วยหมายถึงโ�
 | **Python** | `open("example.txt", "x")`                 | `FileExistsError`         | `"x"` (write)   |
 | **C**      | `fopen("example.txt", "w")`       | จะถูกเขียนทับ            | `"w"` (write) |
 
+## แหล่งที่มา
+https://www.techotopia.com/index.php/Working_with_Files_in_Ruby#Creating_a_New_File_with_Ruby
+https://www.w3schools.com/java/java_files.asp
+https://www.w3schools.com/python/python_file_write.asp
+https://www.w3schools.com/c/c_files.php
 
