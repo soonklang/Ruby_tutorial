@@ -31,7 +31,7 @@ int(10.898)
 
 Java - Type Casting - https://marcuscode.com/lang/java/type-conversions
 
-C - Cast Operator - https://en.cppreference.com/w/c/language/cast.html
+C - Type Casting - https://www.geeksforgeeks.org/c/c-typecasting/
 
 Python - Built-in Function - https://docs.python.org/3/library/functions.html
 
