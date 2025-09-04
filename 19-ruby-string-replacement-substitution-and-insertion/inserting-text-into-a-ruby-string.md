@@ -1,7 +1,7 @@
 # Inserting Text Into a Ruby String
 การแทรกข้อความเพิ่มลงใน string ในภาษา Ruby
 
-**ในภาษา Ruby สามารถแทรกข้อความเพิ่มได้โดยการใช้ method ที่ชื่อว่า "insert"**
+**ในภาษา Ruby สามารถแทรกข้อความเพิ่มได้โดยการใช้ method ที่ชื่อว่า insert()**
 
 method insert() เป็น method ของคลาส String ในภาษา Ruby ซึ่งใช้สำหรับแทรกข้อความใหม่ลงใน string ตรงตำแหน่งที่ต้องการ
 
@@ -11,28 +11,28 @@ method insert() เป็น method ของคลาส String ในภาษ
 str.insert(index, other_str) 
 ```
 
-<kbd>str</kbd> คือ string เดิม&#x20;
+<kbd>str</kbd> คือ string เดิม
 
-<kbd>index</kbd>  คือ ตำแหน่งที่ต้องการจะแทรก&#x20;
+<kbd>index</kbd> คือ ตำแหน่งที่ต้องการจะแทรก
 
-&#x20;      แบ่งออกเป็น 2 กรณี&#x20;
+แบ่งออกเป็น 2 กรณี
 
-&#x20;            \- <kbd>index</kbd> เป็น **จำนวนเต็มบวก** จะเริ่มแทรกจากด้านหน้าของ string&#x20;
+\- <kbd>index</kbd> เป็น **จำนวนเต็มบวก** จะเริ่มแทรกจากด้านหน้าของ string
 
-&#x20;            \- <kbd>index</kbd> เป็น **จำนวนเต็มลบ** จะนับตำแหน่งถอยหลังจากด้านท้ายของ string&#x20;
+\- <kbd>index</kbd> เป็น **จำนวนเต็มลบ** จะนับตำแหน่งถอยหลังจากด้านท้ายของ string
 
-<kbd>other\_str</kbd> คือ ข้อความที่ต้องการจะแทรกเข้าไป&#x20;
+<kbd>other\_str</kbd> คือ ข้อความที่ต้องการจะแทรกเข้าไป
 
 ## Example
 
-**Example 1 :** กรณี index เป็น**จำนวนเต็มบวก**&#x20;
+**Example 1 :** กรณี index เป็น**จำนวนเต็มบวก**
 
 ```ruby
 str = "Helloworld" 
 str.insert(5, "my") 
 ```
 
-**Output :**&#x20;
+**Output :**
 
 ```ruby
 Hellomyworld 
@@ -45,7 +45,7 @@ str = "Helloworld"
 str.insert(-2, "my") 
 ```
 
-**Output :**&#x20;
+**Output :**
 
 ```ruby
 Hellowormyld  
@@ -57,7 +57,19 @@ Hellowormyld
 
 ## ภาษา C
 
-เนื่องจากภาษา C ไม่มี method insert() โดยตรงจึงต้องสร้าง method ในการแทรกข้อความขึ้นเอง
+**ภาษา C ไม่มี method insert() โดยตรงเหมือนกับ Ruby** จึงต้องสร้าง function ในการแทรกข้อความขึ้นเอง
+
+**Syntax**
+
+```c
+void insertString(char *str, const char *insert, int index)
+```
+
+<kbd>str</kbd> คือ ข้อความเดิม
+
+<kbd>insert</kbd> คือ ข้อความที่ต้องการแทรก
+
+<kbd>index</kbd> ตำแหน่งใน <kbd>str</kbd> ที่ต้องการแทรก <kbd>insert</kbd> เข้าไป
 
 **Example :**
 
@@ -87,23 +99,31 @@ int main() {
 
 ```
 
-**Output :**&#x20;
+**Output :**
 
 ```c
 Hellomyworld
 ```
 
+* ใช้ **function memmove()** ในการขยับข้อความเดิมและใช้ **function memcpy()** ในการแทรกข้อความใหม่ลงไปในข้อความเดิม
+
 ## ภาษา Java
 
-เนื่องจาก String ในภาษา Java **ไม่สามารถเปลี่ยนค่าได้โดยตรง** จึงต้องใช้method insert() ของ class <kbd>StringBuffer</kbd>  ใน Java ซึ่งเป็นคลาสที่ใช้จัดการกับ String ที่สามารถแก้ไขได้โดยไม่จำเป็นต้องสร้าง object ใหม่ทุกครั้ง
+เนื่องจาก String ในภาษา Java **ไม่สามารถเปลี่ยนค่าได้โดยตรง** จึงต้องใช้ method insert() ของ class <kbd>StringBuffer</kbd> ใน Java ซึ่งเป็นคลาสที่ใช้จัดการกับ String ที่สามารถแก้ไขได้โดยไม่จำเป็นต้องสร้าง object ขึ้นใหม่ทุกครั้ง
 
 **Syntax**
 
 ```java
-StringBuffer.insert(int Position, String str)
+str.insert(int index, String text)
 ```
 
-&#x20;**Example:**
+<kbd>str</kbd> คือ ข้อความเดิม
+
+<kbd>index</kbd> คือ ตำแหน่งที่ต้องการแทรก
+
+<kbd>text</kbd> คือ ข้อความที่ต้องการแทรก
+
+**Example:**
 
 ```java
 public class Main {
@@ -115,7 +135,7 @@ public class Main {
 }
 ```
 
-**Output :**&#x20;
+**Output :**
 
 ```java
 Hellomyworld 
@@ -123,7 +143,7 @@ Hellomyworld
 
 ## ภาษา Python
 
-เนื่องจาก String ในภาษา  Python **ไม่สามารถเปลี่ยนค่าได้โดยตรง ไม่มี method insert() เหมือนกับ Ruby** แต่สามารถทำได้โดยการตัด string แล้วต่อกลับเข้าด้วยกัน
+เนื่องจาก String ในภาษา Python **ไม่สามารถเปลี่ยนค่าได้โดยตรง ไม่มี method insert() เหมือนกับ Ruby** แต่ สามารถทำได้โดยการตัด string แล้วต่อกลับเข้าด้วยกัน
 
 **Syntax**
 
@@ -147,7 +167,7 @@ new_str = str[:index] + insert_text + str[index:]
 print(new_str) 
 ```
 
-**Output :**&#x20;
+**Output :**
 
 ```python
 Hellomyworld 
@@ -178,3 +198,5 @@ GeeksforGeeks. (2025, July 23). _Insert a variable into a string - Python_. Geek
 ***
 
 ## Slides
+
+## Video Presentation
