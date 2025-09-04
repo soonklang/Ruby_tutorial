@@ -52,6 +52,38 @@ my_dog.bark
 ```
 The-3-year-old white dog: Bao! Bao!
 ```
+## Object ในภาษา C
+C ไม่มี object เนื่องจากไม่ได้ถูกออกแบบมาให้มีการ encapsulation ซึ่งเป็นส่วนสำคัญของการเป็นภาษาโปรแกรมเชิงวัตถุ ถึงใน C จะมี struct ที่สามารถเก็บข้อมูลแทนได้ แต่ก็ต้องมากำหนด pointer เข้าฟังก์ชันเอง
+## ตัวอย่างการจำลองการสร้าง Object ในภาษา C 
+```C
+#include <stdio.h>
+#include <string.h>
+
+typedef struct { // class
+    char color[10];
+    int age;
+} Dog;
+
+void bark(Dog* dog) {// method Dog* dog encap
+    printf("The-%d-year-old %s dog: Bao! Bao!\n", dog->age, dog->color); //dog-> attribute
+}
+
+int main() {
+    Dog my_dog; // create object
+    strcpy(my_dog.color, "white");  
+    my_dog.age = 3;                 
+
+    // เรียก method
+    bark(&my_dog);
+
+    return 0;
+}
+
+```
+## ผลลัพธ์
+```
+The-3-year-old white dog: Bao! Bao!
+```
 ## Class คืออะไร
 object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class
 หน่วยความจำสำหรับ object จะถูกจัดสรรก็ต่อเมื่อ object ถูกสร้างขึ้น (instantiation)<br> 
