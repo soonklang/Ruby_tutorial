@@ -15,10 +15,11 @@ Debbie Watts,Professor,Female,38
 File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
 ```
 output
-	> Fred Bloggs,Manager,Male,45
+```
+ > Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
-
+```
 ตัวอย่างที่ 2 :
 ```
  File.open("text.txt").each(',') { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด โดยจะตัดประโยคด้วย ","
