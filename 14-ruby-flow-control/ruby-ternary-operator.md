@@ -1,5 +1,12 @@
 # Ruby Ternary Operator
 Ternary operator คือ ตัวดำเนินการที่ใช้เขียนเงื่อนไขแบบย่อ ในบรรทัดเดียว แทนการใช้ if  else แบบเต็ม
+# flow chart
+<img width="752" height="881" alt="image" src="https://github.com/user-attachments/assets/46b62340-9305-4706-a66b-739462a7469a" />
+
+
+
+อ้างอิงจาก<br><br>
+https://www.geeksforgeeks.org/java/java-ternary-operator/
 # ตัวอย่างการเขียน if else ใน Ruby
 ```ruby
 wight = 75
@@ -23,7 +30,10 @@ puts body
 ```
 
 
-จะเห็นได้ว่า การเขียนแบบ Ternary Operator ทำให้โค้ด if else มีความกระชับ ลดบรรทัดในการเขียน 
+จะเห็นได้ว่า การเขียนแบบ Ternary Operator ทำให้โค้ด if else มีความกระชับ ลดบรรทัดในการเขียน <br><br>
+อ้างอิงจาก<br><br>
+https://www.ruby-lang.org/en/documentation/faq/11/<br><br>
+https://www.w3resource.com/ruby/ruby-ternary-operator.php
 <br><br>
 แต่มีข้อควรระวังคือ เหมาะกับ if else ที่มีเงื่อนไขไม่ซับซ้อน หากมีเงือนไขที่ซับซ้อมเกินไป ควรใช้ if else ปกติ
 # รูปแบบการเขียน Ruby ternary operator
@@ -67,7 +77,10 @@ puts body
 <br><br>
 การทำงานก็คือ ถ้า wiegh < 60 = proportionate (elsif)
 <br><br>
-เงื่อนไขสุดท้ายคือ else = thin (else)
+เงื่อนไขสุดท้ายคือ else = thin (else)<br><br>
+อ้างอิงจาก
+<br><br>
+https://stackoverflow.com/questions/15478357/ruby-ternary-operator-and-elsif
 # การเขียน ternary operator กับภาษาอื่นๆ เพื่อเปรียบเทียบ 
 # python ternary operator
 ```python
@@ -85,6 +98,9 @@ print(body)
 value if true if condition 1 else (value if true if condition 2 else value if false)
 <br><br>
 ในภาษา Python syntax จะค่อนข้างแตกต่างกับ Ruby
+<br><br>
+อ้างอิงจาก <br><br>
+https://www.geeksforgeeks.org/python/ternary-operator-in-python/
 # javascript ternary operator
 ```javascript
 let wight = 75;
@@ -100,7 +116,9 @@ console.log(body);
 body = wight >= 75 ? "fat" : "thin";
 console.log(body);
 ```
-ในภาษา javascript syntax จะใกล้เคียง ruby เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+ในภาษา javascript syntax จะใกล้เคียง ruby เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body <br><br>
+อ้างอิงจาก<br><br>
+https://dev.to/nicm42/ternary-operators-in-javascript-go5
 # java ternary operator
 ```java
 int wight = 75;
@@ -116,21 +134,31 @@ if (wight >= 75) {
 body = (wight >= 75) ? "fat" : "thin");
 System.out.println(body);
 ```
-ในภาษา java syntax จะใกล้เคียง ruby และ javascript เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body
+ในภาษา java syntax จะใกล้เคียง ruby และ javascript เลยแต่ Ruby ไม่จำเป็นต้องประกาสตัวแปล body<br><br>
+อ้างอิงจาก<br><br>
+https://www.w3schools.com/java/java_conditions_shorthand.asp
 # สิ่งที่พิเศษ สำหรับ ternary operator คือ สามารถใช้คู่กับการแสดงผลบน terminal เช่น print console log และอื่นๆ
 ```ruby
 puts wight >= 75 ? "fat" : "thin"
 ```
+อ้างอิงจาก <br><br>
+https://launchschool.com/books/ruby/read/flow_control
 ```python
 print("fat" if wight >= 75 else "thin")
 ```
+อ้างอิงจาก <br><br>
+https://www.geeksforgeeks.org/python/ternary-operator-in-python/
 ```javascript
 console.log((wight >= 75) ? "fat" : "thin");
 ```
+อ้างอิงจาก <br><br>
+https://www.youtube.com/watch?v=s4sB1hm73tw
 ```java
 System.out.println((wight >= 75) ? "fat" :  "thin");
 ```
-เป็นการเขียนเพื่อลดบรรทัด แต่ต้องระวัง เพราะว่าการทำแบบนี้ จะเป็นการทำงานครั้งเดียว ไม่มีการเก็บค่าใดๆ
+อ้างอิงจาก <br><br>
+https://www.geeksforgeeks.org/java/java-ternary-operator-puzzle/br><br>
+เป็นการเขียนเพื่อลดบรรทัด แต่ต้องระวัง เพราะว่าการทำแบบนี้ จะเป็นการทำงานครั้งเดียว ไม่มีการเก็บค่าใดๆ<
 
 # และอีก 1 อย่างที่ใช้กับ ternary operator ได้ คือ การ return จาก method
 ```ruby
@@ -143,6 +171,8 @@ puts body_type(50)
 ```
 thin
 ```
+อ้างอิงจาก <br><br>
+https://medium.com/@dru_edmondson/the-ternary-operator-in-ruby-1e87b57f2fc9
 ```python
 def body_type(wight):
     return "fat" if wight >= 75 else ("proportionate" if wight < 60 else "thin")
@@ -152,6 +182,8 @@ print(body_type(75))
 ```
 fat
 ```
+อ้างอิงจาก <br><br>
+https://www.scaler.com/topics/python/ternary-operator-in-python/
 ```javascript
 function bodyType(wight) {
     return wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin");
@@ -161,6 +193,8 @@ console.log(bodyType(50));
 ```
 proportionate
 ```
+อ้างอิงจาก <br><br>
+https://www.geeksforgeeks.org/javascript/javascript-ternary-operator/
 ```java
 static String bodyType(int wight) {
         return (wight >= 75) ? "fat" : (wight < 60 ? "proportionate" : "thin");
@@ -182,16 +216,3 @@ fat
 3.ternary operator สามารถ return ออกมาจาก method ได้
 <br><br>
 4.ternary operator สามารถ print ออกมาได้เลยตรงๆ ไม่ต้องเก็บค่าไว้ที่ไหน
-# อ้างอิง
--Javascript ternary <br><br>
-https://www.geeksforgeeks.org/javascript/javascript-ternary-operator/<br><br>
-https://dev.to/nicm42/ternary-operators-in-javascript-go5<br><br>
--pyton ternary <br><br>
-https://www.geeksforgeeks.org/python/ternary-operator-in-python/<br><br>
-https://www.datacamp.com/tutorial/pythons-ternary-operators-guide<br><br>
--java ternary<br><br>
-https://www.w3schools.com/java/java_conditions_shorthand.asp<br><br>
--ruby ternary<br><br>
-https://www.techotopia.com/index.php/Ruby_Flow_Control<br><br>
-https://expert-programming-tutor.com/tutorial/article/KE001533_5_code_shortened_with_Ternary_Operator.php<br><br>
-https://codeeak.wordpress.com/2015/12/08/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%8A%E0%B9%89-ternary-operator/<br><br>
