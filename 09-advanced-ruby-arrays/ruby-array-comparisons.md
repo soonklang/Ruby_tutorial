@@ -78,6 +78,7 @@ puts E <=> F  # output : -1
 -----------------------------------------------------------------------------
 ### 3.) Array A.eql?(Array B)
 Operator ของ .eql?(..) เป็นเครื่องหมายเปรียบเทียบเพื่อดู Array ของ A และ B ว่ามีค่าเท่ากันและชนิดข้อมูลเดียวกันหรือไม่ <br>(คล้ายกันกับตัว Operator ของ == ในข้อที่ 1.)
+### ตัวอย่าง
 ```ruby
 A = [1, 3, 5]
 B = [1, 3, 5]
@@ -102,13 +103,13 @@ puts C.eql?(D)  # output : false
 -----------------------------------------------------------------------------
 ### คำถามมีอยู่ว่า <mark style="color:blue">ระหว่าง == กับ .eql?(..)  แตกต่างกันอย่างไร?</mark>
 <ins>***Operator ของ ==***</ins> &nbsp;จะทำหน้าที่ตรวจสอบข้อมูลของ Array ทั้ง 2 ว่ามีค่าเท่ากันหรือไม่ ซึ่งส่วนใหญ่ Operator ตัวนี้แค่ตรวจสอบความเท่ากันอย่างเดียว แม้ว่าจะชนิดข้อมูลจะไม่เหมือนกันก็ตาม <ins>ตย.</ins> 10 == 10.0 output ที่ได้ออกมาจะเป็น ***true*** เพราะค่าของข้อมูลมีค่าเท่ากันนั้นเอง
-<br><ins>***Operator ของ .eql?(..)***</ins> &nbsp;จะทำหน้าที่ตรวจสอบข้อมูลของ Array ทั้ง 2 ว่ามีค่าเท่ากันและชนิดข้อมูลเดียวกันหรือไม่ <ins>ตย.</ins> 10.eql?(10) output ที่ได้คือ ***true*** เพราะมีค่าเท่ากันและชนิดข้อมูลเป็นชนิดเดียวกัน แต่ถ้าเป็น 10.eql?(10.0) output ที่ได้คือ ***false*** เพราะมีค่าเท่ากัน แต่ชนิดข้อมูลเป็นคนละชนิดนั้นเอง
+<br><ins>***Operator ของ .eql?(..)***</ins> &nbsp;จะทำหน้าที่ตรวจสอบข้อมูลของ Array ทั้ง 2 ว่ามีค่าเท่ากันและชนิดข้อมูลเดียวกันหรือไม่ <ins>ตย.</ins> 10.eql?(10) output ที่ได้คือ ***true*** เพราะมีค่าเท่ากันและชนิดข้อมูลเป็นชนิดเดียวกัน แต่ถ้าเป็น 10.eql?(10.0) output ที่ได้คือ ***false*** เพราะมีค่าเท่ากัน แต่ชนิดข้อมูลเป็นคนละชนิดกันนั้นเอง
 
 -----------------------------------------------------------------------------
 ## การเปรียบเทียบของ Array Comparisons ระหว่าง Java/C/Python
 ### 1.) Array Comparisons ของ Java
-จะมีทั้งหมด 5 แบบ คือ ==, equals(.., ..), deepEquals(.., ..), compare(.., ..) และ mismatch(.., ..)<br>
-
+> จะมีทั้งหมด 5 แบบ คือ ==, equals(.., ..), deepEquals(.., ..), compare(.., ..) และ mismatch(.., ..)<br>
+### ตัวอย่าง
 ### 1.1) ==
 ```java
 int[] arr1 = {1, 3, 5};
@@ -140,7 +141,7 @@ System.out.println(Arrays.deepEquals(arr1, arr3)); //output : false
 ```
 
 ### 1.4) compare(.., ..)
-> เป็นการเปรียบเทียบ Array ทั้ง 2 ตัว ตามหลักของพจนานุกรม โดยจะส่งค่าคือเป็น ***0*** หากมีค่าเท่ากันทั้งสอง Array เท่ากัน, ***เลขจำนวนเต็มลบ*** หากค่าของ Array 1 มีค่าน้อยกว่า Array 2 และ ***เลขจำนวนเต็มบวก*** หากค่าของ Array 1 มีค่ามากกว่า  Array 2 
+> เป็นการเปรียบเทียบ Array ทั้ง 2 ตัว ตามหลักของพจนานุกรม โดยจะส่งค่าคือเป็น ***0*** หากมีค่าเท่ากันทั้งสอง Array เท่ากัน, ***เลขจำนวนเต็มลบ*** หากค่าของ Array 1 มีค่าน้อยกว่า Array 2 และ ***เลขจำนวนเต็มบวก*** หากค่าของ Array 1 มีค่ามากกว่า Array 2 
 ```java
 import java.util.Arrays;
 String[] arr1 = {"Hello", "World", "Wow"};
@@ -162,3 +163,102 @@ System.out.println(Arrays.mismatch(arr1, arr2)); //output : 2 เพราะไ
 -----------------------------------------------------------------------------
 ### 2.) Array Comparisons ของ C
 > ในส่วนของภาษา C นั้น ไม่มีตัวดำเนินการโดยตรงในการเปรียบเทียบ Array จึงต้องใช้ Loop ในการตรวจสอบข้อมูลทีละตัวใน Array
+### ตัวอย่าง
+```c
+#include <stdio.h>
+
+void main(){
+  int arr1[] = {1, 2, 3, 4, 5};
+  int arr2[] = {1, 2, 3, 4, 5};
+  int count = 0;
+  
+  for (int i = 0; i < sizeof(arr1)/sizeof(arr1[0]); i++){
+      if (arr1[i] != arr2[i]){
+      	count += 1;
+      }
+  }
+  
+  if (count == 0){
+    printf("arr1 and arr2 are equel.");
+  }else{
+  	printf("arr1 and arr2 are not equel.");
+  }
+}
+// output : arr1 and arr2 are equel.
+//------------------------------------------------------
+  int arr1[] = {1, 3, 5, 7, 9};
+  int arr2[] = {2, 4, 6, 8, 10};
+  int count = 0;
+  
+  for (int i = 0; i < sizeof(arr1)/sizeof(arr1[0]); i++){
+      if (arr1[i] != arr2[i]){
+      	count += 1;
+      }
+  }
+  
+  if (count == 0){
+    printf("arr1 and arr2 are equel.");
+  }else{
+  	printf("arr1 and arr2 are not equel.");
+  }
+}
+// output : arr1 and arr2 are not equel.
+```
+-----------------------------------------------------------------------------
+### 3.) Array Comparisons ของ Python
+> ในส่วนของ Python มีการเก็บชุดข้อมูลทั้งหมด 2 รูปแบบ คือ list และ Array ซึ่งในส่วนของ Array เราจะต้อง import มาจากตัวของ library numpy <br>เราสามารถเปรียบเทียบค่าของทั้งสองได้ด้วยการใช้ตัว ==  ใช้ได้ทั้ง list และ Array เพราะว่า == เป็นคำสั่งพื้นฐานของ Python และตัวของ function ของ numpy ในการตรวจสอบค่าของทั้งสอง Array ว่ามีค่าเท่ากันหรือไม่
+### ตัวอย่าง
+### 1.1) == ด้วย list และ Array
+```py
+# list
+ls1 = [1, 2, 3, 4, 5]
+ls2 = [1, 2, 3, 4, 5]
+print(ls1 == ls2) # output : True
+
+ls3 = [1, 3, 5, 7, 9]
+ls4 = [2, 4, 6, 8, 10]
+print(ls3 == ls4) # output : False
+#------------------------------------------------------
+# Array เป็นการเปรียบเทียบค่าข้อมูลแต่ละตัวใน Array ใช้ได้ทั้ง ==, !=, >, <, >=, <=
+import numpy as np
+
+arr1 = np.array([2, 4, 6])
+arr2 = np.array([2, 4, 6])
+print(arr1 == arr2) # output : [True, True, True]  เป็นการเปรียบเทียบค่าข้อมูลแต่ละตัวใน Array ทั้งสองว่าเท่ากันหรือไม่
+
+arr3 = np.array([1, 3, 6])
+arr4 = np.array([2, 4, 6])
+print(arr3 == arr4) # output : [False, False, True] 
+```
+
+### np.array_equal(.., ..)
+```py
+import numpy as np
+
+arr1 = np.array([22, 44, 66])
+arr2 = np.array([22, 44, 66])
+print(np.array_equal(arr1, arr2)) # output : True
+
+arr3 = np.array([33, 34, 35])
+print(np.array_equal(arr1, arr3)) # output : False
+```
+
+-----------------------------------------------------------------------------
+## แหล่งอ้างอิง (Reference)
+- Ruby
+<br>https://www.techotopia.com/index.php/Advanced_Ruby_Arrays
+<br>https://www.w3resource.com/ruby/ruby-comparison-operators.php
+<br>https://ruby-for-beginners.rubymonstas.org/operators/comparison.html
+
+- Java
+<br>https://www.geeksforgeeks.org/java/compare-two-arrays-java/
+<br>https://www.w3schools.com/java/java_ref_arrays.asp
+<br>https://www.w3schools.com/java/default.asp
+
+- C
+<br>https://stackoverflow.com/questions/24153883/comparing-two-arrays-in-c-element-by-element
+
+- Python
+<br>https://www.w3schools.com/python/gloss_python_comparison_operators.asp
+<br>https://numpy.org/doc/2.1/reference/index.html
+<br>https://www.geeksforgeeks.org/python/relational-operators-in-python/
