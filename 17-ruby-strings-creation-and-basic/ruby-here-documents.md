@@ -33,7 +33,7 @@ This supports interpolation.
 
 ---
 
-## Interpolation คืออะไร?
+## Interpolation ใน Ruby คืออะไร?
 
 **Interpolation** คือการแทรกค่าของตัวแปรหรือข้อความลงไปใน string ได้เลย เช่น ถ้ามีตัวแปรชื่อ `name` แล้วอยากให้มันไปอยู่ในข้อความ ก็ใช้ `#{name}` แบบนี้
 
@@ -60,7 +60,7 @@ puts str
 
 ---
 
-## Single-Quoted Heredoc กับ Double-Quoted Heredoc ต่างกันยังไง?
+## Single-Quoted Heredoc กับ Double-Quoted Heredoc ใน Ruby ต่างกันยังไง?
 
 เวลาเขียน heredoc ใน Ruby เราสามารถเลือกได้ว่าจะให้มันทำงานเหมือน string แบบไหน  
 - แบบ **double-quoted** (ใช้ `<<IDENTIFIER` หรือ `<<"IDENTIFIER"`) จะให้แทรกตัวแปรได้  
