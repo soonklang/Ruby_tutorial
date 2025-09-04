@@ -174,5 +174,31 @@ class Dog
 end
 ```
 ## นิยาม Ruby Class
+Class ในภาษา Ruby ก็เป็น object เหมือนกัน ซึ่งก็คือเมื่อเราสร้าง class ขึ้นมา class นึง หลังจากสร้างจะมีการสร้าง `class Class` ขึ้นมาอัตโนมัติเพื่อเป็น ให้สามารถ instance ได้ โดย class Class จะเป็นจุดสูงสุดของ class แล้วไม่มีอะไรเหนือกว่านี้
+## การสร้าง Object จาก Class ใน Ruby
+```Ruby
+class Name // create class Name auto create and instance of class Class 
+  
+end
+n = Name.new // be object
+```
+## กรณีต้องการดูว่ามีอะไรเกิดขึ้น ใช้การ override new ของ Class เพื่อดู
+``` Ruby
+class Class
+  alias old_new new
+  def new(*args)
+    print "Creating a new ", self.name, "\n"
+    old_new(*args)
+  end
+end
 
+class Name
+end
+
+n = Name.new # new is method
+```
+## ผลลัพธ์
+```
+Creating a new Name
+```
 ## References
