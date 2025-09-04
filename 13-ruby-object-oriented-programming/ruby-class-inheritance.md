@@ -511,7 +511,62 @@ obj.display "ONE", "TWO"
   </details>
   
 - ### C
+  **ตัวอย่างการใช้งาน Super method  ในภาษา C**
+  
+    ภาษา C ไม่มี class หรือ super method แต่เราสามารถจำลองได้ด้วย struct และ function pointers
+  
+  ```C
+  #include <stdio.h>
 
+  typedef struct {
+    void (*display)(const char*, const char*);
+  } SuperOriginal;
+
+  typedef struct {
+    SuperOriginal base;
+  } SuperCopy;
+
+  void original_display(const char* a, const char* b) {
+    printf("Parent class, 1st Parameter: %s, 2nd Parameter: %s\n",a,b);
+  }
+
+  void init_super_original(SuperOriginal* s) {
+    s->display = original_display;
+  }
+
+  void super_copy_display(SuperCopy* s, const char* a, const char* b) {
+    s->base.display(a, b);
+    s->base.display(a, NULL);
+    s->base.display(a, b);
+    s->base.display(NULL, NULL);  //เหมือนกับ Java เลยทุกกรณี
+    printf("This is subclass method\n");
+  }
+
+  int main(void) {
+    SuperCopy obj;
+    init_super_original(&obj.base);
+    super_copy_display(&obj, "ONE", "TWO");
+    return 0;
+  }
+
+
+  
+  ```
+  
+  <details>
+
+  <summary>Output</summary>
+
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: (null)\
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
+   > Parent class, 1st Parameter: (null), 2nd Parameter: (null)\
+   > This is subclass method
+
+
+
+  </details>
+  
 ---
 
 ## Class Inheritance across different files ในภาษา Ruby
