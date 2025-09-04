@@ -94,18 +94,25 @@ file = File.new("myfile.txt", "w")  # "w" = write mode
 ## แหล่งที่มา
 {Ruby Working with Files]
 https://www.techotopia.com/index.php/Working_with_Files_in_Ruby
+
 [Ruby Create new Files] 
 https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html#createNewFile()
+
 [Python file handling ] 
 https://www.freecodecamp.org/news/file-handling-in-python/
+
 [Python file write]
 https://www.w3schools.com/python/python_file_write.asp
+
 [Java files]
 https://www.w3schools.com/java/java_files.asp
+
 [Java createNewFile()]
 https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html#createNewFile()
+
 [C files]
 https://www.w3schools.com/c/c_files.php
+
 [C file handling ] 
 https://www.geeksforgeeks.org/c/basics-file-handling-c/
 
