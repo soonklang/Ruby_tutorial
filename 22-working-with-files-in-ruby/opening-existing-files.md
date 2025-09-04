@@ -166,7 +166,6 @@ GeeksforGeeks
 ```
 f = open("D:\\myfiles\welcome.txt")
 print(f.read())
-l
 ```
 
 ในการอ่านไฟล์ประเภท CSV จำเป็นจะต้อง import pandas จากนั้นจึงใช้ เมธอด read.csv() เหมาะสำหรับการวิเคราะห์ข้อมูล
