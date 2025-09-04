@@ -1,7 +1,7 @@
 # Define Ruby Class
 
 ## Object คืออะไร
-object (วัตถุ) ในภาษาโปรแกรมเชิงวัตถุ (Object-Oriented Programming: OOP) คือ สิ่งที่เป็นตัวแทนของข้อมูลที่เราต้องการสร้าง โดย OOP ก็ขะมีองค์ประกอบ 6 อย่างได้แก่
+object (วัตถุ) ในภาษาโปรแกรมเชิงวัตถุ (Object-Oriented Programming: OOP) คือ สิ่งที่เป็นตัวแทนของข้อมูลที่เราต้องการสร้าง โดย OOP มีองค์ประกอบ 6 อย่างได้แก่
   1. Encapsulation ส่วนที่ไว้ครอบคลุมข้อมูลและ method เอาไว้ในที่ที่เดียว
   2. Inheritance ใช้ในการสืบทอดคุณลักษณะให้แก่อีกคลาส เพื่อลดความซับซ้อน
   3. Abstraction ส่วนที่แสดงฟีเจอร์ที่สำคัญให้ user โดยซ่อนรายละเอียดการทำงานเบื้องหลัง
@@ -157,6 +157,7 @@ public class Dog {
 The-4-year-old white dog: Bao! Bao!
 ```
 ## Class คืออะไร
+Class คือ พิมพ์เขียวหรือต้นแบบสำหรับ object โดยกำหนด attribute และ behavior ไว้ก่อน ก็จะทำให้สามารถสร้าง object มาได้หลาย object ที่มี attribute และ behavior เหมือนกัน
 object เป็น instance of Class หรือก็คือวัตถุเป็นสิ่งที่ถูกสร้างมาจาก Class
 หน่วยความจำสำหรับ object จะถูกจัดสรรก็ต่อเมื่อ object ถูกสร้างขึ้น (instantiation)<br> 
 ## Define Ruby Class
