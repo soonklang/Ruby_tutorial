@@ -27,7 +27,7 @@ int(10.898)
  จะได้ค่าเป็น 11
 ```
 
-#Reference
+# Reference
 
 Java - Type Casting - https://marcuscode.com/lang/java/type-conversions
 
