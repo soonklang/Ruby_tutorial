@@ -14,7 +14,7 @@
 | w       | **สร้างไฟล์ใหม่** หากไฟล์ไม่มีอยู่**จะสร้างไฟล์ใหม่ขึ้นมา** หากไฟล์มีอยู่แล้วไฟล์ที่มีอยู่จะถูกเชียนทับ
 | w+       |**สร้างไฟล์ใหม่** หากไฟล์ไม่มีอยู่**จะสร้างไฟล์ใหม่ขึ้นมา** หากไฟล์มีอยู่แล้วไฟล์ที่มีอยู่จะถูกเชียนทับ สามารถ **อ่านและเขียน** ข้อมูลได้ในไฟล์เดียว
 | a       | **สร้างไฟล์ใหม่** หากไฟล์ไม่มีอยู่**เขียนต่อท้ายข้อมูลเดิม** หากไฟล์มีอยู่แล้ว โดยไม่ลบข้อมูลเก่าใช้เมื่อคุณต้องการ **เพิ่มข้อมูลใหม่โดยไม่กระทบข้อมูลเดิม** 
-| a+       | -   **สร้างไฟล์ใหม่** หากไฟล์ไม่มีอยู่**เขียนต่อท้ายไฟล์เดิม** หากไฟล์มีอยู่แล้ว สามารถ **อ่านและเขียน** ข้อมูลได้ในไฟล์เดียว
+| a+       |    **สร้างไฟล์ใหม่** หากไฟล์ไม่มีอยู่**เขียนต่อท้ายไฟล์เดิม** หากไฟล์มีอยู่แล้ว สามารถ **อ่านและเขียน** ข้อมูลได้ในไฟล์เดียว
 | b       | โหมดไฟล์ไบนารี ใช้ร่วมกับโหมดข้างต้น เฉพาะ Windows/DOS  
 ----
 โดยที่modeต่างๆไม่ได้มีเเค่โหมดในการสร้างไฟล์ใหม่อย่างเดียวแต่มีโหมดเพื่อเอาไว้เปิดไฟล์และจำกัดสิทธ์การเข้าถึงของผู้เปิดไฟล์ได้อีกด้วย
@@ -92,9 +92,20 @@ file = File.new("myfile.txt", "w")  # "w" = write mode
 ---
 
 ## แหล่งที่มา
-https://www.techotopia.com/index.php/Working_with_Files_in_Ruby#Creating_a_New_File_with_Ruby
+{Ruby Working with Files]
+https://www.techotopia.com/index.php/Working_with_Files_in_Ruby
+[Ruby Create new Files] 
 https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html#createNewFile()
-https://www.w3schools.com/java/java_files.asp
+[Python file handling ] 
+https://www.freecodecamp.org/news/file-handling-in-python/
+[Python file write]
 https://www.w3schools.com/python/python_file_write.asp
+[Java files]
+https://www.w3schools.com/java/java_files.asp
+[Java createNewFile()]
+https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/File.html#createNewFile()
+[C files]
 https://www.w3schools.com/c/c_files.php
+[C file handling ] 
+https://www.geeksforgeeks.org/c/basics-file-handling-c/
 
