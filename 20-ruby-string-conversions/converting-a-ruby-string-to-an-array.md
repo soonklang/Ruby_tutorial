@@ -1,11 +1,5 @@
 # Converting a Ruby String to an Array
-## การแปลง String ในภาษา Ruby ให้เป็น Array
-
-
-### Contents
-> 1. [Split() ในภาษา Ruby](#Split()-ในภาษา-Ruby)
-> 2. [การเปรียบเทียบ Split กับภาษาอื่น ๆ](#การเปรียบเทียบ-Split-กับภาษาอื่น-ๆ)
-
+#### การแปลง String ในภาษา Ruby ให้เป็น Array
 
 ### Split() ในภาษา Ruby
 สำหรับตัวของ split นั้นถือว่าเป็น method ที่มีประโยชน์อย่างมากของ String ที่มีวัตถุประสงค์ในการเอามาแยกประโยคต่าง ๆ ให้เป็น Array ที่ประกอบด้วย **'คำ'** หรือ **'ตัวอักษร'** ที่ถูกแยกออกมา โดยมีรูปแบบการใช้ดังต่อไปนี้
@@ -220,6 +214,8 @@ print(s.split("."))
 ***
 ### Video Presentation
 ***
+### Slide Presentation
+***
 ### Reference
 Carmatec. (n.d.). Ruby’s string split: A complete guide with examples. https://www.carmatec.com/blog/rubys-string-split-a-complete-guide-with-examples/<br>
 cppreference.com. (n.d.). strtok. https://en.cppreference.com/w/c/string/byte/strtok<br>
@@ -230,41 +226,12 @@ Ghosh, S. S. (2017). Comprehensive Ruby Programming (pp. 48–51). Packt Pub
 Loosemore, S., Stallman, R. M., McGrath, R., Oram, A., & Drepper, U. (2019). The GNU C library reference manual (pp. 129–131). Free Software Foundation. https://www.gnu.org/software/libc/manual/pdf/libc.pdf<br>
 Oracle. (n.d.). Pattern (Java Platform SE 8). In Java SE Documentation. https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html<br>
 Oracle. (n.d.). String: split (Java Platform SE 8). In Java SE Documentation. https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-<br>
+Python Software Foundation. (n.d.). str.split. In Python 3 Standard Library. https://docs.python.org/3/library/stdtypes.html#str.split<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 1.9.1). https://ruby-doc.org/core-1.9.1/String.html<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 2.4.5). https://ruby-doc.org/core-2.4.5/String.html<br>
 Ruby-Doc.org. (n.d.). Class: String (Ruby 3.0.7). https://ruby-doc.org/3.0.7/String.html<br>
 Techotopia. (n.d.). Ruby string conversions. Techotopia. https://www.techotopia.com/index.php/Ruby_String_Conversions<br>
+Shaw, J. (2022, July 18). Python split(): How to split a string in Python. Real Python. https://realpython.com/python-split-string/<br>
 The Open Group. (n.d.). strtok - split string into tokens. In The Open Group Base Specifications Issue 7, IEEE Std 1003.1-2017. https://pubs.opengroup.org/onlinepubs/9699919799/functions/strtok.html<br>
 Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The Pragmatic Programmers’ Guide (Fourth Edition, p. 685). Pragmatic Bookshelf.<br>
 
-
-
-
-
-
-
-<pre>python<br>print("Hi")<br></pre>
-`inline code`
-```
-ภาษา
-โค้ดตรงนี้
-```
-ตัวอย่าง
-
-<pre>| A | B |
-|---|---|
-| 1 | 2 |</pre>
-
-| หัวข้อ1 | หัวข้อ2 |
-|---------|---------|
-| แถว1คอลัมน์1 | แถว1คอลัมน์2 |
-| แถว2คอลัมน์1 | แถว2คอลัมน์2 |
-
-<details>
-<summary>Click to toggle contents of `code`</summary>
-
-```
-CODE!
-```
-</details>
-Link to the sample section: [Link Text](#sample-section).
