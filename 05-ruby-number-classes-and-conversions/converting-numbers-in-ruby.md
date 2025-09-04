@@ -24,3 +24,6 @@ Integer(11.111)
 int(10.898)
  จะได้ค่าเป็น 11
 ```
+
+#Reference
+https://docs.python.org/3/library/
