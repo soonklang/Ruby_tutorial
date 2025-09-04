@@ -461,7 +461,7 @@ puts 123.to_s    # "123"
 
 ## 1. เมธอดการคำนวณพื้นฐาน
 
-big + other → Numeric
+**big + other → Numeric**
 
 ### คำอธิบาย:
 บวกค่าระหว่างตัวแปร Bignum กับค่าที่กำหนด
@@ -473,7 +473,7 @@ big + other → Numeric
  ```
 ---
 
-big - other → Numeric
+**big - other → Numeric**
 
 ### คำอธิบาย:
 ลบค่าของตัวแปร Bignum ด้วยค่าที่กำหนด
@@ -485,7 +485,7 @@ big - other → Numeric
  ```
 
 ---
-big * other → Numeric
+**big * other → Numeric**
 
 ### คำอธิบาย:
 คูณค่าของตัวแปร Bignum กับค่าที่กำหนด
@@ -497,7 +497,7 @@ big * other → Numeric
 
 ---
 
-big / other → Numeric
+**big / other → Numeric**
 
 ### คำอธิบาย:
 หารค่าของ Bignum ด้วยตัวเลขที่กำหนด
@@ -513,7 +513,7 @@ big / other → Numeric
 
 ---
 
-big % other → Numeric
+**big % other → Numeric**
 
 ### คำอธิบาย:
 หาผลลัพธ์ เศษ จากการหาร
@@ -525,7 +525,7 @@ big % other → Numeric
 
 ---
 
-big ** exponent → Numeric
+**big ** exponent → Numeric**
 
 ### คำอธิบาย:
 ยกกำลังค่าของตัวแปร Bignum ตามเลขชี้กำลังที่กำหนด
@@ -539,7 +539,7 @@ big ** exponent → Numeric
 ---
 ## 2. เมธอดการเปรียบเทียบ
 
-big < real → Boolean
+**big < real → Boolean**
 
 ### คำอธิบาย:
 คืนค่า true ถ้าค่าของ big น้อยกว่า real
@@ -551,7 +551,7 @@ big < real → Boolean
 
 ---
 
-big <= real → Boolean
+**big <= real → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบว่าค่าน้อยกว่าหรือเท่ากับ
@@ -563,7 +563,7 @@ big <= real → Boolean
  ```
 
 ---
-big > real → Boolean
+**big > real → Boolean**
 
 ### คำอธิบาย:
 คืนค่า true ถ้าค่าของ big มากกว่า real
@@ -574,7 +574,7 @@ big > real → Boolean
  ```
 
 ---
-big >= real → Boolean
+**big >= real → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบว่าค่ามากกว่าหรือเท่ากับ
@@ -588,7 +588,7 @@ big >= real → Boolean
 
 ---
 
-big == obj → Boolean
+**big == obj → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบว่าค่าของ big เท่ากับ obj หรือไม่
@@ -603,7 +603,7 @@ big == obj → Boolean
  ```
 
 ---
-big.eql?(obj) → Boolean
+**big.eql?(obj) → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบความเท่ากัน โดยไม่แปลงชนิดข้อมูล
@@ -614,7 +614,7 @@ big.eql?(obj) → Boolean
  ```
 
 ---
-big <=> numeric → Integer / nil
+**big <=> numeric → Integer / nil**
 
 ### คำอธิบาย:
 เปรียบเทียบค่าระหว่าง big และ numeric
@@ -639,7 +639,7 @@ big <=> numeric → Integer / nil
 ## 3. การทำงานเกี่ยวกับบิต (Bitwise Operations)
 
 
-big & numeric → Numeric
+**big & numeric → Numeric**
 
 ### คำอธิบาย:
 ทำ AND ของตัวเลขสองตัวในรูปแบบบิต
@@ -651,7 +651,7 @@ big & numeric → Numeric
  ```
 ---
 
-big | numeric → Numeric
+**big | numeric → Numeric**
 
 ### คำอธิบาย:
 ทำ OR ของตัวเลขสองตัวในรูปแบบบิต
@@ -663,7 +663,7 @@ big | numeric → Numeric
 ---
 
 
-big ^ numeric → Numeric
+**big ^ numeric → Numeric**
 
 ### คำอธิบาย:
 ทำ XOR ของตัวเลขสองตัวในรูปแบบบิต
@@ -674,7 +674,7 @@ big ^ numeric → Numeric
  ```
 
 ---
-big << n → Numeric
+**big << n → Numeric**
 
 ### คำอธิบาย:
 เลื่อนบิตไปทางซ้าย n ตำแหน่ง
@@ -686,7 +686,7 @@ big << n → Numeric
  ```
 
 ---
-big >> n → Numeric
+**big >> n → Numeric**
 
 ### คำอธิบาย:
 เลื่อนบิตไปทางขวา n ตำแหน่ง
@@ -699,7 +699,7 @@ big >> n → Numeric
 
 ---
 
-~big → Numeric
+**~big → Numeric**
 
 ### คำอธิบาย:
 กลับค่าบิตทั้งหมด
@@ -715,7 +715,8 @@ big >> n → Numeric
 ---
 
 ## 4. การหารแบบพิเศษ
-div(other) → Integer
+
+**div(other) → Integer**
 
 ### คำอธิบาย:
 หารแล้วปัดเศษ ลง ให้ผลลัพธ์เป็นจำนวนเต็ม
@@ -728,7 +729,7 @@ div(other) → Integer
  ```
 
 ---
-divmod(numeric) → [Integer, Integer]
+**divmod(numeric) → [Integer, Integer]**
 
 ### คำอธิบาย:
 คืนค่าผลหารและเศษในรูปแบบ Array
@@ -742,7 +743,7 @@ divmod(numeric) → [Integer, Integer]
 
 ---
 
-fdiv(numeric) → Float
+**fdiv(numeric) → Float**
 
 ### คำอธิบาย:
 หารแบบให้ผลลัพธ์เป็น ทศนิยม
@@ -754,7 +755,7 @@ fdiv(numeric) → Float
 
 ---
 
-remainder(numeric) → Numeric
+**remainder(numeric) → Numeric**
 
 ### คำอธิบาย:
 คืนค่าเศษจากการหาร โดย เครื่องหมายตามตัวตั้ง
@@ -766,7 +767,8 @@ remainder(numeric) → Numeric
  ```
 
 ## 5. เมธอดการตรวจสอบและแปลงค่า
-even? → Boolean
+
+**even? → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบว่าค่าเป็นเลขคู่หรือไม่
@@ -779,7 +781,7 @@ even? → Boolean
 
 ---
 
-odd? → Boolean
+**odd? → Boolean**
 
 ### คำอธิบาย:
 ตรวจสอบว่าค่าเป็นเลขคี่หรือไม่
@@ -791,7 +793,7 @@ odd? → Boolean
  ```
 
 ---
-abs → Numeric
+**abs → Numeric**
 
 ### คำอธิบาย:
 คืนค่าค่าสัมบูรณ์ของตัวเลข
@@ -803,7 +805,7 @@ abs → Numeric
  ```
 
 ---
-size → Integer
+**size → Integer**
 
 ### คำอธิบาย:
 คืนค่าจำนวน ไบต์ ที่ใช้ในการเก็บตัวเลข
@@ -814,7 +816,7 @@ size → Integer
 (256**10 - 1).size #=> 12
  ```
 ---
-to_f → Float
+**to_f → Float**
 
 ### คำอธิบาย:
 แปลงค่าตัวเลขเป็น ทศนิยม
@@ -826,7 +828,7 @@ to_f → Float
  ```
 
 ---
-to_s(base = 10) → String
+**to_s(base = 10) → String**
 
 ### คำอธิบาย:
 แปลงเป็นสตริงตามฐานที่กำหนด (ระหว่าง 2 ถึง 36)
@@ -837,7 +839,7 @@ to_s(base = 10) → String
 12345654321.to_s(16) #=> "2dfdbbc31"
  ```
 ---
-inspect → String
+**inspect → String**
 
 ### คำอธิบาย:
 คืนค่ารูปแบบสตริงของตัวเลข (เหมือน to_s)
