@@ -206,6 +206,33 @@ The elements are:
 1000009 
 ```
 Java ใช้คนละเมธอดในการเลือกรวมหรือไม่รวมตัวสุดท้าย ในการใช้คลาสต้องนำเข้าแพคเกจ และJava ไม่มี built-in อาจต้องใช้ loop หรือสร้างเงื่อนไข
+##### rangeClosed 
+เมธอดที่เริ่มจากค่าเริ่มต้นไปจนถึงค่าสุดท้าย
+```java
+package com.javabrahman.java8.streams;
+import java.util.stream.IntStream;
+import java.util.stream.LongStream;
+public class RangeNRangeClosedExample {
+
+  public static void main(String args[]){
+    //IntStream.range() and IntStream.rangeClosed() examples
+    System.out.println("Using IntStream.range() & IntStream.rangeClosed()");
+    IntStream.range(1, 10).forEach(i -> System.out.print(i + " "));
+    System.out.println();
+    IntStream.rangeClosed(1, 10).forEach(i -> System.out.print(i + " "));
+    
+    //LongStream.range() and LongStream.rangeClosed() examples    
+    System.out.println("\n Using LongStream.range() & LongStream.rangeClosed()");
+    LongStream.range(1000000L, 1000005L).forEach(i -> System.out.print(i + " "));
+    System.out.println();
+    LongStream.rangeClosed(1000000L, 1000005L).forEach(i -> System.out.print(i + " "));
+  }
+}
+```
+ผลลัพธ์
+
+<img width="581" height="203" alt="Screenshot 2025-09-04 214319" src="https://github.com/user-attachments/assets/ee4ecba3-6f29-4cf4-8d72-cff8e074ab51" />
+
 
 ### ภาษา Python
 Range ใน Python จะต้องใช้ loop เพื่อแสดงผล กำหนดค่าเริ่มต้น และค่าสุดท้าย แต่ผลลัพธ์ที่ออกมาจะเริ่มต้นที่ตัวแรกแต่ไม่รวมค่าสุดท้าย ถ้าอยากได้ค่าสุดท้ายต้องนำค่าสุดท้ายไป +1 โดยใช้ for i in range(start,end) 
@@ -288,6 +315,10 @@ https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html
 IntStream rangeClosed() method in Java (เนื้อหา)
 
 https://www.tutorialspoint.com/intstream-rangeclosed-method-in-java
+
+How to use range() and rangeClosed() methods (เนื้อหา, ตัวอย่าง)
+
+https://www.javabrahman.com/java-8/java-8-how-to-use-range-rangeclosed-methods-of-intstream-longstream-with-examples/
 
 ### Python
 Python range() Function (เนื้อหา, ตัวอย่าง)
