@@ -182,7 +182,7 @@ class Name // create class Name auto create and instance of class Class
 end
 n = Name.new // be object
 ```
-## กรณีต้องการดูว่ามีอะไรเกิดขึ้น ใช้การ override new ของ Class เพื่อดู
+## กรณีต้องการดูว่าสามารถนำไปใช้ได้หรือไม่ override new ของ Class เพื่อดู
 ``` Ruby
 class Class
   alias old_new new
