@@ -1,5 +1,6 @@
 # Breaking from While Loops
 
+
 ## การใช้งาน Break Statement ใน While Loops :
 
 ในภาษา Ruby เราสามารถใช้คำสั่ง `break` เพื่อหยุดการทำงานของ while loop ทันทีก่อนที่จะสิ้นสุดเงื่อนไขการทำงานของ while ในลูป
@@ -22,13 +23,10 @@
 end
 </code></pre>
 
-{% hint style="info" %}
 การใช้คำสั่ง `break` ใน while loop จะต้องมีการใช้ควบคู่กับคำสั่ง if เสมอ สามารถสังเกตได้จากโค้ดข้างต้นที่มีการกำหนดเงื่อนไขพิเศษเพื่อสิ้นสุดการทำงานของลูป ขณะที่โปรแกรมทำงานวนลูปซ้ำ ๆ แล้วเมื่อใดก็ตามที่เงื่อนไขดั่งกล่าวเป็นจริง คำสั่ง break จะช่วยหยุดการทำงานของลูปทันที
-{% endhint %}
 
 ## Example :
 
-{% code overflow="wrap" fullWidth="true" %}
 ```ruby
 i = 0
 while i < 10
@@ -39,7 +37,6 @@ while i < 10
   i += 1
 end
 ```
-{% endcode %}
 
 จากตัวอย่างข้างต้น while loop จะทำงานวนซ้ำทั้งหมด 10 รอบและสิ้นสุดการทำงานเมื่อ i มีค่าน้อยกว่า 10 โดยลูปนี้จะสิ้นสุดการทำงานเมื่อมีการทำงานตรงกับเงื่อนไขพิเศษคือ i มีค่าเท่ากับ 3 เป็นจริง ทำให้ค่าที่ถูกพิมพ์ออกมามีผลลัพธ์ดังนี้
 
@@ -55,7 +52,6 @@ end
 
 ## Basic Syntax :&#x20;
 
-{% code overflow="wrap" fullWidth="true" %}
 ```ruby
 # Ruby program to use break-if statement
 while condition 
@@ -64,11 +60,8 @@ while condition
     # code
 end
 ```
-{% endcode %}
 
-{% hint style="info" %}
 เมื่อใช้คำสั่ง `break if` ไม่จำเป็นต้องมี end ปิดท้ายเหมือนการใช้คำสั่ง if แยกกับคำสั่ง `break`
-{% endhint %}
 
 ## Example :
 
@@ -90,9 +83,7 @@ while i &#x3C; 10
 
 จะเห็นว่าผลลัพธ์ของการทำงานเหมือนกับการใช้คำสั่ง break ปกติ ต่างกันแค่วิธีการเขียนเงื่อนไขให้กระชับมากยิ่งขึ้น
 
-{% hint style="warning" %}
 ข้อควรระวัง : ควรตรวจสอบการทำงานของคำสั่ง `break` หากมีการใช้งานคำสั่ง `break` ผิดจุดหรือลืมคำสั่งบางอย่างที่ทำให้ไม่สามารถใช้งานคำสั่ง `break` ได้ อาจทำให้โปรแกรมเกิด infinite loop หรือลูปทำงานไม่รู้จบ
-{% endhint %}
 
 ## เปรียบเทียบการใช้ Break ในแต่ละภาษา ( Ruby, C, Java, Python )
 
@@ -102,7 +93,6 @@ while i &#x3C; 10
 
 ## Example :
 
-{% code overflow="wrap" fullWidth="true" %}
 ```ruby
 i = 0
 while i < 10
@@ -113,7 +103,6 @@ while i < 10
   i += 1
 end
 ```
-{% endcode %}
 
 ## C :&#x20;
 
@@ -154,7 +143,6 @@ while condition:
 
 ## Example :
 
-{% code overflow="wrap" fullWidth="true" %}
 ```python
 i = 0
 while i < 10:
@@ -163,7 +151,6 @@ while i < 10:
     print(i)
     i += 1
 ```
-{% endcode %}
 
 ## Java :
 
@@ -196,11 +183,9 @@ public class Main {
 }
 ```
 
-{% hint style="info" %}
 ## ลักษณะเด่นของคำสั่ง break ในภาษา Java อีกหนึ่งอย่างที่แตกต่างจากภาษาอื่นคือ เราสามารถใช้งาน labeled break เพื่อออกจากการทำงานของลูปซ้อนหลายชั้นได้
 
 อธิบายเพิ่มเติม : `labeled break` เป็นฟีเจอร์ในภาษา Java ที่เราสามารถตั้งชื่อ ( หรือเรียกว่าการ label ) ให้กับลูปได้ แล้วมีการใช้คำสั่ง break เพื่อออกจากการทำงานของลูปดังกล่าวที่มีการระบุชื่อไว้ สามารถใช้งานได้ในกรณีที่ต้องการกระโดดออกจากลูปที่ซ้อนกันหลายชั้น
-{% endhint %}
 
 ## Basic Syntax :
 
@@ -226,7 +211,6 @@ while (condition) {
 
 ## Example :
 
-{% code overflow="wrap" fullWidth="true" %}
 ```java
 public class JavaLabeledLoopEx 
 {
@@ -251,7 +235,6 @@ public class JavaLabeledLoopEx
    }
 }
 ```
-{% endcode %}
 
 ### Output
 
@@ -265,13 +248,10 @@ Outer Count: 1, Inner Count: 1
 
 จากตัวอย่างโค้ดข้างต้น จะหยุดการทำงานของลูปที่มี label เป็น outerLoop เมื่อมีการเข้าเงื่อนไข if ( outerCount == 1 && innerCount == 1 ) โดยคำสั่ง `break` จะทำให้การทำงานของลูปชั้นนอกสิ้นสุดลงและไม่มีการวนซ้ำของลูปชั้นในและลูปชั้นนอกแม้ว่าจะยังทำงานไม่ถึงจุดที่ค่าของ while เป็น false ( while (innerCount < 3) , while (outerCount < 3) ) โดยจะได้ผลลัพธ์ของการทำงานดังนี้
 
-{% hint style="info" %}
 ในภาษา Java และภาษา C สามารถใช้งานคำสั่ง `break`ควบคู่กับคำสั่ง `switch-case` ได้แทนการใช้งานคำสั่ง if
-{% endhint %}
 
 #### Java Example :
 
-{% code overflow="wrap" fullWidth="true" %}
 ```java
 inputLoop: while(scanner.hasNextInt()){
     int userInput = scanner.nextInt();
@@ -289,7 +269,6 @@ inputLoop: while(scanner.hasNextInt()){
     }
 }
 ```
-{% endcode %}
 
 จากโค้ดภาษา Java ข้างต้น การทำงานจะสิ้นสุดเมื่อเข้าเงื่อนไขเคสที่ userInput มีค่าเท่ากับ 0 หรือ case 0 ( userInput = 0 ) ซึ่งสามารถใช้งานเป็น `labeled break` ได้เพื่อหยุดการทำงานของลูปชั้นที่ label ไว้ ซึ่งในที่นี้ถ้ามีการใช้คำสั่ง break inputLoop จะทำให้สิ้นสุดการทำงานทั้งหมดภายใต้ลูปดังกล่าว ต่างจากการใช้งาน break ปกติที่จะหยุดการทำงานแค่ใน switch เท่านั้น
 
