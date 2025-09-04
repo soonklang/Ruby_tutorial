@@ -4,9 +4,9 @@
 
 สมมติว่า ข้อมูลภายในไฟล์ text.txt คือ 
 
-> Fred Bloggs,Manager,Male,45
-Laura Smith,Cook,Female,23
-Debbie Watts,Professor,Female,38
+> Fred Bloggs,Manager,Male,45\n
+Laura Smith,Cook,Female,23\n
+Debbie Watts,Professor,Female,38\n
 
 ตัวอย่างที่ 1 :
 ```
