@@ -257,8 +257,71 @@ c.roar
 
 ### การใช้งาน Method Overriding ในภาษาอื่นๆ
 - ### Java
+  **ตัวอย่างการใช้งาน Method Overriding ในภาษา Java**
+
+  ```Java
+
+    // Superclass
+  public class Lion {
+      public void roar() {
+          System.out.print("ROAR!");
+      }
+  }
+  
+  // Subclass
+  public class Cat extends Lion {
+      @Override
+      public void roar() {
+          System.out.print("meow!");
+      }
+  }
+  
+  // Main class to run
+  public class Main {
+      public static void main(String[] args) {
+          Cat c = new Cat();
+          c.roar();  //
+      }
+  }
+
+  
+  ```
+  <details>
+
+  <summary>Output</summary>
+
+  > meow!
+
+
+  </details>
+  
 - ### Python
+  **ตัวอย่างการใช้งาน Method Overriding ในภาษา Python**
+  ```Python
+
+  class Lion:
+      def roar(self):
+          print("ROAR!", end="")
+  
+  class Cat(Lion):
+      def roar(self):  # Overriding
+          print("meow!", end="")
+  
+  if __name__ == "__main__":
+      c = Cat()
+      c.roar() 
+  
+  
+  ```
+  <details>
+
+  <summary>Output</summary>
+
+  > meow!
+
+  </details>
 - ### C
+  **ตัวอย่างการใช้งาน Method Overriding ในภาษา C**
 
 ---
 
