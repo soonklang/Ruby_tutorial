@@ -237,8 +237,7 @@ MyClass.i
 ```
 12345
 ```
-
-## การเรียก Method แต่ละครั้งก็จะมีการเรียก self โดยอัตโนมัติทำให้เขียนได้รวดเร็วขึ้น
+## การประกาศ Java Class
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
 - GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
