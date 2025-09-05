@@ -9,6 +9,7 @@
 | [ตัวอย่างเพิ่มเติมจากแหล่งอื่น](#ตัวอย่างเพิ่มเติมจากแหล่งอื่น) |
 | [เปรียบเทียบกับภาษา C / Java / Python](#เปรียบเทียบกับภาษา-c--java--python) |
 | [ตารางเปรียบเทียบโค้ด](#ตารางเปรียบเทียบโค้ด) |
+| [Slide & Video](#Slide-&-Video) |
 | [แหล่งอ้างอิง](#แหล่งอ้างอิง) |
 
 ---
@@ -310,6 +311,9 @@ END
 **ข้อสรุป** Ruby ใช้ flip-flop operator ได้ในตัว แต่ C / Java / Python ต้องใช้ตัวแปร flag เพิ่มเติม ดังนั้น Ruby กระชับและอ่านง่ายกว่าในกรณีนี้
 
 ---
+## Slide & Video
+
+---
 
 ## แหล่งอ้างอิง
 
@@ -353,3 +357,4 @@ END
 10. **Python Official Docs – Reading and Writing Files**  
     https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files  
     - ใช้อ้างอิงวิธีอ่านไฟล์ line-by-line (ตัวอย่างนี้ใช้ list)
+---
