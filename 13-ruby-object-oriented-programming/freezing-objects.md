@@ -4,7 +4,7 @@
 ทุกวัตถุที่ถูกสร้างมาจะสามารถถูกแช่แข็งได้ โดยที่วัตถุที่ถูกแช่แข็งจะไม่สามารถถูกดัดแปลงได้ ไม่สามารถเปลี่ยน Instance variables ได้ และไม่สามารถสร้าง singleton method ได้
 สมมุคิถ้า Class ถูกแช่แข็ง จะไม่สามารถเพิ่ม,ลบ หรือ เปลี่ยนแปลง method ได้
 
-Syntax: ObjectName.freeze
+### Syntax: ObjectName.freeze
 
 ## ตัวอย่าง Ruby
 ```ruby
@@ -64,4 +64,15 @@ main.rb:20:in `setA=': can't modify frozen Addition (RuntimeError)
 from main.rb:39:in `'
 ```
 
-สังเกตว่าเมื่อมีการพยายามแก้ไข Object จะมีการขึ้นเตือน (RuntimeError) และหยุดรันทีนที
+สังเกตว่าใน Terminal บรรทัดที่ 2 เมื่อมีการพยายามแก้ไข Object จะมีการขึ้นเตือน (RuntimeError) และหยุดรันทันที
+
+เราสามารถตรวจสอบได้ว่าวัตถุนี้ถูกแช่แข็งหรือไม่โดยการใช้
+
+### Syntax: ObjectName.frozen?
+```
+a = []
+a.frozen? # => return ค่าเป็น false
+a.freeze
+a.frozen? # => return ค่าเป็น true
+```
+
