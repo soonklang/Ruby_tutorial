@@ -56,7 +56,7 @@ puts "A is : #{add.getA()}"
 puts "B is : #{add.getB()}"
 ```
 
-### OUTPUT
+### Output
 ```
 Addition object is frozen object 
 main.rb:20:in `setA=': can't modify frozen Addition (FrozenError) 
@@ -105,7 +105,7 @@ public class FinalObjectExample {
 }
 ```
 
-## REFERENCES
+## References
 Ruby Documentation's Freezing Method https://docs.ruby-lang.org/en/3.4/Array.html#method-i-freeze
 
 GeeksForGeeks's Freezing Objects | Ruby https://www.geeksforgeeks.org/ruby/freezing-objects-ruby/
