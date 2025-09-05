@@ -174,14 +174,14 @@ class Dog
 end
 ```
 ## การประกาศ Ruby Class
-Class ในภาษา Ruby ก็เป็น object เหมือนกัน ซึ่งก็คือเมื่อเราสร้าง class ขึ้นมา class นึง หลังจากสร้างจะมีการสร้าง `class Class` ขึ้นมาอัตโนมัติเพื่อให้ object class สามารถ instance โดย `class Class` จะเป็นจุดสูงสุดของ class แล้วไม่มี class ใดเหนือกว่านี้ การไล่ลำดับความสำคัญของ Ruby จากมากสุดไปน้อยสุดจะเป็น BasicObject -> Object -> Module -> Class
+Class ในภาษา Ruby ก็เป็น object เหมือนกัน ซึ่งก็คือเมื่อเราสร้าง class ขึ้นมา class นึง หลังจากสร้างจะมีการสร้าง `class Class` ขึ้นมาอัตโนมัติเพื่อให้ object class สามารถ instance โดย `class Class` จะเป็นจุดสูงสุดของ class แล้วไม่มี class ใดเหนือกว่านี้ การไล่ลำดับความสำคัญของ Ruby จากมากสุดไปน้อยสุดจะเป็น BasicObject -> Object -> Module -> Class ใช้ `end` ในการปิด class, method, if, loop ฯลฯ
 ## ตัวอย่างการประกาศ Syntax Ruby Class
 ```Ruby
 class Name # class keyword
   # class variables
   # initialize (constructor)
   # method
-end # terminated by end keyword
+end 
 ```
 ## การสร้าง Object จาก Class ใน Ruby
 ```Ruby
@@ -213,7 +213,7 @@ Creating a new Name
 อย่างที่กล่าวไปในเรื่อง object ของภาษา C ภาษา ว่าภาษา C ไม่มีการออกแบบมาให้เขียนแบบ OOP จึงไม่มี class เป็นของ C จริงๆแต่ยังคงสามารถใช้วิธีอื่นในการจำลองการทำงานของ class ได้
 ## การประกาศ Python Class
 เทียบ Python กับภาษาอื่นๆ Python จะมีการใช้ syntax ใน class ที่น้อยและเรียบง่ายกว่าจากการผสมแนวคิดของ C++ กับ Modula-3 Class ของ Python ลองรับฟีเจอร์พื้นฐานของ OOP ทั้งหมด ทั้งการสืบทอด หรือการ override ทำให้ภาษามีความยืดหยุ่น class ของ Python จะมีการทำงานแบบ dynamic หรือก็คือสามารถปปรับแต่ง หรือเพิ่ม method และ attribute ของ class ระหว่าง runtime ได้
-แต่ Python จะมีความเหมือนกับภาษา Ruby เป็นอย่างมากจากการที่ทั้ง 2 ภาษานี้มีการมองเป็น object เหมือนกันทำให้ต่างกันเพียงวิธีการเขียน syntax และการเขียน access control ใน method ที่ ruby จะมี public private protected แต่หลักการทำงานเหมือนกัน
+แต่ Python จะมีความเหมือนกับภาษา Ruby เป็นอย่างมากจากการที่ทั้ง 2 ภาษานี้มีการมองเป็น object เหมือนกันทำให้ต่างกันเพียงวิธีการเขียน syntax และการเขียน access control ใน method ที่ ruby จะมี public private protected แต่หลักการทำงานเหมือนกัน ส่วนการกำหนดครอบ class นั้นจะใช้การเยื้องบรรทัด (indentation) เป็นตัวกำหนดขอบเขต block ของ class, function, if, loop
 ## ตัวอย่างการประกาศ Syntax Python Class แบบพื้นฐาน
 ```Python
 class ClassName:
@@ -238,7 +238,21 @@ MyClass.i
 12345
 ```
 ## การประกาศ Java Class
-Java ถึงแม้จะออกแบบมาให้สามารถทำ OOP ได้เหมือนกันกับ Ruby แต่การทำงานจริงๆนั้นต่างกัน
+Java เป็นภาษาโปรแกรมเชิงวัตถุเหมือนกันกับ Ruby และ Python แต่การประกาศ class ของ Java จะมีจุดต่างจาก Ruby และ Python ตรงที่ class ของ Java จะมีการประกาศระดับการเข้าถึงว่าเป็น `public`, `private`, `protected`, `default` ทำให้การใช้งานดูเป็นระบบและเข้มงวดกว่า Ruby และ Python เพราะ Ruby มีเพียง `public`, `private`, `protected` ส่วน Python ไม่มีkeyword ประกาศระดับการเข้าถึง แต่สามารถใช้ได้ `_protected`, `__private` การกำหนดข้อมูลของ Java ก็จำเป็นต้องกำหนดชนิดข้อมูลชัดเจนตั้งแต่ compile-time (static) ไม่เหมือน Ruby และ Python ที่เป็น dynamic ข้อดีของการเป็นที่เป็น static คือสามารถตรวจเจอ error ได้ตั้งแต่ตอน compile มี interface และ abstract จะเข้มงวดและชัดเจนกว่า การครอบ block ของ class, method, if, loop Java จะใช้ curly braces `{}`
+## Java's Access Levels
+| modifier|class|package|subclass|world|
+|---------|-----|-------|--------|-----|
+| public  |  Y  |   Y   |    Y   | Y   |
+|protected|  Y  |   Y   |    Y   | N   |
+| default |  Y  |   Y   |    N   | N   |
+| private |  Y  |   N   |    N   | N   |
+## ตัวอย่างการประกาศ Syntax Java Class
+```Java
+class MyClass {
+    // field, constructor, and 
+    // method declarations
+}
+```
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
 - GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
@@ -249,3 +263,5 @@ Java ถึงแม้จะออกแบบมาให้สามารถ
 - PythonDocumentation. Data model, from https://docs.python.org/3/reference/datamodel.html#objects-values-and-types
 - OpenJDK. The Java® Language Specification, from https://cr.openjdk.org/~mr/jigsaw/spec/java-se-9-jls-diffs.pdf
 - RubyDocumentation. Class, from https://ruby-doc.org/core-2.5.4/Class.html
+- Oracles. The Java™ Tutorials, from https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+- Oracles. The Java™ Tutorials, from https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html
