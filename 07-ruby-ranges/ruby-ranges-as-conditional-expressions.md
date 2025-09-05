@@ -315,7 +315,7 @@ END
 
 1. **Ruby Official Documentation – Control Expressions**  
    https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html  
-   - ใช้อธิบายพฤติกรรมของ flip-flop operator และตัวอย่าง `(value == 2)..(value == 8)`
+   - ใช้อธิบายพฤติกรรมของ flip-flop operator
 
 2. **Techotopia – Ruby Ranges (Conditional Expressions section)**  
    https://www.techotopia.com/index.php/Ruby_Ranges  
@@ -323,19 +323,19 @@ END
 
 3. **TutorialsPoint – Ruby Ranges**  
    https://www.tutorialspoint.com/ruby/ruby_ranges.htm  
-   - ใช้เสริมตัวอย่าง flip-flop และอธิบาย inclusive (`..`) vs exclusive (`...`)
+   - ใช้เสริมตัวอย่าง flip-flop
 
 4. **GeeksforGeeks – Ruby Ranges**  
    https://www.geeksforgeeks.org/ruby/ruby-ranges/  
-   - ใช้สนับสนุนคำอธิบาย Range กับ Conditional Expressions และเพิ่มตัวอย่าง Ranges as Conditions
+   - ใช้สนับสนุนคำอธิบาย Range as Conditional Expressions และ inclusive (`..`) กับ exclusive (`...`)
 
 5. **Nithin Bekal – Blog: Ruby Flip-Flop Operator**  
    https://nithinbekal.com/posts/ruby-flip-flop/  
-   - ใช้สำหรับตัวอย่าง parsing ไฟล์และเพิ่ม indent
+   - ใช้สำหรับตัวอย่าง parsing ไฟล์
 
 6. **Scout APM Blog – Ruby Flip-Flop**  
    https://www.scoutapm.com/blog/ruby-flip-flop  
-   - ใช้สำหรับตัวอย่าง `[0,1,2,3,4].each do |x|` และอธิบาย flip-flop
+   - ใช้สำหรับตัวอย่าง `[0,1,2,3,4].each do |x|` และตัวอย่าง flip-flop ที่แสดงความแตกต่างระหว่าง inclusive (`..`) กับ exclusive (`...`)
 
 7. **Stack Overflow Discussions**  
    - [When would a Ruby flip-flop be useful?](https://stackoverflow.com/questions/1111286/when-would-a-ruby-flip-flop-be-useful)  
