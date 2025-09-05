@@ -52,7 +52,7 @@ puts Admin.count
 
 ### Python
 
-  ในภาษา Python การประกาศตัวแปรไว้ใน class ตรงๆตัวแปรนั้นจะเป็น class variable และแชร์กับ subclass เช่นเดียวกัน 
+  ในภาษา Python การประกาศตัวแปรไว้ใน class ตรงๆ ตัวแปรนั้นจะเป็น class variable และแชร์กับ subclass เช่นเดียวกัน 
        
 ```python
     class User:
