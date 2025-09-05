@@ -1,8 +1,7 @@
----
-description: การรวม Array ในภาษา Ruby ด้วย 3 วิธี ;)
----
+
 
 # Combining Ruby Arrays
+การรวม Array ในภาษา Ruby ด้วย 3 วิธี 
 
 ## <mark style="color:blue;">1. การใช้เครื่องหมาย +</mark>
 
