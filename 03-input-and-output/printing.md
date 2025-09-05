@@ -57,3 +57,43 @@ p arr
 [1, 2, 3]
 ```
 สรุปได้ว่าจากเมธอดทั้ง 3 ตัวนี้นั้นมีจุดประสงค์ในการใช้ที่ต่างกัน โดย 2 ตัวแรกอย่าง print และ puts นั้นค่อนข้างจะ user-friendly เหมาะกับผู้ใช้ทั่วไป ในขณะที่ p นั้นไม่เหมาะกับผู้ใช้ทั่วไปเลย เหมาะกับโปรแกรมเมอร์มากกว่า ดังนั้นเราสามารถเลือกใช้ได้ตามสถานการณ์ที่ต้องการ
+# ภาษาอื่นๆอย่าง Java, C และ Python ทำได้ไหม?
+## Java
+ในภาษา Java นั้นมีเมธอดที่เหมือนกับ print, puts และ p อยู่นั่นคือ
+- System.out.print ที่เหมือนกับ print ใน Ruby ที่จะไม่มีการขึ้นบรรทัดใหม่หลังจากจบการแสดงผล
+- System.out.println ที่เหมือนกัน puts ใน Ruby ที่จะขึ้นบรรทัดใหม่หลังจากแสดงผลอ็อบเจ็กต์นั้นๆเสร็จ
+- toString ที่เหมือนกับ p ใน Ruby ที่จะแสดงค่าที่อยู่ในอ็อบเจ็กต์ออกมา
+### ตัวอย่าง
+```Java
+#System.out.print
+public class Main {
+    public static void main(String[] args) {
+        System.out.print("Hello, world!");
+        System.out.print("Welcome to Ruby tutorial project");
+    }
+}
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world! Welcome to Ruby tutorial project
+
+#System.out.println
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+        System.out.println("Welcome to Ruby tutorial project");
+    }
+}
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world!
+Welcome to Ruby tutorial project
+
+#toString
+import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3};
+        System.out.println(Arrays.toString(arr));
+    }
+}
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+[1,2,3]
+```
