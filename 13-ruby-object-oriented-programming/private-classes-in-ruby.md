@@ -101,7 +101,9 @@ Main.java:13: error: OuterClass.InnerClass has private access in OuterClass
     OuterClass.InnerClass myInner = myOuter.new InnerClass();
               ^
 ```
-จะเห็นได้ว่าการสร้าง private class ในภาษา java นั้นเป็นการสร้างแบบตรงไปตรงมาโดยการใส่ private ไว้ด้านหน้าเลย ต่างจาก ruby ที่ต้องใช้ private_constant:class เนื้องจากไม่มี private class syntax โดยตรง  
+จะเห็นได้ว่าการสร้าง private class ในภาษา java นั้นเป็นการสร้างแบบตรงไปตรงมาโดยการใส่ private ไว้ด้านหน้าเลย ต่างจาก ruby ที่ต้องใช้  
+`private_constant:class`
+เนื้องจากไม่มี private class syntax โดยตรง  
 ### Python  
 ในภาษา python ไม่มี private class โดยตรงแต่จะมีสิ่งที่เรียกว่า Private name mangling ซึ่งใกล้เคียงกับ private class มากที่สุด หลักการทำงานคือใส่ __ ด้านหน้าชื่อของ inner-class จากนั้น python จะทำการแปลงชื่อของ inner-class โดยอัตโนมัติ  
 **หลักการทำงาน :**  
@@ -109,13 +111,34 @@ Main.java:13: error: OuterClass.InnerClass has private access in OuterClass
 **ตัวอย่าง :**  
 ```python
 class Car:
-    class __Engine: # ใช้ __ นำหน้าชื่อ
+    class __Engine:
         def start(self):
             print("engine started")
 
 try:
-   engine = Car.__Engine()
+    engine = Car.__Engine()
 except AttributeError as e:
-    print(f"\nพยายามเรียก __Engine โดยตรง -> เกิดข้อผิดพลาด: {e}")
+    print(e)
 ```
+**ผลลัพธ์ :**  
+`type object 'Car' has no attribute '__Engine'`
+จากผลลัพธ์จะเห็นได้ว่าเราไม่สามารถเข้าถึง class __Engine ได้เนื่องจากมันถูกแปลงชื่อเป็น _Car__Engine ทำให้โปรแกรมหาไม่พบ แต่ถ้าเรารู้ชื่อที่ถูกแปลงเราก็ยังสามารถเข้าถึงได้อยู่ดีตามตัวอย่างด้านล่าง
+```python
+class Car:
+    class __Engine:
+        def start(self):
+            print("engine started")
 
+try:
+    # เข้าถึงคลาสผ่านชื่อที่แปลงแล้ว
+    engine_class = Car._Car__Engine
+    engine_instance = engine_class()
+    engine_instance.start()
+
+except AttributeError as e:
+    print(e)
+```
+**ผลลัพธ์ :**  
+`engine started`
+### C  
+ในภาษา C 
