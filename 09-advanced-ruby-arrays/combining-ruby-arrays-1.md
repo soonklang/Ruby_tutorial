@@ -1,2 +1,0 @@
-# Combining Ruby Arrays
-
