@@ -83,9 +83,21 @@ say_hello()  # => Hello
 # 2.ภาษา Java
 ในภาษา Java นั้น ไม่มี alias สำหรับ method แบบ Ruby/Python ทำให้ต้องสร้าง wrapper method ขึ้นมาแทนแทน
 
-**Class Wrapper ใน Java คือ คลาสพิเศษที่เก็บสิ่งดั้งเดิมไว้ภายใน
+**Wrapper method ใน Java คือการสร้างเมธอดใหม่ที่เรียกเมธอดเดิมภายในตัว body ของมัน
+```java
+public class Greeter {
+    public void greet() {
+        System.out.println("Hello");
+    }
+    public void sayHello() {
+        greet();  // wrapper method
+    }
+}
+```
 
+อธิบาย
 
+ในโค้ดตัวอย่างนี้ เมธอด sayHello() ทำหน้าที่เป็น alias ของ greet() โดยการเรียก sayHello() จะทำให้เกิดการเรียก greet() ภายใน ซึ่งเป็นวิธีการที่ใช้ใน Java เพื่อให้เมธอดหนึ่งสามารถถูกเรียกด้วยชื่ออื่นได้ (wrapper method)
 
 
 # สรุปเปรียบเทียบ alias ในภาษาต่างๆ (Python, Java, C)
@@ -99,8 +111,13 @@ say_hello()  # => Hello
 
 
 # แหล่งอ้างอิง
+# Ruby :
 https://docs.ruby-lang.org/en/3.2/syntax/miscellaneous_rdoc.html  ใช้ในการอ้างอิง alias  , เปรียบเทียบความแตกต่าง
 
 https://www.rubydoc.info/stdlib/core/Module:alias_method  ใช้ในการอ้างอิง alias_method
 
+# Python :
 https://docs.python.org/3/tutorial/controlflow.html?utm_source=#defining-functions ใช้ในการอ้างอิง python
+
+# Java
+https://docs.oracle.com/javase/specs/jls/se14/html/jls-8.html#jls-8.4   
