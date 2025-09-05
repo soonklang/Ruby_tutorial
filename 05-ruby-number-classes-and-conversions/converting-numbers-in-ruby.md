@@ -256,6 +256,7 @@ float(int("01110101", 2)) // จะได้ค่าเป็น 117.0
 แต่ Hexadecimal Number ต้องใช้ Method float.fromhex ในการแปลงค่า
 
 ___
+
 # Reference
 
 Java 
