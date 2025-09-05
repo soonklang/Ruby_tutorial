@@ -41,7 +41,7 @@ end
 ```
 
 ```ruby
-(1..10).each do |x|
+(1...9).each do |x|
   puts x if (x == 4)...(x == 9)
 end
 ```
