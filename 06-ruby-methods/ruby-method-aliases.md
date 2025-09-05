@@ -7,7 +7,8 @@ Method Aliases คือ การสร้างชื่อใหม่ (alias
 # การสร้าง Method Aliases ใน Ruby มีด้วยกัน 2 วิธี
 1.alias (keyword)
    ตัวอย่างโค้ด
-   <pre> ruby class Greeting
+   ```ruby
+class Greeting
   def hello
     puts "Hello, world!"
   end
@@ -20,4 +21,4 @@ g = Greeting.new
 g.hello  # => "Hello, world!"
 g.hi     # => "Hello, world!"
 g.hey    # => "Hello, world!"
- </pre>
+
