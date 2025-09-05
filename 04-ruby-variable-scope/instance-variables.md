@@ -337,21 +337,3 @@ C
 - [ISO/IEC 9899:201x Committee Draft N1570 — April 12, 2011 (cs.dal.ca)](https://web.cs.dal.ca/~vlado/pl/C_Standard_2011-n1570.pdf) — เอกสารฉบับร่าง C11 สำหรับรายละเอียดไวยากรณ์/ไลบรารีมาตรฐาน<br><sub>เผยแพร่ 12 เมษายน 2011; สืบค้นเมื่อวันที่ 3 กันยายน 2568</sub>
 
   
-https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568 
-
-https://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html  นำเนื้อหาเรื่องInstance Variablesเรื่องกฎการตั้งชื่อมาใช้ สืบค้นเมื่อวันที่ 1 กันยายน 2568  
-
-นำโค้ดจาก TutorialsPoint – Ruby Variablesมาใช้ในส่วนการกำหนดและใช้งานhttps://www.tutorialspoint.com/ruby/ruby_variables.htm  สืบค้นเมื่อวันที่ 1 กันยายน 2568   
-นำโค้ด (จาก Ruby Official Documentation – Syntax: Assignment / Instance Variables)มาใช้ในส่วนค่าเริ้มต้นhttps://docs.ruby-lang.org/en/3.3/syntax/assignment_rdoc.html#label-Instance+Variables  สืบค้นเมื่อวันที่ 1 กันยายน 2568  
-
-นำโค้ด (จาก Ruby Core API – Module)มาใช้ในส่วนattr_accessor, attr_reader, attr_writer https://ruby-doc.org/core/Module.html  สืบค้นเมื่อวันที่ 1 กันยายน 2568    
-
-นำโค้ด (จาก Ruby Official Documentation – Object)มาใช้ในส่วนinstance_variables, instance_variable_set/get/remove https://docs.ruby-lang.org/en/3.3/Object.html  สืบค้นเมื่อวันที่ 1 กันยายน 2568  
-
-Java >>  https://docs.oracle.com/javaee/6/tutorial/doc/gjbbp.html  สืบค้นเมื่อวันที่ 2 กันยายน 2568  
-
-โค้ดเปรียบเทียบRuby https://www.rubydoc.info/stdlib/core/Module%3Aattr_accessor?utm_source=chatgpt.com สืบค้นเมื่อวันที่ 2 กันยายน 2568  
-
-Python >> https://docs.python.org/3/library/functions.html?utm_source=chatgpt.com  สืบค้นเมื่อวันที่ 2 กันยายน 2568  
-
-C >> https://www.iso.org/standard/82075.html?utm_source=chatgpt.com    https://web.cs.dal.ca/~vlado/pl/C_Standard_2011-n1570.pdf?utm_source=chatgpt.com  สืบค้นเมื่อวันที่ 3 กันยายน 2568
