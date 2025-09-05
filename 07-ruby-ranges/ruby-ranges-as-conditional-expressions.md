@@ -138,7 +138,6 @@ Flip-flop active: 4
 ## เปรียบเทียบกับภาษา C / Java / Python
 - **Ruby**
 ```ruby
-# Ruby
 # Input จำลอง
 input = <<~DATA
 line 1
