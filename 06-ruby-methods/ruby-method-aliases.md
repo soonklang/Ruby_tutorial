@@ -13,12 +13,16 @@ class Greeting
     puts "Hello, world!"
   end
 
-  alias hi hello
-  alias :hey :hello
+  alias hi hello   #ส่วนที่มีการใช้ alias (keyword)
+  alias :hey :hello #ส่วนที่มีการใช้ alias (keyword)
 end
 
 g = Greeting.new
 g.hello  # => "Hello, world!"
 g.hi     # => "Hello, world!"
-g.hey    # => "Hello, world!"
-
+g.hey    # => "Hello, world!" 
+```
+อธิบาย
+alias ใช้สร้าง ชื่อใหม่ให้ method เดิม
+hi ---> alias ของ hello
+hey ---> alias ของ hello
