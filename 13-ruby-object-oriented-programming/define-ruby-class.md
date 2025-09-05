@@ -174,7 +174,7 @@ class Dog
 end
 ```
 ## นิยาม Ruby Class
-Class ในภาษา Ruby ก็เป็น object เหมือนกัน ซึ่งก็คือเมื่อเราสร้าง class ขึ้นมา class นึง หลังจากสร้างจะมีการสร้าง `class Class` ขึ้นมาอัตโนมัติเพื่อเป็น ให้สามารถ instance ได้ โดย class Class จะเป็นจุดสูงสุดของ class แล้วไม่มีอะไรเหนือกว่านี้ แต่การไล่ลำดับความสำคัญของ Ruby จากมากสุดไปน้อยสุดจะเป็น BasicObject -> Object -> Module -> Class
+Class ในภาษา Ruby ก็เป็น object เหมือนกัน ซึ่งก็คือเมื่อเราสร้าง class ขึ้นมา class นึง หลังจากสร้างจะมีการสร้าง `class Class` ขึ้นมาอัตโนมัติเพื่อให้ object class สามารถ instance โดย `class Class` จะเป็นจุดสูงสุดของ class แล้วไม่มี class ใดเหนือกว่านี้ การไล่ลำดับความสำคัญของ Ruby จากมากสุดไปน้อยสุดจะเป็น BasicObject -> Object -> Module -> Class
 ## การสร้าง Object จาก Class ใน Ruby
 ```Ruby
 class Name // create class Name auto create and instance of class Class 
