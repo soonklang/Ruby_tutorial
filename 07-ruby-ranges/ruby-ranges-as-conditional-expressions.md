@@ -98,7 +98,7 @@ END
 ```ruby
 # flipflop_example.rb
 [0,1,2,3,4].each do |x|
-    if (x==1)..(x==2) # if true .. true
+    if (x==-1)..(x==1) # first condition never true
         puts "Flip-flop active: #{x}"
     else
         puts "Flip-flop inactive: #{x}"
@@ -108,8 +108,8 @@ end
 **Output**
 ```
 Flip-flop inactive: 0
-Flip-flop active: 1
-Flip-flop active: 2
+Flip-flop inactive: 1
+Flip-flop inactive: 2
 Flip-flop inactive: 3
 Flip-flop inactive: 4
 ```
@@ -117,7 +117,7 @@ Flip-flop inactive: 4
 ```ruby
 # flipflop_example.rb
 [0,1,2,3,4].each do |x|
-    if (x==1)...(x==3) # three-dot operator
+    if (x==1)...(x==1) # three-dot operator; if true … true
         puts "Flip-flop active: #{x}"
     else
         puts "Flip-flop inactive: #{x}"
@@ -130,7 +130,7 @@ Flip-flop inactive: 0
 Flip-flop active: 1
 Flip-flop active: 2
 Flip-flop active: 3
-Flip-flop inactive: 4
+Flip-flop active: 4
 ```
 
 ---
