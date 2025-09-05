@@ -7,23 +7,23 @@
 ซึ่งประกอบไปด้วย
 
 * ค่าคงที่ทางคณิตศาสตร์
-* [ruby-math-constants.md](ruby-math-constants.md "mention")
+* *[ruby-math-constants.md](ruby-math-constants.md "mention")
 * ฟังก์ชันทางคณิตศาสตร์
-* [ruby-math-methods-and-examples.md](ruby-math-methods-and-examples.md "mention")
-  * [p01.trigonometric-functions.md](ruby-math-methods-and-example/p01.trigonometric-functions.md "mention")
-  * [p02.inverse-trigonometric-functions.md](ruby-math-methods-and-example/p02.inverse-trigonometric-functions.md "mention")
-  * [p03.hyperbolic-trigonometric-functions.md](ruby-math-methods-and-example/p03.hyperbolic-trigonometric-functions.md "mention")
-  * [p04.inverse-hyperbolic-trigonometric-functions.md](ruby-math-methods-and-example/p04.inverse-hyperbolic-trigonometric-functions.md "mention")
-  * [p05.exponentiation-and-logarithmic-functions.md](ruby-math-methods-and-example/p05.exponentiation-and-logarithmic-functions.md "mention")
-  * [p06.fraction-and-exponent-functions.md](ruby-math-methods-and-example/p06.fraction-and-exponent-functions.md "mention")
-  * [p07.root-functions.md](ruby-math-methods-and-example/p07.root-functions.md "mention")
-  * [p08.error-functions.md](ruby-math-methods-and-example/p08.error-functions.md "mention")
-  * [p09.gamma-functions.md](ruby-math-methods-and-example/p09.gamma-functions.md "mention")
-  * [p10.hypotenuse-function.md](ruby-math-methods-and-example/p10.hypotenuse-function.md "mention")
+* *[ruby-math-methods-and-examples.md](ruby-math-methods-and-examples.md "mention")
+  * *[p01.trigonometric-functions.md](ruby-math-methods-and-example/p01.trigonometric-functions.md "mention")
+  * *[p02.inverse-trigonometric-functions.md](ruby-math-methods-and-example/p02.inverse-trigonometric-functions.md "mention")
+  * *[p03.hyperbolic-trigonometric-functions.md](ruby-math-methods-and-example/p03.hyperbolic-trigonometric-functions.md "mention")
+  * *[p04.inverse-hyperbolic-trigonometric-functions.md](ruby-math-methods-and-example/p04.inverse-hyperbolic-trigonometric-functions.md "mention")
+  * *[p05.exponentiation-and-logarithmic-functions.md](ruby-math-methods-and-example/p05.exponentiation-and-logarithmic-functions.md "mention")
+  * *[p06.fraction-and-exponent-functions.md](ruby-math-methods-and-example/p06.fraction-and-exponent-functions.md "mention")
+  * *[p07.root-functions.md](ruby-math-methods-and-example/p07.root-functions.md "mention")
+  * *[p08.error-functions.md](ruby-math-methods-and-example/p08.error-functions.md "mention")
+  * *[p09.gamma-functions.md](ruby-math-methods-and-example/p09.gamma-functions.md "mention")
+  * *[p10.hypotenuse-function.md](ruby-math-methods-and-example/p10.hypotenuse-function.md "mention")
 * ข้อผิดพลาดโดเมนคณิตศาสตร์
-* [ruby-domainerror.md](ruby-domainerror.md "mention")
+* *[ruby-domainerror.md](ruby-domainerror.md "mention")
 * แหล่งอ้างอิง
-* [References](references.md)
+* *[References](references.md)
 ## การเพิ่มโมดูลคณิตศาสตร์ในภาษาต่าง ๆ
 
 Ruby
