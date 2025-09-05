@@ -1,5 +1,5 @@
 # Passing Arguments to a Method
-**Passing Arguments to a Method** เวลาเราเรียกใช้งาน method ใน Ruby สามารถส่งข้อมูล (arguments) เข้าไปเพื่อให้ method ทำงานกับค่าที่กำหนด โดย Ruby รองรับหลายรูปแบบดังนี้
+**Passing Arguments to a Method** ใน Ruby เวลาเราสร้าง method ขึ้นมา เราสามารถส่งค่าต่าง ๆ (arguments) เข้าไปเพื่อให้ method ทำงานตามเงื่อนไขหรือข้อมูลที่ต้องการ ซึ่ง Ruby มีรูปแบบการส่ง argument ที่ค่อนข้างยืดหยุ่น โดย Ruby รองรับหลายรูปแบบดังนี้
 ### 1.Positional Arguments
 
       def greet(name, age)
@@ -26,7 +26,7 @@
       Hello Bob, age: 18
       Hello Bob, age: 30
 
-### 3.ariable-length Arguments
+### 3. Variable-length Arguments
 
       def print_numbers(*nums) 
          puts nums.inspect        
@@ -212,43 +212,37 @@
 
 |ภาษา|วิธีส่งค่า|ตัวแปรธรรมดา|Object/Reference|
 |-------|-----|----|------|  
-|C|Call by Value|ไม่เปลี่ยนค่าต้นฉบับ|ใช้ pointer ถึงจะเปลี่ยนได้|  
-|Java|Pass by Value|ไม่เปลี่ยนค่าต้นฉบับ|เปลี่ยนค่าภายใน object ได้|
-|Python|Pass by Object Reference|immutable → ไม่เปลี่ยน|mutable → เปลี่ยนจริง | 
+|C|Call by Value|x=5 → ส่ง copy, ไม่เปลี่ยน|ใช้ pointer ถึงจะเปลี่ยน|  
+|Java|Pass by Value|int x=50 → ไม่เปลี่ยน|obj.field=.. → เปลี่ยนได้|
+|Python|Pass by Object Reference|x=50 → ไม่เปลี่ยน|list.append() → เปลี่ยนจริง | 
 
 ## Reference
 
 # C
 
-GeeksforGeeks. (ไม่มีวันที่). Functions in C. GeeksforGeeks. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/functions-in-c/
+GeeksforGeeks. (n.d.). Functions in C. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/functions-in-c/
 
-TutorialsPoint. (ไม่มีวันที่). C – Functions. TutorialsPoint. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.tutorialspoint.com/cprogramming/c_functions.htm
+TutorialsPoint. (n.d.). C – Functions. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.tutorialspoint.com/cprogramming/c_functions.htm
 
 # Java
 
-W3Schools. (ไม่มีวันที่). Java Methods. W3Schools. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.w3schools.com/java/java_methods.asp
+W3Schools. (n.d.). Java Methods. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.w3schools.com/java/java_methods.asp
 
-GeeksforGeeks. (ไม่มีวันที่). Methods in Java. GeeksforGeeks. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/methods-in-java/
+GeeksforGeeks. (n.d.). Methods in Java. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/methods-in-java/
 
 # Python
 
-W3Schools. (ไม่มีวันที่). Python Functions. W3Schools. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.w3schools.com/python/python_functions.asp
+W3Schools. (n.d.). Python Functions. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.w3schools.com/python/python_functions.asp
 
-GeeksforGeeks. (ไม่มีวันที่). Functions in Python. GeeksforGeeks. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/functions-in-python/
+GeeksforGeeks. (n.d.). Functions in Python. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/functions-in-python/
 
 # Ruby
 
-Techotopia. (ไม่มีวันที่). Ruby Essentials. Techotopia. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.techotopia.com/index.php/Ruby_Essentials
+Ruby-lang.org. (n.d.). Ruby master documentation. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://docs.ruby-lang.org/en/master/
 
-Ruby-lang.org. (ไม่มีวันที่). Ruby master documentation. Ruby-lang. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://docs.ruby-lang.org/en/master/
+TutorialsPoint. (n.d.). Ruby – Methods. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.tutorialspoint.com/ruby/ruby_methods.htm
 
-Github. (ไม่มีวันที่). The best ruby books. GitHub. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://github.com/maniramakumar/the-best-ruby-books/tree/master/books
-
-TutorialsPoint. (ไม่มีวันที่). Ruby tutorial. TutorialsPoint. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.tutorialspoint.com/ruby/index.htm
-
-GeeksforGeeks. (ไม่มีวันที่). Ruby tutorial. GeeksforGeeks. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/ruby/ruby-tutorial/
-
-Codecademy. (ไม่มีวันที่). Learn Ruby. Codecademy. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.codecademy.com/enrolled/courses/learn-ruby
+GeeksforGeeks. (n.d.). Ruby Methods. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://www.geeksforgeeks.org/ruby-methods/
 
 
 
