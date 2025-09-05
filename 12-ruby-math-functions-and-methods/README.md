@@ -22,7 +22,8 @@
   * [p10.hypotenuse-function.md](ruby-math-methods-and-example/p10.hypotenuse-function.md "mention")
 * ข้อผิดพลาดโดเมนคณิตศาสตร์
 * [ruby-domainerror.md](ruby-domainerror.md "mention")
-
+* แหล่งอ้างอิง
+* [References](references.md)
 ## การเพิ่มโมดูลคณิตศาสตร์ในภาษาต่าง ๆ
 
 Ruby
