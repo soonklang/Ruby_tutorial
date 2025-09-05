@@ -85,7 +85,7 @@ Flip-flop inactive: 4
 
 ## ตัวอย่างเพิ่มเติมจากแหล่งอื่น
 
-### Parsing ไฟล์เพื่อเพิ่ม indent
+### Parsing ไฟล์
 Flip-flop ช่วยเลือกบรรทัดที่อยู่ระหว่างคำว่า `indent` และ `dedent` โดยอัตโนมัติ
 
 ```ruby
