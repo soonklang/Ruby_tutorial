@@ -304,7 +304,7 @@ int main() {
 
 ### Reference
 
-คูเปอร์, พี. (2016). Beginning Ruby: From novice to professional (พิมพ์ครั้งที่ 3, น. 113–115). เอเพรส. https://doi.org/10.1007/978-1-4842-1278-3
+คูเปอร์, พี. (2016). Beginning Ruby: From novice to professional (พิมพ์ครั้งที่ 3, น. 113–115). เอเพรส. https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
 
 >
 
