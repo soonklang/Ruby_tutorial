@@ -2,7 +2,6 @@
 
 * [Ruby Math Functions and Methods](README.md)
 * [Ruby Math Constants](ruby-math-constants.md)
-* [Ruby Math Methods](ruby-math-methods.md)
 * [Ruby Math Methods & Example](ruby-math-methods-and-example/README.md)
   * [P01.Trigonometric Functions](ruby-math-methods-and-example/p01.trigonometric-functions.md)
   * [P02.Inverse Trigonometric Functions](ruby-math-methods-and-example/p02.inverse-trigonometric-functions.md)
