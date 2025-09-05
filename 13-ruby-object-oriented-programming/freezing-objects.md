@@ -67,7 +67,7 @@ from main.rb:39:in `'
 
 เราสามารถตรวจสอบได้ว่าวัตถุนี้ถูกแช่แข็งหรือไม่โดยการใช้
 ### Syntax: ObjectName.frozen?
-```
+```ruby
 a = []
 a.frozen? # => return ค่าเป็น false
 a.freeze
@@ -77,7 +77,7 @@ a.frozen? # => return ค่าเป็น true
 ## เทียบกับภาษา Java
 ภาษาจาวาไม่มีเมธอด freeze แต่การ immutability (การไม่เปลี่ยนรูป) สามารถทำได้ด้วยการใช้คีย์เวิร์ด "final" นำหน้าหรือตัวแปร
 ###Syntax:
-```
+```java
 public class FinalTest {
     public static void main(String[] args) {
         final int x = 10; // กำหนดให้ตัวแปรนี้เป็น final
@@ -87,7 +87,7 @@ public class FinalTest {
 }
 ```
 ### แต่เมื่อ final ถูกวางไว้หน้าวัตถุตอนที่ถูกสร้าง ตัวแปรภายในวัตถุจะยังคงสามารถเปลี่ยนแปลงค่าได้
-```
+```java
 class Person {
     String name;
     Person(String name) {
