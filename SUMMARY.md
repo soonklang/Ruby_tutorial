@@ -1,3 +1,4 @@
 # Table of contents
 
-* [Ruby local variable](README.md)
+* [Combining Ruby Arrays](README.md)
+* [Ruby local variable](<README (1).md>)
