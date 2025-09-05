@@ -137,8 +137,8 @@ ruby:
 num_str = 456.to_s  # => "456"
 ```
 
-java:
-```java
+C:
+```C
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -164,7 +164,7 @@ puts "123".to_i      # => 123
 puts "hello".to_i    # => 0 (โปรแกรมทำงานต่อ)
 ```
 
-java:
+python:
 ```python
 print(int("123"))     # => 123
 print(int("hello"))   # => ValueError: invalid literal for int() (โปรแกรมหยุดทันที)
@@ -183,3 +183,8 @@ print(int("hello"))   # => ValueError: invalid literal for int() (โปรแ�
 
 [6] K. Sonmez, *Introduction to Programming with Ruby*. Launch School, 2017. [Online]. Available: https://launchschool.com/books/ruby/read/basics#typeconversion. [Accessed: Sep. 3, 2025].
 
+[7] "atoi, atol, atoll," cppreference.com, Mar. 7, 2025. [Online]. Available: https://en.cppreference.com/w/c/string/byte/atoi. [Accessed: Sep. 5, 2025].
+
+[8] "Object Type Casting in Java," baeldung, May 11, 2024. [Online]. Available: https://www.baeldung.com/java-type-casting. [Accessed: Sep. 5, 2025].
+
+[9] "Built-in function int(),", Python 3.13.7 documentation, Python Software Foundation, 2025. [Online]. Available: https://docs.python.org/3/library/functions.html#int. [Accessed: Sep. 5, 2025].
