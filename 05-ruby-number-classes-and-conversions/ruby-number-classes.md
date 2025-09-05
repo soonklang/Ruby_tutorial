@@ -1220,3 +1220,5 @@ https://www.geeksforgeeks.org/ruby/ruby-integer-class/. [Accessed: 1-Sep-2025].
 [3] *Programming Ruby – The Pragmatic Programmer’s Guide*, “class Fixnum < Integer,” Phrogz.net. [Online]. Available: https://phrogz.net/programmingruby/ref_c_fixnum.html. [Accessed: 2-Sep-2025].
 
 [4] Matz, "Class: Bignum," *Ruby 2.0.0 Documentation*, 2013. [Online]. Available: https://docs.ruby-lang.org/en/2.0.0/Bignum.html. [Accessed: 2-Sep-2025].
+
+[5] “Ruby | Float Class,” *Ruby 3.0.3 Documentation*, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Float.html. [Accessed: 4-Sep-2025].
