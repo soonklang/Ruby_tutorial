@@ -60,7 +60,7 @@ Interest on balance 1000 at rate 0.7 is 700.0
 จากโค้ดตัวอย่างเมื่อเปรียบเทียบจะเห็นว่า ทางภาษา Java สามารถเข้าถึงตัวแปรอินสแตนซ์ (instance variables) ได้เลย, จะต้องระบุ type ของพารามิเตอร์กับ return type ให้ชัดเจน และเวลาเรียก method ผ่าน object ด้วยวงเล็บเสมอ ส่วนทางภาษา Ruby สามารถเข้าถึงตัวแปรอินสแตนซ์ (instance variables) ได้โดยที่ขึ้นต้นด้วย @ , ไม่ต้องระบุ type และเวลาเรียก method ผ่าน object วงเล็บสามารถใส่หรือไม่ก็ได้
 
 ## ตัวอย่าง python
-```
+```Python
 class BankAccount:  
     def __init__(self, balance):  
         self.balance = balance  
