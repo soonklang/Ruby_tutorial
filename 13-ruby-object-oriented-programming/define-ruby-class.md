@@ -116,7 +116,7 @@ my_dog.bark()
 The-3-year-old white dog: Bao! Bao!
 ```
 ## Object ในภาษา Java
-Java มี object ที่คล้ายกับ Ruby และ Python ตรงที่ object เป็น instance of the Class เหมือนกัน แต่มีความต่างที่ตอนที่สร้าง class ขึ้นมาการสร้าง pointer ขึ้นมาชี้ค่าตัวแปร จะไม่เหมือน @ และ self ตรงที่ .this ของ java ตรงที่ java แยก `primitive` หรือก็คือเป็นการแทนค่าเข้าไปในพวก `int` `boolean` `float` ก็คืออย่างเช่นเวลาเราเขียน 
+Java มี object ที่คล้ายกับ Ruby และ Python ตรงที่ object เป็น instance of the Class เหมือนกัน แต่มีความต่างที่ตอนที่สร้าง class ขึ้นมา การสร้าง pointer ชี้ค่าตัวแปรจะไม่เหมือน @ และ self ตรงที่ .this ของ java ตรงที่ java แยก `primitive` หรือก็คือเป็นการแทนค่าเข้าไปในพวก `int` `boolean` `float` อย่างเช่น
 ``` Java 
 int x = 5;
 int y = x;
@@ -130,7 +130,7 @@ Dog b = a;
 b.color = "white";
 ค่าของ a.color จะเป็น white ด้วย
 ```
-Python และ Ruby จะถูกเปลี่ยนเป็นแบบกรณี object ของ Java เสมอ เพราะทั้งคู่มีเป็น object ทั้งหมด
+Python และ Ruby จะถูกเปลี่ยนเป็นแบบกรณี object ของ Java เสมอ เพราะทั้งคู่เป็น object ทั้งหมด
 ## ตัวอย่างการสร้าง Object ในภาษา Java
 ```Java
 public class Dog {
