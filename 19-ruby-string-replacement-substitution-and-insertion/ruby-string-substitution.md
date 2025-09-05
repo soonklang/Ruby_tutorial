@@ -75,7 +75,7 @@ void replaceWord(char *str, const char *oldWord, const char *newWord) {
 
 int main() {
     char str[100] = "Welcome to Thailand!";
-    replaceWord(str, "PHP", "C");
+    replaceWord(str, "Thailand", "Vietnam");
     printf("%s\n", str);
     // => "Welcome to Vietnam!"
     return 0;
