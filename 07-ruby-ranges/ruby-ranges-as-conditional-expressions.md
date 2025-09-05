@@ -96,23 +96,41 @@ END
 **เปรียบเทียบ inclusive vs exclusive**
 - **inclusive**
 ```ruby
-picked = []
-0.upto(5) { |v| picked << v if (v == 2)..(v == 5) }
-p picked
+# flipflop_example.rb
+[0,1,2,3,4].each do |x|
+    if (x==1)..(x==2) # if true .. true
+        puts "Flip-flop active: #{x}"
+    else
+        puts "Flip-flop inactive: #{x}"
+    end
+end
 ```
 **Output**
 ```
-[2, 3, 4, 5]
+Flip-flop inactive: 0
+Flip-flop active: 1
+Flip-flop active: 2
+Flip-flop inactive: 3
+Flip-flop inactive: 4
 ```
 - **exclusive**
 ```ruby
-picked = []
-0.upto(5) { |v| picked << v if (v == 2)...(v == 5) }
-p picked
+# flipflop_example.rb
+[0,1,2,3,4].each do |x|
+    if (x==1)...(x==3) # three-dot operator
+        puts "Flip-flop active: #{x}"
+    else
+        puts "Flip-flop inactive: #{x}"
+    end
+end
 ```
 **Output**
 ```
-[2, 3, 4]
+Flip-flop inactive: 0
+Flip-flop active: 1
+Flip-flop active: 2
+Flip-flop active: 3
+Flip-flop inactive: 4
 ```
 
 ---
