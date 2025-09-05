@@ -121,7 +121,7 @@ except AttributeError as e:
     print(e)
 ```
 **ผลลัพธ์ :**  
-`type object 'Car' has no attribute '__Engine'`
+`type object 'Car' has no attribute '__Engine'`  
 จากผลลัพธ์จะเห็นได้ว่าเราไม่สามารถเข้าถึง class __Engine ได้เนื่องจากมันถูกแปลงชื่อเป็น _Car__Engine ทำให้โปรแกรมหาไม่พบ แต่ถ้าเรารู้ชื่อที่ถูกแปลงเราก็ยังสามารถเข้าถึงได้อยู่ดีตามตัวอย่างด้านล่าง
 ```python
 class Car:
@@ -141,4 +141,41 @@ except AttributeError as e:
 **ผลลัพธ์ :**  
 `engine started`
 ### C  
-ในภาษา C 
+ในภาษา C ไม่มีแนวคิดของ class เหมือนภาษาเชิงวัตถุ OOP เช่น Java Python และ Ruby แต่ก็มีสิ่งที่คล้ายๆกันที่สามารถใช้ซ่อนข้อมูลได้เรียกว่า Opaque pointer มีหลักการทำงานคือ ในไฟล์ Header(.h) เราจะประกาศแค่ struct ลอยๆไว้ ทำให้คนเรียกใช้รู้แค่ว่ามี struct นี้อยู่ แต่ไม่รู้ว่าข้างในมีอะไร ส่วนของภายใน struct จริงๆ จะถูกซ่อนไว้ในไฟล์ซอร์สโค้ด(.c) ซึ่งจะต้องทำผ่านฟังก์ชัน API ที่เราสร้างไว้เท่านั้น
+**ตัวอย่าง :**  
+ไฟล์ส่วนหัว(Header File:api.h) - ส่วนที่ผู้ใช้จะเห็น  
+```C
+// ประกาศ struct ลอยๆโดยไม่บอกว่าข้างในมีอะไร
+struct Object; 
+
+// สร้าง typedef ให้เป็น Opaque Pointer
+typedef struct Object *ObjectHandle;
+
+// ประกาศฟังก์ชัน API ที่ผู้ใช้งานจะเรียกได้
+ObjectHandle create_object(void);
+void use_object(ObjectHandle obj);
+void destroy_object(ObjectHandle obj);
+```
+ไฟล์ซอร์สโค้ด(Source File:api.c) - ส่วนที่ผู้ใช้จะไม่เห็น  
+```C
+#include <stdlib.h>
+#include "api.h" // ต้อง include header ของตัวเอง
+
+// นิยาม struct แบบเต็มๆ
+struct Object {
+    int private_data_1; // สมาชิก private
+    char private_data_2; // สมาชิก private
+};
+
+ObjectHandle create_object(void) {
+    return malloc(sizeof(struct Object));
+}
+
+void use_object(ObjectHandle obj) {
+}
+
+void destroy_object(ObjectHandle obj) {
+    free(obj);
+}
+```
+# Reference
