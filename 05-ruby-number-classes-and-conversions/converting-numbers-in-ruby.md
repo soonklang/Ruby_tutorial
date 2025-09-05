@@ -278,3 +278,4 @@ Python
 Ruby 
 - Module Kernel - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
 - Integer Class - https://www.geeksforgeeks.org/ruby/ruby-integer-class/
+- Float Class - https://www.geeksforgeeks.org/ruby/ruby-float-class/
