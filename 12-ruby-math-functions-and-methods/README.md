@@ -9,7 +9,7 @@
 * ค่าคงที่ทางคณิตศาสตร์
 * [ruby-math-constants.md](ruby-math-constants.md "mention")
 * ฟังก์ชันทางคณิตศาสตร์
-* [ruby-math-methods.md](ruby-math-methods.md "mention")
+* [ruby-math-methods-and-examples.md](ruby-math-methods-and-examples.md "mention")
   * [p01.trigonometric-functions.md](ruby-math-methods-and-example/p01.trigonometric-functions.md "mention")
   * [p02.inverse-trigonometric-functions.md](ruby-math-methods-and-example/p02.inverse-trigonometric-functions.md "mention")
   * [p03.hyperbolic-trigonometric-functions.md](ruby-math-methods-and-example/p03.hyperbolic-trigonometric-functions.md "mention")
