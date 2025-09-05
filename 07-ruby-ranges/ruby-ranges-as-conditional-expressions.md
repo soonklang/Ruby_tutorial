@@ -89,7 +89,7 @@ Flip-flop inactive: 4
 Flip-flop ช่วยเลือกบรรทัดที่อยู่ระหว่างคำว่า `indent` และ `dedent` โดยอัตโนมัติ
 
 ```ruby
-lines = ["start", "indent here", "dedent now", "end"]
+lines = ["zero indentation", "indent", "inside block", "dedent", "after the block", "indent", "inside block", "dedent", "end of file"]
 lines.each do |line|
   if line =~ /^indent/ .. line =~ /^dedent/
     puts "  " + line
@@ -100,10 +100,15 @@ end
 ```
 **Output**
 ```
-start
-  indent here
-  dedent now
-end
+zero indentation
+  indent
+  inside block
+  dedent
+after the block
+  indent
+  another block
+  dedent
+end of file
 ```
 
 ### กรอง code block
