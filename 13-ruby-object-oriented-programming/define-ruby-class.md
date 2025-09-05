@@ -185,10 +185,10 @@ end # terminated by end keyword
 ```
 ## การสร้าง Object จาก Class ใน Ruby
 ```Ruby
-class Name // create class Name auto create and instance of class Class 
+class Name # create class Name auto create and instance of class Class 
   
 end
-n = Name.new // be object
+n = Name.new # be object
 ```
 ## กรณีต้องการดูว่าสามารถนำไปใช้ได้หรือไม่ override new ของ Class เพื่อดู
 ``` Ruby
@@ -209,6 +209,9 @@ n = Name.new # new is method
 ```
 Creating a new Name
 ```
+## การประกาศ C Class
+อย่างที่กล่าวไปในเรื่อง object ของภาษา C ภาษา ว่าภาษา C ไม่มีการออกแบบมาให้เขียนแบบ OOP จึงไม่มี class เป็นของ C จริงๆแต่ยังคงสามารถใช้วิธีอื่นในการจำลองการทำงานของ class ได้
+## การประกาศ Python Class
 
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
