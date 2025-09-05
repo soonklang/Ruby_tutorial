@@ -348,8 +348,8 @@ END
 
 9. **Java SE Documentation – BufferedReader**  
    https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html  
-   - ใช้อ้างอิงวิธีอ่านไฟล์ทีละบรรทัด (แม้ตัวอย่างนี้ใช้ array)
+   - ใช้อ้างอิงวิธีอ่านไฟล์ทีละบรรทัด (ตัวอย่างนี้ใช้ array)
 
 10. **Python Official Docs – Reading and Writing Files**  
     https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files  
-    - ใช้อ้างอิงวิธีอ่านไฟล์ line-by-line (แม้ตัวอย่างนี้ใช้ list)
+    - ใช้อ้างอิงวิธีอ่านไฟล์ line-by-line (ตัวอย่างนี้ใช้ list)
