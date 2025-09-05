@@ -300,9 +300,9 @@ puts myString
 
 ### Ruby
 
-Techotopia. (ไม่มีวันที่). Concatenating Strings in Ruby. Techotopia. สืบค้นเมื่อ xx ตุลาคม 2025, จาก https://www.techotopia.com/index.php/Ruby_String_Concatenation_and_Comparison
+Techotopia. (ไม่มีวันที่). Concatenating Strings in Ruby. Techotopia. สืบค้นเมื่อ 31 สิงหาคม 2025, จาก https://www.techotopia.com/index.php/Ruby_String_Concatenation_and_Comparison
 
-Ruby-doc. (ไม่มีวันที่). concat(*objects). string. Ruby-doc. สืบค้นเมื่อ xx ตุลาคม 2025, จาก
+Ruby-doc. (ไม่มีวันที่). concat(*objects). string. Ruby-doc. สืบค้นเมื่อ 31 สิงหาคม 2025, จาก
 
 https://docs.ruby-lang.org/en/master/Array.html#method-i-concat
 
@@ -310,38 +310,37 @@ https://docs.ruby-lang.org/en/master/Array.html#method-i-concat
 
 ### Java
 
-Oracle. (ไม่มีวันที่). concat. Oracle. สืบค้นเมื่อ xx ตุลาคม 2025, จาก https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#concat-java.lang.String-
+Oracle. (ไม่มีวันที่). concat. Oracle. สืบค้นเมื่อ 4 กันยายน 2025, จาก https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#concat-java.lang.String-
 
-Oracle. (ไม่มีวันที่). Class String. Oracle. สืบค้นเมื่อ xx ตุลาคม 2025, จาก 
+Oracle. (ไม่มีวันที่). Class String. Oracle. สืบค้นเมื่อ 4 กันยายน 2025, จาก 
 
 https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
 
-GeeksforGeeks. (ไม่มีวันที่). Java String concat() Method with Examples. GeeksforGeeks. สืบค้นเมื่อ xx ตุลาคม 2025, จาก 
+GeeksforGeeks. (ไม่มีวันที่). Java String concat() Method with Examples. GeeksforGeeks. สืบค้นเมื่อ 4 กันยายน 2025, จาก 
 
 https://www.geeksforgeeks.org/java/java-string-concat-examples/
 
-W3Schools. (ไม่มีวันที่). String Concatenation. W3Schools. สืบค้นเมื่อ xx กันยายน 2025, จาก
+W3Schools. (ไม่มีวันที่). String Concatenation. W3Schools. สืบค้นเมื่อ 4 กันยายน 2025, จาก
 
 https://www.w3schools.com/java/java_strings_concat.asp
 
 
 ### Python
-RealPython. (ไม่มีวันที่). Efficient String Concatenation in Python. RealPython. สืบค้นเมื่อ xx กันยายน 2025, จาก
+RealPython. (ไม่มีวันที่). Efficient String Concatenation in Python. RealPython. สืบค้นเมื่อ 5 กันยายน 2025, จาก
 
 https://realpython.com/python-string-concatenation/#doing-string-concatenation-with-pythons-plus-operator
 
-GeeksforGeeks. (ไม่มีวันที่). Python String Concatenation. GeeksforGeeks. สืบค้นเมื่อ xx ตุลาคม 2025, จาก 
+GeeksforGeeks. (ไม่มีวันที่). Python String Concatenation. GeeksforGeeks. สืบค้นเมื่อ 5 กันยายน 2025, จาก 
 
 https://www.geeksforgeeks.org/python/python-string-concatenation/
 
-Python-doc. (ไม่มีวันที่). f-strings. Python-doc. สืบค้นเมื่อ xx กันยายน 2025, จาก
+Python-doc. (ไม่มีวันที่). f-strings. Python-doc. สืบค้นเมื่อ 5 กันยายน 2025, จาก
 
 https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals
 
 ### C
-GeeksforGeeks. (ไม่มีวันที่). Concatenating Two Strings in C. GeeksforGeeks. สืบค้นเมื่อ xx ตุลาคม 2025, จาก
+GeeksforGeeks. (ไม่มีวันที่). Concatenating Two Strings in C. GeeksforGeeks. สืบค้นเมื่อ 5 กันยายน 2025, จาก
 https://www.geeksforgeeks.org/c/concatenating-two-strings-in-c/
-
 
 
 
