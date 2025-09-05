@@ -179,13 +179,13 @@ void destroy_object(ObjectHandle obj) {
 }
 ```
 # Reference  
-*gGeeksforGeeks - Private Classes in Ruby**  
+**GeeksforGeeks - Private Classes in Ruby**  
 https://www.geeksforgeeks.org/ruby/private-classes-in-ruby/  
 ใช้อธิบายแนวคิด หลักการทำงาน และตัวอย่างโค้ดของการสร้างคลาสส่วนตัว (Private Class) ในภาษา Ruby  
 **W3Schools - Java Inner Classes**  
 https://www.w3schools.com/java/java_inner_classes.asp  
 ใช้อ้างอิงแนวการใช้ private class ในภาษา Java  
-**Python Software Foundation - Private name mangling**   
+**Python documentation - Private name mangling**   
 https://docs.python.org/3/reference/expressions.html  
 ใช้อ้างอิงการใช้งาน Private name mangling ในภาษา Python  
 **Wikipedia - Opaque pointer**  
