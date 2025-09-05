@@ -5,7 +5,7 @@
 # Method Aliases คืออะไร
 Method Aliases คือ การสร้างชื่อใหม่ (alias) เพื่อใช้อ้างอิงเมธอดเดิมที่มีอยู่ในคลาสหรือโมดูลเดียวกัน โดยเมธอดที่ถูกอ้างอิงด้วยชื่อ alias จะทำงานเหมือนกับเมธอดต้นฉบับทุกประการ
 # การสร้าง Method Aliases ใน Ruby มีด้วยกัน 2 วิธี
-1.alias (keyword)
+# 1.alias (keyword)
    ตัวอย่างโค้ด
    ```ruby
 class Greeting
@@ -23,6 +23,33 @@ g.hi     # => "Hello, world!"
 g.hey    # => "Hello, world!" 
 ```
 อธิบาย
-alias ใช้สร้าง ชื่อใหม่ให้ method เดิม
+
+alias ใช้สร้างชื่อใหม่ให้ method เดิม จากโค้ดตัวอย่างคือ
+```
 hi ---> alias ของ hello
+
 hey ---> alias ของ hello
+```
+
+
+# 2.alias_method
+  ตัวอย่างโค้ด
+  ```ruby
+  module Mod
+  alias_method :orig_exit, :exit  #ส่วนที่มีการใช้ alias_method
+  def exit(code=0)
+    puts "Exiting with code #{code}"
+    orig_exit(code)
+  end
+end
+include Mod
+exit(99)
+```
+
+อธิบาย
+
+alias_method ใช้สร้างชื่อใหม่ให้ method เดิม จากโค้ดตัวอย่างคือ
+```
+alias_method :orig_exit, :exit
+orig_exit  ---> alias ของ exit
+```
