@@ -104,7 +104,7 @@ p picked
 ```
 [2, 3, 4, 5]
 ```
-**exclusive**
+- **exclusive**
 ```ruby
 picked = []
 0.upto(5) { |v| picked << v if (v == 2)...(v == 5) }
