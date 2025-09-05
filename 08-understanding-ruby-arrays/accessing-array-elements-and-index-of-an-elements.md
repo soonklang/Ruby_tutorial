@@ -79,7 +79,7 @@ puts even.at(2)
 ### ตัวอย่าง
 
 ```
-puts odd(100,"Error Index out of bound")
+puts odd.fetch(100,"Error Index out of bound")
 #ค่าที่ได้ออกมาคือ Error Index out of bound
 ```
 
