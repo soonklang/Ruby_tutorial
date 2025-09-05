@@ -85,3 +85,20 @@ Interest on balance 1000 at rate 0.7 is 700.0
 ## Video
 -
 ## Reference
+Ruby
+
+Techotopia. (ม.ป.ป). Ruby Object Oriented Programming. เข้าค้นเมื่อ 5 กันยายน 2025 จาก https://www.techotopia.com/index.php/Ruby_Object_Oriented_Programming
+
+Ruby Programming Language. (ม.ป.ป). Methods. เข้าค้นเมื่อ 5 กันยายน 2025 จาก https://docs.ruby-lang.org/en/master/syntax/methods_rdoc.html
+
+TutorialsPoint. (ม.ป.ป). Ruby Methods. เข้าค้นเมื่อ 5 กันยายน 2025 จาก https://www.tutorialspoint.com/ruby/ruby_methods.htm
+
+ภาษาอื่น ๆ (ใช้อ้างอิงสำหรับเขียนโค้ดตัวอย่างเปรียบเทียบ Instance Method)
+
+Java
+
+GeeksforGeeks. (10 พฤศจิกายน 2021). Java Instance Methods. เข้าค้นเมื่อ 5 กันยายน 2025 จาก https://www.geeksforgeeks.org/instance-methods-in-java/
+
+Python
+
+GeeksforGeeks. (23 กรกฎาคม 2025). Class Method vs Static Method vs Instance Method in Python. เข้าค้นเมื่อ 5 กันยายน 2025 จาก https://www.geeksforgeeks.org/python/class-method-vs-static-method-vs-instance-method-in-python/
