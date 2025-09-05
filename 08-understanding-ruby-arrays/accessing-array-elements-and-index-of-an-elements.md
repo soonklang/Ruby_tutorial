@@ -328,7 +328,7 @@ return 0;
 
 Techtopia - Understanding Ruby Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.techotopia.com/index.php/Understanding\_Ruby\_Arrays](https://www.techotopia.com/index.php/Understanding_Ruby_Arrays)\
 geeksforgeeks - Ruby | Array index() function สืบค้นเมื่อ 4/9/2568 จาก [https://www.geeksforgeeks.org/ruby/ruby-array-class-index-function/](https://www.geeksforgeeks.org/ruby/ruby-array-class-index-function/)\
-geekforgekks - Ruby | Array rindex() function สืบค้นเมื่อ 4/9/2568 จาก [https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/](https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/)\
+geekforgeeks - Ruby | Array rindex() function สืบค้นเมื่อ 4/9/2568 จาก [https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/](https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/)\
 W3schools - Python Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/python/python\_arrays.asp](https://www.w3schools.com/python/python_arrays.asp)\
 W3schools - C Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/c/c\_arrays\_size.php](https://www.w3schools.com/c/c_arrays_size.php)\
 W3schools - Java Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/java/java\_arrays.asp](https://www.w3schools.com/java/java_arrays.asp)
