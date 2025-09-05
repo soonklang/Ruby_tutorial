@@ -238,6 +238,7 @@ MyClass.i
 12345
 ```
 ## การประกาศ Java Class
+Java ถึงแม้จะออกแบบมาให้สามารถทำ OOP ได้เหมือนกันกับ Ruby แต่การทำงานจริงๆนั้นต่างกัน
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
 - GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
