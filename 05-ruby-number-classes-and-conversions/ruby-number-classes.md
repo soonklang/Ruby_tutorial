@@ -1265,7 +1265,7 @@ puts rat
 
 ---
 
-####ข้อดีของการใช้ Rational()###
+#### ข้อดีของการใช้ Rational() ###
 
 
 1.)แม่นยำกว่า Float
@@ -1292,7 +1292,30 @@ puts rat
 rat = Rational(4,5)
 puts rat.to_f   #=> 0.8
 ```
-------
+---
+# เปรียบเทียบ Ruby Number Classes กับทั้ง 4 ภาษา #
+**ได้แก่ ภาษา Ruby , C ,Java, Python**
+*Ruby Number Classes มีดังนี้*
+```
+1.1) Integer Class
+1.2) Fixnum Class
+1.3) Bignum Class
+1.4) Float Class
+1.5) Rational Class
+```
+## Ruby ##
+
+---
+
+## C ##
+---
+
+## Java ##
+---
+
+## Python ##
+---
+
 
 
 
