@@ -89,10 +89,10 @@ my_string = "Welcome to Thailand!"
 
 new_string = my_string.replace("Thailand", "Vietnam")
 print(new_string)  
-=> "Welcome to Thailand!"
+=> "Welcome to Vietnam!"
 
 print(my_string)  
-=> "Welcome to PHP Essentials!"
+=> "Welcome to Thailand!"
 ```
 
 ## แหล่งอ้างอิง
