@@ -19,7 +19,7 @@ end
 ---
 
 ## Flowchart แสดงการทำงานของ if statement
-![alt text](image.png)
+![Flowchart การทำงาน](Picture-660710583/if-flowchart.png)
 
 ---
 
