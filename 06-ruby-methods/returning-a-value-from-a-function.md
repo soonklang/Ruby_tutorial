@@ -199,7 +199,6 @@ def say_hi():
 def show():
     print("Showing") 
     
-# เรียกใช้ฟังก์ชัน
 print(say_hello()) 
 print(say_hi())     
 print(show())      
