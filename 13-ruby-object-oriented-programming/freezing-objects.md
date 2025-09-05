@@ -66,7 +66,7 @@ from main.rb:39:in `'
 สังเกตว่าใน Terminal บรรทัดที่ 2 เมื่อมีการพยายามแก้ไข Object จะมีการขึ้นเตือน (FrozenError) และหยุดรันทันที
 
 เราสามารถตรวจสอบได้ว่าวัตถุนี้ถูกแช่แข็งหรือไม่โดยการใช้
-### Syntax: ObjectName.frozen?
+> Syntax: ObjectName.frozen?
 ```ruby
 a = []
 a.frozen? # => return ค่าเป็น false
