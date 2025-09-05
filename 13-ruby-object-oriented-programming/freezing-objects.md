@@ -75,8 +75,7 @@ a.frozen? # => return ค่าเป็น true
 ```
 
 ## เทียบกับภาษา Java
-ภาษาจาวาไม่มีเมธอด freeze แต่การ immutability (การไม่เปลี่ยนรูป) สามารถทำได้ด้วยการใช้คีย์เวิร์ด "final" นำหน้าหรือตัวแปร
-###Syntax:
+ภาษาจาวาไม่มีเมธอด freeze แต่ immutability (การไม่เปลี่ยนรูป) สามารถทำได้ด้วยการใช้คีย์เวิร์ด "final" นำหน้าหรือตัวแปร
 ```java
 public class FinalTest {
     public static void main(String[] args) {
