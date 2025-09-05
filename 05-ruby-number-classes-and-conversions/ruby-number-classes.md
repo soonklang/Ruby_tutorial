@@ -1335,24 +1335,120 @@ puts rat.to_f   #=> 0.8
 1.5) Rational Class
 ```
 ## Ruby ##
+ภาษา Ruby
+```
+# Integer
+int_num = 42
+puts "Integer: #{int_num}"  # => 42
+
+# Float
+float_num = 3.14
+puts "Float: #{float_num}"  # => 3.14
+
+# Rational
+rat_num = Rational(4, 5)
+puts "Rational: #{rat_num}"  # => 4/5
+
+```
+*อธิบาย*
+
+Integer แทนจำนวนเต็ม
+
+Float แทนตัวเลขทศนิยมแบบ double-precision
+
+Rational แทนตัวเลขในรูปเศษส่วน [Ruby Docs, 2025]
 
 ---
 
 ## C ##
----
 
+ภาษา C
+```
+#include <stdio.h>
+
+int main() {
+    int i = 42;
+    float f = 3.14;
+
+    printf("int: %d\n", i);     // => 42
+    printf("float: %.2f\n", f); // => 3.14
+    return 0;
+}
+```
+
+*อธิบาย*
+
+int แทนจำนวนเต็ม
+
+float แทนตัวเลขทศนิยมแบบ single-precision
+
+C ไม่มีชนิดข้อมูลเศษส่วนโดยตรง [GeeksforGeeks, 2025]
+
+---
 ## Java ##
----
 
+ภาษา Java
+```
+import java.math.BigInteger;
+import java.math.BigDecimal;
+
+public class NumberDemo {
+    public static void main(String[] args) {
+        int i = 42;
+        double d = 3.14;
+        BigInteger bigInt = new BigInteger("1234567890123456789");
+        BigDecimal bigDec = new BigDecimal("3.1415926535");
+
+        System.out.println("int: " + i);          // => 42
+        System.out.println("double: " + d);       // => 3.14
+        System.out.println("BigInteger: " + bigInt); // => 1234567890123456789
+        System.out.println("BigDecimal: " + bigDec); // => 3.1415926535
+    }
+}
+```
+
+*อธิบาย*
+
+int และ double แทนตัวเลขทั่วไป
+
+BigInteger และ BigDecimal สำหรับตัวเลขขนาดใหญ่หรือทศนิยมแม่นยำสูง
+
+Java ไม่มีคลาสสำหรับเศษส่วนโดยตรง [Oracle Docs, 2025]
+
+---
 ## Python ##
+
+ภาษา Python
+
+```
+from fractions import Fraction
+
+# Integer
+i = 42
+print("Integer:", i)  # => 42
+
+# Float
+f = 3.14
+print("Float:", f)    # => 3.14
+
+# Fraction
+frac = Fraction(4, 5)
+print("Fraction:", frac)  # => 4/5
+```
+
+*อธิบาย*
+
+int และ float เหมือนกับ Ruby
+
+Fraction แทนเศษส่วน [Python Docs, 2025]
+
 ---
-
-
-
-
 
 ## Referenes
+### content ##
 [1] “Ruby Number Classes and Conversions,” *Techotopia*, Techotopia.com. [Online]. Available: https://www.techotopia.com/index.php/Ruby_Number_Classes_and_Conversions. [Accessed: 1-Sep-2025].
+
+## content and Example ##
 
 [2] “Ruby | Integer Class,” *GeeksforGeeks*, Last updated 11 Jul. 2025. [Online]. Available:
 https://www.geeksforgeeks.org/ruby/ruby-integer-class/. [Accessed: 1-Sep-2025].
@@ -1364,5 +1460,36 @@ https://www.geeksforgeeks.org/ruby/ruby-integer-class/. [Accessed: 1-Sep-2025].
 [5] “Ruby | Float Class,” *Ruby 3.0.3 Documentation*, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Float.html. [Accessed: 4-Sep-2025].
 
 [6] G. Dave, "Ruby | Rational rational() function," GeeksforGeeks, 12 Jul. 2025. [Online]. Available: https://www.geeksforgeeks.org/ruby/ruby-rational-rational-function/
-. [Accessed: 5-Sep-2025].
+. [Accessed: 4-Sep-2025].
+
+## Ruby vs C vs Java vs Python: Number Class Comparison ##
+
+## Ruby ##
+[7] “Float Class,” Ruby 3.0.3 Documentation, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Float.html. [Accessed: 5-Sep-2025].
+
+[8] “Integer Class,” Ruby 3.0.3 Documentation, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Integer.html. [Accessed: 5-Sep-2025].
+
+[9] “Fixnum Class,” Ruby 3.0.3 Documentation, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Fixnum.html. [Accessed: 5-Sep-2025].
+
+[10] “Bignum Class,” Ruby 3.0.3 Documentation, 2025. [Online]. Available: https://ruby-doc.org/core-3.0.3/Bignum.html. [Accessed: 5-Sep-2025].
+
+[11] G. Dave, "Ruby | Rational rational() function," GeeksforGeeks, 12 Jul. 2025. [Online]. Available: https://www.geeksforgeeks.org/ruby/ruby-rational-rational-function/. [Accessed: 5-Sep-2025].
+
+## C ##
+
+[12] “Data Types in C,” GeeksforGeeks, Last updated 22 Jun. 2025. [Online]. Available: https://www.geeksforgeeks.org/data-types-in-c/. [Accessed: 5-Sep-2025].
+
+[13] “C Floating Point Types,” TutorialsPoint, 2025. [Online]. Available: https://www.tutorialspoint.com/cprogramming/c_data_types.htm. [Accessed: 5-Sep-2025].
+
+## Java ##
+
+[14] “Java Primitive Data Types,” Oracle, 2025. [Online]. Available: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html. [Accessed: 5-Sep-2025].
+
+[15] “Java Rational Numbers,” Baeldung, Last updated 15 Aug. 2025. [Online]. Available: https://www.baeldung.com/java-rational-numbers. [Accessed: 5-Sep-2025].
+
+## Python ##
+
+[16] “Numeric Types — int, float, complex,” Python 3 Documentation, 2025. [Online]. Available: https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex. [Accessed: 5-Sep-2025].
+
+[17] “Python Fractions Module,” GeeksforGeeks, Last updated 18 Jul. 2025. [Online]. Available: https://www.geeksforgeeks.org/python-fractions-module/. [Accessed: 5-Sep-2025].
 
