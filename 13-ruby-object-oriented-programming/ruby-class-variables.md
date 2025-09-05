@@ -132,7 +132,7 @@ def self.set_rate(new_rate)
   @@interest_rate = new_rate
 end
 ```
-- `def self.set_rate(...)` → การเขียน `self. `ทำให้กลายเป็น **เมธอดระดับ class (static method)**
+- `def self.set_rate(...)` → การเขียน `self. ` จะทำให้กลายเป็น **เมธอดระดับ class (static method)**
 - ใช้เพื่อเปลี่ยนค่า `@@interest_rate`
 
 - เทียบกับ Java: `static void setRate(double newRate) { ... }`
@@ -162,8 +162,8 @@ a = BankAccount.new("Earth", 1000)  # Earth has 1000 with rate 0.05
 b = BankAccount.new("Del", 2000)    # Del has 2000 with rate 0.05
 ```
 - `BankAccount.new(...)` = สร้าง object (เรียก `initialize`)  
-- `a` → object แรก, `name = "Earth"`, `balance = 1000`  
-- `b` → object สอง, `name = "Del"`, `balance = 2000`  
+- `a` คือ object ตัวแรก, `name = "Earth"`, `balance = 1000`  
+- `b` คือ object ตัวที่สอง, `name = "Del"`, `balance = 2000`  
 
 ---
 
@@ -294,9 +294,9 @@ Del has 2000 with rate 0.1
 | Class variable     | static | @@   |
 | Instance variable  | @field | @    |
 
-**ต่างกัน:**
-- Java subclass มี static ของตัวเอง → ไม่กระทบแม่  
-- Ruby subclass ใช้ `@@` → กระทบแม่ด้วย  
+**ต่างกันตรงที่:**
+- Java subclass มี static ของตัวเอง (ไม่กระทบแม่)  
+- Ruby subclass ใช้ `@@` (กระทบแม่ด้วย)
 
 ---
 
@@ -367,7 +367,7 @@ Python ใช้ `class variable` คล้าย Java
 
 ## เมื่อไหร่ควร หรือ ไม่ควรใช้ `@@` ใน Ruby?
 
-- **ควรใช้**: ค่าที่แชร์จริงๆ เช่น ตัวนับจำนวน instance  
+- **ควรใช้**: เมื่อค่านั้นคือ ค่าที่แชร์จริงๆ เช่น ตัวนับจำนวน instance  
 - **ไม่ควรใช้**: ถ้า subclass ควรมีค่าเป็นของตัวเอง  
 
 ---
