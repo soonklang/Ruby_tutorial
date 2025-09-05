@@ -212,7 +212,33 @@ Creating a new Name
 ## การประกาศ C Class
 อย่างที่กล่าวไปในเรื่อง object ของภาษา C ภาษา ว่าภาษา C ไม่มีการออกแบบมาให้เขียนแบบ OOP จึงไม่มี class เป็นของ C จริงๆแต่ยังคงสามารถใช้วิธีอื่นในการจำลองการทำงานของ class ได้
 ## การประกาศ Python Class
+เทียบ Python กับภาษาอื่นๆ Python จะมีการใช้ syntax ใน class ที่น้อยและเรียบง่ายกว่าจากการผสมแนวคิดของ C++ กับ Modula-3 Class ของ Python ลองรับฟีเจอร์พื้นฐานของ OOP ทั้งหมด ทั้งการสืบทอด หรือการ override ทำให้ภาษามีความยืดหยุ่น class ของ Python จะมีการทำงานแบบ dynamic หรือก็คือสามารถปปรับแต่ง หรือเพิ่ม method และ attribute ของ class ระหว่าง runtime ได้
+แต่ Python จะมีความเหมือนกับภาษา Ruby เป็นอย่างมากจากการที่ทั้ง 2 ภาษานี้มีการมองเป็น object เหมือนกันทำให้ต่างกันเพียงวิธีการเขียน syntax และการเขียน access control ใน method ที่ ruby จะมี public private protected แต่หลักการทำงานเหมือนกัน
+## ตัวอย่างการประกาศ Syntax Python Class แบบพื้นฐาน
+```Python
+class ClassName:
+    <statement-1>
+    .
+    .
+    .
+    <statement-N>
+```
+## Class ของ Python ก็เป็น object เหมือนกับภาษา Ruby จึงสามารถอ้างอิง attribute ได้
+```Python
+class MyClass:
+    i = 12345
 
+    def f(self):
+        return 'hello world'
+
+MyClass.i
+```
+## ผลลัพธ์
+```
+12345
+```
+
+## การเรียก Method แต่ละครั้งก็จะมีการเรียก self โดยอัตโนมัติทำให้เขียนได้รวดเร็วขึ้น
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
 - GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
