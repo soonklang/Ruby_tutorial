@@ -97,22 +97,22 @@ END
 - **inclusive**
 ```ruby
 picked = []
-0.upto(5) { |v| picked << v if (v == 2)..(v == 2) }
-p picked
-```
-**Output**
-```
-[2]
-```
-**exclusive**
-```ruby
-picked = []
-0.upto(5) { |v| picked << v if (v == 2)...(v == 2) }
+0.upto(5) { |v| picked << v if (v == 2)..(v == 5) }
 p picked
 ```
 **Output**
 ```
 [2, 3, 4, 5]
+```
+**exclusive**
+```ruby
+picked = []
+0.upto(5) { |v| picked << v if (v == 2)...(v == 5) }
+p picked
+```
+**Output**
+```
+[2, 3, 4]
 ```
 
 ---
