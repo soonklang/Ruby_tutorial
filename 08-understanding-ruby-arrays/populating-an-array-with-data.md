@@ -281,13 +281,15 @@ else:
     print("Array มีข้อมูล")
 # Output: Array ว่าง
 ```
-# แหล่งอ้างอิง:
-*<https://www.rubyguides.com/2015/05/ruby-arrays/?utm_>*
-*<https://www.tutorialspoint.com/ruby/ruby_arrays.htm?utm_>*
-*<https://www.geeksforgeeks.org/ruby-arrays/?utm_>*
-*<https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html?utm_>*
-*<https://www.geeksforgeeks.org/arrays-in-c-cpp/?utm_>*
-*<https://www.tutorialspoint.com/cprogramming/c_arrays.htm?utm_>*
-*<https://www.w3schools.com/python/python_arrays.asp>*
+# แหล่งอ้างอิงภาษา Ruby:
+- *<https://www.rubyguides.com/2015/05/ruby-arrays/?utm_>*
+- *<https://www.tutorialspoint.com/ruby/ruby_arrays.htm?utm_>*
+- *<https://www.geeksforgeeks.org/ruby-arrays/?utm_>*
+
+# แหล่งอ้างอิงภาษาอื่นๆ:
+- *<https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html?utm_>*
+- *<https://www.geeksforgeeks.org/arrays-in-c-cpp/?utm_>*
+- *<https://www.tutorialspoint.com/cprogramming/c_arrays.htm?utm_>*
+- *<https://www.w3schools.com/python/python_arrays.asp>*
 
 # Presentation
