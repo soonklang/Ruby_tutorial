@@ -387,7 +387,7 @@ Python ใช้ `class variable` คล้าย Java
 - RuboCop & Contributors. (n.d.). Ruby style guide. Rubystyle.guide. Retrieved August 30, 2025, from https://rubystyle.guide/
 - Oracle. (n.d.). Class variables. In The Java™ Tutorials. Oracle. Retrieved August 30, 2025, from https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 - Python Software Foundation. (n.d.). Classes. In The Python tutorial (Python 3.12.5 documentation). Retrieved August 30, 2025, from https://docs.python.org/3/tutorial/classes.html
-- cppreference.com contributors. (n.d.). Static storage duration. In C language documentation. cppreference.com. Retrieved August 30, 2025, from https://en.cppreference.com/w/c/language/static_storage_duration
+
 
 ## Presentation
 - Link video:
