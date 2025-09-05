@@ -3,7 +3,7 @@
 ## การแช่แข็ง Objects
 ทุกวัตถุที่ถูกสร้างมาจะสามารถถูกแช่แข็งได้ โดยที่วัตถุที่ถูกแช่แข็งจะไม่สามารถถูกดัดแปลงได้ ไม่สามารถเปลี่ยน Instance variables ได้ และไม่สามารถสร้าง singleton method ได้
 สมมติว่า Class ถูกแช่แข็ง จะไม่สามารถเพิ่ม,ลบ หรือ เปลี่ยนแปลง method ได้
-### Syntax: ObjectName.freeze
+> Syntax: ObjectName.freeze
 
 ## ตัวอย่าง Ruby
 ```ruby
