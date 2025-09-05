@@ -4,19 +4,26 @@
 
 # ตัวอย่างการใช้งาน (Initialization)
 > Ruby
+
 ```ruby
 numbers = [1, 2, 3, 4, 5]
 mixed = [1, "hi", 3.14, true]  # เก็บหลายชนิดพร้อมกันได้
 ```
+
 >Java
+
 ```java
 int[] numbers = {1, 2, 3, 4, 5};
 ```
+
 >C
+
 ```c
 int numbers[] = {1, 2, 3, 4, 5};
 ```
+
 >Python
+
 ```python
 numbers = [1, 2, 3, 4, 5]
 mixed = [1, "hi", 3.14, True]
