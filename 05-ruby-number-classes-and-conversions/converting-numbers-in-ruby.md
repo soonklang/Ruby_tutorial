@@ -101,14 +101,18 @@ ___
 
 # Reference
 
-Java - Type Casting - https://marcuscode.com/lang/java/type-conversions
-     - Convert String to an Integer - https://codegym.cc/th/groups/posts/th.679.withi-plng-string-pen-int-n-java
-     - Base Number to an Integer - https://beginnersbook.com/2019/04/java-hexadecimal-to-decimal-conversion/
+Java 
+- Type Casting - https://marcuscode.com/lang/java/type-conversions
+- Convert String to an Integer - https://codegym.cc/th/groups/posts/th.679.withi-plng-string-pen-int-n-java
+- Base Number to an Integer - https://beginnersbook.com/2019/04/java-hexadecimal-to-decimal-conversion/
 
-C - Type Casting - https://www.geeksforgeeks.org/c/c-typecasting/
-  - Base Number to and Integer - https://www.quora.com/How-do-I-convert-hexadecimal-to-decimal-in-C
+C 
+- Type Casting - https://www.geeksforgeeks.org/c/c-typecasting/
+- Base Number to and Integer - https://www.quora.com/How-do-I-convert-hexadecimal-to-decimal-in-C
 
-Python - Built-in Functions - https://docs.python.org/3/library/functions.html
+Python 
+- Built-in Functions - https://docs.python.org/3/library/functions.html
 
-Ruby - Module Kernel - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
-     - Integer Class - https://www.geeksforgeeks.org/ruby/ruby-integer-class/
+Ruby 
+- Module Kernel - https://ruby-doc.org/3.4.1/Kernel.html#module-Kernel-label-Converting
+- Integer Class - https://www.geeksforgeeks.org/ruby/ruby-integer-class/
