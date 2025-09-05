@@ -872,7 +872,7 @@ end
 
 ## ค่าคงที่ (Constants) ที่เกี่ยวข้องกับ Float ## 
 
-### Ruby มีค่าคงที่ที่ใช้กับ Float หลายตัวที่ควรรู้จัก เช่น:###
+### Ruby มีค่าคงที่ที่ใช้กับ Float หลายตัวที่ควรรู้จัก เช่น: ###
 
 **1. DIG** 
 
@@ -999,7 +999,7 @@ Float::NAN     #=> NaN
 
 ---
 
-## Public Instance Methods##
+## Public Instance Methods ##
 
 **1. float % other → float**
 
