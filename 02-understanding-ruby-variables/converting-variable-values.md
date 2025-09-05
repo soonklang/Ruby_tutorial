@@ -19,20 +19,17 @@ Converting variable values  คือ การแปลงค่าของต
 
 
 # ตัวอย่าง
-### แปลงค่าตัวแปร String → Integer หรือ Float
+### แปลงค่าตัวแปร String → Integer
 คำอธิบาย:
-เป็นการกำหนดค่าของตัวอักษรแล้วแปลงค่าของตัวอักษรให้เป็นตัวเลขจำนวนเต็ม และทศนิยม โดยใช้เมธอด .to_i และ .to_f
+เป็นการกำหนดค่าของตัวอักษรแล้วแปลงค่าของตัวอักษรให้เป็นตัวเลขจำนวนเต็มโดยใช้เมธอด .to_i
 ```ruby   
 num_str = "123"
 int_str = str.to_i
-float_str = str.to_f
 
 puts num_str
 put num_str.class
 puts int_str
 put int_str.class
-puts float_str
-put float_str.class
 ```
 ผลลัพธ์:
 ```
@@ -40,7 +37,25 @@ put float_str.class
 String
 123
 Integer
-123.0
+```
+
+### แปลงค่าตัวแปร String → Float
+คำอธิบาย:
+เป็นการกำหนดค่าของตัวอักษรแล้วแปลงค่าของตัวอักษรให้เป็นตัวเลขทศนิยม โดยใช้เมธอด .to_f
+```ruby   
+num_str = "456"
+float_str = str.to_f
+
+puts num_str
+put num_str.class
+puts float_str
+put float_str.class
+```
+ผลลัพธ์:
+```
+"456"
+String
+456.0
 Float
 ```
 
@@ -81,7 +96,30 @@ puts str
 ```
 
 # เปรียบเทียบภาษา ruby กับภาษา Java/C/Python
+### เปรียบเทียบกับภาษา java
+| คุณสมบัติ | Ruby | Java |
+| :--- | :--- | :--- |
+| **Typing System** | Dynamic, Strong | Static, Strong |
+| **การประกาศตัวแปร** | ไม่ต้องระบุชนิดข้อมูล | **ต้องระบุชนิดข้อมูลเสมอ** (เช่น `int`, `double`, `String`) |
+| **Syntax (Float -> Int)** | ` 99.9.to_i `  | ` (int) 99.9 `  |
+| **การจัดการข้อผิดพลาด** | คืนค่า `0` | **เกิด Exception**<br/>` NumberFormatException ` |
 
+คำอธิบาย:
+ภาษา ruby และภาษา java มีความแตกต่างกันอย่างชัดเจนอยู่ที่ Typing System เพราะภาษา java ต้องกำหนดชนิดของข้อมูลตั้งแต่ตอน Compile ทำให้มีความซับซ้อนของ Syntax มากกว่า แต่ถ้ามองในด้านของความปลอดภัยในภาษา java จะปลอดภัยกว่าเพราะว่าจะตรวจสอบชนิดข้อมูลตั้งแต่ตอน Compile ทำให้เจอปัญหาได้เร็วกว่า
+
+ruby:
+```ruby  
+int_num = "123".to_i
+float_num = 100.to_f
+int_from_float = 99.9.to_i
+```
+
+java:
+```java
+int intNum = Integer.parseInt("123");
+double floatNum = 100;
+int intFromFloat = (int) 99.9;
+```
 
 # References
 [1] K. Newton, "Ruby type conversion," KDD Newton, Sep. 9, 2021. [Online]. Available: https://kddnewton.com/2021/09/09/ruby-type-conversion.html. [Accessed: Sep. 3, 2025].
