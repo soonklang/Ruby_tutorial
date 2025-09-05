@@ -1328,6 +1328,7 @@ puts rat.to_f   #=> 0.8
 
 # เปรียบเทียบ Ruby Number Classes กับทั้ง 4 ภาษา #
 **ได้แก่ ภาษา Ruby , C ,Java, Python**
+
 *Ruby Number Classes มีดังนี้*
 ```
 1.1) Integer Class
