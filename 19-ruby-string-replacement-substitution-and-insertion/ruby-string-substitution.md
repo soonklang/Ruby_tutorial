@@ -83,7 +83,7 @@ int main() {
 ```
 
 - **python**
-Python ใช้เมธอด replace 
+ใช้เมธอด replace 
 ```
 my_string = "Welcome to Thailand!"
 
