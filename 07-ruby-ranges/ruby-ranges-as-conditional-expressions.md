@@ -303,7 +303,7 @@ END
 
 ## ตารางเปรียบเทียบโค้ด
 
-| ภาษา      | Flip-Flop Equivalent                            |
+| ภาษา      | Flip-Flop                            |
 |-----------|--------------------------------------------------|
 | **Ruby**  | `puts line if /BEGIN/ .. /END/`                  |
 | **C / Java / Python** | ต้องใช้ `flag = true/false` เพื่อติดตามสถานะ |
