@@ -610,11 +610,13 @@ obj.display "ONE", "TWO"
   
 - W3Schools. (n.d.). Java Inheritance (Subclass and Superclass). Retrieved September 4, 2025, from https://www.w3schools.com/java/java_inheritance.asp
   
-- W3Schools. (n.d.). Python Inheritance. Retrieved September 5, 2025, from https://www.w3schools.com/python/python_inheritance.asp
+- W3Schools. (n.d.). Python Inheritance. Retrieved September 4, 2025, from https://www.w3schools.com/python/python_inheritance.asp
 
-- Kurian, A. (2009, August 6). How can Inheritance be modelled using C? Retrieved September 5, 2025, from Stack Overflow: https://stackoverflow.com/questions/1237266/how-can-inheritance-be-modelled-using-c
+- Kurian, A. (2009, August 6). How can Inheritance be modelled using C? Retrieved September 4, 2025, from Stack Overflow: https://stackoverflow.com/questions/1237266/how-can-inheritance-be-modelled-using-c
     
 - Lieblang, M. (n.d.). How to implement inheritance and polymorphism in C. In Modern C Programming. Retrieved September 4, 2025, from https://moderncprogramming.com/how-to-implement-inheritance-and-polymorphism-in-c/
+
+- GeeksforGeeks. (2024, May 29). Function overriding in programming. Retrieved September 4, 2025, from https://www.geeksforgeeks.org/dsa/function-overriding-in-programming/
 
 - Ruby Core Documentation. (n.d.). require_relative. Retrieved September 4, 2025, from https://ruby-doc.org/core/Kernel.html#method-i-require_relative
   
