@@ -1,19 +1,17 @@
-
-
 # Combining Ruby Arrays
 การรวม Array ในภาษา Ruby ด้วย 3 วิธี 
 
-## <mark style="color:blue;">1. การใช้เครื่องหมาย +</mark>
+## 1. การใช้เครื่องหมาย +
 
 ใช้สำหรับสร้าง Array ใหม่ จากการนำสมาชิกของ Array ตั้งแต่สองตัวขึ้นไปมาต่อกัน
 
 **Syntax :**
 
-{% code title="ruby" overflow="wrap" lineNumbers="true" %}
+
 ```ruby
 new_array = array1 + array2 + ...
 ```
-{% endcode %}
+
 
 #### Key Point :
 
@@ -22,41 +20,34 @@ new_array = array1 + array2 + ...
 
 **Example :**
 
-<pre data-title="ruby" data-line-numbers><code>array1 = [1, 2, 3]
+<pre data-title="ruby" data-line-numbers>
+<code>array1 = [1, 2, 3]
 array2 = [4, 5, 6]
 array3 = [7, 8, 9]
 
 new_array = array1 + array2 + array3
-<strong>puts new_array.inspect
-</strong></code></pre>
+puts new_array.inspect
+</code></pre>
 
-{% code title="Output" lineNumbers="true" %}
+**Output :**
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-{% endcode %}
 
 
-
-
-
-## <mark style="color:blue;">2. การใช้เมธอด .concat( )</mark>
-
+## 2. การใช้เมธอด .concat( )
 ใช้สำหรับนำสมาชิกจาก Array อื่นตั้งแต่หนึ่งตัวขึ้นไปมาต่อท้าย Array เดิม
 
-**Syntax :**&#x20;
+**Syntax :**
 
-<pre class="language-ruby" data-title="ruby" data-line-numbers><code class="lang-ruby"><strong>target_array.concat(array1,array2,...)
-</strong></code></pre>
+<pre class="language-ruby" data-title="ruby" data-line-numbers><code class="lang-ruby">target_array.concat(array1,array2,...)
+</code></pre>
 
-#### Key Point :&#x20;
-
+#### Key Point :
 * การใช้ .concat() ไม่มีการสร้าง Array ชุดใหม่
 * Array ชุดเดิม(target\_array) จะถูกเปลี่ยนแปลงข้อมูล
 
-#### Example :&#x20;
-
-{% code title="ruby" lineNumbers="true" %}
+#### Example :
 ```ruby
 target_array = [1, 2, 3] 
 array1 = [4, 5 , 6]
@@ -65,37 +56,23 @@ array2 = [7, 8, 9]
 target_array.concat( array1 , array2 )
 puts target_array.inspect
 ```
-{% endcode %}
-
-{% code title="Output" lineNumbers="true" %}
+**Output :**
 ```
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-{% endcode %}
 
-
-
-
-
-## <mark style="color:blue;">3. การใช้ << (Shovel)</mark>
-
+## 3. การใช้ << (Shovel)
 การเพิ่มสมาชิก "**1 ชิ้น**" เข้าไปที่ท้ายสุดของ Array เดิม ( \[1,2,3] แบบนี้ถือว่านับเป็น 1 ชิ้น )
 
 **Syntax :**
-
-{% code title="ruby" lineNumbers="true" %}
 ```ruby
 target_array << element
 ```
-{% endcode %}
 
 #### Key Point :
-
 * สมาชิกที่ต้องการเพิ่มเข้าไปจะถูกมองว่าเป็นสมาชิก "**ชิ้นเดียว**" เสมอ
 
 #### Example :
-
-{% code title="ruby" lineNumbers="true" %}
 ```ruby
 target_array = [1,2,3]
 array1 = [4,5,6]
@@ -106,28 +83,24 @@ puts target_array.inspect
 target_array << "seven"
 puts target_array.inspect
 ```
-{% endcode %}
-
-{% code title="Output" lineNumbers="true" %}
+**Output :**
 ```
 [1, 2, 3, [4, 5, 6]]
 [1, 2, 3, [4, 5, 6], "seven"]
 ```
-{% endcode %}
 
-## ตารางสรุป &#x20;
+## ตารางสรุป 
 
-<table><thead><tr><th width="100.20001220703125" align="center">วิธีการ</th><th width="190.39996337890625" align="center">การทำงาน</th><th width="156.60003662109375" align="center">ผลกระทบต่อ Array เ</th><th>Syntax</th></tr></thead><tbody><tr><td align="center"><strong>+</strong></td><td align="center">นำสมาชิกมาต่อท้ายกัน เพื่อสร้าง Array ใหม่</td><td align="center">ไม่แก้ไข</td><td>new_array = array1+array2+...</td></tr><tr><td align="center"><strong>.concat( )</strong></td><td align="center">นำสมาชิกมาต่อท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array.concat(array1,array2,...)</td></tr><tr><td align="center"><strong>&#x3C;&#x3C;</strong></td><td align="center">เพิ่มสมาชิก 1 ชิ้น เข้าไปท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array &#x3C;&#x3C; element</td></tr></tbody></table>
+<table><thead><tr><th width="100.20001220703125" align="center">วิธีการ</th><th width="190.39996337890625" align="center">การทำงาน</th><th width="156.60003662109375" align="center">ผลกระทบต่อ Array </th><th>Syntax</th></tr></thead><tbody><tr><td align="center"><strong>+</strong></td><td align="center">นำสมาชิกมาต่อท้ายกัน เพื่อสร้าง Array ใหม่</td><td align="center">ไม่แก้ไข</td><td>new_array = array1+array2+...</td></tr><tr><td align="center"><strong>.concat( )</strong></td><td align="center">นำสมาชิกมาต่อท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array.concat(array1,array2,...)</td></tr><tr><td align="center"><strong>&#x3C;&#x3C;</strong></td><td align="center">เพิ่มสมาชิก 1 ชิ้น เข้าไปท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array &#x3C;&#x3C; element</td></tr></tbody></table>
 
 
 
 ***
 
-## <mark style="color:blue;">เปรียบเทียบกับภาษา Java / C / Python</mark>
-
+## เปรียบเทียบกับภาษา Java / C / Python
 จริง ๆ แล้วแต่ละภาษามีหลากหลายวิธีที่แตกต่างกันไป ที่นี่เราจะหยิบแค่บางวิธีมาให้ดู
 
-### <mark style="color:$success;">1. การต่อกันเพื่อสร้าง Array / List ใหม่</mark>&#x20;
+### 1. การต่อกันเพื่อสร้าง Array / List ใหม่
 
 <table><thead><tr><th width="108.99995422363281" align="center">ภาษา</th><th width="731.7999877929688">Syntax หรือ ตัวอย่าง </th></tr></thead><tbody><tr><td align="center"><strong>Ruby</strong></td><td><pre class="language-ruby" data-title="ruby" data-line-numbers><code class="lang-ruby">new_array = array1 + array2 + … 
 </code></pre><hr><p>ใช้เครื่องหมาย + ได้เป็น Array ใหม่ </p></td></tr><tr><td align="center"><strong>Python</strong></td><td><pre class="language-python" data-title="python" data-line-numbers><code class="lang-python"><strong>new_list = list1 + list2
