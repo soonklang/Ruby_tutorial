@@ -104,7 +104,7 @@ puts str
 | **Syntax (Float -> Int)** | ` 99.9.to_i `  | ` (int) 99.9 `  |
 | **การจัดการข้อผิดพลาด** | คืนค่า `0` | **เกิด Exception**<br/>` NumberFormatException ` |
 
-คำอธิบาย:
+### คำอธิบาย:
 ภาษา ruby และภาษา java มีความแตกต่างกันอย่างชัดเจนอยู่ที่ Typing System เพราะภาษา java ต้องกำหนดชนิดของข้อมูลตั้งแต่ตอน Compile ทำให้มีความซับซ้อนของ Syntax มากกว่า แต่ถ้ามองในด้านของความปลอดภัยในภาษา java จะปลอดภัยกว่าเพราะว่าจะตรวจสอบชนิดข้อมูลตั้งแต่ตอน Compile ทำให้เจอปัญหาได้เร็วกว่า
 
 ruby:
@@ -120,6 +120,20 @@ int intNum = Integer.parseInt("123");
 double floatNum = 100;
 int intFromFloat = (int) 99.9;
 ```
+
+### เปรียบเทียบกับภาษา C
+| คุณสมบัติ | Ruby | C |
+| :--- | :--- | :--- |
+| **Typing System** | Dynamic, Strong | Static, **Weak** |
+| **ระดับของภาษา** | สูงมาก (จัดการหน่วยความจำให้) | ต่ำ (โปรแกรมเมอร์ต้องจัดการเอง) |
+| **Syntax (String -> Int)** | ` "123".to_i ` | ` atoi("123") ` (ฟังก์ชันจาก library) |
+| **Syntax (Int -> String)** | ` 123.to_s ` | ` sprintf(buffer, "%d", 123) ` (ต้องเตรียมพื้นที่เก็บเอง) |
+| **การจัดการข้อผิดพลาด** | คืนค่า `0` | **ไม่ปลอดภัย**: คืนค่า `0` ซึ่งกำกวม |
+| **ความปลอดภัย** | สูงมาก (ป้องกัน Memory Error) | **ต่ำมาก** (เสี่ยงต่อ Buffer Overflow, Undefined Behavior) |
+
+### คำอธิบาย:
+ภาษา ruby และภาษา C ต้องบอกว่าในภาษา C ภาษา C ให้อิสระแก่ผู้ใช้งานโปรแกรมในการควบคุมทุกอย่างได้มากกว่าภาษา ruby แต่ก็ต้อง
+
 
 # References
 [1] K. Newton, "Ruby type conversion," KDD Newton, Sep. 9, 2021. [Online]. Available: https://kddnewton.com/2021/09/09/ruby-type-conversion.html. [Accessed: Sep. 3, 2025].
