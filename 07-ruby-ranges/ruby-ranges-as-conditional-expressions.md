@@ -138,17 +138,6 @@ Flip-flop active: 4
 ## เปรียบเทียบกับภาษา C / Java / Python
 - **Ruby**
 ```ruby
-# Input จำลอง
-input = <<~DATA
-line 1
-BEGIN
-inside 1
-inside 2
-END
-line 2
-DATA
-
-# ใช้ flip-flop operator
 input.each_line do |l|
   puts l if l =~ /BEGIN/ .. l =~ /END/
 end
@@ -156,8 +145,7 @@ end
 **Output**
 ```
 BEGIN
-inside 1
-inside 2
+... เนื้อหาระหว่าง ...
 END
 ```
 - **C**
