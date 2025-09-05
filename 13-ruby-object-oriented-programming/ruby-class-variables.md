@@ -14,7 +14,7 @@
 ## ความรู้เสริม: Instance คืออะไร?
 
 - **Instance** = object ที่ถูกสร้างจาก class ที่เรานิยามเอง  
-- การสร้าง object จาก class ใช้ `.new` → object นั้นคือ instance ของ class นั้น  
+- การสร้าง object จาก class ใช้ `.new` จะได้ว่า object นั้นคือ instance ของ class นั้น  
 
 ### Code ตัวอย่างว่า Instace คืออะไร
 ```ruby
@@ -120,7 +120,7 @@ end
 ```
 - `def initialize(...)` = constructor ของ Ruby (เหมือน `public BankAccount(...)` ใน Java)
 
-- `@name` และ `@balance` → instance variable (ของอ็อบเจ็กต์นั้นๆ)
+- `@name` และ `@balance` คือ instance variable (ของอ็อบเจ็กต์นั้นๆ)
     - @ ตัวเดียว = ของ object
     - เก็บชื่อและยอดเงินของเจ้าของบัญชี
 
@@ -132,7 +132,7 @@ def self.set_rate(new_rate)
   @@interest_rate = new_rate
 end
 ```
-- `def self.set_rate(...)` → การเขียน `self. ` จะทำให้กลายเป็น **เมธอดระดับ class (static method)**
+- `def self.set_rate(...)` การเขียน `self. ` ตรงนี้จะทำให้กลายเป็น **เมธอดระดับ class (static method)**
 - ใช้เพื่อเปลี่ยนค่า `@@interest_rate`
 
 - เทียบกับ Java: `static void setRate(double newRate) { ... }`
@@ -149,9 +149,9 @@ end
 - `puts` = พิมพ์ออกหน้าจอ (เหมือน `System.out.println`)  
 - `"#{...}"` = string interpolation (แทรกค่าตัวแปร)  
 - ใช้แสดง:  
-  - `@name` → ชื่อเจ้าของบัญชี  
-  - `@balance` → ยอดเงินของ object  
-  - `@@interest_rate` → ดอกเบี้ยร่วม  
+  - `@name`  ชื่อเจ้าของบัญชี  
+  - `@balance`  ยอดเงินของ object  
+  - `@@interest_rate`  ดอกเบี้ยร่วม  
 
 ---
 
