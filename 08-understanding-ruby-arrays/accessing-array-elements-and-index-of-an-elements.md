@@ -47,10 +47,14 @@ System.out.print(even[1]);
 ### ตัวอย่างภาษา C
 
 ```
-printf("%d",odd[0]);
-# ค่าที่ได้คคือ 1
-printf("%d",even[1]);
-# ค่าที่ได้คือ 4
+#include<stdio.h>
+int main(){
+    printf("%d",odd[0]);
+    # ค่าที่ได้คคือ 1
+    printf("%d",even[1]);
+    # ค่าที่ได้คือ 4
+return 0;
+}
 ```
 
 #### 2.การใช้ .at()
@@ -110,14 +114,18 @@ System.out.print(even[even.length-1]);
 # ค่าที่ได้ออกมาคือ 10
 ```
 
-### ตัวอย่างภาษา Java
+### ตัวอย่างภาษา C
 
 ```
-printf("%d",odd[0]);
-# ค่าที่ได้ออกมาคือ 1
-int size = sizeof(even) / sizeof(even[0]);
-printf("%d",even[size-1]);
-# ค่าที่ได้ออกมาคือ 10
+#include <stdio.h>
+int main(){
+    printf("%d",odd[0]);
+    # ค่าที่ได้ออกมาคือ 1
+    int size = sizeof(even) / sizeof(even[0]);
+    printf("%d",even[size-1]);
+    # ค่าที่ได้ออกมาคือ 10
+return 0;
+}
 ```
 
 5.การใช้ .take() เเละ .drop()
@@ -164,26 +172,31 @@ for(int i=3;i<even.length;i++){
 
 ### ตัวอย่างภาษา C
 
-<pre><code><strong>for(int i=0;i&#x3C;3;i++){
-</strong>    printf("%d",odd[i]);
-    if (i &#x3C; 2) {
-        printf(",");
+```
+#include <stdio.h>
+int main(){
+    for(int i=0;i&#x3C;3;i++){
+       printf("%d",odd[i]);
+        if (i &#x3C; 2) {
+            printf(",");
+        }
     }
-}
-# ค่าที่ได้คือ 1,3,5
-int e_size = sizeof(even) / sizeof(even[0]);
-for(int i=3;i&#x3C;e_size;i++){
-    printf("%d",even[i]);
-    if (i&#x3C;e_size-1){
-        printf(",");
+    # ค่าที่ได้คือ 1,3,5
+    int e_size = sizeof(even) / sizeof(even[0]);
+    for(int i=3;i&#x3C;e_size;i++){
+            printf("%d",even[i]);
+        if (i&#x3C;e_size-1){
+            printf(",");
+        }
     }
+    # ค่าที่ได้ 8,10
 }
-# ค่าที่ได้ 8,10
-</code></pre>
-
+```
 ## Reference
 
 Ruby Documentation - Accessing Elements สืบค้นเมื่อ 3/9/2568 จาก [https://docs.ruby-lang.org/en/master/Array.html#class-Array-label-Accessing+Elements](https://docs.ruby-lang.org/en/master/Array.html#class-Array-label-Accessing+Elements)\
+geeksforgeeks - How to access array Elements in Ruby สืบค้นเมื่อ 3/9/2568 จาก [https://www.geeksforgeeks.org/ruby/how-to-access-array-elements-in-ruby/](https://www.geeksforgeeks.org/ruby/how-to-access-array-elements-in-ruby/
+)\
 W3schools - Python Arrays สืบค้นเมื่อ 3/9/2568 จาก [https://www.w3schools.com/python/python\_arrays.asp](https://www.w3schools.com/python/python_arrays.asp)\
 W3schools - C Arrays สืบค้นเมื่อ 3/9/2568 จาก [https://www.w3schools.com/c/c\_arrays.php](https://www.w3schools.com/c/c_arrays.php) \
 W3schools - Java Arrays สืบค้นเมื่อ 3/9/2568 จาก [https://www.w3schools.com/java/java\_arrays.asp](https://www.w3schools.com/java/java_arrays.asp)
@@ -239,6 +252,8 @@ public class Main {
 ### ตัวอย่างภาษา C
 
 ```
+#include <stdio.h>
+int main(){
     int size = sizeof(month) / sizeof(month[0]);
 
     for (int i = 0; i < size; i++) {
@@ -248,6 +263,7 @@ public class Main {
       }
     }
     return 0;
+}
 # ค่าที่ได้ออกมาคือ 4
 ```
 
@@ -290,6 +306,8 @@ for(int i=month.length-1;i>-1;i--){
 ### ตัวอย่างภาษา C
 
 ```
+#include <stdio.h>
+int main(){
 int size = sizeof(month) / sizeof(month[0]);
 
 for(int i=size-1;i>-1;i--){
@@ -299,6 +317,7 @@ for(int i=size-1;i>-1;i--){
     }
 }
 return 0;
+}
 
 # ค่าที่ได้ออกมาคือ 5
 ```
@@ -306,6 +325,8 @@ return 0;
 ## Reference
 
 Techtopia - Understanding Ruby Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.techotopia.com/index.php/Understanding\_Ruby\_Arrays](https://www.techotopia.com/index.php/Understanding_Ruby_Arrays)\
+geeksforgeeks - Ruby | Array index() function สืบค้นเมื่อ 4/9/2568 จาก [https://www.geeksforgeeks.org/ruby/ruby-array-class-index-function/](https://www.geeksforgeeks.org/ruby/ruby-array-class-index-function/)\
+geekforgekks - Ruby | Array rindex() function สืบค้นเมื่อ 4/9/2568 จาก [https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/](https://www.geeksforgeeks.org/ruby/ruby-array-rindex-function/)\
 W3schools - Python Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/python/python\_arrays.asp](https://www.w3schools.com/python/python_arrays.asp)\
 W3schools - C Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/c/c\_arrays\_size.php](https://www.w3schools.com/c/c_arrays_size.php)\
 W3schools - Java Arrays สืบค้นเมื่อ 4/9/2568 จาก [https://www.w3schools.com/java/java\_arrays.asp](https://www.w3schools.com/java/java_arrays.asp)
