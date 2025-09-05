@@ -167,7 +167,7 @@ puts "hello".to_i    # => 0 (โปรแกรมทำงานต่อ)
 python:
 ```python
 print(int("123"))     # => 123
-print(int("hello"))   # => ValueError: invalid literal for int() (โปรแกรมหยุดทันที)
+print(int("hello"))   # => ValueError: invalid literal for int() (โปรแกรมหยุดทำงานทันที)
 ```
 
 # References
