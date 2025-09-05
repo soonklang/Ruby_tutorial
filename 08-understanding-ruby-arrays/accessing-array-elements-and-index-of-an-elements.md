@@ -38,9 +38,9 @@ print(even[1])
 ### ตัวอย่างภาษา Java
 
 ```
-System.out.print(odd[0]);
+System.out.println(odd[0]);
 # ค่าที่ได้คคือ 1
-System.out.print(even[1]);
+System.out.println(even[1]);
 # ค่าที่ได้คือ 4
 ```
 
@@ -49,9 +49,9 @@ System.out.print(even[1]);
 ```
 #include<stdio.h>
 int main(){
-    printf("%d",odd[0]);
+    printf("%d\n",odd[0]);
     # ค่าที่ได้คคือ 1
-    printf("%d",even[1]);
+    printf("%d\n",even[1]);
     # ค่าที่ได้คือ 4
 return 0;
 }
@@ -108,9 +108,9 @@ print(even[-1])
 ### ตัวอย่างภาษา Java
 
 ```
-System.out.print(odd[0]);
+System.out.println(odd[0]);
 # ค่าที่ได้ออกมาคือ 1
-System.out.print(even[even.length-1]);
+System.out.println(even[even.length-1]);
 # ค่าที่ได้ออกมาคือ 10
 ```
 
@@ -119,10 +119,10 @@ System.out.print(even[even.length-1]);
 ```
 #include <stdio.h>
 int main(){
-    printf("%d",odd[0]);
+    printf("%d\n",odd[0]);
     # ค่าที่ได้ออกมาคือ 1
     int size = sizeof(even) / sizeof(even[0]);
-    printf("%d",even[size-1]);
+    printf("%d\n",even[size-1]);
     # ค่าที่ได้ออกมาคือ 10
 return 0;
 }
@@ -160,6 +160,7 @@ for(int i=0;i<3;i++){
         System.out.print(",");
     }
 }
+System.out.println();
 # ค่าที่ได้คือ 1,3,5
 for(int i=3;i<even.length;i++){
     System.out.print(even[i]);
@@ -182,6 +183,7 @@ int main(){
         }
     }
     # ค่าที่ได้คือ 1,3,5
+    printf("\n");
     int e_size = sizeof(even) / sizeof(even[0]);
     for(int i=3;i&#x3C;e_size;i++){
             printf("%d",even[i]);
