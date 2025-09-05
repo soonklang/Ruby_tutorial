@@ -13,20 +13,16 @@ Floating Point
 
 ```
 #ruby
-Integer(11.111)
- จะได้ค่าเป็น 11
+Integer(11.111) // จะได้ค่าเป็น 11
 
 #Java
-(int)11.111;
- จะได้ค่าเป็น 11
+(int)11.111; // จะได้ค่าเป็น 11
 
 #C
-(int)11.111
- จะได้ค่าเป็น 11
+(int)11.111 // จะได้ค่าเป็น 11
 
 #Python
-int(11.111)
- จะได้ค่าเป็น 11
+int(11.111) // จะได้ค่าเป็น 11
 ```
 
 ภาษา C กับ Java โดยการใช้ Type Casting
@@ -41,7 +37,7 @@ String
 
 ```
 #ruby
-"123".to_i  // จะได้ค่าเป็น 123
+"123".to_i  // จะได้ค่าเป็น 123 ใช้แต่กับตัวเลขถ้าเป็น Character จะได้ค่าเป็น 0
 
 Integer("123") // จะได้ค่าเป็น 123
 
@@ -57,8 +53,7 @@ char* str1 = "123";
 int num1 = atoi(str1); // จะได้ค่าเป็น 123
 
 #Python
-int(10.898)
- จะได้ค่าเป็น 11
+int("123") // จะได้ค่าเป็น 123
 ```
 
 ภาษา C กับ Java เป็นการเรียกใช้ Method
@@ -75,38 +70,30 @@ Base Number
 Hexadecimal Number
 
 #ruby
-Integer(0xA4F5D)
- จะได้ค่าเป็น 675677
+Integer(0xA4F5D) // จะได้ค่าเป็น 675677
 
 #Java
-int x = 0xA4F5D;
- จะได้ค่าเป็น 675677
+int x = 0xA4F5D; // จะได้ค่าเป็น 675677
 
 #C
-int x = 0xA4F5D;
- จะได้ค่าเป็น 675677
+int x = 0xA4F5D; // จะได้ค่าเป็น 675677
 
 #Python
-int("A4F5D", 16)
- จะได้ค่าเป็น 675677
+int("A4F5D", 16) // จะได้ค่าเป็น 675677
 
 Octal Number
 
 #ruby
-Integer(01231)
- จะได้ค่าเป็น 665
+Integer(01231) // จะได้ค่าเป็น 665
 
 #Java
-int x = 01231;
- จะได้ค่าเป็น 665
+int x = 01231; // จะได้ค่าเป็น 665
 
 #C
-int x = 01231;
- จะได้ค่าเป็น 665
+int x = 01231; // จะได้ค่าเป็น 665
 
 #Python
-int("01231", 8)
- จะได้ค่าเป็น 665
+int("01231", 8) // จะได้ค่าเป็น 665
 
 Binary Number
 
@@ -115,16 +102,13 @@ Integer(0b01110101)
  จะได้ค่าเป็น 117
 
 #Java
-int x = 0b01110101;
- จะได้ค่าเป็น 117
+int x = 0b01110101; // จะได้ค่าเป็น 117
 
 #C
-int x = 0b01110101;
- จะได้ค่าเป็น 117
+int x = 0b01110101; จะได้ค่าเป็น 117
 
 #Python
-int("0b01110101", 2)
- จะได้ค่าเป็น 117
+int("0b01110101", 2) จะได้ค่าเป็น 117
 ```
 
 ภาษา C กับ Java กำหนดค่าโดยตรง
@@ -134,6 +118,34 @@ int("0b01110101", 2)
 ภาษา Python เรียกใช้ Built-in Function
 
 ___
+
+Character to the ASCII Character Code
+
+```
+#ruby
+For Ruby version 1.8 or earlier:
+Integer (?e)
+ จะได้ค่าเป็น 101
+
+For Ruby version 1.9 or later:
+"e".getbyte(0)               #ASCII to Integer
+=> 101
+
+#Java
+String str = "123";
+int num = Integer.parseInt(str); // จะได้ค่าเป็น 123 เป็นการคื่นค่าเป็น Primitive Type
+ 
+String str = "123";
+Integer num = Integer.valueOf(str); // จะได้ค่าเป็น 123 เป็นการคืนค่าเป็น Object
+ 
+#C
+char* str1 = "123";
+int num1 = atoi(str1); // จะได้ค่าเป็น 123
+
+#Python
+int(10.898)
+ จะได้ค่าเป็น 11
+```
 
 # Reference
 
