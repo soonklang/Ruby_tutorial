@@ -62,13 +62,13 @@ p arr
 ในภาษา Java นั้นมีเมธอดที่เหมือนกับ print, puts และ p อยู่นั่นคือ
 - System.out.print ที่เหมือนกับ print ใน Ruby ที่จะไม่มีการขึ้นบรรทัดใหม่หลังจากจบการแสดงผล
 - System.out.println ที่เหมือนกัน puts ใน Ruby ที่จะขึ้นบรรทัดใหม่หลังจากแสดงผลอ็อบเจ็กต์นั้นๆเสร็จ
-- toString ที่เหมือนกับ p ใน Ruby ที่จะแสดงค่าที่อยู่ในอ็อบเจ็กต์ออกมา
+- toString ที่เหมือนกับ p ใน Ruby ที่จะแสดงค่าข้อมูลดิบที่อยู่ในอ็อบเจ็กต์ออกมา
 ### ตัวอย่าง
-```Java
+```java
 #System.out.print
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Hello, world!");
+        System.out.print("Hello, world! ");
         System.out.print("Welcome to Ruby tutorial project");
     }
 }
@@ -97,3 +97,100 @@ public class Main {
 #ผลลัพธ์ที่ได้ออกมาจะเป็น
 [1,2,3]
 ```
+## C
+ในภาษา C นั้น มีเมธอดที่เหมือนกัน print และ puts อยู่แต่ไม่มีเมธอดที่เหมือนกับ p ต้องเขียนฟีลด์ขึ้นมาใหม่เอง
+- printf นั้นเหมือนกับ print ใน Ruby ที่จะไม่มีการขึ้นบรรทัดใหม่หลังจากจบการแสดงผล
+- printf..\n นั้นเหมือนกัน puts ใน Ruby ที่จะขึ้นบรรทัดใหม่หลังจากแสดงผลอ็อบเจ็กต์นั้นๆเสร็จ
+- ส่วน p ในภาษา C ไม่มีเมธอดที่คล้ายคลึงกับ p
+### ตัวอย่าง
+```c
+#printf
+#include <stdio.h>
+
+int main() {
+    printf("Hello, world! ");
+    printf("Welcome to Ruby tutorial project");
+    return 0;
+}
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world! Welcome to Ruby tutorial project
+
+#print ..\n
+#include <stdio.h>
+
+int main() {
+    printf("Hello, world!\n");
+    printf("Welcome to Ruby tutorial project");
+    return 0;
+}
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world!
+Welcome to Ruby tutorial project
+
+#ตัวอย่างในการ inspect object ใน ภาษา C
+#include <stdio.h>
+
+typedef struct {
+    char name[32];
+    int age;
+} Person;
+
+void inspect_person(Person p) {
+    printf("Person{name=%s, age=%d}\n", p.name, p.age);
+}
+
+int main() {
+    Person kwonjiyong = {"Kwon Ji Yong", 37};
+    inspect_person(kwonjiyong);
+    return 0;
+}
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Person{name=Kwon Ji Yong, age=37}
+```
+## Python
+ในภาษา Java นั้นมีเมธอดที่เหมือนกับ print, puts และ p อยู่นั่นคือ
+- print(..., end=" ") ที่เหมือนกับ print ใน Ruby ที่จะไม่มีการขึ้นบรรทัดใหม่หลังจากจบการแสดงผล
+- print ที่เหมือนกัน puts ใน Ruby ที่จะขึ้นบรรทัดใหม่หลังจากแสดงผลอ็อบเจ็กต์นั้นๆเสร็จ
+- print(repr(...)) ที่เหมือนกับ p ใน Ruby ที่จะแสดงค่าข้อมูลดิบที่อยู่ในอ็อบเจ็กต์ออกมา
+### ตัวอย่าง
+```python
+#print(..., end=" ")
+print("Hello, world!", end=" ")
+print("Welcome to Ruby tutorial project", end=" ")
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world! Welcome to Ruby tutorial project
+
+#print
+print("Hello, world!")
+print("Welcome to Ruby tutorial project")
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+Hello, world!
+Welcome to Ruby tutorial project
+
+#print(repr(...))
+arr = [1, 2, 3, 4, 5]
+print(repr(arr))
+
+#ผลลัพธ์ที่ได้ออกมาจะเป็น
+[1, 2, 3, 4, 5]
+```
+# ตารางเปรียบเทียบ
+| Ruby | Java | C | Python |
+|------|-------------------|-------------------|--------------------------|
+| print | System.out.print | printf | print(..., end=" ") |
+| puts | System.out.println | print..\n | print |
+| p | toString | ไม่มี | print(repr(...)) |
+
+# References
+- GeeksforGeeks. (2024). How to print output in Ruby? https://www.geeksforgeeks.org/ruby/how-to-print-output-in-ruby/
+- GeeksforGeeks. (2025). System.out.println in Java https://www.geeksforgeeks.org/java/system-out-println-in-java/
+- GeeksforGeeks. (2025). Object toString() Method in Java https://www.geeksforgeeks.org/java/object-tostring-method-in-java/
+- GeeksforGeeks. (2025). Basic Input and Output in C https://www.geeksforgeeks.org/c/basic-input-and-output-in-c/
+- GeeksforGeeks. (2025). C Structures https://www.geeksforgeeks.org/c/structures-c/
+- GeeksforGeeks. (2025). How to Print without newline in Python? https://www.geeksforgeeks.org/python/print-without-newline-python/
+- GeeksforGeeks. (2025). Python repr() Function https://www.geeksforgeeks.org/python/python-repr-function/
