@@ -59,7 +59,7 @@ orig_exit  ---> alias ของ exit
 | หัวข้อ | alias | alias_method |
 | --------------- | --------------- | --------------- |
 | ประเภท | Keyword ของภาษา Ruby | Method ของ Module |
-| การใช้งาน | alias new_name old_name | alias_method :new_name, :old_name |
+| วิธีการเรียกใช้ | alias new_name old_name | alias_method :new_name, :old_name |
 | ประเภทของ Argument | ได้ทั้ง string และ symbol | ได้แค่เฉพาะ symbol |
 | การสืบทอด (Inheritance) | ไม่ส่งผลต่อคลาสลูก (subclass) | ส่งผลต่อคลาสลูก |
 
