@@ -12,8 +12,6 @@
 * [p09.gamma-functions.md](ruby-math-methods-and-example/p09.gamma-functions.md "mention")
 * [p10.hypotenuse-function.md](ruby-math-methods-and-example/p10.hypotenuse-function.md "mention")
 
-# Ruby Math Methods
-
 ใน module Math ของภาษาเขียนโปรแกรม Ruby มีฟังก์ชันทางคณิตศาสตร์ที่ใช้ผ่านเมธอด
 
 **Domain แทนช่วงค่าที่สามารถใส่ได้**
