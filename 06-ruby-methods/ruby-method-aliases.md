@@ -135,18 +135,14 @@ int main() {
 
 
 
-# แหล่งอ้างอิง
-# Ruby :
-https://docs.ruby-lang.org/en/3.2/syntax/miscellaneous_rdoc.html  ใช้ในการอ้างอิง alias  , เปรียบเทียบความแตกต่าง
+# Reference
+Ruby : ใช้ในการอ้างอิง alias  , เปรียบเทียบความแตกต่าง : https://docs.ruby-lang.org/en/3.2/syntax/miscellaneous_rdoc.html  
 
-https://www.rubydoc.info/stdlib/core/Module:alias_method  ใช้ในการอ้างอิง alias_method
+Ruby : ใช้ในการอ้างอิง alias_method : https://www.rubydoc.info/stdlib/core/Module:alias_method  
 
-# Python :
-https://docs.python.org/3/tutorial/controlflow.html?utm_source=#defining-functions ใช้ในการอ้างอิง python
+Python : ใช้ในการอ้างอิง python เรื่องFunction def(define) : https://docs.python.org/3/tutorial/controlflow.html?utm_source=#defining-functions 
 
-# Java
-https://docs.oracle.com/javase/specs/jls/se14/html/jls-8.html#jls-8.4   ใช้ในการอธิบายการใช้ wrapper method
+Java : ใช้ในการอธิบายการใช้ wrapper method : https://docs.oracle.com/javase/specs/jls/se14/html/jls-8.html#jls-8.4   
 
-# C
-https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf?utm_source  6.5.2.2 Function calls-ใช้ในการอธิบายการเรียกฟังก์ชันผ่าน pointer   
+C : 6.5.2.2 Function calls-ใช้ในการอธิบายการเรียกฟังก์ชันผ่าน pointer : https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf?utm_source    
 
