@@ -78,6 +78,12 @@
 
 
 ## อ้างอิง
-https://marcuscode.com/lang/ruby/methods ใช้ในการอ้างอิงตัวอย่างที่ 1การรับค่า argument แบบไม่จำกัดจำนวนใน method,อ้างอิงตัวอย่างที่ 2 การรับค่า argument แบบทั่วไป
-https://www.techotopia.com/index.php/Ruby_Methods#Passing_a_Variable_Number_of_Arguments_to_a_Method ใช้อ้างอิง อ้างอิงตัวอย่างที่ 1 การรับค่า argument แบบทั่วไป
-https://www.geeksforgeeks.org/python/variable-length-argument-in-python/ ใช้เปรียบเทียบและอ้างอิงการรับค่า argument กับภาษา Ruby 
+#### https://marcuscode.com/lang/ruby/methods 
+ใช้ในการอ้างอิงตัวอย่างที่ 1การรับค่า argument แบบไม่จำกัดจำนวนใน method
+#### https://www.geeksforgeeks.org/python/deep-dive-into-parameters-and-arguments-in-python/ 
+ใช้เปรียบเทียบและอ้างอิงตัวอย่างที่ 2 การรับค่า argument แบบทั่วไปของ ภาษา Python กับภาษา Ruby 
+ใช้ในการอ้างอิงตัวอย่างที่ 1การรับค่า argument แบบไม่จำกัดจำนวนใน method
+#### https://www.techotopia.com/index.php/Ruby_Methods#Passing_a_Variable_Number_of_Arguments_to_a_Method 
+ใช้อ้างอิง อ้างอิงตัวอย่างที่ 1 การรับค่า argument แบบทั่วไป
+#### https://www.geeksforgeeks.org/python/variable-length-argument-in-python/ 
+ใช้เปรียบเทียบและอ้างอิงการรับค่า argument แบบไม่จำกัดจำนวน ภาษา Python กับภาษา Ruby 
