@@ -602,11 +602,23 @@ obj.display "ONE", "TWO"
 
 ## References
 
-- Ruby User’s Guide. (n.d.). Inheritance. In *Ruby User’s Guide*. Retrieved September 4, 2025, from https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/inheritance.html
-- Lieblang, M. (n.d.). How to implement inheritance and polymorphism in C. In *Modern C Programming*. Retrieved September 4, 2025, from https://moderncprogramming.com/how-to-implement-inheritance-and-polymorphism-in-c/
+- Codecademy Team. (2023, November 7). What is Inheritance in Object‑Oriented Programming? Retrieved September 4, 2025, from https://www.codecademy.com/resources/blog/what-is-inheritance
+
+- Ruby User’s Guide. (n.d.). Inheritance. In Ruby User’s Guide. Retrieved September 4, 2025, from https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/inheritance.html
+  
 - GeeksforGeeks. (2021, August 5). Ruby | Inheritance. Retrieved September 4, 2025, from https://www.geeksforgeeks.org/ruby/ruby-inheritance/
-- Codecademy Team. (2023, November 7). *What is Inheritance in Object‑Oriented Programming?* Retrieved September 4, 2025, from https://www.codecademy.com/resources/blog/what-is-inheritance
-- 
+  
+- W3Schools. (n.d.). Java Inheritance (Subclass and Superclass). Retrieved September 4, 2025, from https://www.w3schools.com/java/java_inheritance.asp
+  
+- W3Schools. (n.d.). Python Inheritance. Retrieved September 5, 2025, from https://www.w3schools.com/python/python_inheritance.asp
+
+- Kurian, A. (2009, August 6). How can Inheritance be modelled using C? Retrieved September 5, 2025, from Stack Overflow: https://stackoverflow.com/questions/1237266/how-can-inheritance-be-modelled-using-c
+    
+- Lieblang, M. (n.d.). How to implement inheritance and polymorphism in C. In Modern C Programming. Retrieved September 4, 2025, from https://moderncprogramming.com/how-to-implement-inheritance-and-polymorphism-in-c/
+
+- Ruby Core Documentation. (n.d.). require_relative. Retrieved September 4, 2025, from https://ruby-doc.org/core/Kernel.html#method-i-require_relative
+  
+- Ruby Core Documentation. (n.d.). require. Retrieved September 4, 2025, from https://ruby-doc.org/core/Kernel.html#method-i-require
 
 
 
