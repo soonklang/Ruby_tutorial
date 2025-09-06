@@ -36,32 +36,48 @@ print(sum_all(1, 2, 3, 4, 5))
 15
 ```
 ### คำอธิบาย
-จากตัวอย่างที่ 1 จะเห็นได้ว่าในภาษา Python มีการใช้ * นำหน้าชื่อ parameter ใน method เหมือนกันกับในภาษา Ruby จึงทำให้ function sum_all สามารถรับค่า argument กี่จำนวนก็ได้เช่นเดียวกัน แต่ในภาษา Python จะนำ argument ที่รับมาไปเก็บในรูปแบบ tuple แล้วบวกค่า argument ทุกตัวที่อยู่ใน tuple แล้วนำค่าที่ได้ไปเก็บที่ตัวแปร result แล้วจึงนำมาแสดงผล
+จากตัวอย่างที่ 1 จะเห็นได้ว่าในภาษา Python มีการใช้ * นำหน้าชื่อตัวแปร argument ใน method เหมือนกันกับในภาษา Ruby จึงทำให้ function sum_all สามารถรับค่า argument กี่จำนวนก็ได้เช่นเดียวกัน แต่ในภาษา Python จะนำ argument ที่รับมาไปเก็บในรูปแบบ tuple แล้วบวกค่า argument ทุกตัวที่อยู่ใน tuple แล้วนำค่าที่ได้ไปเก็บที่ตัวแปร result แล้วจึงนำมาแสดงผล
 ##
 ### ตัวอย่าง 2 (๋Java)
 ```java
-import java.io.*;
-class Geeks {
-public static void Names(String... n) {
-    for (String i : n) {
-        System.out.print(i + " "); 
-    }
-    System.out.println(); 
-}
+public class Motorcycle {
+    private String features = "";
 
-public static void main(String[] args) {
-    Names("geek1", "geek2");           
-    Names("geek1", "geek2", "geek3");   
-}
+    public Motorcycle(String make, String model, String color, int weight, boolean statusNew, int year) {}
+
+    public String getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(String features) {
+        this.features = features;
+    }
+
+    public void addMotorcycleFeatures(String... features) {
+        StringBuilder str = new StringBuilder(this.getFeatures());
+        for (String feature : features) {
+            if (!str.isEmpty())
+                str.append(", ");
+            str.append(feature);
+        }
+        this.setFeatures(str.toString());
+    }
+
+    public static void main(String[] args) {
+        Motorcycle motorcycle = new Motorcycle("Ducati", "Monster", "red", 350, true, 2023);
+        motorcycle.addMotorcycleFeatures("abs");
+        motorcycle.addMotorcycleFeatures("navi", "charger");
+        motorcycle.addMotorcycleFeatures("wifi", "phone", "satellite");
+        System.out.println(motorcycle.getFeatures());
+    }
 }
 ```
 ### ผลลัพธ์
 ```java
-geek1 geek2 
-geek1 geek2 geek3
+abs, navi, charger, wifi, phone, satellite
 ```
 ### คำอธิบาย
-จากตัวอย่างที่ 2 จะเห็นว่าในภาษา Java จะใช้ ... หรือเรียกว่า ellipsis ต่อท้ายชนิดข้อมูลใน method และทำให้ method สามารถรับค่า argument ได้ไม่จำกัดเหมือนกันและนำ argument ไปเก็บใน array แล้วจึงนำผลลัพธ์ออกมาแสดงผล
+จากตัวอย่างที่ 2 จะเห็นว่าในภาษา Java จะใช้วิธีแบบ Varargs หรือก็คือการใช้ ... ต่อท้ายชนิดข้อมูลใน method และทำให้ method สามารถรับค่า argument ได้ไม่จำกัดเหมือนกัน (วิธีนี้จะสามารถส่งชนิดข้อมูล argument ได้ชนิดเดียวเท่านั้นไม่สามารถส่งข้อมูลหลายๆชนิดได้) จากนั้นจะนำ argument ไปเก็บใน array แล้วจึงนำผลลัพธ์ออกมาแสดงผล
 ##
 ### ตัวอย่าง 3 (๋C)
 ```C
@@ -90,22 +106,22 @@ return 0;
 1 2 3 4 5
 ```
 ### คำอธิบาย
-จากตัวอย่างที่ 3 ในภาษา C จะใช้ Variadic function ซึ่งจะช่วยทำให้ function สามารถรับ argrument ได้ไม่จำกัด แต่ในภาษา C จะมีข้อแต่งต่างจากภาษา Ruby Python และ Java ตรงที่ใน function จะต้องกำหนด argument ไว้อย่างน้อย 1 ตัวและหลังจากนั้นจะส่ง argument มาเพิ่มกี่ตัวก็ได้แล้วก็นำมาเก็บใน list จากนั้นก็จะวนลูปนำข้อมูลในลิสต์ออกมาแสดงผล
+จากตัวอย่างที่ 3 ในภาษา C จะใช้วิธีแบบ Variadic ซึ่งจะช่วยทำให้ function สามารถรับ argrument ได้ไม่จำกัด แต่ในภาษา C จะมีข้อแต่งต่างจากภาษา Ruby Python และ Java ตรงที่ใน function จะต้องกำหนด argument ไว้อย่างน้อย 1 ตัวและหลังจากนั้นจะส่ง argument มาเพิ่มกี่ตัวก็ได้แล้วก็นำมาเก็บใน list จากนั้นก็จะวนลูปนำข้อมูลในลิสต์ออกมาแสดงผล
 ##
 ## ตารางเปรียบเทียบ
-| ภาษา | วิธีส่งค่า argument แบบไม่จำกัดจำนวน | การกำหนด argument ไว้ก่อน| การเก็บค่า argument ที่รับมา  |
-|------|--------------------------------|-----------------------------|---------------------------|
-|`Ruby`|`ใช้ * นำหน้า parameter ใน method`|`ไม่ต้องกำหนด argument`|`array`|
-|`Python`|`ใช้ * นำหน้า parameter ใน method`|`ไม่ต้องกำหนด argument`|`tuple`|
-|`Java`|`ใช้ ... หรือเรียกว่า ellipsis ต่อท้ายชนิดข้อมูลใน method`|`ไม่ต้องกำหนด argument`|`array`|
-|`C`|`ใช้ Variadic function`|`ต้องกำหนด argument ไว้ก่อนอย่างน้อย 1 ตัว`|`list`|
+| ภาษา | วิธีส่งค่า argument แบบไม่จำกัดจำนวน |การจำกัดชนิดข้อมูล argument | การกำหนด argument ไว้ก่อน| การเก็บค่า argument ที่รับมา  |
+|------|--------------------------------|-----------------------------|-----------------------------|---------------------------|
+|Ruby|`ใช้ (*argrument) `|ไม่จำกัดชนิดข้อมูล argument|`ไม่ต้องกำหนด argument`|`array`|
+|Python|`ใช้ (*argrument) `|ไม่จำกัดชนิดข้อมูล argument|`ไม่ต้องกำหนด argument`|`tuple`|
+|Java|`ใช้ (String...argument) `|ส่ง argument ได้แค่ชนิดเดียว|`ไม่ต้องกำหนด argument`|`array`|
+|C|`ใช้ Variadic `|-----------------------------|`ต้องกำหนด argument ไว้ก่อนอย่างน้อย 1 ตัว`|`list`|
 ##
 ## อ้างอิง
 #### https://marcuscode.com/lang/ruby/methods 
-ใช้ในการอ้างอิงตัวอย่างที่ 1 (Ruby),ใช้เปรียบเทียบความแตกต่างด้วย *args
+ใช้ในการอ้างอิงตัวอย่างที่ 1 (Ruby),ใช้เปรียบเทียบความแตกต่างด้วย *args กับภาษาอื่นๆ
 #### https://www.geeksforgeeks.org/python/variable-length-argument-in-python/
-ใช้ในการอ้างอิงตัวอย่างที่ 2 (Python),ใช้เปรียบเทียบความแตกต่างด้วย *args
-#### https://www.geeksforgeeks.org/java/variable-arguments-varargs-in-java/
-ใช้ในการอ้างอิงตัวอย่างที่ 3 (Java),ใช้เปรียบเทียบความแตกต่างด้วย Varargs, ...(ellipsis)
+ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 1 (Python),ใช้เปรียบเทียบความแตกต่างด้วย *args กับภาษา Ruby และภาษาอื่นๆ
+#### https://www.baeldung.com/java-best-practices-many-parameters-method
+ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 2 (Java),ใช้เปรียบเทียบความแตกต่างด้วย Varargs หรือ ...(ellipsis)กับภาษา Ruby และภาษาอื่นๆ
 #### https://www.geeksforgeeks.org/c/variadic-functions-in-c/
-ใช้ในการอ้างอิงตัวอย่างที่ 4 (C),ใช้เปรียบเทียบความแตกต่างด้วย variadic function
+ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 3 (C),ใช้เปรียบเทียบความแตกต่างด้วย variadic กับภาษา Ruby และภาษาอื่นๆ
