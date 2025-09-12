@@ -1814,7 +1814,11 @@ Explicit receiver คือการเรียกเมธอดที่ร�
 [Public Protected Private](https://www.linkedin.com/pulse/access-modifiers-public-protected-private-oop-manoj-shrestha-tyxtc)
 ## Video Clip
 
+[Video Public Private](https://youtu.be/bYSNR3F3xwY)
+
 ## Presentation
+
+[Presentation PDF and Powerpoint](https://drive.google.com/drive/folders/1sUfgXaM90kuYyEHRcr5fg3tLLQOFZdni?usp=sharing)
 
 ## แหล่งอ้างอิง
 
