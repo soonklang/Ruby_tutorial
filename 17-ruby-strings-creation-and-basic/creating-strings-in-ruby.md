@@ -146,4 +146,6 @@ https://www.baeldung.com/java-string-pool
 - GeeksforGeeks. (2025, July 25). _Strings in C_. GeeksforGeeks. Retrieved September 1, 2025, from<br> [https://www.geeksforgeeks.org/c/strings-in-c/](https://www.geeksforgeeks.org/c/strings-in-c/?utm_source=chatgpt.com)
 
 # *Presentation*
+[Creating Strings in Ruby](https://github.com/user-attachments/files/22299095/660710598.pdf.pdf)
+
 # *Video*
