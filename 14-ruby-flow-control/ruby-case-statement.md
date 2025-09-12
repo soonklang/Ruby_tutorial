@@ -463,7 +463,7 @@ match animal:
 
 #### Reference
 
-* https://www.techotopia.com/index.php/The\_Ruby\_case\_Statement ตัวอย่างของ Ruby เเละศึกษา syntax
+* [https://www.techotopia.com/index.php/The\_Ruby\_case\_Statement](https://www.techotopia.com/index.php/The_Ruby_case_Statement) ตัวอย่างของ Ruby เเละศึกษา syntax
 * https://www.tutorialspoint.com/ruby/ruby\_if\_else.htm ตัวอย่างของ Ruby ของ Range
 * https://www.geeksforgeeks.org/ruby/ruby-case-statement/ ตัวอย่างของ Ruby เเละศึกษา syntax
 * https://www.techotopia.com/index.php/Ruby\_Ranges สำหรับศึกษา number range
