@@ -149,3 +149,4 @@ https://www.baeldung.com/java-string-pool
 [Creating Strings in Ruby](https://github.com/user-attachments/files/22299095/660710598.pdf.pdf)
 
 # *Video*
+[Link Video](https://youtu.be/YzumENXWHK8)
