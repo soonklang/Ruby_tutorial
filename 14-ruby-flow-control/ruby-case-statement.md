@@ -467,7 +467,7 @@ match animal:
 * [https://www.tutorialspoint.com/ruby/ruby\_if\_else.htm](https://www.tutorialspoint.com/ruby/ruby_if_else.htm) ตัวอย่างของ Ruby ของ Range
 * https://www.geeksforgeeks.org/ruby/ruby-case-statement/ ตัวอย่างของ Ruby เเละศึกษา syntax
 * [https://www.techotopia.com/index.php/Ruby\_Ranges](https://www.techotopia.com/index.php/Ruby_Ranges) สำหรับศึกษา number range
-* https://www.tutorialspoint.com/ruby/ruby\_ranges.htm สำหรับศึกษา number range
+* [https://www.tutorialspoint.com/ruby/ruby\_ranges.htm](https://www.tutorialspoint.com/ruby/ruby_ranges.htm) สำหรับศึกษา number range
 * https://www.scaler.com/topics/ruby-switch-statement/ สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
 * [https://www.w3schools.com/c/c\_switch.php](https://www.w3schools.com/c/c_switch.php) สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
 * [https://www.w3schools.com/java/java\_switch.asp](https://www.w3schools.com/java/java_switch.asp) สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
