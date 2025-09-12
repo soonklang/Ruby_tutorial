@@ -8,7 +8,7 @@ myString = String.new
 => ""
 ```
 >จากตัวอย่างนี้ได้สร้างสตริงว่างเปล่าขึ้นมา
-## วิธีสร้างโดยและเริ่มต้นโดยการส่ง String เป็น argument ไปยัง new method:
+## วิธีสร้างเริ่มต้นโดยการส่ง String เป็น argument ไปยัง new method:
  ```ruby
 myString = String.new("This is my string. Get your own string")
 str = String.new('Another string.')
