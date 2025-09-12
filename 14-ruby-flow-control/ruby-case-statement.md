@@ -470,7 +470,7 @@ match animal:
 * https://www.tutorialspoint.com/ruby/ruby\_ranges.htm สำหรับศึกษา number range
 * https://www.scaler.com/topics/ruby-switch-statement/ สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
 * https://www.w3schools.com/c/c\_switch.php สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
-* https://www.w3schools.com/java/java\_switch.asp สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
+* [https://www.w3schools.com/java/java\_switch.asp](https://www.w3schools.com/java/java_switch.asp) สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
 * https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/ สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
 * https://www.datacamp.com/tutorial/python-switch-case สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
