@@ -5,7 +5,7 @@
 
 <img width="621" height="232" alt="image" src="https://github.com/user-attachments/assets/60f15568-5ab1-4e6e-bd1e-3676d90c48b4" />
 
-![Venn Diagram – Union, Intersection, Difference](assets/venn_diagram.png)
+
 
 ซึ่งผมขอทบทวนให้ทุกคนที่เข้ามาอ่านเพื่ออย่างน้อยได้รำลึกถึงสมัยวันวานกันหน่อยนะครับ ซึ่งตามภาพเลยคือความหมายของแต่ละแบบซึ่งในตอนผมยังเด็กๆผมก็มีทริคจำความหมายของพวกนี้ง่ายๆคือ Union = เอาหมด, Intersection = เอาซ้ำ, Difference = เอาตัวหลักและไม่เอาตัวซ้ำ อาจจะตลกไปหน่อยแต่นี่คือทริคการจำของผมครับ 
 
