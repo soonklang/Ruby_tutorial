@@ -88,6 +88,12 @@ String str = new String("abc");
 ```
 >จะสร้าง object  ใหม่เสมอ ช้ากว่า literal ส่วนมากไม่ใช้ หากไม่จำเป็น
 
+### หากต้องการสร้าง String โดย string() ที่เป็น method ของ Kernel
+```java
+String myString = String.valueOf("This is also my string");
+```
+>String.valueOf() สามารถรับ object, primitive หรือ char array ได้แล้วแปลงเป็น String ได้เหมือน Ruby String()
+
 ## C❗
 >มีความแตกต่างตรงที่ภาษา C ไม่มีชนิดข้อมูล String แต่จะถูกนำไปใช้เป็น arrays ของ char
 >arrays ของ char จะลงท้ายด้วยอักขระพิเศษ '\0' (อักขระ null) ใช้เป็นจุดสิ้นสุดของ String
