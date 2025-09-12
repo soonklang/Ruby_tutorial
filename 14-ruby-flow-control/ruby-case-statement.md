@@ -463,16 +463,16 @@ match animal:
 
 #### Reference
 
-* \[https://www.techotopia.com/index.php/The\_Ruby\_case\_Statement] ตัวอย่างของ Ruby เเละศึกษา syntax
-* \[https://www.tutorialspoint.com/ruby/ruby\_if\_else.htm] ตัวอย่างของ Ruby ของ Range
-* \[https://www.geeksforgeeks.org/ruby/ruby-case-statement/] ตัวอย่างของ Ruby เเละศึกษา syntax
-* \[https://www.techotopia.com/index.php/Ruby\_Ranges] สำหรับศึกษา number range
-* \[https://www.tutorialspoint.com/ruby/ruby\_ranges.htm] สำหรับศึกษา number range
-* \[https://www.scaler.com/topics/ruby-switch-statement/] สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
-* \[https://www.w3schools.com/c/c\_switch.php] สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
-* \[https://www.w3schools.com/java/java\_switch.asp] สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
-* \[https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/] สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
-* \[https://www.datacamp.com/tutorial/python-switch-case] สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
+* \https://www.techotopia.com/index.php/The\_Ruby\_case\_Statement ตัวอย่างของ Ruby เเละศึกษา syntax
+* \https://www.tutorialspoint.com/ruby/ruby\_if\_else.htm ตัวอย่างของ Ruby ของ Range
+* \https://www.geeksforgeeks.org/ruby/ruby-case-statement/ ตัวอย่างของ Ruby เเละศึกษา syntax
+* \https://www.techotopia.com/index.php/Ruby\_Ranges สำหรับศึกษา number range
+* \https://www.tutorialspoint.com/ruby/ruby\_ranges.htm สำหรับศึกษา number range
+* \https://www.scaler.com/topics/ruby-switch-statement/ สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
+* \https://www.w3schools.com/c/c\_switch.php สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
+* \https://www.w3schools.com/java/java\_switch.asp สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
+* \https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/ สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
+* \https://www.datacamp.com/tutorial/python-switch-case สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
 #### Presentation
 
