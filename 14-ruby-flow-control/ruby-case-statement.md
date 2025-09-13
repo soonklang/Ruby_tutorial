@@ -475,6 +475,7 @@ match animal:
 * https://www.datacamp.com/tutorial/python-switch-case สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
 #### Presentation
-[Ruby case Statement]()
+[660710587-casestatement.pdf.pdf](https://github.com/user-attachments/files/22311603/660710587-casestatement.pdf.pdf)
+
 
 #### Video
