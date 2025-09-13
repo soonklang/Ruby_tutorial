@@ -101,12 +101,12 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 ---
 
 ## คลิปนำเสนอ 
-*(ลิงก์ YouTube)*
+(https://youtu.be/ClEbYso3HvQ)
 
 ---
 
 ## Presentation (slides)
-*(ใส่ลิงก์ ไฟล์ PDF )*
+(https://heyzine.com/flip-book/42660a64df.html)
 
 ---
 
