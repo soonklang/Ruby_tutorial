@@ -399,6 +399,7 @@ https://youtu.be/A8Qlziw4JTE
 ---
 
 # Slide
-[📑 ดาวน์โหลดสไลด์ (POT)](SCSU-Slide-Songporworn-660710080.pot)
+[ดาวน์โหลดสไลด์ PDF](https://docs.google.com/presentation/d/1_1hIQYVO--lqHGq85KkyPUx0D8ehh8TW/export/pdf)
+
 
 
