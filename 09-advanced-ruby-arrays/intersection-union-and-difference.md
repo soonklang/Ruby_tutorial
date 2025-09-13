@@ -390,3 +390,13 @@ difference = list(set(a) - set(b))
 - Github (ga-wdi-boston) : https://github.com/ga-wdi-boston/ruby-array-methods
 - Programming Ruby (Book) : https://jmvidal.cse.sc.edu/library/thomas05a.pdf
 - Ruby Cookbook by Lucas Carlson & Leonard Richardson : https://books.google.lk/books?id=oRqkBwAAQBAJ&printsec=copyright#v=onepage&q&f=false
+
+---
+
+#Video
+https://youtu.be/A8Qlziw4JTE
+
+---
+
+#Slide
+
