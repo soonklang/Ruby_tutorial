@@ -147,7 +147,7 @@
    </details>
    
    >แต่ถ้าตัว string มีการต่อกันมากๆเพื่อให้การเขียนง่ายขึ้นเราจะใช้ """ """ดังตัวอย่างต่อไปนี้
-   ### Example Java language (กรณีใช้ Text Blocks) :
+   ### Example Java language (กรณีไม่ใช้ Text Blocks) :
    ```java
          public class test {
              public static void main(String[] args) {
