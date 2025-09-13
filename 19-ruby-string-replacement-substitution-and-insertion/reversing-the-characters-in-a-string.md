@@ -132,4 +132,4 @@ sequence[start:stop:step]
 - [The Ruby Programming Language](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf)
 # Presentation
 - [Slide](https://docs.google.com/presentation/d/1m96ErW8tCEvwQms2POYeDUaMOeYHOpo_/edit?usp=sharing&ouid=105156766385395799315&rtpof=true&sd=true)
-- [Video]()
+- [Video](https://youtu.be/LFXi7fxkQQQ)
