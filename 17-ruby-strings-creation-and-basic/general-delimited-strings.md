@@ -262,7 +262,7 @@
 *   Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers' guide (4th ed.). The Pragmatic Programmers.
 
    # Presentation
-
+## Slide : [General Delimited String Slide](https://silpakorn-my.sharepoint.com/:p:/g/personal/supawattanakul_t2_su_ac_th/EeHXKnNnizNJspnPSRwKvw8BuP2RBmfuRSFKM91ajfJcJQ?e=LF6vv2)
    # Video
-
+## Link : [General Delimited String](https://www.youtube.com/watch?v=q6k1sc7s8P4)
 
