@@ -393,10 +393,12 @@ difference = list(set(a) - set(b))
 
 ---
 
-#Video
+# Video
 https://youtu.be/A8Qlziw4JTE
 
 ---
 
-#Slide
+# Slide
+[📑 ดาวน์โหลดสไลด์ (POT)](SCSU-Slide-Songporworn-660710080.pot)
+
 
