@@ -131,5 +131,5 @@ sequence[start:stop:step]
 - [Comprehesive Ruby Programming](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Comprehensive%20Ruby%20Programming.pdf)
 - [The Ruby Programming Language](https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/The%20Ruby%20Programming%20Language.pdf)
 # Presentation
-- [Slide]()
+- [Slide](https://github.com/660710618/PL_Reversing_the_Characters_in_a_String.pptx)
 - [Video]()
