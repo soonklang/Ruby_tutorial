@@ -196,7 +196,7 @@ Ruby
 * Tutorialspoint. (n.d.). Ruby - loops. Tutorialspoint. Retrieved August 30, 2025, from https://www.tutorialspoint.com/ruby/ruby_loops.htm
 * GeeksforGeeks. (2025, 11 Jul). Ruby loops (for, while, do while, until). GeeksforGeeks. Retrieved August 30, 2025, from https://www.geeksforgeeks.org/ruby/ruby-loops-for-while-do-while-until/
 * Codecademy. (n.d.). The while loop. In Learn Ruby: Loops & iterators. Codecademy. Retrieved August 30, 2025, from https://www.codecademy.com/courses/learn-ruby/lessons/loops-iterators
-* Chongnguluam, W. (2020, January 6). Ruby nil object. Dev.to. https://dev.to/iporsut/ruby-nil-object-16fm
+* Chongnguluam, W. (2020, January 6). Ruby nil object. Dev.to. Retrieved August 30, 2025, from https://dev.to/iporsut/ruby-nil-object-16fm
 * How.dev. (n.d.). What is the difference between nil and false in Ruby? How.dev. Retrieved August 30, 2025, from https://how.dev/answers/what-is-the-difference-between-nil-and-false-in-ruby
   
 Python
