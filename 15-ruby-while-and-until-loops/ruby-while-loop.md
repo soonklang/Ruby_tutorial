@@ -189,6 +189,7 @@ int main() {
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
 
 ### References
+Ruby
 * Smyth, N. (2016, October 27). Ruby while and until loops. Techotopia. Retrieved August 30, 2025, from https://www.techotopia.com/index.php/Ruby_While_and_Until_Loops
 * Ruby Core Team. (n.d.). Control expressions: while loop. Ruby documentation. Retrieved August 30, 2025, from https://docs.ruby-lang.org/en/master/syntax/control_expressions_rdoc.html#label-while+Loop
 * Cooper, P. (2016). Beginning Ruby: From novice to professional (3rd ed.), Apress. from https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf
@@ -198,12 +199,16 @@ int main() {
 * Chongnguluam, W. (2020, January 6). Ruby nil object. Dev.to. https://dev.to/iporsut/ruby-nil-object-16fm
 * How.dev. (n.d.). What is the difference between nil and false in Ruby? How.dev. Retrieved August 30, 2025, from https://how.dev/answers/what-is-the-difference-between-nil-and-false-in-ruby
   
-Referencesที่ใช้เปรียบเทียบกับภาษาอื่น
-* Python Software Foundation. (2025, Aug 31). The while statement. In The Python Language Reference (Python 3). https://docs.python.org/3/reference/compound_stmts.html#while
+Python
+* Python Software Foundation. (n.d.). The while statement. In The Python Language Reference (Python 3). Retrieved August 30, 2025, from https://docs.python.org/3/reference/compound_stmts.html#while
 * W3Schools. (n.d.). Python while loops. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/python/python_while_loops.asp
-* Oracle. (2023). The while statement. In Java Language Specification: Java SE 20 Edition (Section 14.12). Oracle Corporation. https://docs.oracle.com/javase/specs/jls/se20/html/jls-14.html#jls-14.12
+
+Java
+* Oracle. (2023). The while statement. In Java Language Specification: Java SE 20 Edition (Section 14.12). Oracle Corporation. Retrieved August 30, 2025, from https://docs.oracle.com/javase/specs/jls/se20/html/jls-14.html#jls-14.12
 * W3Schools. (n.d.). Java while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/java/java_while_loop.asp
-* Ritchie, D. M. (n.d.). C reference manual. Bell Telephone Laboratories. https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cman.pdf
+
+C
+* Ritchie, D. M. (n.d.). C reference manual. Bell Telephone Laboratories. Retrieved August 30, 2025, from https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cman.pdf
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
