@@ -216,7 +216,7 @@ class Main {
 
 ## Slide
 
-https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch\_k3\_su\_ac\_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?rtime=dqtbArDm3Ug
+https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch_k3_su_ac_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?e=Sh4soL
 
 ## Reference
 
