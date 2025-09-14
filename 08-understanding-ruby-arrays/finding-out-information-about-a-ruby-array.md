@@ -225,3 +225,9 @@ System.out.println(arr1.getClass().isArray());
 - Oracle Help Center (ไม่กำหนด) Arrays (Java Platform SE 8) ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html​
 - W3School (ไม่กำหนด) C Arrays​ เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.w3schools.com/c/c_arrays.php​
 - GeeksforGeeks (26 กรกฏาคม 2025) C Arrays ​เข้าถึงเมื่อ 31 สิงหาคม 2025 ​จาก https://www.geeksforgeeks.org/c/c-arrays​
+
+# Presentation Slide
+
+https://silpakorn-my.sharepoint.com/:p:/g/personal/ketkorwoing_c_su_ac_th/EVBZM1WRbI1GuGZyjcYqN8wBlGX6WqDOgwo5HcSb6gMkKA?e=jeh2hI
+
+# Presentation Video
