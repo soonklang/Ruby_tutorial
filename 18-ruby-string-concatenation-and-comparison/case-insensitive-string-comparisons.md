@@ -100,8 +100,8 @@ output => equal เนื่องจาก ẞ ในภาษาเยอร�
 String str1 = “Silpakorn”;
 String str2 = “silpakorn”;
 String str3 = “Silpakorn University”;
-System.out.print(str1.equalIsIgnoreCase(str2)+" ");
-System.out.println(str2.equalIsIgnoreCase(str3)); 
+System.out.print(str1.equalsIgnoreCase(str2)+" ");
+System.out.println(str2.equalsIgnoreCase(str3)); 
 ```
 output => true false 
 
