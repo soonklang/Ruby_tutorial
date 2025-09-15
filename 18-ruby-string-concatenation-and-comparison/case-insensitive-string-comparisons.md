@@ -167,7 +167,7 @@ Techotopia. (2559). Ruby string concatenation and comparison. สืบค้น
 
 >Python
    
-Geeksforkeeks. (15 กรกฎาคม 2568). Case-insensitive string comparison in Python. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://www.geeksforgeeks.org/python/case-insensitive-string-comparison-in-python/ 
+Geeksforgeeks. (15 กรกฎาคม 2568). Case-insensitive string comparison in Python. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://www.geeksforgeeks.org/python/case-insensitive-string-comparison-in-python/ 
 
 Ioflood. (12 สิงหาคม 2567). Case-Insensitive String Comparisons. สืบค้นเมื่อ 2 กันยายน 2568, จาก https://ioflood.com/blog/using-python-to-compare-strings-methods-and-tips 
 
