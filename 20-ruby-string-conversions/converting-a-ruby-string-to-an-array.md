@@ -231,8 +231,10 @@ print(s.split("."))
 
 ***
 ### Video Presentation
+[video](https://drive.google.com/file/d/15BySJaA7vZTbIe23EjwCECN1DgcdwUkX/view?usp=sharing)
 ***
 ### Slide Presentation
+[slide](https://docs.google.com/presentation/d/1Y4KxL4jWHO61t4r2nlQvEHRVEfwSta8E/edit?usp=drive_link&ouid=109744363200621257075&rtpof=true&sd=true) 
 ***
 ### Reference
 Carmatec. (n.d.). Ruby’s string split: A complete guide with examples. https://www.carmatec.com/blog/rubys-string-split-a-complete-guide-with-examples/<br>
