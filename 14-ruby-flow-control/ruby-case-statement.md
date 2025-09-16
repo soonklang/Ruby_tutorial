@@ -277,35 +277,25 @@ end
 
 ```c
 #include <stdio.h>
-
-int main() {
-  int day = 4;
-  
-  switch (day) {
-    case 1:
-      printf("Monday");
-      break;
-    case 2:
-      printf("Tuesday");
-      break;
-    case 3:
-      printf("Wednesday");
-      break;
-    case 4:
-      printf("Thursday");
-      break;
-    case 5:
-      printf("Friday");
-      break;
-    case 6:
-      printf("Saturday");
-      break;
-    case 7:
-      printf("Sunday");
-      break;
-  }
-    
-  return 0;
+nt main() {
+  int var = 10;
+  switch (var)
+    {
+      case 5:
+          printf("Case 1 executed.");
+          break;
+      case 10:
+          printf("Case 2 executed. ");
+          break;
+      case 15:
+          printf("Case 3 executed. ");
+          break;
+      case 20:
+          printf("Case 4 executed. ");
+          break;
+      default:
+          printf("Default case executed. ");
+    }
 }
 ```
 
@@ -314,8 +304,8 @@ int main() {
 <summary><strong>Output</strong></summary>
 
 ```
-
-  Thursday
+Case 2 executed.
+  
 ```
 
 </details>
@@ -323,13 +313,16 @@ int main() {
 ข้อเเตกต่างกับ Ruby :
 
 ```
-               1. ตัวเงื่อนไขใช้ case เเทน when
+            1. ตัวเงื่อนไขใช้ case เเทน when
 
-               2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
+            2. ต้องใช้ break ช่วยในการหยุดการทำงานซึ่ง Ruby ไม่ต้องใช้
                
-               3. การเเสดงผลใช้ printf เเทน puts,print
+            3. การเเสดงผลใช้ printf เเทน puts,print
 
-               4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+            4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+
+            5. ที่เงื่อนไขสุดท้ายนั้นเขียนเป็น default: เเต่ของ Ruby ใช้เป็น else
+
                
 ```
 
