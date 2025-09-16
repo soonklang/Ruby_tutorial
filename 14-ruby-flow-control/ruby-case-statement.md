@@ -277,7 +277,7 @@ end
 
 ```c
 #include <stdio.h>
-nt main() {
+int main() {
   int var = 10;
   switch (var)
     {
