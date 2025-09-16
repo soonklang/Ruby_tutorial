@@ -437,7 +437,6 @@ match animal:
 * https://www.scaler.com/topics/ruby-switch-statement/ สำหรับการยกตัวอย่างของ Ruby เพื่อเปรียบเทียบ
 * https://how.dev/answers/how-to-use-the-switch-statement-in-c สำหรับการยกตัวอย่างของ C เพื่อเปรียบเทียบ
 * https://www.geeksforgeeks.org/java/switch-statement-in-java/ สำหรับการยกตัวอย่างของ Java เพื่อเปรียบเทียบ
-* https://www.geeksforgeeks.org/python/switch-case-in-python-replacement/ สำหรับการยกตัวอย่างของ Python เเบบ elif เพื่อเปรียบเทียบ
 * https://www.datacamp.com/tutorial/python-switch-case สำหรับการยกตัวอย่างของ Python เเบบ match เพื่อเปรียบเทียบ
 
 #### Presentation
