@@ -1478,6 +1478,13 @@ public class RegexMatch {
 0
 false
 ```
+## Slice
+
+https://silpakorn-my.sharepoint.com/:p:/g/personal/saree_w_su_ac_th/ESzi6TJr1txMoLshdGb_j3IBRGFOsTfFsD_tGc36Ex1O8g?e=21RHtj
+
+## Video
+
+https://youtu.be/P8zcpdT9MmI
 
 ## &#x20;แหล่งอ้างอิง
 
