@@ -72,9 +72,9 @@ people_3 = people.merge(people_2)
 
 ```ruby
 person = { "name" => "Alice", "age" => 25 }
-person["city"] = "Bangkok"
 
 # Add key
+person["city"] = "Bangkok"
 puts person
 # {"name"=>"Alice", "age"=>25, "city"=>"Bangkok"}
 
