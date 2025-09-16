@@ -154,22 +154,20 @@ end
 โดยตัวอย่างนี้ ในตัวเงื่อนไขจะเรียกว่า number range หรือ เลขในช่วง ซึ่งค่าที่ case รับมาเป็น Integer เเล้วนำมาตรวจสอบกับเงื่อนไข when ที่เป็น number range โดยการดูว่าเลขที่รับมานั้น อยู่ในช่วงของเลขในเงื่อนไขหรือไม่
 
 ```ruby
-$age =  5
-case $age
-when 0 .. 2
-   puts "baby"
-when 3 .. 6
-   puts "little child"
-when 7 .. 12
-   puts "child"
-when 13 .. 18
-   puts "youth"
-else
-   puts "adult"
+score = 70
+
+result = case score
+   when 0..40 then "Fail"
+   when 41..60 then "Pass"
+   when 61..70 then "Pass with Merit"
+   when 71..100 then "Pass with Distinction"
+   else "Invalid Score"
 end
+
+puts result
 ```
 
-case เป็นค่า 5 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 2 คือ 3 .. 6(เลขตั้งเเต่ 3-6 รวมเลขท้ายด้วย) จึงได้ output เป็น little child เเล้วจบการทำงาน
+case เป็นค่า 70 เมื่อตรวจสอบกับทุกเงื่อนไข when พบว่าเข้ากับเงื่อนไขที่ 3 คือ 61 .. 70(เลขตั้งเเต่ 61-70 รวมเลขท้ายด้วย) จึงได้ output เป็น Pass with Merit เเล้วจบการทำงาน
 
 <details>
 
@@ -177,7 +175,7 @@ case เป็นค่า 5 เมื่อตรวจสอบกับทุ
 
 ```
 
-  little child
+  Pass with Merit
 ```
 
 </details>
@@ -190,7 +188,7 @@ case เป็นค่า 5 เมื่อตรวจสอบกับทุ
 
 ```
 
-  adult
+  Invalid Score
 ```
 
 </details>
