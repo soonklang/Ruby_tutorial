@@ -252,7 +252,7 @@ print(merged)
 
 Link video:
 
-slice:
+slice: https://www.canva.com/design/DAGzJ91qkj0/otylluOC4OdD6ha53WbkfA/view?utm_content=DAGzJ91qkj0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b9baf33c5
 
 ## <mark style="color:$primary;">**Reference**</mark> <a href="#reference" id="reference"></a>
 
