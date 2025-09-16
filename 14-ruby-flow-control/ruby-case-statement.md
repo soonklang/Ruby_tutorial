@@ -393,36 +393,7 @@ public class Main {
 
 **ภาษา Python**
 
-Python ไม่มี switch case เเต่มีสิ่งที่ใช้เเทนได้คือ if-else(elif)
-
-```python
-bike = 'Yamaha'
-
-if bike == 'Hero':
-    print("bike is Hero")
-
-elif bike == "Suzuki":
-    print("bike is Suzuki")
-
-elif bike == "Yamaha":
-    print("bike is Yamaha")
-
-else:
-    print("Please choose correct answer")
-```
-
-<details>
-
-<summary><strong>Output</strong></summary>
-
-```
-
-  bike is Yamaha
-```
-
-</details>
-
-หรือถ้าหากเป็น Python 3.10 หรือเวอร์ชั่นหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
+Python 3.10 หรือเวอร์ชั่นหลังจากนี้ จะสามารถใช้ match ที่มีความคล้ายกับ switch ได้
 
 ```python
 animal = "Eagle"
@@ -453,11 +424,13 @@ match animal:
 ข้อเเตกต่างกับ Ruby :
 
 ```
-                1. ตัวเงื่อนไขใช้ if-else,elif เเละ case(วิธี match) เเทน when
+               1. ตัวเงื่อนไขใช้ case เเทน when
 
-                2. การเเสดงผลใช้ print ในขณะที่ Ruby ใช้ได้ทั้ง puts,print
+               2. การเเสดงผลใช้ print ในขณะที่ Ruby ใช้ได้ทั้ง puts,print
 
-                3. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+               3. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+
+               4. ที่เงื่อนไขสุดท้ายนั้นเขียนเป็น case_: เเต่ของ Ruby ใช้เป็น else
               
 ```
 
