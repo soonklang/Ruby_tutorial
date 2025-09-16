@@ -59,9 +59,9 @@ puts sorted_numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 ```c
 const char *original1[] = {"kiwi", "apple", "fig", "banana"};
 int n = sizeof(original1) / sizeof(original1[0]); /*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
-const char **sorted_copy = malloc(n * sizeof(const char *)); /* จะเป็นการสร้าง Array เพื่อมาเตรียมพร้อมสำหรับการใส่ค่าที่เรียงไว้ */
-memcpy(sorted_copy, original1, n * sizeof(const char *)); /* ทำการคัดลอกข้อมูลจาก original1 มาใส่ยังตัว sorted_copy */
-qsort(sorted_copy, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน Array ใหม่ แล้วทำมาใส่ตัวของ sorted_copy โดยใช้คำสั่ง qsort */
+const char **sorted_copy = malloc(n * sizeof(const char *)); 
+memcpy(sorted_copy, original1, n * sizeof(const char *)); 
+qsort(sorted_copy, n, sizeof(const char *), compareStrings); 
 printArray(sorted_copy,n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
 free(sorted_copy); /* เพื่อคืนหน่วยความจำจากการสร้างมาเพื่อลดการทำงานที่มากเกินไป */
 ```
