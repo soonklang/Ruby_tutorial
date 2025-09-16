@@ -336,33 +336,31 @@ int main() {
 **ภาษา Java**
 
 ```java
-public class Main {
-  public static void main(String[] args) {
-    int day = 4;
-    switch (day) {
-      case 1:
-        System.out.println("Monday");
-        break;
-      case 2:
-        System.out.println("Tuesday");
-        break;
-      case 3:
-        System.out.println("Wednesday");
-        break;
-      case 4:
-        System.out.println("Thursday");
-        break;
-      case 5:
-        System.out.println("Friday");
-        break;
-      case 6:
-        System.out.println("Saturday");
-        break;
-      case 7:
-        System.out.println("Sunday");
-        break;
+class Main
+{
+    public static void main(String[] args) {
+        int size = 2; 
+
+        switch (size) {
+            case 1:
+                System.out.println("Extra Small");
+                break;
+            case 2:
+                System.out.println("Small");
+                break;
+            case 3:
+                System.out.println("Medium");
+                break;
+            case 4:
+                System.out.println("Large");
+                break;
+            case 5:
+                System.out.println("Extra Large");
+                break;
+            default:
+                System.out.println("Invalid size number");
+        }
     }
-  }
 }
 
 ```
@@ -373,7 +371,7 @@ public class Main {
 
 ```
 
-  Thursday
+  Small
 ```
 
 </details>
@@ -381,13 +379,15 @@ public class Main {
 ข้อเเตกต่างกับ Ruby :
 
 ```
-               1. ตัวเงื่อนไขใช้ case เเทน when
+            1. ตัวเงื่อนไขใช้ case เเทน when
                
-               2. ต้องใช้ break ช่วยในการจบการทำงานซึ่ง Ruby ไม่ต้องใช้
+            2. ต้องใช้ break ช่วยในการหยุดการทำงานซึ่ง Ruby ไม่ต้องใช้
                
-               3. การเเสดงผลใช้ System.out.println เเทน puts,print
+            3. การเเสดงผลใช้ System.out.println เเทน puts,print
 
-               4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+            4. ตัวเงื่อนไขใช้ : เพื่อเเยกระหว่างเงื่อนไขกับส่วนของ output ในการเขียนโค้ด
+
+            5. ที่เงื่อนไขสุดท้ายนั้นเขียนเป็น default: เเต่ของ Ruby ใช้เป็น else
                
 ```
 
