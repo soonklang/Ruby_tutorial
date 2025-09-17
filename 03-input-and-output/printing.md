@@ -186,6 +186,10 @@ print(repr(arr))
 | puts | System.out.println | printf..\n | print |
 | p | toString | ไม่มี | print(repr(...)) |
 
+# Presentation slides
+[Printing, using puts and p by 640710059.pptx](https://github.com/user-attachments/files/22392868/Printing.using.puts.and.p.by.640710059.pptx)
+
+
 # References
 - GeeksforGeeks. (2024). How to print output in Ruby? https://www.geeksforgeeks.org/ruby/how-to-print-output-in-ruby/
 - GeeksforGeeks. (2025). System.out.println in Java https://www.geeksforgeeks.org/java/system-out-println-in-java/
