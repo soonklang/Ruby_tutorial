@@ -2,7 +2,7 @@
 
 เราสามารถนำไฟล์ที่มีอยู่บนเครื่องมาเปิดได้ด้วยเมธอด open() ของคลาส File ซึ่งจะรับพารามิเตอร์ 2 ตัว คือ ชื่อของไฟล์และ mode การเข้าถึง แต่พารามิเตอร์ mode ไม่จำเป็นต้องระบุก็ได้
 
-สมมติว่า ข้อมูลภายในไฟล์ text.txt คือ 
+### สมมติว่า ข้อมูลภายในไฟล์ text.txt คือ 
 
 >
 ```
@@ -11,23 +11,23 @@ Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 ```
 
-ตัวอย่างที่ 1 :
+### ตัวอย่างที่ 1 :
 ```ruby
 File.open("example.txt").each { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด
 ```
 
-output 
+### output 
 ```
  > Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
 Debbie Watts,Professor,Female,38
 ```
-ตัวอย่างที่ 2 :
+### ตัวอย่างที่ 2 :
 ```ruby
  File.open("text.txt").each(',') { |line| puts line } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด โดยจะตัดประโยคด้วย ","
 ```
 
-output
+### output
 ```
 	> Fred Bloggs,
 Manager,
@@ -43,14 +43,14 @@ Female,
 38
 ```
 
-ตัวอย่างที่ 3 :
+### ตัวอย่างที่ 3 :
 ```ruby
  File.open("text.txt") do |f| 
   2.times { puts f.gets } # แสดงข้อความที่ดึงมาจากไฟล์ทีละบรรทัด จำนวน 2 ประโยค
 end 
 ```
 
-output
+### output
 ```
 > Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
@@ -60,14 +60,14 @@ Laura Smith,Cook,Female,23
 > "r" จะเป็น mode default ตั้งต้น 
 ยกตัวอย่างเช่น เรากำหนดการเข้าถึงไฟล์ให้อยู่ในโหมด "r" หรือการอ่านได้เพียงอย่างเดียว
 
-ตัวอย่างที่ 4 :
+### ตัวอย่างที่ 4 :
 
 ```ruby
 file = File.open("text.txt", "r")
 	puts file.read
 file.close
 ```
-output
+### output
 ```
 	> Fred Bloggs,Manager,Male,45
 Laura Smith,Cook,Female,23
@@ -75,7 +75,7 @@ Debbie Watts,Professor,Female,38
 ```
 เรายังสามารถตรวจสอบสถานะของไฟล์ได้ด้วยว่า ไฟล์นั้นเปิดอยู่หรือไม่ด้วยการใช้เมธอด .closed? ซึ่งจะคืนค่าเป็น Boolean 
 
-ตัวอย่างที่ 5 :
+### ตัวอย่างที่ 5 :
 ```ruby
 file.closed? # => False  
 ```
@@ -98,14 +98,14 @@ file.close # ปิดไฟล์
 
 คลาส File จาก แพ็กเกจ java.io ทำให้เราสามารถทำงานร่วมกับไฟล์ต่างๆได้ โดยการสร้างวัตถุของคลาส File แล้วระบุชื่อและนามสกุลของไฟล์ 
 
-ตัวอย่างที่ 1
+### ตัวอย่างที่ 1
 ```java
 import java.io.File;  // Import คลาส File
 
 File myObj = new File("filename.txt"); // สร้างวัตถุของคลาส File ในชื่อ myObj
 ```
 
-ตัวอย่างที่ 2
+### ตัวอย่างที่ 2
 ```java
 // Import คลาส File
 import java.io.File; // Import คลาส File
@@ -126,14 +126,14 @@ class Geeks
 
 เราสามารถเปิดไฟล์ด้วยการสร้างตัวชี้ประเภท FILE และใช้ฟังก์ชัน fopen() ซึ่งจะรับพารามิเตอร์ 2 ตัว ได้แก่ ชื่อของไฟล์และโหมดการเข้าถึง
 
-ตัวอย่างที่ 1
+### ตัวอย่างที่ 1
 ```C
 FILE *fptr;
 
 fptr = fopen(filename, mode);
 ```
 
-ตัวอย่างที่ 2
+### ตัวอย่างที่ 2
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -159,21 +159,21 @@ int main() {
 
 ใช้ฟังก์ชัน open() ซึ่งจะรับพารามิเตอร์ 2 ตัว ได้แก่ ชื่อของไฟล์และโหมดการเข้าถึง แล้วจะ return วัตถุไฟล์ 
 
-ตัวอย่างที่ 1
+### ตัวอย่างที่ 1
 ```python
 file = open("geeks.txt", "r")
 content = file.read()
 print(content)
 file.close()
 ```
-Output
+### Output
 	> Hello world
 GeeksforGeeks
 123 456
 
 ในกรณีที่ไฟล์นั้นอยู่ที่ตำแหน่งอื่น ต้องระบุตำแหน่งของไฟล์ให้ชัดเจน
 
-ตัวอย่างที่ 2
+### ตัวอย่างที่ 2
 ```python
 f = open("D:\\myfiles\welcome.txt")
 print(f.read())
@@ -181,7 +181,7 @@ print(f.read())
 
 ในการอ่านไฟล์ประเภท CSV จำเป็นจะต้อง import pandas จากนั้นจึงใช้ เมธอด read.csv() เหมาะสำหรับการวิเคราะห์ข้อมูล
 
-ตัวอย่างที่ 3
+### ตัวอย่างที่ 3
 ```python
 import pandas as pd
 data = pd.read_csv("test.csv")
