@@ -10,7 +10,7 @@
 
 **Basic Syntax**
 ``` ruby
-while condition[do]
+while condition do
   # code block
 end
 ```
