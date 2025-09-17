@@ -1,5 +1,5 @@
 # Ruby String replacement Substitution and Insertion
-เนื้อหาในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับวิธีการแก้ไขข้อความบางส่วน การแทนที่ การแทรกข้อความ การตัดหรือปรับแต่ง และการกลับลำดับตัวอักษร เพื่อช่วยให้คุณเข้าใจและสามารถประยุกต์การจัดการสตริงในภาษาโปรแกรม Ruby 
+เนื้อหาในส่วนนี้คุณจะได้เรียนรู้เกี่ยวกับวิธีการจัดการสตริงในภาษาโปรแกรม Ruby 
 ## หัวข้อย่อย
 - [Changing a Section of a String](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/changing-a-section-of-a-string.md)
 - [Ruby String Substitution](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/ruby-string-substitution.md)
