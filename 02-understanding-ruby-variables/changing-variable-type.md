@@ -12,7 +12,7 @@ puts x.class  // => Integer
 
 x = "hello"   // เปลี่ยนค่าใหม่เป็น String
 puts x.class  // => String
-ตอนแรก x เป็นตัวเลข (Integer) แต่พอเราใส่ค่า "hello" แทน Ruby จะเปลี่ยนชนิดของ x ให้เป็น String โดยอัตโนมัติ
+
 ```
 - ตอนแรก x เป็นตัวเลข (Integer) แต่พอเราใส่ค่า "hello" แทน Ruby จะเปลี่ยนชนิดของ x ให้เป็น String โดยอัตโนมัติ
 
@@ -125,7 +125,7 @@ x = [1, 2, 3] | type: <class 'list'>
 -
 ------
 ### Presentation (slides)
--
+
 ---
 ### Reference 
 - Understanding Ruby variables. (2016, October 27). Techotopia.https://www.techotopia.com/index.php/Understanding_Ruby_Variables​
