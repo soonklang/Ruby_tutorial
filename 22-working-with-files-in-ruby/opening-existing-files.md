@@ -206,7 +206,7 @@ Techopia (27 October, 2016) - Working with Files in Ruby
 useful.codes (19 Jan, 2025) - Opening Files with Ruby
 [[Java Files](https://www.w3schools.com/java/java_files.asp)](https://useful.codes/opening-files-with-ruby/)
 
-## ภาษา  JAVA
+### ภาษา  JAVA
 W3School - Java Files
 [Java Files](https://www.w3schools.com/java/java_files.asp)
 
@@ -217,7 +217,7 @@ Codecademy (Jul 29, 2022) - Java Files
 [Java | Files | Codecademy](https://www.codecademy.com/resources/docs/java/files)
 
 
-## ภาษา C
+### ภาษา C
 W3School - C File 
 [C Files - File Handling and How To Create Files](https://www.w3schools.com/c/c_files.php)
 
@@ -225,7 +225,7 @@ GeeksforGeeks (02 Aug, 2025) - Basics of File Handling in C
 [Basics of File Handling in C - GeeksforGeeks](https://www.geeksforgeeks.org/c/basics-file-handling-c/)
 
 
-## ภาษา PYTHON
+### ภาษา PYTHON
 W3School - Python File Open
 [Python File Open](https://www.w3schools.com/python/python_file_handling.asp)
 
