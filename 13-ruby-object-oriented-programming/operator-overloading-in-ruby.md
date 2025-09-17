@@ -193,7 +193,7 @@ Output:<br>
 * https://www.youtube.com/watch?v=SfBqTh8XqNw
 
 # Slide
-
+* https://docs.google.com/presentation/d/1vcjqqzJKCYDHdqbCHLzbIk95jKGKnQLc/edit?usp=drive_link&ouid=110018633443641312116&rtpof=true&sd=true
 
 # References
 * cppreference.com. (n.p.). operator overloading. https://en.cppreference.com/w/cpp/language/operators.html/.
