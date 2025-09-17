@@ -183,7 +183,7 @@ print(repr(arr))
 | Ruby | Java | C | Python |
 |------|-------------------|-------------------|--------------------------|
 | print | System.out.print | printf | print(..., end=" ") |
-| puts | System.out.println | print..\n | print |
+| puts | System.out.println | printf..\n | print |
 | p | toString | ไม่มี | print(repr(...)) |
 
 # References
