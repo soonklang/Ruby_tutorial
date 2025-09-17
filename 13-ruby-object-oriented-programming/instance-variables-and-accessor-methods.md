@@ -260,9 +260,9 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 จากโค้ดจะเห็นได้ชัดว่า โค้ดมีขนาดที่ลดลงแต่ก็มีการทำงานไม่ต่างจากเดิม และเนื่องจากภาษาอื่นไม่มีวิธีการเช่นเดียวกันเช่นนี้เหมือนกับ Ruby ทำให้ Ruby มีความยืดหยุ่นของภาษาและสามารถช่วยทำให้เขียนได้ง่ายขึ้นอีกด้วย
 
 ## Slide
--
+- https://docs.google.com/presentation/d/1ug50czP39ZfiT167Tc_1DQn-nT3YmMkA/edit?usp=sharing&ouid=104190213375917016614&rtpof=true&sd=true
 ## Video
--
+- https://drive.google.com/file/d/1yuPMAefQafL4d9RP251MlhXdiJJcInlc/view?usp=drive_link
 ## Reference
 
 - GeeksforGeeks. (17 ธันวาคม 2019). Instance Variables in Ruby. เข้าค้นเมื่อ 31 สิงหาคม 2025 จาก https://www.geeksforgeeks.org/ruby/instance-variables-in-ruby/
