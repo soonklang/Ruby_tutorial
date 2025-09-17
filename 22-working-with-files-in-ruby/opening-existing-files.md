@@ -195,7 +195,7 @@ data.head(5)
 https://drive.google.com/file/d/1U2tr_q1G20_20SgfL7DnG2pXYoiWZ5e7/view?usp=drive_link
 
 # แหล่งอ้างอิง
-## ภาษา Ruby
+### ภาษา Ruby
 Beginning Ruby From Novice to Professional Third Edition (Copyright © 2016 by Peter Cooper) - Chapter 9 : Files and Databases
 
 Ruby Data Processing - Using Map, Reduce, and Select (Copyright © 2018 by Jay Godse) - Chapter 1 Basic Ruby/ Reading from Files
