@@ -555,7 +555,9 @@ geeksforgeeks.(ไม่มีวันที่). Callbacks in C. geeksforgeeks
 tutorialspoint.(ไม่มีวันที่). Functions in C. tutorialspoint. สือค้นเมื่อวันที่ 3 กันยายน 2025, จาก https://www.tutorialspoint.com/cprogramming/c_functions.htm
 
 
+## Presentation (slides)
 
+## Video
 
 
 
