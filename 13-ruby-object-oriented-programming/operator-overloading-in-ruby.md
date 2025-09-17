@@ -4,7 +4,7 @@
 
 # Operator Overloading ในภาษาต่างๆ
   * Ruby -> support การใช้ operator overloading
-  * Python -> ไม่ support การใช้ operator overloading
+  * Python -> support การใช้ operator overloading
   * C++ -> support การใช้ operator overloading
   * C -> ไม่ support การใช้ operator overloading
   * Java -> ไม่ support การใช้ **user defined** operator overloading
@@ -188,6 +188,12 @@ Output:<br>
 > java.lang.String<br>
 
 ในการ + ครั้งแรกเป็น `int` + `int` = `int` แต่ครั้งที่สองเป็น `int` + `String` = `String` สังเกตได้ว่า Java มีการ built-in operator overloading `+` อย่างชัดเจน
+
+# Video
+* https://www.youtube.com/watch?v=SfBqTh8XqNw
+
+# Slide
+
 
 # References
 * cppreference.com. (n.p.). operator overloading. https://en.cppreference.com/w/cpp/language/operators.html/.
