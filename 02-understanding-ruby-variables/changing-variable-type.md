@@ -125,7 +125,7 @@ x = [1, 2, 3] | type: <class 'list'>
 - https://youtu.be/G0jN8u2OvGM?feature=shared
 ------
 ### Presentation (slides)
-- https://drive.google.com/drive/folders/14Caxo7bVH6IFPRHacZGLYXCX6a9ZhVxb?usp=drive_link
+- https://drive.google.com/file/d/1xTO4M83WY7MoPu_iqbEkwawm2vekAatR/view?usp=sharing
 ---
 ### Reference 
 - Understanding Ruby variables. (2016, October 27). Techotopia.https://www.techotopia.com/index.php/Understanding_Ruby_Variables​
