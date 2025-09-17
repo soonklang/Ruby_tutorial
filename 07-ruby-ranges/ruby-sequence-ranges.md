@@ -144,7 +144,9 @@ Range.new(nil, 4, true)  => nil...4   # ใช้สร้าง Beginless Range
 Range เมธอดใน Java ใช้คลาส  IntStream (32 บิต) หรือ LongStream (64 บิต) ใช้พารามิเตอร์ของฟังก์ชันระบุช่วงลำดับ มี 2 พารามิเตอร์ คือ startInclusive(รวมค่าเริ่มต้น)  และ endExclusive (ไม่รวมค่าเริ่มต้น) โดยใช้ เมธอด range() หรือ rangeClosed() หาค่าช่วงลำดับที่ต้องการ
 
 ##### range
+
 เมธอดที่เริ่มจากค่าเริ่มต้นไม่รวมค่าสุดท้าย
+
 ตัวอย่าง
 
 ```java
@@ -207,8 +209,13 @@ The elements are:
 1000009 
 ```
 Java ใช้คนละเมธอดในการเลือกรวมหรือไม่รวมตัวสุดท้าย ในการใช้คลาสต้องนำเข้าแพคเกจ และJava ไม่มี built-in อาจต้องใช้ loop หรือสร้างเงื่อนไข
+
 ##### rangeClosed 
+
 เมธอดที่เริ่มจากค่าเริ่มต้นไปจนถึงค่าสุดท้าย
+
+ตัวอย่าง
+
 ```java
 package com.javabrahman.java8.streams;
 import java.util.stream.IntStream;
