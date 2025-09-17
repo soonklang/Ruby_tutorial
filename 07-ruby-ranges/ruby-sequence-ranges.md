@@ -136,7 +136,6 @@ Range.new(nil, 4, true)  => nil...4   # ใช้สร้าง Beginless Range
     r = (nil..nil)
     r.include?(100)      => true
     r.include?(-999)     => true
-    r.include?(nil)      => true 
 ```
 
     
