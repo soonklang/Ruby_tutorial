@@ -2,7 +2,7 @@
 
 ##  1.จงเขียน case Statement ของ Ruby เเละ Switch case ของ C,Java เเละ Match ของ Python
 
-กำหนดให้ int day = 6 ให้เขียนโด้ดรับวัน เเละเเสดงผลเป็น "Today is Saturday." ตามลำดับวันให้ครบทุกวันในสัปดาห์ โดยเริ่มที่วันจันทร์ เเละหากเลขที่รับมาไม่ใช่เลขที่ถูกต้องให้พิมพ์ "I think you might have remembered the number wrong."
+กำหนดให้ int day = 6 ให้เขียนโค้ดรับวัน เเละเเสดงผลเป็น "Today is Saturday." ตามลำดับวันให้ครบทุกวันในสัปดาห์ โดยเริ่มที่วันจันทร์ เเละหากเลขที่รับมาไม่ใช่เลขที่ถูกต้องให้พิมพ์ "I think you might have remembered the number wrong."
 
 #### Ruby
 
@@ -41,6 +41,7 @@ end
 #### C
 
 ```c
+
 ```
 
 #### Java
@@ -51,4 +52,33 @@ end
 #### Python
 
 ```python
+
+day = 6
+# using match
+
+match day:
+    case 1:
+        print("Today is Monday.")
+
+    case 2:
+        print("Today is Tuesday.")
+
+    case 3:
+        print("Today is Wednesday.")
+
+    case 4:
+        print("Today is Thursday.")
+
+    case 5:
+        print("Today is Friday.")
+
+    case 6:
+        print("Today is Saturday.")
+
+    case 7:
+        print("Today is Sunday.")
+
+    case _:
+        print("I think you might have remembered the number wrong.")
+
 ```
