@@ -295,6 +295,9 @@ puts myString
               Python is a popular language for programming
     </details>
 
+## 🖥️ slides
+https://silpakorn-my.sharepoint.com/:p:/g/personal/withunsathitkun_n_su_ac_th/EdlB_QLIu2FNuz_DqfulUgYBJOsH9UQ-ew3ZZcDJYVgOLA?e=fQFLvx
+## 💽 clip
 
 ## 🧿 แหล่งที่มา
 
