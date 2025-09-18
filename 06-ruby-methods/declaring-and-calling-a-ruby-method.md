@@ -15,7 +15,7 @@ def name( arg1, arg2, arg3, ... )
    return value
 end
 ```
-def - ใช้เริ้มต้นในการประกาศ Method
+def - ใช้เริ่มต้นในการประกาศ Method
 
 name - ชื่อของ Method ที่ต้องการสร้าง
 
