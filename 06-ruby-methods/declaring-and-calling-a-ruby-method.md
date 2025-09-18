@@ -1,6 +1,6 @@
 # Declaring and Calling a Ruby Method
 ## บทนำ
-***Method*** : เป็นชุดคำสั่งที่ทำงานฌฉพาะเจาะจง และคืนค่าผลลัพธ์ (result)กลับมา Method นั้นจะช่วยประหยัดเวลาและช่วยให้สามารถนำ Code ของผู้ใช้กลับมาใช้ซ้ำได้โดยไม่ต้องพิมพ์ Code ใหม่อีก
+***Method*** : เป็นชุดคำสั่งที่ทำงานเฉพาะเจาะจง และคืนค่าผลลัพธ์ (result)กลับมา Method นั้นจะช่วยประหยัดเวลาและช่วยให้สามารถนำ Code ของผู้ใช้กลับมาใช้ซ้ำได้โดยไม่ต้องพิมพ์ Code ใหม่อีก
 ## การประกาศใช้ Method
 - ในภาษา Ruby จะใช้คำว่า **def** ตามด้วยชื่อ Method และจบด้วยคำว่า **end** 
 
@@ -557,7 +557,7 @@ tutorialspoint.(ไม่มีวันที่). Functions in C. tutorialspoi
 
 ## Presentation 
 
-- [slides](https://drive.google.com/file/d/1YNh4RN6wmILqgWDJES13FnMmZ3TltuIF/view?usp=share_link)
+- [slides](https://drive.google.com/file/d/1ZTllaiM87Mh4CAvmfP3D310xrQ9AoRaQ/view?usp=share_link)
 
 ## Video
 
