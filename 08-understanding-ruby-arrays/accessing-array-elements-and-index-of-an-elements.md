@@ -1,4 +1,4 @@
-# Accessing Array Elements and Index of an Elements
+# Accessing Array Elements and Finding Index of an Elements
 
 # Accessing  Array Element
 
