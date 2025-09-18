@@ -196,5 +196,16 @@ GeeksforGeeks. (2025, July 23). _Java program to add characters to a string_. Ge
 GeeksforGeeks. (2025, July 23). _Insert a variable into a string - Python_. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/](https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/?utm_source=chatgpt.com)
 
 ***
+## Presentations
+
+***
+
+
+
+***
+
+## Video
+
+[https://youtu.be/qx5RMcbo3Xc](https://youtu.be/qx5RMcbo3Xc)
 
 
