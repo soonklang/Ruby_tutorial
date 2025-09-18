@@ -35,6 +35,7 @@ modifier form syntax 1
 begin-end while 2
 modifier form syntax 3
 </code></pre>
+</details>
 
 Python
 ``` python
