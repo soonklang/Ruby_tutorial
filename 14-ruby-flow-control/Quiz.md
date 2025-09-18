@@ -4,11 +4,12 @@
 
 กำหนดให้ int day = 6 ให้เขียนโค้ดรับวัน เเละเเสดงผลเป็น "Today is Saturday." ตามลำดับวันให้ครบทุกวันในสัปดาห์ โดยเริ่มที่วันจันทร์ เเละหากเลขที่รับมาไม่ใช่เลขที่ถูกต้องให้พิมพ์ "I think you might have remembered the number wrong."
 
+## เฉลย
+
 #### Ruby
 
 ```ruby
 day = 6
-# using case statement
 
 case day 
 when 1  
@@ -44,7 +45,6 @@ end
 #include <stdio.h>
 int main() {
   int day = 6;
-  # using switch case
 
   switch (day)
     {
@@ -83,7 +83,6 @@ class Main
 {
     public static void main(String[] args) {
         int day = 6; 
-        # using switch case
 
         switch (day) {
             case 1:
@@ -120,7 +119,6 @@ class Main
 ```python
 
 day = 6
-# using match
 
 match day:
     case 1:
