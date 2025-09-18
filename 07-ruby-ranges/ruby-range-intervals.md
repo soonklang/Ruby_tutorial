@@ -121,3 +121,11 @@ if x in range(1, 11):
 
 **GeeksforGeeks**. _Python range() function_. GeeksforGeeks, 11 July 2025, \
 [https://www.geeksforgeeks.org/python/python-range-function/](https://www.geeksforgeeks.org/python/python-range-function/)
+
+***
+
+Slide Presentation
+
+***
+
+Video
