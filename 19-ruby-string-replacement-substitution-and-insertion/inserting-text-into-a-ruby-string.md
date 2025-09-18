@@ -200,6 +200,7 @@ GeeksforGeeks. (2025, July 23). _Insert a variable into a string - Python_. Geek
 
 ***
 
+[inserting-text-into-a-ruby-string](https://docs.google.com/presentation/d/1DY5siqHeZF-AFTbB6o60rhAtFYePgG4nB9RKn8YCgyE/edit?usp=sharing)
 
 
 ***
