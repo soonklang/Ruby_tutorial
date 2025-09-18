@@ -204,11 +204,12 @@ print(str(6958.777))     # Float → String
 ```
 
 ## Video Presentation
+[Video Presentation](https://youtu.be/sNGsL6AeTmI)
 
 
 ## Slide
 
-
+[Slide Presentation](https://drive.google.com/file/d/1sEDIiajrgw95-3mSSj6In5y3yKjt9th2/view?usp=sharing)
 
 
 
