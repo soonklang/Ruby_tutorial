@@ -234,3 +234,40 @@ public class Main {
     }
 }
 ```
+# - Until and Unless
+**1. Write a Ruby program using unless to print "Not 10" if the variable x is not equal to 10.**
+
+### Answer
+
+``` ruby
+x = 7
+unless x == 10
+  puts "Not 10"
+end
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>Not 10
+</code></pre>
+
+**2. Write a Ruby program using until to count down from 3 to 1 and then print "Go!".**
+
+### Answer
+
+``` ruby
+i = 3
+until i == 0
+  puts i
+  i -= 1
+end
+puts "Go!"
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>3
+2
+1
+Go!
+</code></pre>
+
