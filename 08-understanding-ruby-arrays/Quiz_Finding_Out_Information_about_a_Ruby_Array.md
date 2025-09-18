@@ -40,3 +40,33 @@ end
 ```sql
 5 7 89 2 7 6 1 7 2 9 7 21 67 1 5 7 1 5 748 2 78 1 7 81 4 8 4 5 72 6 72 96 412 8 4 2 9842 81 571 851 72 854 5 end
 ```
+
+ผลลัพท์
+
+**1.**
+```sql
+Length = 6
+Not Empty
+Class = Array
+```
+
+**2.**
+```sql
+Length = 0
+Empty
+Class = Array
+```
+
+**3.**
+```sql
+Length = 6
+Not Empty
+Class = Array
+```
+
+**4.**
+```sql
+Length = 43
+Not Empty
+Class = Array
+```
