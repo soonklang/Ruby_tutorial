@@ -4,8 +4,20 @@
 
 #### Ruby
 
+```ruby
+```
+
 #### C
+
+```c
+```
 
 #### Java
 
+```java
+```
+
 #### Python
+
+```python
+```
