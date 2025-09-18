@@ -163,6 +163,7 @@ int main() {
 | **C** | ไม่ได้ | `const` | ใช้ใน function | `PI` |
 
 ## Slides
+https://drive.google.com/file/d/1Qq-H_6K9CbcprLGhddzLR5xM44qTxQPM/view?usp=drive_link
 
 ## Video
 https://youtu.be/4ZRJNyVONIA?feature=shared
