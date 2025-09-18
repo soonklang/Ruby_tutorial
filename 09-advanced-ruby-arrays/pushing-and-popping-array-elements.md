@@ -229,4 +229,4 @@ Pop: Mango
 - [ ภาษา python list] https://docs.python.org/3/tutorial/datastructures.html
 
 # *Presentation*
-[Pushing and Popping Array Elements](https://github.com/user-attachments/files/22299095/660710598.pdf.pdf)
+[Pushing and Popping Array Elements](https://github.com/user-attachments/files/22410957/PushAndPopArray.pdf)
