@@ -212,7 +212,7 @@ C
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
-[RUBY_WHILE_LOOP.pdf](https://github.com/user-attachments/files/22409663/RUBY_WHILE_LOOP.pdf)
+[RUBY_WHILE_LOOP.pdf](https://github.com/user-attachments/files/22409811/RUBY_WHILE_LOOP.pdf)
 
 ### Video
 https://youtu.be/Av6HNJVW-Qw
