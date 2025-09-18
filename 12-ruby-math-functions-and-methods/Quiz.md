@@ -58,12 +58,12 @@ public class Main {
         if(n>=0 && n<1){
           double angle = n * Math.PI;
   
-          System.out.println(angle);
+          System.out.printf("Angle: %f radians\n",angle);
           System.out.println(Math.sin(angle));
           System.out.println(Math.cos(angle));
           System.out.println(Math.tan(angle));
         }else{
-          System.out.println(Input not in [0,1)");
+          System.out.println("Input not in [0,1)");
         }
     }
 }
