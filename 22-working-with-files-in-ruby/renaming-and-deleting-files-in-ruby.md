@@ -95,10 +95,10 @@ print("File deleted successfully!")
 จากการเปรียบเทียบจะเห็นว่า Ruby และ Python ใช้คำสั่งสำเร็จรูป ไม่ต้องจัดการไฟล์โดยตรง สามารถสั่งงานได้เลย ต่างกับ C และ Java
 
 ## คลิปนำเสนอ
-
+https://drive.google.com/file/d/1RvlmTlayOFTWhjCjcbvYDroguMhvhhY9/view?usp=sharing
 
 ## สไลด์บรรยาย
-
+https://drive.google.com/file/d/1qbI2SnKaO4UWDpfosLVLElJvpQIai9YP/view?usp=sharing
 
 ## แหล่งที่มา
 GeeksforGeeks. (2019, November 29). File handling in Ruby. GeeksforGeeks. https://www.geeksforgeeks.org/ruby/file-handling-in-ruby/
