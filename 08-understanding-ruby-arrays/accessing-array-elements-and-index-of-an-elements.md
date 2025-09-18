@@ -276,7 +276,7 @@ int main(){
 ### ตัวอย่างภาษา Ruby
 
 ```
-putsตัวอย่างby month.rindex("May")
+puts month.rindex("May")
 # ค่าที่ได้ออกมาคือ 5
 ```
 
