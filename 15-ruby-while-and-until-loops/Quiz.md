@@ -1,5 +1,5 @@
 # Quiz ประจำบท
-# - While Loop
+## - While Loop
 **1.What is the output of the following code?**
 
 Ruby
@@ -271,3 +271,25 @@ puts "Go!"
 Go!
 </code></pre>
 
+## - Breaking from While Loops
+**1. Write a program which loops through [1, 2, 7, 9, 15, 24] and stops at the first number greater than 6 then prints that number, using while loop and break statement.**
+## Ruby
+### Answer
+``` ruby
+numbers = [1, 2, 7, 9, 15, 24]
+i = 0
+
+while i < numbers.length
+  if numbers[i] > 6
+    puts numbers[i]
+    break
+  end
+  i += 1
+end
+
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>7
+</code></pre>
