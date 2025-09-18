@@ -139,7 +139,7 @@ This is a user-defined method.
 
 ### 2.เรียกโดยใช้ Abstract
 
-ไม่มีตัวโค้ดภายในจำเป็นต้อง5^d override ใน subclass
+ไม่มีตัวโค้ดภายในจำเป็นต้องถูก override ใน subclass
 การเรียกใช้นั้น จะต้องทำผ่าน object ของ subclass ที่ override แล้ว
 
 ### ตัวอย่าง
