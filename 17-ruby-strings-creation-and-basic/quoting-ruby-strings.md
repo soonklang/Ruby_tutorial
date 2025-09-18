@@ -409,4 +409,4 @@ Aternative quote ทำงานเหมือนเครื่องหมา
 [Quoting in String.pdf](https://github.com/user-attachments/files/22409434/Quoting.in.String.pdf)
 
 ## _Video_
-
+https://youtu.be/8E-nh5k_sVo
