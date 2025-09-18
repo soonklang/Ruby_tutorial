@@ -221,7 +221,7 @@ Link :คลิปนำเสนอ
 [[Watch the video](https://youtu.be/3MFmGPiw5qY)]
 
 Presentation :slide
-[[Watch the slide]([https://youtu.be/3MFmGPiw5qY](https://drive.google.com/file/d/1ulY8wM9rwzuoWSLn3edJ4nKLfWgvEcMz/view?usp=sharing))]
+[[Watch the slide](https://drive.google.com/file/d/1ulY8wM9rwzuoWSLn3edJ4nKLfWgvEcMz/view?usp=sharing)]
 
 
 
