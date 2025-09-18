@@ -225,3 +225,69 @@ int main() {
   ```
 
 </details>
+
+##  4. ผลลัพธ์ที่ได้จากโค้ดดังต่อไปนี้คืออะไร
+
+```ruby
+    puts "This is the first question and it\'s a \"Ruby\" language\."
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+This is the first question and it's a "Ruby" language.
+```
+
+</details>
+
+```python
+    number = 2
+    print(f' And this is the {number}nd question\n take your time.')
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+And this is the 2nd question
+take your time.
+```
+
+</details>
+
+```c
+    #include <stdio.h>
+    void main() {
+        printf("This one \\ is\neasy.");
+    }
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+This one \ is
+easy.
+```
+
+</details>
+
+```java
+    public class question {
+        public static void main(String[] args) {
+            String str = "What\'s favourite ";
+            String str2 = "Programming language?";
+            System.out.println("Last question " + str + str2);
+        }
+    }
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+Last question What's favourite Programming language?
+```
+
+</details>
