@@ -560,7 +560,7 @@ tutorialspoint.(ไม่มีวันที่). Functions in C. tutorialspoi
 - [slides](https://drive.google.com/file/d/1baEGuoCP06v1fE_AG5w_n2zd4F14eA8Q/view?usp=share_link)
 
 ## Video
-
+- [Clip](https://youtu.be/HVRtNCJINbo)
 
 
 
