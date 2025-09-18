@@ -54,7 +54,7 @@ Area = 40.0
    <summary><b>ภาษา C</b></summary>
     
 ```C
-   #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
