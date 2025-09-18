@@ -557,7 +557,7 @@ tutorialspoint.(ไม่มีวันที่). Functions in C. tutorialspoi
 
 ## Presentation 
 
-- [slides](https://www.canva.com/design/DAGzMpYa0VY/PTiMpDfGTiRGo6I_yR4rvw/edit?utm_content=DAGzMpYa0VY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [slides](https://drive.google.com/file/d/14s9pnYZMfH2TErPC-tFo_SrIGmifB9v0/view?usp=share_link)
 
 ## Video
 
