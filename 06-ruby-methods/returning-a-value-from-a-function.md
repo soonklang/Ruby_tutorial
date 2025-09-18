@@ -217,6 +217,9 @@ None
 Python ถ้าไม่มีคำสั่ง return จะคืนค่า None อัตโนมัติ
 
 
+Link :คลิปนำเสนอ
+[![Watch the video](https://youtu.be/3MFmGPiw5qY)]
+
 
 
 
