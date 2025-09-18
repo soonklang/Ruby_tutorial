@@ -371,6 +371,38 @@ unless x == 10
   puts "Not 10"
 end
 ```
+
+Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        int x = 7;
+        if (!(x == 10)) {
+            System.out.println("Not 10");
+        }
+    }
+}
+```
+
+C
+``` c
+#include <stdio.h>
+
+int main() {
+    int x = 7;
+    if (!(x == 10)) {
+        printf("Not 10\n");
+    }
+    return 0;
+}
+```
+
+Python
+``` python
+x = 7
+if x != 10:
+    print("Not 10")
+```
 <details open>
   <summary><strong>Output</strong></summary>
   <pre><code>Not 10
@@ -387,6 +419,46 @@ until i == 0
   i -= 1
 end
 puts "Go!"
+```
+Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        int i = 3;
+        while (i != 0) {  // until i == 0  <=> while i != 0
+            System.out.println(i);
+            i -= 1;
+        }
+        System.out.println("Go!");
+    }
+}
+
+```
+
+C
+``` c
+#include <stdio.h>
+
+int main() {
+    int i = 3;
+    while (i != 0) {  // until i == 0  <=> while i != 0
+        printf("%d\n", i);
+        i -= 1;
+    }
+    printf("Go!\n");
+    return 0;
+}
+
+```
+
+Python
+``` python
+i = 3
+while i != 0:   # until i == 0  <=> while i != 0
+    print(i)
+    i -= 1
+print("Go!")
+
 ```
 
 <details open>
