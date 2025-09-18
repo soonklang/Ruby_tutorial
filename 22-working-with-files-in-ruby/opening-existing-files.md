@@ -189,10 +189,10 @@ data.head(5)
 ```
 
 # คลิปนำเสนอ
-
+https://youtu.be/i_IydvugRt0
 
 # Slide บรรยาย
-https://drive.google.com/file/d/1U2tr_q1G20_20SgfL7DnG2pXYoiWZ5e7/view?usp=drive_link
+[https://drive.google.com/file/d/1U2tr_q1G20_20SgfL7DnG2pXYoiWZ5e7/view?usp=drive_link](https://drive.google.com/file/d/1QuKhJGxbpY3icnhUTSm5DZYBzKqjeykv/view?usp=drive_link)
 
 # แหล่งอ้างอิง
 ### ภาษา Ruby
