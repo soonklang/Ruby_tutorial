@@ -1,4 +1,5 @@
-# While Loop
+# Quiz ประจำบท
+# - While Loop
 **1.What is the output of the following code?**
 
 Ruby
