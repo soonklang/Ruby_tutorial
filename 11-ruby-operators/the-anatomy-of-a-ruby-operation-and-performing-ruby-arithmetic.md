@@ -128,5 +128,5 @@
  - [Online Python Compiler (Interpreter) -Programiz](https://www.programiz.com/python-programming/online-compiler/)(ศึกษาและทดลอง Syntax  ภาษา Python  และ เปรียบเทียบความแตกต่าง)
 
 ### Presentation
-
+SCSU-Slide-6.pdf.pdf
 ### Video
