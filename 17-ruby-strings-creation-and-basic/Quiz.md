@@ -134,3 +134,94 @@ int main() {
 </details>
 
 ---
+## ข้อ 3 ให้เขียนโปรแกรมเพื่อรับข้อมูล **ชื่อ อายุ สาขาวิชา** จากผู้ใช้ แล้วแสดงข้อความแนะนำตัว (อย่างน้อย 3 บรรทัด) โดยใช้การสร้างข้อความหลายบรรทัดในแต่ละภาษา (Ruby: Heredoc, Java: Text Block, C: เชื่อม string, Python: triple quotes)  
+**หมายเหตุ:**  
+- ใช้ฟีเจอร์รับข้อมูล input ตามรูปแบบแต่ละภาษา  
+- ข้อความแสดงผลต้องมีข้อมูลที่รับมาแทรกอยู่
+
+---
+
+<details>
+  <summary>คลิกเพื่อดูเฉลย</summary>
+
+  ### Ruby
+  ```ruby
+  print "กรุณากรอกชื่อ: "
+  name = gets.chomp
+  print "กรุณากรอกอายุ: "
+  age = gets.chomp
+  print "กรุณากรอกสาขาวิชา: "
+  major = gets.chomp
+
+  str = <<TEXT
+  สวัสดีค่ะ ฉันชื่อ #{name}
+  อายุ #{age} ปี
+  สาขาวิชา: #{major}
+  TEXT
+
+  puts str
+  ```
+
+  ---
+
+  ### Java (Text Block, Java 15+)
+  ```java
+  import java.util.Scanner;
+  public class Main {
+      public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+          System.out.print("กรุณากรอกชื่อ: ");
+          String name = sc.nextLine();
+          System.out.print("กรุณากรอกอายุ: ");
+          String age = sc.nextLine();
+          System.out.print("กรุณากรอกสาขาวิชา: ");
+          String major = sc.nextLine();
+
+          String str = """
+              สวัสดีค่ะ ฉันชื่อ %s
+              อายุ %s ปี
+              สาขาวิชา: %s
+              """.formatted(name, age, major);
+
+          System.out.println(str);
+      }
+  }
+  ```
+
+  ---
+
+  ### C
+  ```c
+  #include <stdio.h>
+  int main() {
+      char name[100], age[10], major[100];
+      printf("กรุณากรอกชื่อ: ");
+      fgets(name, sizeof(name), stdin);
+      printf("กรุณากรอกอายุ: ");
+      fgets(age, sizeof(age), stdin);
+      printf("กรุณากรอกสาขาวิชา: ");
+      fgets(major, sizeof(major), stdin);
+
+      printf("สวัสดีค่ะ ฉันชื่อ %s", name);
+      printf("อายุ %s", age);
+      printf("สาขาวิชา: %s", major);
+      return 0;
+  }
+  ```
+
+  ---
+
+  ### Python
+  ```python
+  name = input("กรุณากรอกชื่อ: ")
+  age = input("กรุณากรอกอายุ: ")
+  major = input("กรุณากรอกสาขาวิชา: ")
+
+  str = f"""สวัสดีค่ะ ฉันชื่อ {name}
+  อายุ {age} ปี
+  สาขาวิชา: {major}
+  """
+  print(str)
+  ```
+
+</details>
