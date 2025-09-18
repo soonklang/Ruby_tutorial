@@ -85,4 +85,52 @@ int main() {
 
 ```
 ---
+##  2.จงเขียนโปรแกรมให้แสดงคำว่า Albert Einstein said "I have no special talent. I am only passionately curious."โดยข้อความผลลัพธ์ต้องแสดงตัว " " ด้วย และกำหนดให้ใช้ภาษาRubyโดยใช้วิธี general delimited stringในการทำ พร้อมทั้งโปรแกรมที่แสดงผลแบบเดียวกันด้วยภาษา Python,Java & C (ไม่จำกัดวิธีในกรณี Python,Java & C)
 
+<details close>
+   <summary><b>เฉลยภาษา Ruby</b></summary>
+    
+```ruby
+    msg = %{Albert Einstein said "I have no special talent. I am only passionately curious."}
+    puts msg
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา Python</b></summary>
+    
+```python
+    msg = 'Albert Einstein said "I have no special talent. I am only passionately curious."'
+    print(msg)
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา Java</b></summary>
+    
+```java
+    public class Quote {
+        public static void main(String[] args) {
+            String msg = "Albert Einstein said \"I have no special talent. I am only passionately curious.\"";
+            System.out.println(msg);
+        }
+    }
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา C</b></summary>
+    
+```c
+    #include <stdio.h>
+    void main() {
+        printf("Albert Einstein said \"I have no special talent. I am only passionately curious.\"\n");
+    }
+ ```
+        
+</details>
+
+---
