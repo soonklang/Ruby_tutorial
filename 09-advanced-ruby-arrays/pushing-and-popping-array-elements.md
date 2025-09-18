@@ -227,3 +227,6 @@ Pop: Mango
 - [ ภาษา java libary Deque] https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
 - [ ภาษา java libary ArrayDeque] https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html
 - [ ภาษา python list] https://docs.python.org/3/tutorial/datastructures.html
+
+# *Presentation*
+[Pushing and Popping Array Elements](https://github.com/user-attachments/files/22299095/660710598.pdf.pdf)
