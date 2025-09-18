@@ -35,12 +35,6 @@ modifier form syntax 1
 begin-end while 2
 modifier form syntax 3
 </code></pre>
-
-</details>
-<details open>
-  <summary><strong>Describe</strong></summary>
-  <pre>
-</pre>
 </details>
 
 Python
@@ -141,13 +135,6 @@ end
 "aloha": 4 times
 "Hawaii": 0 times
 </code></pre>
-</details>
-
-</details>
-<details open>
-  <summary><strong>Describe</strong></summary>
-  <pre> 
-</pre>
 </details>
 
 Python
