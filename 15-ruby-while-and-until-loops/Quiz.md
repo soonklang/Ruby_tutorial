@@ -18,7 +18,7 @@ while 0
 end
 ```
 <details open>
-  <summary><strong>Answer</strong></summary>
+  <summary><strong>Output</strong></summary>
   <pre><code>basic syntax 0
 begin-end while 0
 modifier form syntax 1
@@ -134,7 +134,7 @@ while true do
 end
 ``` 
 <details open>
-  <summary><strong>Answer</strong></summary>
+  <summary><strong>Output</strong></summary>
   <pre><code>sawasdee
 sawasdee
 aloha
@@ -234,11 +234,157 @@ public class Main {
     }
 }
 ```
-# - Until and Unless
+## - Breaking from While Loops
+
+**1. Write a program that starts with count = 1 and keeps increasing the count by 1 inside a while loop and stops when the count reaches 5. Use the break statement.**
+
+Ruby
+``` ruby
+count = 1
+
+while true
+  puts count
+  break if count == 5
+  count += 1
+end
+
+
+```
+Python
+``` python
+count = 1
+
+while True:
+    print(count)
+    if count == 5:
+        break
+    count += 1
+
+
+```
+C
+``` c
+#include <stdio.h>
+
+int main() {
+    int count = 1;
+
+    while (1) {
+        printf("%d\n", count);
+        if (count == 5) break;
+        count++;
+    }
+
+    return 0;
+}
+
+
+
+```
+Java
+```java
+public class CountStop {
+    public static void main(String[] args) {
+        int count = 1;
+
+        while (true) {
+            System.out.println(count);
+            if (count == 5) break;
+            count++;
+        }
+    }
+}
+
+
+```
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>1
+2
+3
+4
+5
+</code></pre>
+
+**2. Write a program which loops through [1, 2, 7, 9, 15, 24] and stops at the first number greater than 6, then prints that number. Use the break statement.**
+
+Ruby
+``` ruby
+numbers = [1, 2, 7, 9, 15, 24]
+i = 0
+
+while i < numbers.length
+  if numbers[i] > 6
+    puts numbers[i]
+    break
+  end
+  i += 1
+end
+
+```
+Python
+``` python
+numbers = [1, 2, 7, 9, 15, 24]
+i = 0
+
+while i < len(numbers):
+    if numbers[i] > 6:
+        print(numbers[i])
+        break
+    i += 1
+
+```
+C
+``` c
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {1, 2, 7, 9, 15, 24};
+    int i = 0;
+
+    while (i < 6) {
+        if (numbers[i] > 6) {
+            printf("%d\n", numbers[i]);
+            break;
+        }
+        i++;
+    }
+
+    return 0;
+}
+
+
+```
+Java
+```java
+public class FirstGreaterThanSix {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 7, 9, 15, 24};
+        int i = 0;
+
+        while (i < numbers.length) {
+            if (numbers[i] > 6) {
+                System.out.println(numbers[i]);
+                break;
+            }
+            i++;
+        }
+    }
+}
+
+
+```
+
+<details open>
+  <summary><strong>Output</strong></summary>
+  <pre><code>7
+</code></pre>
+
+
+## - Until and Unless
 **1. Write a Ruby program using unless to print "Not 10" if the variable x is not equal to 10.**
 
-### Answer
-
+Ruby
 ``` ruby
 x = 7
 unless x == 10
@@ -252,7 +398,7 @@ end
 
 **2. Write a Ruby program using until to count down from 3 to 1 and then print "Go!".**
 
-### Answer
+Ruby
 
 ``` ruby
 i = 3
@@ -269,27 +415,4 @@ puts "Go!"
 2
 1
 Go!
-</code></pre>
-
-## - Breaking from While Loops
-**1. Write a program which loops through [1, 2, 7, 9, 15, 24] and stops at the first number greater than 6 then prints that number, using while loop and break statement.**
-## Ruby
-### Answer
-``` ruby
-numbers = [1, 2, 7, 9, 15, 24]
-i = 0
-
-while i < numbers.length
-  if numbers[i] > 6
-    puts numbers[i]
-    break
-  end
-  i += 1
-end
-
-```
-
-<details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>7
 </code></pre>
