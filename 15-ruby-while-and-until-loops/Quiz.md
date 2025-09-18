@@ -110,7 +110,7 @@ public class Main {
 }
 ```
 
-**2.What is the output of the following code?**
+**2.From this code, how many times will each of these words-"greeting", "hello", "sawasdee", "aloha", and "Hawaii" -be printed?**
 
 Ruby
 ``` ruby
@@ -135,18 +135,11 @@ end
 ``` 
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>sawasdee
-sawasdee
-aloha
-sawasdee
-sawasdee
-aloha
-sawasdee
-sawasdee
-aloha
-sawasdee
-sawasdee
-aloha
+  <pre><code>"greeting": 0 times
+"hello": 0 times
+"sawasdee": 8 times
+"aloha": 4 times
+"Hawaii": 0 times
 </code></pre>
 </details>
 
