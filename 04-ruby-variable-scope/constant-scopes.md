@@ -7,16 +7,16 @@ Ruby Constants กำหนดชื่อตัวแปรด้วยตั�
 ### ตัวอย่างการใช้งาน
 
 ```ruby
-MY_NAME = "Nuch"
+MY_NAME = "SU"
 puts "Welcome to #{MY_NAME}"
-MY_NAME = "Tanvimol"
+MY_NAME = "Silpakorn"
 puts "Welcome to #{MY_NAME}"
 ```
 
 **Output:**
 ```
-Welcome to Nuch
-Welcome to Tanvimol
+Welcome to SU
+Welcome to Silpakorn
 HelloWorld.rb:5: warning: already initialized constant MY_NAME
 HelloWorld.rb:1: warning: previous definition of MY_NAME was here
 ```
@@ -27,16 +27,16 @@ HelloWorld.rb:1: warning: previous definition of MY_NAME was here
 ในภาษา Python ไม่มี constant หากต้องการกำหนดค่าคงที่ ต้องใช้อักษรตัวพิมพ์ใหญ่ตั้งชื่อตัวแปรและกำหนดค่านั้นๆ เนื่องจาก Python ไม่มี constant จึงสามารถแก้ไขค่าได้เสมอ และไม่มี warning อีกด้วย
 
 ```python
-MY_NAME = "Nuch"
-print(f"Welcome to {MY_NAME}") # Welcome to Nuch
-MY_NAME = "Tanvimol" # เปลี่ยนค่าได้เลย
-print(f"Welcome to {MY_NAME}") # Welcome to Tanvimol
+MY_NAME = "SU"
+print(f"Welcome to {MY_NAME}") 
+MY_NAME = "Silpakorn" # เปลี่ยนค่าได้เลย
+print(f"Welcome to {MY_NAME}") 
 ```
 
 **Output:**
 ```
-Welcome to Nuch
-Welcome to Tanvimol
+Welcome to SU
+Welcome to Silpakorn
 ```
 
 ### Java
@@ -45,9 +45,9 @@ Welcome to Tanvimol
 ```java
 public class Main {
     public static void main(String[] args) {
-        final String MY_NAME = "Nuch";
+        final String MY_NAME = "SU";
         System.out.println("Welcome to " + MY_NAME);
-        MY_NAME = "Tanvimol";
+        MY_NAME = "Silpakorn";
         System.out.println("Welcome to " + MY_NAME);
     }
 }
@@ -56,7 +56,7 @@ public class Main {
 **Output:**
 ```
 Main.java:6: error: cannot assign a value to final variable MY_NAME
-MY_NAME = "Tanvimol";
+MY_NAME = "Silpakorn";
 ^
 1 error
 error: compilation failed
@@ -68,9 +68,9 @@ error: compilation failed
 ```c
 #include <stdio.h>
 int main() {
-    const char* const MY_NAME = "Nuch";
+    const char* const MY_NAME = "SU";
     printf("Welcome to %s\n", MY_NAME);
-    MY_NAME = "Tanvimol";
+    MY_NAME = "Silpakorn";
     printf("Welcome to %s\n", MY_NAME);
     return 0;
 }
@@ -80,7 +80,7 @@ int main() {
 ```
 Main.c: In function 'main':
 Main.c:8:13: error: assignment of read-only variable 'MY_NAME'
-8 | MY_NAME = "Tanvimol";
+8 | MY_NAME = "Silpakorn";
   | ^
 ```
 
@@ -161,6 +161,11 @@ int main() {
 | **Python** | ได้ | ตัวอักษรตัวพิมพ์ใหญ่ | เรียกใช้ผ่าน class | `Circle.PI` |
 | **Java** | ไม่ได้ | `final` | เรียกใช้โดยตรง | `Circle.PI` |
 | **C** | ไม่ได้ | `const` | ใช้ใน function | `PI` |
+
+## Slides
+
+## Video
+https://youtu.be/4ZRJNyVONIA?feature=shared
 
 ## References
 
