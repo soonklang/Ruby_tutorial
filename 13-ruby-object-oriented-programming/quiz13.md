@@ -157,6 +157,67 @@ puts rect.area
 - หลังจาก rect.resize(7, 3) → object ถูกอัปเดตเป็น @width = 7, @height = 3 → area = 7 * 3 = 21
 </details>
 
+## 8. Private classes in Ruby
+### Q : จากโค้ดตัวอย่างที่ทำให้คลาส Guardians เป็น private หากเราต้องการเรียกใช้เมธอด Quill ของคลาส Guardians ให้ทำงานได้ภายนอกคลาสหลัก(Marvel) โดยไม่แก้ไขหรือลบบรรทัด private_constant :Guardians เราจะต้องเขียนโค้ดเพิ่มเติมอย่างไรและควรเขียนไว้ที่ส่วนใด? พร้อมทั้งอธิบายเหตุผลว่า ทำไมโค้ดที่เพิ่มเข้าไปจึงสามารถทำให้เข้าถึงคลาส Guardians ได้โดยไม่เกิด NameError  
+
+```ruby
+class Marvel
+  class Guardians
+    def Quill
+      puts "Legendary outlaw"
+    end
+  end
+
+  class Avengers
+    def Tony
+      puts "I am Iron-man"
+    end
+  end
+
+  private_constant :Guardians
+end
+```
+<details>
+<summary><strong>เฉลยข้อที่ 8.</strong></summary>
+
+เราสามารถเรียกใช้เมธอด Quill ของคลาส Guardians ได้โดยการสร้าง public method ขึ้นมาภายในคลาส Marvel เพื่อทำหน้าที่เป็น "ตัวกลาง" ในการเรียกใช้งานคลาส Guardians ที่เป็น private
+
+```ruby
+class Marvel
+    class Guardians
+    def Quill
+      puts "Legendary outlaw"
+    end
+  end
+
+  class Avengers
+    def Tony
+      puts "I am Iron-man"
+    end
+  end
+
+  private_constant :Guardians
+
+  # --- ส่วนที่เพิ่มเติม ---
+  # สร้าง public method เพื่อเป็นทางเข้าถึง Guardians จากภายใน
+  def call_the_guardians
+    # ภายในเมธอดนี้ เราสามารถเข้าถึง Guardians ได้โดยตรง
+    team = Guardians.new
+    team.Quill
+  end
+  # --------------------
+end
+
+marvel_hq = Marvel.new
+marvel_hq.call_the_guardians # => ทำงานได้สำเร็จ
+```
+### output :  
+```
+Legendary outlaw
+```
+เนื่องจากเมธอด call_the_guardians ที่เราสร้างขึ้นมานั้นถูกนิยามอยู่ ภายในคลาส Marvel จึงมีสิทธิ์เข้าถึงคลาส Guardians ที่เป็น private class ได้โดยตรง และเนื่องจากเมธอดนี้เป็น public จึงเปรียบเสมือน "ประตู" ที่อนุญาตให้โค้ดภายนอกสามารถสั่งให้คลาส Marvel ไปทำงานกับส่วนที่เป็น private ของตัวเองได้ ซึ่งเป็นหลักการสำคัญของการห่อหุ้มข้อมูล (Encapsulation)
+</details>
+
 ## 9. Public and Private
 ### Q : จงเขียนคลาส Car โดยภายในคลาสต้องมีตัวแปรเก็บข้อมูลยี่ห้อรถ (brand) และทะเบียนรถ (license) จากนั้นให้สร้างเมธอด change_brand(new_brand) เป็นแบบ public เพื่อให้สามารถเปลี่ยนยี่ห้อรถได้โดยตรง และให้สร้างเมธอด change_license(new_license) เป็นแบบ private เพื่อไม่ให้ถูกเรียกใช้งานจากภายนอกคลาสโดยตรง แต่ให้มีเมธอด create_license(new_license) ที่เป็นแบบ public ทำหน้าที่เป็นตัวกลางในการเรียกใช้งานเมธอด change_license(new_license) 
 
