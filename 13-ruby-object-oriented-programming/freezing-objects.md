@@ -114,3 +114,7 @@ GeeksForGeeks's Freezing Objects | Ruby https://www.geeksforgeeks.org/ruby/freez
 Java Documentation's Final Keyword: https://docs.oracle.com/javase/tutorial/essential/concurrency/imstrat.html
 
 GeeksForGeeks's Final Keyword Tutorial https://www.geeksforgeeks.org/java/final-keyword-in-java/
+
+## Slides
+
+[FreezingObject660710234.pdf](https://github.com/user-attachments/files/22429865/FreezingObject660710234.pdf)
