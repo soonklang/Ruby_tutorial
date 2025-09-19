@@ -320,7 +320,19 @@ int main() {
 <details>
 <summary><strong>เฉลย (Ruby)</strong></summary>
 <pre>
-    def self.get → class method ต้องเรียกผ่านชื่อคลาส 
-    def get → instance method ต้องสร้าง object
+    def self.get → class method ต้องเรียกผ่านชื่อคลาสเท่านั้น
+    def get → instance method ต้องสร้าง object ก่อนที่จะใช้method นั้น
 </pre>
+</details>
+>
+### Q : คำถาม: ข้อใดอธิบาย ข้อจำกัดของ static variable ได้ถูกต้องที่สุด?
+>
+A) ไม่สามารถเข้าถึงได้โดยตรงจาก class
+B) ไม่สามารถถูกแก้ไขค่าได้หลังจากกำหนด
+C) ถูกแชร์ร่วมกันระหว่าง object ทั้งหมดของ class เดียวกัน
+D) จะถูกสร้างใหม่ทุกครั้งเมื่อมีการสร้าง object
+>
+<details>
+<summary><strong>เฉลย (Ruby)</strong></summary>
+C
 </details>
