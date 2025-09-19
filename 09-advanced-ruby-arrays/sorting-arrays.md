@@ -125,7 +125,7 @@ System.out.println(Arrays.toString(words)); // ผลลัพธ์ที่ไ
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
 words.sort() # ทำการเรียงค่าใน Array ของ words โดยตรง
-print(f"After sort():  {words_to_modify}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
+print(word) # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
