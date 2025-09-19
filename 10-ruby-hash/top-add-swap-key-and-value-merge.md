@@ -232,7 +232,8 @@ int main() {
 person = {"name": "Alice", "age": 25} 
 
 ​# Add key and value
-person["city"] = "Bangkok"print(person)
+person["city"] = "Bangkok"
+print(person)
 # {'name': 'Alice', 'age': 25, 'city': 'Bangkok'}​
 
 # Swap key and value
