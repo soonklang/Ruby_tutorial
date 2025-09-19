@@ -622,8 +622,11 @@ obj.display "ONE", "TWO"
   
 - Ruby Core Documentation. (n.d.). require. Retrieved September 4, 2025, from https://ruby-doc.org/core/Kernel.html#method-i-require
 
+---
 
-
+## Presentation
+- Link video:
+- PDF:
 
 
 
