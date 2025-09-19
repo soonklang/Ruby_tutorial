@@ -3,7 +3,7 @@
 ## Chomp และ Chop Methods คืออะไร?
 Chomp และ Chop Methods ใน Ruby คือเมธอดที่ใช้ในการตัดอักขระตัวสุดท้ายใน 'String' ออก
 
-แต่!! Methods ทั้งสองตัว __ทำงานไม่เหมือนกัน!!!__
+แต่!! Methods ทั้งสองตัว __ทำงานแตกต่างกัน!!!__
 
 ### Chomp Method
 
@@ -325,14 +325,13 @@ Umiri. You're not trustworthy
 #### เมธอด Chop ในภาษา Java
 
 เมธอด Chop จะนำอักขระตัวสุดท้ายของ String ออก
-Syntax
+
+**Syntax**
 
 ```Java
-> แบบที่ 1
-> chop(String str)
-> แบบที่ 2
-> chop(String str, String separator)
+chop(String str)
 ```
+
 
 **Example**
 
