@@ -300,6 +300,7 @@ int main() {
 </details>
 
 จากตัวอย่างของตัวอย่างโค้ดจะเห็นว่าใน class A มี method ที่มีชื่อเหมือนกัน 2อันคือ get เเล้วมันต่างกันยังไง get ที่เกิดจาก self.get เป็น classs method ที่ต้องเรียกผ่าน class เเละ get ที่ต้องเรียกผ่าน object ถ้าไม่ self. จะถือว่าเป็น instace method อัตโนมัติเป็นที่ต้องเรียกผ่าน object
+<iframe width="560" height="315" src="https://www.youtube.com/embed/44L5qB1OxVs?si=yTxEE7gzgbaVrgX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ***
 
