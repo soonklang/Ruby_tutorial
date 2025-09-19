@@ -415,6 +415,43 @@ int main() {
 </pre>
 </details>
 
+
+## 10. Class Inheritance in Ruby
+### Q : ผลลัพธ์ที่ได้จากโปรแกรมนี้คืออะไร และเพราะเหตุใดถึงได้ผลลัพธ์นี้
+
+```ruby
+
+class Vehicle
+  def initialize(wheels)
+    @wheels = wheels
+  end
+  
+  def AvailableWheels(flatTireWheels=0)
+    return @wheels - flatTireWheels
+  end
+end
+
+class MyCar < Vehicle
+  def AvailableWheels(flatTireWheels)
+    puts "My car has #{@wheels} wheels but #{flatTireWheels} are flat, so #{super()} wheels remain available"
+  end
+end
+
+c = MyCar.new(4)
+c.AvailableWheels(3)
+
+```
+<details>
+<summary><strong>เฉลยข้อที่ 10.</strong></summary>
+  
+## Output
+```ruby
+My car has 4 wheels but 3 are flat, so 4 wheels remain available
+```
+- เพราะว่าถ้าใช้ super() Ruby จะเรียก method ใน superclass โดยไม่ส่ง arguments ใดๆ ทำให้จะไม่ส่ง flatTireWheels ไปยัง superclass แต่ superclass method AvailableWheels มี default parameter flatTireWheels=0 อยู่แล้ว ดังนั้นมันจะใช้ค่า 0 ถ้าไม่ส่ง argument ไป
+</details>
+
+
 ## 11. Ruby Class Variables
 ### Q : ใน Ruby ถ้าใช้ตัวแปรคลาส (`@@var`) จะมีพฤติกรรมอย่างไรเมื่อมี subclass สืบทอดไป?  
 
