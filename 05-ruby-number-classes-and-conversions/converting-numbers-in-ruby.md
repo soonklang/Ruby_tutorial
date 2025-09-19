@@ -254,7 +254,17 @@ float(int("01110101", 2)) // จะได้ค่าเป็น 117.0
 ภาษา Python เรียกใช้ Built-in Function โดยแปลงจาก เลขฐานเป็น Integer ก่อนแล้วนำมาแปลงเป็น Float
 
 แต่ Hexadecimal Number ต้องใช้ Method float.fromhex ในการแปลงค่า
+___
 
+# Presentation
+
+
+
+___
+
+# Slide
+
+https://drive.google.com/file/d/1iBJyYg1Qtupe_PXOvNhcLWvofcZGk_A2/view?usp=sharing
 ___
 
 # Reference
