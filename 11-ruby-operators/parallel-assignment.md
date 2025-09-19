@@ -139,7 +139,7 @@ x, y, z = fruits
 | int x = 5, y = 6, z = 50;                     |   |✓ |✓|  |
 | x = y = z = 50;                               |   | ✓|✓|✓|
 ## VIDEO
-
+https://drive.google.com/file/d/17vsLNjGC0TUfrqYt-DSj9sOtFMNiN9Ym/view?usp=sharing
 ## SLIDE
 https://drive.google.com/file/d/1ufCD7sDt0qJi-Cnk9Id6ZMci6zIa6AW1/view?usp=sharing
 ## REFERENCE
