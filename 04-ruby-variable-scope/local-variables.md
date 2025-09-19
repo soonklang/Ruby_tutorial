@@ -101,6 +101,7 @@ System.out.println() จะได้ว่า 20 20
 
 **การนำเสนอ**
 
+https://www.canva.com/design/DAGzajON-xI/HnqGf0IjIfmS-ak7NHmjOg/edit?utm_content=DAGzajON-xI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton&classId=9b29eaeb-1c1f-4e8b-b901-572b4811be7f&assignmentId=99f8e016-2dff-4668-a3a8-10ee39590798&submissionId=bc65001d-386b-6653-bd78-dbd3994e03f8
 
 
 
@@ -109,7 +110,7 @@ System.out.println() จะได้ว่า 20 20
 
 ​​**presentation**
 
-
+https://youtu.be/BaQkmLVbg9k
 
 
 
