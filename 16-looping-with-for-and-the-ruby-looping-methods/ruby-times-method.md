@@ -119,6 +119,6 @@ https://www.techotopia.com/index.php/Looping_with_for_and_the_Ruby_Looping_Metho
 - **Goalkicker. (n.d.). Ruby Notes for Professionals. Retrieved September 1, 2025, from https://goalkicker.com/RubyBook/RubyNotesForProfessionals.pdf**
 
 ## Slides
-
+https://drive.google.com/file/d/1b9ElBnFjZGaBSrytSeKoOS3hfFhzLugP/view?usp=sharing
 ## Video
 https://youtu.be/nvAuiMikWiY
