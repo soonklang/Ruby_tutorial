@@ -124,6 +124,7 @@ Hello from Alice's account!
 ## Video
 
 ## Slides
+[Creating an Object from a Class _ Passing Parameters to new Method.pdf.pdf](https://github.com/user-attachments/files/22427335/Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf)
 
   
 ## References
