@@ -36,10 +36,10 @@ puts a
 ```
 <details close>
 <summary><b>output</b></summary>
-  <pre> 
-    When is your daughter's graduation ceremony?
-    When is your daughter's graduation 
- </pre>
+<pre> 
+ When is your daughter's graduation ceremony?
+ When is your daughter's graduation 
+</pre>
 </details>
 
 ## Frezzing a Ruby String
