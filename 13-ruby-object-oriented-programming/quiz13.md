@@ -39,6 +39,36 @@ puts cat.speak
   #### เพื่อแก้ปัญหาจุดเเริ่มต้น (chicken-egg problem) ที่ทำให้สับสนว่า class ไหนเป็นจุดเริ่มต้น Ruby จึงตัดปัญหานี้ด้วยการทำให้ Class เป็น instance ของตัวเองเพื่อปิดวงจร
 </details>
 
+## 4. Instance Methods
+```ruby
+class BankAccount
+  attr_accessor :balance , :rate
+
+  def initialize(balance)
+    @balance = balance
+    @rate = 0.5
+  end
+
+  def calc_interest  # instance method
+    interest = @balance * @rate
+    puts "Interest on balance #{@balance} at rate #{@rate} is #{interest}"
+  end
+end
+```
+### Q : ถ้าเพิ่มโค้ดดังต่อไปนี้ จะได้ผลลัพธ์เป็นอะไร
+```ruby
+account = BankAccount.new(2000)
+account.calc_interest
+```
+<details>
+<summary> เฉลยข้อที่ 4. </summary>
+
+```
+Interest on balance 2000 at rate 0.5 is 1000.0
+```
+
+</details>
+
 ## 5. Instance Variables and Accessor Methods
 ### Q : จงเขียนโปรแกรมภาษา Ruby ที่มีการสร้างคลาส Animals โดยสัตว์แต่ละตัว รหัสประจำตัว ชนิด ชื่อ อายุ ของสัตว์กำกับไว้ พร้อมแสดงข้อความ
 <details>
