@@ -110,11 +110,11 @@ except Exception as e:
 
 ## Slide
 
-
+[https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing](https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing)
 
 ## Video
 
-
+[https://drive.google.com/file/d/1S7eaqkgy5VOfIE-OwNgapp5gw5KZCJ3C/view?usp=sharing](https://drive.google.com/file/d/1S7eaqkgy5VOfIE-OwNgapp5gw5KZCJ3C/view?usp=sharing)
 
 ## ข้อมูลอ้างอิง
 
