@@ -138,6 +138,7 @@ int main() {
 
 
 
+
 # Reference
 Ruby : ใช้ในการอ้างอิง alias  , เปรียบเทียบความแตกต่าง : https://docs.ruby-lang.org/en/3.2/syntax/miscellaneous_rdoc.html  
 
