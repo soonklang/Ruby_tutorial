@@ -30,6 +30,15 @@ puts cat.speak
   #### เพราะ เมื่อสร้าง object cow ตัวแปร @name จะเก็บค่า "Cow" และ @sound จะเก็บ "Moo" ดังนั้น method speak จะ return "Cow says Moo"
 </details>
 
+## 2. Define Ruby Class
+### Q : ทำไม Ruby ถึงออกแบบ Class เป็น instance ของ Class เอง
+
+<details>
+<summary> เฉลยข้อที่ 2. </summary>
+  
+  #### เพื่อแก้ปัญหาจุดเเริ่มต้น (chicken-egg problem) ที่ทำให้สับสนว่า class ไหนเป็นจุดเริ่มต้น Ruby จึงตัดปัญหานี้ด้วยการทำให้ Class เป็น instance ของตัวเองเพื่อปิดวงจร
+</details>
+
 ## 5. Instance Variables and Accessor Methods
 ### Q : จงเขียนโปรแกรมภาษา Ruby ที่มีการสร้างคลาส Animals โดยสัตว์แต่ละตัว รหัสประจำตัว ชนิด ชื่อ อายุ ของสัตว์กำกับไว้ พร้อมแสดงข้อความ
 <details>
