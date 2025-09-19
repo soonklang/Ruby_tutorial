@@ -7,7 +7,7 @@
   
 ```ruby
 
-Class Animals
+class Animals
   attr_accessor :animal_id
   attr_accessor :species
   attr_accessor :name
@@ -36,7 +36,7 @@ puts "ID: #{animal_2.animal_id}, species: #{animal_2.species}, name: #{animal_2.
 
 ```ruby
 
-Class OverloadExample
+class OverloadExample
 
   attr_accessor :text
 
