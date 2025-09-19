@@ -127,7 +127,7 @@ Name: Alice, Age: 25
 ## Video
 
 ## Slides
-[Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf](https://github.com/user-attachments/files/22427349/Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf)
+[Creating an Object from a Class & Passing Parameters to new Method.pdf](https://github.com/user-attachments/files/22427349/Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf)
 
 
 ## References
