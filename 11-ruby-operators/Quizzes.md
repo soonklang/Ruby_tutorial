@@ -93,9 +93,9 @@ print(a) # a = [1,2,3,4]
 2. การดำเนินการกับสตริง (String Operations)
 โจทย์:
 เขียนโปรแกรม Ruby เพื่อต่อสตริงโดยใช้ Compound Assignment Operator:
-กำหนดค่าตัวแปร message ให้มีค่าเริ่มต้นเป็น "Hello"
-ต่อสตริง " World" เข้ากับ message โดยใช้ +=
-แสดงผลค่าสุดท้ายของ message
+1.กำหนดค่าตัวแปร message ให้มีค่าเริ่มต้นเป็น "Hello"
+2.ต่อสตริง " World" เข้ากับ message
+3.แสดงผลค่าสุดท้ายของ message
 
 ### เฉลย:
 
