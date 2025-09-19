@@ -125,6 +125,7 @@ Name: Alice, Age: 25
 - มีความซับซ้อนเรื่อง memory (ต้อง delete ถ้าใช้ new)
 - ไม่สามารถเปลี่ยนพฤติกรรมของ new ได้ง่ายเหมือน Ruby
 ## Video
+https://youtu.be/y0BL4yOHgMY
 
 ## Slides
 [Creating an Object from a Class &  Passing Parameters to new Method.pdf](https://github.com/user-attachments/files/22428780/Creating.an.Object.from.a.Class.Passing.Parameters.to.new.Method.ppt.pdf)
