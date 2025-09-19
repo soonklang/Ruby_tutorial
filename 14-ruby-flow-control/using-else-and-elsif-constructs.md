@@ -379,3 +379,6 @@ Between 10 and 20
 * Pozo Ramos, L. (2025, January 6). *elif*. In Real Python (reviewed by D. Bader). ค้นเมื่อ 4 กันยายน 2568 จาก https://realpython.com/ref/keywords/elif/
 
 ## Presentation
+https://drive.google.com/file/d/1eEIfH1ri2UivPbdTN6zTqtZaVHTwMPJh/view?usp=drive_link
+
+## Video
