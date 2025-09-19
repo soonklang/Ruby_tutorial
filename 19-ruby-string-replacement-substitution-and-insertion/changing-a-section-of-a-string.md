@@ -150,7 +150,7 @@ puts myString
 <details>
    <summary>Output</summary>
    
->I **ke to wa*k around my house </br>
+>I **ke to wa *k around my house </br>
 >I love to walk around my house </br>
 >I like to walk around my house </br>
 >I like to walk around my house </br>
@@ -172,7 +172,7 @@ puts myString
 <details>
    <summary>Output</summary>
 
->I **ke to wa*k around my house </br>
+>I **ke to wa * k around my house </br>
 >(                                                  ) #คืนค่าเป็น nil   </br>
 >(                                                  ) #คืนค่าเป็น nil   </br>
 >I **ke to wa*k around my house #สตริงเดิมถูกเปลี่ยนแปลง </br>
@@ -272,7 +272,7 @@ public class Main {
  
 </details>
 
-
+ลิงค์การนำเสนอ : [watch on youtube](https://youtu.be/WYVeaN4HimU?si=sYP7kc0u34clKxp0)
 
 
 ## Reference 
