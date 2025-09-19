@@ -382,6 +382,8 @@ W3Schools. (ม.ป.ป.). _Java String equals() Method_. สืบค้นเ�
 
 ## Presentation
 
-
+[https://drive.google.com/file/d/1ywvcD7NKXJ9EdABU1KYFzM268QdY7zia/view?usp=sharing]
 
 ## Video
+
+[https://www.youtube.com/watch?v=BQSUCn9lwFA]
