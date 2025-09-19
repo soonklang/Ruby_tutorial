@@ -216,6 +216,15 @@
 |Java|Pass by Value|int x=50 → ไม่เปลี่ยน|obj.field=.. → เปลี่ยนได้|
 |Python|Pass by Object Reference|x=50 → ไม่เปลี่ยน|list.append() → เปลี่ยนจริง | 
 
+# คลิปนำเสนอ
+
+https://youtu.be/8AcIXKKMsP0?si=ignqYkAj3IVLwnrx
+
+# Presentation
+
+https://drive.google.com/file/d/15a9d0g3vqXOOIrHs4Fzq9DKys8udySbt/view?usp=drivesdk
+
+
 ## Reference
 
 # C
