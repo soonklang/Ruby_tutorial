@@ -1,4 +1,4 @@
-# Quiz Finding Out Information about a Ruby Array
+# Quiz Understanding ruby arrays
 
 ### 1.
 
