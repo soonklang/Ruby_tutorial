@@ -313,8 +313,8 @@ END
 ---
 ## Slide & Video
 
-[Video](https://drive.google.com/file/d/1-c9c2y56CPTN7SV_VZvAiIBnixECgp6Z/view?usp=sharing)
-[Slide](https://docs.google.com/presentation/d/1unB_ldd3yIkNE3DVmD5criyRUGlCzzGTwVtbO4dkKMw/edit?usp=sharing)
+- [Video](https://drive.google.com/file/d/1-c9c2y56CPTN7SV_VZvAiIBnixECgp6Z/view?usp=sharing)
+- [Slide](https://docs.google.com/presentation/d/1unB_ldd3yIkNE3DVmD5criyRUGlCzzGTwVtbO4dkKMw/edit?usp=sharing)
 ---
 
 ## แหล่งอ้างอิง
