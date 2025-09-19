@@ -109,6 +109,43 @@ puts a.text
 
 </details>
 
+## 7. Passing parameters to new method
+### พิจารณา Code ภาษา Ruby และตอบคำถามต่อไปนี้
+#### Q : ผลลัพธ์ที่ได้จากโปรแกรมนี้คืออะไร และเพราะเหตุใดถึงได้ผลลัพธ์นี้
+
+```ruby
+class Rectangle
+  def initialize(width, height)
+    @width = width
+    @height = height
+  end
+
+  def area
+    @width * @height
+  end
+
+  def resize(new_width, new_height)
+    @width = new_width
+    @height = new_height
+  end
+end
+
+rect = Rectangle.new(5, 10)
+puts rect.area
+
+rect.resize(7, 3)
+puts rect.area
+```
+<details>
+<summary><strong>เฉลยข้อที่ 7. (Ruby)</strong></summary>
+  
+## Output
+```ruby
+50
+21
+```
+### ครั้งแรก rect = Rectangle.new(5, 10) → area = 5 * 10 = 50
+หลังจาก rect.resize(7, 3) → object ถูกอัปเดตเป็น @width = 7, @height = 3 → area = 7 * 3 = 21
 ## 9. Public and Private
 ### Q : จงเขียนคลาส Car โดยภายในคลาสต้องมีตัวแปรเก็บข้อมูลยี่ห้อรถ (brand) และทะเบียนรถ (license) จากนั้นให้สร้างเมธอด change_brand(new_brand) เป็นแบบ public เพื่อให้สามารถเปลี่ยนยี่ห้อรถได้โดยตรง และให้สร้างเมธอด change_license(new_license) เป็นแบบ private เพื่อไม่ให้ถูกเรียกใช้งานจากภายนอกคลาสโดยตรง แต่ให้มีเมธอด create_license(new_license) ที่เป็นแบบ public ทำหน้าที่เป็นตัวกลางในการเรียกใช้งานเมธอด change_license(new_license) 
 
