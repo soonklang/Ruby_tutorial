@@ -6,7 +6,6 @@
 <details>
 <summary>เฉลย</summary>
 
-Output:
 
 ctime = เวลาที่ไฟล์ถูกสร้าง หรือ metadata มีการเปลี่ยน
 
