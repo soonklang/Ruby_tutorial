@@ -515,6 +515,13 @@ while True:
 
 </details>
 
+
+## Media
+
+- [Slide](https://www.canva.com/design/DAGzUu5a_jk/GCMqv2SZibwTXuVh9lg4XQ/edit?utm_content=DAGzUu5a_jk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)  
+- [YouTube Video](https://www.youtube.com/watch?v=wvbc7j5ahX0)
+
+
 ## ข้อมูลอ้างอืง
 
 ### Ruby
