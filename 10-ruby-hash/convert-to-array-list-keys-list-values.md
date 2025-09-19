@@ -469,24 +469,25 @@ Kai is level 68 and located in Ashen Ruins
 
 ## Presentation <a href="#presentation" id="presentation"></a>
 
-Slid : [https://www.canva.com/design/DAGxwUh2aCw/1a7AEiWc0X7H5oc7evfaNQ/view?utm\_content=DAGxwUh2aCw\&utm\_campaign=designshare\&utm\_medium=link2\&utm\_source=uniquelinks\&utlId=hbe515c0544](https://www.canva.com/design/DAGxwUh2aCw/1a7AEiWc0X7H5oc7evfaNQ/view?utm_content=DAGxwUh2aCw\&utm_campaign=designshare\&utm_medium=link2\&utm_source=uniquelinks\&utlId=hbe515c0544)
+Slid : https://www.canva.com/design/DAGzYFLJYkg/jH2r-SHsZZ9w3BkKS-VQ5Q/edit?utm_content=DAGzYFLJYkg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-{% embed url="https://www.canva.com/design/DAGxwUh2aCw/1a7AEiWc0X7H5oc7evfaNQ/view?utm_content=DAGxwUh2aCw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbe515c0544" %}
-
-Video :&#x20;
+Video : [https://youtu.be/he2Q27IcykA](https://youtu.be/he2Q27IcykA) &#x20;
 
 ## **Reference** <a href="#reference" id="reference"></a>
 
 Convert to array ( สืบค้นเมื่อวันที่ 02/09/2568 ) :&#x20;
 
-{% embed url="https://stackoverflow.com/questions/18358717/ruby-elegantly-convert-variable-to-an-array-if-not-an-array-already" %}
+https://stackoverflow.com/questions/18358717/ruby-elegantly-convert-variable-to-an-array-if-not-an-array-already 
 
-{% embed url="https://www.sourcecodeexamples.net/2023/11/ruby-convert-string-to-array.html" %}
+https://www.sourcecodeexamples.net/2023/11/ruby-convert-string-to-array.html
 
-{% embed url="https://ruby-doc.org/core-2.7.0/Array.html" %}
+https://ruby-doc.org/core-2.7.0/Array.html
 
 List Key-Value ( สืบค้นเมื่อวันที่ 02/09/2568 ) :&#x20;
 
-{% embed url="https://coderscratchpad.com/exploring-ruby-hashes-key-value-pairs-and-methods/" %}
+https://coderscratchpad.com/exploring-ruby-hashes-key-value-pairs-and-methods/
 
-{% embed url="https://www.programiz.com/ruby/hash" %}
+https://www.programiz.com/ruby/hash
+
+## จัดทำโดย : 
+นายมนัสวี ลูกเหล็ม 660710094
