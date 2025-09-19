@@ -72,7 +72,7 @@ Flip-flop active: 2
 Flip-flop active: 3
 Flip-flop inactive: 4
 ```
-- ด้วย `...` evaluator จะยังประมวลผลรอบ `x == 3` ก่อนปิด ทำให้ output เหมือนตัวอย่าง inclusive ในเคสนี้
+- ด้วย `...` จะยังคงประมวลผลรอบ `x == 3` ก่อนปิด ทำให้ output เหมือนตัวอย่าง inclusive ในเคสนี้
 ---
 ### ตัวอย่างที่ 2 
 `(x==-1)..(x==1)`
