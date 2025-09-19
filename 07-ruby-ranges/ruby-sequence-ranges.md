@@ -89,7 +89,7 @@ Range.new(nil, 4, true)  => nil...4   # ใช้สร้าง Beginless Range
     a = [1, 2, 3, 4]                       # สร้าง array
     r = (..2)               => nil..2      # กำหนดช่วงแบบ beginless ใช้(..) มี index  0 - 2
     a[r]                    => [1, 2, 3]   # index 0 ค่า = 1 , index 1 ค่า = 2 , index 2 ค่า = 3 
-    r = (...2)              => nil...2     # กำหนดช่วงแบบ beginless ใช้(...) มี index  0 - 2
+    r = (...2)              => nil...2     # กำหนดช่วงแบบ beginless ใช้(...) มี index  0 - 1
     a[r]                    => [1, 2]      # index 0 ค่า = 1 , index 1 ค่า = 2
 ```
 #### หมายเหตุ Beginless ไม่สามารถใช้กับ เมธอด .each ได้
