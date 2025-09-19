@@ -98,7 +98,7 @@ print("File deleted successfully!")
 https://drive.google.com/file/d/1RvlmTlayOFTWhjCjcbvYDroguMhvhhY9/view?usp=sharing
 
 ## สไลด์บรรยาย
-https://drive.google.com/file/d/1qbI2SnKaO4UWDpfosLVLElJvpQIai9YP/view?usp=sharing
+https://drive.google.com/file/d/1CZgXD_weGJboQ1X0CYYug__NEfzDMeR6/view?usp=sharing
 
 ## แหล่งที่มา
 GeeksforGeeks. (2019, November 29). File handling in Ruby. GeeksforGeeks. https://www.geeksforgeeks.org/ruby/file-handling-in-ruby/
