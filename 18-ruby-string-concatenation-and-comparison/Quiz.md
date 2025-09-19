@@ -23,4 +23,23 @@ puts str1 == str2
 
 ## Concatenating String in Ruby
 
+จงบอกผลลัพธ์ที่ได้จากโปรแกรมนี้
+```
+a = "When is your " 
+b = "daughter's "
+c = "graduation "
+d = "ceremony?"
+
+puts a.concat(b).concat(c)+d
+puts a
+
+```
+<details close>
+<summary><b>output</b></summary>
+  <pre> 
+    When is your daughter's graduation ceremony?
+    When is your daughter's graduation 
+ </pre>
+</details>
+
 ## Frezzing a Ruby String
