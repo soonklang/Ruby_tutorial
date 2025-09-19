@@ -377,3 +377,5 @@ Between 10 and 20
 
 **ตัวอย่างของ Python**
 * Pozo Ramos, L. (2025, January 6). *elif*. In Real Python (reviewed by D. Bader). ค้นเมื่อ 4 กันยายน 2568 จาก https://realpython.com/ref/keywords/elif/
+
+## Presentation
