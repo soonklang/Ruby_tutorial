@@ -297,7 +297,9 @@ puts myString
 
 ## 🖥️ slides
 https://silpakorn-my.sharepoint.com/:p:/g/personal/withunsathitkun_n_su_ac_th/EdlB_QLIu2FNuz_DqfulUgYBJOsH9UQ-ew3ZZcDJYVgOLA?e=fQFLvx
+
 ## 💽 clip
+https://youtu.be/L4iue6dpn0o?si=JdyYmquBxRMLuLNK
 
 ## 🧿 แหล่งที่มา
 
