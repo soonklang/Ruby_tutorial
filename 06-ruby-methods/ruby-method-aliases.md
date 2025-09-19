@@ -134,6 +134,9 @@ int main() {
 | C | ❌ ไม่มีการ Alias | function pointer |
 
 
+# Presentation
+
+
 
 # Reference
 Ruby : ใช้ในการอ้างอิง alias  , เปรียบเทียบความแตกต่าง : https://docs.ruby-lang.org/en/3.2/syntax/miscellaneous_rdoc.html  
