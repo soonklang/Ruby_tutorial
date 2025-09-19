@@ -136,7 +136,7 @@ pointer ที่ชี้ไปยังตำแหน่งแรกของ
 ## Presentation
 
 [Slide](https://drive.google.com/file/d/1qkIIPchUuOCMlktPdvk2_42YsDEhYVFa/view?usp=sharing)
-
+[Video](https://drive.google.com/file/d/1BOv75qHRS-OppdT0SgJVi_69Xhrih8k9/view?classId=9b29eaeb-1c1f-4e8b-b901-572b4811be7f&assignmentId=99f8e016-2dff-4668-a3a8-10ee39590798&submissionId=48375fd9-185e-6b62-af24-ad95e70579cb)
 ***
 
 ## Reference
