@@ -253,6 +253,10 @@ class MyClass {
     // method declarations
 }
 ```
+## Video
+https://youtu.be/qknNKQLlJFE?si=5I9L5FHhnn-E8T5C
+## Slides
+https://www.canva.com/design/DAGzTqC_QEg/eMURv_feD3Q0Cm1lJH0VGQ/edit?utm_content=DAGzTqC_QEg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ## References
 - GeeksforGeeks. Introduction of Object-Oriented Programming, from https://www.geeksforgeeks.org/dsa/introduction-of-object-oriented-programming/
 - GeeksforGeeks. Java OOP(Object Oriented Programming) Concepts, from https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
