@@ -190,4 +190,7 @@ https://docs.python.org/3/reference/expressions.html
 ใช้อ้างอิงการใช้งาน Private name mangling ในภาษา Python  
 **Wikipedia. Opaque pointer**  
 https://en.wikipedia.org/wiki/Opaque_pointer  
-ใช้อธิบายแนวคิดของ Opaque Pointer ในภาษา C
+ใช้อธิบายแนวคิดของ Opaque Pointer ในภาษา C  
+# Slides
+https://www.canva.com/design/DAGzT4fsSL0/lxWv0IRDoOiqrjW0mE9sRw/edit?utm_content=DAGzT4fsSL0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton  
+# Video
