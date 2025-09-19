@@ -225,7 +225,7 @@ people = [
     {'name': 'piti', 'age': 42}
 ]
 people.sort(key=lambda person: person['age']) # ทำการเรียงค่าใน Array ของ people โดยตรงร่วมกับการใช้เงื่อนไขการเรียง Array โดยใช้ age เรียงค่าข้อมูล
-print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
+print(people)  # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
 ```
 
 ---
