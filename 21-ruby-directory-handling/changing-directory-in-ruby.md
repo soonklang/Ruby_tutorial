@@ -67,6 +67,14 @@ cwd = os.getcwd()
 os.chdir(path)
 ```
 
+## Slide
+
+[https://drive.google.com/file/d/10cdV5I0ejlBnO54zz7EJQb302A5\_mhf8/view?usp=sharing](https://drive.google.com/file/d/10cdV5I0ejlBnO54zz7EJQb302A5_mhf8/view?usp=sharing)
+
+## Video
+
+[https://drive.google.com/file/d/1S7eaqkgy5VOfIE-OwNgapp5gw5KZCJ3C/view?usp=sharing](https://drive.google.com/file/d/1S7eaqkgy5VOfIE-OwNgapp5gw5KZCJ3C/view?usp=sharing)
+
 ## ข้อมูลอ้างอิง
 
 Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.
