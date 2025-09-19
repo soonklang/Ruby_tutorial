@@ -146,3 +146,4 @@ match day:
         print("I think you might have remembered the number wrong.")
 
 ```
+##  1.จงแปลง if else ต่อไปนี้เป็น ternary operator โดยใช้ภาษา java javascript python
