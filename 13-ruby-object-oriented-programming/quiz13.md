@@ -1,4 +1,32 @@
 # แบบฝึกหัด
+## 1. Creating an Object from a class 
+### พิจารณา Code ภาษา Ruby และตอบคำถามต่อไปนี้
+#### Q :ถ้าเพิ่มโค้ด cow = Animal.new("Cow","Moo") แล้วเรียก puts cow.speak จะได้ผลลัพธ์เป็นอะไร และเพราะอะไร
+```ruby
+class Animal
+  def initialize(name, sound)
+    @name = name
+    @sound = sound
+  end
+
+  def speak
+    "#{@name} says #{@sound}"
+  end
+end
+
+dog = Animal.new("Dog", "Woof")
+cat = Animal.new("Cat", "Meow")
+
+puts dog.speak
+puts cat.speak
+```
+<details>
+<summary> เฉลยข้อที่ 1. </summary>
+  ```ruby
+  Cow says Moo
+   ```
+  เพราะ เมื่อสร้าง object cow ตัวแปร @name จะเก็บค่า "Cow" และ @sound จะเก็บ "Moo" ดังนั้น method speak จะ return "Cow says Moo"
+</details>
 
 ## 5. Instance Variables and Accessor Methods
 ### Q : จงเขียนโปรแกรมภาษา Ruby ที่มีการสร้างคลาส Animals โดยสัตว์แต่ละตัว รหัสประจำตัว ชนิด ชื่อ อายุ ของสัตว์กำกับไว้ พร้อมแสดงข้อความ
