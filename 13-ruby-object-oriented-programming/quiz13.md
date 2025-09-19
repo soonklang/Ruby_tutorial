@@ -78,3 +78,170 @@ puts a.text
 ```
 
 </details>
+
+## 9. Public and Private
+### Q : จงเขียนคลาส Car โดยภายในคลาสต้องมีตัวแปรเก็บข้อมูลยี่ห้อรถ (brand) และทะเบียนรถ (license) จากนั้นให้สร้างเมธอด change_brand(new_brand) เป็นแบบ public เพื่อให้สามารถเปลี่ยนยี่ห้อรถได้โดยตรง และให้สร้างเมธอด change_license(new_license) เป็นแบบ private เพื่อไม่ให้ถูกเรียกใช้งานจากภายนอกคลาสโดยตรง แต่ให้มีเมธอด create_license(new_license) ที่เป็นแบบ public ทำหน้าที่เป็นตัวกลางในการเรียกใช้งานเมธอด change_license(new_license) 
+
+<details>
+<summary><strong>เฉลยข้อที่ 9. (Ruby)</strong></summary>
+<pre>
+  
+```ruby
+class Car 
+  def initialize(car_brand, car_license)
+    @car_brand = car_brand
+    @car_license = car_license
+    puts 'This is ' + @car_brand + ' brand and license ' + @car_license
+  end
+  
+  public
+  def change_brand(new_brand)
+    @car_brand = new_brand
+    puts 'Change brand to : ' + @car_brand
+  end
+  
+  def create_license(new_license)
+    puts 'This is new license : ' + new_license
+    change_license(new_license)
+  end
+  
+  private
+  def change_license(new_license)
+    @car_license = new_license
+    puts 'Change license to ' + @car_license
+  end
+end
+
+car = Car.new('Nissan', 'A123')
+car.change_brand('Toyota')
+car.create_license('B231')
+```
+</pre>
+</details>
+<details>
+<summary><strong>Output</strong></summary>
+<pre>
+<code>This is Nissan brand and license A123
+Change to brand : Toyota
+This is new license : B231
+Change license to B231</code>
+</pre>
+</details>
+
+<details>
+<summary><strong>Java</strong></summary>
+<pre>
+  
+```java 
+public class Car {
+    private String carBrand;
+    private String carLicense;
+
+    Car(String carBrand, String carLicense) {
+        this.carBrand = carBrand;
+        this.carLicense = carLicense;
+        System.out.println("This is " + carBrand + " brand and license " + carLicense);
+    }
+
+    public void changeBrand(String carBrand) {
+        this.carBrand = carBrand;
+        System.out.println("Change Brand to : " + carBrand);
+    }
+
+    public void createLicense(String carLicense) {
+        System.out.println("This is new license : " + carLicense);
+        changeLicense(carLicense);
+    }
+
+    private void changeLicense(String carLicense) {
+        this.carLicense = carLicense;
+        System.out.println("Change license to : " + carLicense);
+    }
+    public static void main(String[] args) {
+        Car car = new Car("Nissan", "A123");
+        car.changeBrand("Toyota");
+        car.createLicense("B231");
+    }
+}
+```
+</pre>
+</details>
+
+<details>
+<summary><strong>Python</strong></summary>
+<pre>
+  
+```python
+class Car :
+    def __init__(self, car_brand, car_license) :
+        self.car_brand = car_brand
+        self.car_license = car_license
+        print("This is " + self.car_brand + " brand and license " + self.car_license)
+
+    def change_brand(self, new_brand) :
+        self.car_brand = new_brand
+        print("Change brand to : " + self.car_brand)
+
+    def create_license(self, new_license) :
+        print("This is new license : " + self.car_license)
+        self.__change_license(new_license)
+    
+    def __change_license(self, new_license) :
+        self.car_license = new_license
+        print("Change license to : " + self.car_license)
+
+car = Car("Nissan", "A123")
+car.change_brand("Toyota")
+car.create_license("B231")
+```
+</pre>
+</details>
+
+<details>
+<summary><strong>C</strong></summary>
+<pre>
+  
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+typedef struct {
+    char carBrand[50];
+    char carLicense[50];
+} Car;
+
+Car* createCar(const char* brand, const char* license) {
+    Car* car = (Car*) malloc(sizeof(Car));
+    strcpy(car->carBrand, brand);
+    strcpy(car->carLicense, license);
+    printf("This is %s brand and license %s\n", car->carBrand, car->carLicense);
+    return car;
+}
+
+void changeBrand(Car* car, const char* brand) {
+    strcpy(car->carBrand, brand);
+    printf("Change Brand to : %s\n", car->carBrand);
+}
+
+void changeLicense(Car* car, const char* license) {
+    strcpy(car->carLicense, license);
+    printf("Change license to : %s\n", car->carLicense);
+}
+
+void createLicense(Car* car, const char* license) {
+    printf("This is new license : %s\n", license);
+    changeLicense(car, license);
+}
+
+int main() {
+    Car* car = createCar("Nissan", "A123");
+    changeBrand(car, "Toyota");
+    createLicense(car, "B231");
+
+    free(car); 
+    return 0;
+}
+```
+</pre>
+</details>
