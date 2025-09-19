@@ -119,7 +119,9 @@ printf("%d\n", calc(add, 2, 3)); // 5
   - C ในภาษานี้จะไม่มีตัว lambda ไม่สามารถสร้างได้เหมือนตัวอื่นๆ เช่น Java,Pythonm,Ruby
   - C ต้องนิยาม function ปกติก่อน แล้วส่งpointerไปที่ function ได้ ไม่สามารถเก็บฟังชั่นได้เหมือนตัว lambda
 ## คลิปนำเสนอ
+   https://drive.google.com/file/d/19-oNJAaLRk7oijknkB5uEy58weSBfvhx/view?usp=drive_link
 ## Presentation (slides)
+   https://docs.google.com/presentation/d/1Lcl3X-SVmpzf_I3J6crufOhmldzyWegC/edit?usp=sharing&ouid=104204840378548053209&rtpof=true&sd=true
 ## แหล่งที่มาอ้างอิง
 ### Ruby
 -เว็บ geeksforgeeks | https://www.geeksforgeeks.org/ruby/lambda-function-ruby/ เนื้อหาส่วน lambda-function-ruby
