@@ -342,8 +342,8 @@ END
    - ใช้สำหรับตัวอย่าง `[0,1,2,3,4].each do |x|` และตัวอย่าง flip-flop ที่แสดงความแตกต่างระหว่าง inclusive (`..`) กับ exclusive (`...`)
 
 7. **Stack Overflow Discussions**  
-   - [When would a Ruby flip-flop be useful?](https://stackoverflow.com/questions/1111286/when-would-a-ruby-flip-flop-be-useful)  
-   - [Why does a flip-flop operator include the second condition?](https://stackoverflow.com/questions/18600011/why-does-a-flip-flop-operator-include-the-second-condition)  
+   [When would a Ruby flip-flop be useful?](https://stackoverflow.com/questions/1111286/when-would-a-ruby-flip-flop-be-useful)  
+   [Why does a flip-flop operator include the second condition?](https://stackoverflow.com/questions/18600011/why-does-a-flip-flop-operator-include-the-second-condition)  
    - ใช้สำหรับกรณีใช้งานจริง เช่น กรองบรรทัดจากไฟล์ และอธิบาย inclusive/exclusive
 
 8. **C Reference (strstr function)**  
