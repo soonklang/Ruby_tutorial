@@ -5,4 +5,4 @@
 * [Top, Add, Swap Key and Value, Merge](top-add-swap-key-and-value-merge.md)
 
 # แบบฝึกหัด
-* [โจทย์คำถาม (Quiz 10)] 
+* [โจทย์คำถาม (Quiz 10)](https://github.com/soonklang/Ruby_tutorial/blob/main/10-ruby-hash/Q10.md)
