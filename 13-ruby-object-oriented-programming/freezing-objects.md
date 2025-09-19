@@ -70,8 +70,10 @@ from main.rb:39:in `'
 ```ruby
 a = []
 a.frozen? # => return ค่าเป็น false
+puts a.frozen? # false
 a.freeze
 a.frozen? # => return ค่าเป็น true
+puts a.frozen? # true
 ```
 
 ## เทียบกับภาษา Java
