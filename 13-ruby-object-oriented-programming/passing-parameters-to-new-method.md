@@ -125,7 +125,11 @@ Name: Alice, Age: 25
 - มีความซับซ้อนเรื่อง memory (ต้อง delete ถ้าใช้ new)
 - ไม่สามารถเปลี่ยนพฤติกรรมของ new ได้ง่ายเหมือน Ruby
 ## Video
+
 ## Slides
+[Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf](https://github.com/user-attachments/files/22427349/Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf)
+
+
 ## References
 - O’Reilly Media. (n.d.). Object creation and initialization. In The Ruby programming language. O'Reilly Media.
 สืบค้นเมื่อ 3 กันยายน 2025, จาก https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/ch07s04.html  
