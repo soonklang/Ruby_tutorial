@@ -16,7 +16,7 @@
 
   # แบบฝึกหัด
   
-- [Quiz13](https://github.com/soonklang/Ruby_tutorial/blob/main/13-ruby-object-oriented-programming/quiz13)
+- [Quiz13](https://github.com/soonklang/Ruby_tutorial/blob/main/13-ruby-object-oriented-programming/quiz13.md)
 
 
 
