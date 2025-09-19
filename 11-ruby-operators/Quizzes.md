@@ -67,3 +67,17 @@ public class main {
 	}
 }
 ```
+
+## Parallel Assignment
+1.ในJavaสามารถประกาศให้lvalueตัวสุดท้ายมี "*" ค่าrvalueหลังจากนั้นเป็นarrayเหมือนRubyได้ไหม
+
+	->ไม่สามารถทำได้ เพราะในJavaไม่มี splat operatorเหมือนในRuby
+
+2.ถ้ามีlvalue 1 = rvalueหลายตัว ในC,Java,Python สามารถประกาศแบบนี้ได้เหมือนRubyไหม
+
+	->ในภาษาC และJava ไม่สามารถทำได้ แต่ในPythonสามารถทำได้
+>python
+```python
+a = 1,2,3,4
+print(a) # a = [1,2,3,4]
+```
