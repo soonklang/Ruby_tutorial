@@ -41,9 +41,22 @@ print(sum_all(1, 2, 3, 4, 5))
 ### ตัวอย่าง 2 (๋Java)
 ```java
 public class Motorcycle {
+    private String make;
+    private String model;
+    private String color;
+    private int weight;
+    private boolean statusNew;
+    private int year;
     private String features = "";
 
-    public Motorcycle(String make, String model, String color, int weight, boolean statusNew, int year) {}
+    public Motorcycle(String make, String model, String color, int weight, boolean statusNew, int year) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.weight = weight;
+        this.statusNew = statusNew;
+        this.year = year;
+    }
 
     public String getFeatures() {
         return features;
@@ -56,8 +69,9 @@ public class Motorcycle {
     public void addMotorcycleFeatures(String... features) {
         StringBuilder str = new StringBuilder(this.getFeatures());
         for (String feature : features) {
-            if (!str.isEmpty())
+            if (str.length() != 0) {   // แก้จาก str.isEmpty() -> str.length() != 0
                 str.append(", ");
+            }
             str.append(feature);
         }
         this.setFeatures(str.toString());
@@ -65,9 +79,11 @@ public class Motorcycle {
 
     public static void main(String[] args) {
         Motorcycle motorcycle = new Motorcycle("Ducati", "Monster", "red", 350, true, 2023);
+
         motorcycle.addMotorcycleFeatures("abs");
         motorcycle.addMotorcycleFeatures("navi", "charger");
         motorcycle.addMotorcycleFeatures("wifi", "phone", "satellite");
+
         System.out.println(motorcycle.getFeatures());
     }
 }
