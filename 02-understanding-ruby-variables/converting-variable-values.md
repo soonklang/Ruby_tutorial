@@ -172,7 +172,7 @@ print(int("hello"))   # => ValueError: invalid literal for int() (โปรแ�
 # Presantation
 https://www.canva.com/design/DAGzQ0gN_qw/8VWyEiqvPUdoL9D8zOEhDg/edit?utm_content=DAGzQ0gN_qw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
-# Video[
+# Video
 https://www.youtube.com/watch?v=N2Cxau2cHyA
 
 # References
