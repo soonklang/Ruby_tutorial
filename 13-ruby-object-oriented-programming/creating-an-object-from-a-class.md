@@ -122,6 +122,7 @@ Hello from Alice's account!
 - ใช้ cout สำหรับพิมพ์ข้อความแทน puts  
 - ต้องกำหนด access modifier (public) เพื่อให้เมธอดและตัวแปรเข้าถึงได้
 ## Video
+https://youtu.be/y0BL4yOHgMY
 
 ## Slides
 [Creating an Object from a Class &  Passing Parameters to new Method.pdf](https://github.com/user-attachments/files/22428767/Creating.an.Object.from.a.Class.Passing.Parameters.to.new.Method.ppt.pdf)
