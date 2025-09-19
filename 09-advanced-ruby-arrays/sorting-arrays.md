@@ -107,7 +107,7 @@ puts numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 const char *words1[] = {"kiwi", "apple", "fig", "banana"};
 int n = sizeof(words1) / sizeof(words1[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
 qsort(words1, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน Array ใหม่ แล้วทำมาใส่ตัวของ word1 เข้าไปตรงๆ โดยใช้คำสั่ง qsort */
-printArray("Sorted (in-place)", words1, n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
+printArray(words1, n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
 ```
 
 **Java**
