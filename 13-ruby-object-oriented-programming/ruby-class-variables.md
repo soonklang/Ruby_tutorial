@@ -390,5 +390,5 @@ Python ใช้ `class variable` คล้าย Java
 
 
 ## Presentation
-- Link video:
-- PDF:
+- Link video: https://www.youtube.com/watch?v=TQt67tODIHE
+- Slide: https://www.canva.com/design/DAGyulWy8wY/A91tlL0g8gkbpjGUcDpeJA/edit?utm_content=DAGyulWy8wY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
