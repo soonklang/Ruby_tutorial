@@ -16,4 +16,11 @@ arr = [10,500,20,30,'c']
 
 ---
 
+- [Sorting Array](09-advanced-ruby-arrays/sorting-arrays.md)
+
+<mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
+การ sorting array มีกี่วิธี มีอะไรบ้าง และแต่ละอย่างมีหน้าที่อย่างไร
+
+---
+
 
