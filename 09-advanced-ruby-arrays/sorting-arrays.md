@@ -83,7 +83,7 @@ System.out.println(sortedWords); // ผลลัพธ์ที่ได้ => [
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
 new_words = sorted(words) # สร้างตัวเก็บ Array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน Array ของตัว words โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน Array ของ new_words
-print(f"New sorted list: {new_words}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
+print(new_words) # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
