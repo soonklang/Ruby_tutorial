@@ -625,8 +625,8 @@ obj.display "ONE", "TWO"
 ---
 
 ## Presentation
-- Link video:
-- PDF:
+- [Link video]() :
+- [Slide]() :
 
 
 
