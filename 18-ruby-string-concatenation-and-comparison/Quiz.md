@@ -1,7 +1,7 @@
 ## Acessing String Elements
 
 
-## Case Insensitive String Compairng
+## Case Insensitive String Compairsions
 
 ## Comparing Ruby String (Case Sensitive)
 
