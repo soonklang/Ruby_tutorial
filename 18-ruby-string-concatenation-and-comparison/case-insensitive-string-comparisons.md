@@ -107,7 +107,7 @@ output => true false
 
 ### C 
 
-> ใช้ strcasecmp() (Linux/Unix)
+> ใช้ strcasecmp()
 
 โดยจะต้อง include **<strings.h>** จะคืนค่า 
 - 0 ถ้าข้อความเท่ากัน
@@ -130,28 +130,9 @@ int main() {
 ```
 output => equal 
 
-> ใช้ _stricmp (Windows/Visual Studio)
+# Presentation
 
-โดยจะต้อง include **<string.h>** จะคืนค่า 
-- 0 ถ้าข้อความเท่ากัน
-- มากกว่า 0 หรือ น้อยกว่า 0 ถ้าข้อความไม่เท่ากัน
-
-**Example**
-```
-#include <stdio.h>
-#include <string.h>
-int main() {
-  char *a = "Silpakorn";
-  char *b = "SilPakorn";
-  if (_stricmp(a, b) == 0) {
-      printf("equal");
-  } else {
-      printf("not equal");
-  }
-      return 0;
-}
-```
-output => equal
+# Video
 
 ### Reference 
 
@@ -179,8 +160,6 @@ W3schools. (ม.ป.ป). Java String equalsIgnoreCase() Method. สืบค้
 
 >C
   
-IBM. (12 เมษายน 2564)). strcasecmp() Case-insensitive string comparison. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://www.ibm.com/docs/en/zos/2.4.0?topic=functions-strcasecmp-case-insensitive-string-comparison 
-
-Microsoft. (12 กุมภาพันธ์ 2565). _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l?view=msvc-170 
+IBM. (12 เมษายน 2564)). strcasecmp() Case-insensitive string comparison. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://www.ibm.com/docs/en/zos/2.4.0?topic=functions-strcasecmp-case-insensitive-string-comparison  
 
 Studyplan. (ม.ป.ป). Case-Insensitive C-String Comparison. สืบค้นเมื่อ 3 กันยายน 2568, จาก https://www.studyplan.dev/pro-cpp/c-strings/q/case-insensitive-c-string-comparison 
