@@ -350,6 +350,7 @@ C
 ❖ อาจจะทำงานช้ากว่าภาษาที่คอมไพล์ เนื่องจากเป็น interpreted language  
 
 ❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
+## Presentation 
 
 ## Video 
 https://youtu.be/EX40kaLIDNU
