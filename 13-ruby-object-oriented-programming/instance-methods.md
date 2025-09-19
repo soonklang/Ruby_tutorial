@@ -9,7 +9,7 @@ instance Methods มักจะใช้เพื่อเข้าถึงห
 ## ตัวอย่าง Ruby
 ```ruby
 class BankAccount
-  attr_accessor :balance , rate
+  attr_accessor :balance , :rate
 
   def initialize(balance)
     @balance = balance
