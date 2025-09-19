@@ -19,6 +19,7 @@ Class Animals
     @name      = name        # ชื่อ
     @age       = age         # อายุ
   end
+end
 
 animal_1 = Animals.new(1,"elephant","Khan Kluay",5)
 animal_2 = Animals.new(2,"lion","Simba",7)
