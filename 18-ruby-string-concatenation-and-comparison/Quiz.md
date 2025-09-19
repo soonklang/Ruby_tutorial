@@ -42,7 +42,7 @@ puts a
 </pre>
 </details>
 
-## Frezzing a Ruby String
+## Freezing a Ruby String
 ในภาษา Ruby สตริงแต่ละตัวมีสถานะถูก Freeze อยู่หรือไม่?
 ```ruby
 s1 = "ruby"
