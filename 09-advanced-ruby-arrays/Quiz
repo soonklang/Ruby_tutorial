@@ -38,4 +38,23 @@ arr = [10,500,20,30,'c']
 
 เพราะ ในภาษา Ruby ไม่มี Method .add() ต้องใช้วิธีอื่นแทน เช่น .insert() หรือ .push() หรือ <<
 
+---
 
+-[ruby-array-comparisons] (09-advanced-ruby-arrays/ruby-array-comparisons.md)
+
+<mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
+จงดูตัวอย่าง code ที่ให้มาแล้วตอบคำถามด้านล่างให้ถูกต้อง
+
+```ruby
+Code : 
+A = [10, 20, 30, 40, 50]
+B = [10.0, 20.0, 30.0, 40.0, 50.0]
+float_A = A.map {|num| num.to_f}
+
+puts float_A.eql?(B)
+```
+
+หลังจาก puts ออกมาแล้วเราจะได้ค่าอะไรออกมา และเพราะเหตุใดถึงได้ค่านั้นออกมา (ต้องการ 2 คำตอบ)
+Ans.
+
+---
