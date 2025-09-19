@@ -343,6 +343,10 @@ C Do/While Loop (เนื้อหา, ตัวอย่าง)
 https://www.w3schools.com/c/c_do_while_loop.php
 
 
+📑 [Presentation](./650710541_Ruby Sequence Ranges.pdf) 
+🎥[Video]([https://youtu.be/xxxx](https://youtu.be/nJ28u89_DyI?si=N0XWn4ir0B0t4VGn))
+
+
 
 
 
