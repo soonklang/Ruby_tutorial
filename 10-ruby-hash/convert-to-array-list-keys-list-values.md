@@ -161,16 +161,16 @@ Out put
 
 `การ println แบบ ["key", value] เพื่อ print ค่าออกมาแบบเว้นบรรทัด`
 
-## Nile & Single Object
+## Nil & Single Object
 
-Nile คือ ค่าที่ไม่ได้แสดงข้อมูลหรือยังไม่ได้กำหนดค่า
+Nil คือ ค่าที่ไม่ได้แสดงข้อมูลหรือยังไม่ได้กำหนดค่า
 \
 Single Object คือ ข้อมูลที่ไม่ใช่อาเรย์เช่น ตัวเลข ตัวอักษร nil
 \
-การแปลง Nile & Single Object สามารถทำได้โดยการใช้เมธอด array(Data) ลองดูตัวอย่างด้านล่าง
+การแปลง Nil & Single Object สามารถทำได้โดยการใช้เมธอด array(Data) ลองดูตัวอย่างด้านล่าง
 
 ```ruby
-Nile 
+Nil 
  data = nil
  result = Array(data)
  p result
