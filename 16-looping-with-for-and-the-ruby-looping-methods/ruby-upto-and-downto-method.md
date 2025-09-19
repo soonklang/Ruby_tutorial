@@ -268,5 +268,6 @@ for i in range(11, 7, -1):
 * Withoutcoffee Icantbedev. (24 กุมภาพันธ์  2023). การใช้งาน For Loop ในภาษา Python. สืบค้นวันที่ 1 กันยายน 2025, จาก [https://devhub.in.th/blog/python-for-loop](https://devhub.in.th/blog/python-for-loop)
 
 ## Slide
-
+* https://docs.google.com/presentation/d/1bCmpyS9jNEV0YrgEhUwB1deAHoSuUTPt/edit?usp=sharing&ouid=107277849839736764331&rtpof=true&sd=true
 ## Clip
+* youtube.com/watch?si=XRTkQ_VPlEL2IDkc&v=6z9fWBqm48g&feature=youtu.be
