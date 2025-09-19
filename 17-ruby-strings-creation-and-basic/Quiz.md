@@ -85,4 +85,290 @@ int main() {
 
 ```
 ---
+##  2.จงเขียนโปรแกรมให้แสดงคำว่า Albert Einstein said "I have no special talent. I am only passionately curious."โดยข้อความผลลัพธ์ต้องแสดงตัว " " ด้วย และกำหนดให้ใช้ภาษาRubyโดยใช้วิธี general delimited stringในการทำ พร้อมทั้งโปรแกรมที่แสดงผลแบบเดียวกันด้วยภาษา Python,Java & C (ไม่จำกัดวิธีในกรณี Python,Java & C)
 
+<details close>
+   <summary><b>เฉลยภาษา Ruby</b></summary>
+    
+```ruby
+    msg = %{Albert Einstein said "I have no special talent. I am only passionately curious."}
+    puts msg
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา Python</b></summary>
+    
+```python
+    msg = 'Albert Einstein said "I have no special talent. I am only passionately curious."'
+    print(msg)
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา Java</b></summary>
+    
+```java
+    public class Quote {
+        public static void main(String[] args) {
+            String msg = "Albert Einstein said \"I have no special talent. I am only passionately curious.\"";
+            System.out.println(msg);
+        }
+    }
+ ```
+        
+</details>
+
+<details close>
+   <summary><b>เฉลยภาษา C</b></summary>
+    
+```c
+    #include <stdio.h>
+    void main() {
+        printf("Albert Einstein said \"I have no special talent. I am only passionately curious.\"\n");
+    }
+ ```
+        
+</details>
+
+---
+## 3. ให้เขียนโปรแกรมเพื่อรับข้อมูล **ชื่อ อายุ สาขาวิชา** จากผู้ใช้ แล้วแสดงข้อความแนะนำตัว (อย่างน้อย 3 บรรทัด) โดยใช้การสร้างข้อความหลายบรรทัดในแต่ละภาษา (Ruby: Heredoc, Java: Text Block, C: เชื่อม string, Python: triple quotes)  
+**หมายเหตุ:**  
+- ใช้ฟีเจอร์รับข้อมูล input ตามรูปแบบแต่ละภาษา  
+- ข้อความแสดงผลต้องมีข้อมูลที่รับมาแทรกอยู่
+
+---
+
+<details>
+  <summary>คลิกเพื่อดูเฉลย</summary>
+
+  ### Ruby
+  ```ruby
+  print "กรุณากรอกชื่อ: "
+  name = gets.chomp
+  print "กรุณากรอกอายุ: "
+  age = gets.chomp
+  print "กรุณากรอกสาขาวิชา: "
+  major = gets.chomp
+
+  str = <<TEXT
+  สวัสดีค่ะ ฉันชื่อ #{name}
+  อายุ #{age} ปี
+  สาขาวิชา: #{major}
+  TEXT
+
+  puts str
+  ```
+
+  ---
+
+  ### Java (Text Block, Java 15+)
+  ```java
+  import java.util.Scanner;
+  public class Main {
+      public static void main(String[] args) {
+          Scanner sc = new Scanner(System.in);
+          System.out.print("กรุณากรอกชื่อ: ");
+          String name = sc.nextLine();
+          System.out.print("กรุณากรอกอายุ: ");
+          String age = sc.nextLine();
+          System.out.print("กรุณากรอกสาขาวิชา: ");
+          String major = sc.nextLine();
+
+          String str = """
+              สวัสดีค่ะ ฉันชื่อ %s
+              อายุ %s ปี
+              สาขาวิชา: %s
+              """.formatted(name, age, major);
+
+          System.out.println(str);
+      }
+  }
+  ```
+
+  ---
+
+  ### C
+  ```c
+  #include <stdio.h>
+  int main() {
+      char name[100], age[10], major[100];
+      printf("กรุณากรอกชื่อ: ");
+      fgets(name, sizeof(name), stdin);
+      printf("กรุณากรอกอายุ: ");
+      fgets(age, sizeof(age), stdin);
+      printf("กรุณากรอกสาขาวิชา: ");
+      fgets(major, sizeof(major), stdin);
+
+      printf("สวัสดีค่ะ ฉันชื่อ %s", name);
+      printf("อายุ %s", age);
+      printf("สาขาวิชา: %s", major);
+      return 0;
+  }
+  ```
+
+  ---
+
+  ### Python
+  ```python
+  name = input("กรุณากรอกชื่อ: ")
+  age = input("กรุณากรอกอายุ: ")
+  major = input("กรุณากรอกสาขาวิชา: ")
+
+  str = f"""สวัสดีค่ะ ฉันชื่อ {name}
+  อายุ {age} ปี
+  สาขาวิชา: {major}
+  """
+  print(str)
+  ```
+
+</details>
+
+##  4. ผลลัพธ์ที่ได้จากโค้ดดังต่อไปนี้คืออะไร
+
+```ruby
+    puts "This is the first question and it\'s a \"Ruby\" language\."
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+This is the first question and it's a "Ruby" language.
+```
+
+</details>
+
+```python
+    number = 2
+    print(f' And this is the {number}nd question\n take your time.')
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+And this is the 2nd question
+take your time.
+```
+
+</details>
+
+```c
+    #include <stdio.h>
+    void main() {
+        printf("This one \\ is\neasy.");
+    }
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+This one \ is
+easy.
+```
+
+</details>
+
+```java
+    public class question {
+        public static void main(String[] args) {
+            String str = "What\'s favourite ";
+            String str2 = "Programming language?";
+            System.out.println("Last question " + str + str2);
+        }
+    }
+ ```
+
+<details>
+<summary><strong>เฉลย</strong></summary>
+    
+```
+Last question What's favourite Programming language?
+```
+
+</details>
+
+## 5. จงหา index ของตัวอักษรใน string ที่กำหนดให้ต่อไปนี้ของแต่ละภาษา
+
+ให้ผู้เรียน ดูโค้ดแต่ละภาษา แล้วตอบว่า **ค่าที่แสดงออกมาคืออะไร**
+
+---
+
+### Python
+```python
+s = "eternity"
+print(s.index("e"))
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **0**
+
+- `"e"` อยู่ในตำแหน่งที่ 0 (นับจาก 0) ซึ่งถูกค้นหาเจอก่อนตัว `"e"` ที่อยู่ในตำแหน่งที่ 2 (นับจาก 0)
+</details>
+
+---
+
+### Ruby
+```ruby
+s = "hello"
+puts s.index("e")
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **1**
+
+- `.index("e")` คืนตำแหน่งแรกของ `"e"` หลักการเดียวกับข้อ Python
+</details>
+
+---
+
+### Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        String s = "hollywood";
+        System.out.println(s.indexOf("e"));
+    }
+}
+```
+
+<details>
+<summary>เฉลย</summary>
+
+**-1**
+
+- `.indexOf("e")` จะคืนค่าตำแหน่งแรกที่พบ `"e"` ถ้าไม่เจอจะคืน `-1`
+</details>
+
+---
+
+### C
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "hello";
+    char *ptr = strchr(str, 'e');
+    if (ptr != NULL) {
+        printf("%ld\n", ptr - str);
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **1**
+
+- `strchr` จะคืน pointer ที่ชี้ไปยังตำแหน่งในหน่วยความจำที่เก็บตัวอักษรตัวแรกนั้น ทำให้จะต้องนำค่าตำแหน่งในหน่วยความจำของตัวอักษรแรกที่ถูกชี้ใน str ลบกับของ ptr `ptr - str` **(ไม่ใช่ความยาวของ String หรือ Index และค่าตำแหน่งพื้นที่หน่วยความจำ ptr มากกว่าของ str)** หลังจาก ptr - str ได้ค่าตำแหน่ง index ของตัวอักษรนั้น
+</details>

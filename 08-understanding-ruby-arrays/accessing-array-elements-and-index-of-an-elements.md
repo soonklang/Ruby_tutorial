@@ -1,4 +1,4 @@
-# Accessing Array Elements and Index of an Elements
+# Accessing Array Elements and Finding Index of an Elements
 
 # Accessing  Array Element
 
@@ -276,7 +276,7 @@ int main(){
 ### ตัวอย่างภาษา Ruby
 
 ```
-putsตัวอย่างby month.rindex("May")
+puts month.rindex("May")
 # ค่าที่ได้ออกมาคือ 5
 ```
 

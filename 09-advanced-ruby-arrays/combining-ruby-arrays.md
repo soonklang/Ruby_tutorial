@@ -91,7 +91,9 @@ puts target_array.inspect
 
 ## ตารางสรุป 
 
-<table><thead><tr><th width="100.20001220703125" align="center">วิธีการ</th><th width="190.39996337890625" align="center">การทำงาน</th><th width="156.60003662109375" align="center">ผลกระทบต่อ Array </th><th>Syntax</th></tr></thead><tbody><tr><td align="center"><strong>+</strong></td><td align="center">นำสมาชิกมาต่อท้ายกัน เพื่อสร้าง Array ใหม่</td><td align="center">ไม่แก้ไข</td><td>new_array = array1+array2+...</td></tr><tr><td align="center"><strong>.concat( )</strong></td><td align="center">นำสมาชิกมาต่อท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array.concat(array1,array2,...)</td></tr><tr><td align="center"><strong>&#x3C;&#x3C;</strong></td><td align="center">เพิ่มสมาชิก 1 ชิ้น เข้าไปท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array &#x3C;&#x3C; element</td></tr></tbody></table>
+<table><thead><tr><th width="100.20001220703125" align="center">วิธีการ</th><th width="190.39996337890625" align="center">การทำงาน</th><th width="156.60003662109375" align="center">ผลกระทบต่อ Array เดิม</th><th>Syntax</th></tr></thead><tbody><tr><td align="center"><strong>+</strong></td><td align="center">นำสมาชิกมาต่อท้ายกัน เพื่อสร้าง Array ใหม่
+</td><td align="center">ไม่แก้ไข</td><td>new_array = array1+array2+...</td></tr><tr><td align="center"><strong>.concat( )</strong></td><td align="center">นำสมาชิกมาต่อท้าย Array เดิม **เพิ่มได้เฉพาะ Array 
+</td><td align="center">แก้ไขโดยตรง</td><td>target_array.concat(array1,array2,...)</td></tr><tr><td align="center"><strong>&#x3C;&#x3C;</strong></td><td align="center">เพิ่มสมาชิก 1 ชิ้น เข้าไปท้าย Array เดิม</td><td align="center">แก้ไขโดยตรง</td><td>target_array &#x3C;&#x3C; element</td></tr></tbody></table>
 
 
 

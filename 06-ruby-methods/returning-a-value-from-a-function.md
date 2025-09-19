@@ -4,7 +4,7 @@
 
 \*object คือ หน่วยข้อมูลที่เมธอดเรียกทำงานได้ ทุกอย่างใน Ruby เป็น object ทั้งตัวเลข (5), ข้อความ ("Hello"), Array (\[1,2,3]), nil (ย่อมาจาก NilClass หมายถึง ไม่มีค่า,ว่าง)
 
-{% code title="Ruby" %}
+## Ruby
 ```ruby
 def say_hello
   "Hello"  
@@ -21,23 +21,23 @@ puts say_hello
 puts say_hi    
 puts show      
 ```
-{% endcode %}
 
 
-{% code title="Output" lineNumbers="true" %}
+
+## Output
 ```ruby
 Hello
 Hi
 Showing 
 
 ```
-{% endcode %}
+
 
 จะเห็นได้ว่าบรรทัดที่ 4 จะพิมพ์บรรทัดว่าง เพราะ คำสั่ง puts จะคืนค่าเป็นค่า nil(บรรทัดว่าง)
 
 
 
-{% code title="Ruby" %}
+## Ruby
 ```ruby
 def first(a, b, c)
   return a + b + c
@@ -62,15 +62,15 @@ puts first(1, 2, 3)
 puts second(1, 2, 3) 
 puts third(1, 2, 3) 
 ```
-{% endcode %}
 
-{% code title="Output" lineNumbers="true" %}
+
+## Output
 ```ruby
 6
 nil   
 3     
 ```
-{% endcode %}
+
 
 ทำไมใส่ค่า input เหมือนกันแต่ output ไม่เท่ากัน?
 
@@ -82,7 +82,7 @@ nil
 
 
 
-{% code title="Ruby" %}
+## Ruby
 ```ruby
 def test(a, b)
   ans1 = a / b
@@ -94,14 +94,14 @@ q, r = test(10, 3)
 puts q
 puts r
 ```
-{% endcode %}
 
-{% code title="Output" %}
+
+## Output
 ```ruby
 3
 1
 ```
-{% endcode %}
+
 
 Ruby สามารถ return หลายค่าออกมาแล้วสร้างตัวแปรแต่ละค่าเก็บไว้แยกใช้ได้
 
@@ -109,7 +109,7 @@ Ruby สามารถ return หลายค่าออกมาแล้ว�
 
 เปรียบเทียบกับภาษาอื่นๆ
 
-{% code title="C" %}
+## C
 ```c
 #include <stdio.h>
 
@@ -134,19 +134,19 @@ int main() {
     return 0; // จบโปรแกรม
 }
 ```
-{% endcode %}
 
-{% code title="Output" lineNumbers="true" %}
+
+## Output
 ```c
 Hello 
 Hi
 Showing
 ```
-{% endcode %}
 
 
 
-{% code title="Java" %}
+
+## Java
 ```java
 public class Main {
 
@@ -172,22 +172,22 @@ public class Main {
     }
 }
 ```
-{% endcode %}
 
-{% code title="Output" %}
+
+## Output
 ```
 Hello
 Hi
 Showing
 null
 ```
-{% endcode %}
+
 
 ใน Ruby ถ้าฟังก์ชันไม่มีคำสั่ง return จะคืนค่า nil อัตโนมัติ แต่ใน Java ถ้าฟังก์ชันประกาศเป็น void จะไม่คืนค่าใด ๆ เลยและถ้าต้องการใช้ตัวแปรที่ไม่มีค่า ต้องกำหนดให้เป็น null
 
 
 
-{% code title="Python" %}
+## Python
 ```python
 def say_hello():
     return "Hello"
@@ -203,20 +203,25 @@ print(say_hello())
 print(say_hi())     
 print(show())      
 ```
-{% endcode %}
 
-{% code title="Output" %}
+
+## Output
 ```python
 Hello
 Hi
 Showing
 None
 ```
-{% endcode %}
+
 
 Python ถ้าไม่มีคำสั่ง return จะคืนค่า None อัตโนมัติ
 
 
+Link :คลิปนำเสนอ
+[[Watch the video](https://youtu.be/3MFmGPiw5qY)]
+
+Presentation :slide
+[[Watch the slide](https://drive.google.com/file/d/1ulY8wM9rwzuoWSLn3edJ4nKLfWgvEcMz/view?usp=sharing)]
 
 
 

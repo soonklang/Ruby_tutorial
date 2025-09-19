@@ -1,6 +1,6 @@
 # Declaring and Calling a Ruby Method
 ## บทนำ
-***Method*** : เป็นชุดคำสั่งที่ทำงานฌฉพาะเจาะจง และคืนค่าผลลัพธ์ (result)กลับมา Method นั้นจะช่วยประหยัดเวลาและช่วยให้สามารถนำ Code ของผู้ใช้กลับมาใช้ซ้ำได้โดยไม่ต้องพิมพ์ Code ใหม่อีก
+***Method*** : เป็นชุดคำสั่งที่ทำงานเฉพาะเจาะจง และคืนค่าผลลัพธ์ (result)กลับมา Method นั้นจะช่วยประหยัดเวลาและช่วยให้สามารถนำ Code ของผู้ใช้กลับมาใช้ซ้ำได้โดยไม่ต้องพิมพ์ Code ใหม่อีก
 ## การประกาศใช้ Method
 - ในภาษา Ruby จะใช้คำว่า **def** ตามด้วยชื่อ Method และจบด้วยคำว่า **end** 
 
@@ -555,10 +555,12 @@ geeksforgeeks.(ไม่มีวันที่). Callbacks in C. geeksforgeeks
 tutorialspoint.(ไม่มีวันที่). Functions in C. tutorialspoint. สือค้นเมื่อวันที่ 3 กันยายน 2025, จาก https://www.tutorialspoint.com/cprogramming/c_functions.htm
 
 
-## Presentation (slides)
+## Presentation 
+
+- [slides](https://drive.google.com/file/d/1baEGuoCP06v1fE_AG5w_n2zd4F14eA8Q/view?usp=share_link)
 
 ## Video
-
+- [Clip](https://youtu.be/HVRtNCJINbo)
 
 
 

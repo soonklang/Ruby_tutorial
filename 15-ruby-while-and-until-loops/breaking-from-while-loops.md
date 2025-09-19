@@ -131,7 +131,7 @@ while(i<10) {
 
 ## Python :
 
-ในภาษา Python สามารถใช้คำสั่ง `break` ได้หลังจากที่กำหนดเงื่อนไขในการสิ้นสุดการทำงานของลูปแล้ว โดยไม่จำเป็นต้องมี ; ปิดอยู่ด้านหลัง โดยภาษา Python จะใช้ตัว indentation ในการกำหนดขอบเขตของ
+ในภาษา Python สามารถใช้คำสั่ง `break` ได้หลังจากที่กำหนดเงื่อนไขในการสิ้นสุดการทำงานของลูปแล้ว โดยไม่จำเป็นต้องมี ; ปิดอยู่ด้านหลัง โดยภาษา Python จะใช้ตัว indentation ในการกำหนดขอบเขตของลูปและเงื่อนไขการทำงาน
 
 ## Basic Syntax :
 
@@ -299,11 +299,11 @@ printf("Out of While loop\n");
 จากโค้ดข้างต้นเป็นการรับอักขระเข้ามาแบบวนซ้ำและจะสิ้นสุดการทำงานเมื่อเปรียบเทียบกับเงื่อนไขพิเศษคือ while((ch=getchar())!=4) เมื่อใดก็ตามที่ input อักขระที่รับเข้ามามีค่า ASCII เท่ากับ 4 หรือตรงกับเงื่อนไข default จะสิ้นสุดการทำงานของลูป while โดยทันที
 
 ## Slide :
-
+[breaking-from-while-loops.pdf](https://github.com/user-attachments/files/22407368/breaking-from-while-loops.pdf)
 
 
 ## Presentation Video :
-
+https://youtu.be/OkeNoIkq-hM
 
 
 ## Reference :

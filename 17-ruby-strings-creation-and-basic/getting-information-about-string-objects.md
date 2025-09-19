@@ -135,6 +135,8 @@ pointer ที่ชี้ไปยังตำแหน่งแรกของ
 
 ## Presentation
 
+[Slide](https://drive.google.com/file/d/1qkIIPchUuOCMlktPdvk2_42YsDEhYVFa/view?usp=sharing)
+
 ***
 
 ## Reference

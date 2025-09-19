@@ -112,5 +112,8 @@ print(f"{y << 2:08b}")  # 00011000
 - https://docs.python.org/3/library/stdtypes.html
 	
 ## คลิปนำเสนอที่อัดพร้อมมีหน้าผู้บรรยาย
+- https://drive.google.com/file/d/1ItSenqKsk7umFonQQYF7o-XBlP_3apTf/view?usp=drive_link
 
 ## presentation (slides)
+
+- https://drive.google.com/file/d/1gnG2zuF_Hg4xKtykCC5zfSB7ejfiGdDH/view?usp=sharing

@@ -12,9 +12,9 @@
 
 static ในแต่ละภาษาก็จะมีความแตกต่างกัน เช่นในภาษา C กับjava จะมี keywordในการบอกว่าเป็นstatic โดยใช้ “static” นำหน้าชื่อเมธอดหรือชื่อตัวแปร แต่ในภาษา Python และ Ruby ไม่มี keyword เราจะเรียนรู้เกี่ยวกับ static member ในภาษา Ruby กันซึ่ง static member จะมี 2 แบบ คือ
 
-### 1.class varialbes
+### 1.class variables
 
-คลาสที่มีตัวแปรโดยทั่วไปจะเป็นตัวแปรของคลาส จะถูกเรียกว่า class varialbes เมื่อ class varialbes ถูกประกาศเป็น class varialbes พื้นที่สำหรับมันถูกแบ่งไว้สำหรับ lifetime ของโปรแกรม การตั้งชื่อตัวแปรของคลาสจะขึ้นต้นด้วย @@ ข้อมูลที่เก็บใน class varialbes จะถูกเเชร์ให้กับทุก object ของ class
+คลาสที่มีตัวแปรโดยทั่วไปจะเป็นตัวแปรของคลาส จะถูกเรียกว่า class variables เมื่อ class variables ถูกประกาศเป็น class variables พื้นที่สำหรับมันถูกแบ่งไว้สำหรับ lifetime ของโปรแกรม การตั้งชื่อตัวแปรของคลาสจะขึ้นต้นด้วย @@ ข้อมูลที่เก็บใน class variables จะถูกเเชร์ให้กับทุก object ของ class
 
 >
 

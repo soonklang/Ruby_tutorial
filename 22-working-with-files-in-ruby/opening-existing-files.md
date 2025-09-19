@@ -80,7 +80,7 @@ Debbie Watts,Professor,Female,38
 file.closed? # => False  
 ```
 
-สุดท้าย เราจำเป็นต้องปิดไฟล์ด้วยการใช้เมธอด .close   แต่หากเราใช้เพียง เมธอด File.open() ไฟล์จะปิดเองโดยอัตโนมัติหลังจบการทำงาน
+สุดท้าย เปิดไฟล์โดยไม่ใช้ block เราต้องปิดไฟล์ด้วย .close  แต่หากเราเปิดไฟล์โดยใช้ block syntax กับ File.open Ruby จะจัดการปิดไฟล์ให้อัตโนมัติหลังจาก block ทำงานเสร็จ
 
 ```ruby
 # เปิดไฟล์ด้วยสถานะ อ่านอย่างเดียว
@@ -189,10 +189,10 @@ data.head(5)
 ```
 
 # คลิปนำเสนอ
-
+https://youtu.be/i_IydvugRt0
 
 # Slide บรรยาย
-https://drive.google.com/file/d/1U2tr_q1G20_20SgfL7DnG2pXYoiWZ5e7/view?usp=drive_link
+[https://drive.google.com/file/d/1U2tr_q1G20_20SgfL7DnG2pXYoiWZ5e7/view?usp=drive_link](https://drive.google.com/file/d/1QuKhJGxbpY3icnhUTSm5DZYBzKqjeykv/view?usp=drive_link)
 
 # แหล่งอ้างอิง
 ### ภาษา Ruby
