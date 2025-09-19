@@ -1,9 +1,9 @@
 # Quiz ประจำบท 
 
-# Declaring and Calling Method
+### Declaring and Calling Method
 
 
-# Lambdas
+## Lambdas
 
 
 # Passing a Variable Number of Argument 
