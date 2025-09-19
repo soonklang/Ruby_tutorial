@@ -300,3 +300,4 @@ else:
 - *<https://www.w3schools.com/python/python_arrays.asp>*
 
 # Presentation
+- *<https://youtu.be/8qsBNbWNihg>*
