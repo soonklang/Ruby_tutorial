@@ -22,10 +22,12 @@ puts cat.speak
 ```
 <details>
 <summary> เฉลยข้อที่ 1. </summary>
-  ```ruby
+  
+## Output
+```ruby
   Cow says Moo
-   ```
-  เพราะ เมื่อสร้าง object cow ตัวแปร @name จะเก็บค่า "Cow" และ @sound จะเก็บ "Moo" ดังนั้น method speak จะ return "Cow says Moo"
+```
+  #### เพราะ เมื่อสร้าง object cow ตัวแปร @name จะเก็บค่า "Cow" และ @sound จะเก็บ "Moo" ดังนั้น method speak จะ return "Cow says Moo"
 </details>
 
 ## 5. Instance Variables and Accessor Methods
