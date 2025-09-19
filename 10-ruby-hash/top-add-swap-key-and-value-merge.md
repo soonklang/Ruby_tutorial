@@ -117,20 +117,18 @@ public class Main {
         // Output: {Alice=name, 25=age, Bangkok=city}
 
         // Merge hash
-        // Assuming 'extra' is defined somewhere. For example:
-        HashMap<String, Object> extra = new HashMap<>();
-        extra.put("age", 30); // overriding age
-        extra.put("Alice", "name");
-        extra.put("25", "age");
-        extra.put("Bangkok", "city");
+        HashMap<String, Object> swappedStringKey = new HashMap<>();
+            for (Map.Entry<Object, String> entry : swapped.entrySet()) {
+                swappedStringKey.put(entry.getKey().toString(), entry.getValue());
+            }
 
-        HashMap<String, Object> merged = new HashMap<>(person);
-        merged.putAll(extra);
-
-        System.out.println(merged);
-        // Output: {name=Alice, age=30, city=Bangkok, Alice=name, 25=age, Bangkok=city}
+        HashMap<String, Object> mergedSafe = new HashMap<>(person);
+        mergedSafe.putAll(swappedStringKey);
+        System.out.println(mergedSafe);
+        // Output: {name=Alice, Bangkok=city, 25=age, city=Bangkok, age=25, Alice=name}
     }
 }
+
 
 ```
 
