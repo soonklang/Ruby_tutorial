@@ -311,7 +311,7 @@ END
 **ข้อสรุป** Ruby ใช้ flip-flop operator ได้ในตัว แต่ C / Java / Python ต้องใช้ตัวแปร flag เพิ่มเติม ดังนั้น Ruby กระชับและอ่านง่ายกว่าในกรณีนี้
 
 ---
-## Slide & Video
+## Video & Slide
 
 - [Video](https://drive.google.com/file/d/1-c9c2y56CPTN7SV_VZvAiIBnixECgp6Z/view?usp=sharing)
 - [Slide](https://docs.google.com/presentation/d/1unB_ldd3yIkNE3DVmD5criyRUGlCzzGTwVtbO4dkKMw/edit?usp=sharing)
