@@ -147,3 +147,18 @@ match day:
 
 ```
 ##  1.จงแปลง if else ต่อไปนี้เป็น ternary operator โดยใช้ภาษา java javascript python
+
+##เฉลย
+
+#### Java
+```python
+print("fat" if wight >= 75 else "thin")
+```
+#### Javascript
+```javascript
+console.log((wight >= 75) ? "fat" : "thin");
+```
+#### Java
+```java
+System.out.println((wight >= 75) ? "fat" :  "thin");
+```
