@@ -8,4 +8,4 @@
 [Upto-Downto-Method](https://github.com/soonklang/Ruby_tutorial/blob/main/16-looping-with-for-and-the-ruby-looping-methods/ruby-upto-and-downto-method.md)
 
 ## แบบฝึกหัด
-[Quiz](https://github.com/soonklang/Ruby_tutorial/edit/main/16-looping-with-for-and-the-ruby-looping-methods/Quiz.md)
+[Quiz](https://github.com/soonklang/Ruby_tutorial/blob/main/16-looping-with-for-and-the-ruby-looping-methods/Quiz.md)
