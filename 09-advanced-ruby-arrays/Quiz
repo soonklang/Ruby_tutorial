@@ -23,4 +23,19 @@ arr = [10,500,20,30,'c']
 
 ---
 
+- [Modifying array](https://github.com/soonklang/Ruby_tutorial/blob/main/09-advanced-ruby-arrays/modifying-arrays.md#modifying-array)
+
+<mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
+ข้อใดไม่สามารถเข้าถึง Array ใน Ruby ได้\
+1.arr[4]= 12\
+2.arr.insert(1,6)\
+3.arr[4…6] = [7..9]\
+4.arr.add(1)\
+
+เฉลย
+<details>
+4.arr.add(1)
+
+เพราะ ในภาษา Ruby ไม่มี Method .add() ต้องใช้วิธีอื่นแทน เช่น .insert() หรือ .push() หรือ <<
+
 
