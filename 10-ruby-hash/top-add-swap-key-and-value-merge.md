@@ -249,9 +249,9 @@ print(merged)
 
 ## <mark style="color:$primary;">Presentation</mark> <a href="#presentation" id="presentation"></a>
 
-Link video:
+Link video: https://youtu.be/Zyz04uANXJU?si=CPdcW25UzQ0P4bO8
 
-slice: https://www.canva.com/design/DAGzJ91qkj0/otylluOC4OdD6ha53WbkfA/view?utm_content=DAGzJ91qkj0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b9baf33c5
+slice: [https://www.canva.com/design/DAGzJ91qkj0/otylluOC4OdD6ha53WbkfA/view?utm_content=DAGzJ91qkj0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b9baf33c5](https://www.canva.com/design/DAGzJ91qkj0/GWH3osnUyV4tTK_bc1ksCw/view?utm_content=DAGzJ91qkj0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h270e0eed09)
 
 ## <mark style="color:$primary;">**Reference**</mark> <a href="#reference" id="reference"></a>
 
