@@ -27,18 +27,18 @@
 ###  Upcase
 เมธอดนี้จะเปลี่ยน String ทุกตัวเป็นตัวพิมพ์ใหญ่
 ```ruby
-"hello world".downcase
+"hello world".upcase
 => "HELLO WORLD"
-"hello world".downcase!  # ใช้เครื่องหมาย bang
+"hello world".upcase!  # ใช้เครื่องหมาย bang
 => "HELLO WORLD"
 ```
 
 ###  Swapcase
 เมธอดนี้จะสลับ String ทุกตัว ซึ่งตัวพิมพ์เล็กจะเป็นใหญ่ และใหญ่จะเป็นเล็ก
 ```ruby
-"HeLLo WoRld".downcase
+"HeLLo WoRld".swapcase
 => "hEllO wOrLD"
-"HeLLo WoRld".downcase!  # ใช้เครื่องหมาย bang
+"HeLLo WoRld".swapcase!  # ใช้เครื่องหมาย bang
 => "hEllO wOrLD"
 ```
 ## ตัวอย่างการใช้งานเพิ่มเติม
