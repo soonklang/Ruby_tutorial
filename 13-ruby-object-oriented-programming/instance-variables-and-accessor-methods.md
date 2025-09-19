@@ -64,8 +64,8 @@ class Student:
 ```c
 struct Students {   
 	int id;
-	char firstName;
-	char lastName;
+	char firstName[50];
+	char lastName[50];
 	int age;       
 };
 ```
