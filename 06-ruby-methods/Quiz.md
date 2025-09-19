@@ -1,18 +1,18 @@
 # Quiz ประจำบท 
 
-### Declaring and Calling Method
+## Declaring and Calling Method
 
 
 ## Lambdas
 
 
-# Passing a Variable Number of Argument 
+## Passing a Variable Number of Argument 
 
 
-# Passing Argument to a Method
+## Passing Argument to a Method
 
 
-# Return a Value from a Function
+## Return a Value from a Function
 
 
-# Method Aliases
+## Method Aliases
