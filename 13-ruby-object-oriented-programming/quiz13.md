@@ -314,3 +314,13 @@ int main() {
 ```
 </pre>
 </details>
+
+## 12. Static Members
+### Q : คำถาม: อธิบายความแตกต่างระหว่าง self.get ใน Ruby กับ get ที่เป็น instance method
+<details>
+<summary><strong>เฉลย (Ruby)</strong></summary>
+<pre>
+    def self.get → class method ต้องเรียกผ่านชื่อคลาส 
+    def get → instance method ต้องสร้าง object
+</pre>
+</details>
