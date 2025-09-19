@@ -169,6 +169,11 @@ python:
 print(int("123"))     # => 123
 print(int("hello"))   # => ValueError: invalid literal for int() (โปรแกรมหยุดทำงานทันที)
 ```
+# Presantation
+https://www.canva.com/design/DAGzQ0gN_qw/8VWyEiqvPUdoL9D8zOEhDg/edit?utm_content=DAGzQ0gN_qw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+# Video
+[[https://youtu.be/N2Cxau2cHyA](https://www.youtube.com/watch?v=N2Cxau2cHyA)](https://www.youtube.com/watch?v=N2Cxau2cHyA)
 
 # References
 [1] K. Newton, "Ruby type conversion," KDD Newton, Sep. 9, 2021. [Online]. Available: https://kddnewton.com/2021/09/09/ruby-type-conversion.html. [Accessed: Sep. 3, 2025].
