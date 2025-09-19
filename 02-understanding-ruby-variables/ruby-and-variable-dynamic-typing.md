@@ -53,6 +53,7 @@ Lazy.new.anything
 - การแปลงชนิด: ใช้เมธอดครอบ เช่น Integer(str), Float(str), to_s เพื่อควบคุมให้ชัดเจน
 -----
 ### คลิปนำเสนอ
+### https://www.canva.com/design/DAGzbKeRxcA/bnCF4jYXVOxO0iLwOkJjtw/edit?utm_content=DAGzbKeRxcA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 -----
 ### Presentation (slides)
 -----
