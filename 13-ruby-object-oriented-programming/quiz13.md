@@ -315,6 +315,37 @@ int main() {
 </pre>
 </details>
 
+## 11. Ruby Class Variables
+### Q : ใน Ruby ถ้าใช้ตัวแปรคลาส (`@@var`) จะมีพฤติกรรมอย่างไรเมื่อมี subclass สืบทอดไป?  
+
+- A) ตัวแปร `@@var` ถูกจำกัดแค่ภายใน class แม่เท่านั้น ไม่แชร์ไป subclass  
+- B) Subclass จะได้สำเนาของ `@@var` ของตัวเอง ไม่กระทบค่าใน class แม่  
+- C) ค่า `@@var` ถูกแชร์ร่วมกันทั้ง class แม่และ subclass ทุกระดับ  
+- D) ตัวแปร `@@var` สามารถถูกเข้าถึงได้เฉพาะ instance ของ subclass เท่านั้น  
+
+<details>
+<summary><strong>เฉลย (Ruby)</strong></summary>
+  C) ค่า @@var ถูกแชร์ร่วมกันทั้ง class แม่และ subclass ทุกระดับ
+</details>
+
+### Q : อธิบายความแตกต่างระหว่าง *Class Variable* (`@@var`) และ *Class Instance Variable* (`@var ระดับ class`) ใน Ruby  
+
+<details>
+<summary><strong>เฉลย (Ruby)</strong></summary>
+
+- `@@var` (Class Variable):  
+  - ใช้ `@@` นำหน้า  
+  - แชร์ค่าร่วมกันระหว่าง instance ทั้งหมดของ class เดียวกัน  
+  - ถูกแชร์ข้าม subclass ด้วย → ถ้าเปลี่ยนค่าที่ subclass จะกระทบ class แม่ด้วย  
+
+- `@var` (Class Instance Variable):  
+  - ใช้ `@` แต่ประกาศในระดับ class (เช่น `@rate`)  
+  - เป็นของ object ระดับ “class” เอง  
+  - ไม่ถูกแชร์ข้าม subclass → แต่ละ class มีค่าของตัวเอง  
+
+</details>
+
+
 ## 12. Static Members
 ### Q : คำถาม: อธิบายความแตกต่างระหว่าง self.get ใน Ruby กับ get ที่เป็น instance method
 <details>
