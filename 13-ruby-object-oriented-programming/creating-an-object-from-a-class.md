@@ -124,9 +124,8 @@ Hello from Alice's account!
 ## Video
 
 ## Slides
-[Creating an Object from a Class & Passing Parameters to new Method.pdf](https://github.com/user-attachments/files/22427335/Creating.an.Object.from.a.Class._.Passing.Parameters.to.new.Method.pdf.pdf)
+[Creating an Object from a Class &  Passing Parameters to new Method.pdf](https://github.com/user-attachments/files/22428767/Creating.an.Object.from.a.Class.Passing.Parameters.to.new.Method.ppt.pdf)
 
-  
 ## References
 - Thomas, D., Fowler, C., และ Hunt, A. (2004). Programming Ruby: The Pragmatic Programmers' Guide (ฉบับที่ 1). Pragmatic Bookshelf. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://ruby-doc.org  
 - Flanagan, D., และ Matsumoto, Y. (2008). The Ruby Programming Language. O'Reilly Media. สืบค้นเมื่อ 3 กันยายน 2025, จาก https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/  
