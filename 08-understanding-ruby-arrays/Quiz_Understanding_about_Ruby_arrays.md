@@ -90,3 +90,24 @@ a = Array.new(4,*)
 [*,*,*,*]
 ```
 
+### 3.
+
+#### จงเติมCodeที่หายไปให้สมบูรณ์เพื่อให้รันได้ผลลัพธ์ดังภาพ
+```
+week = ["Mon","Tue","Wed","Thurs","Fri","Sat","Sun"]
+puts week.____(20,"_______________")
+```
+#### ผลลัพธ์
+```
+Index out of bound
+```
+
+<details>
+<summary>เฉลย</summary>
+
+```
+puts week.fetch(20,"Index out of bound")
+```
+
+
+
