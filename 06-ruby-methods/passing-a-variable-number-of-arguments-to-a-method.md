@@ -132,15 +132,18 @@ return 0;
 |Java|`ใช้ Varargs (String...argument) `|ส่ง argument ได้แค่ชนิดเดียว|`ไม่ต้องกำหนด argument`|`array`|
 |C|`ใช้ Variadic (int n, ...)`|ไม่จำกัดชนิดข้อมูล argument|`ต้องกำหนดตัวแปร argument ไว้ก่อนอย่างน้อย 1 ตัว`|`list`|
 ##
+## วิดิโอนำเสนอ
+https://drive.google.com/file/d/1VAYlAhozhO-rDPElEoJz97NfPuxgOa7q/view?usp=drive_link
+## สไลด์นำเสนอ
+https://drive.google.com/file/d/1V8ykFP21DvU299uM4sjdK1VE4lh8fC3g/view?usp=drive_link
+##
+
 ## อ้างอิง
 - MarcusCode. (2025, September 6). Methods in Ruby. MarcusCode. สืบค้นจาก https://marcuscode.com/lang/ruby/methods  
   - ใช้อ้างอิงตัวอย่างที่ 1 (Ruby),ใช้เปรียบเทียบความแตกต่างกับภาษา Python/Java/C
-##
 - GeeksforGeeks. (2025, July 23). Python variable-length arguments (variable-length argument in Python). GeeksforGeeks. สืบค้นจาก https://www.geeksforgeeks.org/python/variable-length-argument-in-python/  
   - ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 1 (Python),ใช้เปรียบเทียบความแตกต่างด้วย *args กับภาษา Ruby และภาษาอื่นๆ
-##
 - Cardos, B. (2023, April 27). Java – best practices for many parameters in a method. ใน L. J. Peris (ผู้ตรวจทาน), Baeldung. สืบค้นจาก https://www.baeldung.com/java-best-practices-many-parameters-method  
   - ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 2 (Java),ใช้เปรียบเทียบความแตกต่างด้วย Varargs หรือ ...(ellipsis)กับภาษา Ruby และภาษาอื่นๆ
-##
 - GeeksforGeeks. (2025, March 7). Variadic functions in C. สืบค้นจาก https://www.geeksforgeeks.org/c/variadic-functions-in-c/  
   - ใช้อ้างอิงการเปรียบเทียบในตัวอย่าง 3 (C),ใช้เปรียบเทียบความแตกต่างด้วย variadic กับภาษา Ruby และภาษาอื่นๆ
