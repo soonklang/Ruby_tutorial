@@ -85,10 +85,10 @@ file = File.new("myfile.txt", "w")  # "w" = write mode
 ---
 
 ### คลิปนำเสนอ
-[-](https://youtu.be/9g1zP3QP4CQ)
+[click](https://youtu.be/9g1zP3QP4CQ)
 ------
 ### Presentation (slides)
--
+[click](https://online.flippingbook.com/view/455889899/)
 ---
 
 ## แหล่งที่มา
