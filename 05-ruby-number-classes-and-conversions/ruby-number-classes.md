@@ -1447,6 +1447,11 @@ Fraction แทนเศษส่วน [Python Docs, 2025]
 
 ---
 
+# คลิปนำเสนอ
+## https://youtu.be/yvU3zuXZqlc?si=ri2DjvUEa0DHhFJI
+# Presentations
+## https://drive.google.com/drive/folders/1kRDSQxWGpZfXGEgTTT0Lx1BLtrNOp98q
+
 ## Referenes
 ### content ##
 [1] “Ruby Number Classes and Conversions,” *Techotopia*, Techotopia.com. [Online]. Available: https://www.techotopia.com/index.php/Ruby_Number_Classes_and_Conversions. [Accessed: 1-Sep-2025].
