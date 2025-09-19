@@ -82,11 +82,11 @@ class GFG {
 ##
 
 ### Reference:
-  - https://docs.ruby-lang.org/en/master/String.html#method-i-2A
-  - https://www.geeksforgeeks.org/java/string-class-repeat-method-in-java-with-examples/
-  - https://www.geeksforgeeks.org/c/strcat-in-c/
-  - https://www.geeksforgeeks.org/python/how-to-repeat-a-string-in-python/
+  - Ruby-lang.org. (n.d.). String# method documentation*. Ruby-lang.org. https://docs.ruby-lang.org/en/master/String.html#method-i-2A
+  - GeeksforGeeks. (2022). String class repeat() method in Java with examples. GeeksforGeeks. https://www.geeksforgeeks.org/java/string-class-repeat-method-in-java-with-examples/
+  - GeeksforGeeks. (2022). strcat() in C with examples. GeeksforGeeks. https://www.geeksforgeeks.org/c/strcat-in-c/
+  - GeeksforGeeks. (2022). How to repeat a string in Python. GeeksforGeeks. https://www.geeksforgeeks.org/python/how-to-repeat-a-string-in-python/
 
 ### Presentation
-- Link video:
-- PDF: 
+- Link video: https://youtu.be/8dbPTHl0muI
+- PDF: https://www.canva.com/design/DAGzbUsinJs/rc0WarpUD2s8tDT-AVXh_g/edit?utm_content=DAGzbUsinJs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
