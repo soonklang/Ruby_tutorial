@@ -270,7 +270,15 @@ print(people)  # ผลลัพธ์ที่ได้ => [{'name': 'malee', '
 - ถ้าอยากได้ code ที่สามารถปรับเปลี่ยนได้และมีความยืดหยุ่นแนะนำภาษา C แต่ต้องมีความเข้าใจในภาษาระดับนึงเพราะมีความยุ่งยาก
 
 
+---
 
+# Slide 
+[Sorting Array](https://www.canva.com/design/DAGzCHa7vbM/cdhLutbTXVm0aTDfZihQOg/view?utm_content=DAGzCHa7vbM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha706187010)
+
+# Video 
+[Video](https://youtu.be/GKZvbvQYqXU)
+
+---
 # แหล่งอ้างอิง
 
 ## Ruby
@@ -303,9 +311,3 @@ print(people)  # ผลลัพธ์ที่ได้ => [{'name': 'malee', '
 
 
 ---
-
-# Slide 
-[Sorting Array](https://www.canva.com/design/DAGzCHa7vbM/cdhLutbTXVm0aTDfZihQOg/view?utm_content=DAGzCHa7vbM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha706187010)
-
-# Video 
-[Video](https://youtu.be/GKZvbvQYqXU)
