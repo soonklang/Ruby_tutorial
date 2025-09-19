@@ -366,7 +366,8 @@ for i in range(1, 5):
 * W3Schools. (ไม่มีวันที่). Python for Loops. สืบค้นวันที่ 2 กันยายน 2025, จาก https://www.w3schools.com/python/python\_for\_loops.asp
 * GeeksforGeeks. (30 กรกฎาคม 2021). For Loops in Python. สืบค้นวันที่ 2 กันยายน 2025, จาก https://www.geeksforgeeks.org/for-loops-in-python/
 
-## Slide
-https://drive.google.com/file/d/1OQWORqQXJIt5F5J4HbQxlm_EOjVPb-kq/view?usp=sharing
+## 📑 Slide
+- [ดูสไลด์](https://drive.google.com/file/d/1OQWORqQXJIt5F5J4HbQxlm_EOjVPb-kq/view?usp=sharing)
 
-## Link Youtube
+## 🎬 Video
+- [ดูตลิป](https://youtu.be/1ABrY9qIH4c?si=-XLbxMH09A3rxOxN)
