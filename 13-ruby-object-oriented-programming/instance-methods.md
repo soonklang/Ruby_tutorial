@@ -81,9 +81,9 @@ Interest on balance 1000 at rate 0.7 is 700.0
 จากโค้ดตัวอย่างเมื่อเปรียบเทียบจะเห็นว่า ทางภาษา python และ ภาษา Ruby ไม่ต้องระบุ type ของพารามิเตอร์กับ return type แต่ ภาษา python ต้องใส่ self เป็นพารามิเตอร์แรกเสมอ เพื่อเข้าถึง ตัวแปรอินสแตนซ์ (instance variables) และเวลาเรียก method ผ่าน object ด้วยวงเล็บเสมอ ส่วนทางภาษา Ruby สามารถเข้าถึงตัวแปรอินสแตนซ์ (instance variables) ได้โดยที่ขึ้นต้นด้วย @ และเวลาเรียก method ผ่าน object วงเล็บสามารถใส่หรือไม่ก็ได้
 
 ## Slide
--
+- https://docs.google.com/presentation/d/1pBn9IC-cCmoYAeBD2KGuVbMBg7BStIztpusqHJzqU1c/edit?usp=sharing
 ## Video
--
+- https://youtu.be/WXMfXVeYH0I
 ## Reference
 Ruby
 
