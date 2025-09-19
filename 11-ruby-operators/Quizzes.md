@@ -81,3 +81,36 @@ public class main {
 a = 1,2,3,4
 print(a) # a = [1,2,3,4]
 ```
+
+## Assignment Operators
+1. การดำเนินการกับตัวเลข (Numeric Operations)
+โจทย์:
+เขียนโปรแกรม Ruby เพื่อคำนวณและแสดงผลลัพธ์:
+1.กำหนดค่าตัวแปร score ให้เท่ากับ 100
+2.เพิ่มค่า score ขึ้นอีก 50 โดยใช้ Compound Assignment Operator
+3.แสดงผลค่าสุดท้ายของ score
+
+2. การดำเนินการกับสตริง (String Operations)
+โจทย์:
+เขียนโปรแกรม Ruby เพื่อต่อสตริงโดยใช้ Compound Assignment Operator:
+กำหนดค่าตัวแปร message ให้มีค่าเริ่มต้นเป็น "Hello"
+ต่อสตริง " World" เข้ากับ message โดยใช้ +=
+แสดงผลค่าสุดท้ายของ message
+
+### เฉลย:
+
+> Ruby
+
+```ruby
+score = 100
+score += 50
+puts "คะแนนสุดท้ายคือ: #{score}"
+```
+
+> Ruby
+
+```ruby
+message = "Hello"
+message += " World"
+puts message
+```
