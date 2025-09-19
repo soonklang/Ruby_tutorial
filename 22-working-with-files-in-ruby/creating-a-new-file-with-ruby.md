@@ -85,7 +85,7 @@ file = File.new("myfile.txt", "w")  # "w" = write mode
 ---
 
 ### คลิปนำเสนอ
--
+[-](https://youtu.be/9g1zP3QP4CQ)
 ------
 ### Presentation (slides)
 -
