@@ -304,8 +304,8 @@ print(people)  # ผลลัพธ์ที่ได้ => [{'name': 'malee', '
 
 ---
 
-# Slide
+# Slide 
 [Sorting Array](https://www.canva.com/design/DAGzCHa7vbM/cdhLutbTXVm0aTDfZihQOg/view?utm_content=DAGzCHa7vbM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha706187010)
 
 # Video 
-[Video](https://youtu.be/Okpl21xvU2k)
+[Video](https://youtu.be/GKZvbvQYqXU)
