@@ -276,9 +276,9 @@ public class Main {
 
 
 ## Reference 
-String. (n.d.). In Ruby-Doc.org. Retrieved September 5, 2025, from https://ruby-doc.org/3.4.1/String.html </br>
-Mandal, M. (2010). Ruby recipes: A problem-solution approach. Apress. </br>
-Cooper, P. (2016). Beginning Ruby: From novice to professional (3rd ed.). Apress. </br>
-Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers’ guide (4th ed.). Pragmatic Bookshelf. </br>
+String. (n.d.). In Ruby-Doc.org. สืบค้นเมื่อ 29 สิงหาคม 2025, จาก Ruby Reference , จาก https://ruby-doc.org/3.4.1/String.html </br>
+Mandal, M. (2010). Ruby recipes: A problem-solution approach. Apress. https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Ruby%20Recipes%20-%20A%20Problem-Solution%20Approach.pdf </br>
+Cooper, P. (2016). Beginning Ruby: From novice to professional (3rd ed.). Apress.https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Beginning%20Ruby%20-%20From%20Novice%20to%20Professional%20-%20Third%20Edition.pdf </br>
+Thomas, D., Fowler, C., & Hunt, A. (2013). Programming Ruby 1.9 & 2.0: The pragmatic programmers’ guide (4th ed.). Pragmatic Bookshelf.https://github.com/maniramakumar/the-best-ruby-books/blob/master/books/Programming%20Ruby%201.9%20%26%202.0%20-%20The%20Pragmatic%20Programmers'%20Guide%20-%20Fourth%20Edition.pdf </br>
 
 
