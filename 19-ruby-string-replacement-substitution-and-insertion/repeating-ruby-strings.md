@@ -37,7 +37,7 @@ class GFG {
   ```
  #### Output: 
  ```text
-  abcabcabc
+  String :abcabcabc
   ```
       
   ##
