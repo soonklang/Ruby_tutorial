@@ -256,6 +256,6 @@ Supports interpolation with f-string.
 ---
 
 # Presentation
-[Heredoc_Presentation](https://drive.google.com/file/d/1OlsYR2jqtpFB5u1RXQHu8NBtX85-DUdS/view?usp=sharing)
+[Heredoc_Presentation](https://drive.google.com/file/d/1iG--E6OgMS4EfryVD2qcFRZPVIu7bBiX/view?usp=sharing)
 # Video
-
+[Video_Presentation](https://youtu.be/aKdpEmp2FGU)
