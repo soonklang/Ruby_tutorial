@@ -100,7 +100,7 @@ public class Main {
 ```python
 n = 5
 for i in range(n):
-    print(f"รอบที่ {i}")
+    print("รอบที่ {i}")
 ```
     เนื่องจากภาษา Python ไม่มี .times method ต้องใช้ for loop หรือ while loop เพื่อวนรอบตามที่กำหนด
 
@@ -121,3 +121,4 @@ https://www.techotopia.com/index.php/Looping_with_for_and_the_Ruby_Looping_Metho
 ## Slides
 
 ## Video
+https://youtu.be/nvAuiMikWiY
