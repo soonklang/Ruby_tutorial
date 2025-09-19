@@ -157,7 +157,7 @@ puts body
 ```
 ##เฉลย
 
-#### Java
+#### python
 ```python
 print("fat" if wight >= 75 else "thin")
 ```
