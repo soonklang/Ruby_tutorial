@@ -1,10 +1,10 @@
-#Acessing String Elements
+## Acessing String Elements
 
 
-#Case Insensitive String Compairng
+## Case Insensitive String Compairng
 
-#Comparing Ruby String (Case Sensitive)
+## Comparing Ruby String (Case Sensitive)
 
-#Concatenating String in Ruby
+## Concatenating String in Ruby
 
-#Frezzing a Ruby String
+## Frezzing a Ruby String
