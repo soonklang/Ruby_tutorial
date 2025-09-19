@@ -83,7 +83,7 @@ System.out.println(sortedWords); // ผลลัพธ์ที่ได้ => [
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
 new_words = sorted(words) # สร้างตัวเก็บ Array มาใหม่โดยที่ไม่มีการเปลี่ยนแปลงค่าใน Array ของตัว words โดยหลังจากนั้นจะทำการเรียงข้อมูลเพื่อมาเก็บใน Array ของ new_words
-print(f"New sorted list: {new_words}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
+print(new_words) # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
@@ -107,7 +107,7 @@ puts numbers  #ผลลัพธ์ที่ได้ => [1, 2, 3, 4, 5]
 const char *words1[] = {"kiwi", "apple", "fig", "banana"};
 int n = sizeof(words1) / sizeof(words1[0]);/*หาว่า Array มีสมาชิกกี่ตัว โดยไม่ต้องนับเอง*/
 qsort(words1, n, sizeof(const char *), compareStrings); /* เรียงลำดับภายใน Array ใหม่ แล้วทำมาใส่ตัวของ word1 เข้าไปตรงๆ โดยใช้คำสั่ง qsort */
-printArray("Sorted (in-place)", words1, n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
+printArray(words1, n); /* ผลลัพธ์ที่ได้ => apple banana fig kiwi */
 ```
 
 **Java**
@@ -125,7 +125,7 @@ System.out.println(Arrays.toString(words)); // ผลลัพธ์ที่ไ
 ```python
 words = ["kiwi", "apple", "fig", "banana"]
 words.sort() # ทำการเรียงค่าใน Array ของ words โดยตรง
-print(f"After sort():  {words_to_modify}") # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
+print(word) # ผลลัพธ์ที่ได้ => ['apple', 'banana', 'fig', 'kiwi']
 ```
 
 ---
@@ -225,7 +225,7 @@ people = [
     {'name': 'piti', 'age': 42}
 ]
 people.sort(key=lambda person: person['age']) # ทำการเรียงค่าใน Array ของ people โดยตรงร่วมกับการใช้เงื่อนไขการเรียง Array โดยใช้ age เรียงค่าข้อมูล
-print("{people}")  # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
+print(people)  # ผลลัพธ์ที่ได้ => [{'name': 'malee', 'age': 28}, {'name': 'somsak', 'age': 35}, {'name': 'piti', 'age': 42}]
 ```
 
 ---

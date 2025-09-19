@@ -163,15 +163,15 @@ for i in range(1, 6):
 
 ### 2. Date
 
-<pre class="language-ruby"><code class="lang-ruby"><strong>require 'date'
-</strong>
+```ruby
+require 'date'
 start_date = Date.new(2025, 1, 5)
 end_date = Date.new(2025, 1, 1)
 
 start_date.downto(end_date) do |date|
   puts date.strftime("%Y-%m-%d")
 end
-</code></pre>
+```
 
 ### Output
 

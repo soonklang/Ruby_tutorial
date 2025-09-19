@@ -1,4 +1,4 @@
-# Accessing Array Elements and Index of an Elements
+# Accessing Array Elements and Finding Index of an Elements
 
 # Accessing  Array Element
 
@@ -276,14 +276,14 @@ int main(){
 ### ตัวอย่างภาษา Ruby
 
 ```
-putsตัวอย่างby month.rindex("May")
+puts month.rindex("May")
 # ค่าที่ได้ออกมาคือ 5
 ```
 
 ### ตัวอย่างภาษา Python
 
 <pre><code>last_index = -1
-for i in range(len(mon<a data-footnote-ref href="#user-content-fn-1">t</a>h)-1, -1, -1):
+for i in range(len(month)-1, -1, -1):
     if month[i] == "May":
         last_index = i
         print(last_index)

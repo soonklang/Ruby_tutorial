@@ -216,3 +216,7 @@ fat
 3.ternary operator สามารถ return ออกมาจาก method ได้
 <br><br>
 4.ternary operator สามารถ print ออกมาได้เลยตรงๆ ไม่ต้องเก็บค่าไว้ที่ไหน
+# Presentation
+https://drive.google.com/file/d/1iaQ0NBLzU8IJtSvf6xD2uud0erfAg0pq/view?usp=sharing
+# Video
+https://youtu.be/RLw1SiV3ysU

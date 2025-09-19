@@ -291,3 +291,84 @@ Last question What's favourite Programming language?
 ```
 
 </details>
+
+## 5. จงหา index ของตัวอักษรใน string ที่กำหนดให้ต่อไปนี้ของแต่ละภาษา
+
+ให้ผู้เรียน ดูโค้ดแต่ละภาษา แล้วตอบว่า **ค่าที่แสดงออกมาคืออะไร**
+
+---
+
+### Python
+```python
+s = "eternity"
+print(s.index("e"))
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **0**
+
+- `"e"` อยู่ในตำแหน่งที่ 0 (นับจาก 0) ซึ่งถูกค้นหาเจอก่อนตัว `"e"` ที่อยู่ในตำแหน่งที่ 2 (นับจาก 0)
+</details>
+
+---
+
+### Ruby
+```ruby
+s = "hello"
+puts s.index("e")
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **1**
+
+- `.index("e")` คืนตำแหน่งแรกของ `"e"` หลักการเดียวกับข้อ Python
+</details>
+
+---
+
+### Java
+```java
+public class Main {
+    public static void main(String[] args) {
+        String s = "hollywood";
+        System.out.println(s.indexOf("e"));
+    }
+}
+```
+
+<details>
+<summary>เฉลย</summary>
+
+**-1**
+
+- `.indexOf("e")` จะคืนค่าตำแหน่งแรกที่พบ `"e"` ถ้าไม่เจอจะคืน `-1`
+</details>
+
+---
+
+### C
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "hello";
+    char *ptr = strchr(str, 'e');
+    if (ptr != NULL) {
+        printf("%ld\n", ptr - str);
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>เฉลย</summary>
+
+Output: **1**
+
+- `strchr` จะคืน pointer ที่ชี้ไปยังตำแหน่งในหน่วยความจำที่เก็บตัวอักษรตัวแรกนั้น ทำให้จะต้องนำค่าตำแหน่งในหน่วยความจำของตัวอักษรแรกที่ถูกชี้ใน str ลบกับของ ptr `ptr - str` **(ไม่ใช่ความยาวของ String หรือ Index และค่าตำแหน่งพื้นที่หน่วยความจำ ptr มากกว่าของ str)** หลังจาก ptr - str ได้ค่าตำแหน่ง index ของตัวอักษรนั้น
+</details>

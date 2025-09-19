@@ -350,8 +350,10 @@ C
 ❖ อาจจะทำงานช้ากว่าภาษาที่คอมไพล์ เนื่องจากเป็น interpreted language  
 
 ❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
+## Presentation 
 
- 
+## Video 
+https://youtu.be/EX40kaLIDNU
 # Reference  
 ### Ruby  
 - [Instance variables – Ruby User’s Guide (ruby-doc.org)](https://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/instancevars.html) — นำเนื้อหาคุณสมบัติของ Instance Variables มาใช้<br><sub>ไม่พบวันที่เผยแพร่บนหน้าเว็บ; สืบค้นเมื่อวันที่ 1 กันยายน 2568</sub>
