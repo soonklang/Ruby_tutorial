@@ -131,9 +131,9 @@ int main() {
 output => equal 
 
 # Presentation
-
+[slide](https://docs.google.com/presentation/d/1bs3tXOc9rWy8w49l-Y00uwyh0OB6S_lqHPzg9z5e6E0/edit?usp=sharing)
 # Video
-
+[video](https://drive.google.com/file/d/17ZB2ciKd3NbCwmD5rUOibQi5NqX4FzBI/view?usp=drive_link)
 ### Reference 
 
 >Ruby
