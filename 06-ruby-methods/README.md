@@ -10,4 +10,4 @@
 
 
 ## แบบฝึกหัด
-- [Quiz]
+- [Quiz](https://github.com/soonklang/Ruby_tutorial/blob/main/06-ruby-methods/Quiz.md)
