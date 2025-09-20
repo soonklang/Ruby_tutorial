@@ -26,6 +26,7 @@ int main() {
 }
 ```
 
+#### Java
 ```java
 public class Main {
     // เมธอด
@@ -39,6 +40,7 @@ public class Main {
 }
 ```
 
+#### Python
 ```python
 def greet(name):
     print(f"Hello, {name}")
