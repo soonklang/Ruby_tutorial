@@ -25,7 +25,7 @@ str.chomp(separator = $/)
 "Umiri\r".chomp      # => "Umiri"
 "Umiri\n".chomp      # => "Umiri"
 "Umiri\r\n".chomp    # => "Umiri"      # \r\n ถูกตัดออก
-"Umiri\n\r".chomp    # => "Umiri\n\r"  # \n\r ไม่ถูกตัดออก
+"Umiri\n\r".chomp    # => "Umiri\n"    # \r ถูกตัดออกตัวเดียว
 "Umiri\t".chomp      # => "Umiri\t"    # \t ไม่ถูกตัดออก
 ```
 
