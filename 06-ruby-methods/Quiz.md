@@ -1,7 +1,7 @@
 # Quiz ประจำบท 
 
 ## Declaring and Calling Method
-
+### เขียนเมธอดชื่อ greet ที่รับชื่อ (string) เป็น argument แล้วพิมพ์ข้อความ
 
 ## Lambdas
 
