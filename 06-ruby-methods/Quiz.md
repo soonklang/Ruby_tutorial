@@ -26,6 +26,27 @@ int main() {
 }
 ```
 
+```java
+public class Main {
+    // เมธอด
+    static void greet(String name) {
+        System.out.println("Hello, " + name);
+    }
+
+    public static void main(String[] args) {
+        greet("Dean");
+    }
+}
+```
+
+```python
+def greet(name):
+    print(f"Hello, {name}")
+
+# เรียกใช้
+greet("Dean")
+```
+
 
 
 ## Lambdas
