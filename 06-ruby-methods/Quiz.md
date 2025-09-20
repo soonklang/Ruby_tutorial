@@ -2,7 +2,29 @@
 
 
 ## 1) เขียนเมธอดชื่อ greet ที่รับชื่อ (string) เป็น argument แล้วพิมพ์ข้อความออกมา
+#### Ruby
+```ruby
+def greet(name)
+  puts "Hello, #{name}"
+end
 
+# เรียกใช้
+greet("Dean")
+```
+
+#### C
+```c
+#include <stdio.h>
+
+void greet(char name[]) {
+    printf("Hello, %s\n", name);
+}
+
+int main() {
+    greet("Dean");
+    return 0;
+}
+```
 
 
 
