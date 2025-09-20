@@ -1,27 +1,38 @@
 # Quiz ประจำบท 
 
 
-## 1) เขียนเมธอดชื่อ greet ที่รับชื่อ (string) เป็น argument แล้วพิมพ์ข้อความออกมา
+## 1) เขียนเมธอดชื่อ factorial ที่รับค่าจำนวนเต็ม n และ return ค่าแฟกทอเรียล (n!) 
 #### Ruby
 ```ruby
-def greet(name)
-  puts "Hello, #{name}"
+# Declaring
+def factorial(n)
+  return 1 if n == 0
+  result = 1
+  (1..n).each { |i| result *= i }
+  result
 end
 
-# เรียกใช้
-greet("Dean")
+# Calling
+puts factorial(5)
 ```
 
 #### C
 ```c
 #include <stdio.h>
 
-void greet(char name[]) {
-    printf("Hello, %s\n", name);
+// Declaring
+long factorial(int n) {
+    if (n == 0) return 1;
+    long result = 1;
+    for (int i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
 }
 
 int main() {
-    greet("Dean");
+    // Calling
+    printf("%ld\n", factorial(5));
     return 0;
 }
 ```
@@ -29,24 +40,36 @@ int main() {
 #### Java
 ```java
 public class Main {
-    // เมธอด
-    static void greet(String name) {
-        System.out.println("Hello, " + name);
+    // Declaring
+    static long factorial(int n) {
+        if (n == 0) return 1;
+        long result = 1;
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
 
     public static void main(String[] args) {
-        greet("Dean");
+        // Calling
+        System.out.println(factorial(5));
     }
 }
 ```
 
 #### Python
 ```python
-def greet(name):
-    print(f"Hello, {name}")
+# Declaring
+def factorial(n):
+    if n == 0:
+        return 1
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
 
-# เรียกใช้
-greet("Dean")
+# Calling
+print(factorial(5))
 ```
 
 
