@@ -35,6 +35,7 @@ arr = [10,500,20,30,'c']
 เฉลย
 <details>
 4.arr.add(1)
+</details>
 
 เพราะ ในภาษา Ruby ไม่มี Method .add() ต้องใช้วิธีอื่นแทน เช่น .insert() หรือ .push() หรือ <<
 
