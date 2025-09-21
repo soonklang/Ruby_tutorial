@@ -40,7 +40,7 @@ arr = [10,500,20,30,'c']
 
 ---
 
--[ruby-array-comparisons] (09-advanced-ruby-arrays/ruby-array-comparisons.md)
+- [ruby-array-comparisons](09-advanced-ruby-arrays/ruby-array-comparisons.md)
 
 <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
 จงดูตัวอย่าง code ที่ให้มาแล้วตอบคำถามด้านล่างให้ถูกต้อง
@@ -58,3 +58,18 @@ puts float_A.eql?(B)
 Ans.
 
 ---
+
+- [pushing-and-popping-array-elements](09-advanced-ruby-arrays/pushing-and-popping-array-elements.md)
+##  จงบอกผลลัพธ์ของการ pop(3) ของ array นี้ ["Car","Bike","Plane","Train","Boat"]
+1. ["Plane","Train","Boat"]
+2. ["Boat","Train","Plane"]
+3. ["Train","Boat","Plane"]
+4. ["Boat","Plane","Train"]
+<details close>
+   <summary><b>เฉลย</b></summary>
+ <pre>1. ["Plane","Train","Boat"]
+ </pre>
+</details>
+
+---
+  
