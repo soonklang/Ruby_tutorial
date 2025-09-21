@@ -76,6 +76,55 @@ print(factorial(5))
 
 
 ## Lambdas
+## 2) ให้เขียนโปรแกรมใช้ Lambda (หรือ Anonymous Function) เพื่อคัดกรอง รายชื่อคนที่อายุมากกว่า 20 ปี จากลิสต์ที่เก็บเป็น (ชื่อ, อายุ) แล้วคืนผลลัพธ์เฉพาะชื่อคนที่ผ่านเงื่อนไข
+#### เฉลย
+#### Ruby
+``` ruby
+people = [["Alice", 19], ["Bob", 21], ["Charlie", 23]]
+adults = people.select { |p| p[1] > 20 }.map(&:first)
+puts adults.inspect
+```
+
+#### C
+``` c
+#include <stdio.h>
+
+int main() {
+    char *names[] = {"Alice", "Bob", "Charlie"};
+    int ages[] = {19, 21, 23};
+    for(int i=0; i<3; i++) {
+        if(ages[i] > 20) printf("%s ", names[i]);
+    }
+    return 0;
+}
+```
+
+#### Java
+``` java
+import java.util.*;
+import java.util.stream.*;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice","Bob","Charlie");
+        List<Integer> ages = Arrays.asList(19,21,23);
+
+        List<String> adults = IntStream.range(0, names.size())
+            .filter(i -> ages.get(i) > 20)
+            .mapToObj(names::get)
+            .toList();
+
+        System.out.println(adults);
+    }
+}
+```
+
+#### Python
+``` python
+people = [("Alice", 19), ("Bob", 21), ("Charlie", 23)]
+adults = list(map(lambda p: p[0], filter(lambda p: p[1] > 20, people)))
+print(adults)
+```
 
 
 ## Passing a Variable Number of Argument 
