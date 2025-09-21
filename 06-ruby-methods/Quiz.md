@@ -126,7 +126,7 @@ print([name for name,age in adults])
 ```
 
 
-## Passing a Variable Number of Argument 
+
 ## 3) ให้เขียนฟังก์ชัน statistics(*numbers) ที่รับจำนวนอาร์กิวเมนต์ไม่จำกัด และคืนค่าเป็น
 #### เฉลย
 #### Ruby
@@ -193,7 +193,7 @@ def statistics(*nums):
 print(statistics(3,7,2,9))
 ```
 
-## Passing Argument to a Method
+
 ## 4) เขียนฟังก์ชัน matrix_multiply(A, B) ที่รับเมทริกซ์ 2 ตัว (ในรูปแบบ 2D array/list) แล้วคืนค่าเป็นผลคูณของเมทริกซ์ (Matrix Multiplication) *ถ้าไม่สามารถคูณกันได้ ให้ return ค่าว่างหรือ error*
 #### เฉลย
 #### Ruby
@@ -281,7 +281,7 @@ B=[[7,8],[9,10],[11,12]]
 print(matrix_multiply(A,B))
 ```
 
-## Return a Value from a Function
+
 ## 5) เขียนฟังก์ชัน fibonacci(n) ที่ return ลำดับ Fibonacci ลำดับที่ n โดยใช้การเขียนแบบ recursive และทำให้โปรแกรมรองรับค่า n ที่มาก (เช่น n=40+) ได้ด้วย (แนะนำให้ใช้ memoization / dynamic programming)
 #### เฉลย
 #### Ruby
@@ -330,7 +330,7 @@ def fib(n):
 print(fib(10))
 ```
 
-## Method Aliases
+
 ## 6) ใน Ruby ให้สร้างเมธอด factorial(n) ที่หาค่าแฟกทอเรียลของ n แล้วสร้าง alias ชื่อ fact เพื่อให้เรียกแทนกันได้
 จากนั้นเขียนโปรแกรมทดสอบว่า
 	•	ใช้ factorial หาค่า 5!
