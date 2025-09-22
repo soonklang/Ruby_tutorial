@@ -176,7 +176,9 @@ H-e-l-l-o-m-y-w-o-r-l-d
 
 ```
 ### 6 เขียนโปรแกรมภาษา Ruby เพื่อตรวจสอบว่าสตริงที่ผู้ใช้ป้อนเข้ามาเป็น Palindrome หรือไม่ โดยใช้เมธอด .reverse()
-- Ruby
+<details close>
+   <summary><b>Ruby</b></summary> 
+   
 ```ruby
 def palindrome?(str)
   str == str.reverse
@@ -191,7 +193,12 @@ else
   puts "#{word} is not a palindrome."
 end
 ```
-- Java
+</details>
+
+
+<details close>
+   <summary><b>Java</b></summary> 
+   
 ```java
 import java.util.Scanner;
 
@@ -223,3 +230,4 @@ public class PalindromeChecker {
     }
 }
 ```
+</details>
