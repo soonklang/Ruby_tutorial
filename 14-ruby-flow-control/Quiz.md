@@ -169,3 +169,21 @@ console.log((wight >= 75) ? "fat" : "thin");
 ```java
 System.out.println((wight >= 75) ? "fat" :  "thin");
 ```
+## 3.พิจารณาโค้ด Ruby ต่อไปนี้
+
+```Ruby
+puts "Welcome!" if true
+puts "Bye!" if false
+```
+
+##### จะแสดง output ออกมาเป็น?
+A. Welcome! Bye!
+
+B. Welcome!
+
+C. Bye!
+
+D. ไม่มี output
+
+#### เฉลย
+คำตอบ: B
