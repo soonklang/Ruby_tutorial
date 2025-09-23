@@ -114,3 +114,27 @@ message = "Hello"
 message += " World"
 puts message
 ```
+
+## Bitwise Operators
+
+ให้ 
+```ruby
+x = 12
+y = 5
+```
+
+1. หาค่าของ x & y (AND)
+2. หาค่าของ x >> 2
+
+### เฉลย:
+
+> Ruby
+
+```ruby
+x = 12
+y = 5
+
+puts x & y  # 4
+puts x >> 2 # 3
+```
+
