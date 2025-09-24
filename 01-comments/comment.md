@@ -217,7 +217,7 @@ p 'hello'.encoding # => #<Encoding:Big5>
 -
 ------
 ### Presentation (slides)
--
+- https://www.canva.com/design/DAGz3svHDkE/N5zDIIe5zt8SlE6114rUJQ/edit?utm_content=DAGz3svHDkE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 ---
 ### Reference 
 - Commenting Ruby Code. (2016, October 27). Techotopia.https://www.techotopia.com/index.php/Commenting_Ruby_Code
