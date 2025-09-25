@@ -137,7 +137,7 @@ y = 5
 puts x & y  # 4
 puts x >> 2 # 3
 ```
-# # The Anatomy of a Ruby Operation
+# The Anatomy of a Ruby Operation
 ### ใน Ruby การดำเนินการทางคณิตศาสตร์ต่อไปนี้จะให้ค่าอะไร?
 ```ruby
 result = 10 + 5 * 2
@@ -147,3 +147,14 @@ result = 10 + 5 * 2
 > 
 **20**  เพราะลำดับการคำนวณ * มาก่อน + 
  5*2 = 10 → 10+10=20
+# Performing Ruby Arithmetic using Operators
+ผลลัพธ์ของโค้ดนี้คืออะไร?
+```ruby
+num = 2
+result = num ** 4
+puts result
+```
+เฉลย:
+> Ruby
+> 
+**16** เพราะ 2 ยกกำลัง 4 = 16
