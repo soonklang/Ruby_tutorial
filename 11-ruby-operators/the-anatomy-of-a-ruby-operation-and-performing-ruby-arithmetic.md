@@ -55,16 +55,17 @@
 		=> "=": การกำหนดค่า(Asssignment) เอาผลบวก2+3ไปเก็บไว้ในตัวแปร X
 ---
 ### สรุปผล:
+	ดังนั้น The Anatomy of a Ruby Operation ก็คือ การเข้าใจ “โครงสร้างของการคำนวณใน ว่ามีตัวประกอบอะไรบ้าง และทำงานอย่างไรตามลำดับ
 	จะเห็นและสังเกตุได้ว่าตัวดำเนินการหรือ Operation นั้นจะมีลักษณะที่คล้ายกันจะต่างกันตรงที่ภาษา 
 	C และ Java นั้นต้องกำหนด Data Type ให้ตัว Operand
 
 
 # Performing Ruby Arithmetic using Operators
-
 	ในภาษา Ruby เราสามารถนำตัวเลข (หรือค่าตัวแปร) มาดำเนินการ +,-, *, /, ฯลฯ 
-	โดยใช้เครื่องหมาย (operator) ได้โดยตรง ตัวอย่างเครื่องหมาย (Operators)
-	 ที่ใช้ในการคำนวณทางคณิตศาสตร์ใน Ruby:
-	 เปรียบเทียบ Arithmetic Operators 
+	โดยใช้เครื่องหมาย(operator)ได้โดยตรง ตัวอย่างเครื่องหมาย (Operators)
+ 	ที่ใช้ในการคำนวณทางคณิตศาสตร์ใน Ruby:
+ 	เปรียบเทียบ Arithmetic Operators ไม่ว่าจะเป็น จำนวนเต็ม (Integer) หรือ ทศนิยม (Float)
+
 	 
 ###  เครื่องหมายทางคณิตศาสตร์และความต่าง ระหว่าง Ruby, C, Java และ Python 
  ---
@@ -112,7 +113,8 @@
 		=> "**": คือตัวดำเนินการ
 		=> "=": การกำหนดค่า(Asssignment) เอาผลบวก2+3ไปเก็บไว้ในตัวแปร a
 ### สรุปผล
-
+	Performing Ruby Arithmetic using Operators คือการนำตัวดำเนินการคณิตศาสตร์ (+ - * / % **) มาใช้คำนวณค่าตัวเลขใน Ruby โดยทำงานตามลำดับคณิตศาสตร์ปกติ
+	
 	จะเห็นได้ว่าความต่างของภาษาจะมีแค่ Python และ Ruby สามารถใช้ " ** " ยกกกำลังได้เลยไม่เหมือนกับ C, Java 
 	ที่ต้องใช้ pow() และ Math.pow() โดยเฉพาะ pow()ของภาษา C และ Java ที่จะต้อง import จาก Library 
 	โดยของ ภาษา C จะใช้ #include <math.h> ส่วนภาษา
@@ -128,6 +130,6 @@
  - [Online Python Compiler (Interpreter) -Programiz](https://www.programiz.com/python-programming/online-compiler/)(ศึกษาและทดลอง Syntax  ภาษา Python  และ เปรียบเทียบความแตกต่าง)
 
 ### Presentation
-[Slide present.pdf](https://github.com/660710095/ProjectWebApp/blob/main/SCSU-Slide-6.pdf.pdf)(https://github.com/660710095/ProjectWebApp/blob/main/SCSU-Slide-6.pdf.pdf)
+[Slide present.pdf](https://github.com/660710095/ProjectWebApp/blob/main/SCSU-Slide-6.pdf.pdf)
 ### Video
 https://youtu.be/_gBakTKkG24
