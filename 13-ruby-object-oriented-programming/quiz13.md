@@ -42,6 +42,7 @@ puts cat.speak
 ## 3. Freezing Objects
 ### Q : เติมคำตอบที่ถูกต้องลงในช่องว่าง
 Const | Readonly | Freeze | Static | Final | Volatile | Frozen   
+  
 A): ______ ใช้ตรวจสอบว่า object ถูกทำให้ immutable แล้วหรือยัง  
 B): ______ คำสั่งใน Ruby ที่ทำให้ object ไม่สามารถแก้ไขได้  
 C): ______ คีย์เวิร์ดในภาษา Java ป้องกัน inheritance/override  
