@@ -125,6 +125,7 @@ if x in range(1, 11):
 ***
 
 ## Slide Presentation
+- [Slide](https://github.com/nueyy/video-slide-download/blob/main/650710837_Slide.pdf)
 
 ***
 
