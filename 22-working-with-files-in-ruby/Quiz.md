@@ -62,8 +62,8 @@ _____
 <details>
 <summary>เฉลย</summary>
 
-
-```File.open("Example.txt", "w") do |file|
+'''
+File.open("Example.txt", "w") do |file|
  file.puts "Hello Silpakorn sudhlor!"
 end
 ```
