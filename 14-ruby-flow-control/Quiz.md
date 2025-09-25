@@ -2,7 +2,7 @@
 
 ##  1.จงเขียน case Statement ของ Ruby เเละ Switch case ของ C,Java เเละ Match ของ Python
 
-กำหนดให้ int day = 6 ให้เขียนโค้ดรับวัน เเละเเสดงผลเป็น "Today is Saturday." ตามลำดับวันให้ครบทุกวันในสัปดาห์ โดยเริ่มที่วันจันทร์ เเละหากเลขที่รับมาไม่ใช่เลขที่ถูกต้องให้พิมพ์ "I think you might have remembered the number wrong."
+กำหนดให้ int day = 6 ให้เขียนโค้ดรับวัน เเละเเสดงผลเป็น "Today is Saturday." ตามลำดับวันให้ครบทุกวันในสัปดาห์ โดยเริ่มที่วันจันทร์ เเละหากเลขที่รับมาไม่ใช่เลขที่ถูกต้องให้พิมพ์ "You can only enter numbers between 1 and 6."
 
 ## เฉลย
 
@@ -33,7 +33,7 @@ when 6
 when 7  
   puts "Today is Sunday."
 else  
-  puts "I think you might have remembered the number wrong."
+  puts "You can only enter numbers between 1 and 6."
 
 end
 
@@ -70,7 +70,7 @@ int main() {
             printf("Today is Sunday.");
             break;
       default:
-            printf("I think you might have remembered the number wrong.");
+            printf("You can only enter numbers between 1 and 6.");
     }
 }
 
@@ -107,7 +107,7 @@ class Main
                 System.out.println("Today is Sunday.");
                 break;
             default:
-                System.out.println("I think you might have remembered the number wrong.");
+                System.out.println("You can only enter numbers between 1 and 6.");
         }
     }
 }
@@ -143,7 +143,7 @@ match day:
         print("Today is Sunday.")
 
     case _:
-        print("I think you might have remembered the number wrong.")
+        print("You can only enter numbers between 1 and 6.")
 
 ```
 ##  2.จงแปลง if else ต่อไปนี้เป็น ternary operator โดยใช้ภาษา java javascript python
