@@ -60,7 +60,7 @@ Ans.
 
 ---
 
-- [pushing-and-popping-array-elements](09-advanced-ruby-arrays/pushing-and-popping-array-elements.md)
+- [pushing-and-popping-array-elements](pushing-and-popping-array-elements.md)
 ##  จงบอกผลลัพธ์ของการ pop(3) ของ array นี้ ["Car","Bike","Plane","Train","Boat"]
 1. ["Plane","Train","Boat"]
 2. ["Boat","Train","Plane"]
