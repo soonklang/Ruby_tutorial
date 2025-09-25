@@ -40,6 +40,8 @@ os.remove(file_name)
 </details>
 
 ## 4. เติมโค้ดที่หายไป
+```ruby
 file = File.open("text.txt", "r")
 	puts file.read
 "_____"
+```
