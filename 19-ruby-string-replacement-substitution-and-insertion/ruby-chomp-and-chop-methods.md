@@ -438,9 +438,10 @@ Yahata        # ลบอักขระท้ายสุดออก
 
 # Video Presentation
 
+[Video](https://drive.google.com/file/d/1V2n8bbt8IfHTNr9HxKE6-P7AwaZfcMoo/view?usp=sharing)
 
 # Slide Presentation
-
+[Slide](https://www.canva.com/design/DAGzWE1bpBk/cKhg-2lFZ1C3URsyN-2ReA/edit?utm_content=DAGzWE1bpBk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 # Reference
 #### Ruby
