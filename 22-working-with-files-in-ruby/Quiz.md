@@ -55,3 +55,16 @@ _____
 <summary>เฉลย</summary>
 4.end
 </details>
+
+## 5. -   เขียนโค้ดตัวอย่างภาษา Ruby ที่สร้างไฟล์ชื่อ `Example.txt` แล้วเขียนข้อความ `"Hello Silpakorn sudhlor!"` ลงไป
+
+
+<details>
+<summary>เฉลย</summary>
+
+
+File.open("Example.txt", "w") do |file|
+ file.puts "Hello Silpakorn sudhlor!"
+end
+
+<details>
