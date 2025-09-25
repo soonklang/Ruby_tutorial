@@ -45,13 +45,13 @@ os.remove(file_name)
   2.times { puts f.gets }
 _____
 
-1.end
+1.;
 2.File.close
 3.File.closed?
-4.;
+4.end
 5.ไม่ใส่อะไรเลย
 ```
 <details>
 <summary>เฉลย</summary>
-1.end
+4.end
 </details>
