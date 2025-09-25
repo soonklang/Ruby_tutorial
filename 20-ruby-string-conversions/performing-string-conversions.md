@@ -123,13 +123,11 @@ puts 10.to_s(2)
 int main() {
     printf("%d\n", atoi("123abc"));  // String -> Integer
 
-    printf("%f\n", atof("456.7xyz"));  // String -> Integer
+    printf("%f\n", atof("456.7xyz"));  // String -> Float
 
     char A[20];
     sprintf(A, "%d", 789);  // Integer → String
     printf("%s\n", A);      
-
-    printf("%ld\n", strtol("1000", NULL, 2)); // เลขฐาน 2 -> ฐาน 10
 
     return 0;
 }
@@ -140,7 +138,6 @@ int main() {
 #Output >>> 123
             456.700000
             "789"
-            8
 
 ```
 
@@ -165,7 +162,6 @@ public class Main {
         System.out.println(Integer.toString("666"));    // toString
         
 
-        System.out.println(Integer.toString(10, 2)); // แปลงเลขฐาน จาก Integer -> String
     }
 }
 
@@ -175,7 +171,6 @@ public class Main {
 #Output >>> 444
             555.0
             "666"
-            1010
 
 ```
 
