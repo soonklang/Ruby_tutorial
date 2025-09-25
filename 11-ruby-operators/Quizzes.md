@@ -158,3 +158,15 @@ puts result
 > Ruby
 > 
 **16** เพราะ 2 ยกกำลัง 4 = 16
+
+# Logical Operators
+ผลลัพธ์ของโค้ดนี้คืออะไร?
+```ruby
+	puts true && false  
+	puts nil || "ok"     
+	puts !false
+```
+ผลลัพธ์
+>false
+>ok
+>true
