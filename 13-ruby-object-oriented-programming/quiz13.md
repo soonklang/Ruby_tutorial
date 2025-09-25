@@ -39,6 +39,18 @@ puts cat.speak
   #### เพื่อแก้ปัญหาจุดเเริ่มต้น (chicken-egg problem) ที่ทำให้สับสนว่า class ไหนเป็นจุดเริ่มต้น Ruby จึงตัดปัญหานี้ด้วยการทำให้ Class เป็น instance ของตัวเองเพื่อปิดวงจร
 </details>
 
+## 3. Freezing Objects
+### Q : เติมคำตอบที่ถูกต้องลงในช่องว่าง
+Const | Readonly | Freeze | Static | Final | Volatile | Frozen 
+A): ______ ใช้ตรวจสอบว่า object ถูกทำให้ immutable แล้วหรือยัง
+B): ______ คำสั่งใน Ruby ที่ทำให้ object ไม่สามารถแก้ไขได้
+C): ______ คีย์เวิร์ดในภาษา Java ป้องกัน inheritance/override
+<details>
+<summary> เฉลยข้อที่ 3. </summary>
+  
+  #### A): Frozen B): Freeze C): Final
+</details>
+
 ## 4. Instance Methods
 ```ruby
 class BankAccount
