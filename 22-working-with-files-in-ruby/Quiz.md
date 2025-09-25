@@ -44,5 +44,9 @@ os.remove(file_name)
  File.open("text.txt") do |f| 
   2.times { puts f.gets }
 "_____"
-"1.end 2.File.close 3.File.closed? 4.ไม่มีข้อถูก"
+
+"1.end
+2.File.close
+3.File.closed?
+4.ไม่มีข้อถูก"
 ```
