@@ -48,7 +48,7 @@ _____
 1.end
 2.File.close
 3.File.closed?
-4.ไม่มีข้อถูก
+4.ไม่ใส่อะไรเลย
 ```
 <details>
 <summary>เฉลย</summary>
