@@ -130,4 +130,4 @@ if x in range(1, 11):
 ***
 
 ## Video
-- [Video](https://github.com/nueyy/video-slide-download/blob/main/finish.mp4)
+- [Video](https://www.youtube.com/watch?v=aBKeur6dQyE)
