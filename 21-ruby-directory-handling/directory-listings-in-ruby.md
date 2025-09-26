@@ -167,8 +167,9 @@ for entry in obj:
 ```
 
 ## Silde
+[Directory Handling](https://drive.google.com/file/d/15zCwo99zdBPanqBuD1yQmf9L_6gcdrpG/view?usp=sharing)
 
-[https://drive.google.com/file/d/1GdAYLo9EEzj0NurM5HahxafmEykN5Ui-/view?usp=sharing](https://drive.google.com/file/d/1GdAYLo9EEzj0NurM5HahxafmEykN5Ui-/view?usp=sharing)
+[Directory Listings in Ruby](https://drive.google.com/file/d/1GdAYLo9EEzj0NurM5HahxafmEykN5Ui-/view?usp=sharing)
 
 ## Video
 
@@ -176,9 +177,12 @@ for entry in obj:
 
 ## ข้อมูลอ้างอิง
 
-Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.\
-docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)\
-Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. [https://www.techotopia.com/index.php/Ruby\_Directory\_Handling](https://www.techotopia.com/index.php/Ruby_Directory_Handling)\
+Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.
+\
+docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)
+\
+Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. [https://www.techotopia.com/index.php/Ruby\_Directory\_Handling](https://www.techotopia.com/index.php/Ruby_Directory_Handling)
+\
 GeeksforGeeks. (2021,11,18). Ruby | Dir Class and its methods. GeeksforGeeks. [https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/](https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/)
 
 GeeksforGeeks. (2025,7,23). C Program to list all files and sub-directories in a directory. GeeksforGeeks. [https://www.geeksforgeeks.org/c/c-program-list-files-sub-directories-directory/](https://www.geeksforgeeks.org/c/c-program-list-files-sub-directories-directory/)
