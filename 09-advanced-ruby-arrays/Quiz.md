@@ -1,6 +1,6 @@
 Quiz
 ---
-- [Combining Array](09-advanced-ruby-arrays/combining-ruby-arrays.md)
+- [Combining Array]([09-advanced-ruby-arrays/combining-ruby-arrays.md](https://github.com/soonklang/Ruby_tutorial/blob/main/09-advanced-ruby-arrays/combining-ruby-arrays.md))
   
 <mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
 ถ้าต้องการรวม Array เข้าด้วยกัน แต่ยังต้องใช้ Array ชุดเดิมอยู่โดยไม่ให้ถูฏแก้ไข ควรใช้วิธีใดใน Ruby?
