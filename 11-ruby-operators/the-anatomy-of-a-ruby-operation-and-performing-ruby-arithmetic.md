@@ -130,7 +130,8 @@
  - [Online Python Compiler (Interpreter) -Programiz](https://www.programiz.com/python-programming/online-compiler/)(ศึกษาและทดลอง Syntax  ภาษา Python  และ เปรียบเทียบความแตกต่าง)
 
 ### Presentation
-[SCSU-Slide-6.pdf.pdf](https://github.com/user-attachments/files/22551488/SCSU-Slide-6.pdf.pdf)
+
+[Anatomy of a Ruby Operation.pdf.pdf](https://github.com/user-attachments/files/22563412/Anatomy.of.a.Ruby.Operation.pdf.pdf)
 
 ### Video
 https://youtu.be/_gBakTKkG24
