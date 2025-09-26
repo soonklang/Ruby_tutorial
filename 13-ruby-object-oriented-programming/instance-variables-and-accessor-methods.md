@@ -28,18 +28,14 @@ end
 #### Java
 ```java
 public class Student{
-	// กำหนด instance variables
-    int id;
-    String firstName;
-    String lastName;
-    int age;
-	
-     // Constructor
-    public Student(int id, String firstName, String lastName, int age) {
+    // กำหนด instance variables
+    private int id;
+    private String name;
+
+    //Constuctor
+    public Student(int id, String name) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+        this.name = name;
     }
 }
 ```
@@ -50,12 +46,10 @@ public class Student{
 ```python
 class Student:
     # Constructor
-    def __init__(self, firstName, lastName, age, id):
+    def __init__(self, id, name):
         # กำหนด Instance variables
-        self.firstName = firstName
-        self.lastName = lastName
-        self.age = age
         self.id = id
+        self.name = name
 ```
 จากโค้ดด้านบน Instance Variables ของ Python จะประกาศข้างใน Constructor เหมือน Ruby แต่จะใช้ self. แทน @ หน้าชื่อตัวแปร
 
@@ -127,7 +121,7 @@ puts "ID #{student.getId()} #{student.getFirstName()} #{student.getLastName()} a
 ```java
 public class Student{
 	//กำหนด Instance variables 
-    int id; //ภายนอกคลาส สามารถเข้าถึงได้
+    private int id;
     private String firstName;
     private String lastName;
     private int age;
@@ -140,7 +134,11 @@ public class Student{
         this.age = age;
     }
     
-     // getters 
+     // getters
+	public int getId() { 
+    	return id; 
+    }
+
     public String getFirstName() { 
     	return firstName; 
     }
@@ -154,6 +152,10 @@ public class Student{
     }
 
     // setters
+	public void setId(int id){
+		this.id = id;
+	}
+
     public void setFirstname(String firstName) { 
     	this.firstName = firstName; 
     }
@@ -168,7 +170,8 @@ public class Student{
 
     public static void main(String[] args) {
         Student student = new Student(1, "Prayat", "Jutha",15);
-		System.out.println("ID " + student.id + " " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
+		System.out.println("ID " + student.getId() +
+		" " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
 		//output ID 1 Prayat Jutha age 15
     }
 }
@@ -219,9 +222,8 @@ class Student:
     def id(self, value):
         self.__id = value
 
-student1 = Student("Prayat", "Jutha", 15, 1)
-student1.__firstName = "Adison"
-print("ID", student1.id, student1.firstName, student1.lastName,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
+student = Student("Prayat", "Jutha", 15, 1)
+print("ID", student.id, student.firstName, student.lastName,"age" ,student.age) #output ID 1 Prayat Jutha age 15
 ```
 จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เป็นตัวแปรแบบ private เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ เมื่อลองเปรียบเทียบกับ Ruby จะเห็นว่า
 - ตัว getter จะมี @property decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self เข้ามา และต้องมี return นำหน้า instance variables ถึงจะสามารถส่งค่าออกไปได้ ไม่เหมือนภาษา Ruby ที่สามารถจะ return ค่าออกไปได้เลยเพียงแค่ประกาศ instance variables
