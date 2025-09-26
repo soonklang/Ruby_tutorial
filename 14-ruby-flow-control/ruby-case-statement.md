@@ -100,7 +100,6 @@ puts "The " + car  + " is made by "  + manufacturer
 โดยในตัวอย่างนี้ case จะรับค่า str ที่เป็น String นำไปตรวจสอบกับ when
 
 ```ruby
-print "Input from one, two, three, four: "  
 
 str = "two"
 # using case statement
@@ -131,7 +130,7 @@ end
 
 ```
 
-  Input from one, two, three, four: Input is 2
+ Input is 2
 ```
 
 </details>
@@ -144,7 +143,7 @@ end
 
 ```
 
-  Input from one, two, three, four: Default!
+Default!
 ```
 
 </details>
