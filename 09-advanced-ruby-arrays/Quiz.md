@@ -88,4 +88,26 @@ Ans.
 </details>
 
 ---
-  
+
+-[identifying-unique-array-element](https://github.com/soonklang/Ruby_tutorial/blob/main/09-advanced-ruby-arrays/identifying-unique-array-elements.md)
+## กำหนดให้ Array = [1, 3, 2, 4, 4, 5] ถ้าใช่ method unique ผลลัพธ์จะเป็นยังไง
+```ruby
+Code : 
+Array = [1, 3, 2, 4, 4, 5]
+puts Array.uniq
+```
+1. 1 2 3 4 5
+2. 1 3 2 4 5
+3. 3 4 5 1 2
+<details close>
+   <summary><b>เฉลย</b></summary>
+ <pre>1. 1 2 3 4 5 method uniq จะเรียงเลขจากน้อยไปมาก 
+   แต่ถ้าใช้ for loop 
+    arr = [1, 3, 2, 4, 4, 5]
+    arr_unique = []
+    arr.each { |element| arr_unique << element unless arr_unique.include?(element) } '
+    ผลลัพธ์ จะไม่เรียงค่าจากน้อยไปมาก แต่จะเรียงจากลำดับในอาเรย์
+ </pre>
+</details>
+
+---
