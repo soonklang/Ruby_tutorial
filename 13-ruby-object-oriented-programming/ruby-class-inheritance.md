@@ -165,52 +165,44 @@ test_obj.super_method
 
   </details>
   
-- ### C
-  ในภาษา C นั้นไม่มี class ทำให้ไม่มี concept การสืบทอด แต่ก็มีสิ่งคล้ายกับ class อยู่คือ struct โดยเราสามารถจำลองการสืบทอดโดยใช้ การเรียก struct ใน struct อีกทีได้
+- ### C++
+  การสืบทอดใน C++ สามารถทำได้โดยใช้ `class SubClass : access_specifier SuperClass`
 
   **ตัวอย่าง**
-  ```C
+  ```C++
 
-  #include <stdio.h>
-  #include <string.h>
-
-  // จำลองเป็น Superclass
-  typedef struct {
-    char name[50];
-  } Animal;
-
-  // จำลองเป็น Subclass
-  typedef struct {
-    Animal base;  // จำลอง inheritance
-  } Dog;
-
-  // method of Animal
-  void speak(Animal* a) {
-    printf("%s barks.\n", a->name);
-  }
-
-  // initializer of Animal
-  void initAnimal(Animal* a, const char* name) {
-    strncpy(a->name, name, sizeof(a->name));
-    a->name[sizeof(a->name) - 1] = '\0';
-  }
-
-  //initializer of Dog
-  void initDog(Dog* d, const char* name) {
-    initAnimal(&d->base, name); // เรียก initializer ของ Animal
-  }
-
-  int main() {
-    Dog dog;
-    initDog(&dog, "Dum");
-
-    // เรียก speak ของ Animal โดยการ cast 
-    speak((Animal*)&dog);
-
-    return 0;
-  }
-
+  #include <iostream>
+  using namespace std;
   
+  // Superclass
+  class ThisIsSuperClass {
+  public:
+      // Constructor
+      ThisIsSuperClass() {
+          cout << "Creating class" << endl;
+      }
+  
+      void super_method() {
+          cout << "Method of Superclass" << endl;
+      }
+  };
+  
+  // Subclass
+  class ThisIsSubClass : public ThisIsSuperClass {
+      
+  };
+  
+  int main() {
+  
+      ThisIsSuperClass obj1;
+  
+      ThisIsSubClass test_obj;
+  
+      test_obj.super_method();
+  
+      return 0;
+  }
+
   ```
 
 
@@ -218,7 +210,9 @@ test_obj.super_method
 
   <summary>Output</summary>
 
-  > Dum barks.
+  > Creating class\
+  > Creating class\
+  > Method of Superclass
 
   </details>
   
