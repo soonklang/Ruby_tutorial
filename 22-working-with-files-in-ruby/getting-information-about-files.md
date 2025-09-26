@@ -106,7 +106,7 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 ---
 
 ## Presentation (slides)
-(https://heyzine.com/flip-book/42660a64df.html)
+(file:///C:/Users/Guest-Student/Downloads/Getting%20Information%20About%20Files.pptx.pdf)
 
 ---
 
