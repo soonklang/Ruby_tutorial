@@ -497,6 +497,9 @@ text += ' World' : Hello World
 
 **เว็บไซต์บทความและบทเรียน**
 
+**Slide**
+https://www.canva.com/design/DAGzaYUQRXY/sd_Xt0HOMoc-PcCuazYirw/edit?utm_content=DAGzaYUQRXY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 * GeeksforGeeks. (ม.ป.ป.). Assignment Operators. จาก [https://www.geeksforgeeks.org/ruby/ruby-operators](https://www.geeksforgeeks.org/ruby/ruby-operators)
 * GeeksforGeeks. (ม.ป.ป.). Assignment Operators in Python. จาก [https://www.geeksforgeeks.org/python/assignment-operators-in-python](https://www.geeksforgeeks.org/python/assignment-operators-in-python)
 * Techotopia. (2024). Ruby Assignment Operators. จาก [https://www.techotopia.com/index.php/Ruby\_Operators](https://www.techotopia.com/index.php/Ruby_Operators)
