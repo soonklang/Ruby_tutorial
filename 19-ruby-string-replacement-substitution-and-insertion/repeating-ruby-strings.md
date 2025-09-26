@@ -89,4 +89,4 @@ class GFG {
 
 ### Presentation
 - Link video: https://youtu.be/8dbPTHl0muI
-- PDF: https://www.canva.com/design/DAGzbUsinJs/rc0WarpUD2s8tDT-AVXh_g/edit?utm_content=DAGzbUsinJs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- PDF: https://www.canva.com/design/DAGzbUsinJs/6BAmldi_u2VehAd3zWJ6Ow/view?utm_content=DAGzbUsinJs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9e6cbd0fde
