@@ -105,10 +105,13 @@
      NameError: name 'counter' is not defined
 
 # คลิปนำเสนอ
-https://www.canva.com/design/DAG0Ec1aiPo/GsltfVFqP4Ugo6q2yprEeA/view?utm_content=DAG0Ec1aiPo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6dbdc17ba4
+
+https://youtu.be/pg0vrgPqnDQ?feature=shared
 
 # Presentation (slides)
-...
+
+https://www.canva.com/design/DAG0Ec1aiPo/GsltfVFqP4Ugo6q2yprEeA/view?utm_content=DAG0Ec1aiPo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6dbdc17ba4
+
 # Reference from : 
 
 N.,“Variables – Ruby Course,” *The Odin Project*. [Online]. 
