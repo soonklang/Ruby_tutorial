@@ -208,11 +208,11 @@
 
   ---
   ## คลิปนำเสนอ
-Link video: https://www.youtube.com/watch?v=TQt67tODIHE
+Link video: https://www.youtube.com/watch?feature=shared&classId=9b29eaeb-1c1f-4e8b-b901-572b4811be7f&assignmentId=99f8e016-2dff-4668-a3a8-10ee39590798&submissionId=cbc3be0f-6a95-f95c-9003-2c90fa863a41&v=RIfxStgjX7I
 
   ---
   ## Presentation 
-Slide : https://www.canva.com/design/DAGyulWy8wY/A91tlL0g8gkbpjGUcDpeJA/edit?utm_content=DAGyulWy8wY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Slide : [640710144-phonchanok.pdf](https://github.com/user-attachments/files/22552245/640710144-phonchanok.pdf)
 
 
   ---
