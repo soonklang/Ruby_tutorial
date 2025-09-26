@@ -303,7 +303,7 @@ int main() {
 
 >
 ลิงค์การนำเสนอ: [Watch on YouTube](https://youtu.be/44L5qB1OxVs?si=Jys5uIfn0wRSc9Jk)
-
+slide : [click here](https://www.canva.com/design/DAGzVQN-xOk/gr-4ZWT_x1AmbVd9m1sj-A/edit?utm_content=DAGzVQN-xOk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ***
 
 ### Reference
