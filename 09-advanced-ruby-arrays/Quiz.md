@@ -1,4 +1,19 @@
 Quiz
+---
+- [Combining Array](09-advanced-ruby-arrays/combining-ruby-arrays.md)
+  
+<mark style ="background-color:#FFECA1;color:#000;border-radius:5px">โจทย์</mark>
+ถ้าต้องการรวม Array เข้าด้วยกัน แต่ยังต้องใช้ Array ชุดเดิมอยู่โดยไม่ให้ถูฏแก้ไข ควรใช้วิธีใดใน Ruby?
+1. concat
+2. <<
+3. .+
+4. append
+
+<details close>
+   <summary><b>เฉลย</b></summary>
+ <pre>3. +  เพราะ + จะสร้าง Array ใหม่ขึ้นมาเสมอ โดยไม่ไปแก้ไข Array ชุดเดิม
+ </pre>
+</details>
 
 ---
 
