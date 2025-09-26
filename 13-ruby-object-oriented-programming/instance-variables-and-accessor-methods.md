@@ -104,15 +104,15 @@ class Student
     @id = id
   end
 
-  def setFirstName(name) #Accessor Methods (setter) ของ @firstName
+  def setFirstName(firstName) #Accessor Methods (setter) ของ @firstName
     @firstName = firstName
   end
 
-  def setLastName(id) #Accessor Methods (setter) ของ @lastName
+  def setLastName(lastName) #Accessor Methods (setter) ของ @lastName
     @lastName = lastName
   end
 
-  def setAge(name) #Accessor Methods (setter) ของ @age
+  def setAge(age) #Accessor Methods (setter) ของ @age
     @age = age
   end
 end
