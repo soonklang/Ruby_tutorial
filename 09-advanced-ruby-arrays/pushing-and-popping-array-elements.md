@@ -92,144 +92,139 @@ p fruits
 
 ## เปรียบเทียบกับภาษาอื่น
 ### ภาษา C
-- ในภาษา C **array มีขนาดคงที่** ไม่สามารถ **push** หรือ **pop** ได้เหมือน Ruby
-- ถ้าต้องการเพิ่มหรือลบ ต้องใช้การจัดการหน่วยความจำ **malloc** ( กำหนดพื้นที่เริ่มต้น memory allocate ) / **realloc** ( กำหนดพื้นที่ใหม่ re-allocate )
-- โดยทั่วไปจะสร้าง **ฟังก์ชัน** push/pop ขึ้นมาเอง
+- ในภาษา C array ไม่สามารถ push หรือ pop ได้เหมือน Ruby
+- โดยทั่วไปจะสร้าง ฟังก์ชัน push/pop ขึ้นมาเอง
 
 ```c
-#include <stdio.h> // Libary สำหรับ printf
-#include <stdlib.h> // Libary สำหรับ malloc+realloc
+#include <stdio.h>
+#define MAX_SIZE 100
 
-// ฟังก์ชัน print array
-void printArr(int *arr, int size) {
-    printf("array : [");
-    for (int i = 0; i < size; i++) {
-        if (i) printf(", ");
-        printf("%d", arr[i]);
+int stack[MAX_SIZE];
+int top = 0;
+
+void push(int value) {
+    if (top >= MAX_SIZE - 1) {
+        printf("Stack overflow\n");
+        return;
     }
-    printf("]\n");
+    stack[++top] = value;
 }
 
-int main() {
-    int size = 0, capacity = 3; // กำหนด size ไว้ติดตามขนาด array ปัจจุบัน + สร้างตัวแปรกำหนดขนาด array
-    int *arr = malloc(capacity * sizeof(int)); // จองพื้นที่ขนาดint 3 ตัว (12 bytes )
-
-    // ทดลองเพิ่ม 3 ค่า 1,2,3
-    for (int v = 1; v <= 3; v += 1) {
-        // ตรวจสอบว่า array เต็มรึยัง ถ้าเต็มให้ *2 ขนาด array
-        if (size == capacity) {
-            capacity *= 2;
-            arr = realloc(arr, capacity * sizeof(int));
-        }
-        
-        // push ค่าลงไป
-        arr[size++] = v;
-        printArr(arr, size);
+int pop() {
+    if (top <= 0) {
+        printf("Stack underflow\n");
+        return -1;
     }
-
-    // pop ค่าสุดท้ายออกมา
-    int last = arr[--size];
-    printf("Pop: %d\n", last);
-    printArr(arr, size);
-
-    free(arr); //ปล่อย memory ที่จองไว้เมื่อไม่ได้ใช้แล้ว
-    return 0;
+    return stack[top--];
 }
 
+void main(){
+    push(5);
+    push(10);
+    push(20);
+
+    printf("all value in stack: ");
+    for(int i=1; i<=top; i++){
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+
+    int poppedValue = pop();
+
+    printf("pop value: %d\n", poppedValue);
+    printf("all value in stack after pop: ");
+    for(int i=1; i<=top; i++){
+        printf("%d ", stack[i]);
+    }
+    printf("\n");
+}
 ```
 <details close>
    <summary><b>Output</b></summary>
- <pre>array : [1]
-array : [1, 2]
-array : [1, 2, 3]
-Pop: 3
-array : [1, 2]
+ <pre>all value in stack: 5 10 20 
+pop value: 20
+all value in stack after pop: 5 10 
  </pre>
 </details>
-
-หลักการทำงานคือ
-- จองพื้นที่ใน memory
-- ถ้าจะ push ให้เช็คพื้นที่ว่าพอไหม ถ้าพอให้ เพิ่มค่าลงไปใน array ถ้าไม่พอให้เพิ่มขนาด array ก่อนแล้วค่อยเพิ่มค่าลง array
-- pop คือเอาค่าตัวสุดท้ายออกมาและทำการลดตัวนับขนาด array ลงไป 1
 
 ### ภาษา Java
-- ในภาษา java ไม่มี push หรือ pop ใน array ธรรมดา แต่มี libary ที่สามารถใช้ทำ ได้ทำเหมือนกันเลยนั้นคือ 
-Deque ( Double Ended Queue ) คู่กับ ArrayDeque
+- ในภาษา java ไม่มี push หรือ pop ใน array ธรรมดา
+- ต้องใช้ libary ตัวหนึ่งชื่อว่า Stack (java.util) หริอจะใข้ Arraylist (java.util) + add(), remove() ก็ได้
+- สร้างตัวแปรจาก class stack
 ```java
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.Stack;
+public class pushandpop {
+  public static void main(String[] args) {
+    Stack<Integer> stack = new Stack<>();
+    System.out.println(stack);
 
-class Main {
-    public static void main(String[] args) {
-        Deque<String> stack = new ArrayDeque<>();
-        //push
-        stack.push("Apple");   
-        stack.push("Banana");
-        stack.push("Kiwi");
-        
-        System.out.println(stack);
-        
-        //pop
-        System.out.println(stack.pop()); 
-        
-        System.out.println(stack);
-    }
+    stack.push(5);
+    stack.push(10);
+    stack.push(15);
+    System.out.println(stack);
+
+    int poppedValue = stack.pop();
+    System.out.println("Popped value: " + poppedValue);
+    System.out.println(stack);
+  }
 }
-
 ```
 <details close>
    <summary><b>Output</b></summary>
- <pre>array : [Kiwi, Banana, Apple]
-Kiwi
-[Banana, Apple]
+ <pre>[]
+[5, 10, 15]
+Popped value: 15
+[5, 10]]
  </pre>
 </details>
-
->Array ใน Deque ตัวที่ add เข้าไปล่าสุดจะอยู่ทางซ้ายของ array
 
 ### ภาษา Python
-ใน Python ไม่มี **push** และ **pop** ใน array ธรรมดา แต่ **list** ใน Python เป็น dynamic array (เหมือน Ruby array) ซึ่งมีเมธอดที่ใช้งานได้คล้ายกันอยู่ คือ append() กับ pop()
+ในภาษา Python ใช้ list เป็น dynamic array ซึ่งมีเมธอดที่ใช้งานได้คล้ายกันอยู่ คือ append() กับ pop()
 ```python
-fruits = ["Apple", "Banana", "Mango"]
-
-print(fruits)
-
+stack = []
 # push
-fruits.append("Orange")         
-print(fruits)
+stack.append(10)
+stack.append(20)
+stack.append(30)
+
+print(stack)
 
 # pop
-last = fruits.pop()              
-print("Pop:", last)
-print(fruits)
+poppedValue = stack.pop()
+print("Pop:", poppedValue)
 
-last = fruits.pop()           
-print("Pop:", last) 
-print(fruits)                    
+print(stack)                    
 ```
 <details close>
    <summary><b>Output</b></summary>
- <pre>['Apple', 'Banana', 'Mango']
-['Apple', 'Banana', 'Mango', 'Orange']
-Pop: Orange
-['Apple', 'Banana', 'Mango']
-Pop: Mango
-['Apple', 'Banana']
+ <pre>[10, 20, 30]
+Pop: 30
+[10, 20]
  </pre>
 </details>
+
+# สรุป
+
+| Language | Structure Used | Push (เพิ่มข้อมูล) | Pop (นำข้อมูลออก) | Notes |
+|----------|----------------|---------------------|--------------------|-------|
+| **Ruby** | `Array` (dynamic array) | `array.push(value)` หรือ `array << value` | `array.pop` | ใช้ง่าย มีเมธอดตรง ๆ |
+| **C**    | Array (manual implementation) | `stack[++top] = value;` | `value = stack[top--];` | ต้องเขียนโค้ดจัดการเอง (overflow/underflow) |
+| **Java** | `Stack<E>` (`java.util`) | `stack.push(value)` | `stack.pop()` | เป็นคลาสสำเร็จรูป ใช้งานง่าย แต่ปัจจุบันนิยม `ArrayList` + `add/remove` มากกว่า |
+| **Python** | `list` (dynamic array) | `list.append(value)` | `list.pop()` | `pop(index)` ได้ด้วย เช่น `pop(0)` |
 
 # Reference
 - [ push และ pop ของ ruby ] https://www.techotopia.com/index.php/Advanced_Ruby_Arrays
 - [ push และ pop ของ ruby ] https://www.studytonight.com/ruby/push-and-pop-in-ruby
 - [ push และ pop ของ ruby ] https://ruby-doc.org/core-2.7.2/Array.html#method-i-push
 - [ ภาษา C stack ] https://www.geeksforgeeks.org/c/implement-stack-in-c/
-- [ ภาษา C Dynamic array ] https://www.geeksforgeeks.org/c/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/
-- [ ภาษา java libary Deque] https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
-- [ ภาษา java libary ArrayDeque] https://docs.oracle.com/javase/8/docs/api/java/util/ArrayDeque.html
+- [ ภาษา C stack ] https://www.digitalocean.com/community/tutorials/stack-in-c
+- [ ภาษา java libary Stack] https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+- [ ภาษา java libary ArrayList] https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 - [ ภาษา python list] https://docs.python.org/3/tutorial/datastructures.html
 
 # *Slide*
-[Pushing and Popping Array Elements](https://github.com/user-attachments/files/22411652/PushAndPopArray.pdf)
+[Pushing and Popping Array Elements](https://github.com/user-attachments/files/22563022/PushingAndPoping.pdf)
+
 
 # *Video Presentation*
 [Video](https://youtu.be/Okpl21xvU2k)
