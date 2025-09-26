@@ -5,7 +5,9 @@
 
 
 #### Ruby
-
+<details close>
+   <summary><b>เฉลยภาษา Ruby</b></summary>
+    
 ```ruby
 # ใช้ String.new
 s1 = String.new("Steve Jobs")
@@ -23,10 +25,13 @@ puts s3
 puts s4
 
 ```
-
+</details>
 
 #### Python
 
+<details close>
+   <summary><b>เฉลยภาษา Python</b></summary>
+    
 ```python
 # ใช้ str() 
 s1 = str("Steve Jobs")
@@ -40,10 +45,13 @@ print(s2)
 print(s3)
 
 ```
-
+</details>
 
 #### Java
 
+<details close>
+   <summary><b>เฉลยภาษา Java</b></summary>
+    
 ```java
 public class StringExample {
     public static void main(String[] args) {
@@ -63,10 +71,14 @@ public class StringExample {
 }
 
 ```
+</details>
 
 
 #### C
 
+<details close>
+   <summary><b>เฉลยภาษา C</b></summary>
+    
 ```c
 #include <stdio.h>
 
@@ -84,6 +96,8 @@ int main() {
 }
 
 ```
+</details>
+
 ---
 ##  2.จงเขียนโปรแกรมให้แสดงคำว่า Albert Einstein said "I have no special talent. I am only passionately curious."โดยข้อความผลลัพธ์ต้องแสดงตัว " " ด้วย และกำหนดให้ใช้ภาษาRubyโดยใช้วิธี general delimited stringในการทำ พร้อมทั้งโปรแกรมที่แสดงผลแบบเดียวกันด้วยภาษา Python,Java & C (ไม่จำกัดวิธีในกรณี Python,Java & C)
 
