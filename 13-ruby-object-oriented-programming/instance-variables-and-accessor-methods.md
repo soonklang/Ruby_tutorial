@@ -111,7 +111,8 @@ class Student
   end
 end
 
-student = Student.new(1,"Prayat","Jutha",15)
+student = Student.new(1,"Haha","Jutha",15)
+student.setFirstName("Prayat")
 puts "ID #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}" #output ID 1 Prayat Jutha age 15
 ```
 
@@ -156,7 +157,7 @@ public class Student{
 		this.id = id;
 	}
 
-    public void setFirstname(String firstName) { 
+    public void setFirstName(String firstName) { 
     	this.firstName = firstName; 
     }
     
@@ -169,7 +170,8 @@ public class Student{
     }
 
     public static void main(String[] args) {
-        Student student = new Student(1, "Prayat", "Jutha",15);
+        Student student = new Student(1, "Haha", "Jutha",15);
+        student.setFirstName("Prayat");
 		System.out.println("ID " + student.getId() +
 		" " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
 		//output ID 1 Prayat Jutha age 15
@@ -182,11 +184,11 @@ public class Student{
 ```python
 class Student:
     def __init__(self, firstName, lastName, age, id):
-        # กำหนด Instance variables
-		self.__id = id
-        self.__firstName = firstName
-        self.__lastName = lastName
-        self.__age = age
+     # กำหนด Instance variables
+     self.__id = id
+     self.__firstName = firstName
+     self.__lastName = lastName
+     self.__age = age
 
     # getter
     @property
@@ -222,8 +224,10 @@ class Student:
     def id(self, value):
         self.__id = value
 
-student = Student("Prayat", "Jutha", 15, 1)
-print("ID", student.id, student.firstName, student.lastName,"age" ,student.age) #output ID 1 Prayat Jutha age 15
+student = Student("Haha", "Jutha", 15, 1)
+student.firstName = "Prayat"
+print("ID", student.id, student.firstName, student.lastName,"age" ,student.age)
+#output ID 1 Prayat Jutha age 15
 ```
 จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เป็นตัวแปรแบบ private เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ เมื่อลองเปรียบเทียบกับ Ruby จะเห็นว่า
 - ตัว getter จะมี @property decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self เข้ามา และต้องมี return นำหน้า instance variables ถึงจะสามารถส่งค่าออกไปได้ ไม่เหมือนภาษา Ruby ที่สามารถจะ return ค่าออกไปได้เลยเพียงแค่ประกาศ instance variables
