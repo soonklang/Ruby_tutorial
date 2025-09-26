@@ -167,7 +167,14 @@ arr1[size1++] = 12;
 </code></pre><hr><p>ใช้การเพิ่มสมาชิกทีละตัว แต่ข้อจำกัดคือไม่สามารถเพิ่ม Array ทั้งชุดเข้าไปเป็นสมาชิก "<strong>ชิ้นเดียว</strong>" ได้เหมือนกับการใช้  <strong><code>&#x3C;&#x3C;</code></strong> ในภาษา Ruby</p></td></tr></tbody></table>
 
 
+## Clip
+https://drive.google.com/file/d/1gm8TIL4jPfSRSjIfuSxhKktAY8WcOsSu/view?usp=sharing
 
+***
+## Slides
+[https://drive.google.com/file/d/1FJqvkssFTUQ71fzencj7Axf1WD4lHwfb/view?usp=sharing)](https://drive.google.com/file/d/1FJqvkssFTUQ71fzencj7Axf1WD4lHwfb/view?usp=sharing)
+
+***
 ## Reference
 
 ***
