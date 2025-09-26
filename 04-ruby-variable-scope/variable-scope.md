@@ -208,13 +208,11 @@
 
   ---
   ## คลิปนำเสนอ
-
-
+Link video: https://www.youtube.com/watch?v=TQt67tODIHE
 
   ---
   ## Presentation 
-
-
+Slide : https://www.canva.com/design/DAGyulWy8wY/A91tlL0g8gkbpjGUcDpeJA/edit?utm_content=DAGyulWy8wY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
   ---
