@@ -351,7 +351,7 @@ C
 
 ❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
 ## Presentation 
-
+https://drive.google.com/drive/folders/1kRDSQxWGpZfXGEgTTT0Lx1BLtrNOp98q
 ## Video 
 https://youtu.be/EX40kaLIDNU
 # Reference  
