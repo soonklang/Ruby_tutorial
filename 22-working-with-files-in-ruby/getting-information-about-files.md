@@ -106,7 +106,7 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 ---
 
 ## Presentation (slides)
-(https://silpakorn-my.sharepoint.com/:b:/g/personal/wisutruchira_p_su_ac_th/Edz2vFC9ne5PmaavFYzzX9EBGEue1XC521w7cxTDUZsg7Q?e=EkTJ7d)
+(https://silpakorn-my.sharepoint.com/:b:/g/personal/wisutruchira_p_su_ac_th/EVM_el-m8hFKtLUOrohj-UgBCSM-0-16JREit3Wc_iWOrg?e=TN97AV)
 
 ---
 
