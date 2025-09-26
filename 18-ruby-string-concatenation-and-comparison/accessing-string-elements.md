@@ -402,6 +402,10 @@
 
     print(myString.find("Planet")) # -1 => ไม่พบสตริงย่อยที่ต้องการค้นหา ❗
 
+# Presentation
+[Slide](https://drive.google.com/file/d/1FXD-bl0U6WpWWDbPO_IpDjafCEEjnc7Q/view?usp=sharing)
+[Video](https://youtu.be/NA81ocQvxh0?feature=shared)
+
 ## อ้างอิง
 
 > Ruby
