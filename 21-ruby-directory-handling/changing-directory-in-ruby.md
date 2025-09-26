@@ -68,8 +68,9 @@ os.chdir(path)
 ```
 
 ## Slide
+[Directory Handling](https://drive.google.com/file/d/15zCwo99zdBPanqBuD1yQmf9L_6gcdrpG/view?usp=sharing)
 
-[https://drive.google.com/file/d/10cdV5I0ejlBnO54zz7EJQb302A5\_mhf8/view?usp=sharing](https://drive.google.com/file/d/10cdV5I0ejlBnO54zz7EJQb302A5_mhf8/view?usp=sharing)
+[Changing Directory](https://drive.google.com/file/d/10cdV5I0ejlBnO54zz7EJQb302A5_mhf8/view?usp=sharing)
 
 ## Video
 
