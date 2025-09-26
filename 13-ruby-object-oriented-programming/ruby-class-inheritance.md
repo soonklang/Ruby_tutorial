@@ -601,7 +601,7 @@ obj.display "ONE", "TWO"
 
 ## Presentation
 - [Link video](https://www.youtube.com/watch?v=-LGrIUsAZHo)
-- [Slide](https://docs.google.com/presentation/d/12AQXTwxs6nZAg_m5MjcnqZ0vEBm_6qxs1V23kI7xu74/edit?usp=sharing)
+- [Slide](https://docs.google.com/presentation/d/1df6e9Z0_O4LLL6Ebmk4jCHPmBxxu7LS2rVSeKSmW5n0/edit?usp=sharing)
 
 
 
