@@ -23,18 +23,18 @@ end
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>1
+  <pre>1
 2
 3
 4
 5
-</code></pre>
+</pre>
 </details>
 
 >* while ต้องมี end ปิดเสมอ
 >* condition(เงื่อนไข) : มีค่าเป็นจริง(true) หรือเท็จ(false)
 >  
->    ตัวอย่างค่า condition เช่น true, false , 1<2 , !numbers.empty? && numbers.first < 4 , nil เป็นต้น
+>    ตัวอย่างค่า condition เช่น true, false , 1<2 , -1 , 20 , 1.0, !numbers.empty? && numbers.first < 4 , nil เป็นต้น
 >* do จะเขียนหรือไม่เขียนก็ได้
 
 ใน Ruby nil เป็นอ็อบเจ็กต์หนึ่งของคลาส NilClass และใช้สื่อถึงความว่างเปล่าหรือไม่มีข้อมูลในตัวแปรนั้น เช่นเดียวกับ null ใน java ,NULL ใน C,C++,nil ใน Go
@@ -53,10 +53,10 @@ puts i += 1 while i < 3
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>1
+  <pre>1
 2
 3
-</code></pre>
+</pre>
 </details>
 
 >เป็นการเขียนย่อแบบbasic syntax โดยไม่ต้องเขียน end
@@ -77,10 +77,10 @@ end while i < 3
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>i = 0
+  <pre>i = 0
 i = 1
 i = 2
-</code></pre>
+</pre>
 </details>
 
 **Return Value**
@@ -133,12 +133,12 @@ puts "Loop finished."
 ```
 <details open>
   <summary><strong>Output</strong></summary>
-  <pre><code>The number is: 1
+  <pre>The number is: 1
 The number is: 2
 The number is: 3
 The number is: 4
 The number is: 5
-Loop finished.</code></pre>
+Loop finished.</pre>
 </details>
 
 **Python**
@@ -149,7 +149,6 @@ while i <= 5:
     i += 1
 print("Loop finished.")
 ```
-> สิ่งที่ต่างจากRubyคือ
 >* การใช้เครื่องหมาย : ต่อท้ายเงื่อนไขของ while
 >* ใช้ indentation ในการบอกขอบเขต
 
@@ -167,7 +166,6 @@ public class WhileLoopExample {
     }
 }
 ```
-> สิ่งที่ต่างจากRubyคือ
 >* เงื่อนไขของต้องอยู่ในวงเล็บ ()
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
 
@@ -184,9 +182,17 @@ int main() {
     return 0; //คือการบอก Operating System ว่าโปรแกรมทำงานเสร็จสิ้นโดยไม่มีข้อผิดพลาด ซึ่งเป็นมาตรฐานของภาษา C
 }
 ```
-> สิ่งที่ต่างจากRubyคือ
 >* เงื่อนไขของต้องอยู่ในวงเล็บ ()
 >* ใช้ {} เพื่อกำหนดขอบเขตของ loop
+
+<details open>
+  <summary><strong>Note! ข้อควรระวังการพิจารณาเงื่อนไข</strong></summary>
+  <pre>- Ruby: 0 เป็น true 
+- Python: 0 เป็น false
+- Java: บังคับใช้ boolean เท่านั้น ไม่สามารถใช้ 0 แทน false ได้
+- C: 0 เป็น false</pre>
+</details>
+
 
 ### References
 Ruby
@@ -212,7 +218,9 @@ C
 * W3Schools. (n.d.). C while loop. W3Schools. Retrieved August 30, 2025, from https://www.w3schools.com/c/c_while_loop.php
 
 ### Presentation
-[RUBY_WHILE_LOOP.pdf](https://github.com/user-attachments/files/22409811/RUBY_WHILE_LOOP.pdf)
+[RUBY_WHILE_LOOP.pdf](https://github.com/user-attachments/files/22560823/RUBY_WHILE_LOOP.pdf)
+
+[RUBY_WHILE_LOOP.pptx](https://silpakorn-my.sharepoint.com/:p:/g/personal/ruangvittayanon_c_su_ac_th/Ec6hvAMEbUFBtyA93PSZS4sBl8EW0h7qxgCLmVzSe282Yg?e=YEpMhU&nav=eyJzSWQiOjI3OCwiY0lkIjoxNjU0ODcyNTgwfQ)
 
 ### Video
 https://youtu.be/Av6HNJVW-Qw
