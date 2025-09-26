@@ -216,7 +216,7 @@ https://youtu.be/z54FbR1mO6U?si=kN5GkVGdoC80Hh2j
 
 ## Slide
 
-https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch_k3_su_ac_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?e=Sh4soL
+https://silpakorn-my.sharepoint.com/:p:/g/personal/khumpetch_k3_su_ac_th/EdMgRIPvTTlEnaUeF1RFW6oBuqsYBzoTdBVaddbKbhkqkw?e=Sh4soL](https://drive.google.com/file/d/1o2KjdagCPbFtgvyvnWcngFjVKvxkiR98/view?usp=drivesdk
 
 ## Reference
 
