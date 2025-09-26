@@ -8,4 +8,4 @@
 - [Ruby chomp and chop Methods](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/ruby-chomp-and-chop-methods.md)
 - [Reversing the Characters in a String](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/reversing-the-characters-in-a-string.md)
 ## แบบฝึกหัด
-- [Practice19](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/Practice19.md)
+- [quiz-19](https://github.com/soonklang/Ruby_tutorial/blob/main/19-ruby-string-replacement-substitution-and-insertion/19-quiz.md)
