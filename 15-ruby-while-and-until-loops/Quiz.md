@@ -128,12 +128,12 @@ while true do
 end
 ``` 
 <details open>
-  <summary><strong>Output</strong></summary>
-  <pre><code>"greeting": 0 times
-"hello": 0 times
+  <summary><strong>Answer</strong></summary>
+  <pre><code>"greeting": 0 time
+"hello": 0 time
 "sawasdee": 8 times
 "aloha": 4 times
-"Hawaii": 0 times
+"Hawaii": 0 time
 </code></pre>
 </details>
 
