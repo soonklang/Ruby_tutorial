@@ -1,5 +1,14 @@
 ## Acessing String Elements
-
+จงเติม [...] ให้ถูกต้อง ถ้าต้องการตัวอักขระ 'W' ใน Hello World
+```
+myString = "Hello World"
+p myString[...]
+```
+<details close>
+<summary><b>Answer</b></summary>
+  <pre>6
+  </pre>
+</details>
 
 ## Case Insensitive String Compairsions
 
