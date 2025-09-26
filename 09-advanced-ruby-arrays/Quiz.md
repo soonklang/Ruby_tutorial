@@ -101,12 +101,8 @@ puts Array.uniq
 3. 3 4 5 1 2
 <details close>
    <summary><b>เฉลย</b></summary>
- <pre>1. 1 2 3 4 5 method uniq จะเรียงเลขจากน้อยไปมาก 
-   แต่ถ้าใช้ for loop 
-    arr = [1, 3, 2, 4, 4, 5]
-    arr_unique = []
-    arr.each { |element| arr_unique << element unless arr_unique.include?(element) } '
-    ผลลัพธ์ จะไม่เรียงค่าจากน้อยไปมาก แต่จะเรียงจากลำดับในอาเรย์
+ <pre>2. 1 3 2 4 5 
+   เพราะ method .uniq จะรักษาลำดับของข้อมูล
  </pre>
 </details>
 
