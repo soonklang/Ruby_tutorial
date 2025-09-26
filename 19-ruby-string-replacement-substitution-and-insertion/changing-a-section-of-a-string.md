@@ -272,7 +272,9 @@ public class Main {
  
 </details>
 
-ลิงค์การนำเสนอ : [watch on youtube](https://youtu.be/WYVeaN4HimU?si=sYP7kc0u34clKxp0)
+คลิปวิดีโอการนำเสนอ : [watch on youtube](https://youtu.be/WYVeaN4HimU?si=sYP7kc0u34clKxp0)
+
+ไฟล์การนำเสนอ : [Canva](https://www.canva.com/design/DAGywD4Tvq0/8TKjKMbw5d-cRDdepQNW-Q/edit?utm_content=DAGywD4Tvq0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 ## Reference 
