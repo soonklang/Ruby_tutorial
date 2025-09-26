@@ -29,7 +29,8 @@ str.insert(index, other_str)
 
 ```ruby
 str = "Helloworld" 
-str.insert(5, "my") 
+str.insert(5, "my")
+puts str 
 ```
 
 **Output :**
@@ -42,7 +43,8 @@ Hellomyworld
 
 ```ruby
 str = "Helloworld" 
-str.insert(-2, "my") 
+str.insert(-2, "my")
+puts str 
 ```
 
 **Output :**
