@@ -107,7 +107,8 @@ int main() {
 Hellomyworld
 ```
 
-* ใช้ **function memmove()** ในการขยับข้อความเดิมและใช้ **function memcpy()** ในการแทรกข้อความใหม่ลงไปในข้อความเดิม
+* ใช้ **function memmove()** ในการขยับ String เดิมและใช้ **function memcpy()** ในการแทรก String ใหม่ลงไปใน String เดิม
+
 
 ## ภาษา Java
 
