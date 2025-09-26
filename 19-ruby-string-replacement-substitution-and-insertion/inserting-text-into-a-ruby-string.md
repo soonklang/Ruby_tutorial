@@ -182,24 +182,23 @@ Hellomyworld
 
 **Ruby**
 
-Techotopia. (n.d.). _Ruby String Replacement, Substitution and Insertion: Inserting Text into a Ruby String_. Techotopia. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.techotopia.com/index.php/Ruby\_String\_Replacement,\_Substitution\_and\_Insertion#Inserting\_Text\_into\_a\_Ruby\_String](https://www.techotopia.com/index.php/Ruby_String_Replacement,_Substitution_and_Insertion?utm_source=chatgpt.com#Inserting_Text_into_a_Ruby_String)
+Techotopia. (n.d.). Ruby String Replacement, Substitution and Insertion: Inserting Text into a Ruby String. Techotopia. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.techotopia.com/index.php/Ruby_String_Replacement,_Substitution_and_Insertion#Inserting_Text_into_a_Ruby_String
 
-GeeksforGeeks. (n.d.). _Ruby String insert method_. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.geeksforgeeks.org/ruby/ruby-string-insert-method/](https://www.geeksforgeeks.org/ruby/ruby-string-insert-method/?utm_source=chatgpt.com)
+GeeksforGeeks. (n.d.). Ruby String insert method. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.geeksforgeeks.org/ruby/ruby-string-insert-method/
 
-Ruby Documentation. (2025). _String#insert (Ruby 3.3.6)_. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://ruby-doc.org/3.3.6/String.html#method-i-insert](https://ruby-doc.org/3.3.6/String.html?utm_source=chatgpt.com#method-i-insert)
+Ruby Documentation. (n.d.) . String#insert (Ruby 3.3.6). สืบค้นเมื่อ 1 กันยายน 2025, จาก https://ruby-doc.org/3.3.6/String.html#method-i-insert
+
 
 **Others**
 
-GeeksforGeeks. (2025, July 12). _How to append a character to a string in C?_ GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.geeksforgeeks.org/c/how-to-append-a-character-to-a-string-in-c/](https://www.geeksforgeeks.org/c/how-to-append-a-character-to-a-string-in-c/?utm_source=chatgpt.com)
+GeeksforGeeks. (n.d.) .How to append a character to a string in C? GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.geeksforgeeks.org/c/how-to-append-a-character-to-a-string-in-c/
 
-FromDev. (2025, December). _Using memmove for string manipulation_. FromDev. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.fromdev.com/2025/12/using-memmove-for-string-manipulation.html](https://www.fromdev.com/2025/12/using-memmove-for-string-manipulation.html?utm_source=chatgpt.com)
+FromDev. (n.d.) .Using memmove for string manipulation. FromDev. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.fromdev.com/2025/12/using-memmove-for-string-manipulation.html 
 
-GeeksforGeeks. (2025, July 23). _Java program to add characters to a string_. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.geeksforgeeks.org/java/java-program-to-add-characters-to-a-string/](https://www.geeksforgeeks.org/java/java-program-to-add-characters-to-a-string/?utm_source=chatgpt.com)
+GeeksforGeeks. (n.d.) . Java program to add characters to a string. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.geeksforgeeks.org/java/java-program-to-add-characters-to-a-string/
 
-GeeksforGeeks. (2025, July 23). _Insert a variable into a string - Python_. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก [https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/](https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/?utm_source=chatgpt.com)
+GeeksforGeeks. (n.d.).Insert a variable into a string - Python. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/
 
-***
-## Presentations
 
 
 [inserting-text-into-a-ruby-string](https://docs.google.com/presentation/d/1DY5siqHeZF-AFTbB6o60rhAtFYePgG4nB9RKn8YCgyE/edit?usp=sharing)
