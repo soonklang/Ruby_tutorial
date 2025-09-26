@@ -887,7 +887,7 @@ C
   [https://www.geeksforgeeks.org/c/sprintf-in-c/](https://www.geeksforgeeks.org/c/sprintf-in-c/)
 
 ## Presentation
-- [Slide] [Uploading Using Range Method.pdf…]()
+- [Slide] ([Uploading Using Range Method.pdf…])
 
 ## Video
 
