@@ -113,4 +113,17 @@ if x > 5:
 * https://actuallyashley.medium.com/understanding-ruby-if-else-statements-c234157e2f5e 
 * https://www.w3schools.com/c/c_conditions.php 
 * https://www.w3schools.com/java/java_conditions.asp 
-* https://www.w3schools.com/python/python_conditions.asp 
+* https://www.w3schools.com/python/python_conditions.asp
+
+---
+
+### Presentation
+
+* canva link: https://www.canva.com/design/DAGzV-Xm9ME/-DBD74CpPYuKZTpp9tSYuw/edit?utm_content=DAGzV-Xm9ME&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+---
+
+
+
+
+
