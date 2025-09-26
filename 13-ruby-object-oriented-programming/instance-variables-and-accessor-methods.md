@@ -28,7 +28,7 @@ end
 #### Java
 ```java
 public class Student{
-	# กำหนด instance variables
+	// กำหนด instance variables
     int id;
     String firstName;
     String lastName;
@@ -118,7 +118,7 @@ class Student
 end
 
 student = Student.new(1,"Prayat","Jutha",15)
-puts "id #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}" #output id 1 Prayat Jutha age 15
+puts "ID #{student.getId()} #{student.getFirstName()} #{student.getLastName()} age #{student.getAge()}" #output ID 1 Prayat Jutha age 15
 ```
 
 จากโค้ด เมื่อมี methods getter และ setter ก็จะสามารถเข้าถึง Instance Variables นอกคลาสได้แล้วผ่านการเรียกใช้ Accessor Methods ทีนี้เราลองเปรียบเทียบกับภาษาอื่นกัน
@@ -168,9 +168,8 @@ public class Student{
 
     public static void main(String[] args) {
         Student student = new Student(1, "Prayat", "Jutha",15);
-        System.out.println("Id " + student.id);
-		System.out.println(student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
-		//output id 1 Prayat Jutha age 15
+		System.out.println("ID " + student.id + " " + student.getFirstName() + " " + student.getLastName() + " age " + student.getAge() );
+		//output ID 1 Prayat Jutha age 15
     }
 }
 ```
@@ -181,18 +180,18 @@ public class Student{
 class Student:
     def __init__(self, firstName, lastName, age, id):
         # กำหนด Instance variables
+		self.__id = id
         self.__firstName = firstName
         self.__lastName = lastName
         self.__age = age
-        self.__id = id
 
     # getter
     @property
-    def firstname(self):
+    def firstName(self):
         return self.__firstName
 
     @property
-    def lastname(self):
+    def lastName(self):
         return self.__lastName
 
     @property
@@ -204,12 +203,12 @@ class Student:
         return self.__id
 
     # setter
-    @firstname.setter
-    def firstname(self, value):
+    @firstName.setter
+    def firstName(self, value):
         self.__firstName = value
 
-    @lastname.setter
-    def lastname(self, value):
+    @lastName.setter
+    def lastName(self, value):
         self.__lastName = value
 
     @age.setter
@@ -222,7 +221,7 @@ class Student:
 
 student1 = Student("Prayat", "Jutha", 15, 1)
 student1.__firstName = "Adison"
-print("ID", student1.id, student1.firstname, student1.lastname,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
+print("ID", student1.id, student1.firstName, student1.lastName,"age" ,student1.age) #output ID 1 Prayat Jutha age 15
 ```
 จากโค้ดด้านบน เนื่องจากภาษา Python อนุญาติให้ภายนอกคลาสเข้าถึงตัวแปรได้โดยตรง ไม่เหมือนกับภาษา Ruby แต่ถึงอย่างนั้น Python ก็มีวิธีที่ทำให้คล้ายกันนั้นก็คือ การเพิ่ม "_" 2 ตัว นำหน้า instance variable เป็นตัวแปรแบบ private เพื่อไม่ให้ภายนอกคลาสสามารถอ้างอิงถึงตัวแปรได้ เมื่อลองเปรียบเทียบกับ Ruby จะเห็นว่า
 - ตัว getter จะมี @property decorator ก่อนที่จะสร้าง methods โดยตัว methods ต้องรับ self เข้ามา และต้องมี return นำหน้า instance variables ถึงจะสามารถส่งค่าออกไปได้ ไม่เหมือนภาษา Ruby ที่สามารถจะ return ค่าออกไปได้เลยเพียงแค่ประกาศ instance variables
@@ -254,8 +253,8 @@ puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.ag
 #output id 1 Prayat Jutha age 15
 
 student.firstName = "Taksan"
-puts "id #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
-#output id 1 Taksan Jutha age 15
+puts "ID #{student.id} #{student.firstName} #{student.lastName} age #{student.age}"
+#output ID 1 Taksan Jutha age 15
 ```
 จากโค้ดจะเห็นได้ชัดว่า โค้ดมีขนาดที่ลดลงแต่ก็มีการทำงานไม่ต่างจากเดิม และเนื่องจากภาษาอื่นไม่มีวิธีการเช่นเดียวกันเช่นนี้เหมือนกับ Ruby ทำให้ Ruby มีความยืดหยุ่นของภาษาและสามารถช่วยทำให้เขียนได้ง่ายขึ้นอีกด้วย
 
