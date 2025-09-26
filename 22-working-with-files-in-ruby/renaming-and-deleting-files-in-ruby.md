@@ -42,6 +42,25 @@ Error: No such file or directory @ unlink_internal - not_found.txt
 int rename (const char *old_name, const char *new_name); //การเปลี่ยนชื่อไฟล์
 int remove(const char *filename); //การลบชื่อไฟล์
 //  return 0 ถ้าสำเร็จ, -1 ถ้าไม่สำเร็จ
+
+int main() {
+    // เปลี่ยนชื่อไฟล์จาก old.txt เป็น new.txt
+    if (rename("old.txt", "new.txt") == 0) {
+        printf("เปลี่ยนชื่อไฟล์จาก old.txt เป็น new.txt สำเร็จ\n");
+    } else {
+        printf("เปลี่ยนชื่อไฟล์ไม่สำเร็จ\n");
+    }
+
+    // ลบไฟล์ new.txt
+    if (remove("new.txt") == 0) {
+        printf("ลบไฟล์ new.txt สำเร็จ\n");
+    } else {
+        printf("ลบไฟล์ไม่สำเร็จ\n");
+    }
+
+    return 0;
+}
+
 ```
 
 * ภาษา Java
@@ -98,7 +117,7 @@ print("File deleted successfully!")
 https://drive.google.com/file/d/1RvlmTlayOFTWhjCjcbvYDroguMhvhhY9/view?usp=sharing
 
 ## สไลด์บรรยาย
-https://drive.google.com/file/d/1CZgXD_weGJboQ1X0CYYug__NEfzDMeR6/view?usp=sharing
+[https://drive.google.com/file/d/1CZgXD_weGJboQ1X0CYYug__NEfzDMeR6/view?usp=sharing](https://drive.google.com/file/d/1wRVUg_bEPqmv09mKKxZiaQDRZx45FBqV/view?usp=sharing)
 
 ## แหล่งที่มา
 GeeksforGeeks. (2019, November 29). File handling in Ruby. GeeksforGeeks. https://www.geeksforgeeks.org/ruby/file-handling-in-ruby/
