@@ -106,7 +106,7 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 ---
 
 ## Presentation (slides)
-(file:///C:/Users/Guest-Student/Downloads/Getting%20Information%20About%20Files.pptx.pdf)
+(https://silpakorn-my.sharepoint.com/:b:/g/personal/wisutruchira_p_su_ac_th/Edz2vFC9ne5PmaavFYzzX9EBGEue1XC521w7cxTDUZsg7Q?e=EkTJ7d)
 
 ---
 
