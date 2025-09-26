@@ -110,7 +110,7 @@ except Exception as e:
 
 ## Slide
 
-[https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing](https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing)
+[Creating New Directories](https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing)
 
 ## Video
 
@@ -118,9 +118,12 @@ except Exception as e:
 
 ## ข้อมูลอ้างอิง
 
-Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.\
-docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)\
-Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. [https://www.techotopia.com/index.php/Ruby\_Directory\_Handling](https://www.techotopia.com/index.php/Ruby_Directory_Handling)\
+Skoglund, K. (2015). Ruby Pocket Reference( 2nd ). O'Reilly Media.
+\
+docs ruby. (n.d.). class Dir. docs ruby. [https://docs.ruby-lang.org/en/master/Dir.html](https://docs.ruby-lang.org/en/master/Dir.html)
+\
+Techotopia. (2016,10,27). Ruby Directory Handling. Techotopia. [https://www.techotopia.com/index.php/Ruby\_Directory\_Handling](https://www.techotopia.com/index.php/Ruby_Directory_Handling)
+\
 GeeksforGeeks. (2021,11,18). Ruby | Dir Class and its methods. GeeksforGeeks. [https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/](https://www.geeksforgeeks.org/ruby/ruby-dir-class-and-its-methods/)
 
 GeeksforGeeks. (2022,11,30). Create Directory or Folder with C/C++ Program. GeeksforGeeks. [https://www.geeksforgeeks.org/linux-unix/create-directoryfolder-cc-program/](https://www.geeksforgeeks.org/linux-unix/create-directoryfolder-cc-program/)
