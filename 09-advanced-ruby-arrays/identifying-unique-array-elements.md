@@ -231,7 +231,7 @@ Unique แปลว่า เอกลักษณ์ ถ้าเอามา�
 # Presentation
 [slide](https://drive.google.com/file/d/1wld_JeFzOLGkEzij3kKvOm67_Wjz3TZt/view?usp=sharing)
 
-#Video
+# Video
 [video](https://youtu.be/tpjBV9vmna4)
 # อ้างอิง
 > Ruby
