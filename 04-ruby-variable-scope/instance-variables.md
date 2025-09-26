@@ -352,6 +352,8 @@ C
 ❖ debug ยากเพราะไม่มีการประก่ศtypeล่วงหน้า  
 ## Presentation 
 https://drive.google.com/drive/folders/1kRDSQxWGpZfXGEgTTT0Lx1BLtrNOp98q
+
+https://drive.google.com/file/d/1DBPaKivo34SDSMB0fcYxa891-_DxKU2Y/view?usp=drivesdk
 ## Video 
 https://youtu.be/EX40kaLIDNU
 # Reference  
