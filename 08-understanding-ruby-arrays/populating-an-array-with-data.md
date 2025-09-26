@@ -301,3 +301,4 @@ else:
 
 # Presentation
 - *<https://youtu.be/8qsBNbWNihg>*
+- *<https://www.canva.com/design/DAGzarj1YdI/GGNVBmPPWUHLS7DsB9jgbg/edit?utm_content=DAGzarj1YdI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>*
