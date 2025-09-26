@@ -325,7 +325,7 @@ c.roar
   // Superclass
   class Lion {
   public:
-      virtual void roar() {
+      void roar() {
           cout << "ROAR!";
       }
   };
@@ -333,7 +333,7 @@ c.roar
   // Subclass
   class Cat : public Lion {
   public:
-      void roar() override { // Overriding
+      void roar() { // Overriding
           cout << "meow!";
       }
   };
@@ -497,7 +497,7 @@ obj.display "ONE", "TWO"
   
   class Super_Original {
   public:
-       void display(const string &a = "", const string &b = "") {
+       void display(string a = "",string b = "") {
           cout << "Parent class, 1st Parameter: " << a
                << ", 2nd Parameter: " << b << endl;
       }
@@ -505,7 +505,7 @@ obj.display "ONE", "TWO"
   
   class Super_Copy : public Super_Original {
   public:
-      void display(const string &a, const string &b)  {
+      void display(string a,string b)  {
           // super               
           Super_Original::display();  
           
@@ -534,14 +534,12 @@ obj.display "ONE", "TWO"
 
   <summary>Output</summary>
 
-   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
-   > Parent class, 1st Parameter: ONE, 2nd Parameter: (null)\
-   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO\
-   > Parent class, 1st Parameter: (null), 2nd Parameter: (null)\
+   > Parent class, 1st Parameter: , 2nd Parameter: \
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: \
+   > Parent class, 1st Parameter: ONE, 2nd Parameter: TWO \
+   > Parent class, 1st Parameter: , 2nd Parameter: \
    > This is subclass method
-
-
-
+   
   </details>
   
 ---
