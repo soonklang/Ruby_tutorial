@@ -314,56 +314,37 @@ c.roar
   > meow!
 
   </details>
-- ### C
-  **ตัวอย่างการใช้งาน Method Overriding ในภาษา C**
+- ### C++
+  **ตัวอย่างการใช้งาน Method Overriding ในภาษา C++**
   
-  ภาษา C ไม่มี class และ inheritance แต่เราสามารถจำลอง method overriding ได้ด้วย function poiters
-  ```C
+  ```C++
 
-  #include <stdio.h>
+  #include <iostream>
+  using namespace std;
   
-  // function pointer type for roar
-  typedef void (*RoarFunc)(void);
+  // Superclass
+  class Lion {
+  public:
+      virtual void roar() {
+          cout << "ROAR!";
+      }
+  };
   
-  // Superclass(struct)
-  typedef struct {
-      RoarFunc roar;
-  } Lion;
+  // Subclass
+  class Cat : public Lion {
+  public:
+      void roar() override { // Overriding
+          cout << "meow!";
+      }
+  };
   
-  // Superclass roar method
-  void lion_roar(void) {
-      printf("ROAR!");
-  }
-  
-  // Subclass(struct)
-  typedef struct {
-      Lion base;  // Inheritance
-  } Cat;
-  
-  // Subclass roar method
-  void cat_roar(void) {
-      printf("meow!");
-  }
-  
-  // initializer for Lion
-  void initLion(Lion* l) {
-      l->roar = lion_roar;
-  }
-  
-  // initializer for Cat
-  void initCat(Cat* c) {
-      initLion(&c->base);
-      c->base.roar = cat_roar;  // Override
-  }
-  
-  int main(void) {
+  int main() {
       Cat c;
-      initCat(&c);
-      c.base.roar();
+      c.roar();
+  
       return 0;
   }
 
-  
   ```
 
   <details>
@@ -504,47 +485,49 @@ obj.display "ONE", "TWO"
 
   </details>
   
-- ### C
-  **ตัวอย่างการใช้งาน Super method  ในภาษา C**
+- ### C++
+  **ตัวอย่างการใช้งาน Super method  ในภาษา C++**
+
+  ในภาษา C++ ไม่มี keyword super เพราะว่า C++ รองรับ multiple inheritance ทำให้เกิดความกำกวมเวลลาเรียกใช้ super ว่าหมายถึง class ที่สืบทอดมา class ไหนกันแน่
+  โดยเราสามารถเรียก method จาก super class ได้โดย `SuperClass::superMethod();`
+  ```C++
+  #include <iostream>
+  #include <string>
+  using namespace std;
   
-    ภาษา C ไม่มี class หรือ super method แต่เราสามารถจำลองได้ด้วย struct และ function pointers
+  class Super_Original {
+  public:
+       void display(const string &a = "", const string &b = "") {
+          cout << "Parent class, 1st Parameter: " << a
+               << ", 2nd Parameter: " << b << endl;
+      }
+  };
   
-  ```C
-  #include <stdio.h>
-
-  typedef struct {
-    void (*display)(const char*, const char*);
-  } SuperOriginal;
-
-  typedef struct {
-    SuperOriginal base;
-  } SuperCopy;
-
-  void original_display(const char* a, const char* b) {
-    printf("Parent class, 1st Parameter: %s, 2nd Parameter: %s\n",a,b);
-  }
-
-  void init_super_original(SuperOriginal* s) {
-    s->display = original_display;
-  }
-
-  void super_copy_display(SuperCopy* s, const char* a, const char* b) {
-    s->base.display(a, b);
-    s->base.display(a, NULL);
-    s->base.display(a, b);
-    s->base.display(NULL, NULL);  //เหมือนกับ Java เลยทุกกรณี
-    printf("This is subclass method\n");
-  }
-
-  int main(void) {
-    SuperCopy obj;
-    init_super_original(&obj.base);
-    super_copy_display(&obj, "ONE", "TWO");
-    return 0;
-  }
-
-
+  class Super_Copy : public Super_Original {
+  public:
+      void display(const string &a, const string &b)  {
+          // super               
+          Super_Original::display();  
+          
+          // super a             
+          Super_Original::display(a);
+          
+          // super a, b          
+          Super_Original::display(a, b);
+          
+          // super()              
+          Super_Original::display();
+          
+          cout << "This is subclass method" << endl;
+      }
+  };
   
+  int main() {
+      Super_Copy obj;
+      obj.display("ONE", "TWO");
+      return 0;
+  }
+
   ```
   
   <details>
