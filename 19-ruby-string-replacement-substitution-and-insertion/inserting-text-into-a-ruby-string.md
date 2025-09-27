@@ -61,46 +61,24 @@ Hellowormyld
 
 **ภาษา C ไม่มี method insert() โดยตรงเหมือนกับ Ruby** จึงต้องสร้างวิธีการแทรกข้อความขึ้นเอง โดยใช้การ เลื่อนตำแหน่งของตัวอักษร และ คัดลอก substring ไปยังตำแหน่งที่ต้องการ และเก็บข้อมูลใน char array
 
-**Syntax**
-
-```c
-void insertString(char *str, const char *insert, int index)
-```
-
-<kbd>str</kbd> คือ ข้อความเดิม
-
-<kbd>insert</kbd> คือ ข้อความที่ต้องการแทรก
-
-<kbd>index</kbd> คือ ตำแหน่งใน <kbd>str</kbd> ที่ต้องการแทรก <kbd>insert</kbd> เข้าไป
-
 **Example :**
-
 ```c
 #include <stdio.h>
 #include <string.h>
-
-void insertString(char *str, const char *insert, int index) {
-    int lenStr = strlen(str);
-    int lenInsert = strlen(insert);
-    
-    memmove(str + index + lenInsert, str + index, lenStr - index + 1);
-
-    memcpy(str + index, insert, lenInsert);
-}
-
 int main() {
-    char str[50] = "Helloworld";
-    char insert[] = "my";
-    int index = 5;
+   char str[50] = "Helloworld";
+   char insert[] = "my";
+   int index = 5;
 
-    insertString(str, insert, index);
-    printf("%s\n", str);
+   int lenStr = strlen(str);
+   int lenInsert = strlen(insert);
 
-    return 0;
+   memmove(str + index + lenInsert, str + index, lenStr - index + 1);
+   memcpy(str + index, insert, lenInsert);
+   printf("%s\n", str);
+   return 0;
 }
-
 ```
-
 **Output :**
 
 ```c
