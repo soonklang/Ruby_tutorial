@@ -110,11 +110,11 @@ int main() {
 </details> 
 
 
-##Ruby Times Method
+## Ruby Times Method
 
 ### จงใช้ times เพื่อพิมพ์เลขคู่ตั้งแต่ 2 ถึง 20 ทีละบรรทัด เป็นภาษา Ruby
 
-###เฉลย
+### เฉลย
 <details close>
    <summary><b> Ruby</b></summary>
     
