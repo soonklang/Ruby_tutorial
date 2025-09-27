@@ -199,14 +199,16 @@ GeeksforGeeks. (n.d.) . Java program to add characters to a string. GeeksforGeek
 
 GeeksforGeeks. (n.d.).Insert a variable into a string - Python. GeeksforGeeks. สืบค้นเมื่อ 1 กันยายน 2025, จาก https://www.geeksforgeeks.org/python/insert-a-variable-into-a-string-python/
 
+***
 
+## Presentations
 
 [inserting-text-into-a-ruby-string](https://docs.google.com/presentation/d/1DY5siqHeZF-AFTbB6o60rhAtFYePgG4nB9RKn8YCgyE/edit?usp=sharing)
 
 
 ***
 
-## Video
+## Video 
 
 [https://youtu.be/qx5RMcbo3Xc](https://youtu.be/qx5RMcbo3Xc)
 
