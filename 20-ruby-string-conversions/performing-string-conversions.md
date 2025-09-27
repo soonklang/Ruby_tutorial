@@ -204,7 +204,7 @@ print(str(6958.777))     # Float → String
 
 ## Slide
 
-[Slide Presentation](https://drive.google.com/file/d/1sEDIiajrgw95-3mSSj6In5y3yKjt9th2/view?usp=sharing)
+[Slide Presentation](https://drive.google.com/file/d/1q4-v0lnMrz15712QdQOJa0TuWY8ixM82/view?usp=sharing)
 
 
 
