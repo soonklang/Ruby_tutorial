@@ -887,7 +887,7 @@ C
   [https://www.geeksforgeeks.org/c/sprintf-in-c/](https://www.geeksforgeeks.org/c/sprintf-in-c/)
 
 ## Presentation
-https://drive.google.com/drive/home
+[Using Range Method.pdf](https://github.com/user-attachments/files/22567303/Using.Range.Method.3.pdf)
 
 
 ## Video
