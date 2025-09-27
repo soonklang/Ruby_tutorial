@@ -11,16 +11,21 @@ account = BankAccount.new()
 ```
 ## ตัวอย่าง Ruby
 ```ruby
-class BankAccount:
-    def __init__(self, name, balance):
-        self.name = name
-        self.balance = balance
+class BankAccount
+  # Constructor
+  def initialize(name, balance)
+    @name = name
+    @balance = balance
+  end
 
-    def greet(self):
-        print(f"Hello from {self.name}'s account!")
+  # Method to greet
+  def greet
+    puts "Hello from #{@name}'s account!"
+  end
+end
+account = BankAccount.new("Alice", 1000.0)
+account.greet
 
-account = BankAccount("Alice", 1000.0)
-account.greet()
 ```
 ## Output
 ```ruby
