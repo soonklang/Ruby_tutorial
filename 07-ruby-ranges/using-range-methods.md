@@ -1,4 +1,4 @@
-[Using Range Method (3).pdf](https://github.com/user-attachments/files/22567303/Using.Range.Method.3.pdf)# Using Range Methods
+# Using Range Methods
 
 #### **Range Methods** คือฟังก์ชั้นต่างๆ ที่เราสามารถเรียกใช้กับช่วงค่าพวกนี้ได้ เช่นการหาค่าต่ำสุด สูงสุด การวนลูปผ่านค่าทุกตัวในช่วง ฯลฯ
 
