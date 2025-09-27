@@ -141,7 +141,7 @@ x, y, z = fruits
 ## VIDEO
 https://drive.google.com/file/d/17vsLNjGC0TUfrqYt-DSj9sOtFMNiN9Ym/view?usp=sharing
 ## SLIDE
-https://drive.google.com/file/d/11yFWd8SgjMslbqBIByUIKcWIoBPuYDBB/view?usp=sharing
+https://drive.google.com/file/d/1IsM4zyFMANpjVCjILRd-WELa8BPc1N3J/view?usp=sharing
 ## REFERENCE
 1.GeeksforGeeks. 27 Jul 2020. "Parallel Assignment in Ruby". สืบค้นจาก https://www.geeksforgeeks.org/ruby/parallel-assignment-in-ruby/ (สืบค้นวันที่ 2 กันยายน 2568)
 
