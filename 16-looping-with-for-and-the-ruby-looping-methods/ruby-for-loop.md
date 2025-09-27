@@ -155,8 +155,8 @@ collection.each { |element| action }
 ### Range
 
 ```ruby
-(1...10).each do |i|
- print "#{i} "
+(1...10).each do |num|
+ puts num
 end
 
 ```
@@ -198,7 +198,11 @@ C
 ### Hash
 
 ```ruby
-movies = {"Star Wars": 1, "Avatar": 2, "Harry Potter": 3}
+movies = {
+  "Star Wars" => 1,
+  "Avatar" => 2,
+  "Harry Potter" => 3
+}
 
 movies.each do |k, v|
  puts "#{k} => #{v}"
