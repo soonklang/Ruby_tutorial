@@ -184,7 +184,7 @@ for (int i = 0; str[i]; i++) {
 # Video Presentation
 [video](https://www.youtube.com/watch?v=Awu8Y9KazoU)
 # Slide Presentation
-[slide](https://drive.google.com/file/d/1vDiV92p4SZW356scVcnYsvprhsvJcF0m/view?usp=sharing)
+[slide](https://drive.google.com/file/d/1K06GPKvvo0hf9q2ZscGJMPyrZNYNca1_/view?usp=sharing)
 
 #### ruby
 - GeeksforGeeks. (23 Jul, 2025). How to Convert a String to Lower or Upper Case in Ruby? Retrieved August 30, 2025 From
