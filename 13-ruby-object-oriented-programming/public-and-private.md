@@ -1840,5 +1840,5 @@ stackoverflow (2016, May 25). What are the differences between "private", "publi
 Geeksforgeeks (2018, Sep 4). Ruby | Access Control [https://www.geeksforgeeks.org/ruby/ruby-access-control/](https://www.geeksforgeeks.org/ruby/ruby-access-control/)
 เนื้อหาที่นำมาใช้ : นำมาอธิบายความหมายของ Access Control
 
-CloudBees (n.d) What's the Difference Between Implicit vs. Explicit Programming? (https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming)[https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming)
+CloudBees (n.d) What's the Difference Between Implicit vs. Explicit Programming? [https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming](https://www.cloudbees.com/blog/what-is-the-difference-between-implicit-vs-explicit-programming)
 เนื้อหาที่นำมาใช้ : อธิบายความแตกต่างระหว่าง Explicit และ Implicit
