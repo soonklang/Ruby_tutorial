@@ -269,6 +269,6 @@ for i in range(11, 7, -1):
 
 ## Slide
 * https://docs.google.com/presentation/d/1bCmpyS9jNEV0YrgEhUwB1deAHoSuUTPt/edit?usp=sharing&ouid=107277849839736764331&rtpof=true&sd=true
-* https://drive.google.com/file/d/16XROWrTY-VMfrqKhlwtQk2dg6a5yBu2F/view?usp=sharing
+* [https://drive.google.com/file/d/16XROWrTY-VMfrqKhlwtQk2dg6a5yBu2F/view?usp=sharing](https://drive.google.com/file/d/1-2RUQxIHtAdipwgneUegyRcezeeHczcj/view?usp=sharing)
 ## Clip
 * https://youtu.be/6z9fWBqm48g?si=XRTkQ_VPlEL2IDkc
