@@ -88,7 +88,8 @@ file = File.new("myfile.txt", "w")  # "w" = write mode
 [click](https://youtu.be/9g1zP3QP4CQ)
 ------
 ### Presentation (slides)
-[click](https://github.com/user-attachments/files/22551377/660710623ruby.pdf)
+[click](https://github.com/user-attachments/files/22569922/660710623rubynew.pdf)
+
 
 ---
 
