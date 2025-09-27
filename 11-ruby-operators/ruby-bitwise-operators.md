@@ -116,4 +116,4 @@ print(f"{y << 2:08b}")  # 00011000
 
 ## presentation (slides)
 
-- https://drive.google.com/file/d/1gnG2zuF_Hg4xKtykCC5zfSB7ejfiGdDH/view?usp=sharing
+- https://drive.google.com/file/d/1MBcJBA63CZbdnNE-dSwky-WPMZHzdzMu/view
