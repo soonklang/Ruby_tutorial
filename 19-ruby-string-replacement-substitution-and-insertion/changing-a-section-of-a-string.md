@@ -275,7 +275,7 @@ public class Main {
 คลิปวิดีโอการนำเสนอ : [watch on youtube](https://youtu.be/WYVeaN4HimU?si=sYP7kc0u34clKxp0)
 
 ไฟล์การนำเสนอ : [Canva](https://www.canva.com/design/DAGywD4Tvq0/8TKjKMbw5d-cRDdepQNW-Q/edit?utm_content=DAGywD4Tvq0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
+               [OneDrive](https://silpakorn-my.sharepoint.com/:b:/g/personal/pulkasem_p_su_ac_th/Ef2bvCUDnHNCpWZ_0K1g48oBK5Tep-r0FmwehxiQ5yCJxQ?e=auUAvg)
 
 ## Reference 
 String. (n.d.). In Ruby-Doc.org. สืบค้นเมื่อ 29 สิงหาคม 2025, จาก Ruby Reference , จาก https://ruby-doc.org/3.4.1/String.html </br>
