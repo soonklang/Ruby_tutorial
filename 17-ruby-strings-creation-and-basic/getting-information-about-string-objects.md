@@ -117,6 +117,45 @@ printf("%d", strlen("こんにちは") == 0);
 
 {% include "../.gitbook/includes/code.md" %}
 
+{% tabs %}
+{% tab title="Ruby" %}
+<pre class="language-ruby"><code class="lang-ruby"><strong>puts "こんにちは".index('ん')
+</strong># Output: 1
+</code></pre>
+{% endtab %}
+
+{% tab title="Java" %}
+```java
+System.out.println("こんにちは".indexOf("ん"));
+// Output: 1
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+print("こんにちは".find('ん'))
+# Output: 1
+```
+{% endtab %}
+
+{% tab title="C" %}
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char str[] = "hello";
+  char *ptr = strchr(str, 'e');
+
+  if (ptr != NULL)
+    printf("%d", ptr-str);
+  
+  return 1;
+}
+```
+{% endtab %}
+{% endtabs %}
+
 {% hint style="info" %}
 ในภาษา C นั้น จะยุ่งยากเล็กน้อยคือ ไม่มี Method ที่ทำงานเหมือนกับ .Index ของ Ruby แต่ก็พอมีฟังก์ชันให้เรียกใช้\
 ได้เหมือนกันโดยจะต้องทำงาน #include \<string.h> เข้ามา ซึ่งฟังก์ชันที่จะนำมาประยุกต์ใช้ ได้แก่ strchr(), strstr() \
