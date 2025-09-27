@@ -108,3 +108,20 @@ int main() {
 }
  ```
 </details> 
+
+
+##Ruby Times Method
+
+### จงใช้ times เพื่อพิมพ์เลขคู่ตั้งแต่ 2 ถึง 20 ทีละบรรทัด เป็นภาษา Ruby
+
+###เฉลย
+<details close>
+   <summary><b> Ruby</b></summary>
+    
+```ruby
+   10.times do |i|
+     puts (i + 1) * 2
+   enก
+ ```
+        
+</details>
