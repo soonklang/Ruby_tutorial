@@ -205,6 +205,7 @@ print(str(6958.777))     # Float → String
 ## Slide
 
 [Slide Presentation](https://drive.google.com/file/d/1q4-v0lnMrz15712QdQOJa0TuWY8ixM82/view?usp=sharing)
+[Presentation](https://www.canva.com/design/DAGzUMqNDM0/2LXYqagOOAVTqXIZh2VKbQ/edit?utm_content=DAGzUMqNDM0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
