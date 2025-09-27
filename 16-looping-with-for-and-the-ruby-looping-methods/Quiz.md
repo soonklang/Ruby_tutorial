@@ -125,3 +125,17 @@ int main() {
  ```
         
 </details>
+
+##  Ruby upto-and-downto-method
+### เมธอด downto ใน ruby ไม่สามารถใช้งานได้บนคลาสใด
+1. Integer
+2. Date
+3. String
+4. ใช้งานได้หมดทุกคลาส
+### เฉลย
+<details close>
+   <summary><b>เฉลย</b></summary>
+ <pre>3. เพราะเมธอด downto สามารถใช้งานได้บนคลาส Integer และ Date แต่ไม่สามารถใช้กับ String ได้
+ </pre>
+</details>
+
