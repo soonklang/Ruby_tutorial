@@ -163,7 +163,7 @@ https://www.geeksforgeeks.org/java/java-ternary-operator-puzzle/br><br>
 # และอีก 1 อย่างที่ใช้กับ ternary operator ได้ คือ การ return จาก method
 ```ruby
 def body_type(wight)
-  wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin")
+  return wight >= 75 ? "fat" : (wight < 60 ? "proportionate" : "thin")
 end
 
 puts body_type(50)
