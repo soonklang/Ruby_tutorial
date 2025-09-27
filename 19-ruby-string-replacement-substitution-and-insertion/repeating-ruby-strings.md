@@ -6,12 +6,12 @@
   
 #### Example:
 ```ruby
- text = "Ho!"
+ text = "Hi!"
  puts text * 3
 ```
 #### Output:
 ```text
-  Ho!Ho!Ho!
+  Hi!Hi!Hi!
   ```
 > ถ้าเทียบกับภาษาต่างๆ เช่น Java/C/Python
 ##
