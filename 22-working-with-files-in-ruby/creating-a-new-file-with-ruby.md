@@ -102,7 +102,8 @@
 [click](https://youtu.be/9g1zP3QP4CQ)
 ------
 ### Presentation (slides)
-[click](https://github.com/user-attachments/files/22569922/660710623rubynew.pdf)
+[click](https://github.com/user-attachments/files/22667253/660710623ruby02.pdf)
+
 
 
 ---
