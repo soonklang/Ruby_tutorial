@@ -167,7 +167,7 @@ for entry in obj:
 ```
 
 ## Silde
-[Directory Handling](https://drive.google.com/file/d/15zCwo99zdBPanqBuD1yQmf9L_6gcdrpG/view?usp=sharing)
+[Directory Handling](https://drive.google.com/file/d/1NkM7SXjiFKanTARGXMdOzSycJcODlghk/view?usp=sharing)
 
 [Directory Listings in Ruby](https://drive.google.com/file/d/1GdAYLo9EEzj0NurM5HahxafmEykN5Ui-/view?usp=sharing)
 
