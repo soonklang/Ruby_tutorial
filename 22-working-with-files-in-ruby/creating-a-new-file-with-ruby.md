@@ -22,7 +22,13 @@
 ## ตัวอย่างโค้ดภาษา Ruby
 
 //สร้างไฟล์ใหม่ "myfile.txt"
-file = File.new("myfile.txt", "w")  # "w" = write mode
+File.open("test.txt", "w") do |file|
+ file.puts "Hello Ruby!"
+ end
+ 
+file = File.new("myfile.txt", "w")
+file.puts "Hello Ruby!"
+file.close
 
 
 ## ความแตกต่างในการสร้างไฟล์ ใน Ruby กับ python , c , java
