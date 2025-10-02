@@ -109,7 +109,7 @@ except Exception as e:
 </code></pre>
 
 ## Slide
-[Directory Handling](https://drive.google.com/file/d/15zCwo99zdBPanqBuD1yQmf9L_6gcdrpG/view?usp=sharing)
+[Directory Handling](https://drive.google.com/file/d/1NkM7SXjiFKanTARGXMdOzSycJcODlghk/view?usp=sharing)
 
 [Creating New Directories](https://drive.google.com/file/d/1bYwRICNhNw3CIYsh275toZnVC9Yyq0kc/view?usp=sharing)
 
