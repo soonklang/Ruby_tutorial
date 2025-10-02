@@ -72,9 +72,8 @@
 	  ตัวอย่างโค้ด:
       import java.io.File;
       import java.io.IOException;
-
-	public class CreateNewFile {
-    public static void main(String[] args) {
+		public class CreateNewFile {
+    	public static void main(String[] args) {
         try {
             File file = new File("example.txt");
             if (file.createNewFile()) {
@@ -85,7 +84,7 @@
         } catch (IOException e) {
             System.out.println("An error occurred.");
         }
-    }
+      }
 
 
 ## ตารางเปรียบเทียบกับภาษา (Java, C, Python)
