@@ -1,4 +1,4 @@
-<img width="1298" height="263" alt="image" src="https://github.com/user-attachments/assets/da254255-415c-4a46-ac11-95c8dfda63e0" /># Changing the Case of a Ruby String
+Changing the Case of a Ruby String
 คือ การเปลี่ยนตัวอักษร string ให้เป็นตัวพิมเล็กหรือตัวพิมพ์ใหญ่ซึ่งสามารถทำได้ด้วยการเรียกใช้ method 
 ซึ่งการเรียกใช้ method ที่เกี่ยวกับการเปลี่ยนตัวพิมพ์ ก็จะมี 2 รูปแบบคือสร้าง String ใหม่ขึ้นมาเเล้วคืนค่าเป็น String ใหม่ (Non-destructive) และแบบที่แก้ไข String เดิมโดยตรง (Destructive) ซึ่งมักจะลงท้ายด้วยเครื่องหมาย (!) เรียกว่า bang
 
@@ -184,7 +184,7 @@ for (int i = 0; str[i]; i++) {
 # Video Presentation
 [video](https://www.youtube.com/watch?v=Awu8Y9KazoU)
 # Slide Presentation
-[slide](https://drive.google.com/file/d/1K06GPKvvo0hf9q2ZscGJMPyrZNYNca1_/view?usp=sharing)
+[slide](https://drive.google.com/file/d/1obgCh-EXAIgaIxy09F8RghAywvUA973W/view?usp=sharing)
 
 #### ruby
 - GeeksforGeeks. (23 Jul, 2025). How to Convert a String to Lower or Upper Case in Ruby? Retrieved August 30, 2025 From
