@@ -22,9 +22,9 @@
 ## ตัวอย่างโค้ดภาษา Ruby
 
 	//สร้างไฟล์ใหม่ "myfile.txt"
-	File.open("myfile.txt", "w") do |file|
+	file = File.open("myfile.txt", "w")
 	file.puts "Hello Ruby!"
-	end
+	file.close
  
 	file = File.new("myfile.txt", "w")
 	file.puts "Hello Ruby!"
