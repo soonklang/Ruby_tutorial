@@ -21,14 +21,14 @@
 
 ## ตัวอย่างโค้ดภาษา Ruby
 
-//สร้างไฟล์ใหม่ "myfile.txt"
-File.open("test.txt", "w") do |file|
- file.puts "Hello Ruby!"
- end
+	//สร้างไฟล์ใหม่ "myfile.txt"
+	File.open("myfile.txt", "w") do |file|
+	file.puts "Hello Ruby!"
+	end
  
-file = File.new("myfile.txt", "w")
-file.puts "Hello Ruby!"
-file.close
+	file = File.new("myfile.txt", "w")
+	file.puts "Hello Ruby!"
+	file.close
 
 
 ## ความแตกต่างในการสร้างไฟล์ ใน Ruby กับ python , c , java
@@ -69,14 +69,23 @@ file.close
   
   Java นั้น จะใช้Method createNewFile() โดยจะreturnเป็นboolean **True** ถ้าไฟล์สร้างได้สำเร๊จ **False** ถ้าไฟล์สร้างไม่สำเร็จ ใน Java การใช้ File.createNewFile() จำเป็นต้อง import class java.io.File เสมอ
 
-	ตัวอย่างโค้ด:
+	  ตัวอย่างโค้ด:
+      import java.io.File;
+      import java.io.IOException;
 
-		import java.io.File;
-		public class Create_New_File {
-		    public static void main(String[] args) throws Exception {
-		        new File("example.txt").createNewFile();
-		    }
-		}
+public class CreateNewFile {
+    public static void main(String[] args) {
+        try {
+            File file = new File("example.txt");
+            if (file.createNewFile()) {
+                System.out.println("File created: " + file.getName());
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+        }
+    }
 
 
 ## ตารางเปรียบเทียบกับภาษา (Java, C, Python)
