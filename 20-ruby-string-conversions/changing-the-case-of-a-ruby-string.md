@@ -1,4 +1,4 @@
-# Changing the Case of a Ruby String
+<img width="1298" height="263" alt="image" src="https://github.com/user-attachments/assets/da254255-415c-4a46-ac11-95c8dfda63e0" /># Changing the Case of a Ruby String
 คือ การเปลี่ยนตัวอักษร string ให้เป็นตัวพิมเล็กหรือตัวพิมพ์ใหญ่ซึ่งสามารถทำได้ด้วยการเรียกใช้ method 
 ซึ่งการเรียกใช้ method ที่เกี่ยวกับการเปลี่ยนตัวพิมพ์ ก็จะมี 2 รูปแบบคือสร้าง String ใหม่ขึ้นมาเเล้วคืนค่าเป็น String ใหม่ (Non-destructive) และแบบที่แก้ไข String เดิมโดยตรง (Destructive) ซึ่งมักจะลงท้ายด้วยเครื่องหมาย (!) เรียกว่า bang
 
@@ -52,8 +52,8 @@
 
 การเรียกเมธอดต่อกันเราสามารถเรียกใช้หลายๆ เมธอดต่อกันเพื่อจัดการข้อความที่ซับซ้อนได้
 ```ruby
-# ตัดช่องว่าง -> ทำให้เป็นตัวเล็ก -> ทำให้ตัวแรกเป็นตัวใหญ่
-"  MIXED case STRING  ".strip.downcase.capitalize
+# ทำให้เป็นตัวเล็ก -> ทำให้ตัวแรกเป็นตัวใหญ่
+"  MIXED case STRING  ".downcase.capitalize
 # => "Mixed case string"
 ```
 <br>
@@ -74,9 +74,9 @@ snake_to_title("first_name_field")  # => "First Name Field"
 เราสามารถใช้ RegEx เพื่อเลือกเปลี่ยนตัวพิมพ์เฉพาะส่วนที่ตรงกับเงื่อนไขที่เรากำหนดได้
 ```ruby
 # ทำให้ตัวอักษรที่ตามหลัง "." เป็นตัวพิมพ์ใหญ่
-text = "hello. world! how are you?"
+text = "hello. world!"
 text.gsub(/(?<=\.\s)[a-z]/) { |match| match.upcase }
-# => "hello. World! How are you?"
+ => "hello. World!"
 ```
 <br>
 
