@@ -8,10 +8,13 @@
 แตกต่างกัน :  gsub! จะแทนที่ทุกตำแหน่งที่เจอ ส่วน sub! จะแทนที่แค่ตำแหน่งแรกที่เจอ
 </details>
 
-### 2
-```ruby
+### 2 ผลลัพธ์ของ "Charmander\n\r\r\n\n\r".chomp('')
+<details close>
+   <summary>เฉลย</summary>
+   
+> Charmander\n\r\r\n\n\r
+</details>
 
-```
 ### 3 ใน Ruby ถ้าเราเขียน "test" * "3" จะเกิดอะไรขึ้น?
 <details close>
    <summary>เฉลย</summary>
