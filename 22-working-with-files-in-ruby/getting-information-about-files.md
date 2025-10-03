@@ -106,7 +106,7 @@ File.absolute_path("report.pdf")           # => "/Users/john/documents/report.pd
 ---
 
 ## Presentation (slides)
-(https://www.canva.com/design/DAGy3C2TEk0/3RO3M3w5U2T7owQsjKH58g/edit)
+(https://www.canva.com/design/DAGy3C2TEk0/3RO3M3w5U2T7owQsjKH58g/edit?utm_content=DAGy3C2TEk0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
